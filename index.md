@@ -15,9 +15,9 @@ Test change.
 
 [Overview](./envmgmt/overview.md): GitOps approach implemented using Terraform, Helm, AWS EC2
 
-![image-png](./Business-Applications-Web-Updated-1-1024x1000.png)
+![image-png](./images/Business-Applications-Web-Updated-1-1024x1000.png)
 
-![image-gif](./code-samples-demo.gif)
+![image-gif](./images/code-samples-demo.gif)
 
 ## Contacts
 
