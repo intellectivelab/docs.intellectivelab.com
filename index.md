@@ -5,7 +5,13 @@ This site contains all the public documentation about DevOps activities.
 
 ### Install the Docker
 
-**Containers**
+### Configure Unity Docker Image
+
+**Configuration**
+
+	Create folder on the drive you shared to store Open Liberty & Unity configuration files, DockerUnity for example.
+	Place server.xml to this folder.
+	Open cmd or powershell in Admin mode and navigate to this folder.
 
 [Unity on Docker](./unity/unity-on-docker.md): the step-by-step guide how to run Unity 7 in Docker environment.
 
