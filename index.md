@@ -1,6 +1,6 @@
-# Unity Documentation Site
+# DevOps Documentation Site
 
-## Installing Unity in Docker container
+## Quick Start
 This site contains all the public documentation about DevOps activities.
 
 ### Install the Docker
@@ -9,9 +9,34 @@ This site contains all the public documentation about DevOps activities.
 
 **Configuration**
 
-- Create folder on the drive you shared to store Open Liberty & Unity configuration files, DockerUnity for example.
-- Place server.xml to this folder.
-- Open cmd or powershell in Admin mode and navigate to this folder.
+- Create folder on the drive you shared to store Open Liberty & Unity configuration files, `DockerUnity` for example
+- Place `server.xml` to this folder
+- Open cmd or powershell in Admin mode and navigate to this folder
+- Run `docker login docker.devops.intellectivelab.com`
+	username: serviceaccount
+	pwd: V3ga123456
+	
+- You should get the message `login succeeded`
+- Run `docker run -it -v c:/DockerUnity:/opt/vu  -p 9080:9080  --rm docker.devops.intellectivelab.com/unity-classic/unity-7:7.6.1-ol`
+	`c:/DockerUnity` is a folder you copied `server.xml`
+
+It will check if the docker image is available locally.
+If not then it will be downloaded automatically.
+For the first time, it will take some time to download the image.
+Once downloaded, the local unity instance will be up & running. 
+
+**Access the Unity**
+
+- Connect to Intellective VPN
+- Make sure the FileNet environment is up and accessible.
+- Hit the URL: [http://localhost:9080/vu] to access the Unity.
+	Login: user:p8admin_demo
+	Password: V3ga123456
+	
+	
+## Contents
+
+**Containers**
 
 [Unity on Docker](./unity/unity-on-docker.md): the step-by-step guide how to run Unity 7 in Docker environment.
 
@@ -20,10 +45,6 @@ This site contains all the public documentation about DevOps activities.
 **Environment Management**
 
 [Overview](./envmgmt/overview.md): GitOps approach implemented using Terraform, Helm, AWS EC2
-
-![image-png](./images/Business-Applications-Web-Updated-1-1024x1000.png)
-
-![image-gif](./images/code-samples-demo.gif)
 
 ## Contacts
 
