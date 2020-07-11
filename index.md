@@ -18,8 +18,7 @@ This site contains all the public documentation about DevOps activities.
 	> password: `V3ga123456`
 	
 - You should get the message `login succeeded`
-- Run `docker run -it -v c:/DockerUnity:/opt/vu  -p 9080:9080  --rm docker.devops.intellectivelab.com/unity-classic/unity-7:7.6.1-ol`
-`c:/DockerUnity` is a folder you copied `server.xml`
+- Run `docker run -it -v c:/DockerUnity:/opt/vu  -p 9080:9080  --rm docker.devops.intellectivelab.com/unity-classic/unity-7:7.6.1-ol` Here `c:/DockerUnity` is a folder you copied `server.xml`
 
 It will check if the docker image is available locally.
 If not then it will be downloaded automatically.
