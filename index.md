@@ -15,6 +15,7 @@ This site contains all the public documentation about DevOps activities.
 - Run `docker login docker.devops.intellectivelab.com`
 
 > username: serviceaccount
+>
 > pwd: V3ga123456
 	
 - You should get the message `login succeeded`
@@ -33,6 +34,7 @@ Once downloaded, the local unity instance will be up & running.
 - Hit the URL: [http://localhost:9080/vu](http://localhost:9080/vu) to access the Unity.
 
 > Username: p8admin_demo
+>
 > Password: V3ga123456
 	
 	
