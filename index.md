@@ -13,7 +13,7 @@ This site contains all the public documentation about DevOps activities.
 
 - Create folder on the drive you shared to store Open Liberty & Unity configuration files, `C:\DockerUnity` for example
 - Place `server.xml` to this folder
-- Open cmd or PowerShell in admin mode and navigate to this folder, running command 'cd C:\DockerUnity\'
+- Open cmd or PowerShell in admin mode and navigate to this folder, running command `cd C:\DockerUnity\`
 - Run `docker login docker.devops.intellectivelab.com`
 
 	> Username: `serviceaccount`  
