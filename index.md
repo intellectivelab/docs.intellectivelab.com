@@ -13,6 +13,7 @@ This site contains all the public documentation about DevOps activities.
 - Place `server.xml` to this folder
 - Open cmd or powershell in Admin mode and navigate to this folder
 - Run `docker login docker.devops.intellectivelab.com`
+
 > username: serviceaccount
 > pwd: V3ga123456
 	
@@ -30,7 +31,8 @@ Once downloaded, the local unity instance will be up & running.
 - Connect to Intellective VPN
 - Make sure the FileNet environment is up and accessible.
 - Hit the URL: [http://localhost:9080/vu](http://localhost:9080/vu) to access the Unity.
-> Login: user:p8admin_demo
+
+> Username: p8admin_demo
 > Password: V3ga123456
 	
 	
