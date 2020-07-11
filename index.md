@@ -5,7 +5,7 @@ This site contains all the public documentation about DevOps activities.
 
 ### Install the Docker
 
-[How To Install Docker](./unity/how-to-install-docker.md)
+- [How To Install Docker](./unity/how-to-install-docker.md)
 
 ### Configure Unity Docker Image
 
