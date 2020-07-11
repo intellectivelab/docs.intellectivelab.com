@@ -32,8 +32,8 @@ Once downloaded, the local unity instance will be up & running.
 - Make sure the FileNet environment is up and accessible
 - Hit the URL: [http://localhost:9080/vu](http://localhost:9080/vu) to access the Unity
 
-	- Username: `p8admin_demo` 
-	- Password: `V3ga123456`
+	> Username: `p8admin_demo` 
+	> Password: `V3ga123456`
 	
 	
 ## Contents
