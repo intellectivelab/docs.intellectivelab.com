@@ -29,7 +29,9 @@ Once downloaded, the local unity instance will be up & running.
 
 - Connect to Intellective VPN
 - Make sure the FileNet environment is up and accessible. 
+
 	Hit [http://172.31.27.3:9080/wsi/FNCEWS40MTOM/](http://172.31.27.3:9080/wsi/FNCEWS40MTOM/) to confirm.
+
 - Hit [http://localhost:9080/vu](http://localhost:9080/vu) to access the Unity
 
 	> Username: `p8admin_demo`  
