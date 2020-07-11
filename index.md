@@ -5,7 +5,7 @@ This site contains all the public documentation about DevOps activities.
 
 ### Install the Docker
 
-- [How To Install Docker](./unity/how-to-install-docker.md)
+- [How to install Docker](./unity/how-to-install-docker.md)
 
 ### Configure Unity Docker Image
 
@@ -38,6 +38,8 @@ Once downloaded, the local unity instance will be up & running.
 
 	> Username: `p8admin_demo`  
 	> Password: `V3ga123456`
+	
+- Wizard should guide you through establishing connection to FileNet. Use the endpoint to connect to Filenet [http://172.31.27.3:9080/wsi/FNCEWS40MTOM/](http://172.31.27.3:9080/wsi/FNCEWS40MTOM/)
 	
 	
 ## Contents
