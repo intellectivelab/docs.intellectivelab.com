@@ -13,12 +13,12 @@ This site contains all the public documentation about DevOps activities.
 - Place `server.xml` to this folder
 - Open cmd or powershell in Admin mode and navigate to this folder
 - Run `docker login docker.devops.intellectivelab.com`
-	username: serviceaccount
-	pwd: V3ga123456
+> username: serviceaccount
+> pwd: V3ga123456
 	
 - You should get the message `login succeeded`
 - Run `docker run -it -v c:/DockerUnity:/opt/vu  -p 9080:9080  --rm docker.devops.intellectivelab.com/unity-classic/unity-7:7.6.1-ol`
-	`c:/DockerUnity` is a folder you copied `server.xml`
+`c:/DockerUnity` is a folder you copied `server.xml`
 
 It will check if the docker image is available locally.
 If not then it will be downloaded automatically.
@@ -29,9 +29,9 @@ Once downloaded, the local unity instance will be up & running.
 
 - Connect to Intellective VPN
 - Make sure the FileNet environment is up and accessible.
-- Hit the URL: [http://localhost:9080/vu] to access the Unity.
-	Login: user:p8admin_demo
-	Password: V3ga123456
+- Hit the URL: [http://localhost:9080/vu](http://localhost:9080/vu) to access the Unity.
+> Login: user:p8admin_demo
+> Password: V3ga123456
 	
 	
 ## Contents
