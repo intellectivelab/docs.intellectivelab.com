@@ -15,7 +15,6 @@ This site contains all the public documentation about DevOps activities.
 - Run `docker login docker.devops.intellectivelab.com`
 
 > username: serviceaccount 
->
 > password: V3ga123456
 	
 - You should get the message `login succeeded`
