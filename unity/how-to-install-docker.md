@@ -2,7 +2,7 @@
 
 - Check if the Virtualization is enabled on your laptop
 
-![virtualization-enabled](./unity/how-to-install-docker-1.png) 
+![virtualization-enabled](how-to-install-docker-1.png) 
 
 ### Configure Unity Docker Image
 
