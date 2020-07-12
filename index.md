@@ -38,7 +38,7 @@ Once downloaded, the local unity instance will be up & running.
 	> Username: `p8admin_demo`  
 	> Password: `V3ga123456`
 	
-- Wizard should guide you through establishing connection to FileNet. Use the [endpoint](http://172.31.27.3:9080/wsi/FNCEWS40MTOM/) to connect to Filenet 
+- Wizard should guide you through establishing connection to FileNet, use the [endpoint](http://172.31.27.3:9080/wsi/FNCEWS40MTOM/) to connect to Filenet 
 	
 	
 ## Contents
