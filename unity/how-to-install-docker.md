@@ -30,15 +30,17 @@
 	
 - So Docker is installed correctly and ready to use. For additional settings refer to [Docker manual](https://docs.docker.com/docker-for-windows/) 
 	
-##Troubleshooting 
+## Troubleshooting 
 
 - While installing docker, I logged in using non-local admin user (when prompted, I used local admin user). When starting the Docker Desktop, got the error message saying user is not a part of a local group *docker-users* 
 	
 	**Solution** 
 	
-	During Docker installation, a local group called *docker-users* gets created and the user which log into laptop (non admin) needs to be part this group. So, to solve this issue, add user to local group *docker-users* using below command (use CMD) 
+	During Docker installation, a local group called *docker-users* gets created and the user logged into laptop (not admin) needs to be part this group. So, to solve this issue, add user to local group *docker-users* using below command (use CMD) 
 
-	`net localgroup docker-users AzureAD\user@intellective.com /add` where `user@intellective.com` is your username. 
+	`net localgroup docker-users AzureAD\user@intellective.com /add` 
+	
+	where `user@intellective.com` is your username 
 
 ## Contacts
 
