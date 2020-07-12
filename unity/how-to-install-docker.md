@@ -29,7 +29,6 @@
 	![docker-settings-advanced](how-to-install-docker-6.png) 
 	
 So Docker is installed correctly and ready to use.
-
 For additional information refer to [Docker for Windows](https://docs.docker.com/docker-for-windows/). 
 	
 ## Troubleshooting 
@@ -40,8 +39,7 @@ For additional information refer to [Docker for Windows](https://docs.docker.com
 	
 	Add user to local group *docker-users* in terminal window  
 
-	`net localgroup docker-users AzureAD\user@intellective.com /add` 
-	
+	`net localgroup docker-users AzureAD\user@intellective.com /add` 	
 	where `user@intellective.com` is your username 
 
 ## Contacts
