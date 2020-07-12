@@ -24,6 +24,10 @@
 	
 	![docker-settings](how-to-install-docker-5.png) 
 	
+	Also you can verify and adjust Advanced settings accordingly 
+	
+	![docker-settings-advanced](how-to-install-docker-6.png) 
+	
 **Environment Management**
 
 [Overview](./envmgmt/overview.md): GitOps approach implemented using Terraform, Helm, AWS EC2
