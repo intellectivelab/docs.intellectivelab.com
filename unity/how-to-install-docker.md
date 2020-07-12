@@ -1,8 +1,8 @@
 ## How To Install Docker
 
-- Check if the Virtualization is enabled on your laptop
+- Check if the Virtualization is enabled on your laptop 
 
-![virtualization-enabled](how-to-install-docker-1.png) 
+	![virtualization-enabled](how-to-install-docker-1.png) 
 
 - Download docker from (https://hub.docker.com/editions/community/docker-ce-desktop-windows/) and install it 
 
