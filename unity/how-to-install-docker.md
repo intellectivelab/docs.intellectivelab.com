@@ -38,7 +38,7 @@
 	
 	**Solution** 
 	
-	During Docker installation, a local group called *docker-users* gets created and the user logged into laptop needs to be part of this group. So, to solve this issue, add user to local group *docker-users* in terminal window  
+	Add user to local group *docker-users* in terminal window  
 
 	`net localgroup docker-users AzureAD\user@intellective.com /add` 
 	
