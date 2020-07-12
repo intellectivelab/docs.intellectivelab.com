@@ -15,6 +15,15 @@
 	![cmd-docker-helloworld](how-to-install-docker-3.png) 
 
 - After Docker desktop is installed, share the drive where you would place configuration files. 
+	
+	Open the Docker Desktop menu by clicking the Docker icon in the notifications area and select Settings 
+	
+	![docker-settings-select](how-to-install-docker-4.png) 
+	
+	Go to *Resources->File sharing*, select `C` drive and click Apply&Restart button 
+	
+	![docker-settings](how-to-install-docker-5.png) 
+	
 **Environment Management**
 
 [Overview](./envmgmt/overview.md): GitOps approach implemented using Terraform, Helm, AWS EC2
