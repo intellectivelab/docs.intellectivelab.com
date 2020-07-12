@@ -28,9 +28,9 @@
 	
 	![docker-settings-advanced](how-to-install-docker-6.png) 
 	
-- So Docker is installed correctly and ready to use 
+So Docker is installed correctly and ready to use.
 
-For additional information refer to [Docker for Windows](https://docs.docker.com/docker-for-windows/) 
+For additional information refer to [Docker for Windows](https://docs.docker.com/docker-for-windows/). 
 	
 ## Troubleshooting 
 
