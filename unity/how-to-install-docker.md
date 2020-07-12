@@ -4,7 +4,7 @@
 
 	![virtualization-enabled](how-to-install-docker-1.png) 
 
-- Download Docker from (https://hub.docker.com/editions/community/docker-ce-desktop-windows/) and install it 
+- [Download Docker](https://hub.docker.com/editions/community/docker-ce-desktop-windows/) and install it 
 - Run Docker as administrator if logged user is not a local admin 
 	
 	![run-docker-as-admin](how-to-install-docker-2.png) 
