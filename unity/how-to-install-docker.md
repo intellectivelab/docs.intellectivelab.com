@@ -14,7 +14,7 @@
 	
 	![cmd-docker-helloworld](how-to-install-docker-3.png) 
 
-- After Docker desktop is installed, share the drive where you would place configuration files. 
+- After Docker desktop is installed, share the drive where you would place configuration files 
 	
 	Open the Docker Desktop menu by clicking the Docker icon in the notifications area and select Settings 
 	
