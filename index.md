@@ -1,7 +1,7 @@
 # DevOps Documentation Site
 
 ## Quick Start
-This site contains all the public documentation about DevOps activities. 
+To try Unity demo version install the Docker and configure Unity Docker image. 
 
 ### Install the Docker
 
@@ -18,10 +18,10 @@ This site contains all the public documentation about DevOps activities.
 - Run `docker login docker.devops.intellectivelab.com`
 
 	> Username: `serviceaccount`  
-	> Password: `V3ga123456` 
+	> Password: `password` 
 
 	You should get the message `login succeeded`
-- Run `docker run -it -v c:/DockerUnity:/opt/vu  -p 9080:9080  --rm docker.devops.intellectivelab.com/unity-classic/unity-7:7.6.1-ol`, here `c:/DockerUnity` is a folder you copied `server.xml`
+- Run `docker run -it -v c:/DockerUnity:/opt/vu  -p 9080:9080  --rm docker.devops.intellectivelab.com/unity-classic/unity-7:7.6.1-ol`, here `c:/DockerUnity` is a folder you copied Unity files 
 
 It will check if the docker image is available locally.
 If not then it will be downloaded automatically.
@@ -36,7 +36,7 @@ Once downloaded, the local unity instance will be up & running.
 - Hit [http://localhost:9080/vu](http://localhost:9080/vu) to access the Unity
 
 	> Username: `p8admin_demo`  
-	> Password: `V3ga123456`
+	> Password: `password`
 	
 Wizard should guide you through establishing connection to FileNet, use the [endpoint](http://172.31.27.3:9080/wsi/FNCEWS40MTOM/) to connect to Filenet. 
 	
