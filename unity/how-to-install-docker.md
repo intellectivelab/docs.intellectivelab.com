@@ -3,6 +3,8 @@
 - Check if the Virtualization is enabled on your laptop 
 
 	![virtualization-enabled](how-to-install-docker-1.png) 
+	
+	If Virtualization is disabled, [enable](https://mashtips.com/enable-virtualization-windows-10/) it 
 
 - [Download](https://hub.docker.com/editions/community/docker-ce-desktop-windows/) and install Docker 
 - Run Docker as administrator if logged user is not a local admin 
