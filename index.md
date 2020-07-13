@@ -16,7 +16,7 @@ To try Unity demo version [install Docker](./unity/how-to-install-docker.md) and
 	> Username: `serviceaccount`  
 	> Password: `password` 
 
-	You should get the message `login succeeded` 
+	You should get the message `Login Succeeded` 
 
 	![unity-cmd](.\images\unity-installation-1.png) 
 	
