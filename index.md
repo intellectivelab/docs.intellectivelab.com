@@ -25,7 +25,7 @@ To try Unity demo version [install Docker](./unity/how-to-install-docker.md) and
 It will check if the docker image is available locally.
 If not then it will be downloaded automatically.
 For the first time, it will take some time to download the image.
-Once downloaded, the local unity instance will be up & running. 
+Once downloaded, the local Unity instance will be up & running. 
 
 **Access the Unity**
 
