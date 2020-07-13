@@ -16,7 +16,9 @@ To try Unity demo version [install Docker](./unity/how-to-install-docker.md) and
 	> Username: `serviceaccount`  
 	> Password: `password` 
 
-	You should get the message `login succeeded`
+	You should get the message `login succeeded` 
+	![unity-cmd](unity-installation-1.png) 
+	
 - Run `docker run -it -v c:/DockerUnity:/opt/vu  -p 9080:9080  --rm docker.devops.intellectivelab.com/unity-classic/unity-7:7.6.1-ol`, here `c:/DockerUnity` is a folder you copied Unity files 
 
 It will check if the docker image is available locally.
