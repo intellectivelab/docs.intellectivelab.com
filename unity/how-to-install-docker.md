@@ -2,7 +2,7 @@
 
 - Check if the Virtualization is enabled on your laptop 
 
-	![virtualization-enabled](how-to-install-docker-1.png) 
+	![virtualization-enabled](.\images\how-to-install-docker-1.png) 
 	
 	If Virtualization is disabled, [enable](https://mashtips.com/enable-virtualization-windows-10/) it 
 
