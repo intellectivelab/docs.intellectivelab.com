@@ -1,7 +1,7 @@
 # DevOps Documentation Site
 
 ## Quick Start
-This site contains all the public documentation about DevOps activities. 1.
+This site contains all the public documentation about DevOps activities. 
 
 ### Install the Docker
 
