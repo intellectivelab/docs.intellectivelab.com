@@ -40,16 +40,17 @@ Wizard should guide you through establishing connection to FileNet, use the [end
 	
 ### Unity interface ### 
 
-	![Search layout](.\images\unity-ui-1-updated.png)
-
 **Tabs**
 
 Tabs are the main building block of Unity user interface. 
 
-- Tabs used to represent Folder View, Case Views, Searche Templates, Workbaskets, Configuration Console 
-- Tabs also used to provide additional information like properties, documents, security, etc inside of case and document details 
-- Access roles can be used to provide different groups of users with specific set of tabs to tailor different functionality to different groups/departments  
+- Tabs used to represent Folder View, Case Views, Searche Templates, Workbaskets, Analytics and Configuration Console 
+- Tabs also used to provide additional information like Properties, Documents, Security, etc inside of case and document details  
 	
+Access roles can be used to provide different groups of users with specific set of tabs to tailor different functionality to different groups/departments. 
+
+![Search layout](.\images\unity-ui-1-updated.png) 
+
 **Search Layout**
 
 You will find on every search page: 
@@ -58,11 +59,11 @@ You will find on every search page:
 - Content List, where you view your search results 
 - Actions to work with documents from content list 
 
-	![Actions](.\images\unity-ui-2-updated.png) 
+![Actions](.\images\unity-ui-2-updated.png) 
 	
 Columns in Content List are configurable 
-	
-	![Columns](.\images\unity-ui-3-updated.png)
+
+![Columns](.\images\unity-ui-3-updated.png) 
 
 	
 ## Contents
