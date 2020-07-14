@@ -2,7 +2,6 @@
 
 ## Quick Start
 To try Unity demo version [install Docker](./unity/how-to-install-docker.md) and configure Unity Docker image. 
-
 ### Configure Unity Docker Image
 
 **Configuration**
@@ -39,6 +38,32 @@ Once downloaded, the local Unity instance will be up & running.
 	
 Wizard should guide you through establishing connection to FileNet, use the [endpoint](http://172.31.27.3:9080/wsi/FNCEWS40MTOM/) to connect to Filenet. 
 	
+### Unity interface ### 
+
+	![Search layout](.\images\unity-ui-1-updated.png)
+
+**Tabs**
+
+Tabs are the main building block of Unity user interface. 
+
+- Tabs used to represent Folder View, Case Views, Searche Templates, Workbaskets, Configuration Console 
+- Tabs also used to provide additional information like properties, documents, security, etc inside of case and document details 
+- Access roles can be used to provide different groups of users with specific set of tabs to tailor different functionality to different groups/departments  
+	
+**Search Layout**
+
+You will find on every search page: 
+
+- Search panel, where you enter search criteria 
+- Content List, where you view your search results 
+- Actions to work with documents from content list 
+
+	![Actions](.\images\unity-ui-2-updated.png) 
+	
+Columns in Content List are configurable 
+	
+	![Columns](.\images\unity-ui-3-updated.png)
+
 	
 ## Contents
 
