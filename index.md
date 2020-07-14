@@ -37,6 +37,7 @@ Once downloaded, the local Unity instance will be up & running.
 	> Password: `password`
 	
 Wizard should guide you through establishing connection to FileNet, use the [endpoint](http://172.31.27.3:9080/wsi/FNCEWS40MTOM/) to connect to Filenet. 
+Welcome to Unity! 
 	
 ### Unity interface ### 
 
