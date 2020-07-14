@@ -1,1 +1,8 @@
 theme: jekyll-theme-cayman
+plugins:
+- jekyll-github-metadata
+- jekyll-mentions
+- jekyll-redirect-from
+- jekyll-sitemap
+- jemoji
+repository: ikozyr/devops.intellectivelab.com
