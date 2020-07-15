@@ -60,11 +60,24 @@ You will find on every search page:
 - Content List, where you view your search results 
 - Actions to work with documents from content list 
 
-![Actions](.\images\unity-ui-2-updated.png) 
-	
-Columns in Content List are configurable 
+![Actions](.\images\unity-ui-2-updated-2.png) 
 
-![Columns](.\images\unity-ui-3-updated.png) 
+**Case Management - Case View** 
+
+![Case Views](.\images\unity-ui-7-updated.png)
+
+- Case details allows user to perform actions on case
+- Documents tab in case details shows all documents associated w/ case
+- History/Comments tab will display history & comments associated w/ case 
+
+**Case Management - Task View** 
+
+![Case Views](.\images\unity-ui-8-updated.png) 
+
+- Task details allows user to perform actions defined in a workflow task
+- Documents tab shows all documents associated with a task
+- History/Comments tab will display history & comments associated with a task 
+
 
 	
 ## Contents
