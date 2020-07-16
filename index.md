@@ -5,7 +5,7 @@ Unity is an integration framework that provides out of the box or low-code acces
 
 Unity solution connects your business application users with multiple repositories, workflows, and content systems
 
-	![unity-scheme](.\images\unity-scheme.png) 
+![unity-scheme](.\images\unity-scheme.png) 
 
 ## Quick Start
 
