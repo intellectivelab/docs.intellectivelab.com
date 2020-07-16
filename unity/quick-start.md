@@ -60,11 +60,11 @@ You will find on every search page:
 - Content List, where you view your search results 
 - Actions to work with documents from content list 
 
-![Actions](.\images\unity-ui-2-updated-2.png) 
+![Actions](.\images\quick-start\unity-ui-2-updated-2.png) 
 
 **Case Management - Case View** 
 
-![Case Views](.\images\unity-ui-7-updated.png)
+![Case Views](.\images\quick-start\unity-ui-7-updated.png)
 
 - Case details allows user to perform actions on case
 - Documents tab in case details shows all documents associated w/ case
@@ -72,7 +72,7 @@ You will find on every search page:
 
 **Case Management - Task View** 
 
-![Case Views](.\images\unity-ui-8-updated.png) 
+![Case Views](.\images\quick-start\unity-ui-8-updated.png) 
 
 - Task details allows user to perform actions defined in a workflow task
 - Documents tab shows all documents associated with a task
