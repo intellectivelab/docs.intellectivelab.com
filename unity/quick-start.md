@@ -1,7 +1,7 @@
 # DevOps Documentation Site
 
 ## Quick Start
-To try Unity demo version [install Docker](./unity/how-to-install-docker.md) and configure Unity Docker image. 
+To try Unity demo version [install Docker](./how-to-install-docker.md) and configure Unity Docker image. 
 ### Configure Unity Docker Image
 
 **Configuration**
