@@ -1,15 +1,15 @@
 # DevOps Documentation Site
 
+## Quick Start
+
+[Quick Start](./unity/quick-start.md) 
+
 ## Unity Overview 
 Unity is an integration framework that provides out of the box or low-code access to multiple repositories. It works on prem or in the cloud to connect applications to one or more ECM, BPM, and data repositories. It is a fast path to integration, supporting digital transformation, application modernization, and ECM/BPM migration. 
 
 Unity solution connects your business application users with multiple repositories, workflows, and content systems. 
 
 ![unity-scheme](.\images\unity-scheme.png) 
-
-## Quick Start
-
-[Quick Start](./unity/quick-start.md) 
 	
 ## Other 
 
