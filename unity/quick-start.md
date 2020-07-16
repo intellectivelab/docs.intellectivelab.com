@@ -50,7 +50,7 @@ Tabs are the main building block of Unity user interface.
 	
 Access roles can be used to provide different groups of users with specific set of tabs to tailor different functionality to different groups/departments. 
 
-![Search layout](.\images\unity-ui-1-updated.png) 
+![Search layout](.\images\quick-start\unity-ui-1-updated.png) 
 
 **Search Layout**
 
@@ -77,20 +77,6 @@ You will find on every search page:
 - Task details allows user to perform actions defined in a workflow task
 - Documents tab shows all documents associated with a task
 - History/Comments tab will display history & comments associated with a task 
-
-
-	
-## Contents
-
-**Containers**
-
-[Unity on Docker](./unity/unity-on-docker.md): the step-by-step guide how to run Unity 7 in Docker environment.
-
-[Unity on Kubernetes](./unity/unity-on-kubernetes.md): a comprehensive guide how to run Unity 7 on Kubernetes using Istio service mesh.
-
-**Environment Management**
-
-[Overview](./envmgmt/overview.md): GitOps approach implemented using Terraform, Helm, AWS EC2
 
 ## Contacts
 
