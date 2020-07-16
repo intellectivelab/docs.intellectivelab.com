@@ -17,7 +17,7 @@ To try Unity demo version [install Docker](./how-to-install-docker.md) and confi
 
 	You should get the message `Login Succeeded` 
 
-	![unity-cmd](.\images\unity-installation-1.png) 
+	![unity-cmd](.\images\quick-start\unity-installation-1.png) 
 	
 - Run `docker run -it -v c:/DockerUnity:/opt/vu  -p 9080:9080  --rm docker.devops.intellectivelab.com/unity-classic/unity-7:7.6.1-ol`, here `c:/DockerUnity` is a folder you copied Unity files 
 
