@@ -14,6 +14,7 @@ The **minimum** requirements are listed below. It is generally recommended to in
 | Disk Space |   250MB (per instance)  |
 |   Memory   | Minimum JVM Memory: 1GB | 
 
+
 - The UIE Discovery Services component requires JRE7+ and runs as a standalone Java application 
 - Enterprise Index on Solr6 or Solr7 or Solr8 requires JRE8 at a minimum 
 - Enterprise Index on Solr5 runs on JRE7 only 
@@ -28,12 +29,11 @@ In addition, keep the following in mind:
 - Each configured discovery agent (crawler) should run on a separate node for optimal performance 
 - It is recommended to have a dedicated CPU or server for each crawler 
 
-For more info see all hardware and software requirements related to [Solr](https://lucene.apache.org/solr/guide/8_5/solr-system-requirements.html) and [Lucene](https://lucene.apache.org/core/systemreqs.html). 
+For more info see hardware and software requirements related to [Solr](https://lucene.apache.org/solr/guide/8_5/solr-system-requirements.html) and [Lucene](https://lucene.apache.org/core/systemreqs.html). 
 
 ## Obtain Index and UIE Installations 
 
 Download [Solr](https://lucene.apache.org/solr/downloads.html) and [Lucene](https://lucene.apache.org/core/downloads.html) installation packages. 
-
 Download UIE latest release located on Intellective FTP under `/products/uie/releases` folder. 
 
 ![uie-folder](.\images\image1.png) 
@@ -41,7 +41,6 @@ Download UIE latest release located on Intellective FTP under `/products/uie/rel
 ## Install Prerequisite Software 
 
 Download [Java](https://www.java.com/en/download/). 
-
 Java 8 required for all crawlers except Lucene crawler which can function with Java 7 
 
 |  Crawler  | Java 7 | Java 8 |
