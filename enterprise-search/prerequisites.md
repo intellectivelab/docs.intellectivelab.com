@@ -7,12 +7,12 @@
 
 The Unity Intelligence Engine (UIE) Enterprise Index needs expandable storage devices that will meet both the immediate estimated size of the index as well as space for future growth.
 
-The *minimum* requirements are listed below. It is generally recommended to include a minimum of 25% growth capacity.
+The **minimum** requirements are listed below. It is generally recommended to include a minimum of 25% growth capacity.
 
 |  Hardware  |       UIE Searcher      |
 |:----------:|:-----------------------:|
 | Disk Space |   250MB (per instance)  |
-|   Memory   | Minimum JVM Memory: 1GB |
+|   Memory   | Minimum JVM Memory: 1GB | 
 
 - The UIE Discovery Services component requires JRE7+ and runs as a standalone Java application 
 - Enterprise Index on Solr6 or Solr7 or Solr8 requires JRE8 at a minimum 
@@ -28,19 +28,21 @@ In addition, keep the following in mind:
 - Each configured discovery agent (crawler) should run on a separate node for optimal performance 
 - It is recommended to have a dedicated CPU or server for each crawler 
 
-For more info see all hardware and software requirements related to [Solr](https://lucene.apache.org/solr/guide/8_5/solr-system-requirements.html) and [Lucene](https://lucene.apache.org/core/systemreqs.html) 
+For more info see all hardware and software requirements related to [Solr](https://lucene.apache.org/solr/guide/8_5/solr-system-requirements.html) and [Lucene](https://lucene.apache.org/core/systemreqs.html). 
 
 ## Obtain Index and UIE Installations 
 
 Download [Solr](https://lucene.apache.org/solr/downloads.html) and [Lucene](https://lucene.apache.org/core/downloads.html) installation packages. 
+
 Download UIE latest release located on Intellective FTP under `/products/uie/releases` folder. 
+
 ![uie-folder](.\images\image1.png) 
 
 ## Install Prerequisite Software 
 
-Download [Java](https://www.java.com/en/download/) 
+Download [Java](https://www.java.com/en/download/). 
 
-- Java 8 required for all crawlers except Lucene crawler which can function with Java 7 
+Java 8 required for all crawlers except Lucene crawler which can function with Java 7 
 
 |  Crawler  | Java 7 | Java 8 |
 |:---------:|:------:|:------:|
@@ -53,7 +55,8 @@ Download [Java](https://www.java.com/en/download/)
 |   Kafka   |        |    +   |
 | Cassandra |        |    +   | 
 
-- Java 8 required for all searchers except Lucene and Solr5 
+
+Java 8 required for all searchers except Lucene and Solr5 
 
 |  Searcher | Java 7 | Java 8 |
 |:---------:|:------:|:------:|
