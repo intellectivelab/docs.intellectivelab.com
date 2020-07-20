@@ -67,8 +67,16 @@ Java 8 required for all searchers except Lucene and Solr5:
 |   Solr8   |        |    +   |
 |   Lucene  |    +   |    +   | 
 
+[Java Cryptography Extension](https://www.oracle.com/java/technologies/javase-jce8-downloads.html) 
 
+- Determine JAVA_HOME path. If not already set, set new JAVA_HOME pointing to the Java version installed above
 
+![uie-folder](.\images\image2.png) 
 
+- Copy the `US_export_policy.jar` and `local_policy.jar` files into the directory: `<JAVA_HOME>/jre/lib/security` and overwrite existing files with same name, if any 
+
+![uie-folder](.\images\image3.png) 
+
+Web application servers used for UIE Searcher are supported on the following platforms: 
 
 
