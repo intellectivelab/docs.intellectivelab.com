@@ -12,7 +12,7 @@ The **minimum** requirements are listed below. It is generally recommended to in
 |  Hardware  |       UIE Searcher      |
 |:----------:|:-----------------------:|
 | Disk Space |   250MB (per instance)  |
-|   Memory   | Minimum JVM Memory: 1GB | 
+|   Memory   | Minimum JVM Memory: 1GB |  
 
 
 - The UIE Discovery Services component requires JRE7+ and runs as a standalone Java application 
@@ -34,6 +34,7 @@ For more info see hardware and software requirements related to [Solr](https://l
 ## Obtain Index and UIE Installations 
 
 Download [Solr](https://lucene.apache.org/solr/downloads.html) and [Lucene](https://lucene.apache.org/core/downloads.html) installation packages. 
+
 Download UIE latest release located on Intellective FTP under `/products/uie/releases` folder. 
 
 ![uie-folder](.\images\image1.png) 
@@ -41,6 +42,7 @@ Download UIE latest release located on Intellective FTP under `/products/uie/rel
 ## Install Prerequisite Software 
 
 Download [Java](https://www.java.com/en/download/). 
+
 Java 8 required for all crawlers except Lucene crawler which can function with Java 7 
 
 |  Crawler  | Java 7 | Java 8 |
