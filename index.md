@@ -11,6 +11,10 @@ Unity solution connects your business application users with multiple repositori
 
 ![unity-scheme](.\images\unity-scheme.png) 
 	
+## Enterprise Search 
+
+[Prerequisites](./enterprise-search/prerequisites.md) 
+
 ## Other 
 
 **Containers**
