@@ -67,7 +67,7 @@ Java 8 required for all searchers except Lucene and Solr5:
 |   Solr8   |        |    +   |
 |   Lucene  |    +   |    +   | 
 
-[Java Cryptography Extension](https://www.oracle.com/java/technologies/javase-jce8-downloads.html) 
+Download [Java Cryptography Extension](https://www.oracle.com/java/technologies/javase-jce8-downloads.html) 
 
 - Determine JAVA_HOME path. If not already set, set new JAVA_HOME pointing to the Java version installed above
 
