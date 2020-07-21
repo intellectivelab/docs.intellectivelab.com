@@ -1,3 +1,9 @@
+# Prerequisites 
+
+## Table of Contents 
+
+
+
 ## Review Prerequisites 
 
 - A supported content management server or database or metadata repository used by UIE Discovery Services to crawl data into the Enterprise Index 
@@ -103,14 +109,18 @@ The settings below are required to set up FileNet CE 5.2 crawler depending on th
 Database connection details:
 - Driver (depending on the CE database) – com.microsoft.sqlserver.jdbc.SQLServerDriver
 - Type – mssql, oracle or db2
-- Connection String – jdbc:sqlserver://<servername>:<port>;databaseName=<Objectstore Database Name>;
-- Schema – <schema name> e.g. dbo
+- Connection String 
+	```
+	jdbc:sqlserver://<servername>:<port>;databaseName=<Objectstore Database Name>;
+	```
+
+- Schema – \<schema name\> e.g. dbo
 - Username – by request
 - Password – by request 
 
 FileNet connection details: 
-- Jace Connection URI – (http://<servername>:<port>/wsi/FNCEWS40MTOM/)
-- ObjectStore name – <ObjectStore name> e.g. Target
+- Jace Connection URI – `http://\<servername\>:\<port\>/wsi/FNCEWS40MTOM/`  
+- ObjectStore name – \<ObjectStore name\> e.g. Target
 - Username – by request
 - Password – by request
 - JAAS Stanza – FileNetP8 
@@ -120,11 +130,11 @@ FileNet connection details:
 The settings below are required to set up CMIS Alfresco crawler depending on the environment it is installed. 
 
 CMIS connection details:
-- Connection URI – (http://<servername>:<port>/alfresco/cmisatom) 
-- Repository Id – <Repository Name or ID> e.g Main Repository
+- Connection URI – `http://\<servername\>:\<port\>/alfresco/cmisatom` 
+- Repository Id – \<Repository Name or ID\> e.g Main Repository
 - Username – by request
 - Password – by request
-- Binding Type – <Binding Type> e.g. ATOMPUB 
+- Binding Type – \<Binding Type\> e.g. ATOMPUB 
 
 ### Box crawler 
 
@@ -133,22 +143,22 @@ The settings below are required to set up Box crawler depending on the environme
 Box connection details:
 - Username – by request
 - RSA Key Pair JSON file - `C:\UIE\config\41278546_5hdxhtrl_config.json` (Refer to steps below to generate the RSA Key Pair JSON file)
-- Repository Name – <Repository Name> e.g. Box-1
-- Template Id – <Template Id> e.g. SF_Template
-- Document Class name – <Document Class Name> e.g. Contract_Ext 
+- Repository Name – \<Repository Name\> e.g. Box-1
+- Template Id – \<Template Id\> e.g. SF_Template
+- Document Class name – \<Document Class Name\> e.g. Contract_Ext 
 
 Steps to generate RSA Key Pair JSON: 
 - Sign in to [Box developer account](https://app.Box.com/signup/n/developer) or create a new one 
 - Go to Dev Console 
 
-![uie-folder](.\images\image4.png) 
+	![uie-folder](.\images\image4.png) 
 
 - Click Create New App
 - Select Custom App option and click Next
 - Select Authentication Method to be `OAuth 2.0 with JWT (Server Authentication)` and proceed
 - Name the application and click `Create App`
 - Click `View your App` to be redirected to application Configuration page
-- On the configuration page via *Dev Console > My Apps > custom application name > Configuration*
+- On the configuration page via `Dev Console > My Apps > custom application name > Configuration` 
 - Set the following parameters: 
 
 	- Authentication Method:  OAuth 2.0 with JWT (Server Authentication) 
@@ -183,24 +193,18 @@ The settings below are required to set up CMOD crawler depending on the environm
 
 CMOD connection details:
 - Server name – IP address or server name 
-- Folder Name – <Folder name> e.g. Customer Information
+- Folder Name – \<Folder name\> e.g. Customer Information
 - Username – by request
 - Password – by request
-- Port – <port> e.g. 1445 
+- Port – \<port\> e.g. 1445 
 
 This crawler requires CMOD client files to be installed prior to running the crawler. These can be [downloaded](https://www.ibm.com/support/fixcentral) from IBM website. 
 
-**Note: To avoid runtime errors, client should be of the same version as server and patched with the same version. For e.g., if CMOD version on server is 10.1.0.4, the client should also be of the same version** 
+**Note: To avoid runtime errors, client should be of the same version as server and patched with the same version. For e.g., if CMOD version on server is 10.1.0.4, the client should also be of the same version.** 
 
 - On Windows, add CMOD bin, www and www\api to the system PATH variable. For example: 
 
-	PATH=%PATH% 
-
-	C:\IBM\OnDemand\V10.1\bin 
-
-	C:\IBM\OnDemand\V10.1\www 
-
-	C:\IBM\OnDemand\V10.1\www\api 
+	`PATH=%PATH%;C:\IBM\OnDemand\V10.1\bin;C:\IBM\OnDemand\V10.1\www;C:\IBM\OnDemand\V10.1\www\api` 
 
 	![uie-folder](.\images\image10.png)
 
@@ -212,17 +216,17 @@ The settings below are required to set up CM8 crawler depending on the environme
 
 CM8 connection details:
 
-- Store name – <store name> e.g. icmnlsdb 
+- Store name – \<store name\> e.g. icmnlsdb 
 - Username – by request
 - Password – by request
-- Init File Path – <file path> e.g. C:\UIE\config\cmbicmsrvs.ini 
+- Init File Path – \<file path\> e.g. `C:\UIE\config\cmbicmsrvs.ini`  
 
 	cmbicmsrvs.ini file details
-	- ICMSERVER=<server> e.g. icmnlsdb
-	- ICMSERVERREPTYPE=<server type> e.g. DB2
-	- ICMSCHEMA=<schema> e.g. icmadmin
-	- ICMHOSTNAME=<IP address or server name>
-	- ICMPORT=<port> e.g. 50000
-	- ICMREMOTEDB=<remote DB> e.g. icmnlsdb
+	- ICMSERVER=\<server\> e.g. icmnlsdb
+	- ICMSERVERREPTYPE=\<server type\> e.g. DB2
+	- ICMSCHEMA=\<schema\> e.g. icmadmin
+	- ICMHOSTNAME=\<IP address or server name\>
+	- ICMPORT=\<port\> e.g. 50000
+	- ICMREMOTEDB=\<remote DB\> e.g. icmnlsdb
 
 **Note: To avoid runtime errors on Windows, hosts file may need to be updated with the CM8 server name and IP address** 
