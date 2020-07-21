@@ -1,15 +1,11 @@
-# Prerequisites 
+# UIE Installation Prerequisites 
 
-## Table of Contents 
+## Contents 
 
-[Review Prerequisites](./prerequisites.html#review-prerequisites)
-
-[Obtain Index and UIE Installations](./prerequisites.html#obtain-index-and-uie-installations)
-
-[Install Prerequisite Software](./prerequisites.html#install-prerequisite-software) 
-
-[UIE Crawler Checklist and Prerequisites](./prerequisites.html#uie-crawler-checklist-and-prerequisites) 
-
+[Review Prerequisites](./prerequisites.html#review-prerequisites)  
+[Obtain Index and UIE Installations](./prerequisites.html#obtain-index-and-uie-installations)  
+[Install Prerequisite Software](./prerequisites.html#install-prerequisite-software)  
+[UIE Crawler Checklist and Prerequisites](./prerequisites.html#uie-crawler-checklist-and-prerequisites)
 - [FileNet CE 5.2 crawler](./prerequisites.html#filenet-ce-52-crawler) 
 - [CMIS Alfresco crawler](./prerequisites.html#cmis-alfresco-crawler) 
 - [Box crawler](./prerequisites.html#box-crawler) 
