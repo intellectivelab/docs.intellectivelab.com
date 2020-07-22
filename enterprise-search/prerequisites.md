@@ -26,7 +26,7 @@ The **minimum** requirements are listed below. It is generally recommended to in
 |  Hardware  |       UIE Searcher      |
 |:----------:|:-----------------------:|
 | Disk Space |   250MB (per instance)  |
-|   Memory   | Minimum JVM Memory: 1GB |  
+|   Memory   | Minimum JVM Memory: 1GB |   
 
 - The UIE Discovery Services component requires JRE7+ and runs as a standalone Java application 
 - Enterprise Index on Solr6 or Solr7 or Solr8 requires JRE8 at a minimum 
@@ -127,7 +127,7 @@ Database connection details:
 - Password – by request 
 
 FileNet connection details: 
-- Jace Connection URI – `http://\<servername\>:\<port\>/wsi/FNCEWS40MTOM/`  
+- Jace Connection URI – `http://<servername>:<port>/wsi/FNCEWS40MTOM/`  
 - ObjectStore name – \<ObjectStore name\> e.g. Target
 - Username – by request
 - Password – by request
@@ -138,7 +138,7 @@ FileNet connection details:
 The settings below are required to set up CMIS Alfresco crawler depending on the environment it is installed. 
 
 CMIS connection details:
-- Connection URI – `http://\<servername\>:\<port\>/alfresco/cmisatom` 
+- Connection URI – `http://<servername>:<port>/alfresco/cmisatom` 
 - Repository Id – \<Repository Name or ID\> e.g Main Repository
 - Username – by request
 - Password – by request
@@ -237,4 +237,4 @@ CM8 connection details:
 	- ICMPORT=\<port\> e.g. 50000
 	- ICMREMOTEDB=\<remote DB\> e.g. icmnlsdb
 
-**Note: To avoid runtime errors on Windows, hosts file may need to be updated with the CM8 server name and IP address** 
+**Note: To avoid runtime errors on Windows, hosts file may need to be updated with the CM8 server name and IP address.** 
