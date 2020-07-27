@@ -1,0 +1,28 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+// Import partials from `sass_dir` (defaults to `_sass`
+@import "_bootstrap";
+@import "_bootstrap-reboot";
+@import "_bootstrap-grid";
+
+.navbar {
+  height: 4em;
+  font-size: 16px;
+  background-color: #ffffff;
+  box-shadow: 0em 0.15em 2em rgba(0, 0, 0, 0.15);
+  &-brand {
+    img {
+      width: 100%;
+      max-width: 150px;
+      height: auto;
+    }
+  }
+}
+
+.page-content {
+  margin-top: 100px;
+}
