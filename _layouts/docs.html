@@ -2,13 +2,13 @@
 layout: default
 ---
 
-<div class="container">
+<div class="container-fluid">
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-2">
           {% include docs_nav.html %}
         </div>
 
-        <div class="col-md-8">
+        <div class="col-md-10">
             <h1>{{ page.title }}</h1>
             <div id="markdown-content-container">{{ content }}</div>
             <div style="clear:both;">
@@ -22,6 +22,5 @@ layout: default
             <hr>
             {% include section_nav.html %}
         </div>
-
     </div>
 </div>
