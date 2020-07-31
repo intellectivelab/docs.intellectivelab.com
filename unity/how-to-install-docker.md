@@ -1,3 +1,8 @@
+---
+title: How To Install Docker
+layout: docs
+---
+
 ## How To Install Docker
 
 - Check if the Virtualization is enabled on your laptop 

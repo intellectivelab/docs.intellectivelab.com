@@ -1,70 +1,23 @@
-<!-- <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-  {% for section in site.data.docs %}
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-{{forloop.index}}" aria-expanded="false" aria-controls="collapse-{{forloop.index}}">
-            {{ section.title }}
-          </a>
-        </h4>
-      </div>
-      {% assign collapsed = true %}
-      {% for item in section.docs %}
-        {% assign item_url = item | prepend:"/docs/" | append:"/" %}
-        {% if item_url == page.url %}
-          {% assign collapsed = false %}
-        {% endif %}
-      {% endfor %}
-      <div class="panel-collapse{% if collapsed %} collapse{% endif %}" id="collapse-{{forloop.index}}" role="tabpanel" aria-label="Side Navigation">
-        <div class="list-group">
-          {% for item in section.docs %}
-            {% assign item_url = item | prepend:"/docs/" | append:"/" %}
-            {% assign p = site.docs | where:"url", item_url | first %}
-            <a class="list-group-item {% if item_url == page.url %}active{% endif %}" href="{{ p.url  | relative_url }}">{{ p.title }}</a>
+{% if site.data.sidebars.sidebar.entries[0] %}
+  {% for item in site.data.sidebars.sidebar.entries %}
+    <!-- <h3>{{ item.title }}</h3> -->
+    {% if item.folders[0] %}
+      <ul id="side-nav" class="nav flex-column">
+        {% for entry in item.folders %}
+          <li class="nav-item">
+            <a class="nav-link" href="#">{{ entry.title }}</a>
+            {% if entry.folderitems[0] %}
+              <ul id="sub-nav" class="list-group">
+                {% for subentry in entry.folderitems %}
+                    <li class="list-group-item">
+                      <a  href="{{subentry.url  | relative_url}}">{{subentry.title}}</a>
+                    </li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          </li>
           {% endfor %}
-        </div>
-      </div>
-    </div>
-  {% endfor %}
-</div> -->
-
-<div class="accordion" id="accordion">
-  {% for section in site.data.docs %}
-  <div class="card">
-    <div class="card-header" id="accordion-{{forloop.index}}">
-      <h2 class="mb-0">
-        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse-{{forloop.index}}" aria-expanded="true" aria-controls="collapse-{{forloop.index}}">
-          {{ section.title }}
-        </button>
-      </h2>
-    </div>
-  </div>
-  {% assign collapsed = true %}
-  {% for item in section.docs %}
-    {% assign item_url = item | prepend:"/docs/" | append:"/" %}
-    {% if item_url == page.url %}
-      {% assign collapsed = false %}
+      </ul>
     {% endif %}
   {% endfor %}
-  <div id="collapse-{{forloop.index}}" class="collapse" aria-labelledby="accordion-{{forloop.index}}" data-parent="#accordion">
-    <div class="card-body">
-      <ul lass="nav">
-        <li>
-          <a href="#" class="">Menu</a>
-          <ul>
-            <li><a href="#" class="">Menu</a></li>
-          </ul>
-        </li>
-      </ul>
-      
-      <!-- <div class="list-group ">
-        {% for item in section.docs %}
-          {% assign item_url = item | prepend:"/docs/" | append:"/" %}
-          {% assign p = site.docs | where:"url", item_url | first %}
-          <a class="list-group-item list-group-item-action {% if item_url == page.url %}active{% endif %}" href="{{ p.url  | relative_url }}">{{ p.title }}</a>
-        {% endfor %}
-      </div> -->
-    </div>
-  </div>
-  {% endfor %}
-</div>
+{% endif %}

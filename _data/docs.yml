@@ -6,9 +6,7 @@
 
 - title: Unity API
   docs:
-  - cheatsheet
-  - font-awesome
-  - bootstrap
+  - prerequisites
 
 - title: Unity Office Plugin
   docs:

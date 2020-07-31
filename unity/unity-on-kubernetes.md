@@ -1,3 +1,7 @@
+---
+title: Unity on Kubernetes
+layout: docs
+---
 # Deploying on Kubernetes cluster
 ## Introduction
 The following deployment architecture relies on Unity docker image described above, standard Kubernetes capabilities

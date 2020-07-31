@@ -4,7 +4,7 @@
 
 @charset "utf-8";
 
-// Import partials from `sass_dir` (defaults to `_sass`
+// Import partials from `sass_dir` (defaults to `_sass`)
 @import "_bootstrap";
 @import "_bootstrap-reboot";
 @import "_bootstrap-grid";
@@ -13,8 +13,12 @@
   height: 4em;
   font-size: 16px;
   background-color: #ffffff;
-  box-shadow: 0em 0.15em 2em rgba(0, 0, 0, 0.15);
+  // box-shadow: 0em 0.15em 2em rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid #e3e8ee;
   &-brand {
+    flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%;
+    margin-right: 0;
     img {
       width: 100%;
       max-width: 150px;
@@ -23,6 +27,65 @@
   }
 }
 
+#side-nav {
+  li.open > a > span:after {
+    content: "\25b4";
+  }
+
+  li > a > {
+    span {
+      float: right;
+      font-size: 19px;
+      font-weight: bolder;
+
+      &:after {
+        content: "\25be";
+      }
+    }
+  }
+
+  .nav-item {
+    &.open {
+      .nav-link {
+        font-weight: bold;
+      }
+    }
+    .nav-link {
+      font-weight: 500;
+      font-size: 15px;
+      color: rgb(74, 74, 74);
+    }
+  }
+  #sub-nav {
+    .list-group-item {
+      border: none;
+      font-size: 13px;
+      padding: 0.25rem 0rem 0.25rem 1.75rem;
+      > a {
+        color: rgb(74, 74, 74);
+        text-decoration: none;
+        &:hover {
+          color: #df0027;
+          display: block;
+        }
+      }
+    }
+  }
+}
+
 .page-content {
-  margin-top: 100px;
+  margin-top: 64px;
+
+  .port {
+    border-right: 1px solid #e3e8ee;
+    padding: 10px;
+  }
+  .starboard {
+    padding: 32px 48px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

@@ -1,0 +1,102 @@
+entries:
+  - title: Unity Sidebar
+    product: Jekyll Doc Theme
+    version: 1.0
+    folders:
+      - title: Unity 7
+        output: web, pdf
+        folderitems:
+          - title: Quick Start
+            url: /unity/quick-start.html
+            output: web, pdf
+            type: homepage
+
+          - title: How to install docker
+            url: /unity/how-to-install-docker.html
+            output: web, pdf
+
+          - title: Unity on docker
+            url: /unity/unity-on-docker.html
+            output: web, pdf
+
+          - title: Unity on kubernetes
+            url: /unity/unity-on-kubernetes.html
+            output: web, pdf
+
+      - title: Unity API
+        output: web, pdf
+        folderitems:
+          - title: 6.0 Release notes
+            url: /unity/how-to-install-docker.html
+            output: web, pdf
+
+          - title: 5.0 Release notes
+            url: /mydoc_release_notes_50.html
+            output: web, pdf
+
+      - title: Unity Office Plugin
+        output: web
+        folderitems:
+          - title: Tag archives overview
+            url: /mydoc_tag_archives_overview.html
+            output: web
+
+            subfolders:
+              - title: Tag archive pages
+                output: web
+                subfolderitems:
+                  - title: Formatting pages
+                    url: /tag_formatting.html
+                    output: web
+
+                  - title: Navigation pages
+                    url: /tag_navigation.html
+                    output: web
+
+                  - title: Content types pages
+                    url: /tag_content_types.html
+                    output: web
+
+      - title: Unity for Dynamics
+        output: web, pdf
+        folderitems:
+          - title: 6.0 Release notes
+            url: /mydoc_release_notes_60.html
+            output: web, pdf
+
+          - title: 5.0 Release notes
+            url: /mydoc_release_notes_50.html
+            output: web, pdf
+
+      - title: Unity for Salesforce
+        output: web, pdf
+        folderitems:
+          - title: 6.0 Release notes
+            url: /mydoc_release_notes_60.html
+            output: web, pdf
+
+          - title: 5.0 Release notes
+            url: /mydoc_release_notes_50.html
+            output: web, pdf
+
+      - title: Unity IQ (React)
+        output: web, pdf
+        folderitems:
+          - title: 6.0 Release notes
+            url: /mydoc_release_notes_60.html
+            output: web, pdf
+
+          - title: 5.0 Release notes
+            url: /mydoc_release_notes_50.html
+            output: web, pdf
+
+      - title: Professional Services Guides
+        output: web, pdf
+        folderitems:
+          - title: 6.0 Release notes
+            url: /mydoc_release_notes_60.html
+            output: web, pdf
+
+          - title: 5.0 Release notes
+            url: /mydoc_release_notes_50.html
+            output: web, pdf

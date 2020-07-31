@@ -1,3 +1,8 @@
+---
+title: DevOps Documentation Site
+layout: docs
+---
+
 # DevOps Documentation Site
 
 ## Quick Start

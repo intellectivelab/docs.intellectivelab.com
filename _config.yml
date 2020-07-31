@@ -7,19 +7,19 @@
 # - jemoji
 # repository: ikozyr/devops.intellectivelab.com
 
-title: Intellective Knowledge base
-description: Unity Knowledge base documentation
+title: DOCS
+description: Intellective Unity Documentation.
 lang: en-US
 
-baseurl: "/home"
+baseurl: "/"
 repository: ikozyr/devops.intellectivelab.com
 
 plugins:
-- jekyll-github-metadata
-- jekyll-mentions
-- jekyll-redirect-from
-- jekyll-sitemap
-- jemoji
+  - jekyll-github-metadata
+  - jekyll-mentions
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jemoji
 
 exclude:
   - Gemfile
@@ -29,21 +29,21 @@ exclude:
   - README.md
 
 defaults:
-- scope:
-    path: _posts
-    type: posts
-  values:
-    layout: post
-    sectionid: blog
+  - scope:
+      path: _posts
+      type: posts
+    values:
+      layout: post
+      sectionid: blog
 
-- scope:
-    path: _docs
-    type: docs
-  values:
-    layout: docs
-    sectionid: docs
-    seo:
-      type: "WebPage"
+  - scope:
+      path: _docs
+      type: docs
+    values:
+      layout: docs
+      sectionid: docs
+      seo:
+        type: "WebPage"
 
 collections:
   docs:
@@ -53,7 +53,5 @@ collections:
     permalink: /blog/:year/:month/:day/:title/
     output: true
 sass:
-    sass_dir: _sass
-    style: compressed
-
-  
+  sass_dir: _sass
+  style: compressed

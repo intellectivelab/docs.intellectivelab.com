@@ -1,3 +1,8 @@
+---
+title: Unity on Docker
+layout: docs
+---
+
 # Prerequisites
 ## Unity configuration
 Prepare Unity solution configuration files you want to use for the application. It should be added to the image using one of the 
