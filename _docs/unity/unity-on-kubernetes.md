@@ -10,7 +10,7 @@ and Istio service mesh (specifically, on its traffic management features).
 
 Here's the general architecture:
 
-![Unity on Kubernetes](unity_k8s.png)
+![Unity on Kubernetes](../unity_k8s.png)
 
 Blue boxes are native Kubernetes entities - deployment, pods, service. Light-blue boxes are Istio's - gateway, virtual service and destination rule.
 They allow implementing traffic routing with session affinity (sticky sessions) feature which is crucial for Unity 7 functioning and scaling.

@@ -55,7 +55,7 @@ Download [Solr](https://lucene.apache.org/solr/downloads.html) and [Lucene](http
 
 Download UIE latest release located on Intellective FTP under `/products/uie/releases` folder. 
 
-![uie-folder](.\images\image1.png) 
+![uie-folder](..\images\image1.png) 
 
 ## Install Prerequisite Software 
 
@@ -90,11 +90,11 @@ Download [Java Cryptography Extension](https://www.oracle.com/java/technologies/
 
 - Determine JAVA_HOME path. If not already set, set new JAVA_HOME pointing to the Java version installed above
 
-![uie-folder](.\images\image2.png) 
+![uie-folder](..\images\image2.png) 
 
 - Copy the `US_export_policy.jar` and `local_policy.jar` files into the directory: `<JAVA_HOME>/jre/lib/security` and overwrite existing files with same name, if any 
 
-![uie-folder](.\images\image3.png) 
+![uie-folder](..\images\image3.png) 
 
 Web application servers used for UIE Searcher are supported on the following platforms: 
 
@@ -164,7 +164,7 @@ Steps to generate RSA Key Pair JSON:
 - Sign in to [Box developer account](https://app.Box.com/signup/n/developer) or create a new one 
 - Go to Dev Console 
 
-	![uie-folder](.\images\image4.png) 
+	![uie-folder](..\images\image4.png) 
 
 - Click Create New App
 - Select Custom App option and click Next
@@ -176,8 +176,8 @@ Steps to generate RSA Key Pair JSON:
 
 	- Authentication Method:  OAuth 2.0 with JWT (Server Authentication) 
 	- Application Access: Enterprise 
-	- Application scopes: ![uie-folder](.\images\image5.png) 
-	- Advanced Features: ![uie-folder](.\images\image6.png) 
+	- Application scopes: ![uie-folder](..\images\image5.png) 
+	- Advanced Features: ![uie-folder](..\images\image6.png) 
 	
 - Save the changes
 - Scroll to `Add and Manage Public Keys` section
@@ -186,16 +186,16 @@ Steps to generate RSA Key Pair JSON:
 - Locate section `OAuth 2.0 Credentials`
 - Copy `Client ID` value 
 	
-	![uie-folder](.\images\image7.png) 
+	![uie-folder](..\images\image7.png) 
 
 - In your Box account, Go to `Admin Console > Apps > Custom Apps` (https://app.box.com/master) 
 
-	![uie-folder](.\images\image8.png)
+	![uie-folder](..\images\image8.png)
 
 - Click Authorize New App
 - Enter the copied Client ID on the App Authorization dialog
 
-	![uie-folder](.\images\image9.png) 
+	![uie-folder](..\images\image9.png) 
 	
 - Click Next
 - Click Authorize 
@@ -219,7 +219,7 @@ This crawler requires CMOD client files to be installed prior to running the cra
 
 	`PATH=%PATH%;C:\IBM\OnDemand\V10.1\bin;C:\IBM\OnDemand\V10.1\www;C:\IBM\OnDemand\V10.1\www\api` 
 
-	![uie-folder](.\images\image10.png)
+	![uie-folder](..\images\image10.png)
 
 - Restart user session or entire server to apply new value of the system PATH variable. 
 
