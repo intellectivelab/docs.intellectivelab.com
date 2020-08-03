@@ -1,63 +1,76 @@
 $(function () {
 
-  // function initSearchBox() {
-  //   var pages = new Bloodhound({
-  //     datumTokenizer: Bloodhound.tokenizers.obj.whitespace('title'),
-  //     // datumTokenizer: Bloodhound.tokenizers.whitespace,
-  //     queryTokenizer: Bloodhound.tokenizers.whitespace,
+    // function initSearchBox() {
+    //   var pages = new Bloodhound({
+    //     datumTokenizer: Bloodhound.tokenizers.obj.whitespace('title'),
+    //     // datumTokenizer: Bloodhound.tokenizers.whitespace,
+    //     queryTokenizer: Bloodhound.tokenizers.whitespace,
 
-  //     prefetch: baseurl + '/search.json'
-  //   });
+    //     prefetch: baseurl + '/search.json'
+    //   });
 
-  //   $('#search-box').typeahead({
-  //     minLength: 0,
-  //     highlight: true
-  //   }, {
-  //     name: 'pages',
-  //     display: 'title',
-  //     source: pages
-  //   });
+    //   $('#search-box').typeahead({
+    //     minLength: 0,
+    //     highlight: true
+    //   }, {
+    //     name: 'pages',
+    //     display: 'title',
+    //     source: pages
+    //   });
 
-  //   $('#search-box').bind('typeahead:select', function (ev, suggestion) {
-  //     window.location.href = suggestion.url;
-  //   });
-  // }
+    //   $('#search-box').bind('typeahead:select', function (ev, suggestion) {
+    //     window.location.href = suggestion.url;
+    //   });
+    // }
 
-  // function styleContentToMD() {
-  //   $('#markdown-content-container table').addClass('table');
-  //   $('#markdown-content-container img').addClass('img-responsive');
-  // }
+    // function styleContentToMD() {
+    //   $('#markdown-content-container table').addClass('table');
+    //   $('#markdown-content-container img').addClass('img-responsive');
+    // }
 
-  // initSearchBox();
-  // styleContentToMD();
+    // initSearchBox();
+    // styleContentToMD();
 
-  $("#side-nav").navgoco({
-    caretHtml: '',
-    accordion: true,
-    openClass: 'open',
-    save: true,
-    cookie: {
-        name: 'navgoco',
-        expires: false,
-        path: '/'
-    },
-    slide: {
-        duration: 400,
-        easing: 'swing'
-    },
-    // Add Active class to clicked menu item
-    onClickAfter: 'active',
-});
+    $("#side-nav").navgoco({
+        caretHtml: '',
+        accordion: true,
+        openClass: 'open',
+        save: true,
+        cookie: {
+            name: 'navgoco',
+            expires: false,
+            path: '/'
+        },
+        slide: {
+            duration: 400,
+            easing: 'swing'
+        },
+        // Add Active class to clicked menu item
+        onClickAfter: 'active',
+    });
 
-$("#collapseAll").click(function(e) {
-    e.preventDefault();
-    $("#side-nav").navgoco('toggle', false);
-});
+    $("#collapseAll").click(function (e) {
+        e.preventDefault();
+        $("#side-nav").navgoco('toggle', false);
+    });
 
-$("#expandAll").click(function(e) {
-    e.preventDefault();
-    $("#side-nav").navgoco('toggle', true);
-});
+    $("#expandAll").click(function (e) {
+        e.preventDefault();
+        $("#side-nav").navgoco('toggle', true);
+    });
+
+    // TOC NAVIGATIONS
+
+    $('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+    
+    /* this offset helps account for the space taken up by the floating toolbar. */
+    $('#toc').on('click', 'a', function() {
+      var target = $(this.getAttribute('href'))
+        , scroll_target = target.offset().top
+    
+      $(window).scrollTop(scroll_target - 10);
+      return false
+    })
 
 });
 
