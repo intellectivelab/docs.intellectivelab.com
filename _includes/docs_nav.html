@@ -1,6 +1,5 @@
-{% if site.data.sidebars.sidebar.entries[0] %}
+<!-- {% if site.data.sidebars.sidebar.entries[0] %}
   {% for item in site.data.sidebars.sidebar.entries %}
-    <!-- <h3>{{ item.title }}</h3> -->
     {% if item.folders[0] %}
       <ul id="side-nav" class="nav flex-column">
         {% for entry in item.folders %}
@@ -20,4 +19,22 @@
       </ul>
     {% endif %}
   {% endfor %}
-{% endif %}
+{% endif %} -->
+
+
+  <ul id="side-nav" class="nav flex-column">
+    {% assign mydocs = site.docs | group_by: 'category' %}
+    {% for cat in mydocs %}
+    <li class="nav-item">
+      <a class="nav-link" href="#">{{ cat.name  | capitalize}}</a>
+      <ul id="sub-nav" class="list-group">
+      {% assign items = cat.items | sort: 'order' %}
+      {% for item in items %}
+        <li class="list-group-item">
+          <a href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+      </ul>
+    </li>
+    {% endfor %}
+  </ul>

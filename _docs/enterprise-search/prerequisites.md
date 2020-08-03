@@ -1,3 +1,8 @@
+---
+title: Prerequisites
+layout: docs
+category: Enterprise Search
+---
 # UIE Installation Prerequisites 
 
 ## Contents 

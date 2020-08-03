@@ -1,6 +1,7 @@
 ---
 title: Unity on Docker
 layout: docs
+category: Unity
 ---
 
 # Prerequisites

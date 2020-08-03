@@ -1,6 +1,7 @@
 ---
 title: Unity on Kubernetes
 layout: docs
+category: Unity
 ---
 # Deploying on Kubernetes cluster
 ## Introduction
