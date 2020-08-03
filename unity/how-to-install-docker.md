@@ -1,6 +1,7 @@
 ---
 title: How To Install Docker
 layout: docs
+keywords: docker, windows, install
 ---
 
 ## How To Install Docker

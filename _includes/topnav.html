@@ -54,17 +54,17 @@
         <li {% if page.sectionid=='docs' %} class="active nav-item" {% endif %}><a class="nav-link" href="{{ "/docs/home/" | relative_url }}">Unity Docs</a></li>
         <li {% if page.sectionid=='blog' %} class="active nav-item" {% endif %}><a class="nav-link" href="{{ site.posts.first.url | relative_url }}">API</a></li>
       </ul> -->
-        <form class="form-inline my-2 my-lg-0">
-            <input
-              class="form-control mr-sm-2"
-              type="search"
-              placeholder="Search documentation "
-              aria-label="Search documentation"
-            />
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-              Search
-            </button>
-          </form>
+      <form class="form-inline my-2 my-lg-0">
+        <input
+          class="form-control mr-sm-2"
+          type="search"
+          placeholder="Search documentation "
+          aria-label="Search documentation"
+        />
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+          Search
+        </button>
+      </form>
     </div>
   </div>
 </nav>

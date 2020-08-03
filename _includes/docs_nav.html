@@ -9,7 +9,7 @@
             {% if entry.folderitems[0] %}
               <ul id="sub-nav" class="list-group">
                 {% for subentry in entry.folderitems %}
-                    <li class="list-group-item">
+                    <li class="list-group-item {% if subentry.url == page.url %}active{% endif %}">
                       <a  href="{{subentry.url  | relative_url}}">{{subentry.title}}</a>
                     </li>
                 {% endfor %}

@@ -9,6 +9,14 @@
 @import "_bootstrap-reboot";
 @import "_bootstrap-grid";
 
+// @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+// $Montserrat: 'Montserrat', sans-serif;
+
+// body {
+//   font-family: $Montserrat !important;
+// }
+
 .navbar {
   height: 4em;
   font-size: 16px;
@@ -64,10 +72,15 @@
       > a {
         color: rgb(74, 74, 74);
         text-decoration: none;
+        display: block;
         &:hover {
           color: #df0027;
           display: block;
         }
+      }
+      &.active {
+        background-color: #eee;
+        border-color: #eee;
       }
     }
   }
@@ -88,4 +101,54 @@
 img {
   max-width: 100%;
   height: auto;
+}
+
+// h1 {
+//   // font-size: 2em;
+//   margin: 0.67em 0;
+//   + p {
+//     padding-top: 12px !important;
+//     font-size: 22px;
+//     line-height: 28px;
+//   }
+// }
+
+form > input[type="search"] {
+  min-width: 600px;
+  border: 1px solid #e3e8ee;
+}
+
+div#toc ul li {
+  margin: 8px 0px 8px 22px;
+  font-size: 90%;
+  list-style: square;
+}
+div#toc ul {
+  background-color: whitesmoke;
+  padding: 5px;
+  border-radius: 5px;
+  max-width: 300px;
+  color: gray;
+}
+
+div#toc ul li ul {
+  padding-left:8px;
+
+}
+
+div#toc ul li ul li::before {
+  content: "–  ";
+}
+
+div#toc >ul::before {
+  content: "Table of Contents";
+  font-weight: 500;
+  color: #555;
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+  width:70px;
+  padding-top:20px;
+  padding-bottom:20px;
+  padding-left:10px;
 }
