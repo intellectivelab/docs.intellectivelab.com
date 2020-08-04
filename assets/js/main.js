@@ -31,6 +31,16 @@ $(function () {
     // initSearchBox();
     // styleContentToMD();
 
+    // active_menu_cb = function (e, submenu) {
+    //     // e.preventDefault();
+     
+    // };
+
+    let active_menu_cb = () => {
+        console.log(this)
+    }
+
+
     $("#side-nav").navgoco({
         caretHtml: '',
         accordion: true,
@@ -46,7 +56,7 @@ $(function () {
             easing: 'swing'
         },
         // Add Active class to clicked menu item
-        onClickAfter: 'active',
+        // onClickAfter: active_menu_cb,
     });
 
     $("#collapseAll").click(function (e) {
@@ -62,14 +72,14 @@ $(function () {
     // TOC NAVIGATIONS
 
     $('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
-    
+
     /* this offset helps account for the space taken up by the floating toolbar. */
-    $('#toc').on('click', 'a', function() {
-      var target = $(this.getAttribute('href'))
-        , scroll_target = target.offset().top
-    
-      $(window).scrollTop(scroll_target - 10);
-      return false
+    $('#toc').on('click', 'a', function () {
+        var target = $(this.getAttribute('href'))
+            , scroll_target = target.offset().top
+
+        $(window).scrollTop(scroll_target - 10);
+        return false
     })
 
 });
