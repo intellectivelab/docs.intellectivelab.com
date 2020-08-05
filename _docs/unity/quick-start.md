@@ -1,5 +1,5 @@
 ---
-title: DevOps Documentation Site
+title: Quick Start
 layout: docs
 category: Unity 7
 ---
