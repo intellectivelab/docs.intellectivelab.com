@@ -6,97 +6,124 @@ entries:
       - title: Unity 7
         output: web, pdf
         folderitems:
-          - title: Quick Start
-            url: /unity/quick-start.html
+          - title: Overview
+            url: /docs/unity/overview/
             output: web, pdf
             type: homepage
 
-          - title: How to install docker
-            url: /unity/how-to-install-docker.html
+          - title: Quick Start
+            url: /docs/unity/quick-start/
             output: web, pdf
 
-          - title: Unity on docker
-            url: /unity/unity-on-docker.html
+          - title: Installation
             output: web, pdf
+            subfolders:
+              - title: Software Requirements
+                output: web
+                url: /docs/unity/installation/software-requirements/
 
-          - title: Unity on kubernetes
-            url: /unity/unity-on-kubernetes.html
+              - title: Hardware Requirements
+                output: web
+                url: /docs/unity/installation/hardware-requirements/
+
+          - title: Configuration
             output: web, pdf
+            subfolders:
+              - title: Look & Feel
+                output: web
+                url: /docs/unity/configuration/look-feel/
 
-      - title: Unity API
+              - title: Features
+                output: web
+                url: /docs/unity/configuration/features/
+
+              - title: Security
+                output: web
+                url: /docs/unity/configuration/Security/
+
+              - title: Connectors
+                output: web
+                url: /docs/docs/unity/configuration/connectors/
+
+              - title: Business Analytics
+                output: web
+                url: /docs/unity/configuration/business-analytics/
+
+              - title: Business Rules
+                output: web
+                url: /docs/unity/configuration/business-rules/
+
+              - title: Office Integration
+                output: web
+                url: /docs/unity/configuration/office-integration/
+
+          - title: Development
+            output: web, pdf
+            subfolders:
+              - title: Environment Setup
+                output: web
+                url: /docs/unity/development/environment-setup/
+
+              - title: Customization
+                output: web
+                url: /docs/unity/development/customization/
+
+              - title: API
+                output: web
+                url: /docs/unity/development/api/
+
+          - title: Tutorials
+            output: web
+            url: /docs/unity/tutorials/
+
+      - title: Unity for CRM
         output: web, pdf
         folderitems:
-          - title: 6.0 Release notes
-            url: /unity/how-to-install-docker.html
+          - title: Unity for Salesforce
+            url: /docs/unity-for-crm/unity-for-salesforce/
             output: web, pdf
 
-          - title: 5.0 Release notes
-            url: /mydoc_release_notes_50.html
+          - title: Unity for Dynamics
+            url: /docs/unity-for-crm/unity-for-dynamics/
             output: web, pdf
 
-      - title: Unity Office Plugin
+      - title: Enterprise Search
         output: web
         folderitems:
-          - title: Tag archives overview
-            url: /mydoc_tag_archives_overview.html
-            output: web
+          - title: Overview
+            url: /docs/enterprise-search/overview/
+            output: web, pdf
+            type: homepage
 
+          - title: Installation
+            output: web, pdf
             subfolders:
-              - title: Tag archive pages
+              - title: Prerequisites
                 output: web
-                subfolderitems:
-                  - title: Formatting pages
-                    url: /tag_formatting.html
-                    output: web
+                url: /docs/enterprise-search/installation/prerequisites/
 
-                  - title: Navigation pages
-                    url: /tag_navigation.html
-                    output: web
+              - title: Installing UIE
+                output: web
+                url: /docs/enterprise-search/installation/install-uie/
 
-                  - title: Content types pages
-                    url: /tag_content_types.html
-                    output: web
-
-      - title: Unity for Dynamics
-        output: web, pdf
-        folderitems:
-          - title: 6.0 Release notes
-            url: /mydoc_release_notes_60.html
+          - title: Configuration
             output: web, pdf
+            subfolders:
+              - title: Security
+                output: web
+                url: /docs/enterprise-search/configuration/Security/
 
-          - title: 5.0 Release notes
-            url: /mydoc_release_notes_50.html
+          - title: Development
             output: web, pdf
+            subfolders:
+              - title: Environment Setup
+                output: web
+                url: /docs/enterprise-search/development/environment-setup/
 
-      - title: Unity for Salesforce
-        output: web, pdf
-        folderitems:
-          - title: 6.0 Release notes
-            url: /mydoc_release_notes_60.html
-            output: web, pdf
+              - title: Customization
+                output: web
+                url: /docs/enterprise-search/development/customization/
 
-          - title: 5.0 Release notes
-            url: /mydoc_release_notes_50.html
-            output: web, pdf
-
-      - title: Unity IQ (React)
-        output: web, pdf
-        folderitems:
-          - title: 6.0 Release notes
-            url: /mydoc_release_notes_60.html
-            output: web, pdf
-
-          - title: 5.0 Release notes
-            url: /mydoc_release_notes_50.html
-            output: web, pdf
-
-      - title: Professional Services Guides
-        output: web, pdf
-        folderitems:
-          - title: 6.0 Release notes
-            url: /mydoc_release_notes_60.html
-            output: web, pdf
-
-          - title: 5.0 Release notes
-            url: /mydoc_release_notes_50.html
-            output: web, pdf
+              - title: API
+                output: web
+                url: /docs/enterprise-search/development/api/

@@ -2,7 +2,7 @@
 title: How To Install Docker
 layout: docs
 keywords: docker, windows, install
-category: Unity
+category: Unity 7
 ---
 
 ## How To Install Docker

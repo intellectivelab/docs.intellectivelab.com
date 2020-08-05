@@ -1,4 +1,5 @@
-<!-- {% if site.data.sidebars.sidebar.entries[0] %}
+<h2>YMAL file</h2>
+{% if site.data.sidebars.sidebar.entries[0] %}
   {% for item in site.data.sidebars.sidebar.entries %}
     {% if item.folders[0] %}
       <ul id="side-nav" class="nav flex-column">
@@ -10,6 +11,15 @@
                 {% for subentry in entry.folderitems %}
                     <li class="list-group-item {% if subentry.url == page.url %}active{% endif %}">
                       <a  href="{{subentry.url  | relative_url}}">{{subentry.title}}</a>
+                      {% if subentry.subfolders[0] %}
+                      <ul id="sub-sub-nav" class="list-group">
+                        {% for subsubentry in subentry.subfolders %}
+                        <li class="list-group-item {% if subsubentry.url == page.url %}active{% endif %}">
+                          <a  href="{{subsubentry.url  | relative_url}}">{{subsubentry.title}}</a>
+                        </li>
+                        {% endfor %}
+                      </ul>
+                      {% endif %}
                     </li>
                 {% endfor %}
               </ul>
@@ -19,10 +29,12 @@
       </ul>
     {% endif %}
   {% endfor %}
-{% endif %} -->
+{% endif %}
 
+<hr />
+<h2>Auto generated through category</h2>
 
-  <ul id="side-nav" class="nav flex-column">
+  <ul id="side-nav2" class="nav flex-column">
     {% assign mydocs = site.docs | group_by: 'category' %}
     {% for cat in mydocs %}
     <li class="nav-item">
