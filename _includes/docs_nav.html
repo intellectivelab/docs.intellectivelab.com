@@ -1,4 +1,4 @@
-<h2>YMAL file</h2>
+<h4>yaml file</h4>
 {% if site.data.sidebars.sidebar.entries[0] %}
   {% for item in site.data.sidebars.sidebar.entries %}
     {% if item.folders[0] %}
@@ -32,7 +32,7 @@
 {% endif %}
 
 <hr />
-<h2>Auto generated through category</h2>
+<h4>Auto generated through category</h4>
 
   <ul id="side-nav2" class="nav flex-column">
     {% assign mydocs = site.docs | group_by: 'category' %}
