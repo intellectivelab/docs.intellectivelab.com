@@ -36,7 +36,7 @@ $(function () {
 
     // };
 
-    // // Select all links with hashes
+    // Select all links with hashes
     // $('a[href*="#"]')
     //     // Remove links that don't actually link to anything
     //     .not('[href="#"]')
@@ -73,10 +73,6 @@ $(function () {
     //         }
     //     });
 
-    // let active_menu_cb = () => {
-    //     console.log(this)
-    // }
-
 
     $("#side-nav, #side-nav2").navgoco({
         caretHtml: '',
@@ -112,7 +108,6 @@ $(function () {
 
     /* this offset helps account for the space taken up by the floating toolbar. */
     $('#toc').on('click', 'a', function () {
-        console.log('clicked anchor');
         var target = $(this.getAttribute('href'))
             , scroll_target = target.offset().top
 
