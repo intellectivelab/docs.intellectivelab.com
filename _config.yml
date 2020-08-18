@@ -1,1 +1,57 @@
-theme: jekyll-theme-cayman
+# theme: jekyll-theme-cayman
+# plugins:
+# - jekyll-github-metadata
+# - jekyll-mentions
+# - jekyll-redirect-from
+# - jekyll-sitemap
+# - jemoji
+# repository: ikozyr/devops.intellectivelab.com
+
+title: DOCS
+description: Intellective Unity Documentation.
+lang: en-US
+
+baseurl: "/"
+repository: ikozyr/devops.intellectivelab.com
+
+plugins:
+  - jekyll-github-metadata
+  - jekyll-mentions
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jemoji
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - .idea/
+  - .gitignore
+  - README.md
+
+defaults:
+  - scope:
+      path: _posts
+      type: posts
+    values:
+      layout: post
+      sectionid: blog
+
+  - scope:
+      path: _docs
+      type: docs
+    values:
+      layout: docs
+      sectionid: docs
+      seo:
+        type: "WebPage"
+
+collections:
+  docs:
+    permalink: /:collection/:path/
+    output: true
+  posts:
+    permalink: /blog/:year/:month/:day/:title/
+    output: true
+sass:
+  sass_dir: _sass
+  style: compressed

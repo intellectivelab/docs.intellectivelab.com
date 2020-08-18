@@ -1,0 +1,129 @@
+entries:
+  - title: Unity Sidebar
+    product: Jekyll Doc Theme
+    version: 1.0
+    folders:
+      - title: Unity 7
+        output: web, pdf
+        folderitems:
+          - title: Overview
+            url: /docs/unity/overview/
+            output: web, pdf
+            type: homepage
+
+          - title: Quick Start
+            url: /docs/unity/quick-start/
+            output: web, pdf
+
+          - title: Installation
+            output: web, pdf
+            subfolders:
+              - title: Software Requirements
+                output: web
+                url: /docs/unity/installation/software-requirements/
+
+              - title: Hardware Requirements
+                output: web
+                url: /docs/unity/installation/hardware-requirements/
+
+          - title: Configuration
+            output: web, pdf
+            subfolders:
+              - title: Look & Feel
+                output: web
+                url: /docs/unity/configuration/look-feel/
+
+              - title: Features
+                output: web
+                url: /docs/unity/configuration/features/
+
+              - title: Security
+                output: web
+                url: /docs/unity/configuration/Security/
+
+              - title: Connectors
+                output: web
+                url: /docs/docs/unity/configuration/connectors/
+
+              - title: Business Analytics
+                output: web
+                url: /docs/unity/configuration/business-analytics/
+
+              - title: Business Rules
+                output: web
+                url: /docs/unity/configuration/business-rules/
+
+              - title: Office Integration
+                output: web
+                url: /docs/unity/configuration/office-integration/
+
+          - title: Development
+            output: web, pdf
+            subfolders:
+              - title: Environment Setup
+                output: web
+                url: /docs/unity/development/environment-setup/
+
+              - title: Customization
+                output: web
+                url: /docs/unity/development/customization/
+
+              - title: API
+                output: web
+                url: /docs/unity/development/api/
+
+          - title: Tutorials
+            output: web
+            url: /docs/unity/tutorials/
+
+      - title: Unity for CRM
+        output: web, pdf
+        folderitems:
+          - title: Unity for Salesforce
+            url: /docs/unity-for-crm/unity-for-salesforce/
+            output: web, pdf
+
+          - title: Unity for Dynamics
+            url: /docs/unity-for-crm/unity-for-dynamics/
+            output: web, pdf
+
+      - title: Enterprise Search
+        output: web
+        folderitems:
+          - title: Overview
+            url: /docs/enterprise-search/overview/
+            output: web, pdf
+            type: homepage
+
+          - title: Installation
+            output: web, pdf
+            subfolders:
+              - title: Prerequisites
+                output: web
+                url: /docs/enterprise-search/installation/prerequisites/
+
+              - title: Installing UIE
+                output: web
+                url: /docs/enterprise-search/installation/install-uie/
+
+          - title: Configuration
+            output: web, pdf
+            subfolders:
+              - title: Security
+                output: web
+                url: /docs/enterprise-search/configuration/Security/
+
+          - title: Development
+            output: web, pdf
+            subfolders:
+              - title: Environment Setup
+                output: web
+                url: /docs/enterprise-search/development/environment-setup/
+
+              - title: Customization
+                output: web
+                url: /docs/enterprise-search/development/customization/
+
+              - title: API
+                output: web
+                url: /docs/enterprise-search/development/api/
