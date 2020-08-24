@@ -74,7 +74,18 @@ entries:
 
           - title: Tutorials
             output: web
-            url: /docs/unity/tutorials/
+            subfolders:
+              - title: Unity 7 Customization Tutorial
+                output: web
+                url: /docs/unity/tutorials/
+
+              - title: How To Install Docker
+                output: web
+                url: /docs/unity/tutorials/how-to-install-docker/
+
+              - title: Unity Video Tutorials
+                output: web
+                url: /docs/unity/tutorials/
 
       - title: Unity for CRM
         output: web, pdf
@@ -98,20 +109,24 @@ entries:
           - title: Installation
             output: web, pdf
             subfolders:
-              - title: Prerequisites
+              - title: UIE Installation Prerequisites
                 output: web
-                url: /docs/enterprise-search/installation/prerequisites/
+                url: /docs/enterprise-search/installation/uie-installation-prerequisites/
 
               - title: Installing UIE
                 output: web
-                url: /docs/enterprise-search/installation/install-uie/
+                url: /docs/enterprise-search/installation/installing-uie/
 
           - title: Configuration
             output: web, pdf
             subfolders:
               - title: Security
                 output: web
-                url: /docs/enterprise-search/configuration/Security/
+                url: /docs/enterprise-search/configuration/security/
+                
+              - title: Configure UIE for Use
+                output: web
+                url: /docs/enterprise-search/configuration/configure-uie-for-use/
 
           - title: Development
             output: web, pdf
