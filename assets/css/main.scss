@@ -9,12 +9,20 @@
 @import "_bootstrap-reboot";
 @import "_bootstrap-grid";
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+//@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-$Montserrat: "Montserrat", sans-serif;
+//$Montserrat: "Montserrat", sans-serif;
+
+//body {
+//  font-family: $Montserrat !important;
+//}
+
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+$Lato: "Lato", sans-serif;
 
 body {
-  font-family: $Montserrat !important;
+  font-family: $Lato !important;
 }
 
 .navbar {
@@ -36,8 +44,8 @@ body {
     display: flex;
     align-items: center;
     img {
-      width: 100%;
-      max-width: 150px;
+      width: 300px;
+      max-width: 300px;
       height: auto;
       padding-right: 5px;
     }
@@ -53,7 +61,7 @@ body {
   width: 300px;
 
   li.open > a > span:after {
-    content: "\25b4";
+    content: " ";
   }
 
   li > a > {
@@ -63,7 +71,7 @@ body {
       font-weight: bolder;
 
       &:after {
-        content: "\25be";
+        content: " ";
       }
     }
   }
@@ -130,27 +138,44 @@ body {
   }
 }
 
+a {
+    color: #0067d5;
+}
+
 img {
   max-width: 100%;
   height: auto;
 }
 
 h1 {
-  // font-size: 2em;
-  margin: 0.67em 0;
-  font-weight: 500;
-  color: #424242;
-  + p {
-    padding-top: 12px !important;
-    font-size: 22px;
-    line-height: 28px;
-  }
+  font-size: 2.75rem;
+  margin: 0.5rem 0;
+  font-weight: 300;
+  color: #dc3840;
 }
 
 h2 {
-  // font-size: 24px;
-  margin-top: 0;
+  font-size: 2.25rem;
+  margin-top: 1rem;
+  font-weight: 500;
+  color: #25292d;
   padding-top: 16px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  color: #25292d;
+  padding-top: 12px;
+}
+
+h4 {
+  font-size: 1.25rem;
+  margin-top: 0;
+  font-weight: 500;
+  color: #25292d;
+  padding-top: 10px;
 }
 
 form > input[type="search"] {
@@ -165,11 +190,11 @@ div#toc {
     background-color: whitesmoke;
     padding: 5px;
     border-radius: 5px;
-    max-width: 300px;
+    max-width: 500px;
     color: gray;
     > li {
-      margin: 8px 0px 8px 22px;
-      font-size: 90%;
+      margin: 0px 0px 0px 22px;
+      font-size: 95%;
       list-style: none;
       ul {
         padding-left: 8px;
@@ -220,3 +245,17 @@ div#toc {
 //   padding-bottom: 20px;
 //   padding-left: 10px;
 // }
+
+div#toc > ul::before {
+   content: "Contents";
+   font-size: 1rem;
+   font-weight: 600;
+   color: #25292d;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   width: 70px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-left: 10px;
+ }
