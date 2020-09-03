@@ -75,9 +75,13 @@ entries:
           - title: Tutorials
             output: web
             subfolders:
+              - title: How To Create Page
+                output: web
+                url: /docs/unity/tutorials/how-to-create-page/
+
               - title: Unity 7 Customization Tutorial
                 output: web
-                url: /docs/unity/tutorials/
+                url: /docs/unity/tutorials/unity-7-customization-tutorial/
 
               - title: How To Install Docker
                 output: web
@@ -86,6 +90,72 @@ entries:
               - title: Unity Video Tutorials
                 output: web
                 url: /docs/unity/tutorials/
+
+      - title: Unity API
+        output: web, pdf
+        folderitems:
+          - title: Overview
+            url: /docs/unity-api/overview/
+            output: web, pdf
+            type: homepage
+
+          - title: Security
+            output: web, pdf
+            subfolders:
+              - title: Overview
+                output: web
+                url: /docs/unity-api/security/overview/
+
+              - title: User Authorization
+                output: web
+                url: /docs/unity-api/security/user-authorization/
+
+              - title: Get Token
+                output: web
+                url: /docs/unity-api/security/get-token/
+
+              - title: Use Token
+                output: web
+                url: /docs/unity-api/security/use-token/
+
+              - title: Revoke Token
+                output: web
+                url: /docs/unity-api/security/revoke-token/
+ 
+              - title: Refresh Token
+                output: web
+                url: /docs/unity-api/security/refresh-token/
+               
+          - title: API Resources
+            output: web, pdf
+            subfolders:
+              - title: Overview
+                output: web
+                url: /docs/unity-api/api-resources/overview/
+
+              - title: Documents
+                output: web
+                url: /docs/unity-api/api-resources/documents/
+
+              - title: Cases
+                output: web
+                url: /docs/unity-api/api-resources/cases/
+
+              - title: Data Export
+                output: web
+                url: /docs/unity-api/api-resources/data-export/
+
+              - title: Selectors
+                output: web
+                url: /docs/unity-api/api-resources/selectors/
+
+              - title: Configuration
+                output: web
+                url: /docs/unity-api/api-resources/configuration/
+
+          - title: References
+            url: /docs/unity-api/references/            
+            output: web, pdf
 
       - title: Unity for CRM
         output: web, pdf

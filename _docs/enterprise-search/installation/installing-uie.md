@@ -3,16 +3,14 @@ title: Installing UIE
 layout: docs
 category: Enterprise Search
 ---
-# Installing UIE  
-
-## Install Enterprise Index  
+# Install Enterprise Index  
 
 [Solr](https://lucene.apache.org/solr/guide/) is the fast open source search platform built on Apache Lucene™ that provides scalable indexing and search, as well as faceting, hit highlighting and advanced analysis/tokenization capabilities. Solr and Lucene are managed by the [Apache Software Foundation](http://www.apache.org/) 
 
 It can use to implement full-text search, faceted search, and real-time indexing within Unity application. It is required for Unity features such as Faceted Search and Case Management tabs made available in Unity 7.
 
 
-### Install Solr 
+## Install Solr 
 
 Each Solr installation zip file contains a complete Solr platform package. To install it, simply extract the files from the zip. 
 
@@ -80,7 +78,7 @@ Map the `metadataa_s` field to repository index fields that will be used for sea
 ```
 Documents need to be recrawled after making this change. 
 
-### Install Lucene 
+## Install Lucene 
 
 Apache Lucene™ is a high-performance, full-featured text search engine library written entirely in Java. It is a technology suitable for nearly any application that requires full-text search, especially cross-platform.
 
@@ -88,9 +86,9 @@ Apache Lucene™ is a high-performance, full-featured text search engine library
 
 *Content should be added* 
 
-## Install Discovery Services  
+# Install Discovery Services  
 
-### Setup UIE Crawler 
+## Setup UIE Crawler 
 
 - Extract the `uie-crawl` folder from the UIE installation package to a folder on the server: 
 
@@ -122,9 +120,9 @@ Add the following specifically for CMOD crawler:
 	
 **Note**: After installing crawlers for the first time, it is a good idea to restart UIE discovery crawler services. 
 
-### Install UIE Crawlers 
+## Install UIE Crawlers 
 
-#### FileNet CE 5.2 Crawler 
+### FileNet CE 5.2 Crawler 
 
 - Edit `crawler_CE52_SOLR8_MSSQL_Demo.xml` file under `/uie-crawl/samples/config/ce52/solr8` folder (assuming that CE 5.2 is using MSSQL server as the database) 
 
@@ -163,7 +161,7 @@ Add the following specifically for CMOD crawler:
 
 	![uie-folder](../images/installing-uie/image33.png) 
 	
-#### CMIS Alfresco crawler 
+### CMIS Alfresco crawler 
 
 - Edit `crawler_SOLR8_MainRepository.xml` file under `/uie-crawl/samples/config/cmis10/solr8` folder
 - Update the following properties to match the specific environment and save the file:
@@ -199,7 +197,7 @@ Add the following specifically for CMOD crawler:
 
 	![uie-folder](../images/installing-uie/image33.png) 
 	
-#### Box crawler 
+### Box crawler 
 
 - If Java 8 is used for crawler, steps below are required
 	- Edit `%JAVA_HOME%/jre/lib/security/java.security` by adding `security.provider.nn=org.bouncycastle.jce.provider.BouncyCastleProvider`:
@@ -241,7 +239,7 @@ Add the following specifically for CMOD crawler:
 
 	![uie-folder](../images/installing-uie/image33.png) 
 	
-#### CMOD crawler 
+### CMOD crawler 
 
 - Edit `crawler_CMOD_SOLR8_AdobePDF.xml` file under `/uie-crawl/samples/config/cmod/solr8` folder
 - Update the following properties to match the specific environment and save the file: 
@@ -275,7 +273,7 @@ Add the following specifically for CMOD crawler:
 
 	![uie-folder](../images/installing-uie/image33.png) 
 	
-#### CM8 crawler 
+### CM8 crawler 
 
 - Move `cmbicmsdk81-8.6.0.jar` and `uie-plugin-cm8-7.6.1.x.jar` from `uie-crawl/plugins/uie-plugin-cm8-7.6.1.x` folder to `/uie-crawl/ext` folder
 - Copy `cmbicmsrvs.ini` under `/uie-crawl/samples/config/cm8/solr8` folder to the path specified in the CM8 crawler config
@@ -315,7 +313,7 @@ Add the following specifically for CMOD crawler:
 
 	![uie-folder](../images/installing-uie/image33.png) 
 	
-### Update UIE Crawlers 
+## Update UIE Crawlers 
 
 If crawler configuration file is updated, it needs to be uploaded for the crawler and crawler service should be restarted
 - Stop the crawler for which the configuration needs to be updated
@@ -327,9 +325,9 @@ If crawler configuration file is updated, it needs to be uploaded for the crawle
 
 	![uie-folder](../images/installing-uie/image46.png) 
 
-## Install Search Services 
+# Install Search Services 
 
-### Install UIE Searcher on IBM WebSphere 
+## Install UIE Searcher on IBM WebSphere 
 
 - Extract the `uie-search` folder from the UIE installation package to a folder on the server: 
 
@@ -412,14 +410,14 @@ If crawler configuration file is updated, it needs to be uploaded for the crawle
 	
 	![uie-folder](../images/installing-uie/image64.png) 
 		
-### Install UIE Searcher on IBM WebSphere Liberty 
+## Install UIE Searcher on IBM WebSphere Liberty 
 
 *Content should be added* 
 
-### Install UIE Searcher on WebLogic 
+## Install UIE Searcher on WebLogic 
 
 *Content should be added* 
 
-### Install UIE Searcher on WildFly JBoss 
+## Install UIE Searcher on WildFly JBoss 
 
 *Content should be added* 

@@ -3,7 +3,7 @@ title: Unity Hardware Requirements
 layout: docs
 category: Unity 7
 ---
-# Unity Hardware Requirements 
+# Overview 
 
 Specifications listed in the document below take the following into consideration:
 - Provided storage type reflect the generic minimum requirement of I/O subsystem speed. For example, Apache Solr is extremely demanding to this 
@@ -16,7 +16,7 @@ Each of the following requires its own VM Server:
 - Unity Intelligence Engine: Discovery Services 
 - Solr / Solr Cloud 
 
-## Unity Application Server 
+# Unity Application Server 
 
 Unity Application Server is the main user facing Unity Application, and provides the following:
 - a user interface to for ECMs 
@@ -28,12 +28,9 @@ Requires application server to be installed.
 
 | Logical server name | Number of CPU/cores | RAM, GB | Storage type | Storage size |
 |:-------------------:|:-------------------:|:-------:|:------------:|:------------:|
-|        Unity        |          4          |    16   |      HDD     |     20 GB    |
+|        Unity        |          4          |    16   |      HDD     |     20 GB    | 
 
-
-
-
-## Unity Intelligence Engine: Searcher 
+# Unity Intelligence Engine: Searcher 
 
 Unity Intelligence Engine Searcher performs Enterprise Searching, which searches within or across Repositories, leveraging the Solr Index created by the Crawler Service.
 
@@ -45,7 +42,7 @@ It may be deployed either on application server or standalone, recommendation is
 |:-------------------:|:-------------------:|:-------:|:------------:|:------------:|
 |      Searcher       |          4          |    8    |      SSD     |    100 GB    | 
 
-## Unity Intelligence Engine: Discovery Services 
+# Unity Intelligence Engine: Discovery Services 
 
 The Unity Intelligence Engine Discovery Services (e.g., also known as Crawler Service), reads source ECM repositories and builds a common enterprise Solr Index.
 
@@ -53,11 +50,11 @@ The Unity Intelligence Engine Discovery Services (e.g., also known as Crawler Se
 |:-------------------:|:-------------------:|:-------:|:------------:|:------------:|
 |       Crawler       |          4          |    8    |      HDD     |     20 GB    |
 
-## Solr / Solr Cloud 
+# Solr / Solr Cloud 
 
 Depending on the Volume of Documents either Solr or Solr Cloud is required. 
 
-### Solr (Non-High Volume, up to 1 billion)
+## Solr (Non-High Volume, up to 1 billion)
 
 Apache Solr instance is used for Enterprise Searching. 
 
@@ -69,7 +66,7 @@ Apache Solr 8.5 (the latest tested version at the moment) should be installed. C
 |:-------------------:|:-------------------:|:-------:|:------------:|:------------:|
 |        Solr         |          4          |    16   |      SSD     |    150 GB    | 
 
-### Solr Cloud (High Volume of Content, more than 1 billion) 
+## Solr Cloud (High Volume of Content, more than 1 billion) 
 
 Apache Solr Cloud instance is a clustered index used for Enterprise Searching. 
 

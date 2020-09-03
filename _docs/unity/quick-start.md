@@ -3,13 +3,11 @@ title: Quick Start
 layout: docs
 category: Unity 7
 ---
-# Quick Start
-
 To try Unity demo version [install Docker](../tutorials/how-to-install-docker/) and configure Unity Docker image. 
 
-## Configure Unity Docker Image
+# Configure Unity Docker Image
  
-### Configuration ###
+## Configuration 
 
 - Create folder on the drive you shared to store Open Liberty & Unity configuration files, `C:\DockerUnity` for example 
 - [Download](link-to-server.zip) Unity package, unpack and place files to folder you created 
@@ -31,7 +29,7 @@ If not then it will be downloaded automatically.
 For the first time, it will take some time to download the image.
 Once downloaded, the local Unity instance will be up & running. 
 
-### Access the Unity ### 
+## Access the Unity  
 
 - Connect to Intellective VPN
 - Make sure the FileNet environment is up and accessible, hit [here](http://172.31.27.3:9080/wsi/FNCEWS40MTOM/) to confirm.
@@ -44,9 +42,9 @@ Once downloaded, the local Unity instance will be up & running.
 Wizard should guide you through establishing connection to FileNet, use the [endpoint](http://172.31.27.3:9080/wsi/FNCEWS40MTOM/) to connect to Filenet. 
 Welcome to Unity! 
 	
-## Unity Interface ## 
+# Unity Interface ## 
 
-### Tabs ### 
+## Tabs 
 
 Tabs are the main building block of Unity user interface. 
 
@@ -57,7 +55,7 @@ Access roles can be used to provide different groups of users with specific set 
 
 ![Search layout](../images/quick-start/image2.png) 
 
-### Search layout ### 
+## Search layout  
 
 You will find on every search page: 
 
@@ -67,7 +65,7 @@ You will find on every search page:
 
 ![Actions](../images/quick-start/image3.png) 
 
-### Case management - Case view ###
+## Case management - Case view 
 
 ![Case Views](../images/quick-start/image4.png)
 
@@ -75,7 +73,7 @@ You will find on every search page:
 - Documents tab in case details shows all documents associated w/ case
 - History/Comments tab will display history & comments associated w/ case 
 
-### Case management - Task view ### 
+## Case management - Task view 
 
 ![Case Views](../images/quick-start/image5.png) 
 
