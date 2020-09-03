@@ -3,11 +3,9 @@ title: Unity Features
 layout: docs
 category: Unity 7
 ---
-# Unity Features 
+# Unity Features Comparison List 
 
-## Unity Features Comparison List 
-
-### Design principles 
+## Design principles 
 
 | Feature | Unity ExtJs | Unity React | Feature Details |
 |:--------------------|:-------------------:|:-------:|:-------:|
@@ -20,7 +18,7 @@ category: Unity 7
 |**Responsive component** effectively responds to various screen sizes | | + |[details](./#responsive-component) |
 |**Modern Design System** | | + |[details](./#modern-design-system) | 
 
-### Grid 
+## Grid 
 
 | Feature | Unity ExtJs | Unity React | Feature Details |
 |:--------------------|:-------------------:|:-------:|:-------:|
@@ -50,7 +48,7 @@ category: Unity 7
 |Responsive	|   | + | [details](link to description of this feature) |
 |Configurable | + | + | [details](link to description of this feature) |
 
-### Search criteria panel 
+## Search criteria panel 
 
 | Feature | Unity ExtJs | Unity React | Feature Details |
 |:--------------------|:-------------------:|:-------:|:-------:|
@@ -82,7 +80,7 @@ category: Unity 7
 |Responsive |   | + | [details](link to description of this feature) |
 |Ability to compose with other components |   | + | [details](link to description of this feature) |
 
-### Properties view form  
+## Properties view form  
 
 | Feature | Unity ExtJs | Unity React | Feature Details |
 |:--------------------|:-------------------:|:-------:|:-------:|
@@ -123,7 +121,7 @@ category: Unity 7
 |Ability to compose with other components |   | + | [details](link to description of this feature) |
 |Responsive |   | + | [details](link to description of this feature) |
 
-### Search template 
+## Search template 
 
 | Feature | Unity ExtJs | Unity React | Feature Details |
 |:--------------------|:-------------------:|:-------:|:-------:|
@@ -144,7 +142,7 @@ category: Unity 7
 |Responsive |   | + | [details](link to description of this feature) |
 |Ability to compose with other components |   | + | [details](link to description of this feature) |
 
-### Page/Tab 
+## Page/Tab 
 
 | Feature | Unity ExtJs | Unity React | Feature Details |
 |:--------------------|:-------------------:|:-------:|:-------:|
@@ -156,7 +154,7 @@ category: Unity 7
 |Ability to create a custom layout | + | + | [details](link to description of this feature) |
 |Ability to bundle components into containers (tabs) |   | + | [details](link to description of this feature) |
 
-### Dashboard 
+## Dashboard 
 
 | Feature | Unity ExtJs | Unity React | Feature Details |
 |:--------------------|:-------------------:|:-------:|:-------:|
@@ -186,7 +184,7 @@ category: Unity 7
 |Data Export |   | + | [details](link to description of this feature) |
 
 
-### Document management 
+## Document management 
 
 | Feature | Unity ExtJs | Unity React | Feature Details |
 |:--------------------|:-------------------:|:-------:|:-------:|
@@ -204,7 +202,7 @@ category: Unity 7
 | Document delete       | + | + | [details](link to description of this feature)       |
 | Copy link        | + | + | [details](link to description of this feature)       |
 
-### Case management 
+## Case management 
 
 | Feature | Unity ExtJs | Unity React | Feature Details |
 |:--------------------|:-------------------:|:-------:|:-------:|
@@ -228,7 +226,7 @@ category: Unity 7
 |Ability to show case related entities via virtual folders | + |   |  [details](link to description of this feature) |
 |Copy link | + | + |  [details](link to description of this feature) |
 
-### Process management 
+## Process management 
 
 | Feature | Unity ExtJs | Unity React | Feature Details |
 |:--------------------|:-------------------:|:-------:|:-------:|
@@ -243,7 +241,7 @@ category: Unity 7
 |Reassign work item | + | + |  [details](link to description of this feature) |
 |Process analytics |   | + |  [details](link to description of this feature) |
 
-### Auxiliary 
+## Auxiliary 
 
 | Feature | Unity ExtJs | Unity React | Feature Details |
 |:--------------------|:-------------------:|:-------:|:-------:|
@@ -256,9 +254,9 @@ category: Unity 7
 |Choosing time zone | + |   |  [details](link to description of this feature) |
 |Choosing theme | + | + |  [details](link to description of this feature) |
 
-## Unity Features List With Descriptions  
+# Unity Features List With Descriptions  
 
-### Design principles 
+## Design principles 
 
 #### MVVM 
 
@@ -292,25 +290,25 @@ Effectively responds to various screen sizes.
 
 
 
-### Grid 
+## Grid 
 
-### Search criteria panel 
+## Search criteria panel 
 
-### Properties view form 
+## Properties view form 
 
-### Search template 
+## Search template 
 
-### Page/Tab 
+## Page/Tab 
 
-### Dashboard 
+## Dashboard 
 
-### Document management 
+## Document management 
 
-### Case management 
+## Case management 
 
-### Process management 
+## Process management 
 
-### Auxiliary 
+## Auxiliary 
 
 
 

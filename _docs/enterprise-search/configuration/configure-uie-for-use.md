@@ -2,14 +2,12 @@
 title: Configure UIE for Use
 layout: docs
 category: Enterprise Search
----
-# Configure UIE for Use   
+--- 
+# Post-Installation Configuration   
 
-## Post-Installation Configuration   
+## Configure UIE crawler and Solr as services 
 
-### Configure UIE crawler and Solr as services 
-
-#### Windows 
+### Windows 
 
 Solr and Crawler scripts can be installed as Windows services. To install these as services, download [NSSM](https://nssm.cc/download) and extract files to a folder. 
 **Note**: Do not delete `nssm.exe`, since it will be used when services need to be uninstalled in the future. 
@@ -46,11 +44,11 @@ To remove Solr and Crawler services:
 - Click `Yes` to remove the service
 - Verify that the services have been removed in Windows Services 
 
-#### Linux 
+### Linux 
 
 *Content should be added* 
 
-### Clear UIE Solr Index 
+## Clear UIE Solr Index 
 
 If there is a need to re-crawl the repositories after an index schema change, first clear the Solr index using the instructions in this section, then run the crawler again as discussed in the previous section.
 - Edit `solrconfig.xml` for SODemo under `<solr_install>/server/solr/SODemo/conf` 
@@ -83,7 +81,7 @@ If there is a need to re-crawl the repositories after an index schema change, fi
 
 	![uie-folder](../images/configure-uie-for-use/image74.png) 
 	
-## UIE Crawler Logs 
+# UIE Crawler Logs 
 
 Crawler log files below are located, by default, under `/uie-crawl/logs`:
 - `error.log`
@@ -93,17 +91,17 @@ To change logging level, edit `logback.xml` under `/uie-crawl/ext` folder and ch
 	
 ![uie-folder](../images/configure-uie-for-use/image75.png) 
 	
-## Configure Unity for UIE 
+# Configure Unity for UIE 
 	
-### Prerequisites in WebSphere 
+## Prerequisites in WebSphere 
 
-#### JDBC providers 
+### JDBC providers 
 
 Verify all required database JDBC providers are configured in WebSphere:
 	
 ![uie-folder](../images/configure-uie-for-use/image76.png) 
 	
-#### CMOD Document Search 
+### CMOD Document Search 
 
 - In WebSphere admin console, go to `Environment > Shared libraries`: 
 	
@@ -121,7 +119,7 @@ Verify all required database JDBC providers are configured in WebSphere:
 	
 	![uie-folder](../images/configure-uie-for-use/image80.png) 
 	
-#### Box Document Search 
+### Box Document Search 
 
 - In WebSphere admin console, go to `Environment > Naming > Name space bindings`
 	
@@ -137,7 +135,7 @@ Verify all required database JDBC providers are configured in WebSphere:
 		
 - Restart WebSphere 
 
-### Configure Datasource and Connector 
+## Configure Datasource and Connector 
 
 - Login to Unity `http://<servername>:<port>/<contextroot>`, by default [http://localhost:9080/vu](http://localhost:9080/vu) using admin username, password is available by request
 - Go to Configuration Console tab and `Global > System > Connectors` and create a UIE connector: 
@@ -218,7 +216,7 @@ Verify all required database JDBC providers are configured in WebSphere:
 		</ViewerProperties>
 		``` 
 		
-### Configure	Content Lists 
+## Configure	Content Lists 
 
 - Go to Configuration Console tab and `Global > User Interface > Content Lists` and create a new content list: 
 	
@@ -236,7 +234,7 @@ Verify all required database JDBC providers are configured in WebSphere:
 	
 	![uie-folder](../images/configure-uie-for-use/image92.png) 
 	
-### Configure Search Template 
+## Configure Search Template 
 
 - Go to Configuration Console tab and `Global > User Interface > Search Templates` and create a new search template: 
 	
@@ -250,7 +248,7 @@ Verify all required database JDBC providers are configured in WebSphere:
 	
 	![uie-folder](../images/configure-uie-for-use/image95.png) 
 	
-### Configure Tab and assign Search Template 
+## Configure Tab and assign Search Template 
 
 - Go to Configuration Console tab and `Global > User Interface > Tabs` and create a new tab: 
 	
@@ -268,7 +266,7 @@ Verify all required database JDBC providers are configured in WebSphere:
 	
 	![uie-folder](../images/configure-uie-for-use/image99.png) 
 	
-### UIE Search Test 
+## UIE Search Test 
 
 - Login to Unity using `http://<servername>:<port>/<context-root>`, by default [http://localhost:9080/vu](http://localhost:9080/vu) 
 - Enter some search criteria and click search:  
@@ -279,7 +277,7 @@ Verify all required database JDBC providers are configured in WebSphere:
 	
 	![uie-folder](../images/configure-uie-for-use/image102.png) 
 
-## Crawler configuration XML 
+# Crawler configuration XML 
 
 Crawlers use configuration XML which can be modified to crawl specific types of entities, e.g. documents. The table below lists all the tag names, usage, value and description of all the tags used in the XML: 
 [https://confluence.intellective.com/display/PRODUCTxDOCUMENTATIONxVUx6x16xDRAFT/VU+Configuration+XML+Reference](https://confluence.intellective.com/display/PRODUCTxDOCUMENTATIONxVUx6x16xDRAFT/VU+Configuration+XML+Reference)

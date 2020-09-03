@@ -3,7 +3,7 @@ title: Unity Software Requirements
 layout: docs
 category: Unity 7
 ---
-# Unity Software Requirements 
+# Overview 
 
 Specifications listed in the document below take the following into consideration:
 - Use Java 8 for all the components listed below 
@@ -12,14 +12,14 @@ Specifications listed in the document below take the following into consideratio
 
 The following is a list of supported software options for Unity. 
 
-### Operating System 
+## Operating System 
 
 | Operating System |                               Version |
 |:-----------------|--------------------------------------:|
 | Windows Server   | Windows Server 2012 R2 Standard (min) |
 | Linux            |                                CentOS | 
 
-### Web App Server 
+## Web App Server 
 		
 | Web App Server               | JRE |
 |:-----------------------------|----:|
@@ -30,7 +30,7 @@ The following is a list of supported software options for Unity.
 | JBOSS EAP 7.2 (min)          | 1.8 |
 | WebSphere Liberty (min)      | 1.8 | 
 
-### Database 
+## Database 
 
 | Database      |     Version |
 |:--------------|------------:|
@@ -39,20 +39,20 @@ The following is a list of supported software options for Unity.
 | IBM DB2       | 10.5+ (min) |
 | PostgreSQL    |   11+ (min) | 
 
-### Viewer 
+## Viewer 
 
 | Viewer                           | Version |
 |:---------------------------------|--------:|
 | IBM Deaja ViewOne Virtual Viewer |     4.1 |
 | Snowbound HTML5 Viewer           |         |
 
-### UIE
+## UIE
 
 | UIE  | Version |
 |:-----|--------:|
 | Solr |   8.5.0 | 
 
-### Browsers 
+## Browsers 
 
 | Browsers             | Version |
 |:---------------------|--------:|

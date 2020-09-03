@@ -3,11 +3,9 @@ title: Unity for Salesforce
 layout: docs
 category: Unity for CRM
 ---
-# Unity for Salesforce
+# Planning Unity for Salesforce Installation
 
-## Planning Unity for Salesforce Installation
-
-### Review Prerequisites 
+## Review prerequisites 
 
 - A new account should be created in the Salesforce Org where UnityApp will be installed
 - Link to install UnityApp in the Salesforce Org
@@ -15,12 +13,10 @@ category: Unity for CRM
 - Unity application should be configured with at least one search template to search documents in FileNet P8
 - Required certificates including intermediate certificates should be installed in WebSphere 
 
-### UnityApp for Salesforce Checklist 
-
-Table Option 1
+## UnityApp for Salesforce checklist  
 
 |             Required Details             |                              Examples/Reference                                                                                                                  |
-|:----------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+|:-----------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Salesforce Org URL                       | [https://intellective-demo-qa-dev-ed-dev-ed.my.salesforce.com/](https://intellective-demo-qa-dev-ed-dev-ed.my.salesforce.com/)                                   |
 | Unity package (v2.2) install URL         | [https://login.salesforce.com/packaging/installPackage.apexp?p0=04tf4000004PtwA](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tf4000004PtwA) |
 | Salesforce Admin Username                |                                                                                                                                                                  |
@@ -28,24 +24,10 @@ Table Option 1
 | WebSphere Server Certificates            |                                                                                                                                                                  |
 | Unity application URL                    | [https://sf-demo.vegaecm.com:9443/vu](https://sf-demo.vegaecm.com:9443/vu)                                                                                       |
 | Sample Unity application configuration   |     [unity-config.xml](link-to-unity-config.xml)                                                                                                                 |
-| Unity for Salesforce configuration guide |                                                                                                                                                                  |
-|                                          |                                                                                                                                                                  |
+| Unity for Salesforce configuration guide |                                                                                                                                                                  | 
 
-Table Option 2
 
-|             Required Details             |                              Examples/Reference                                                                                                                  |
-|:----------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| Salesforce Org URL                       | [https://intellective-demo-qa-dev-ed-dev-ed....](https://intellective-demo-qa-dev-ed-dev-ed.my.salesforce.com/)                                   |
-| Unity package (v2.2) install URL         | [https://login.salesforce.com/packaging/....](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tf4000004PtwA) |
-| Salesforce Admin Username                |                                                                                                                                                                  |
-| Salesforce Admin Password                |                                                                                                                                                                  |
-| WebSphere Server Certificates            |                                                                                                                                                                  |
-| Unity application URL                    | [https://sf-demo.vegaecm.com:9443/vu](https://sf-demo.vegaecm.com:9443/vu)                                                                                       |
-| Sample Unity application configuration   |     [unity-config.xml](link-to-unity-config.xml)                                                                                                                 |
-| Unity for Salesforce configuration guide | [https://vegaecm2com.sharepoint.com/....](https://vegaecm2com.sharepoint.com/productmanagement/Shared%20Documents/Product%20Documentation/Unity/Feature%20Guides/Unity%20Feature%20Guide%20-%20Salesforce%202.0.pdf#search=salesforce%20configuration)                                                                                                                                                                  |
-|                                          |                                                                                                                                                                  |
-
-### Install WebSphere Server Certificates 
+## Install WebSphere server certificates 
 
 Salesforce requires SSL cert signed by proper CA. Note, that server TLS version has to be minimum 1.2, version 1.1 not supported by Salesforce anymore.
 
@@ -56,7 +38,7 @@ Salesforce requires SSL cert signed by proper CA. Note, that server TLS version 
 
 After certificate for a given Unity site is obtained it should be installed on application server . Please check the application server manual.
 
-### Verify Unity Application 
+## Verify Unity application 
 
 - Login to Unity application using the appropriate URL: 
 
@@ -70,9 +52,9 @@ After certificate for a given Unity site is obtained it should be installed on a
 	
 	![u4sf](../images/unity-for-salesforce/image4.png) 
 
-## Installing Unity for Salesforce 
+# Installing Unity for Salesforce 
 
-### Install UnityApp package using link 
+## Install UnityApp package using link 
 
 - Verify the link available to install UnityApp is available for the Salesforce Org it is going to be installed to
 	Link for UnityApp version 2.2: [https://login.salesforce.com/packaging/installPackage.apexp?p0=04tf4000004PtwA](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tf4000004PtwA) 
@@ -96,7 +78,7 @@ After certificate for a given Unity site is obtained it should be installed on a
 	
 	![u4sf](../images/unity-for-salesforce/image9.png) 
 
-### Package configuration in Salesforce 
+## Package configuration in Salesforce 
 
 - Login to Salesforce
 - Click `Setup`
@@ -133,8 +115,8 @@ After certificate for a given Unity site is obtained it should be installed on a
 	
 - Enter the following fields and click `Save`: 
 
-	|                  Field | Value                                     | Notes          |
-	|-----------------------:|:------------------------------------------|:---------------|
+	| Field                  | Value                                     | Notes          |
+	|:-----------------------|:------------------------------------------|:---------------|
 	| Name                   | UnityOAuth2Provider                       |                |
 	| URL Suffix             | UnityOAuth2Provider                       |                |
 	| authorize-endpoint-url | callout:vu_nc/public/api/oauth/authorize  |see note below  |
@@ -146,7 +128,7 @@ After certificate for a given Unity site is obtained it should be installed on a
 	| Registration Handler   | Select UnityOAuth2RegHandler              |                |
 	| Execute As             | Select current logged in admin user       |                | 
 
-	**Note**: `vu_nc` should match with Named Credentials. 
+	**Note**: `vu_nc` should match the Named Credentials. 
 	
 	![u4sf](../images/unity-for-salesforce/image18.png) 
 	
@@ -156,8 +138,8 @@ After certificate for a given Unity site is obtained it should be installed on a
 	
 - Enter the following fields and click `Save`: 
 
-	|                  Field | Value                                     | Example                          |
-	|-----------------------:|:------------------------------------------|:---------------------------------|
+	| Field                  | Value                                     | Example                          |
+	|:-----------------------|:------------------------------------------|:---------------------------------|
 	| Trusted Site Name      | any unique name                           | Unity                            |
 	| URL Suffix             |`https://<Unity server>:<Unity port>`      | https://sf-demo.vegaecm.com:9443 |
 	
@@ -169,8 +151,8 @@ After certificate for a given Unity site is obtained it should be installed on a
 	
 - Enter the following fields and click `Save`: 
 
-	|                     Field | Value                                  | Example                          |
-	|--------------------------:|:---------------------------------------|:---------------------------------|
+	| Field                     | Value                                  | Example                          |
+	|:--------------------------|:---------------------------------------|:---------------------------------|
 	| Remote Site Name          | any unique name                        | Unity                            |
 	| Remote URL Site           |`https://<Unity server>:<Unity port>`   | https://sf-demo.vegaecm.com:9443 |
 	| Disable Protocol Security | checked                                |                                  |	
@@ -179,8 +161,8 @@ After certificate for a given Unity site is obtained it should be installed on a
 	
 - Go to `Security > Named Credentials` and edit `vu_nc` if it exists or create a new Named Credential with the following information and click `Save`: 
 
-	|                             Field | Value                                                     | Example                             |
-	|----------------------------------:|:----------------------------------------------------------|:------------------------------------|
+	| Field                             | Value                                                     | Example                             |
+	|:----------------------------------|:----------------------------------------------------------|:------------------------------------|
 	| Label                             | vu_nc/public/api/oauth/authorize                          |                                     |
 	| Name                              | vu_nc/public/api/oauth/authorize                          |                                     |
 	| URL                               | `https://<Unity server>:<Unity port>/<Unity_context_root>`| https://sf-demo.vegaecm.com:9443/vu |
@@ -198,7 +180,7 @@ After certificate for a given Unity site is obtained it should be installed on a
 
 	![u4sf](../images/unity-for-salesforce/image24.png) 
 	
-### Configure Authentication between Salesforce and Unity 
+## Configure authentication between Salesforce and Unity 
 
 - Go to `Settings` under User profile: 
 
@@ -206,8 +188,8 @@ After certificate for a given Unity site is obtained it should be installed on a
 	
 - Go to `Authentication Settings for External Systems`. Edit `vu_nc` if it exists otherwise create New setting with the information below and click `Save`: 
 	
-	|                             Field | Value                         | 
-	|----------------------------------:|:------------------------------|
+	| Field                             | Value                         | 
+	|:----------------------------------|:------------------------------|
 	| External System Definition        | Named Credential              |
 	| Named Credential                  | vu_nc                         |
 	| User                              | Select current logged in user |
@@ -220,7 +202,7 @@ After certificate for a given Unity site is obtained it should be installed on a
 	
 - Check that correct Unity application login dialog is opened and enter correct login and password
 	
-### Configure Unity tab in Salesforce 
+## Configure Unity tab in Salesforce 
 
 - Login to Salesforce 
 - Click `Setup`:  
@@ -233,8 +215,8 @@ After certificate for a given Unity site is obtained it should be installed on a
 	
 - Enter the information below to create the new tab and click `Save`: 
 	
-	|               Field | Value                                                                                                             | Example          |
-	|--------------------:|:------------------------------------------------------------------------------------------------------------------|:-----------------|
+	| Field               | Value                                                                                                             | Example          |
+	|:--------------------|:------------------------------------------------------------------------------------------------------------------|:-----------------|
 	| Lightning Component | c:UnitySearchTemplatesTab (deployed package), Intellective2:UnitySearchTemplatesTab (installed package)           |                  |
 	| Tab Label           | Any unique Tab name that will be displayed in the Salesforce                                                      | Documents Search |
 	| Tab Name            | Should be matched with Tab Id that was configured in the Unity application. This ID can be used only for one Tab. | search_templates |
@@ -254,7 +236,7 @@ After certificate for a given Unity site is obtained it should be installed on a
 
 	![u4sf](../images/unity-for-salesforce/image24.png) 
 	
-### Configure reCAPTCHA (Optional) 
+## Configure reCAPTCHA (Optional) 
 
 - Add the following parameter to the SystemProperties section of Unity configuration file: 
 
@@ -288,7 +270,7 @@ After certificate for a given Unity site is obtained it should be installed on a
 	
 - Press `Apply` and restart WebSphere 
 
-## Verify Installation of Unity for Salesforce
+# Verify Installation of Unity for Salesforce
 
 - Login to Salesforce
 - Open Unity from the App Launcher, if not already open: 
@@ -303,9 +285,9 @@ After certificate for a given Unity site is obtained it should be installed on a
 	
 	![u4sf](../images/unity-for-salesforce/image37.png) 
 	
-### Unity Validator 
+## Unity Validator 
 
-Unity validator is a great tool, that allows to test main Salesforce settings and provides brief information on main possible reasons in case of problems:
+Unity Validator is a great tool, that allows to test main Salesforce settings and provides brief information on main possible reasons in case of problems:
 	
 ![u4sf](../images/unity-for-salesforce/image44.png) 
 	
@@ -335,9 +317,9 @@ How to add Unity Validator tab:
 - If it’s not there, select Unity Validator under Available Items and click arrow button between 2 lists
 - Click `Save` 
 
-## Un-installing Unity for Salesforce 
+# Un-installing Unity for Salesforce 
 
-### Un-install UnityApp package 
+## Un-install UnityApp package 
 
 - Login to Salesforce
 - Click Setup: 

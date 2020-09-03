@@ -155,15 +155,15 @@ img {
 }
 
 h1 {
-  font-size: 2.75rem;
+  font-size: 2.5rem;
   margin: 0.5rem 0;
   font-weight: 300;
   color: #dc3840;
 }
 
 h2 {
-  font-size: 2.25rem;
-  margin-top: 1rem;
+  font-size: 2rem;
+  margin-top: 0.5rem;
   font-weight: 500;
   color: #25292d;
   padding-top: 16px;
@@ -172,8 +172,8 @@ h2 {
 h3 {
   font-size: 1.5rem;
   margin-top: 0.5rem;
-  font-weight: 600;
-  color: #25292d;
+  font-weight: 300;
+  color: #111111;
   padding-top: 12px;
 }
 
@@ -181,6 +181,14 @@ h4 {
   font-size: 1.25rem;
   margin-top: 0;
   font-weight: 500;
+  color: #25292d;
+  padding-top: 10px;
+}
+
+h5 {
+  font-size: 0.85rem;
+  margin-top: 0;
+  font-weight: 700;
   color: #25292d;
   padding-top: 10px;
 }

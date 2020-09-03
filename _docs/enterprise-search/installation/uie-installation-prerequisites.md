@@ -3,9 +3,7 @@ title: UIE Installation Prerequisites
 layout: docs
 category: Enterprise Search
 ---
-# UIE Installation Prerequisites 
-
-## Review Prerequisites 
+# Review Prerequisites 
 
 - A supported content management server or database or metadata repository used by UIE Discovery Services to crawl data into the Enterprise Index 
 - A supported web application server to deploy UIE Search Services, this can be collocated with Unity 
@@ -37,15 +35,15 @@ In addition, keep the following in mind:
 
 For more info see hardware and software requirements related to [Solr](https://lucene.apache.org/solr/guide/8_5/solr-system-requirements.html) and [Lucene](https://lucene.apache.org/core/systemreqs.html). 
 
-## Obtain Index and UIE Installations 
+# Obtain Index and UIE Installations 
 
 Download [Solr](https://lucene.apache.org/solr/downloads.html) and [Lucene](https://lucene.apache.org/core/downloads.html) installation packages. 
 
-Download UIE latest release located on Intellective FTP under `/products/uie/releases` folder. 
+Download UIE latest release located on Intellective FTP under `/products/uie/releases` folder:  
 
 ![prerequisites](../images/uie-installation-prerequisites/image1.png) 
 
-## Install Prerequisite Software 
+# Install Prerequisite Software 
 
 Download [Java](https://www.java.com/en/download/). 
 
@@ -76,11 +74,11 @@ Java 8 required for all searchers except Lucene and Solr5:
 
 Download [Java Cryptography Extension](https://www.oracle.com/java/technologies/javase-jce8-downloads.html). 
 
-- Determine JAVA_HOME path. If not already set, set new JAVA_HOME pointing to the Java version installed above
+- Determine JAVA_HOME path. If not already set, set new JAVA_HOME pointing to the Java version installed above: 
 
 ![prerequisites](../images/uie-installation-prerequisites/image2.png) 
 
-- Copy the `US_export_policy.jar` and `local_policy.jar` files into the directory: `<JAVA_HOME>/jre/lib/security` and overwrite existing files with same name, if any 
+- Copy the `US_export_policy.jar` and `local_policy.jar` files into the directory: `<JAVA_HOME>/jre/lib/security` and overwrite existing files with same name, if any: 
 
 ![prerequisites](../images/uie-installation-prerequisites/image3.png) 
 
@@ -101,9 +99,9 @@ Content Management Repositories:
 - Box XX
 - Any repository supporting CMIS 1.1 
 
-## UIE Crawler Checklist and Prerequisites 
+# UIE Crawler Checklist and Prerequisites 
 
-### FileNet CE 5.2 crawler 
+## FileNet CE 5.2 crawler 
 
 The settings below are required to set up FileNet CE 5.2 crawler depending on the environment it is installed. 
 
@@ -126,7 +124,7 @@ FileNet connection details:
 - Password – by request
 - JAAS Stanza – FileNetP8 
 
-### CMIS Alfresco crawler 
+## CMIS Alfresco crawler 
 
 The settings below are required to set up CMIS Alfresco crawler depending on the environment it is installed. 
 
@@ -137,7 +135,7 @@ CMIS connection details:
 - Password – by request
 - Binding Type – \<Binding Type\> e.g. ATOMPUB 
 
-### Box crawler 
+## Box crawler 
 
 The settings below are required to set up Box crawler depending on the environment it is installed. 
 
@@ -150,7 +148,7 @@ Box connection details:
 
 Steps to generate RSA Key Pair JSON: 
 - Sign in to [Box developer account](https://app.Box.com/signup/n/developer) or create a new one 
-- Go to Dev Console 
+- Go to Dev Console: 
 
 	![prerequisites](../images/uie-installation-prerequisites/image4.png) 
 
@@ -164,31 +162,35 @@ Steps to generate RSA Key Pair JSON:
 
 	- Authentication Method:  OAuth 2.0 with JWT (Server Authentication) 
 	- Application Access: Enterprise 
-	- Application scopes: ![prerequisites](../images/uie-installation-prerequisites/image5.png) 
-	- Advanced Features: ![prerequisites](../images/uie-installation-prerequisites/image6.png) 
+	- Application scopes: 
+	
+		![prerequisites](../images/uie-installation-prerequisites/image5.png) 
+	- Advanced Features: 
+	
+		![prerequisites](../images/uie-installation-prerequisites/image6.png) 
 	
 - Save the changes
 - Scroll to `Add and Manage Public Keys` section
 - Press `Generate a Public Key/Private Keypair`, on this step may be asked to setup 2-factor authentication
 - Save generated json file to local disk
 - Locate section `OAuth 2.0 Credentials`
-- Copy `Client ID` value 
+- Copy `Client ID` value: 
 	
 	![prerequisites](../images/uie-installation-prerequisites/image7.png) 
 
-- In your Box account, Go to `Admin Console > Apps > Custom Apps` (https://app.box.com/master) 
+- In your Box account, Go to `Admin Console > Apps > Custom Apps` (https://app.box.com/master): 
 
 	![prerequisites](../images/uie-installation-prerequisites/image8.png)
 
 - Click Authorize New App
-- Enter the copied Client ID on the App Authorization dialog
+- Enter the copied Client ID on the App Authorization dialog:
 
 	![prerequisites](../images/uie-installation-prerequisites/image9.png) 
 	
 - Click Next
 - Click Authorize 
 
-### CMOD crawler 
+## CMOD crawler 
 
 The settings below are required to set up CMOD crawler depending on the environment it is installed.
 
@@ -201,7 +203,7 @@ CMOD connection details:
 
 This crawler requires CMOD client files to be installed prior to running the crawler. These can be [downloaded](https://www.ibm.com/support/fixcentral) from IBM website. 
 
-**Note: To avoid runtime errors, client should be of the same version as server and patched with the same version. For e.g., if CMOD version on server is 10.1.0.4, the client should also be of the same version.** 
+**Note:** To avoid runtime errors, client should be of the same version as server and patched with the same version. For e.g., if CMOD version on server is 10.1.0.4, the client should also be of the same version. 
 
 - On Windows, add CMOD bin, www and www\api to the system PATH variable. For example: 
 
@@ -211,7 +213,7 @@ This crawler requires CMOD client files to be installed prior to running the cra
 
 - Restart user session or entire server to apply new value of the system PATH variable. 
 
-### CM8 crawler 
+## CM8 crawler 
 
 The settings below are required to set up CM8 crawler depending on the environment it is installed.
 
@@ -230,6 +232,6 @@ CM8 connection details:
 	- ICMPORT=\<port\> e.g. 50000
 	- ICMREMOTEDB=\<remote DB\> e.g. icmnlsdb
 
-**Note: To avoid runtime errors on Windows, hosts file may need to be updated with the CM8 server name and IP address.** 
+**Note:** To avoid runtime errors on Windows, hosts file may need to be updated with the CM8 server name and IP address. 
 
 &rarr; [Next step: Installing UIE](./enterprise-search/installing-uie/) 
