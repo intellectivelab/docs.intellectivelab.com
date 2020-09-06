@@ -41,7 +41,7 @@ Download [Solr](https://lucene.apache.org/solr/downloads.html) and [Lucene](http
 
 Download UIE latest release located on Intellective FTP under `/products/uie/releases` folder:  
 
-![prerequisites](../images/uie-installation-prerequisites/image1.png) 
+![prerequisites](images/uie-installation-prerequisites/image1.png) 
 
 # Install Prerequisite Software 
 
@@ -76,11 +76,11 @@ Download [Java Cryptography Extension](https://www.oracle.com/java/technologies/
 
 - Determine JAVA_HOME path. If not already set, set new JAVA_HOME pointing to the Java version installed above: 
 
-![prerequisites](../images/uie-installation-prerequisites/image2.png) 
+![prerequisites](images/uie-installation-prerequisites/image2.png) 
 
 - Copy the `US_export_policy.jar` and `local_policy.jar` files into the directory: `<JAVA_HOME>/jre/lib/security` and overwrite existing files with same name, if any: 
 
-![prerequisites](../images/uie-installation-prerequisites/image3.png) 
+![prerequisites](images/uie-installation-prerequisites/image3.png) 
 
 Web application servers used for UIE Searcher are supported on the following platforms: 
 
@@ -150,7 +150,7 @@ Steps to generate RSA Key Pair JSON:
 - Sign in to [Box developer account](https://app.Box.com/signup/n/developer) or create a new one 
 - Go to Dev Console: 
 
-	![prerequisites](../images/uie-installation-prerequisites/image4.png) 
+	![prerequisites](images/uie-installation-prerequisites/image4.png) 
 
 - Click Create New App
 - Select Custom App option and click Next
@@ -164,10 +164,10 @@ Steps to generate RSA Key Pair JSON:
 	- Application Access: Enterprise 
 	- Application scopes: 
 	
-		![prerequisites](../images/uie-installation-prerequisites/image5.png) 
+		![prerequisites](images/uie-installation-prerequisites/image5.png) 
 	- Advanced Features: 
 	
-		![prerequisites](../images/uie-installation-prerequisites/image6.png) 
+		![prerequisites](images/uie-installation-prerequisites/image6.png) 
 	
 - Save the changes
 - Scroll to `Add and Manage Public Keys` section
@@ -176,16 +176,16 @@ Steps to generate RSA Key Pair JSON:
 - Locate section `OAuth 2.0 Credentials`
 - Copy `Client ID` value: 
 	
-	![prerequisites](../images/uie-installation-prerequisites/image7.png) 
+	![prerequisites](images/uie-installation-prerequisites/image7.png) 
 
 - In your Box account, Go to `Admin Console > Apps > Custom Apps` (https://app.box.com/master): 
 
-	![prerequisites](../images/uie-installation-prerequisites/image8.png)
+	![prerequisites](images/uie-installation-prerequisites/image8.png)
 
 - Click Authorize New App
 - Enter the copied Client ID on the App Authorization dialog:
 
-	![prerequisites](../images/uie-installation-prerequisites/image9.png) 
+	![prerequisites](images/uie-installation-prerequisites/image9.png) 
 	
 - Click Next
 - Click Authorize 
@@ -209,7 +209,7 @@ This crawler requires CMOD client files to be installed prior to running the cra
 
 	`PATH=%PATH%;C:\IBM\OnDemand\V10.1\bin;C:\IBM\OnDemand\V10.1\www;C:\IBM\OnDemand\V10.1\www\api` 
 
-	![prerequisites](../images/uie-installation-prerequisites/image10.png)
+	![prerequisites](images/uie-installation-prerequisites/image10.png)
 
 - Restart user session or entire server to apply new value of the system PATH variable. 
 
@@ -234,4 +234,4 @@ CM8 connection details:
 
 **Note:** To avoid runtime errors on Windows, hosts file may need to be updated with the CM8 server name and IP address. 
 
-&rarr; [Next step: Installing UIE](./enterprise-search/installing-uie/) 
+&rarr; [Next step: Installing UIE](./installing-uie.md) 

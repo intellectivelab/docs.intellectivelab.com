@@ -3,7 +3,7 @@ title: How To Create Page
 layout: docs
 category: Unity 7
 ---
-This is a guide how to create page for github documentation site using Markdown syntax. If you know Markdown syntax, start from [Markdown file structure and page structure](../how-to-create-page/#markdown-file-structure-and-page-structure).  
+This is a guide how to create page for github documentation site using Markdown syntax. If you know Markdown syntax, start from [Markdown file structure and page structure](how-to-create-page.md/#markdown-file-structure-and-page-structure).  
 
 # Markdown Syntax 
 
@@ -226,10 +226,10 @@ Use simple or highlighted code blocks.
 - Screenshots to illustrate process steps should have the same size 
 - Crop screenshots accurately 
 - For highlighting use red frames, red color is R220 G56 B64 (#dc3840):  
-	![highlight](../images/how-to-create-page/image10.png) 
+	![highlight](images/how-to-create-page/image10.png) 
 - Use `:` after the text before image if image illustrates this text 
 
-Images should be placed to `../images/name-of-your-md-file/` folder. 
+Images should be placed to `images/name-of-your-md-file/` folder. 
 
 ### Tables 
 
