@@ -40,6 +40,6 @@ Once the Unity user authenticates and authorizes your application, Unity will is
 
     GET https://&lt;your-redirect-uri&gt;/?code=&lt;AUTHORIZATION_CODE&gt; 
 ```
-Note the code query parameter above, this is the authorization code you need for the next step: [Get Token](../get-token/) 
+Note the code query parameter above, this is the authorization code you need for the next step: [Get Token](get-token.md) 
 
-&rarr; [Next step: Get Token](../get-token/)   
+&rarr; [Next step: Get Token](get-token.md)   

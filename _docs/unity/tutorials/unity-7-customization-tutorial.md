@@ -28,7 +28,7 @@ selected (use the actual area code dictionary as well).
 From the UI point of view, it should implement master-detail approach. Users search and select `Customers` in master
 (the top one) part. Selected `Customer` filters `Correpondence` documents at the detail (the bottom one) part.
 
-![Screenshot - the final result](../images/unity-7-customization-tutorial/screenshot-final-result.png)
+![Screenshot - the final result](images/unity-7-customization-tutorial/screenshot-final-result.png)
 
 ## Implementation steps 
 
@@ -36,14 +36,14 @@ This tutorial consists of several consecutive parts.
 Follow one after another if you are recreating the application from the scratch.
 Address [the GitHub repository](https://github.com/intellectivelab/u7-samples-crm-app) if you get stuck or want to compare your code with the final working result.
 
-- [Step 1](../unity-7-customization-tutorial/#step-1-creating-running-and-debugging-the-unity-application): Creating, running, and debugging the Unity application
-- [Step 2](../unity-7-customization-tutorial/#step-2-configuring-the-data-model-and-setting-up-the-solution-base): Configuring the data model and setting up the solution base
-- [Step 3](../unity-7-customization-tutorial/#step-3-implementing-the-master-detail-search-template-tab): Implementing the master-detail search template tab
-- [Step 4](../unity-7-customization-tutorial/#step-4-creating-custom-data-service-and-rest-api): Creating custom data service and REST API
-- [Step 5](../unity-7-customization-tutorial/#step-5-implementing-custom-selectors-and-criteria-field-validation): Implementing custom selectors and criteria field validation
-- [Step 6](../unity-7-customization-tutorial/#step-6-altering-search-results-on-the-server-side): Altering search results on the server-side
-- [Step 7](../unity-7-customization-tutorial/#step-7-implementing-actions-for-creating-customers-and-correspondence-documents): Implementing actions for creating Customers and Correspondence documents
-- [Step 8](../unity-7-customization-tutorial/#step-8-staging-the-release-using-docker-image): Staging the release using Docker image 
+- [Step 1:](#step-1-creating-running-and-debugging-the-unity-application) Creating, running, and debugging the Unity application
+- [Step 2:](#step-2-configuring-the-data-model-and-setting-up-the-solution-base) Configuring the data model and setting up the solution base
+- [Step 3:](#step-3-implementing-the-master-detail-search-template-tab) Implementing the master-detail search template tab
+- [Step 4:](#step-4-creating-custom-data-service-and-rest-api) Creating custom data service and REST API
+- [Step 5:](#step-5-implementing-custom-selectors-and-criteria-field-validation) Implementing custom selectors and criteria field validation
+- [Step 6:](#step-6-altering-search-results-on-the-server-side) Altering search results on the server-side
+- [Step 7:](#step-7-implementing-actions-for-creating-customers-and-correspondence-documents) Implementing actions for creating Customers and Correspondence documents
+- [Step 8:](#step-8-staging-the-release-using-docker-image) Staging the release using Docker image 
 
 # Step 1: Creating, running, and debugging the Unity application  
 
@@ -87,6 +87,7 @@ OpenLiberty directory.
 
 Edit the `server.xml` file of the OpenLiberty instance. Insert, at least the following:
 ```xml
+<server>
   <!-- ... -->
   <basicRegistry id="basic" realm="BasicRealm">
     <user name="intadmin" password="{xor}Lz4sLChvLTs=" />
@@ -98,6 +99,7 @@ Edit the `server.xml` file of the OpenLiberty instance. Insert, at least the fol
 
   <application id="custom_app_war" location="<PROJECT_DIR>\custom-webapp\target\custom-webapp-1.0.0-SNAPSHOT.war" name="custom-webapp" type="war"/>
   <!-- ... -->
+</server>
 ```
 Please note that you'll have to update user's passwords in order to access the actual remote platform 
 (IBM FileNet Content Manager) instance. The password above is `passw0rd`. 
@@ -136,11 +138,11 @@ To debug the client-side, use the developer tools of the browser. We recommend u
 Also, consider building the app using `web-dev-mode` profile. Otherwise, you will have to manage the minimized version of
 JS code.
 
-![Screenshot - Chrome devtools 1](../images/unity-7-customization-tutorial/screenshot-chrome-dev1.png)
+![Screenshot - Chrome devtools 1](images/unity-7-customization-tutorial/screenshot-chrome-dev1.png)
 
 You can debug JS code, even change it on the fly using the `Overrides` function:
 
-![Screenshot - Chrome devtools 2](../images/unity-7-customization-tutorial/screenshot-chrome-dev2.png)
+![Screenshot - Chrome devtools 2](images/unity-7-customization-tutorial/screenshot-chrome-dev2.png)
 
 Here you change the code, test it immediately without rebuilding the app (which is definitely a time-consuming operation).
 After you complete debugging, just copy the final version of the JS code into the main project sources. 
@@ -231,6 +233,8 @@ Note, that it relies on the environment variables externalized into the separate
 ```
 In order to provide the data to the client, we have to define properties at `/Configuration/Properties`:
 ```xml
+<Properties>
+<!-- ... -->
     <Property ID="DocumentTitle">
         <Name>Document Title</Name>
         <Type>string</Type>
@@ -312,6 +316,8 @@ In order to provide the data to the client, we have to define properties at `/Co
         <Width>128</Width>
         <Tooltip/>
     </Property>
+<!-- ... -->
+</Properties>
 ```
 
 ### Master search template (Customers)
@@ -403,6 +409,8 @@ It relies on 2 column sets - full list of columns and the default one showed to 
 change a set of visible columns by choosing from the full list. Add the following sections into
 `/Configuration/ColumnSets` node of the configuration XML:
 ```xml
+<ColumnSets>
+<!-- ... -->
     <ColumnSet ID="Customer_Grid_ColSet_All">
         <Properties>
             <Property>State</Property>
@@ -420,6 +428,8 @@ change a set of visible columns by choosing from the full list. Add the followin
             <Property>DocumentTitle</Property>
         </Properties>
     </ColumnSet>
+</ColumnSets>
+<!-- ... -->
 ```
 
 For now, we can use the out-of-the-box search template tab to display this search template
@@ -441,7 +451,7 @@ To assign the search template to the tab, we need a search template set called `
 ``` 
 
 Now we can apply the configuration (restart the server or use `reset.jsp`) and take a look on what we have on this step:
-![Screenshot - Master Search template](../images/unity-7-customization-tutorial/screenshot-step2-master-searchtemplate.png)
+![Screenshot - Master Search template](images/unity-7-customization-tutorial/screenshot-step2-master-searchtemplate.png)
 
 ### Details search template (Correspondence)
 Aside of the idea that a result set for `Correspondence` documents should be filtered
@@ -501,6 +511,8 @@ A grid for the second search template (`/Configuration/Grids`):
 ```
 Corresponding column sets (`/Configuration/ColumnSets`):
 ```xml
+<ColumnSets>
+<!-- ... -->
     <ColumnSet ID="CustomerCorrespondence_Grid_ColSet_All">
         <Properties>
             <Property>MimeType</Property>
@@ -515,6 +527,8 @@ Corresponding column sets (`/Configuration/ColumnSets`):
             <Property>ContentSize</Property>
         </Properties>
     </ColumnSet>
+<!-- ... -->
+</ColumnSets>
 ```
 
 Finally, add the search template into existing template set:
@@ -525,7 +539,7 @@ Finally, add the search template into existing template set:
     </TemplateSet>
 ```
 And now we can see the second search template availible in the application:
-![Screenshot - Details search template](../images/unity-7-customization-tutorial/screenshot-step2-details-searchtemplate.png)
+![Screenshot - Details search template](images/unity-7-customization-tutorial/screenshot-step2-details-searchtemplate.png)
 
 On this step, we have configured the application using only out-of-the-box capabilities.
 We will use this solution base in our future customizations.
@@ -642,6 +656,7 @@ selected `Customer's` name.
 
 To include a new JS source file into the build, edit the [`wro-custom.xml`](https://github.com/intellectivelab/u7-samples-crm-app/blob/master/custom-webapp/src/main/wro-custom.xml) file:
 ```xml
+<!--suppress XmlPathReference -->
 <groups xmlns="http://www.isdc.ro/wro"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.isdc.ro/wro wro.xsd">
@@ -674,15 +689,19 @@ we are going to use as a key for searching `Correspondence`.
 
 New component expects to have 2 different template sets. So, we need to rearrange it a bit (at `/Configuration/SearchTemplates`):
 ```xml
+<TemplateSets>
+<!-- ... -->
     <TemplateSet ID="CustomerDataTab-master-templates-set">
         <Template>Customer_Search</Template>
     </TemplateSet>
     <TemplateSet ID="CustomerDataTab-details-templates-set">
         <Template>Customer_Correspondence_Search</Template>
     </TemplateSet>
+<!-- ... -->
+</TemplateSets>
 ```
 Rebuild the application using `mvn clean package -P web-dev-mode` command and see the result:
-![Screenshot - Master-details](../images/unity-7-customization-tutorial/screenshot-step3-masterdetails1.png)
+![Screenshot - Master-details](images/unity-7-customization-tutorial/screenshot-step3-masterdetails1.png)
 
 ## Implementing action handler 
 Now, the only thing left on this step is implementing an action for selecting `Customer` document and filtering
@@ -721,6 +740,7 @@ Finally, we call `detailsSearchPanel.executeQuery()` to perform search with upda
 
 As we already have done before, we should add a new JS source into the [`wro-custom.xml`](https://github.com/intellectivelab/u7-samples-crm-app/blob/master/custom-webapp/src/main/wro-custom.xml) file:
 ```xml
+<!--suppress XmlPathReference -->
 <groups xmlns="http://www.isdc.ro/wro"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.isdc.ro/wro wro.xsd">
@@ -796,7 +816,7 @@ Here `{Level.masterProperty}` placeholder addresses the field from the context o
 
 Rebuild the application to see the final result for this step: 
 
-![Screenshot - Master-details](../images/unity-7-customization-tutorial/screenshot-step3-masterdetails2.png)
+![Screenshot - Master-details](images/unity-7-customization-tutorial/screenshot-step3-masterdetails2.png)
 
 As you can see, we have a fully-functioning master-details search template tab.
 At the same time we have `State`, `City`, and `PhoneNumber` fields. In order to let users fill them efficiently,
@@ -1655,6 +1675,8 @@ Run the tests to ensure everything works fine. After that, move those pieces of 
 Here we are ready to apply selectors to fields:
 
 ```xml
+<Criterions>
+<!-- ... -->
     <Criterion>
         <FieldName>State</FieldName>
         <Comment>at least 2 characters are required</Comment>
@@ -1682,20 +1704,22 @@ Here we are ready to apply selectors to fields:
         <Linked>State</Linked>                   <!-- AND THIS -->
         <SelectorId>UsCitySelector</SelectorId>  <!-- AND THIS -->
     </Criterion>
+<!-- ... -->
+</Criterions>
 ```
 We assign selectors, so our fields will get lookups automatically. 
 Also, we declare the second one as dependent in a way that selected `State` goes as an input for selector values for `City`.
 
 Rebuild the application and see how it works.
 
-![Screenshot - Selectors](../images/unity-7-customization-tutorial/screenshot-step5-selectors.png)
+![Screenshot - Selectors](images/unity-7-customization-tutorial/screenshot-step5-selectors.png)
 
 ## Criteria validation 
 
 We have the “Phone number” field. So, we can validate the entered value using the area code for the selected state/city 
 using the REST API we have already implemented.
 
-![Screenshot - Validation 1](../images/unity-7-customization-tutorial/screenshot-step5-validation1.png)
+![Screenshot - Validation 1](images/unity-7-customization-tutorial/screenshot-step5-validation1.png)
 
 Implementing the client-side validator.
 
@@ -1768,6 +1792,7 @@ in order what's the result.
 We shouldn't forget to add a new source into `wro-custom.xml`:
 
 ```xml
+<!--suppress XmlPathReference -->
 <groups xmlns="http://www.isdc.ro/wro"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.isdc.ro/wro wro.xsd">
@@ -2125,7 +2150,7 @@ Note that we apply the filter onto search template endpoint only.
 
 Rebuild the application and see how it works.
 
-![Screenshot - Altered response](../images/unity-7-customization-tutorial/screenshot-step6-alteredresponse.png)
+![Screenshot - Altered response](images/unity-7-customization-tutorial/screenshot-step6-alteredresponse.png)
 
 Now, the only things left from the development side are actions for creating `Customers` and `Correspondence` documents. 
 
@@ -2252,7 +2277,7 @@ The only step left here is to add the action on the master grid toolbar:
 
 Reset and test the configuration.
 
-![Screenshot - Add Customer](../images/unity-7-customization-tutorial/screenshot-step7-addcustomer.png)
+![Screenshot - Add Customer](images/unity-7-customization-tutorial/screenshot-step7-addcustomer.png)
 
 ## Creating Correspondence 
 
@@ -2343,6 +2368,7 @@ It reproduces the behaviour of the standard event handler but additionally passe
 
 Adding new JS files in the `wro-custom.xml`:
 ```xml
+<!--suppress XmlPathReference -->
 <groups xmlns="http://www.isdc.ro/wro"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.isdc.ro/wro wro.xsd">
@@ -2453,9 +2479,9 @@ Finally, we should add it to the details grid:
 
 Rebuild and test the application.
 
-![Screenshot - Add Correspondece 1](../images/unity-7-customization-tutorial/screenshot-step7-addcorrespondence1.png)
+![Screenshot - Add Correspondece 1](images/unity-7-customization-tutorial/screenshot-step7-addcorrespondence1.png)
 
-![Screenshot - Add Correspondece 2](../images/unity-7-customization-tutorial/screenshot-step7-addcorrespondence2.png)
+![Screenshot - Add Correspondece 2](images/unity-7-customization-tutorial/screenshot-step7-addcorrespondence2.png)
 
 At this point we covered all the requirements.
 Although application development has been completed, we should build and stage the production version.

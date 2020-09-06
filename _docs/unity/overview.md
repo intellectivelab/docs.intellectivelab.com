@@ -6,7 +6,7 @@ category: Unity 7
 	
 Unity connects your business application users with multiple repositories, workflows, and content systems. 
 
-![unity-wheel-diagram](../images/overview/Wheel-Diagram-Business-Applications-1024x959.png) 
+![unity-wheel-diagram](images/overview/Wheel-Diagram-Business-Applications-1024x959.png) 
 
 Unity empowers users to seamlessly search for and manage documents, tasks, and data across multiple ECM and BPM systems, whether on-premises or cloud, right from within your business applications. The solution integrates out of the box, allowing you to access and manipulate documents and data, manage cases, and process tasks directly from CRM and in-house business applications.
 
@@ -25,4 +25,4 @@ Unity implements quickly, reduces costs, and improves data security
 - **Secure:** Use role-based security combined with your in-house authentication to ensure appropriate access to content and system 
 - **Reduces costs:** Access and transact on data and documents from the source 
 
-&rarr; [Next step: Quick Start](../quick-start/) to install Unity demo and see how it works  
+&rarr; [Next step: Quick Start](quick-start.md) to install Unity demo and see how it works

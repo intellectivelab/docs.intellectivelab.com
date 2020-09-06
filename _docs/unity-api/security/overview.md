@@ -12,7 +12,7 @@ Unity uses the standard OAuth 2.0 three-legged authentication process, which pro
 - The application exchanges the authorization code for an access token 
 - The application then supplies the access token, in an authorization header, with API requests to gain access to Unity resources 
 
-	![api-security](../images/overview/APIAuthorizationProcessAnnotated_780x439.png)
+	![api-security](images/overview/APIAuthorizationProcessAnnotated_780x439.png)
 
 # OAuth 2.0 Endpoints 
 
@@ -46,17 +46,17 @@ How your application will be authorized determines the process for getting and u
 
 | User Authentication                               | System Account Authentication |
 |:--------------------------------------------------|:------------------------------|
-| [API User Authorization](../user-authorization/)  | [API Get Token](../get-token/)| 
-| [API Get Token](../get-token/)                    | [API Use Token](../use-token/)|
-| [API Use Token](../use-token/)                    |                               |
+| [API User Authorization](user-authorization.md)  | [API Get Token](get-token.md)| 
+| [API Get Token](get-token.md)                    | [API Use Token](use-token.md)|
+| [API Use Token](use-token.md)                    |                               |
 
 Other token related activities include: 
 
-[API Refresh Token](../refresh-token/)  
-[API Revoke Token](../revoke-token/) 
+[API Refresh Token](refresh-token.md)  
+[API Revoke Token](revoke-token.md) 
 
 # Relevant Standards 
 
-The relevant `oAuth2 class="subheader"` standards can be found [here](../references/).
+The relevant `oAuth2 class="subheader"` standards can be found [here](../references.md).
 
-&rarr; [Next step: User Authorization](../user-authorization/)   
+&rarr; [Next step: User Authorization](user-authorization.md)   
