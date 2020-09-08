@@ -1,7 +1,7 @@
 ---
 title: References
 layout: docs
-category: Unity API
+category: Unity 7
 ---
 # JSON Hypermedia API Language (HAL) 
 
@@ -131,7 +131,7 @@ A client would use these to navigate through the interface dynamically. In an id
 
 RSQL is a query language for parametrized filtering of resources in the Unity API. The simplicity of RSQL and its capability to express complex queries in a compact and HTTP URI-friendly way make it a good generic query language for searching endpoints in the API. The following table lists basic operators. 
 
-### RSQL operators 
+## RSQL operators 
 
 | Basic Operator | Description         | Example       | Result                                          |
 |:---------------|:--------------------|:--------------|:------------------------------------------------|
@@ -144,7 +144,7 @@ RSQL is a query language for parametrized filtering of resources in the Unity AP
 | `=in=`         | In                  |               |                                                 |
 | `=out=`        | Out                 |               |                                                 | 
 
-### Joining Operators 
+## Joining Operators 
 
 | Composite Operator | Description         | Example                                     | Result                                                                            |
 |:-------------------|:--------------------|:--------------------------------------------|:----------------------------------------------------------------------------------|

@@ -1,5 +1,5 @@
 ---
-title: Unity 7 Customization Tutorial
+title: Unity 7 Customization
 layout: docs
 category: Unity 7
 ---
@@ -28,7 +28,7 @@ selected (use the actual area code dictionary as well).
 From the UI point of view, it should implement master-detail approach. Users search and select `Customers` in master
 (the top one) part. Selected `Customer` filters `Correpondence` documents at the detail (the bottom one) part.
 
-![Screenshot - the final result](images/unity-7-customization-tutorial/screenshot-final-result.png)
+![Screenshot - the final result](images/unity-7-customization/screenshot-final-result.png)
 
 ## Implementation steps 
 
@@ -138,11 +138,11 @@ To debug the client-side, use the developer tools of the browser. We recommend u
 Also, consider building the app using `web-dev-mode` profile. Otherwise, you will have to manage the minimized version of
 JS code.
 
-![Screenshot - Chrome devtools 1](images/unity-7-customization-tutorial/screenshot-chrome-dev1.png)
+![Screenshot - Chrome devtools 1](images/unity-7-customization/screenshot-chrome-dev1.png)
 
 You can debug JS code, even change it on the fly using the `Overrides` function:
 
-![Screenshot - Chrome devtools 2](images/unity-7-customization-tutorial/screenshot-chrome-dev2.png)
+![Screenshot - Chrome devtools 2](images/unity-7-customization/screenshot-chrome-dev2.png)
 
 Here you change the code, test it immediately without rebuilding the app (which is definitely a time-consuming operation).
 After you complete debugging, just copy the final version of the JS code into the main project sources. 
@@ -451,7 +451,7 @@ To assign the search template to the tab, we need a search template set called `
 ``` 
 
 Now we can apply the configuration (restart the server or use `reset.jsp`) and take a look on what we have on this step:
-![Screenshot - Master Search template](images/unity-7-customization-tutorial/screenshot-step2-master-searchtemplate.png)
+![Screenshot - Master Search template](images/unity-7-customization/screenshot-step2-master-searchtemplate.png)
 
 ### Details search template (Correspondence)
 Aside of the idea that a result set for `Correspondence` documents should be filtered
@@ -539,7 +539,7 @@ Finally, add the search template into existing template set:
     </TemplateSet>
 ```
 And now we can see the second search template availible in the application:
-![Screenshot - Details search template](images/unity-7-customization-tutorial/screenshot-step2-details-searchtemplate.png)
+![Screenshot - Details search template](images/unity-7-customization/screenshot-step2-details-searchtemplate.png)
 
 On this step, we have configured the application using only out-of-the-box capabilities.
 We will use this solution base in our future customizations.
@@ -701,7 +701,7 @@ New component expects to have 2 different template sets. So, we need to rearrang
 </TemplateSets>
 ```
 Rebuild the application using `mvn clean package -P web-dev-mode` command and see the result:
-![Screenshot - Master-details](images/unity-7-customization-tutorial/screenshot-step3-masterdetails1.png)
+![Screenshot - Master-details](images/unity-7-customization/screenshot-step3-masterdetails1.png)
 
 ## Implementing action handler 
 Now, the only thing left on this step is implementing an action for selecting `Customer` document and filtering
@@ -816,7 +816,7 @@ Here `{Level.masterProperty}` placeholder addresses the field from the context o
 
 Rebuild the application to see the final result for this step: 
 
-![Screenshot - Master-details](images/unity-7-customization-tutorial/screenshot-step3-masterdetails2.png)
+![Screenshot - Master-details](images/unity-7-customization/screenshot-step3-masterdetails2.png)
 
 As you can see, we have a fully-functioning master-details search template tab.
 At the same time we have `State`, `City`, and `PhoneNumber` fields. In order to let users fill them efficiently,
@@ -928,8 +928,7 @@ import java.util.Collection;
 public interface StatesCitiesDictionaryService {
 
     /**
-     * Fetch full list of states
-     * @return
+     * @return Fetch full list of states
      */
     Collection<State> listStates();
 
@@ -1712,18 +1711,18 @@ Also, we declare the second one as dependent in a way that selected `State` goes
 
 Rebuild the application and see how it works.
 
-![Screenshot - Selectors](images/unity-7-customization-tutorial/screenshot-step5-selectors.png)
+![Screenshot - Selectors](images/unity-7-customization/screenshot-step5-selectors.png)
 
 ## Criteria validation 
 
 We have the “Phone number” field. So, we can validate the entered value using the area code for the selected state/city 
 using the REST API we have already implemented.
 
-![Screenshot - Validation 1](images/unity-7-customization-tutorial/screenshot-step5-validation1.png)
+![Screenshot - Validation 1](images/unity-7-customization/screenshot-step5-validation1.png)
 
 Implementing the client-side validator.
 
-[`custom-webapp/src/main/webapp/js/custom/validation/UsPhone.js`](custom-webapp/src/main/webapp/js/custom/validation/UsPhone.js)
+[`custom-webapp/src/main/webapp/js/custom/validation/UsPhone.js`](https://github.com/intellectivelab/u7-samples-crm-app/blob/master/docs/custom-webapp/src/main/webapp/js/custom/validation/UsPhone.js)
 
 ```javascript
 Ext.define('Override.form.field.VTypes', {
@@ -1857,6 +1856,7 @@ import java.io.PrintWriter;
 
 /**
  * Wrapper for response. Allows to accumulate and return data as String
+ * @noinspection ALL
  */
 public class ByteResponseWrapper extends HttpServletResponseWrapper {
     private ByteArrayServletOutputStream wrapOutputStream = null;
@@ -2150,7 +2150,7 @@ Note that we apply the filter onto search template endpoint only.
 
 Rebuild the application and see how it works.
 
-![Screenshot - Altered response](images/unity-7-customization-tutorial/screenshot-step6-alteredresponse.png)
+![Screenshot - Altered response](images/unity-7-customization/screenshot-step6-alteredresponse.png)
 
 Now, the only things left from the development side are actions for creating `Customers` and `Correspondence` documents. 
 
@@ -2277,7 +2277,7 @@ The only step left here is to add the action on the master grid toolbar:
 
 Reset and test the configuration.
 
-![Screenshot - Add Customer](images/unity-7-customization-tutorial/screenshot-step7-addcustomer.png)
+![Screenshot - Add Customer](images/unity-7-customization/screenshot-step7-addcustomer.png)
 
 ## Creating Correspondence 
 
@@ -2479,9 +2479,9 @@ Finally, we should add it to the details grid:
 
 Rebuild and test the application.
 
-![Screenshot - Add Correspondece 1](images/unity-7-customization-tutorial/screenshot-step7-addcorrespondence1.png)
+![Screenshot - Add Correspondece 1](images/unity-7-customization/screenshot-step7-addcorrespondence1.png)
 
-![Screenshot - Add Correspondece 2](images/unity-7-customization-tutorial/screenshot-step7-addcorrespondence2.png)
+![Screenshot - Add Correspondece 2](images/unity-7-customization/screenshot-step7-addcorrespondence2.png)
 
 At this point we covered all the requirements.
 Although application development has been completed, we should build and stage the production version.
