@@ -3,7 +3,7 @@ title: How To Create Page
 layout: docs
 category: Unity 7
 ---
-This is a guide how to create page for github documentation site using Markdown syntax. If you know Markdown syntax, start from [Markdown file structure and page structure](how-to-create-page.md/#markdown-file-structure-and-page-structure).  
+This is a guide how to create page for github documentation site using Markdown syntax. If you know Markdown syntax, start from [Markdown file structure and page structure](how-to-create-page.md#markdown-file-structure-and-page-structure).  
 
 # Markdown Syntax 
 
@@ -69,7 +69,7 @@ To create a link, type:
 [Title of link](url)
 ```
 It will look on page:  
-[Title of link](url) 
+[Title of link](#links) 
 
 ## Images 
 
@@ -77,8 +77,6 @@ To insert an image, type:
 ```
 ![Title of image](url)
 ``` 
-
-To align left edge of the image with text in list, use `tab` before `![Title of image](url)` 
 
 ## Code and code blocks 
 
@@ -129,19 +127,19 @@ It will look on page:
 | cell content | cell content |
 | cell content | cell content | 
 
-To align columns to the left or right edge, add `:` sign: 
+To align columns to the left or right edge, or center add `:` sign: 
 ```
-| Column 1             | Column 2          |
-| :------------------- | ----------------: |
-| left                 | right             |
-| alignment            | alignment         |
+| Column 1             | Column 2          | Column 3        |
+| :------------------- | :---------------: | --------------: |
+| left                 | centered          | right           |
+| alignment            | alignment         | alignment       |
 ```
 It will look on page: 
 
-| Column 1             | Column 2          |
-| :------------------- | ----------------: |
-| left                 | right             |
-| alignment            | alignment         |
+| Column 1             | Column 2          | Column 3        |
+| :------------------- | :---------------: | --------------: |
+| left                 | centered          | right           |
+| alignment            | alignment         | alignment       |
 
 You can add links, code (words or phrases in backticks (`) only, not code blocks), and emphasis.
 You can’t add headings, blockquotes, lists, horizontal rules, images, or HTML tags.  
@@ -197,6 +195,8 @@ Use `# Heading Level 1` with all capital letters to write titles of chapters.
 
 Use `## Heading level 2`, `### Heading level 3` and `#### Heading level 4` with only first capital letter to write subchapters.  
 
+**Note:** All headings must be different, then they might be anchors for links.  
+
 Use backticks (`) to write: 
 - commands and messages in Command Prompt: `cd C:\DockerUnity\`, `Login Succeeded` 
 - names and paths to directories and files: `C:/DockerUnity` 
@@ -212,11 +212,11 @@ Use blockquotes to write quotes from an external sources.
 
 Use plain text for the rest of content.  
 
-### Lists 
+### Lists using 
 
 Unordered lists are preferrable. Use ordered lists if only it is necessary to count items. 
 
-### Code blocks 
+### Code blocks using 
 
 Use simple or highlighted code blocks. 
 
@@ -228,10 +228,35 @@ Use simple or highlighted code blocks.
 - For highlighting use red frames, red color is R220 G56 B64 (#dc3840):  
 	![highlight](images/how-to-create-page/image10.png) 
 - Use `:` after the text before image if image illustrates this text 
+- To align left edge of the image with text in list, use `tab` before `![Title of image](url)`
 
-Images should be placed to `images/name-of-your-md-file/` folder. 
+Images should be placed to `images/name-of-your-md-file/` folder.  
+To insert image to page use `![image-title](images/name-of-your-md-file/name-of-image.png)` 
 
-### Tables 
+### Links to pages 
+
+#### Link to current page 
+
+To insert a link to any header of current page type:  
+`[Link Title](#header-title)`  
+It will look on page: 
+[Link Title](#link-to-current-page)
+
+#### Link to another page on documentation portal 
+
+To insert a link to any page of documentation portal type:  
+`[Link Title](page-name.md)`, if it is placed in the same folder as your page  
+`[Link Title](path/page-name.md)`, if it is placed in another folder. Use relative path for `path`.  
+
+To insert a link to any header of another documentation portal page type:  
+`[Link Title](path/page-name.md/#header-title)`  
+
+#### Link to external page 
+
+To insert a link to external page type:  
+`[Link Title](url)`  
+
+### Tables using 
 
 The simpler the better. Big tables might be rendered unpredictable. 
 
@@ -241,13 +266,13 @@ Remove all confidential information from your content and images (passwords etc)
 
 ## Next step recommendations (optional) 
 
-You can type at the end of the page a source for the next step:  
+You can type at the end of the page a link to the next step:  
 
-`&rarr; [Next step: Next Page Title](path/next-page-title/)`  
+`&rarr; [Next step: Next Page Title](path/next-page-name.md)`  
 
 It will look on page: 
 
-&rarr; [Next step: Next Page Title](./next-page-title/)
+&rarr; [Next step: Next Page Title](#next-step-recommendations-optional)
 
 
 

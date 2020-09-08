@@ -1,5 +1,5 @@
 ---
 title: Configuration
 layout: docs
-category: Unity API
+category: Unity 7
 ---
