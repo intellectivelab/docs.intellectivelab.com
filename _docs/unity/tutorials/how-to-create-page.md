@@ -13,8 +13,7 @@ To create a heading, add number signs (#) in front of a word or phrase:
 ```
 # Heading Level 1  
 ## Heading level 2  
-### Heading level 3 
-#### Heading level 4   
+### Heading level 3  
 ```
 Heading Level 1 is the biggest. 
 Don't forget type a space between `#` and `Heading`. 
@@ -177,7 +176,7 @@ category: Unity 7
 ---
 ```
 This information is not visible on site page, but required to properly embed page in the site.
-Sidebar.yml file should contain the same `title` value. 
+`Sidebar.yml` file should contain the same `title` value. 
 
 ## Title of page 
  
@@ -218,7 +217,7 @@ Unordered lists are preferrable. Use ordered lists if only it is necessary to co
 
 ### Code blocks using 
 
-Use simple or highlighted code blocks. 
+Use simple and highlighted code blocks with `json`, `xml` or `java` tags. 
 
 ### Images and screenshots requirements 
 

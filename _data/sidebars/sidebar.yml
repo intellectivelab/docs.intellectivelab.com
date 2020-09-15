@@ -43,11 +43,11 @@ entries:
 
               - title: Security
                 output: web
-                url: /docs/unity/configuration/Security/
+                url: /docs/unity/configuration/security/
 
               - title: Connectors
                 output: web
-                url: /docs/docs/unity/configuration/connectors/
+                url: /docs/unity/configuration/connectors/
 
               - title: Business Analytics
                 output: web
