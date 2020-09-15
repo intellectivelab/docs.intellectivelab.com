@@ -23,7 +23,7 @@ category: Unity 7
 | Feature | Unity ExtJs | Unity React | Feature Details |
 |:--------------------|:-------------------:|:-------:|:-------:|
 |Grouping |	 + | [U7-2691](https://jira.intellective.com/browse/U7-2691) | [details](#unity-features-list-with-descriptions) | 
-|Multiple Column Sorting | + | + | [details](#unity-features-list-with-descriptions) |
+|Multiple Column Sorting | + | + | [details](features-grid.md) |
 |Column locking	| + |   | [details](#unity-features-list-with-descriptions) |
 |Column spanning | + | + | [details](#unity-features-list-with-descriptions) |
 |Column reordering | + | + | [details](#unity-features-list-with-descriptions) |
@@ -241,6 +241,16 @@ category: Unity 7
 |Reassign work item | + | + |  [details](#unity-features-list-with-descriptions) |
 |Process analytics |   | + |  [details](#unity-features-list-with-descriptions) |
 
+## User preferences 
+
+| Feature | Unity ExtJs | Unity React | Feature Details |
+|:--------------------|:-------------------:|:-------:|:-------:|
+|Localization | + |   |  [details](#unity-features-list-with-descriptions) |
+|Choosing user role | + |   |  [details](#unity-features-list-with-descriptions) |
+|Choosing preferred language | + |   |  [details](#unity-features-list-with-descriptions) |
+|Choosing time zone | + |   |  [details](#unity-features-list-with-descriptions) |
+|Choosing theme | + | + |  [details](#unity-features-list-with-descriptions) |
+
 ## Auxiliary 
 
 | Feature | Unity ExtJs | Unity React | Feature Details |
@@ -248,11 +258,7 @@ category: Unity 7
 |Unity API support |   | + |  [details](#unity-features-list-with-descriptions) |
 |Help Authoring | + |   |  [details](#unity-features-list-with-descriptions) |
 |System Notifications | + |  [U7-2661](https://jira.intellective.com/browse/U7-2661) |  [details](#unity-features-list-with-descriptions) |
-|Localization | + |   |  [details](#unity-features-list-with-descriptions) |
-|Choosing user role | + |   |  [details](#unity-features-list-with-descriptions) |
-|Choosing preferred language | + |   |  [details](#unity-features-list-with-descriptions) |
-|Choosing time zone | + |   |  [details](#unity-features-list-with-descriptions) |
-|Choosing theme | + | + |  [details](#unity-features-list-with-descriptions) |
+|Environment Variables | ? | ? |  [details](#unity-features-list-with-descriptions) |
 
 # Unity Features List With Descriptions  
 
@@ -307,6 +313,8 @@ Effectively responds to various screen sizes.
 ## Case management 
 
 ## Process management 
+
+## User preferences 
 
 ## Auxiliary 
 
