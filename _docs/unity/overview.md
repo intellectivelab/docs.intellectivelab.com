@@ -16,7 +16,7 @@ Unity provides:
 - Advanced document management, case management, and task processing across multiple ECM and BPM systems in one central location 
 - Enhanced user engagement and productivity 
 - Informed business decisions based on complete data from all your enterprise systems and applications 
-- Improved business KPIs via process automation and insights 
+- Improved business KPIs via process automation and insights.
 
 Unity implements quickly, reduces costs, and improves data security.
 
