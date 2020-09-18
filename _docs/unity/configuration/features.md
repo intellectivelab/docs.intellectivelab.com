@@ -168,7 +168,7 @@ category: Unity 7
 |Line Chart |   | + | [details](#unity-features-list-with-descriptions) |
 |Area Chart |   | + | [details](#unity-features-list-with-descriptions) |
 |Bar Chart | + | + | [details](#unity-features-list-with-descriptions) |
-|Pie Chart | + | + | [details](#unity-features-list-with-descriptions) |
+|Pie Chart | + | [+](dashboards/charts/features-pie-chart.md) | [details](#unity-features-list-with-descriptions) |
 |Scatter Chart |   | + | [details](#unity-features-list-with-descriptions) |
 |Composite Chart |   | + | [details](#unity-features-list-with-descriptions) |
 |Pivot | + |   | [details](#unity-features-list-with-descriptions) |
