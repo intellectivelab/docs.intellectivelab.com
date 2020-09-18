@@ -10,7 +10,7 @@ To try Unity demo version [install Docker](tutorials/how-to-install-docker.md) a
 ## Configuration 
 
 - Create folder on the drive you shared to store Open Liberty & Unity configuration files, `C:\DockerUnity` for example 
-- [Download](link-to-server.zip) Unity package, unpack and place files to folder you created 
+- [Download](../downloads/unity-package.zip) Unity package, unpack and place files to folder you created 
 - Open Command Prompt or PowerShell in admin mode and navigate to this folder, running command 
  `cd C:\DockerUnity\`
 - Run `docker login docker.devops.intellectivelab.com` 

@@ -180,7 +180,7 @@ This information is not visible on site page, but required to properly embed pag
 
 ## Title of page 
  
-Don't type title of page in markdown file. It will appear on page automatically from metadata above.   
+Don't type title of page as a header in markdown file. It will appear on page automatically from metadata above.   
 
 ## Table of contents 
 
@@ -222,12 +222,16 @@ Use simple and highlighted code blocks with `json`, `xml` or `java` tags.
 ### Images and screenshots requirements 
 
 - Preferrable image format is .png 
-- Screenshots to illustrate process steps should have the same size 
+- Do not scale or compressed images, use actual pixel size
 - Crop screenshots accurately 
+- Screenshots to illustrate process steps should have the same size 
 - For highlighting use red frames, red color is R220 G56 B64 (#dc3840):  
 	![highlight](images/how-to-create-page/image10.png) 
-- Use `:` after the text before image if image illustrates this text 
+- Use `:` after the text before image if the image illustrates this text 
 - To align left edge of the image with text in list, use `tab` before `![Title of image](url)`
+
+Optional: Most images look better when adding a grey 1px border, grey color is R167 G167 B167 (#a7a7a7). 
+Some images like schemes or diagrams on white background don't need any border. 
 
 Images should be placed to `images/name-of-your-md-file/` folder.  
 To insert image to page use `![image-title](images/name-of-your-md-file/name-of-image.png)` 
@@ -261,7 +265,8 @@ The simpler the better. Big tables might be rendered unpredictable.
 
 ### Confidential information 
 
-Remove all confidential information from your content and images (passwords etc).
+Remove all confidential information from your content and images (passwords etc). 
+Also check links and files for downloads (configs for example) if they contain any confidential information. 
 
 ## Next step recommendations (optional) 
 
@@ -272,6 +277,22 @@ You can type at the end of the page a link to the next step:
 It will look on page: 
 
 &rarr; [Next step: Next Page Title](#next-step-recommendations-optional)
+
+# Viewing page in local environment
+
+To open page in local environment:
+- run Docker
+- in Command Prompt go to directory with project 
+- run `jekyll.bat`
+- open `localhost:4000` in browser to view project
+
+# Verifying
+
+Read whole page before publishing. Verify that all images are shown and each link works. 
+
+Check automatic Table of Content in the beginning of page, that its structure corresponds to content.
+
+
 
 
 

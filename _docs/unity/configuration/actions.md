@@ -1,5 +1,5 @@
 ---
-title: Look & Feel
+title: Actions Configuration
 layout: docs
 category: Unity 7
 ---
