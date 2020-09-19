@@ -164,13 +164,15 @@ category: Unity 7
 |Facet(category) field | + | + | [details](#unity-features-list-with-descriptions) |
 |Range slider | + | + | [details](#unity-features-list-with-descriptions) |
 |Indicator |   | + | [details](#unity-features-list-with-descriptions) |
-|Column Chart | + | + | [details](#unity-features-list-with-descriptions) |
-|Line Chart |   | + | [details](#unity-features-list-with-descriptions) |
-|Area Chart |   | + | [details](#unity-features-list-with-descriptions) |
-|Bar Chart | + | + | [details](#unity-features-list-with-descriptions) |
+|Column Chart | + | [+](dashboards/charts/features-bar-chart.md) | [details](#unity-features-list-with-descriptions) |
+|Mark Chart | + | [+](dashboards/charts/features-mark-chart.md) | [details](#unity-features-list-with-descriptions) |
+|Line Chart |   | [+](dashboards/charts/features-line-chart.md) | [details](#unity-features-list-with-descriptions) |
+|Line Mark Chart | + | [+](dashboards/charts/features-linemark-chart.md) | [details](#unity-features-list-with-descriptions) |
+|Area Chart |   | [+](dashboards/charts/features-area-chart.md) | [details](#unity-features-list-with-descriptions) |
+|Bar Chart | + | [+](dashboards/charts/features-bar-chart.md) | [details](#unity-features-list-with-descriptions) |
 |Pie Chart | + | [+](dashboards/charts/features-pie-chart.md) | [details](#unity-features-list-with-descriptions) |
 |Scatter Chart |   | + | [details](#unity-features-list-with-descriptions) |
-|Composite Chart |   | + | [details](#unity-features-list-with-descriptions) |
+|Composite Chart |   | [+](dashboards/charts/features-composite-chart.md) | [details](#unity-features-list-with-descriptions) |
 |Pivot | + |   | [details](#unity-features-list-with-descriptions) |
 |Sunburst |   | [IB-1091](https://jira.intellective.com/browse/IB-1091) | [details](#unity-features-list-with-descriptions) |
 |Treemap |   | + | [details](#unity-features-list-with-descriptions) |

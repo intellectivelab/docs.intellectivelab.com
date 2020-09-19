@@ -16,7 +16,7 @@ Pie charts can be replaced in most cases by other charts such as the [Bar Chart]
 
 The Pie Chart component is built based on [React-Vis Radial chart](https://uber.github.io/react-vis/documentation/other-charts/radial-chart).
 
-![Pie Chart](images/pie-chart.jpg) ![Pie Chart Hint](images/pie-chart-hint.jpg) ![Pie Chart Selection](images/pie-chart-selection.jpg) 
+![Pie Chart](images/pie-chart.jpg)
 
 ## Configuration
 
@@ -28,17 +28,17 @@ The code snippet below describes a Dashboard configuration example that includes
 
 ```xml
 <Perspectives>
-	...
-	<Perspective default="true" iconCls="perspective-cls" id="perspectiveId" title="perspectiveTitle">
-		...
-		<Dashboard builder="default" default="true" iconCls="dashboard-cls" id="dashboardId" lazy="true" title="dashboardTitle" tooltip="dashboardTooltip">
-			...
-			<Component cluster="breakdowns" layout="X4" ref="documents-by-mimetype-breakdown" type="chart"/>
-			...	
-		</Dashboard>
-		...
-	</Perspective>
-	...
+    ...
+    <Perspective default="true" iconCls="perspective-cls" id="perspectiveId" title="perspectiveTitle">
+        ...
+        <Dashboard builder="default" default="true" iconCls="dashboard-cls" id="dashboardId" lazy="true" title="dashboardTitle" tooltip="dashboardTooltip">
+            ...
+            <Component cluster="breakdowns" layout="X4" ref="documents-by-mimetype-breakdown" type="chart"/>
+            ...	
+        </Dashboard>
+        ...
+    </Perspective>
+    ...
 </Perspectives>
 ```
 
@@ -48,16 +48,16 @@ The code snippet below describes a Pie Chart configuration example. Please refer
 
 ```xml
 <UiComponents>
-	<Charts>
-		...
-		<Chart id="documents-by-mimetype-breakdown" label="Document MimeTypes" type="pie">
-			<Description>Document MimeType</Description>
-			<Facets scope="analytics_repository">
-				<Facet>mime-type-facet</Facet>
-			</Facets>
-		</Chart>
-		...
-	</Charts>
+    <Charts>
+        ...
+        <Chart id="documents-by-mimetype-breakdown" label="Document MimeTypes" type="pie">
+            <Description>Document MimeType</Description>
+            <Facets scope="analytics_repository">
+                <Facet>mime-type-facet</Facet>
+            </Facets>
+        </Chart>
+        ...
+    </Charts>
 </UiComponents>
 ```
 
@@ -69,10 +69,26 @@ The code snippet below describes a facet configuration example. Please refer to 
 
 ```xml
 <Facets>
-	...
-	<Facet id="mime-type-facet" field="MimeType" type="TERMS"/>
-	...
+    ...
+    <Facet id="mime-type-facet" field="MimeType" type="TERMS"/>
+    ...
 </Facets>
 ```     
 
-| Please note that Pie Chart supports only plain (one level) `TERMS` or `RANGE` facets.          
+| Please note that Pie Chart supports only plain (one level) `TERMS` or `RANGE` facets. 
+
+## Interaction
+
+The Pie Chart is interactive. The following interaction modes are supported:
+
+### Hover
+
+View details of hovered slice
+
+![Pie Chart Hint](images/pie-chart-hint.jpg)
+
+### Select
+
+Select the slice. Multiple slice selection is supported.
+
+![Pie Chart Select](images/pie-chart-selection.jpg)
