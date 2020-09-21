@@ -16,7 +16,7 @@ To sort by a second column, click the header for another column. The grid sorts 
 
 Continue until you reach the max number of sort columns (3 by default): 
 
-![multiple-column-sorting](images/grid/multicolumnsort.png) 
+![multiple-column-sorting](grid/images/multicolumnsort.png) 
 
 This feature implemented for:
 
