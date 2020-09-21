@@ -15,6 +15,57 @@ entries:
             url: /docs/unity/quick-start/
             output: web, pdf
 
+          - title: Features
+            output: web, pdf
+            subfolders:
+              - title: Design Principles
+                output: web
+                url: /docs/unity/features/design-principles/
+
+              - title: Grid
+                output: web
+                url: /docs/unity/features/grid/
+
+              - title: Search Criteria Panel
+                output: web
+                url: /docs/unity/features/search-criteria-panel/
+
+              - title: Properties View Form
+                output: web
+                url: /docs/unity/features/properties-view-form/
+
+              - title: Search Template
+                output: web
+                url: /docs/unity/features/search-template/
+
+              - title: Page/Tab
+                output: web
+                url: /docs/unity/features/page-tab/
+
+              - title: Dashboard
+                output: web
+                url: /docs/unity/features/dashboard/
+
+              - title: Document Management
+                output: web
+                url: /docs/unity/features/document-management/
+
+              - title: Case Management
+                output: web
+                url: /docs/unity/features/case-management/
+
+              - title: Process Management
+                output: web
+                url: /docs/unity/features/process-management/
+
+              - title: User Preferences
+                output: web
+                url: /docs/unity/features/user-preferences/
+
+              - title: Features Comparison List
+                output: web
+                url: /docs/unity/features/features-comparison-list/
+
           - title: Installation
             output: web, pdf
             subfolders:
@@ -33,33 +84,61 @@ entries:
           - title: Configuration
             output: web, pdf
             subfolders:
-              - title: Look & Feel
+              - title: Tree Models
                 output: web
-                url: /docs/unity/configuration/look-feel/
+                url: /docs/unity/configuration/tree-models/
 
-              - title: Features
+              - title: System Properties
                 output: web
-                url: /docs/unity/configuration/features/
+                url: /docs/unity/configuration/system-properties/
 
-              - title: Security
+              - title: Actions
                 output: web
-                url: /docs/unity/configuration/security/
+                url: /docs/unity/configuration/actions/
 
-              - title: Connectors
+              - title: Datasources
                 output: web
-                url: /docs/unity/configuration/connectors/
+                url: /docs/unity/configuration/datasources/
 
-              - title: Business Analytics
+              - title: Selectors
                 output: web
-                url: /docs/unity/configuration/business-analytics/
+                url: /docs/unity/configuration/selectors/
 
-              - title: Business Rules
+              - title: Properties
                 output: web
-                url: /docs/unity/configuration/business-rules/
+                url: /docs/unity/configuration/properties/
 
-              - title: Office Integration
+              - title: Grids
                 output: web
-                url: /docs/unity/configuration/office-integration/
+                url: /docs/unity/configuration/grids/
+
+              - title: Tabs
+                output: web
+                url: /docs/unity/configuration/tabs/
+
+              - title: Search Templates
+                output: web
+                url: /docs/unity/configuration/search-templates/
+
+              - title: Column Sets
+                output: web
+                url: /docs/unity/configuration/column-sets/
+
+              - title: Repository Data Providers
+                output: web
+                url: /docs/unity/configuration/repository-data-providers/
+
+              - title: Solutions Configuration
+                output: web
+                url: /docs/unity/configuration/solutions-configuration/
+
+              - title: Analytics
+                output: web
+                url: /docs/unity/configuration/analytics/
+
+              - title: Others
+                output: web
+                url: /docs/unity/configuration/others/
 
           - title: Customization
             output: web, pdf
@@ -106,7 +185,18 @@ entries:
               - title: References
                 output: web
                 url: /docs/unity/api/references/
-                 
+
+          - title: Release Notes
+            output: web, pdf
+            subfolders:
+              - title: Unity 7.6 Release Notes
+                output: web
+                url: /docs/unity/release-notes/unity-7-6-release-notes/
+
+              - title: Unity 7.7 Release Notes
+                output: web
+                url: /docs/unity/release-notes/unity-7-7-release-notes/
+
           - title: Tutorials
             output: web
             subfolders:
@@ -124,7 +214,7 @@ entries:
 
               - title: Unity Video Tutorials
                 output: web
-                url: /docs/unity/tutorials/
+                url: /docs/unity/tutorials/unity-video-tutorials/
 
       - title: Unity for CRM
         output: web, pdf

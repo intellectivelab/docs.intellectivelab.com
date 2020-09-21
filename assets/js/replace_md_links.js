@@ -31,7 +31,7 @@
 // replace <doc_root>/folder/page/subpath/subpage.md(#link) -> <doc_root>/folder/subpath/subpage/
 
     let mdRegExp = "(.*?)\\.md($|#(.*))";
-    let imagesRegExp = "(.*?)(/images/)(.*)";
+    let resourcesRegExp = "(.*?)(/images/|/downloads/)(.*)";
     let originLength = window.location.origin.length;
     for (let i = 0; i < count; i++) {
         let linkRef = document.links[i].href;
@@ -48,9 +48,9 @@
                 document.links[i].setAttribute('href', newLink);
                 continue;
             }
-            let matchImages = linkRef.substring(path2).match(imagesRegExp);
-            if(matchImages){
-                let newLink = path.substring(0, path1) + matchImages[2] + matchImages[3];
+            let matchResources = linkRef.substring(path2).match(resourcesRegExp);
+            if(matchResources){
+                let newLink = path.substring(0, path1) + matchResources[2] + matchResources[3];
                 document.links[i].setAttribute('href', newLink);
             }
         }
