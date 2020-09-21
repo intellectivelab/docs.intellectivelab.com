@@ -176,7 +176,6 @@ category: Unity 7
 ---
 ```
 This information is not visible on site page, but required to properly embed page in the site.
-`Sidebar.yml` file should contain the same `title` value. 
 
 ## Title of page 
  
@@ -226,15 +225,17 @@ Use simple and highlighted code blocks with `json`, `xml` or `java` tags.
 - Crop screenshots accurately 
 - Screenshots to illustrate process steps should have the same size 
 - For highlighting use red frames, red color is R220 G56 B64 (#dc3840):  
-	![highlight](images/how-to-create-page/image10.png) 
+	![highlight](how-to-create-page/images/image10.png) 
 - Use `:` after the text before image if the image illustrates this text 
 - To align left edge of the image with text in list, use `tab` before `![Title of image](url)`
 
 Optional: Most images look better when adding a grey 1px border, grey color is R167 G167 B167 (#a7a7a7). 
 Some images like schemes or diagrams on white background don't need any border. 
 
-Images should be placed to `images/name-of-your-md-file/` folder.  
-To insert image to page use `![image-title](images/name-of-your-md-file/name-of-image.png)` 
+Images should be placed to `name-of-your-md-file/images/` folder:
+![files-structure](how-to-create-page/images/files-structure.png) 
+  
+To insert image into page use `![image-title](name-of-your-md-file/images/name-of-image.png)` 
 
 ### Links to pages 
 
@@ -259,14 +260,22 @@ To insert a link to any header of another documentation portal page type:
 To insert a link to external page type:  
 `[Link Title](url)`  
 
+#### Downloads
+
+If user should download file from your page, for example `config.xml` for tutorial, place it in `name-of-your-md-file/downloads/` folder.  
+Make sure this file doesn't contain any confidential information like passwords etc.
+
 ### Tables using 
 
 The simpler the better. Big tables might be rendered unpredictable. 
 
 ### Confidential information 
 
-Remove all confidential information from your content and images (passwords etc). 
-Also check links and files for downloads (configs for example) if they contain any confidential information. 
+Remove all confidential information (passwords etc) from your content. Check carefully: 
+- text
+- images 
+- links 
+- files for downloads (configs etc)
 
 ## Next step recommendations (optional) 
 
@@ -278,21 +287,30 @@ It will look on page:
 
 &rarr; [Next step: Next Page Title](#next-step-recommendations-optional)
 
+# Creating subpages
+
+If content is too big to place on one primary page, you can create secondary pages (subpages) and place links there on the primary page.  
+Thus, there are:
+- primary pages, that user can open from navigation tree
+- secondary pages, that user can open from links on primary pages  
+
+Place `secondary-page-name.md` file in the same folder as `primary-page-name.md` file.  
+Use primary page `images` and `downloads` folders to place images and downloads for the secondary page.
+
 # Viewing page in local environment
 
 To open page in local environment:
 - run Docker
-- in Command Prompt go to directory with project 
+- go to Docker's `Settings > Resources > File Sharing` and add project directory: 
+    ![docker-sharing](how-to-create-page/images/docker-sharing.png) 
+- in Command Prompt go to project directory 
 - run `jekyll.bat`
 - open `localhost:4000` in browser to view project
 
 # Verifying
 
-Read whole page before publishing. Verify that all images are shown and each link works. 
-
-Check automatic Table of Content in the beginning of page, that its structure corresponds to content.
-
-
+Read whole page before publishing. Verify that all images are shown properly and each link works.  
+Check automatic Table of Contents in the beginning of page, that its structure corresponds to content.
 
 
 

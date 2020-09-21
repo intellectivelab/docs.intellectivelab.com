@@ -10,7 +10,7 @@ To try Unity demo version [install Docker](tutorials/how-to-install-docker.md) a
 ## Configuration 
 
 - Create folder on the drive you shared to store Open Liberty & Unity configuration files, `C:\DockerUnity` for example 
-- [Download](../downloads/unity-package.zip) Unity package, unpack and place files to folder you created 
+- [Download](quick-start/downloads/unity-package.zip) Unity package, unpack and place files to folder you created 
 - Open Command Prompt or PowerShell in admin mode and navigate to this folder, running command 
  `cd C:\DockerUnity\`
 - Run `docker login docker.devops.intellectivelab.com` 
@@ -20,7 +20,7 @@ To try Unity demo version [install Docker](tutorials/how-to-install-docker.md) a
 
 	You should get the message `Login Succeeded` 
 
-	![unity-cmd](images/quick-start/image1.png) 
+	![unity-cmd](quick-start/images/image1.png) 
 	
 - Run `docker run -it -v c:/DockerUnity:/opt/vu  -p 9080:9080  --rm docker.devops.intellectivelab.com/unity-classic/unity-7:7.6.1-ol`, here `c:/DockerUnity` is a folder you copied Unity files 
 
@@ -53,7 +53,7 @@ Tabs are the main building block of Unity user interface.
 	
 Access roles can be used to provide different groups of users with specific set of tabs to tailor different functionality to different groups/departments. 
 
-![Search layout](images/quick-start/image2.png) 
+![Search layout](quick-start/images/image2.png) 
 
 ## Search layout  
 
@@ -63,11 +63,11 @@ You will find on every search page:
 - Content List, where you view your search results 
 - Actions to work with documents from content list 
 
-![Actions](images/quick-start/image3.png) 
+![Actions](quick-start/images/image3.png) 
 
 ## Case management - Case view 
 
-![Case Views](images/quick-start/image4.png)
+![Case Views](quick-start/images/image4.png)
 
 - Case details allows user to perform actions on case
 - Documents tab in case details shows all documents associated w/ case
@@ -75,7 +75,7 @@ You will find on every search page:
 
 ## Case management - Task view 
 
-![Case Views](images/quick-start/image5.png) 
+![Case Views](quick-start/images/image5.png) 
 
 - Task details allows user to perform actions defined in a workflow task
 - Documents tab shows all documents associated with a task

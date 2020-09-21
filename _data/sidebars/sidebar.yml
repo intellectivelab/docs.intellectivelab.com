@@ -18,34 +18,6 @@ entries:
           - title: Features
             output: web, pdf
             subfolders:
-              - title: Design Principles
-                output: web
-                url: /docs/unity/features/design-principles/
-
-              - title: Grid
-                output: web
-                url: /docs/unity/features/grid/
-
-              - title: Search Criteria Panel
-                output: web
-                url: /docs/unity/features/search-criteria-panel/
-
-              - title: Properties View Form
-                output: web
-                url: /docs/unity/features/properties-view-form/
-
-              - title: Search Template
-                output: web
-                url: /docs/unity/features/search-template/
-
-              - title: Page/Tab
-                output: web
-                url: /docs/unity/features/page-tab/
-
-              - title: Dashboard
-                output: web
-                url: /docs/unity/features/dashboard/
-
               - title: Document Management
                 output: web
                 url: /docs/unity/features/document-management/
@@ -58,13 +30,56 @@ entries:
                 output: web
                 url: /docs/unity/features/process-management/
 
+              - title: Enterprise Search
+                output: web
+                url: /docs/unity/features/enterprise-search/
+
+              - title: Actionable Analytics
+                output: web
+                url: /docs/unity/features/actionable-analytics/
+
+              - title: Integration
+                output: web
+                url: /docs/unity/features/integration/
+
+          - title: Components
+            output: web, pdf
+            subfolders:
+              - title: Design Principles
+                output: web
+                url: /docs/unity/components/design-principles/
+
+              - title: Grid
+                output: web
+                url: /docs/unity/components/grid/
+
+              - title: Search Criteria Panel
+                output: web
+                url: /docs/unity/components/search-criteria-panel/
+
+              - title: Properties View Form
+                output: web
+                url: /docs/unity/components/properties-view-form/
+
+              - title: Search Template
+                output: web
+                url: /docs/unity/components/search-template/
+
+              - title: Page/Tab
+                output: web
+                url: /docs/unity/components/page-tab/
+
+              - title: Dashboard
+                output: web
+                url: /docs/unity/components/dashboard/
+
               - title: User Preferences
                 output: web
-                url: /docs/unity/features/user-preferences/
+                url: /docs/unity/components/user-preferences/
 
               - title: Features Comparison List
                 output: web
-                url: /docs/unity/features/features-comparison-list/
+                url: /docs/unity/components/features-comparison-list/
 
           - title: Installation
             output: web, pdf

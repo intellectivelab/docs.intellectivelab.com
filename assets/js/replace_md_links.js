@@ -50,7 +50,7 @@
             }
             let matchResources = linkRef.substring(path2).match(resourcesRegExp);
             if(matchResources){
-                let newLink = path.substring(0, path1) + matchResources[2] + matchResources[3];
+                let newLink = path.substring(0, path1) + matchResources[0];
                 document.links[i].setAttribute('href', newLink);
             }
         }

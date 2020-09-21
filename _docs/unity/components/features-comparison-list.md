@@ -190,58 +190,58 @@ category: Unity 7
 
 | Feature | Unity ExtJs | Unity React | Feature details |
 |:--------------------|:-------------------:|:-------:|:-------:|
-|Create a document       | + | + |  [add description](document-management.md) |
-|Create a document with multiple content        | + | + |  [add description](document-management.md) |
-|Drag and drop a file into the grid  | + | [U7-2714](https://jira.intellective.com/browse/U7-2714) | [add description](document-management.md) |
-|Drag and Drop a file into the create/view form   |   | + |  [add description](document-management.md)      |
-|Folder select - upload a document into the selected folder | + | [U7-2715](https://jira.intellective.com/browse/U7-2715) |[add description](document-management.md) |
-|Document search and navigation        | + | + |[add description](document-management.md) |
-|Document view and update properties      | + | + | [add description](document-management.md) |
-|Document versioning        | + | + |[add description](document-management.md) |
-|Document permission management        | + |   | [add description](document-management.md) |
-|Document content action (view content and download)        | + | + | [add description](document-management.md) |
-|Document copy/move to folder        | + |   | [add description](document-management.md) |
-|Document delete       | + | + | [add description](document-management.md) |
-|Copy link        | + | + | [add description](document-management.md) |
+|Create a document       | + | + |  [add description](../features/document-management.md) |
+|Create a document with multiple content        | + | + |  [add description](../features/document-management.md) |
+|Drag and drop a file into the grid  | + | [U7-2714](https://jira.intellective.com/browse/U7-2714) | [add description](../features/document-management.md) |
+|Drag and Drop a file into the create/view form   |   | + |  [add description](../features/document-management.md)      |
+|Folder select - upload a document into the selected folder | + | [U7-2715](https://jira.intellective.com/browse/U7-2715) |[add description](../features/document-management.md) |
+|Document search and navigation        | + | + |[add description](../features/document-management.md) |
+|Document view and update properties      | + | + | [add description](../features/document-management.md) |
+|Document versioning        | + | + |[add description](../features/document-management.md) |
+|Document permission management        | + |   | [add description](../features/document-management.md) |
+|Document content action (view content and download)        | + | + | [add description](../features/document-management.md) |
+|Document copy/move to folder        | + |   | [add description](../features/document-management.md) |
+|Document delete       | + | + | [add description](../features/document-management.md) |
+|Copy link        | + | + | [add description](../features/document-management.md) |
 
 ## Case management 
 
 | Feature | Unity ExtJs | Unity React | Feature details |
 |:--------------------|:-------------------:|:-------:|:-------:|
-|Create a case | + | + |  [add description](case-management.md) |
-|Create a case with attachments | + | + |  [add description](case-management.md) |
-|Case search and navigation | + | + |  [add description](case-management.md) |
-|Case view and update properties | + | + |  [add description](case-management.md) |
-|Case history | + | + |  [add description](case-management.md) |
-|Case user comments (search, add, view, update, delete) | + | + |  [add description](case-management.md) |
-|Case activity feed with infinite scrolling |   | + |  [add description](case-management.md) |
-|Case events timeline with infinite scrolling |   | + |  [add description](case-management.md) |
-|Case attachments with folder view (search, navigate, attach, detach) | + | + |  [add description](case-management.md) |
-|Attach a local document to the case | + | + |  [add description](case-management.md) |
-|Attach an existing document to the case | + | + |  [add description](case-management.md) |
-|Case split  | + | + |  [add description](case-management.md) |
-|Case copy | + | + |  [add description](case-management.md) |
-|Case close | + | + |  [add description](case-management.md) |
-|Case re-open | + | + |  [add description](case-management.md) |
-|Case tasks view (search, create, view, complete, reassign) | + | + |  [add description](case-management.md) |
-|Case work items view (search, view, process, complete, reassign) | + | + |  [add description](case-management.md) |
-|Ability to show case related entities via virtual folders | + |   |  [add description](case-management.md) |
-|Copy link | + | + |  [add description](case-management.md) |
+|Create a case | + | + |  [add description](../features/case-management.md) |
+|Create a case with attachments | + | + |  [add description](../features/case-management.md) |
+|Case search and navigation | + | + |  [add description](../features/case-management.md) |
+|Case view and update properties | + | + |  [add description](../features/case-management.md) |
+|Case history | + | + |  [add description](../features/case-management.md) |
+|Case user comments (search, add, view, update, delete) | + | + |  [add description](../features/case-management.md) |
+|Case activity feed with infinite scrolling |   | + |  [add description](../features/case-management.md) |
+|Case events timeline with infinite scrolling |   | + |  [add description](../features/case-management.md) |
+|Case attachments with folder view (search, navigate, attach, detach) | + | + |  [add description](../features/case-management.md) |
+|Attach a local document to the case | + | + |  [add description](../features/case-management.md) |
+|Attach an existing document to the case | + | + |  [add description](../features/case-management.md) |
+|Case split  | + | + |  [add description](../features/case-management.md) |
+|Case copy | + | + |  [add description](../features/case-management.md) |
+|Case close | + | + |  [add description](../features/case-management.md) |
+|Case re-open | + | + |  [add description](../features/case-management.md) |
+|Case tasks view (search, create, view, complete, reassign) | + | + |  [add description](../features/case-management.md) |
+|Case work items view (search, view, process, complete, reassign) | + | + |  [add description](../features/case-management.md) |
+|Ability to show case related entities via virtual folders | + |   |  [add description](../features/case-management.md) |
+|Copy link | + | + |  [add description](../features/case-management.md) |
 
 ## Process management 
 
 | Feature | Unity ExtJs | Unity React | Feature details |
 |:--------------------|:-------------------:|:-------:|:-------:|
-|Personal in-basket | + | + |  [add description](process-management.md) |
-|Role in-basket | + | + |  [add description](process-management.md) |
-|View information about the work item and information about the associated case  | + | + |  [add description](process-management.md) |
-|Edit work item data, including case properties  | + | + |  [add description](process-management.md) |
-|Manage case attachments  | + | + |  [add description](process-management.md) |
-|View case history  | + | + |  [add description](process-management.md) |
-|Process/Complete work item | + | + |  [add description](process-management.md) |
-|Lock/Unlock work item | + | + |  [add description](process-management.md) |
-|Reassign work item | + | + |  [add description](process-management.md) |
-|Process analytics |   | + |  [add description](process-management.md) |
+|Personal in-basket | + | + |  [add description](../features/process-management.md) |
+|Role in-basket | + | + |  [add description](../features/process-management.md) |
+|View information about the work item and information about the associated case  | + | + |  [add description](../features/process-management.md) |
+|Edit work item data, including case properties  | + | + |  [add description](../features/process-management.md) |
+|Manage case attachments  | + | + |  [add description](../features/process-management.md) |
+|View case history  | + | + |  [add description](../features/process-management.md) |
+|Process/Complete work item | + | + |  [add description](../features/process-management.md) |
+|Lock/Unlock work item | + | + |  [add description](../features/process-management.md) |
+|Reassign work item | + | + |  [add description](../features/process-management.md) |
+|Process analytics |   | + |  [add description](../features/process-management.md) |
 
 ## User preferences 
 
