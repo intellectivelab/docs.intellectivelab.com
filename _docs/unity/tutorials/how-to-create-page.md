@@ -233,6 +233,7 @@ Optional: Most images look better when adding a grey 1px border, grey color is R
 Some images like schemes or diagrams on white background don't need any border. 
 
 Images should be placed to `name-of-your-md-file/images/` folder:
+
 ![files-structure](how-to-create-page/images/files-structure.png) 
   
 To insert image into page use `![image-title](name-of-your-md-file/images/name-of-image.png)` 
