@@ -220,13 +220,14 @@ Use simple and highlighted code blocks with `json`, `xml` or `java` tags.
 
 ### Images and screenshots requirements 
 
-- Preferrable image format is .png 
+- Preferable image format is .png 
 - Do not scale or compressed images, use actual pixel size
 - Crop screenshots accurately 
 - Screenshots to illustrate process steps should have the same size 
 - For highlighting use red frames, red color is R220 G56 B64 (#dc3840):  
 	![highlight](how-to-create-page/images/image10.png) 
 - Use `:` after the text before image if the image illustrates this text 
+- Keep empty row before and after image row
 - To align left edge of the image with text in list, use `tab` before `![Title of image](url)`
 
 Optional: Most images look better when adding a grey 1px border, grey color is R167 G167 B167 (#a7a7a7). 

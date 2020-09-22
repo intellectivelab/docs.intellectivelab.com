@@ -20,13 +20,13 @@ Unity provides:
 
 Unity implements quickly, reduces costs, and improves data security.
 
-### Simple to use 
+## Simple to use 
 Enjoy a truly seamless experience within your ERP, CRM, and business applications. 
-### Quick to deploy
+## Quick to deploy
 Design UI and make it available in minutes. 
-### Secure
+## Secure
 Use role-based security combined with your in-house authentication to ensure appropriate access to content and system. 
-### Reduces costs
+## Reduces costs
 Access and transact on data and documents from the source. 
 
 # Unity Components and Features
