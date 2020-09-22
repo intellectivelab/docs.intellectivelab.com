@@ -290,13 +290,16 @@ It will look on page:
 
 # Creating subpages
 
-If content is too big to place on one primary page, you can create secondary pages (subpages) and place links there on the primary page.  
+If content is too big to place it on one primary page, you can create secondary pages (subpages) and place links there on the primary page.  
 Thus, there are:
 - primary pages, that user can open from navigation tree
 - secondary pages, that user can open from links on primary pages  
 
-Place `secondary-page-name.md` file in the same folder as `primary-page-name.md` file.  
-Use primary page `images` and `downloads` folders to place images and downloads for the secondary page.
+Place `secondary-page-name.md` file in the folder `primary-page-name`, where images and downloads for primary page are placed: 
+   
+![subpages-structure](how-to-create-page/images/subpages-structure.png) 
+
+Create folder `secondary-page-name` to place images and downloads for this subpage.
 
 # Viewing page in local environment
 
