@@ -113,8 +113,8 @@ The following issues were resolved in the Unity 7.7 release. The ID and Descript
 
 # Installation Changes
 
-No installation changes are required
+No installation changes are required.
 
 # Configuration Changes
 
-Please refer to configuration guide to follow the configuration changes
+Please refer to configuration guide to follow the configuration changes.

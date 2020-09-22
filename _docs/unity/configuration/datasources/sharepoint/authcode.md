@@ -10,15 +10,16 @@ Unity backend uses authentication code to get access token for session user and 
 App registration certificate and application grants also used as system read only user to cache SP metadata.  
  
  | Datasource Configuration | Description | Example|
- | RootUrl | Required. Root Sharepoint URL. Note! site path configured at RepositoryDataProvider level and should not be included. | https://yourdomain.sharepoint.com |
+ |--------------------------|-------------|--------|
+ | RootUrl | Required. Root Sharepoint URL. Note: site path configured at RepositoryDataProvider level and should not be included. | https://yourdomain.sharepoint.com |
  | ApplicationId | Required. Azure App registration applicationId(aka clientId) | f1d7c8bc-6284-4db8-968f-e88a9bca70e1 |
- | AuthorityUrl | Required. https://login.microsoftonline.com/${AzureTenantId}. Please find Directory (tenant) Id value at "App registration" -> "Overview" page | https://login.microsoftonline.com/b128c161-3661-441c-8212-5116e40ef414 |
- | RedirectUrl | Required. http://${UnityServer}:${UnityPort}/${ContextRoot}/services/oauth2/callback. UnityServer - host name for the web unity application. UnityPort - port value for the unity web application. ContextRoot - server path unity web application mapped. Note! http could be only used for localhost, https MUST be used otherwise. | https://unity.server.com:9443/vu/services/oauth2/callback |
+ | AuthorityUrl | Required. `https://login.microsoftonline.com/${AzureTenantId}`. Please find Directory (tenant) Id value at "App registration" -> "Overview" page | https://login.microsoftonline.com/b128c161-3661-441c-8212-5116e40ef414 |
+ | RedirectUrl | Required. `http://${UnityServer}:${UnityPort}/${ContextRoot}/services/oauth2/callback`. UnityServer - host name for the web unity application. UnityPort - port value for the unity web application. ContextRoot - server path unity web application mapped. **Note:** http could be only used for localhost, https MUST be used otherwise. | https://unity.server.com:9443/vu/services/oauth2/callback |
  | ClientCert | Required. Signed client certificate password protected. Certificate used to get access code from Azure authority url. It's also used to authenticate system user to SP. Please see [Create Self Signed Certificate](#self-signed-certificate) page for details |  |
  | Password | Required. Password for certificate above. Should be stored encrypted (use Unity config console to encrypt the value)  |  |
- | AzureDomain| Required. Domain name to be added/replaced for unity user session if container authenticate user by simple name. This map username like 'myuser' to 'myuser@yourdomain.com' known to Azure AD. Note! this is case sensitive value. Unity connector validates Azure access token from auth popup belongs to the session user. | yourdomain.com |
- | OAuthPrompt | Optional. ```[login|none]```. Defaults to the behaviour - sso credentials will be used. login - will force the user to enter their credentials, negating single-sign on.  Please check [prompt option documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow) for details | ```<OAuthPrompt>login</OAuthPrompt>``` |
- | OAuthDisableMessage | Optional. ```[true|false]```. Defaults to false - additional Unity message will be presented before Azure popup | ```<OAuthDisableMessage>true</OAuthDisableMessage>``` |
+ | AzureDomain| Required. Domain name to be added/replaced for unity user session if container authenticate user by simple name. This map username like 'myuser' to 'myuser@yourdomain.com' known to Azure AD. **Note:** this is case sensitive value. Unity connector validates Azure access token from auth popup belongs to the session user. | yourdomain.com |
+ | OAuthPrompt | Optional. `[login|none]`. Defaults to the behaviour - sso credentials will be used. login - will force the user to enter their credentials, negating single-sign on.  Please check [prompt option documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow) for details | ```<OAuthPrompt>login</OAuthPrompt>``` |
+ | OAuthDisableMessage | Optional. `[true|false]`. Defaults to false - additional Unity message will be presented before Azure popup | `<OAuthDisableMessage>true</OAuthDisableMessage>` |
  
 Example datasource configuration:
 ```
@@ -37,28 +38,29 @@ Example datasource configuration:
 To create App Registration  in Azure Portal for new Untiy connector Authorization Code flow:   
 
  - Login to [Azure Portal](https://portal.azure.com) with your domain admin account
- - Navigate to Azure Active Directory -> App registrations
+ - Navigate to `Azure Active Directory > App registrations`:
   
-  ![App registrations](authcode/images/app_reg_nav.png)
+    ![App registrations](authcode/images/app_reg_nav.png)
 
 ## New App registration  
 
- - Click New registration 
+ - Click `New registration`: 
  
- ![New App registrations](authcode/images/app_reg_new.png)
+    ![New App registrations](authcode/images/app_reg_new.png)
  
- - Enter Name for the application and select single tenant option
+ - Enter `Name` for the application and select `Single tenant` option:
  
- ![Name for the App registrations](authcode/images/app_reg_name.png)
+    ![Name for the App registrations](authcode/images/app_reg_name.png)
  
- - At App registration -> Authentication add web platform
+ - At `App registration > Authentication` add web platform:
  
- ![Add platform](authcode/images/app_add_platform.png)
+    ![Add platform](authcode/images/app_add_platform.png)
  
-  and set redirect Url to https://${UnityServer}:${UnityPort}/${ContextRoot}/services/oauth2/callback. 
-  Note! https MUST be enabled for the Unity web application.
+    and set redirect Url to `https://${UnityServer}:${UnityPort}/${ContextRoot}/services/oauth2/callback`:  
   
- ![Add platform](authcode/images/app_add_platform_redirect.png) 
+    ![Add platform](authcode/images/app_add_platform_redirect.png) 
+ 
+    **Note:** https MUST be enabled for the Unity web application.
 
 ## Self Signed Certificate
 
@@ -70,58 +72,59 @@ To create App Registration  in Azure Portal for new Untiy connector Authorizatio
 ```shell
 PS C:\Code> .\Create-SelfSignedCertificate.ps1 -CommonName "UnitySpConnector" -StartDate 2020-09-21 -EndDate 2022-09-22 -Force
 ```
- - Use proper Start and End dates for a certificate and enter a password.    
+ - Use proper `StartDate` and `EndDate` for a certificate and enter a password:    
 
    ![Create-SelfSignedCertificate](authcode/images/generate_cert.png)
    
- - Copy content of the UnitySpConnector.b64 file to clipboard and paste it to ```<ClientCert>``` connector datasource configuration. 
-   Encode the password using Unity config console and put it to ```<Password>``` tag for SP connector datasource configuration.
+ - Copy content of the `UnitySpConnector.b64` file to clipboard and paste it to `<ClientCert>` connector datasource configuration. 
+   Encode the password using Unity config console and put it to `<Password>` tag for SP connector datasource configuration.
  
- - Upload UnitySpConnector.cer file to Azure App registration -> Certificats&secrets page
+ - Upload `UnitySpConnector.cer` file to Azure `App registrations > Certificats & secrets` page: 
  
-  ![Upload certificate](authcode/images/app_cert_upload.png) 
+   ![Upload certificate](authcode/images/app_cert_upload.png) 
  
 ## App permissions
   
- - At App registration -> API permissions select "Add permission"
+ - At `App registrations > API permissions` select `Add permission`:
 
- ![Add permissionsName for the App registrations](authcode/images/app_permissions_add.png)
+    ![Add permissionsName for the App registrations](authcode/images/app_permissions_add.png)
  
- select delegated permissions
+- Select `Delegated permissions`:
  
- ![delegated permissions for the App registrations](authcode/images/app_permissions_delegated.png)
+    ![delegated permissions for the App registrations](authcode/images/app_permissions_delegated.png)
   
- select SharePoint API
+ - Select `SharePoint` API:
  
- ![select sharePoint API](authcode/images/app_permissions_sp.png)
+    ![select sharePoint API](authcode/images/app_permissions_sp.png)
  
- check AllSites.FullControl (if users need to manage permissions) or AllSites.Read, AllSites.Write and apply:
+ - Check `AllSites.FullControl` (if users need to manage permissions) or `AllSites.Read`, `AllSites.Write` and apply:
   
- ![select sharePoint API](authcode/images/app_permissions_sp_delegated_fc.png)
+    ![select sharePoint API](authcode/images/app_permissions_sp_delegated_fc.png)
 
- Add Sites.Read.All Application type Sharepoint API permissions same way.
- Grant admin consent to selected api permissions:
-  
- ![select sharePoint API](authcode/images/app_permissions_sp_granted.png) 
+ - Add `Sites.Read.All` with `Application` type Sharepoint API permissions same way.
+ Grant `Admin consent` to selected api permissions:
+ 
+    ![select sharePoint API](authcode/images/app_permissions_sp_granted.png) 
 
-Use App registration data to fill in Unity ```<DataSource>``` configuration section.   
+- Use App registration data to fill in Unity `<DataSource>` configuration section.   
 
 # Collect and verify existing Azure App registration settings
 
 Use App registration data to fill in Unity DataSource configuration section. Following parameters required to configure Unity Sharepoint connector with Authorization Code flow: 
- - Read applicationID and tenantId from Azure app registration:  
- ![Example App Registrations](authcode/images/app_id_tenant.png) |
+ - Read `Application ID` and `tenant Id` from Azure app registration: 
+ 
+    ![Example App Registrations](authcode/images/app_id_tenant.png) 
 
- - Verify application API permission settings has SharePoint API Delegation Permission. 
- Note! For Users to be able to manage document permissions AllSites.FullControl required to be consented. 
+ - Verify application API permission settings has SharePoint API Delegation Permission.  
+ **Note:** For Users to be able to manage document permissions `AllSites.FullControl` required to be consented. 
  This does not give users FullControl permission in SP but allows to apply any actual user permission on behalf of user. 
- - Verify application API permission settings has SharePoint API Application "Sites.Read.All" Permission.
+ - Verify application API permission settings has SharePoint API Application `Sites.Read.All` Permission:
   
-  ![Azure App Permissions](authcode/images/app_permissions_sp_granted.png)
+    ![Azure App Permissions](authcode/images/app_permissions_sp_granted.png)
 
- - Verify redirect Url filled with value matching unity deployment  
- - Verify on the same page below settings "Treat application as public client" -> No 
+ - Verify redirect Url filled with value matching unity deployment: 
  
- ![Azure App Redirect](authcode/images/app_redirect.png)
- 
+    ![Azure App Redirect](authcode/images/app_redirect.png)  
+    
+ - Verify on the same page below `Treat application as public client` set to `No`. 
  - Use base64 encoded certificate (private part) with valid password in unity configuration. See [Self Signed Certificate](#self-signed-certificate) above.   

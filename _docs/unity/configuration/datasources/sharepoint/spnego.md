@@ -25,7 +25,7 @@ To enable SPNEGO for SP DataSource use configured login module in the configurat
 Note that no password for admin user and no ApplicationId and AzureDomain defined for Datasource.
 
 # Configure SPNEGO(Kerberos SSO) for SharePoint
-## Prereq:
+## Prerequisites
  - Admin privileges for AD and SP required to configure. 
  - Kerberos authentication requires that your servers have host (A) records created for them in DNS (not CNAME).
  - Kerberos needs the service domain account(s) that you have associated with target SharePoint Web applications as well as your back-end SQL Servers.
@@ -33,71 +33,77 @@ Note that no password for admin user and no ApplicationId and AzureDomain define
 ## Setup
 - Go to SharePoint Central Administration: 
 
-![Central Administration](spnego/images/sp_admin.png)
+    ![Central Administration](spnego/images/sp_admin.png)
  
-Navigate to Application Management > Manage web applications.
-Select your target Web application and then clicking Authentication Providers. 
-In the Authentication Providers dialog click authentication zone.
-In Edit Authentication dialog box check for Claims Authentication Types: Enabled Windows Authentication -> Integrated Windows Authentication -> Negotiate(Kerberos)
-
-![Edit Authentication dialog](spnego/images/sp_auth_providers.png)
+- Navigate to `Application Management > Manage web applications`.  
+    Select your target Web application and then clicking `Authentication Providers`.  
+    In the Authentication Providers dialog click authentication zone.  
+    In `Edit Authentication` dialog box check for `Claims Authentication Types`: `Enabled Windows Authentication > Integrated Windows Authentication > Negotiate(Kerberos)`:  
+ 
+    ![Edit Authentication dialog](spnego/images/sp_auth_providers.png)
 
 - Check or create SPNs for sharepoint servers and mssql servers. 
-Use ```setspn -Q``` commands to verify SPN are linked to proper service accounts 
- ```shell script
- setspn -Q MSSQLSvc/* 
- setspn -Q HTTP/*
- ```
-Use ```setspn -S``` to create proper SPN if missing 
-```shell script
-setspn -S HTTP/qa-sp19.intellectivelab.com INTELLECTIVELAB\devopsadmin 
-```
+    Use `setspn -Q` commands to verify SPN are linked to proper service accounts:
 
-- Check Authentication Negotiate above NTLM 
+    ```console
+    setspn -Q MSSQLSvc/* 
+    setspn -Q HTTP/*
+    ```
+    Use `setspn -S` to create proper SPN if missing: 
+ 
+    ```console
+    setspn -S HTTP/qa-sp19.intellectivelab.com INTELLECTIVELAB\devopsadmin 
+    ```
 
-![Auth Providers](spnego/images/sp_auth_negotiate_above_ntlm.png)
+- Check Authentication `Negotiate` above `NTLM`: 
 
-and advanced settings 'Extended Protection' is Off and  'Enable Kernel-mode authentication' is unchecked
+    ![Auth Providers](spnego/images/sp_auth_negotiate_above_ntlm.png)
 
-![Advanced Options](spnego/images/sp_auth_advanced.png)        
+    and advanced settings `Extended Protection` is Off and  `Enable Kernel-mode authentication` is unchecked: 
+
+    ![Advanced Options](spnego/images/sp_auth_advanced.png)        
 
 ## Test
-To test SPNEGO enanbled for SharePoint:
-- Login with domain user to a client host registered with same AD.
-- clear caches:
-```
-ipconfig /flushdns
-klist purge
-```  
+To test SPNEGO enabled for SharePoint:
+- Login with domain user to a client host registered with same AD
+- Clear caches:
+
+    ```
+    ipconfig /flushdns
+    klist purge
+    ```  
 - Use a browser [configured for SPNEGO SSO](https://docs.cloudera.com/documentation/enterprise/latest/topics/cdh_sg_browser_access_kerberos_protected_url.html).
 - Open SP site - it should open without requesting credentials and show same authenticated user as current logged in host user.
  
 # Configure Unity SP Connector service account to delegate to SP SPN
-Say we have web container hosting Unity at ec2amaz-40727rf.intellectivelab.com and use INTELLECTIVELAB\WASServerSSO (for example) account for delegation.  
+Say we have web container hosting Unity at `ec2amaz-40727rf.intellectivelab.com` and use `INTELLECTIVELAB\WASServerSSO` (for example) account for delegation.  
 - Use command line. Check SPN exists and linked to that account:
 
-```shell script
-setspn -Q HTTP/ec2amaz-40727rf*
-```
+    ```console
+    setspn -Q HTTP/ec2amaz-40727rf*
+    ```
 
 - create SPN if missing:
 
-```shell script
-setspn -S HTTP/ec2amaz-40727rf.intellectivelab.co INTELLECTIVELAB\WASServerSSO
-```
+    ```console
+    setspn -S HTTP/ec2amaz-40727rf.intellectivelab.co INTELLECTIVELAB\WASServerSSO
+    ```
 
-- Generate keytab (in this example file named *krbsp.keytab*):
-```shell script
-ktpass -out krbsp.keytab -princ HTTP/ec2amaz-40727rf.intellectivelab.com@INTELLECTIVELAB.COM -mapUser INTELLECTIVELAB\WASServerSSO -mapOp set -crypto all -pType KRB5_NT_PRINCIPAL -pass V3ga123456
-```
+- Generate keytab (in this example file named `krbsp.keytab`):
 
-- Setup delegation options for service account. Go to Active Directory Users and Computers control panel. Add proper SPN for sharepoint services at Delegation tab for WASServerSSO account:
+    ```console
+    ktpass -out krbsp.keytab -princ HTTP/ec2amaz-40727rf.intellectivelab.com@INTELLECTIVELAB.COM -mapUser INTELLECTIVELAB\WASServerSSO -mapOp set -crypto all -pType KRB5_NT_PRINCIPAL -pass V3ga123456
+    ```
 
-![Service Delegation](spnego/images/sp_account_delegation.png)
+- Setup delegation options for service account. 
+    Go to Active Directory Users and Computers control panel. Add proper SPN for sharepoint services at Delegation tab for WASServerSSO account:
+
+    ![Service Delegation](spnego/images/sp_account_delegation.png)
 
 
 # JAAS login module
-SP connector uses JAAS KRB5 login module uses delegate authorized session user to SP REST call. That require proper configuration for specific container hosting Unity. Tested for IBM Liberty and WebSphere:  
+
+SP connector uses JAAS KRB5 login module uses delegate authorized session user to SP REST call. That requires a proper configuration for specific container hosting Unity. Tested for IBM Liberty and WebSphere:  
 
 ## Libery server.xml
 ```xml
@@ -121,20 +127,21 @@ SP connector uses JAAS KRB5 login module uses delegate authorized session user t
 </server>
 ```
 ## WebSphere Security Settings
-Login to WebSphere console. Navigate to security -> JAAS -> Application logins
+- Login to WebSphere console. Navigate to `Security > JAAS > Application logins`: 
 
-![WAS JASS login](spnego/images/sp_was_jaas_logins.png)
+    ![WAS JASS login](spnego/images/sp_was_jaas_logins.png)
 
-Add new application KRB5 login named krbsp. Enter path to generated *krbsp.keytab* file for useKeytab option and service principal:
+- Add new application KRB5 login named `krbsp`. Enter path to generated `krbsp.keytab` file for useKeytab option and service principal:
 
-![KRBSP login](spnego/images/sp_was_jaas_krbsp.png)
+    ![KRBSP login](spnego/images/sp_was_jaas_krbsp.png)
 
 # Unity SPNEGO deployment
 Uncomment section marked with:  
 
-``` <!-- Uncomment the below section for SSO SPNEGO authentication ```
-
-in vu.ear/vu.war/WEB-INF/web.xml before deploying Unity to the application container.
+```xml
+<!-- Uncomment the below section for SSO SPNEGO authentication 
+```
+in `vu.ear/vu.war/WEB-INF/web.xml` before deploying Unity to the application container.
 
 # Troubleshooting
 - Use [Kerberos Authentication Tools and Settings](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc738673(v%3dws.10)) page to troubleshoot

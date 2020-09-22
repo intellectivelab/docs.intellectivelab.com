@@ -56,7 +56,7 @@ Different authentication options (flows) supported for SP in Cloud:
 # Unity features configuration specific to Sharepoint connector
     
 ## SharePoint repository data provider
-  Sharepoint repository data provider supports all sections common to Unity data providers - mapping  
+  Sharepoint repository data provider supports all sections common to Unity data providers - mapping:   
  ```$xml
 <RepositoryDataProvider ID="sptest_site" class="com.vegaecm.vspace.providers.sharepoint.SharepointRepositoryDataProvider">
    .... skipped ...
@@ -64,10 +64,10 @@ Different authentication options (flows) supported for SP in Cloud:
    .... skipped ...
  ```
   
-  - Site - Optional. Sharepoint Site relative to datasource RootUrl. By default root site is used.
+- Site (optional) - Sharepoint Site relative to datasource RootUrl. By default, root site is used.
   
-  - *Note*: Internal Field Names used in provider field mapping are InternalName for SharePoint list items. All available fields for partcular list could be retrieved by following REST API call: https://<RootUrl>/_api/lists/getbytitle('<ListTitle>')/Fields. Example:  
-  ```https://vkozyr.sharepoint.com/_api/lists/getbytitle('Documents')/Fields```
+**Note:** Internal Field Names used in provider field mapping are InternalName for SharePoint list items. 
+  All available fields for particular list could be retrieved by following REST API call: `https://<RootUrl>/_api/lists/getbytitle('<ListTitle>')/Fields`, for example:`https://vkozyr.sharepoint.com/_api/lists/getbytitle('Documents')/Fields`
   
 ## Document class (Document Library Content Type) selector
 
@@ -149,7 +149,7 @@ Different authentication options (flows) supported for SP in Cloud:
   All available content types for a list could be get from API call: `https://<RootUrl>/_api/lists/getbytitle('<ListTitle>')/ContentTypes?$select=Name,Id`
         
 ## UIE integration
-UIE properties mapping maps UIE ids to sharepoint connector ids. Example below:    
+UIE properties mapping maps UIE ids to sharepoint connector ids. For example:    
 ```$xml
             <ViewerProperties>
                  <Repository internal="SharePoint">
@@ -172,7 +172,7 @@ UIE properties mapping maps UIE ids to sharepoint connector ids. Example below:
             </RepositoryMapper>
 ```
 ## Case links
-- TODO
+*Content to be added* 
 
 # References
 Visit [References](sharepoint/references.md) page
