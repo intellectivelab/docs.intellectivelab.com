@@ -35,7 +35,7 @@ Example datasource configuration:
 ```
    
 # Create App Registration 
-To create App Registration  in Azure Portal for new Untiy connector Authorization Code flow:   
+To create App Registration  in Azure Portal for new Unity connector Authorization Code flow:   
 
  - Login to [Azure Portal](https://portal.azure.com) with your domain admin account
  - Navigate to `Azure Active Directory > App registrations`:

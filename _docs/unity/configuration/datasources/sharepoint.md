@@ -175,4 +175,4 @@ UIE properties mapping maps UIE ids to sharepoint connector ids. For example:
 *Content to be added* 
 
 # References
-Visit [References](sharepoint/references.md) page
+Visit [References](sharepoint/references.md) page.
