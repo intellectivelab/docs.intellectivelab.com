@@ -104,10 +104,11 @@ $(function () {
 
     // TOC NAVIGATIONS
 
-    $('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+    var tocs = $('#toc');
+    tocs.toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h1,h2,h3,h4' });
 
     /* this offset helps account for the space taken up by the floating toolbar. */
-    $('#toc').on('click', 'a', function () {
+    tocs.on('click', 'a', function () {
         var target = $(this.getAttribute('href'))
             , scroll_target = target.offset().top
 

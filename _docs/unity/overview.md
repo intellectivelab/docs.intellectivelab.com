@@ -5,7 +5,7 @@ category: Unity 7
 ---
 # What Unity Does
  
-[![unity-wheel-diagram](images/overview/Wheel-Diagram-Business-Applications-475x445.png)](images/overview/Wheel-Diagram-Business-Applications-1024x959.png)  
+[![unity-wheel-diagram](overview/images/Wheel-Diagram-Business-Applications-475x445.png)](overview/images/Wheel-Diagram-Business-Applications-1024x959.png)  
 
 Unity connects your business application users with multiple repositories, workflows, and content systems.
 
@@ -16,17 +16,17 @@ Unity provides:
 - Advanced document management, case management, and task processing across multiple ECM and BPM systems in one central location 
 - Enhanced user engagement and productivity 
 - Informed business decisions based on complete data from all your enterprise systems and applications 
-- Improved business KPIs via process automation and insights.
+- Improved business KPIs via process automation and insights 
 
 Unity implements quickly, reduces costs, and improves data security.
 
-### Simple to use 
+## Simple to use 
 Enjoy a truly seamless experience within your ERP, CRM, and business applications. 
-### Quick to deploy
+## Quick to deploy
 Design UI and make it available in minutes. 
-### Secure
+## Secure
 Use role-based security combined with your in-house authentication to ensure appropriate access to content and system. 
-### Reduces costs
+## Reduces costs
 Access and transact on data and documents from the source. 
 
 # Unity Components and Features
@@ -63,7 +63,7 @@ Users can search for content and data in a variety of ways:
 
 ## Actionable analytics
 
-[![analytics](images/overview/analytics-308x280.png)](images/overview/analytics-770x701.png)  
+[![analytics](overview/images/analytics-308x280.png)](overview/images/analytics-770x701.png)  
 
 Users can get interactive real-time reports (including various charts and graphs) for case tasks and apply actions directly from the report view.  
 

@@ -12,7 +12,7 @@ Unity uses the standard OAuth 2.0 three-legged authentication process, which pro
 - The application exchanges the authorization code for an access token 
 - The application then supplies the access token, in an authorization header, with API requests to gain access to Unity resources 
 
-	![api-security](images/overview/APIAuthorizationProcessAnnotated_780x439.png)
+	![api-security](security/images/APIAuthorizationProcessAnnotated_780x439.png)
 
 ## OAuth 2.0 Endpoints 
 
