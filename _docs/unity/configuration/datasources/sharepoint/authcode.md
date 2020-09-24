@@ -5,9 +5,16 @@ category: Unity 7
 ---
 
 # Description
-Authorization Code flow used by Unity SharePoint connector to call SP on behalf of user. It uses additional authentication popup to present Azure login page redirecting to Unity callback endpoint with authentication code after that.
+Authorization Code flow used by Unity SharePoint connector to call SP on behalf of user. 
+It uses additional authentication request to present Azure login page redirecting to Unity callback endpoint with authentication code after that.
+There are two points where additional authentication requested:
+ - New user session redirected to Azure login immediately after Unity login form or session initialized by SSO.  
+ - Popup presented when access token expired, Unity web app refreshed after that. 
+User access token is refreshed in background using refresh token, please check [Token Lifetime](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-configurable-token-lifetimes) for details. 
+
 Unity backend uses authentication code to get access token for session user and call SP REST API afterward. 
 App registration certificate and application grants also used as system read only user to cache SP metadata.  
+
  
  | Datasource Configuration | Description | Example|
  |--------------------------|-------------|--------|
