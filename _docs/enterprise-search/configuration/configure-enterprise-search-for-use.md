@@ -1,5 +1,5 @@
 ---
-title: Configure UIE for Use
+title: Configure Enterprise Search for Use
 layout: docs
 category: Enterprise Search
 --- 
