@@ -24,7 +24,7 @@ The Bar Chart component is built based on [React-Vis Bar chart](https://uber.git
 
 The Bar Chart can be configured as a Dashboard component.
 
-The code snippet below describes a Dashboard configuration example that includes the Bar Chart. Please refer to [Dashboards](../feature-dashboard.md) for more information about dashboards configuration.
+The code snippet below describes a Dashboard configuration example that includes the Bar Chart. Please refer to [Dashboards]() for more information about dashboards configuration.
 
 ```xml
 <Perspectives>

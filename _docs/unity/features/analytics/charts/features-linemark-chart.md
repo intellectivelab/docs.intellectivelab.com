@@ -1,24 +1,26 @@
 ---
-title: Configuring Unity Features - Mark Chart
+title: Configuring Unity Features - Line Mark Chart
 layout: docs
 category: Unity 7
 ---
 
 ## General Information
 
-The **Mark Chart** is a type of chart which displays discrete information. The marks can be plotted vertically or horizontally.
+The **LineMark Chart** is a type of chart which displays information as a series of data points called 'marks' connected by straight line segments. The LineMark Chart is often used to visualize a trend in data over intervals of time. The lines and marks can be plotted vertically or horizontally.
 
-The Mark Chart component is built based on [React-Vis Mark chart](https://uber.github.io/react-vis/documentation/series-reference/mark-series).
+The LineMark Chart is a combination of a [Line Chart](features-line-chart.md) and a [Mark Chart](features-mark-chart.md).
 
-![Mark Chart Vertical](images/mark-chart-vertical.jpg) 
+The LineMark Chart component is built based on [React-Vis LineMark chart](https://uber.github.io/react-vis/documentation/series-reference/line-mark-series).
+
+![LineMark Chart Vertical](images/linemark-chart-vertical.jpg) 
 
 ## Configuration
 
 ### Dashboard configuration
 
-The Mark Chart can be configured as a Dashboard component.
+The LineMark Chart can be configured as a Dashboard component.
 
-The code snippet below describes a Dashboard configuration example that includes the Mark Chart. Please refer to [Dashboards](../feature-dashboard.md) for more information about dashboards configuration.
+The code snippet below describes a Dashboard configuration example that includes the LineMark Chart. Please refer to [Dashboards]() for more information about dashboards configuration.
 
 ```xml
 <Perspectives>
@@ -38,7 +40,7 @@ The code snippet below describes a Dashboard configuration example that includes
 
 ### Chart configuration
 
-The code snippet below describes a Mark Chart configuration example. Please refer to [Charts](features-charts.md) for more information about charts configuration.
+The code snippet below describes a LineMark Chart configuration example. Please refer to [Charts](features-charts.md) for more information about charts configuration.
 
 ```xml
 <UiComponents>
@@ -50,7 +52,7 @@ The code snippet below describes a Mark Chart configuration example. Please refe
                 <Facet>task-by-start-date-facet</Facet>
             </Facets>
             <Plot height="300">
-                <Series facet="task-name-facet" label="Task Name" type="mark" stack="true" cluster="task-name-facet"/>
+                <Series facet="task-name-facet" label="Task Name" type="lineMark" stack="true" cluster="task-name-facet"/>
             </Plot>
         </Chart>
         ...
@@ -74,22 +76,22 @@ The code snippet below describes a facet configuration example. Please refer to 
 
 ## Interaction
 
-The Mark Chart is interactive. The following interaction modes are supported:
+The LineMark Chart is interactive. The following interaction modes are supported:
 
 ### Hover
 
 View details of hovered mark
 
-![Mark Chart Hint](images/mark-chart-hint.jpg)
+![LineMark Chart Hint](images/linemark-chart-hint.jpg)
 
 ### Select
 
 Select the mark. Multiple marks selection is supported.
 
-![Mark Chart Select](images/mark-chart-selection.jpg)
+![LineMark Chart Select](images/linemark-chart-selection.jpg)
 
 ### Legend
 
 Select the legend item. Multiple legend items selection is supported.
 
-![Mark Chart Legend Select](images/mark-chart-legend.jpg)
+![LineMark Chart Legend Select](images/linemark-chart-legend.jpg)
