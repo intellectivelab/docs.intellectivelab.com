@@ -161,7 +161,7 @@ category: Unity 7
 |Configurable |   | + | [details](#unity-features-list-with-descriptions) |
 |Grid | + | + | [details](#unity-features-list-with-descriptions) |
 |Search Criteria | + | + | [details](#unity-features-list-with-descriptions) |
-|Facet(category) field | + | + | [details](#unity-features-list-with-descriptions) |
+|Facet(category) field | + | [+](dashboards/facets/features-facet.md) | [details](#unity-features-list-with-descriptions) |
 |Range slider | + | + | [details](#unity-features-list-with-descriptions) |
 |Indicator |   | + | [details](#unity-features-list-with-descriptions) |
 |Column Chart | + | [+](dashboards/charts/features-bar-chart.md) | [details](#unity-features-list-with-descriptions) |
