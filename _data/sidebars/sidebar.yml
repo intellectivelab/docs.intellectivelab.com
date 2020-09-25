@@ -253,13 +253,13 @@ entries:
           - title: Installation
             output: web, pdf
             subfolders:
-              - title: UIE Installation Prerequisites
+              - title: Prerequisites
                 output: web
-                url: /docs/enterprise-search/installation/uie-installation-prerequisites/
+                url: /docs/enterprise-search/installation/prerequisites/
 
-              - title: Installing UIE
+              - title: Installing Enterprise Search
                 output: web
-                url: /docs/enterprise-search/installation/installing-uie/
+                url: /docs/enterprise-search/installation/installing-enterprise-search/
 
           - title: Configuration
             output: web, pdf
@@ -268,9 +268,9 @@ entries:
                 output: web
                 url: /docs/enterprise-search/configuration/security/
                 
-              - title: Configure UIE for Use
+              - title: Configure Enterprise Search for Use
                 output: web
-                url: /docs/enterprise-search/configuration/configure-uie-for-use/
+                url: /docs/enterprise-search/configuration/configure-enterprise-search-for-use/
 
           - title: Development
             output: web, pdf

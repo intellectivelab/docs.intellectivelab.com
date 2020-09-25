@@ -13,7 +13,7 @@ The following stories were implemented in the Unity 7.7 release. The ID and Desc
 | U7-3282 | Switch to already open case                                                                |
 | U7-3235 | Handle deletes in enterprise index for CM8 and CMOD repositories                           |
 | U7-3226 | Implement Open in Office actions in React for Sharepoint                                   |
-| U7-3168 | UIE: SharePoint connector - content crawling                                               |
+| U7-3168 | Enterprise Search: SharePoint connector - content crawling                                               |
 | U7-3151 | Unity configuration file shall support encrypted passwords                                 |
 | U7-3142 | Sharepoint: support encrypted password in config for system account                        |
 | U7-3136 | Ability to configure custom user friendly messages in place of errors returned from server |
@@ -23,35 +23,35 @@ The following stories were implemented in the Unity 7.7 release. The ID and Desc
 | U7-3102 | Analytics reset button should be visible                                                   |
 | U7-3092 | ExtJS: Optional document content for CheckIn action depends on provider                    |
 | U7-3088 | CMOD Connectors pool configuration                                                         |
-| U7-3079 | UIE Crawler doesn't recover from lost DB connection                                        |
-| U7-3074 | Sharepoint: Add possilibity to use all Documents Library in Search Template                |
+| U7-3079 | Enterprise Search Crawler doesn't recover from lost DB connection                                        |
+| U7-3074 | Sharepoint: Add possibility to use all Documents Library in Search Template                |
 | U7-3062 | Sharepoint: Implement Folder View for React                                                |
 | U7-3060 | Feature to configure react UI field to be put on layout with full width                    |
-| U7-3051 | UIE: SharePoint connector - Document Libraries crawling                                    |
+| U7-3051 | Enterprise Search: SharePoint connector - Document Libraries crawling                                    |
 | U7-3032 | Sharepoint: Implement separate EnableRules                                                 |
 | U7-3028 | Support Daeja from ICN package                                                             |
 | U7-3012 | Unity Security Tab should show user names                                                  |
 | U7-2999 | Support JBPM for Process Analytics                                                         |
 | U7-2989 | Sharepoint: Implement open in office action                                                |
-| U7-2982 | UIE: Update supported Solr version to 8.6                                                  |
+| U7-2982 | Enterprise Search: Update supported Solr version to 8.6                                                  |
 | U7-2960 | Sharepoint: ReadOnly properties are displayed in the System Properties section             |
 | U7-2949 | Sharepoint: add_document action can be configured only for one Document Library            |
 | U7-2948 | Sharepoint: Remove ID from add document action configuration for DefaultValue              |
 | U7-2931 | Implement Get Info -> Security tab for SP connector                                        |
 | U7-2929 | SPNEGO authentication support for SP connector                                             |
 | U7-2912 | Build Unity Integration for MS Office Online thin client apps                              |
-| U7-2892 | Allow UIE process indexing for metadata and content separately                             |
+| U7-2892 | Allow Enterprise Search process indexing for metadata and content separately                             |
 | U7-2888 | Document's Security tab should display User Name                                           |
 | U7-2887 | Add Security dialog select multiple users/group                                            |
 | U7-2880 | Readiness ping page                                                                        |
 | U7-2829 | IBM BAW connector for Interchange                                                          |
-| U7-2828 | IBM BAW connector for UIE                                                                  |
-| U7-2737 | UIE 7.7.0: add encryption servlet to Searcher package                                      |
+| U7-2828 | IBM BAW connector for Enterprise Search                                                                  |
+| U7-2737 | Enterprise Search 7.7.0: add encryption servlet to Searcher package                                      |
 | U7-2733 | VCM vs UCM: VCM remembers last used Inbasket                                               |
-| U7-2708 | VCM vs UCM: Work item opened from Inbasket displayes empty History/Comments tab            |
+| U7-2708 | VCM vs UCM: Work item opened from Inbasket displays empty History/Comments tab            |
 | U7-2707 | VCM vs UCM: Work item opened from Inbasket does not display list of documents              |
 | U7-2705 | VCM vs UCM: create new case tool on the Inbasket toolbar in UCM                            |
-| U7-2647 | UIE Solr basic authentication plugin support                                               |
+| U7-2647 | Enterprise Search Solr basic authentication plugin support                                               |
 | U7-2635 | jBPM: public API doesn't provide ability to specify different view for closed cases        |
 | U7-2633 | Fill in full username in VuUserContext at authentication time                              |
 | U7-2623 | Include Unity version/build number at vu_base.js and vu_all.js                             |
@@ -61,12 +61,12 @@ The following stories were implemented in the Unity 7.7 release. The ID and Desc
 | U7-2461 | VCM vs UCM: export inbasket is not supported in UCM                                        |
 | U7-2460 | VCM vs UCM: Tasks are not supported in UCM                                                 |
 | U7-2447 | Modify search template field comments from Config Console                                  |
-| U7-2441 | Native Sharepoint connector in UIE                                                         |
+| U7-2441 | Native Sharepoint connector in Enterprise Search                                                         |
 | U7-2417 | Unity: cloud-ready deployment                                                              |
 | U7-2410 | Text extractor processor in Interchange                                                    |
 | U7-2396 | User Audit - Count Unique Users Per Period                                                 |
 | U7-2193 | Sharepoint Connector upgrade                                                               |
-| U7-1798 | Unity Analytics action a workitem or a case from the UIE grid                              |
+| U7-1798 | Unity Analytics action a workitem or a case from the Enterprise Search grid                              |
 
 # Resolved Issues
 
@@ -94,12 +94,12 @@ The following issues were resolved in the Unity 7.7 release. The ID and Descript
 | U7-3133 | Unable to View Attached Document while Creating Case                                          |
 | U7-3104 | Analytics tab Export tool exports all records                                                 |
 | U7-3090 | Unity allows open the same case from in-basket                                                |
-| U7-3006 | UIE search / sort on empty strings as 'Null' alpha value between N and O                      |
+| U7-3006 | Enterprise Search / sort on empty strings as 'Null' alpha value between N and O                      |
 | U7-2992 | Unity 7.6 MVP list items disappear                                                            |
 | U7-2987 | Unity 7.6 displays error if user has no sufficient rights                                     |
 | U7-2985 | Unity 7.7 onAfterCreateDocument and onAfterAttachDocument events are broken                   |
 | U7-2983 | Unity Documents tab folders Refresh doesn't work                                              |
-| U7-2979 | Spring boot standalone UIE 7.7 fails when starts with SSL                                     |
+| U7-2979 | Spring boot standalone Enterprise Search 7.7 fails when starts with SSL                                     |
 | U7-2966 | Multi value prop new values not being saved                                                   |
 | U7-2955 | JS Files Not Found                                                                            |
 | U7-2954 | Documents tab is broken on create case view                                                   |
