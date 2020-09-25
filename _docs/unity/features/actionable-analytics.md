@@ -62,7 +62,8 @@ The LineMark Chart component is built based on [React-Vis LineMark chart](https:
 
 ### Area Chart
 
-The **Area Chart** displays graphically quantitative data. It is based on the [Line Chart](#line-chart). The Area Chart is often used to visualize a trend in data over intervals of time. The areas can be plotted vertically or horizontally: 
+The **Area Chart** displays graphically quantitative data. It is based on the [Line Chart](#line-chart). 
+The Area Chart is often used to visualize a trend in data over intervals of time. The areas can be plotted vertically or horizontally: 
 
 ![Area Chart Vertical](actionable-analytics/images/area-chart-vertical.png) 
 
