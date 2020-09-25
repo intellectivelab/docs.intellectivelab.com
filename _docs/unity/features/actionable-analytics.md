@@ -14,7 +14,7 @@ This feature allows you to integrate analytics components into your screens or t
 
 # Charts
 
-Charts are UI components which are designed for graphical representation of data
+Charts are UI components designed for graphical representation of data.
 
 Please refer to [Charts Configuration Section](../configuration/ui-components.md#Charts) for more information about charts configuration. 
 
@@ -22,7 +22,7 @@ Please refer to [Charts Configuration Section](../configuration/ui-components.md
 
 ### Bar Chart
 
-The **Bar Chart** is a chart that presents categorical data with rectangular bars with heights or lengths proportional to the values that they represent. The bars can be plotted vertically or horizontally. A vertical bar chart is sometimes called a **Column Chart**.
+The **Bar Chart** presents categorical data with rectangular bars with heights or lengths proportional to the values that they represent. The bars can be plotted vertically or horizontally. A vertical bar chart is sometimes called a **Column Chart**.
 
 The Bar Chart shows comparisons among discrete categories. One axis of the chart shows the specific categories being compared, and the other axis represents a measured value.
 
@@ -36,7 +36,7 @@ The Bar Chart component is built based on [React-Vis Bar chart](https://uber.git
 
 ### Line Chart
 
-The **Line Chart** is a type of chart which displays information as a line segments. The Line Chart is often used to visualize a trend in data over intervals of time. The lines can be plotted vertically or horizontally.
+The **Line Chart** displays information as a line segments. The Line Chart is often used to visualize a trend in data over intervals of time. The lines can be plotted vertically or horizontally.
 
 The Line Chart component is built based on [React-Vis Line chart](https://uber.github.io/react-vis/documentation/series-reference/line-series).
 
@@ -44,7 +44,7 @@ The Line Chart component is built based on [React-Vis Line chart](https://uber.g
 
 ### Mark Chart
 
-The **Mark Chart** is a type of chart which displays discrete information. The marks can be plotted vertically or horizontally.
+The **Mark Chart** displays discrete information. The marks can be plotted vertically or horizontally.
 
 The Mark Chart component is built based on [React-Vis Mark chart](https://uber.github.io/react-vis/documentation/series-reference/mark-series).
 
@@ -52,7 +52,7 @@ The Mark Chart component is built based on [React-Vis Mark chart](https://uber.g
 
 ### LineMark Chart
 
-The **LineMark Chart** is a type of chart which displays information as a series of data points called 'marks' connected by straight line segments. The LineMark Chart is often used to visualize a trend in data over intervals of time. The lines and marks can be plotted vertically or horizontally.
+The **LineMark Chart** displays information as a series of data points called 'marks' connected by straight line segments. The LineMark Chart is often used to visualize a trend in data over intervals of time. The lines and marks can be plotted vertically or horizontally.
 
 The LineMark Chart is a combination of a [Line Chart](#Line Chart) and a [Mark Chart](#Mark Chart).
 
