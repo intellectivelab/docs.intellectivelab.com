@@ -1,25 +1,25 @@
 ---
-title: UIE Installation Prerequisites
+title: Enterprise Search Installation Prerequisites
 layout: docs
 category: Enterprise Search
 ---
 # Review Prerequisites 
 
-- A supported content management server or database or metadata repository used by UIE Discovery Services to crawl data into the Enterprise Index 
-- A supported web application server to deploy UIE Search Services, this can be collocated with Unity 
-- A supported JRE installed on UIE Discovery Services servers 
+- A supported content management server or database or metadata repository used by Enterprise Search Discovery Services to crawl data into the Enterprise Index 
+- A supported web application server to deploy Enterprise Search Services, this can be collocated with Unity 
+- A supported JRE installed on Enterprise Search Discovery Services servers 
 - An Enterprise Index based on Lucene and/or Solr 
 
-The Unity Intelligence Engine (UIE) Enterprise Index needs expandable storage devices that will meet both the immediate estimated size of the index as well as space for future growth.
+The Enterprise Index needs expandable storage devices that will meet both the immediate estimated size of the index as well as space for future growth.
 
 The **minimum** requirements are listed below. It is generally recommended to include a minimum of 25% growth capacity.
 
-|  Hardware  |       UIE Searcher      |
-|:----------:|:-----------------------:|
-| Disk Space |   250MB (per instance)  |
-|   Memory   | Minimum JVM Memory: 1GB |   
+|  Hardware  |  Enterprise Search Services |
+|:----------:|:---------------------------:|
+| Disk Space |   250MB (per instance)      |
+|   Memory   | Minimum JVM Memory: 1GB     |   
 
-- The UIE Discovery Services component requires JRE7+ and runs as a standalone Java application 
+- The Enterprise Search Discovery Services component requires JRE7+ and runs as a standalone Java application 
 - Enterprise Index on Solr6 or Solr7 or Solr8 requires JRE8 at a minimum 
 - Enterprise Index on Solr5 runs on JRE7 only 
 - Unity 7.6 supports Solr 8.1 and Solr 8.2 
@@ -35,13 +35,13 @@ In addition, keep the following in mind:
 
 For more info see hardware and software requirements related to [Solr](https://lucene.apache.org/solr/guide/8_5/solr-system-requirements.html) and [Lucene](https://lucene.apache.org/core/systemreqs.html). 
 
-# Obtain Index and UIE Installations 
+# Obtain Index and Enterprise Search Installations 
 
 Download [Solr](https://lucene.apache.org/solr/downloads.html) and [Lucene](https://lucene.apache.org/core/downloads.html) installation packages. 
 
-Download UIE latest release located on Intellective FTP under `/products/uie/releases` folder:  
+Download Enterprise Search latest release located on Intellective FTP under `/products/uie/releases` folder:  
 
-![prerequisites](images/uie-installation-prerequisites/image1.png) 
+![prerequisites](prerequisites/images/image1.png) 
 
 # Install Prerequisite Software 
 
@@ -76,16 +76,16 @@ Download [Java Cryptography Extension](https://www.oracle.com/java/technologies/
 
 - Determine JAVA_HOME path. If not already set, set new JAVA_HOME pointing to the Java version installed above: 
 
-![prerequisites](images/uie-installation-prerequisites/image2.png) 
+![prerequisites](prerequisites/images/image2.png) 
 
 - Copy the `US_export_policy.jar` and `local_policy.jar` files into the directory: `<JAVA_HOME>/jre/lib/security` and overwrite existing files with same name, if any: 
 
-![prerequisites](images/uie-installation-prerequisites/image3.png) 
+![prerequisites](prerequisites/images/image3.png) 
 
-Web application servers used for UIE Searcher are supported on the following platforms: 
+Web application servers used for Enterprise Search service are supported on the following platforms: 
 
-|     Web App Server     | Java |       UIE Searcher       |
-|:----------------------:|:----:|:------------------------:|
+|     Web App Server     | Java |      Enterprise Search service  |
+|:----------------------:|:----:|:-------------------------------:|
 |   WebSphere 8.5.5.11   |  1.7 |     Lucene 5, Solr 5     |
 |      WebSphere 9.0     |  1.8 | Lucene 5, Solr 6, Solr 7 |
 | Oracle WebLogic 10.3.6 |  1.7 |     Lucene 5, Solr 5     |
@@ -99,7 +99,7 @@ Content Management Repositories:
 - Box XX
 - Any repository supporting CMIS 1.1 
 
-# UIE Crawler Checklist and Prerequisites 
+# Enterprise Search Crawler Checklist and Prerequisites 
 
 ## FileNet CE 5.2 crawler 
 
@@ -150,7 +150,7 @@ Steps to generate RSA Key Pair JSON:
 - Sign in to [Box developer account](https://app.Box.com/signup/n/developer) or create a new one 
 - Go to Dev Console: 
 
-	![prerequisites](images/uie-installation-prerequisites/image4.png) 
+	![prerequisites](prerequisites/images/image4.png) 
 
 - Click Create New App
 - Select Custom App option and click Next
@@ -164,10 +164,10 @@ Steps to generate RSA Key Pair JSON:
 	- Application Access: Enterprise 
 	- Application scopes: 
 	
-		![prerequisites](images/uie-installation-prerequisites/image5.png) 
+		![prerequisites](prerequisites/images/image5.png) 
 	- Advanced Features: 
 	
-		![prerequisites](images/uie-installation-prerequisites/image6.png) 
+		![prerequisites](prerequisites/images/image6.png) 
 	
 - Save the changes
 - Scroll to `Add and Manage Public Keys` section
@@ -176,16 +176,16 @@ Steps to generate RSA Key Pair JSON:
 - Locate section `OAuth 2.0 Credentials`
 - Copy `Client ID` value: 
 	
-	![prerequisites](images/uie-installation-prerequisites/image7.png) 
+	![prerequisites](prerequisites/images/image7.png) 
 
 - In your Box account, Go to `Admin Console > Apps > Custom Apps` (https://app.box.com/master): 
 
-	![prerequisites](images/uie-installation-prerequisites/image8.png)
+	![prerequisites](prerequisites/images/image8.png)
 
 - Click Authorize New App
 - Enter the copied Client ID on the App Authorization dialog:
 
-	![prerequisites](images/uie-installation-prerequisites/image9.png) 
+	![prerequisites](prerequisites/images/image9.png) 
 	
 - Click Next
 - Click Authorize 
@@ -209,7 +209,7 @@ This crawler requires CMOD client files to be installed prior to running the cra
 
 	`PATH=%PATH%;C:\IBM\OnDemand\V10.1\bin;C:\IBM\OnDemand\V10.1\www;C:\IBM\OnDemand\V10.1\www\api` 
 
-	![prerequisites](images/uie-installation-prerequisites/image10.png)
+	![prerequisites](prerequisites/images/image10.png)
 
 - Restart user session or entire server to apply new value of the system PATH variable. 
 
@@ -224,7 +224,7 @@ CM8 connection details:
 - Password – by request
 - Init File Path – \<file path\> e.g. `C:\UIE\config\cmbicmsrvs.ini`  
 
-	cmbicmsrvs.ini file details
+	`cmbicmsrvs.ini` file details
 	- ICMSERVER=\<server\> e.g. icmnlsdb
 	- ICMSERVERREPTYPE=\<server type\> e.g. DB2
 	- ICMSCHEMA=\<schema\> e.g. icmadmin
@@ -234,4 +234,4 @@ CM8 connection details:
 
 **Note:** To avoid runtime errors on Windows, hosts file may need to be updated with the CM8 server name and IP address. 
 
-&rarr; [Next step: Installing UIE](./installing-uie.md) 
+&rarr; [Next step: Installing Enterprise Search](installing-enterprise-search.md) 
