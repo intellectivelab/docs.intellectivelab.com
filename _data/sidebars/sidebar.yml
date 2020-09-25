@@ -147,9 +147,17 @@ entries:
                 output: web
                 url: /docs/unity/configuration/solutions-configuration/
 
-              - title: Analytics
+              - title: Perspectives
                 output: web
-                url: /docs/unity/configuration/analytics/
+                url: /docs/unity/configuration/perspectives/
+
+              - title: UI Components
+                output: web
+                url: /docs/unity/configuration/ui-components/
+
+              - title: Facets
+                output: web
+                url: /docs/unity/configuration/facets/
 
               - title: Others
                 output: web
