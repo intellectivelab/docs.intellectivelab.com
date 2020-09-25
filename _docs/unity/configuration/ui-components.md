@@ -257,7 +257,7 @@ Pie Chart configuration examples:
 </Configuration>
 ```
 
-| Please note that Pie Chart supports only one `Facet` (one level `TERMS` or `RANGE` facet) definition in `Facets` section.
+| **Note:** Pie Chart supports only one `Facet` (one level `TERMS` or `RANGE` facet) definition in `Facets` section.
 
 ## Hierarchical Charts
     
