@@ -8,5 +8,5 @@ Split Case is a feature to create a case that reuses data from an existing case.
 
 Unity supports IBM Case Manager Split Case feature via Unity ICM over UCM Data Provider.
 
-- [React UI](react-split-case.md)
+- [React UI](split-case/react-split-case.md)
 

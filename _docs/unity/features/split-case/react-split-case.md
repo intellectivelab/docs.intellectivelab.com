@@ -8,16 +8,16 @@ category: Unity 7
 
 Split Case feature in React UI is implemented as a grid action available for Cases resources via grid's context menu:
 
-![context-menu](images/react-ui/image1.png) 
+![context-menu](react-split-case/images/image1.png) 
 
 Once selected, the action will be executed as a wizard with several steps:
 
 - The first step is a Split Case where selected case is opened in read only mode for a preview. 
 If more than one target case types available from the configuration, the list of target case types will be shown:
-![step1](images/react-ui/image2.png)          
+![step1](react-split-case/images/image2.png)          
 
 - Next step is a Source Case screen. It contains data from selected case in editable form where users can update values if needed or leave original data:
-![step2](images/react-ui/image3.png)
+![step2](react-split-case/images/image3.png)
 By selecting Next button in this screen, user actually triggers Case Split action execution in a backend system (i.e. IBM ICM).
 
 - Upon successful completion the wizard opens next step Target Case with a preview form.
@@ -25,7 +25,7 @@ By selecting Next button in this screen, user actually triggers Case Split actio
 - Forth optional step is a screen where user is able to choose documents from source case and, by selecting 'Attach' button, link these documents with target case as well.
 
 As a result new case will be created on top of existing case. Relevant information will be tracked in the history of the case:
-![result](images/react-ui/image4.png)
+![result](react-split-case/images/image4.png)
 
      
 # Configuration
