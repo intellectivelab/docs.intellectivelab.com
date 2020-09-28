@@ -14,7 +14,7 @@ category: Unity 7
 # Case attachments with folder view (search, navigate, attach, detach) 
 # Attach a local document to the case
 # Attach an existing document to the case 
-# [Case split](split-case.md)
+# [Case split](case-management/split-case.md)
 # Case copy
 # Case close 
 # Case re-open 

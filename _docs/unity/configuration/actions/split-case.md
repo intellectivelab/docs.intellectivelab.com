@@ -1,45 +1,22 @@
 ---
-title: React UI Split Case Feature
+title: Split Case Configuration
 layout: docs
 category: Unity 7
 ---
 
-# Description
+# React UI Split Case
 
-Split Case feature in React UI is implemented as a grid action available for Cases resources via grid's context menu:
-
-![context-menu](react-split-case/images/image1.png) 
-
-Once selected, the action will be executed as a wizard with several steps:
-
-- The first step is a Split Case where selected case is opened in read only mode for a preview. 
-If more than one target case types available from the configuration, the list of target case types will be shown:
-![step1](react-split-case/images/image2.png)          
-
-- Next step is a Source Case screen. It contains data from selected case in editable form where users can update values if needed or leave original data:
-![step2](react-split-case/images/image3.png)
-By selecting Next button in this screen, user actually triggers Case Split action execution in a backend system (i.e. IBM ICM).
-
-- Upon successful completion the wizard opens next step Target Case with a preview form.
-
-- Forth optional step is a screen where user is able to choose documents from source case and, by selecting 'Attach' button, link these documents with target case as well.
-
-As a result new case will be created on top of existing case. Relevant information will be tracked in the history of the case:
-![result](react-split-case/images/image4.png)
-
-     
-# Configuration
-
-Below Action configuration section should be added to the Unity System XML file.
+Split Case Action configuration section should be added to the Unity System XML file. An example:
  
 ```xml
-    <Action ID="splitCase" multiselect="true" scope="single" type="toolbar">
+    <Action ID="splitCase" multiselect="false" scope="single" type="toolbar">
       <Name>Split Case</Name>
       <IconCls>action-edit</IconCls>
       <Tooltip>Split Case</Tooltip>
       <Uri/>
       <Parameters/>
       <CustomParameters>
+
         <ResourceName>cases</ResourceName>
         <ActionType>split</ActionType>
 		
@@ -59,6 +36,24 @@ Below Action configuration section should be added to the Unity System XML file.
       </CustomParameters>
     </Action>
 ```
+
+Split Case Action custom configuration parameters:
+
+| Parameter | Description |
+|:----|:-------------------|
+|ResourceName | `cases` |
+|ActionType | `split` |
+|ResourceType | Optional. if provided will be used to replace a view link for Original case page |
+|ViewType | Optional. if provided will be used to replace a view link for Original case page. If not specified View link of the record will be used |
+|TargetResourceTypes | Optional. Includes target resource types configuration. Please refer to the table below for details |
+
+TargetResourceTypes parameters:
+
+| Parameter | Description |
+|:----|:-------------------|
+| Parameter | Description |
+|viewType | Optional. If not specified `Active` Case view will be used. Example: `Split` |
+|ResourceType | Split target case type. Can be one to many |
 
 Action itself should be added to the actions list for grids:
   
