@@ -1,5 +1,5 @@
 ---
-title: Unity Features - User Preferences
+title: Unity Components - User Preferences
 layout: docs
 category: Unity 7
 ---

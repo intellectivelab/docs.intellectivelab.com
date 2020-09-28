@@ -99,6 +99,10 @@ entries:
           - title: Configuration
             output: web, pdf
             subfolders:
+              - title: First Steps
+                output: web
+                url: /docs/unity/configuration/first-steps/
+
               - title: Tree Models
                 output: web
                 url: /docs/unity/configuration/tree-models/

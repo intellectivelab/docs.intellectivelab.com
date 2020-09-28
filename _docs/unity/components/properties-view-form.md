@@ -1,5 +1,5 @@
 ---
-title: Unity Features - Properties View Form
+title: Unity Components - Properties View Form
 layout: docs
 category: Unity 7
 ---

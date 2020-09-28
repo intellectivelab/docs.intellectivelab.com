@@ -1,5 +1,5 @@
 ---
-title: Unity Features - Search Criteria Panel
+title: Unity Components - Search Criteria Panel
 layout: docs
 category: Unity 7
 ---

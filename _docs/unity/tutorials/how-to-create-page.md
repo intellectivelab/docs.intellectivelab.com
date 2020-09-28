@@ -239,6 +239,8 @@ Images should be placed to `name-of-your-md-file/images/` folder:
   
 To insert image into page use `![image-title](name-of-your-md-file/images/name-of-image.png)` 
 
+To insert a clickable image preview into page use `[![image-title](name-of-your-md-file/images/name-of-image-preview.png)](name-of-your-md-file/images/name-of-fullsize-image.png)`
+
 ### Links to pages 
 
 #### Link to current page 
