@@ -52,14 +52,22 @@ body {
   position: fixed;
   top: 65px;
   width: 100%;
-  background-color: rgba(255,255,255, 1);
+  background-color: rgba(255, 255, 255, 1);
+  overflow-y: hidden;
+  height: calc(100vh - 70px);
+  white-space: nowrap;
+  display: flex;
+  flex-flow: column;
 
-  @media (min-width: 991px){
-    background-color: rgba(255,255,255, 0);
-    width: 15.3%;
+  &:hover {
+    overflow-y: auto;
   }
 
 
+  @media (min-width: 991px) {
+    background-color: rgba(255, 255, 255, 0);
+    width: 15.6%;
+  }
 
   li.open > a > span:after {
     content: " ";
@@ -135,7 +143,6 @@ body {
 
   .port {
     border-right: 1px solid #e3e8ee;
-    // padding: 10px;
   }
   .starboard {
     padding: 0px 48px;
@@ -236,13 +243,12 @@ div#toc > ul::before {
   padding-left: 10px;
 }
 
-
 table {
   @extend .table;
   @extend .table-striped;
   @extend .table-bordered;
 
   thead {
-    @extend .thead-light
+    @extend .thead-light;
   }
 }
