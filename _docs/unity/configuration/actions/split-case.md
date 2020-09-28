@@ -53,7 +53,7 @@ TargetResourceTypes parameters:
 |:----|:-------------------|
 | Parameter | Description |
 |viewType | Optional. If not specified `Active` Case view will be used. Example: `Split` |
-|ResourceType | Split target case type. Can be one to many |
+|ResourceType | Split target case type. Can be one to many ResourceType rows |
 
 Action itself should be added to the actions list for grids:
   
