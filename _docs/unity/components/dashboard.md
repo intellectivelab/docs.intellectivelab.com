@@ -3,6 +3,8 @@ title: Unity Components - Dashboard
 layout: docs
 category: Unity 7
 ---
+# Overview
+
 # Charts
 
 Charts are UI components designed for graphical representation of data.
