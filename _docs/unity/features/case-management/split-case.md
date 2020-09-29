@@ -6,11 +6,11 @@ category: Unity 7
 
 # Description
 
-Split Case is a feature to create a case that reuses data from an existing case. The new case can be the same type as the original case, or it can be a different case type.
+Split Case is a feature for creating a case that reuses data from an existing case. The new case can be the same type as the original case, or it can be a different case type.
 
 Unity supports IBM Case Manager Split Case feature via Unity ICM over UCM Data Provider.
 
-# React UI Split Case
+# How To Split Case
 
 Split Case feature in React UI is implemented as a grid action available for Cases resources via a grid's context menu:
 
@@ -19,15 +19,15 @@ Split Case feature in React UI is implemented as a grid action available for Cas
 Once selected, the action will be executed as a wizard with several steps:
 
 - The first step is Choose Case Type form where selected case is opened for a preview. 
-If more than one target case types available from the [configuration](../../configuration/actions/split-case.md), the list of target case types will be shown:
+If more than one target case types are available from the [configuration](../../configuration/actions/split-case.md), the list of target case types will be shown:
 
-![step1](split-case/images/react-ui-image2.png)          
+    ![step1](split-case/images/react-ui-image2.png)          
 
 - Next step is a Split Case screen. It contains data from selected case in editable form where users can update values if needed or leave original data:
 
-![step2](split-case/images/react-ui-image3.png)
+    ![step2](split-case/images/react-ui-image3.png)
 
-By selecting Next button in this screen, user actually triggers Case Split action execution in a backend system (i.e. IBM ICM).
+    By selecting Next button in this screen, user actually triggers Case Split action execution in a backend system (i.e. IBM ICM).
 
 - Upon successful completion the wizard opens next step Preview Case with a preview form.
 
