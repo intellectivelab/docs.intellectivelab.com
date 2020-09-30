@@ -148,42 +148,42 @@ category: Unity 7
 
 | Feature | Unity ExtJs | Unity React | Feature details |
 |:--------------------|:-------------------:|:-------:|:-------:|
-|Configurable | + | + | [add description](page-tab.md) |
-|Grid | + | + | [add description](page-tab.md) |
-|Criteria | + | + | [add description](page-tab.md) |
-|Search Template | + | + | [add description](page-tab.md) |
-|Ability to add a custom component | + | + | [add description](page-tab.md) |
-|Ability to create a custom layout | + | + | [add description](page-tab.md) |
-|Ability to bundle components into containers (tabs) |   | + | [add description](page-tab.md) |
+|Configurable | + | + | [add description](dashboard.md) |
+|Grid | + | + | [add description](dashboard.md) |
+|Criteria | + | + | [add description](dashboard.md) |
+|Search Template | + | + | [add description](dashboard.md) |
+|Ability to add a custom component | + | + | [add description](dashboard.md) |
+|Ability to create a custom layout | + | + | [add description](dashboard.md) |
+|Ability to bundle components into containers (tabs) |   | + | [add description](dashboard.md) |
 
 ## Dashboard 
 
 | Feature | Unity ExtJs | Unity React | Feature details |
 |:--------------------|:-------------------:|:-------:|:-------:|
-|Configurable |   | + | [add description](dashboard.md) |
-|Grid | + | + | [add description](dashboard.md) |
-|Search Criteria | + | + | [add description](dashboard.md) |
-|Facet(category) field | + | + | [add description](dashboard.md) |
-|Range slider | + | + | [add description](dashboard.md) |
-|Indicator |   | + | [add description](dashboard.md) |
-|Column Chart | + | + | [add description](dashboard.md) |
-|Line Chart |   | + | [add description](dashboard.md) |
-|Area Chart |   | + | [add description](dashboard.md) |
-|Bar Chart | + | + | [add description](dashboard.md) |
-|Pie Chart | + | + | [add description](dashboard.md) |
-|Scatter Chart |   | + | [add description](dashboard.md) |
-|Composite Chart |   | + | [add description](dashboard.md) |
-|Pivot | + |   | [add description](dashboard.md) |
-|Sunburst |   | [IB-1091](https://jira.intellective.com/browse/IB-1091) | [add description](dashboard.md) |
-|Treemap |   | + | [add description](dashboard.md) |
-|Heatmap |   | + | [add description](dashboard.md) |
-|Table Heatmap |   | + | [add description](dashboard.md) |
-|Chart drill down capability |   | [IB-616](https://jira.intellective.com/browse/IB-616) | [add description](dashboard.md) |
-|Show/hide dashboard components |   | [IB-767](https://jira.intellective.com/browse/IB-767) | [add description](dashboard.md) |
-|Ability to add a custom component |   | + | [add description](dashboard.md) |
-|Ability to clusterize/bundle components into containers |   | + | [add description](dashboard.md) |
-|Saved Filters |   | + | [add description](dashboard.md) |
-|Data Export |   | + | [add description](dashboard.md) |
+|Configurable |   | + | [add description](chart.md) |
+|Grid | + | + | [add description](chart.md) |
+|Search Criteria | + | + | [add description](chart.md) |
+|Facet(category) field | + | + | [add description](chart.md) |
+|Range slider | + | + | [add description](chart.md) |
+|Indicator |   | + | [add description](chart.md) |
+|Column Chart | + | + | [add description](chart.md) |
+|Line Chart |   | + | [add description](chart.md) |
+|Area Chart |   | + | [add description](chart.md) |
+|Bar Chart | + | + | [add description](chart.md) |
+|Pie Chart | + | + | [add description](chart.md) |
+|Scatter Chart |   | + | [add description](chart.md) |
+|Composite Chart |   | + | [add description](chart.md) |
+|Pivot | + |   | [add description](chart.md) |
+|Sunburst |   | [IB-1091](https://jira.intellective.com/browse/IB-1091) | [add description](chart.md) |
+|Treemap |   | + | [add description](chart.md) |
+|Heatmap |   | + | [add description](chart.md) |
+|Table Heatmap |   | + | [add description](chart.md) |
+|Chart drill down capability |   | [IB-616](https://jira.intellective.com/browse/IB-616) | [add description](chart.md) |
+|Show/hide dashboard components |   | [IB-767](https://jira.intellective.com/browse/IB-767) | [add description](chart.md) |
+|Ability to add a custom component |   | + | [add description](chart.md) |
+|Ability to clusterize/bundle components into containers |   | + | [add description](chart.md) |
+|Saved Filters |   | + | [add description](chart.md) |
+|Data Export |   | + | [add description](chart.md) |
 
 
 ## Document management 

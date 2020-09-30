@@ -6,6 +6,13 @@ category: Unity 7
 
 # Facets
 
+Facets are used for aggregating data and calculating metrics about that data.
+
+There are two main types of facets:
+
+- Facets that partition or categorize data (the domain) into multiple categories: `TERMS` and `RANGE` facets
+- Facets that calculate data for a given category (normally a metric, statistic or analytic function): `METRICS` facet
+
 ## Terms Facet
 
 Terms Facet configuration examples:

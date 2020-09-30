@@ -34,10 +34,6 @@ entries:
                 output: web
                 url: /docs/unity/features/enterprise-search/
 
-              - title: Actionable Analytics
-                output: web
-                url: /docs/unity/features/actionable-analytics/
-
               - title: Integration
                 output: web
                 url: /docs/unity/features/integration/
@@ -48,6 +44,10 @@ entries:
               - title: Design Principles
                 output: web
                 url: /docs/unity/components/design-principles/
+
+              - title: Page/Tab
+                output: web
+                url: /docs/unity/components/page-tab/
 
               - title: Grid
                 output: web
@@ -65,21 +65,9 @@ entries:
                 output: web
                 url: /docs/unity/components/search-template/
 
-              - title: Page/Tab
-                output: web
-                url: /docs/unity/components/page-tab/
-
-              - title: Dashboard
-                output: web
-                url: /docs/unity/components/dashboard/
-
               - title: User Preferences
                 output: web
                 url: /docs/unity/components/user-preferences/
-
-              - title: Features Comparison List
-                output: web
-                url: /docs/unity/components/features-comparison-list/
 
           - title: Installation
             output: web, pdf
@@ -150,18 +138,6 @@ entries:
               - title: Solutions Configuration
                 output: web
                 url: /docs/unity/configuration/solutions-configuration/
-
-              - title: Perspectives
-                output: web
-                url: /docs/unity/configuration/perspectives/
-
-              - title: UI Components
-                output: web
-                url: /docs/unity/configuration/ui-components/
-
-              - title: Facets
-                output: web
-                url: /docs/unity/configuration/facets/
 
               - title: Others
                 output: web
@@ -242,6 +218,234 @@ entries:
               - title: Unity Video Tutorials
                 output: web
                 url: /docs/unity/tutorials/unity-video-tutorials/
+
+      - title: Unity React
+        output: web, pdf
+        folderitems:
+          - title: Overview
+            url: /docs/unity-react/overview/
+            output: web, pdf
+            type: homepage
+
+          - title: Features
+            output: web, pdf
+            subfolders:
+              - title: Document Management
+                output: web
+                url: /docs/unity-react/features/document-management/
+
+              - title: Case Management
+                output: web
+                url: /docs/unity-react/features/case-management/
+
+              - title: Process Management
+                output: web
+                url: /docs/unity-react/features/process-management/
+
+              - title: Enterprise Search
+                output: web
+                url: /docs/unity-react/features/enterprise-search/
+
+              - title: Actionable Analytics
+                output: web
+                url: /docs/unity-react/features/actionable-analytics/
+
+              - title: Integration
+                output: web
+                url: /docs/unity-react/features/integration/
+
+          - title: Components
+            output: web, pdf
+            subfolders:
+              - title: Design Principles
+                output: web
+                url: /docs/unity-react/components/design-principles/
+
+              - title: Grid
+                output: web
+                url: /docs/unity-react/components/grid/
+
+              - title: Search Criteria Panel
+                output: web
+                url: /docs/unity-react/components/search-criteria-panel/
+
+              - title: Properties View Form
+                output: web
+                url: /docs/unity-react/components/properties-view-form/
+
+              - title: Search Template
+                output: web
+                url: /docs/unity-react/components/search-template/
+
+              - title: Dashboard
+                output: web
+                url: /docs/unity-react/components/dashboard/
+
+              - title: Chart
+                output: web
+                url: /docs/unity-react/components/chart/
+
+              - title: Indicator
+                output: web
+                url: /docs/unity-react/components/indicator/
+
+              - title: User Preferences
+                output: web
+                url: /docs/unity-react/components/user-preferences/
+
+          - title: Installation
+            output: web, pdf
+            subfolders:
+              - title: Software Requirements
+                output: web
+                url: /docs/unity-react/installation/software-requirements/
+
+              - title: Hardware Requirements
+                output: web
+                url: /docs/unity-react/installation/hardware-requirements/
+
+              - title: Installing Unity 7
+                output: web
+                url: /docs/unity-react/installation/installing-unity-7/
+
+          - title: Configuration
+            output: web, pdf
+            subfolders:
+              - title: First Steps
+                output: web
+                url: /docs/unity-react/configuration/first-steps/
+
+              - title: System Properties
+                output: web
+                url: /docs/unity-react/configuration/system-properties/
+
+              - title: Actions
+                output: web
+                url: /docs/unity-react/configuration/actions/
+
+              - title: Datasources
+                output: web
+                url: /docs/unity-react/configuration/datasources/
+
+              - title: Selectors
+                output: web
+                url: /docs/unity-react/configuration/selectors/
+
+              - title: Properties
+                output: web
+                url: /docs/unity-react/configuration/properties/
+
+              - title: Grids
+                output: web
+                url: /docs/unity-react/configuration/grids/
+
+              - title: Search Templates
+                output: web
+                url: /docs/unity-react/configuration/search-templates/
+
+              - title: Column Sets
+                output: web
+                url: /docs/unity-react/configuration/column-sets/
+
+              - title: Repository Data Providers
+                output: web
+                url: /docs/unity-react/configuration/repository-data-providers/
+
+              - title: Solutions Configuration
+                output: web
+                url: /docs/unity-react/configuration/solutions-configuration/
+
+              - title: Facets
+                output: web
+                url: /docs/unity-react/configuration/facets/
+
+              - title: Perspectives
+                output: web
+                url: /docs/unity-react/configuration/perspectives/
+
+              - title: UI Components
+                output: web
+                url: /docs/unity-react/configuration/ui-components/
+
+              - title: Others
+                output: web
+                url: /docs/unity-react/configuration/others/
+
+          - title: Customization
+            output: web, pdf
+            subfolders:
+              - title: Overview
+                output: web
+                url: /docs/unity-react/customization/overview/
+
+              - title: Environment Setup
+                output: web
+                url: /docs/unity-react/customization/environment-setup/
+
+          - title: API
+            output: web, pdf
+            subfolders:
+              - title: Overview
+                output: web
+                url: /docs/unity-react/api/overview/
+
+              - title: Security
+                output: web
+                url: /docs/unity-react/api/security/
+
+              - title: Documents
+                output: web
+                url: /docs/unity-react/api/documents/
+
+              - title: Cases
+                output: web
+                url: /docs/unity-react/api/cases/
+
+              - title: Data Export
+                output: web
+                url: /docs/unity-react/api/data-export/
+
+              - title: Selectors
+                output: web
+                url: /docs/unity-react/api/selectors/
+
+              - title: Configuration
+                output: web
+                url: /docs/unity-react/api/configuration/
+
+              - title: References
+                output: web
+                url: /docs/unity-react/api/references/
+
+          - title: Release Notes
+            output: web, pdf
+            subfolders:
+              - title: Unity 7.6 Release Notes
+                output: web
+                url: /docs/unity-react/release-notes/unity-7-6-release-notes/
+
+              - title: Unity 7.7 Release Notes
+                output: web
+                url: /docs/unity-react/release-notes/unity-7-7-release-notes/
+
+          - title: Tutorials
+            output: web
+            subfolders:
+              - title: How To Create Page
+                output: web
+                url: /docs/unity-react/tutorials/how-to-create-page/
+
+              - title: How To Install Docker
+                output: web
+                url: /docs/unity-react/tutorials/how-to-install-docker/
+
+              - title: Unity 7 Customization
+                output: web
+                url: /docs/unity-react/tutorials/unity-7-customization/
+
+              - title: Unity Video Tutorials
+                output: web
+                url: /docs/unity-react/tutorials/unity-video-tutorials/
 
       - title: Unity for CRM
         output: web, pdf
