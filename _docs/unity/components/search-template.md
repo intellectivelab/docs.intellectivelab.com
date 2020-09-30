@@ -1,5 +1,5 @@
 ---
-title: Unity Features - Search Template
+title: Unity Components - Search Template
 layout: docs
 category: Unity 7
 ---

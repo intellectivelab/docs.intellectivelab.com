@@ -1,5 +1,5 @@
 ---
-title: Unity Features - Grid
+title: Unity Components - Grid
 layout: docs
 category: Unity 7
 ---

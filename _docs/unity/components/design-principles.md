@@ -1,5 +1,5 @@
 ---
-title: Unity Features - Design Principles
+title: Unity Components - Design Principles
 layout: docs
 category: Unity 7
 ---
@@ -49,7 +49,7 @@ An EV can be used in any Unity configuration file - Unity System XML, UCM Soluti
 The EVs and their values are stored in an `environment.ini` file. The file has the same name as the Unity System XML with `-environment.ini` at the end, for example: 
 
 - Unity System XML is `ucm-icm.xml`
-- Environment INI is`ucm-icm-environment.ini`
+- Environment INI is `ucm-icm-environment.ini`
 
 When migrating to a new environment, by using a common EV set, the `environment.ini` would be specific to the environment, meaning only configuration XML files and code are migrated to the new environment, keeping the `environment.ini` as a static file in the environment. 
 The only updates required if new environment variables are added or a specific environment value changes.

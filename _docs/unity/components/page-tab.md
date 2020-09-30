@@ -1,5 +1,5 @@
 ---
-title: Unity Features - Page Tab
+title: Unity Components - Page Tab
 layout: docs
 category: Unity 7
 ---
