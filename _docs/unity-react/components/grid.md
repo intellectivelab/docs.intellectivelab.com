@@ -12,7 +12,7 @@ category: Unity 7
 
 ## Multiple Column Sorting
 
-You can configure the default Grid to allow multiple columns to be sorted at a time within the content list.
+Default Grid allows multiple columns to be sorted at a time within the content list.
 
 To sort grid by a column, move mouse over the column header and grayed out arrow (sorting direction indicator) will appear. Clicking to column will activate ascending sorting and its icon will become contrast. Next click will toggle sorting to descending, and third click will remove sorting for the column, and so on.
 
