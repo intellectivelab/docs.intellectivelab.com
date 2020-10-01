@@ -56,7 +56,7 @@ Each Solr installation zip file contains a complete Solr platform package. To in
 
 	![uie-folder](installing-enterprise-search/images/image21.png) 
 	
-**Note**: For case-insensitive and wildcard searches in Enterprise Search, settings below should be included in `managed-schema` of the Solr core. 
+| **Note**: For case-insensitive and wildcard searches in Enterprise Search, settings below should be included in `managed-schema` of the Solr core. 
 
 ```xml 
 <fieldType name="text_ws" class="solr.TextField" positionIncrementGap="100">
@@ -118,7 +118,7 @@ Add the following specifically for CMOD crawler:
 
 	![uie-folder](installing-enterprise-search/images/image26.png) 
 	
-**Note**: After installing crawlers for the first time, it is a good idea to restart Enterprise Search discovery crawler services. 
+| **Note**: After installing crawlers for the first time, it is a good idea to restart Enterprise Search discovery crawler services. 
 
 ## Install Enterprise Search Crawlers 
 
