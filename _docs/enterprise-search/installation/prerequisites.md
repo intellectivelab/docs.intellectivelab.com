@@ -203,7 +203,7 @@ CMOD connection details:
 
 This crawler requires CMOD client files to be installed prior to running the crawler. These can be [downloaded](https://www.ibm.com/support/fixcentral) from IBM website. 
 
-**Note:** To avoid runtime errors, client should be of the same version as server and patched with the same version. For e.g., if CMOD version on server is 10.1.0.4, the client should also be of the same version. 
+| **Note:** To avoid runtime errors, client should be of the same version as server and patched with the same version. For e.g., if CMOD version on server is 10.1.0.4, the client should also be of the same version. 
 
 - On Windows, add CMOD bin, www and www\api to the system PATH variable. For example: 
 
@@ -232,6 +232,6 @@ CM8 connection details:
 	- ICMPORT=\<port\> e.g. 50000
 	- ICMREMOTEDB=\<remote DB\> e.g. icmnlsdb
 
-**Note:** To avoid runtime errors on Windows, hosts file may need to be updated with the CM8 server name and IP address. 
+| **Note:** To avoid runtime errors on Windows, hosts file may need to be updated with the CM8 server name and IP address. 
 
 &rarr; [Next step: Installing Enterprise Search](installing-enterprise-search.md) 

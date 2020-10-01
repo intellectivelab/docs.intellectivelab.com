@@ -128,7 +128,7 @@ After certificate for a given Unity site is obtained it should be installed on a
 	| Registration Handler   | Select UnityOAuth2RegHandler              |                |
 	| Execute As             | Select current logged in admin user       |                | 
 
-	**Note**: `vu_nc` should match the Named Credentials. 
+	| **Note**: `vu_nc` should match the Named Credentials. 
 	
 	![u4sf](unity-for-salesforce/images/image18.png) 
 	
