@@ -29,7 +29,7 @@ Use role-based security combined with your in-house authentication to ensure app
 ## Reduces costs
 Access and transact on data and documents from the source. 
 
-# Unity Components and Features
+# Unity Features and Components
 
 ## Content management
 
@@ -47,9 +47,9 @@ Access and transact on data and documents from the source.
 
 ## Enterprise search
 
-Unity Intelligent Engine (UIE) provides Enterprise search. UIE crawls, merges, transforms, and serves content from different business systems into a single high-performance analytics index. Crawl can be near-real time, periodic, and on-demand in response to source system events.     
+Unity Enterprise search crawls, merges, transforms, and serves content from different business systems into a single high-performance analytics index. Crawl can be near-real time, periodic, and on-demand in response to source system events.     
 
-Unity Intelligent Engine is:
+Unity Enterprise search is:
 - A set of crawlers to intelligently pull information from data sources, such as content systems, BPM systems, or databases 
 - A transform capability to perform actions like altering incoming data, merging data from multiple systems, and applying additional information or intelligence to data such as security information
 - A high performance Solr index that provides features like faceted search and fuzzy search, as well as high scalability and fault tolerance
@@ -61,11 +61,9 @@ Users can search for content and data in a variety of ways:
 - Template-based search
 - Full-text and fuzzy search
 
-## Actionable analytics
+## Actionable analytics 
 
-[![analytics](overview/images/analytics-308x280.png)](overview/images/analytics-770x701.png)  
-
-Users can get interactive real-time reports (including various charts and graphs) for case tasks and apply actions directly from the report view.  
+Users can get reports (including various charts and graphs) for case tasks and apply actions directly from the report view.  
 
 ## Integration
 

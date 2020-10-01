@@ -3,10 +3,14 @@ title: Unity Components - Grid
 layout: docs
 category: Unity 7
 ---
-# Grouping  
+# Overview
+
+# Grid Features
+
+## Grouping  
 *Content to be added*
 
-# Multiple Column Sorting
+## Multiple Column Sorting
 
 You can configure the default Grid to allow multiple columns to be sorted at a time within the content list.
 
@@ -16,82 +20,64 @@ To sort by a second column, click the header for another column. The grid sorts 
 
 Continue until you reach the max number of sort columns (3 by default): 
 
-![multiple-column-sorting](grid/images/multicolumnsort.png) 
+![multiple-column-sorting](../../unity-react/components/grid/images/multicolumnsort.png) 
 
 This feature implemented for:
 
 - Tabs: Search Template, Folder View, Advanced Search
 - Data Providers: FileNet, CMIS, UIE (except JOIN function) 
 
-[Configure Multiple Column Sorting](../configuration/grids.md)
+[Configure Multiple Column Sorting](../../unity-react/configuration/grids.md)
 
-# Column locking
+## Column locking
 *Content to be added*
 
-# Column spanning 
+## Column spanning 
 *Content to be added*
 
-# Column reordering
+## Column reordering
 *Content to be added*
 
-# Column menu
+## Column menu
 *Content to be added*
 
-# Column cell formatting 
+## Column cell formatting 
 *Content to be added*
 
-# Column cell tools and actions 
+## Column cell tools and actions 
 *Content to be added*
 
-# Column cell rendering customization
-*Content to be added*
-
-# Record text links
+## Column cell rendering customization
 *Content to be added*
  
-# Multiple row selection
+## Multiple row selection
 *Content to be added*
 	
-# Row action	
+## Row action	
 *Content to be added*
 
-# Bulk action 
+## Bulk action 
 *Content to be added*
 
-# Ability to add a custom grid action 
+## Ability to add a custom grid action 
 *Content to be added*
 
-# Row actions menu 
+## Row actions menu 
 *Content to be added*
 
-# Expandable rows
+## Expandable rows
 *Content to be added*
 
-# Pagination
+## Pagination
+*Content to be added*
+
+## Infinite scrolling
 *Content to be added*
 	
-# Ability to use a custom grid pagination 
-*Content to be added*
-
-# Infinite scrolling
+## Data export 
 *Content to be added*
 	
-# Data export 
-*Content to be added*
-
-# Display density settings
-*Content to be added*
- 
-# Ability to compose with other components 
-*Content to be added*
-
-# Adaptive
-*Content to be added*
-
-# Responsive
-*Content to be added*
-	
-# Configurable 
+## Configurable 
 *Content to be added*
 
 

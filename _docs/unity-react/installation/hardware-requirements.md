@@ -12,8 +12,8 @@ Specifications listed in the document below take the following into consideratio
 The Hardware Requirements are listed per individual environment (e.g., Dev, Test, Production).
 Each of the following requires its own VM Server: 
 - Unity Application Server 
-- Unity Intelligence Engine: Searcher 
-- Unity Intelligence Engine: Discovery Services 
+- Unity Enterprise Search: Searcher 
+- Unity Enterprise Search: Discovery Services 
 - Solr / Solr Cloud 
 
 # Unity Application Server 
@@ -30,9 +30,9 @@ Requires application server to be installed.
 |:-------------------:|:-------------------:|:-------:|:------------:|:------------:|
 |        Unity        |          4          |    16   |      HDD     |     20 GB    | 
 
-# Unity Intelligence Engine: Searcher 
+# Enterprise Search: Searcher 
 
-Unity Intelligence Engine Searcher performs Enterprise Searching, which searches within or across Repositories, leveraging the Solr Index created by the Crawler Service.
+Unity Enterprise Searcher performs search within or across Repositories, leveraging the Solr Index created by the Crawler Service.
 
 Searcher application implements enterprise search operations in the enterprise index (via Solr API).
 
@@ -42,9 +42,9 @@ It may be deployed either on application server or standalone, recommendation is
 |:-------------------:|:-------------------:|:-------:|:------------:|:------------:|
 |      Searcher       |          4          |    8    |      SSD     |    100 GB    | 
 
-# Unity Intelligence Engine: Discovery Services 
+# Enterprise Search: Discovery Services 
 
-The Unity Intelligence Engine Discovery Services (e.g., also known as Crawler Service), reads source ECM repositories and builds a common enterprise Solr Index.
+The Unity Enterprise Search Discovery Services (e.g., also known as Crawler Service), reads source ECM repositories and builds a common enterprise Solr Index.
 
 | Logical server name | Number of CPU/cores | RAM, GB | Storage type | Storage size |
 |:-------------------:|:-------------------:|:-------:|:------------:|:------------:|
@@ -70,7 +70,7 @@ Apache Solr 8.5 (the latest tested version at the moment) should be installed. C
 
 Apache Solr Cloud instance is a clustered index used for Enterprise Searching. 
 
-**Note**: Solr Cloud supports a clustered index and is scalable but does NOT require implementation in a Cloud Environment.
+| **Note**: Solr Cloud supports a clustered index and is scalable but does NOT require implementation in a Cloud Environment.
 
 For High Content Volume implementations, we will use [Apache Solr Cloud](https://lucene.apache.org/solr) engine to implement enterprise index.   We need to have Solr Cloud to create a clustered installation and require a minimum of 3 nodes on different servers.
 	

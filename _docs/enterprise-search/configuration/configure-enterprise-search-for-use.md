@@ -10,7 +10,7 @@ category: Enterprise Search
 ### Windows 
 
 Solr and Crawler scripts can be installed as Windows services. To install these as services, download [NSSM](https://nssm.cc/download) and extract files to a folder. 
-**Note**: Do not delete `nssm.exe`, since it will be used when services need to be uninstalled in the future. 
+| **Note**: Do not delete `nssm.exe`, since it will be used when services need to be uninstalled in the future. 
 
 To install Solr as a service: 
 - In Command Prompt, go to the folder where `nssm.exe` is located (e.g `C:\Program Files\nssm\win64\nssm`) and type `nssm install solr-8.5.1` 
@@ -158,7 +158,7 @@ Verify all required database JDBC providers are configured in WebSphere:
 
 	![uie-folder](images/configure-uie-for-use/image86.png) 
 	
-	**Note**: Index group need to be added from XML configuration once the connector is created under `<RepositoryDataProvider ID="uie_provider">` node as shown below and should match exactly with the one configured in crawler configurations: 
+	| **Note**: Index group need to be added from XML configuration once the connector is created under `<RepositoryDataProvider ID="uie_provider">` node as shown below and should match exactly with the one configured in crawler configurations: 
 	
 	![uie-folder](images/configure-uie-for-use/image87.png) 
 	

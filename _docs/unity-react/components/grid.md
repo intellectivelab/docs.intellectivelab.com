@@ -3,10 +3,14 @@ title: Unity Components - Grid
 layout: docs
 category: Unity 7
 ---
-# Grouping  
+# Overview
+
+# Grid Features
+
+## Grouping  
 *Content to be added*
 
-# Multiple Column Sorting
+## Multiple Column Sorting
 
 You can configure the default Grid to allow multiple columns to be sorted at a time within the content list.
 
@@ -25,73 +29,70 @@ This feature implemented for:
 
 [Configure Multiple Column Sorting](../configuration/grids.md)
 
-# Column locking
+## Column spanning 
 *Content to be added*
 
-# Column spanning 
+## Column reordering
 *Content to be added*
 
-# Column reordering
+## Column menu
 *Content to be added*
 
-# Column menu
+## Column cell formatting 
 *Content to be added*
 
-# Column cell formatting 
+## Column cell tools and actions 
 *Content to be added*
 
-# Column cell tools and actions 
+## Column cell rendering customization
 *Content to be added*
 
-# Column cell rendering customization
-*Content to be added*
-
-# Record text links
+## Record text links
 *Content to be added*
  
-# Multiple row selection
+## Multiple row selection
 *Content to be added*
 	
-# Row action	
+## Row action	
 *Content to be added*
 
-# Bulk action 
+## Bulk action 
 *Content to be added*
 
-# Ability to add a custom grid action 
+## Ability to add a custom grid action 
 *Content to be added*
 
-# Row actions menu 
+## Row actions menu 
 *Content to be added*
 
-# Expandable rows
+## Expandable rows
 *Content to be added*
 
-# Pagination
+## Pagination
 *Content to be added*
 	
-# Ability to use a custom grid pagination 
+## Ability to use a custom grid pagination 
 *Content to be added*
 
-# Infinite scrolling
+## Infinite scrolling
 *Content to be added*
 	
-# Data export 
+## Data export 
 *Content to be added*
 
-# Display density settings
+## Display density settings
 *Content to be added*
  
-# Ability to compose with other components 
+## Ability to compose with other components 
 *Content to be added*
 
-# Adaptive
+## Adaptive
 *Content to be added*
 
-# Responsive
+## Responsive
 *Content to be added*
 	
-# Configurable 
+## Configurable 
 *Content to be added*
 
 

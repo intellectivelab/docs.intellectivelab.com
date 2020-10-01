@@ -3,7 +3,7 @@ title: Quick Start
 layout: docs
 category: Unity 7
 ---
-To try Unity demo version [install Docker](tutorials/how-to-install-docker.md) and configure Unity Docker image. 
+To try Unity demo version [install Docker](../tutorials-and-development/how-to-install-docker.md) and configure Unity Docker image. 
 
 # Configure Unity Docker Image
  

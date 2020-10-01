@@ -193,7 +193,7 @@ Use `# Heading Level 1` with all capital letters to write titles of chapters.
 
 Use `## Heading level 2`, `### Heading level 3` and `#### Heading level 4` with only first capital letter to write subchapters.  
 
-**Note:** All headings must be different, then they might be anchors for links.  
+| **Note:** All headings must be different, then they might be anchors for links.  
 
 Use backticks (`) to write: 
 - commands and messages in Command Prompt: `cd C:\DockerUnity\`, `Login Succeeded` 
@@ -202,17 +202,19 @@ Use backticks (`) to write:
 - buttons: `Apply` button  
 
 Bold text is automatically used in tables for column titles. 
-Also use bold text: 
-- to emphase important notes (just word **Note:** should be bold, not text after it) 
-- to title parts of text like **Problem** and **Solution** in Troubleshooting chapter  
+Also use bold text to title parts of text like **Problem** and **Solution** in Troubleshooting chapter  
 
-Use blockquotes to write quotes from an external sources. 
+To emphasize important notes, type `| **Note:** plain text of note`. 
+It will look on page:  
+| **Note:** plain text of note  
+
+Use blockquotes to write quotes from an external sources.
 
 Use plain text for the rest of content.  
 
 ### Lists using 
 
-Unordered lists are preferrable. Use ordered lists if only it is necessary to count items. 
+Unordered lists are preferable. Use ordered lists if only it is necessary to count items. 
 
 ### Code blocks using 
 

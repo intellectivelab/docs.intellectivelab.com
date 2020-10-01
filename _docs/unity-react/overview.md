@@ -1,5 +1,5 @@
 ---
-title: Unity 7 Overview
+title: Unity 7 React Overview
 layout: docs
 category: Unity 7
 ---
@@ -29,7 +29,7 @@ Use role-based security combined with your in-house authentication to ensure app
 ## Reduces costs
 Access and transact on data and documents from the source. 
 
-# Unity Components and Features
+# Unity Features and Components
 
 ## Content management
 
@@ -47,9 +47,9 @@ Access and transact on data and documents from the source.
 
 ## Enterprise search
 
-Unity Intelligent Engine (UIE) provides Enterprise search. UIE crawls, merges, transforms, and serves content from different business systems into a single high-performance analytics index. Crawl can be near-real time, periodic, and on-demand in response to source system events.     
+Unity Enterprise search crawls, merges, transforms, and serves content from different business systems into a single high-performance analytics index. Crawl can be near-real time, periodic, and on-demand in response to source system events.     
 
-Unity Intelligent Engine is:
+Unity Enterprise search is:
 - A set of crawlers to intelligently pull information from data sources, such as content systems, BPM systems, or databases 
 - A transform capability to perform actions like altering incoming data, merging data from multiple systems, and applying additional information or intelligence to data such as security information
 - A high performance Solr index that provides features like faceted search and fuzzy search, as well as high scalability and fault tolerance

@@ -200,25 +200,6 @@ entries:
                 output: web
                 url: /docs/unity/release-notes/unity-7-7-release-notes/
 
-          - title: Tutorials
-            output: web
-            subfolders:
-              - title: How To Create Page
-                output: web
-                url: /docs/unity/tutorials/how-to-create-page/
-
-              - title: How To Install Docker
-                output: web
-                url: /docs/unity/tutorials/how-to-install-docker/
-
-              - title: Unity 7 Customization
-                output: web
-                url: /docs/unity/tutorials/unity-7-customization/
-
-              - title: Unity Video Tutorials
-                output: web
-                url: /docs/unity/tutorials/unity-video-tutorials/
-
       - title: Unity React
         output: web, pdf
         folderitems:
@@ -428,25 +409,6 @@ entries:
                 output: web
                 url: /docs/unity-react/release-notes/unity-7-7-release-notes/
 
-          - title: Tutorials
-            output: web
-            subfolders:
-              - title: How To Create Page
-                output: web
-                url: /docs/unity-react/tutorials/how-to-create-page/
-
-              - title: How To Install Docker
-                output: web
-                url: /docs/unity-react/tutorials/how-to-install-docker/
-
-              - title: Unity 7 Customization
-                output: web
-                url: /docs/unity-react/tutorials/unity-7-customization/
-
-              - title: Unity Video Tutorials
-                output: web
-                url: /docs/unity-react/tutorials/unity-video-tutorials/
-
       - title: Unity for CRM
         output: web, pdf
         folderitems:
@@ -502,3 +464,23 @@ entries:
               - title: API
                 output: web
                 url: /docs/enterprise-search/development/api/
+
+      - title: Tutorials and Development
+        output: web
+        folderitems:
+          - title: How To Create Page
+            output: web
+            url: /docs/tutorials-and-development/how-to-create-page/
+
+          - title: How To Install Docker
+            output: web
+            url: /docs/tutorials-and-development/how-to-install-docker/
+
+          - title: Unity Video Tutorials
+            output: web
+            url: /docs/tutorials-and-development/unity-video-tutorials/
+
+          - title: Development Materials
+            output: web
+            url: /docs/tutorials-and-development/development-materials/
+
