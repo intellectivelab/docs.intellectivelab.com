@@ -21,4 +21,4 @@ jobs:
           known_hosts: ${{ secrets.SSH_KNOWNHOSTS }}
 
       - name: Deploy site
-        run: ssh -t ubuntu@54.214.112.196 `export COMMIT_SHA=$GITHUB_SHA && bash -s` < update_site.sh
+        run: ssh -t ubuntu@54.214.112.196 "export COMMIT_SHA=$GITHUB_SHA && bash -s" < update_site.sh
