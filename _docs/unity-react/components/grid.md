@@ -12,13 +12,13 @@ category: Unity 7
 
 ## Multiple Column Sorting
 
-Default Grid allows multiple columns to be sorted at a time within the content list.
+Default grid allows multiple columns to be sorted at a time within the content list. Grid column can be configured as sortable or not.
 
-To sort grid by a column, move mouse over the column header and grayed out arrow (sorting direction indicator) will appear. Clicking to column will activate ascending sorting and its icon will become contrast. Next click will toggle sorting to descending, and third click will remove sorting for the column, and so on.
+To sort grid by a sortable column, move mouse over the column header and grayed out arrow (sorting direction indicator) will appear. Clicking to the column header or the arrow will activate ascending sorting and its icon will become contrast. Next click will toggle sorting to descending, and third click will remove sorting for the column, and so on.
 
 ![react_multiple-column-sorting-arrow](grid/images/multicolumnsort_react_arrow.png) 
 
-Sorting direction may be changed also via column menu. Click to down-pointing triangle in the column header, and menu will open. There are options _Sort Ascending_, _Sort Descending_ and _Remove sort_ that work as per above. 
+Sorting direction may be changed also via column menu. To open the menu, click to down-pointing triangle in the column header. There are options _Sort Ascending_, _Sort Descending_ and _Remove sort_ that work as per above. 
 
 ![react_multiple-column-sorting-menu](grid/images/multicolumnsort_react_menu.png) 
 
@@ -28,12 +28,16 @@ It is allowed to have up to 6 columns sorted simultaneously per grid. To change 
 
 ![react_multiple-column-sorting-order](grid/images/multicolumnsort_react_order.png) 
 
-Per each grid, user defined sorting order is saved into browser storage and restored on next session.
+Per each grid, user defined sorting order is saved into browser storage and restored on next session. 
+
+Default sorting order may be configured on a per-grid or per-SearchTemplate basis. It is used until user overrides it.
 
 This feature implemented for:
 
-- Tabs: Search Template, Folder View, Advanced Search
+- Tabs: Search Template, Folder View
 - Data Providers: FileNet, CMIS, UIE (except JOIN function) 
+
+[Configure Multiple Column Sorting](../configuration/grids.md)
 
 ## Column spanning 
 *Content to be added*
