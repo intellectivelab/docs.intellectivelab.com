@@ -16,7 +16,7 @@ category: Unity 7
 ## Case attachments with folder view (search, navigate, attach, detach) 
 ## Attach a local document to the case
 ## Attach an existing document to the case 
-## [Split Case](../../unity-react/features/case-management/split-case.md)
+## Split Case
 ## Copy Case
 ## Close Case 
 ## Re-open Case 
