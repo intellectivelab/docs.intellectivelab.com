@@ -97,6 +97,16 @@ The Pie Chart component is built based on [React-Vis Radial chart](https://uber.
 
 ### Sunburst
 
-[IB-1091](https://jira.intellective.com/browse/IB-1091)
+The **Sunburst Chart** is a hierarchical graphic, where each data node of a tree is represented by an annular segment within multi-layered rings.
+
+![Sunburst Chart](chart/images/sunburst-chart.png)
+
+You can configure the Sunburst Chart to illustrate the part to whole relationships. 
+
+Sunburst charts allow for at a glance understanding of distributions of nested groups.
+
+The Sunburst Chart component is built based on [React-Vis Sunburst diagram](https://uber.github.io/react-vis/documentation/other-charts/sunburst-diagram).
+
+### Zoomable Sunburst
 
 *Content to be added*
