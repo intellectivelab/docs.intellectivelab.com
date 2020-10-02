@@ -15,6 +15,8 @@ There are two main types of facets:
 
 ## Terms Facet
 
+The Terms Facet (or field facet) categorizes the domain based on the unique terms / values of a field.
+
 Terms Facet configuration examples:
 
 ```xml
@@ -34,6 +36,8 @@ Terms Facet configuration parameters:
 |minCount | Only return categories with a count of at least this number. Defaults to `1` |
 
 ## Range Facet
+
+The Range Facet produces multiple categories over a date field or numeric field.
 
 Range Facet configuration examples:
 
@@ -57,6 +61,8 @@ Range Facet configuration parameters:
 
 ## Metrics Facet
 
+Metrics, also called aggregation functions, perform calculations over a domain (each facet category).
+
 Metrics Facet configuration examples:
 
 ```xml
@@ -75,6 +81,8 @@ Metrics Facet configuration parameters:
 |function | Facet function/metric. Supported functions: SUM, AVG, MIN, MAX, UNIQUE, VARIANCE |
 
 ## Nested Facets
+
+Nested Facets (also called Subfacets) allows adding additional facets for every category produced by a parent facet.
 
 Nested Facets configuration examples:
 
