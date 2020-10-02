@@ -32,7 +32,7 @@ Per each grid, user defined sorting order is saved into browser storage and rest
 
 This feature implemented for:
 
-- Tabs: Search Template, Folder View, Advanced Search
+- Tabs: Search Template, Folder View
 - Data Providers: FileNet, CMIS, Unity Enterprise Search (except JOIN function) 
 
 ## Column spanning 
