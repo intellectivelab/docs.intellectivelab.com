@@ -1,5 +1,5 @@
 ---
-title: Private Site PAge
+title: Private Site Page
 layout: docs
 ---
 
