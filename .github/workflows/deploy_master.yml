@@ -1,0 +1,23 @@
+name: Deploy site (master)
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Deploy site on the server
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Export ssh key
+        env:
+          SSH_KEY: ${{ secrets.SSH_KEY }}
+        run: printf "$SSH_KEY" > ~/ssh.pem
+
+      - name: Deploy site
+        run: cat update_site.sh | ssh -i ~/ssh.pem ubuntu@54.214.112.196
