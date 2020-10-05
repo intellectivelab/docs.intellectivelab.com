@@ -175,7 +175,7 @@ layout: docs
 category: Unity 7
 ---
 ```
-This information is not visible on site page, but required to properly embed page in the site.
+This information is not visible on site page, but required to properly embed page in the site. Start page text just below metadata, without empty rows.  
 
 ## Title of page 
  
@@ -189,7 +189,7 @@ Table of contents is created automatically from headers on page. It is important
 
 ### Text 
 
-Use `# Heading Level 1` with all capital letters to write titles of chapters. 
+Use `# Heading Level 1` with all capital letters to write titles of chapters. The first heading on page should be `# Heading`, otherwise automatic ToC might work incorrectly.    
 
 Use `## Heading level 2`, `### Heading level 3` and `#### Heading level 4` with only first capital letter to write subchapters.  
 
@@ -199,13 +199,15 @@ Use backticks (`) to write:
 - commands and messages in Command Prompt: `cd C:\DockerUnity\`, `Login Succeeded` 
 - names and paths to directories and files: `C:/DockerUnity` 
 - paths to sections: `Resources > File sharing` 
-- buttons: `Apply` button  
+- buttons: `Apply` button 
+- boolean operators: `AND`,`OR`  
 
 Bold text is automatically used in tables for column titles. 
 Also use bold text to title parts of text like **Problem** and **Solution** in Troubleshooting chapter  
 
 To emphasize important notes, type `| **Note:** plain text of note`. 
 It will look on page:  
+
 | **Note:** plain text of note  
 
 Use blockquotes to write quotes from an external sources.
