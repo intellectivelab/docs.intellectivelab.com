@@ -1,9 +1,8 @@
 ---
-title: Office Integration
+title: Unity Office Add-In
 layout: docs
 category: Unity 7
 ---
-
 # Unity Office Add-In
 
 ## Add-In Overview
@@ -43,7 +42,7 @@ No additional configuration is required. This button will appear automatically i
 
 ## Supported data providers
 
-FileNet, CMIS and UIE. For UIE those actions are only available for CE and CMIS documents.
+FileNet, CMIS and UIE. For Enterprise Search those actions are only available for CE and CMIS documents.
 
 CMIS creates a working copy on check out action, so for reserved document we actually have 2 records in a grid, 
 the original one and it's working copy:

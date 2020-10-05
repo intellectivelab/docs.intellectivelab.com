@@ -3,7 +3,6 @@ title: Open in Office Action Configuration
 layout: docs
 category: Unity 7
 ---
-
 # Open in Office via Unity Add-In
 
 ## Overview
