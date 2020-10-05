@@ -34,6 +34,10 @@ entries:
                 output: web
                 url: /docs/unity-extjs/features/enterprise-search/
 
+              - title: Analytics
+                output: web
+                url: /docs/unity-extjs/features/analytics/
+
               - title: Integration
                 output: web
                 url: /docs/unity-extjs/features/integration/
