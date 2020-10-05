@@ -3,11 +3,11 @@ title: Open in Office Action Configuration
 layout: docs
 category: Unity 7
 ---
-# Open in Office via Unity Add-In
+# Open in Office via Unity Plugin
 
 ## Overview
 
-[Unity Office Add-In](../../features/integration/unity-office-plugin.md)
+[Unity Office Plugin](../../features/integration/unity-office-plugin.md)
 
 ## Open in Office Action
 

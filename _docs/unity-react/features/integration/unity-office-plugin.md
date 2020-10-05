@@ -1,11 +1,11 @@
 ---
-title: Unity Office Add-In
+title: Unity Office Plugin
 layout: docs
 category: Unity 7
 ---
-# Unity Office Add-In
+# Unity Office Plugin
 
-## Add-In Overview
+## Plugin Overview
 
 Unity Office Plugin allows to open Word, Excel and Powerpoint documents in MS Office desktop application with further 
 ability to perform some additional actions, e.g. 
@@ -52,7 +52,7 @@ the original one and it's working copy:
 `Open in Office` action is available for both of them and always opens a **working copy** in Office application, since 
 versioning actions are not allowed for the original one. This principle is also applicable for situation when user is
 executing open action from `Document Details`: no matter which record has been selected for editing, working copy
-will be opened via Office Add-In. 
+will be opened via Office Plugin. 
 
 ## Plugin version
 
