@@ -39,21 +39,20 @@ Split Case Action configuration section should be added to the Unity System XML 
 
 Split Case Action custom configuration parameters:
 
-| Parameter | Description |
-|:----|:-------------------|
-|ResourceName | `cases` |
-|ActionType | `split` |
-|ResourceType | Optional. if provided will be used to replace a view link for Original case page |
-|ViewType | Optional. if provided will be used to replace a view link for Original case page. If not specified View link of the record will be used |
-|TargetResourceTypes | Optional. Includes target resource types configuration. Please refer to the table below for details |
+| Parameter          | Description |
+|:-------------------|:------------|
+|ResourceName        | `cases`     |
+|ActionType          | `split`     |
+|ResourceType        | Optional. If provided will be used to replace a view link for Original case page. |
+|ViewType            | Optional. If provided will be used to replace a view link for Original case page. If not specified View link of the record will be used. |
+|TargetResourceTypes | Optional. Includes target resource types configuration. Please refer to the table below for details. |
 
 TargetResourceTypes parameters:
 
-| Parameter | Description |
-|:----|:-------------------|
-| Parameter | Description |
-|viewType | Optional. If not specified `Active` Case view will be used. Example: `Split` |
-|ResourceType | Split target case type. Can be one to many ResourceType rows |
+| Parameter   | Description |
+|:------------|:------------|
+|ViewType     | Optional. If not specified `Active` Case view will be used. Example: `Split` |
+|ResourceType | Split target case type. Can be one to many ResourceType rows. |
 
 Action itself should be added to the actions list for grids:
   
@@ -69,7 +68,7 @@ Action itself should be added to the actions list for grids:
 </Grid>        
 ```
 
-If action configuration contains references to viewTypes, please make sure the proper views are defined in UCM Solution XML file:
+If action configuration contains references to ViewTypes, please make sure the proper views are defined in UCM Solution XML file:
 ```xml
 <Tabs CaseType="CC_Complaint"  ViewType="Split">
     <Tab ID="1" Type="Details" Label="Properties" Tooltip="Properties" FieldSet="CaseReview">

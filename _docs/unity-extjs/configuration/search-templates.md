@@ -3,7 +3,6 @@ title: Search Templates Configuration
 layout: docs
 category: Unity 7
 ---
-
 ```xml
   <SearchTemplate ID="document_Search_DateAdded">
             <DataProviderId>ce_repository</DataProviderId>
@@ -63,7 +62,7 @@ category: Unity 7
             </Criteria>
         </SearchTemplate>
 ```
-## Clause configuration
+# Clause configuration
 
 All criterias work as "AND" clause but "OR" clause can be configured using specific plugin "orGroupSupportTemplateQueryPlugin". 
 1. [Plugin](../configuration/others.md) should be configured
@@ -83,8 +82,10 @@ All criterias work as "AND" clause but "OR" clause can be configured using speci
 ....
 </Criterion>
 ```
-## DefaultValue configuration
-### Default values for Range operator for DateTime properties
+# DefaultValue configuration
+
+## Default values for Range operator for DateTime properties
+
 ```xml
 <DefaultValue>from:01/10/2020;to:{Date.-3DAY}</DefaultValue>
 ```
