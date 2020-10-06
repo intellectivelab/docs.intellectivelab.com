@@ -3,15 +3,15 @@ title: Open in Office Action Configuration
 layout: docs
 category: Unity 7
 ---
-# Open in Office via Unity Plugin
+# Open in Office Action Configuration via Unity Office Plugin
 
-## Overview
+## Unity Office Plugin overview
 
 [Unity Office Plugin](../../features/integration/unity-office-plugin.md)
 
-## Open in Office Action
+## Open in Office action
 
-For `Open in Office` Action following section should be added to the Unity System XML file:
+For `Open in Office` action following section should be added to the Unity System XML file:
  
 ```xml
 <Action ID="openInOffice" multiselect="false" scope="any" type="toolbar">
@@ -31,14 +31,14 @@ For `Open in Office` Action following section should be added to the Unity Syste
 </Action>
 ```
 
-`Open in Office` Action custom configuration parameters:
+`Open in Office` action custom configuration parameters:
 
-| Parameter | Description |
-|:----|:-------------------|
-|ResourceName | `documents` |
-|ActionType | `open.addon` |
+| Parameter   | Description |
+|:------------|:------------|
+|ResourceName | documents |
+|ActionType   | open.addon|
 
-## Check Out and Open in Office Action
+## Check Out and Open in Office action
 
 For `Check Out and Open in Office` action following section should be added to the Unity System XML file:
 
@@ -62,10 +62,10 @@ For `Check Out and Open in Office` action following section should be added to t
 
 `Check Out and Open in Office` action custom configuration parameters:
 
-| Parameter | Description |
-|:----|:-------------------|
-|ResourceName | `documents` |
-|ActionType | `checkout.addon` |
+| Parameter   | Description |
+|:------------|:------------|
+|ResourceName | documents |
+|ActionType   | checkout.addon |
 
 ## Grid
 
