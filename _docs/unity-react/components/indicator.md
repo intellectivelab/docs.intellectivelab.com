@@ -5,8 +5,8 @@ category: Unity 7
 ---
 # Unity Components - Indicator
 
-Charts are UI components designed for graphical representation of different metrics. 
+Indicators are UI components designed for graphical representation of different metrics. 
 
-If the metric is empty, `-` will be shown below the indicator title with `No Data To Display` Tooltip:
+If the metric is empty, `-` will be shown below the indicator title with `No Data To Display` tooltip:
 
 ![Empty indicator](indicator/images/empty-indicator.png)
