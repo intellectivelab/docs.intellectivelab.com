@@ -9,10 +9,6 @@ category: Unity 7
 
 Charts are UI components designed for graphical representation of data. 
 
-If data is empty or has no values, `No Data To Display` warning message will be shown below the chart title:
-
-![Chart with no data](chart/images/empty-chart.png)
-
 Please refer to [Charts Configuration Section](../configuration/ui-components.md#charts) for more information about charts configuration. 
 
 ## Plot Charts
@@ -114,3 +110,11 @@ The Sunburst Chart component is built based on [React-Vis Sunburst diagram](http
 ### Zoomable Sunburst
 
 *Content to be added*
+
+# Troubleshooting
+
+If data is empty or has no values, `No Data To Display` warning message will be shown below the chart title:
+
+![Chart with no data](chart/images/empty-chart.png)
+
+
