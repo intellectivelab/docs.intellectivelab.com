@@ -4,8 +4,6 @@ layout: docs
 category: Unity 7
 ---
 
-# Description
-
 Open Case By URL feature provides an alternative way to open the case for viewing or editing.
 
 Case will be opened in a new browser tab by URL, which is provided in [action configuration](../../configuration/actions/open-by-url.md).

@@ -4,8 +4,6 @@ layout: docs
 category: Unity 7
 ---
 
-# React UI Open By URL Action
-
 Open By URL Action configuration section should be added to the Unity System XML file. An example:
 
 ```xml
