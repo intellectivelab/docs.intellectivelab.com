@@ -7,7 +7,11 @@ category: Unity 7
 
 Indicators are UI components designed for graphical representation of different metrics. 
 
-# Troubleshooting
+*Content to be added*
+
+# How To Use Indicator
+
+*Content to be added*
 
 If the metric is empty, `-` will be shown below the indicator title with `No Data To Display` tooltip:
 

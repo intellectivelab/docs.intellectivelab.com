@@ -111,7 +111,9 @@ The Sunburst Chart component is built based on [React-Vis Sunburst diagram](http
 
 *Content to be added*
 
-# Troubleshooting
+# How To Use Charts
+
+*Content to be added*
 
 If data is empty or has no values, `No Data To Display` warning message will be shown below the chart title:
 
