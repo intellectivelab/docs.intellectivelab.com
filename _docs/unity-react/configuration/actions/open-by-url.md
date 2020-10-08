@@ -16,6 +16,10 @@ Open By URL Action configuration section should be added to the Unity System XML
             <ActionType>open_by_url</ActionType>
             <UrlPattern>OpenCase.jsp?solution=CustomerComplaints&amp;providerId=ucm_over_icm_provider&amp;caseId=${id}</UrlPattern>
         </CustomParameters>
+        <Security>
+            <AllowRole>Unity Users</AllowRole>
+            <!-- <DenyRole>Unity Users</DenyRole> -->
+        </Security>
     </Action>
 ```
 
@@ -25,3 +29,5 @@ Open By URL Action custom configuration parameters:
 |:----|:-------------------|
 |ActionType | `open_by_url` |
 |UrlPattern | URL pattern. Supports macros in the following format: `${key}`, where `key` is a property name of the object being opened. Macros will be replaced with the object property values. |
+
+Security section defines action accessibility. Please refer to [Security Restrictions](../access-roles.md#security-restrictions) for more information about security configuration. 
