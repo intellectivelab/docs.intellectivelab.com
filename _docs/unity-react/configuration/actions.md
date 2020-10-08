@@ -12,7 +12,7 @@ category: Unity 7
 
 - [Split Case](../configuration/actions/split-case.md)
 - [Delete Case](../configuration/actions/delete-case.md)
-- [Detach Document]()
+- [Detach Document](../configuration/actions/detach-document.md)
 
 
 
