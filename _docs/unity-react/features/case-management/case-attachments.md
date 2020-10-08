@@ -33,3 +33,5 @@ Clicking on `Cancel` button will lead to closing confirmation dialog without det
 
 By selecting `Yes` button, user triggers `detach` action execution. After document is detached, grid page will be 
 refreshed.
+
+![Detach action configuration](../../configuration/actions/detach-document.md)

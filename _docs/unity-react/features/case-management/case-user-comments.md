@@ -38,3 +38,5 @@ To remove the comment click on that button and confirm deletion by choosing `Yes
 It will lead to comment deletion and grid refresh.
 
 `Cancel` button is intended for action cancellation.
+
+Action appears automatically, no configuration is required.
