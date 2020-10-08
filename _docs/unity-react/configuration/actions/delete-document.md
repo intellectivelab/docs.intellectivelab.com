@@ -60,9 +60,13 @@ config (actionSet parameter):
               <Parameter Name="actionSet" Value="deleteDocument"/>
             </CustomParameters>
           </Tab>
+          <!-- not relevant nodes skipped -->
         </Tabs>
+        <!-- not relevant nodes skipped -->
       </Open>
+      <!-- not relevant nodes skipped -->
     </Documents>
+    <!-- not relevant nodes skipped -->
   </Views>
   <!-- not relevant nodes skipped -->
 </SolutionConfig>

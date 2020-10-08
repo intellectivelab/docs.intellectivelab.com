@@ -1,9 +1,9 @@
 ---
-title: Case Delete Action Configuration
+title: Delete Case Action Configuration
 layout: docs
 category: Unity 7
 ---
-# Case Delete Action Configuration
+# Delete Case Action Configuration
 
 For `Delete` case action following section should be added to the Unity System XML file:
  
@@ -60,9 +60,13 @@ config (actionSet parameter):
               <Parameter Name="actionSet" Value="deleteCase"/>
             </CustomParameters>
           </Tab>
+          <!-- not relevant nodes skipped -->
         </Tabs>
+        <!-- not relevant nodes skipped -->
       </Active>
+      <!-- not relevant nodes skipped -->
     </Cases>
+    <!-- not relevant nodes skipped -->
   </Views>
   <!-- not relevant nodes skipped -->
 </SolutionConfig>
