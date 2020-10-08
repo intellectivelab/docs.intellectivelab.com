@@ -44,8 +44,8 @@ To see `Delete` action in grid context-menu it should be added to grid configura
 
 ``` 
 
-For `Delete` button on `Properties` tab of `Case Details` view, add this action to `Active` view in solution 
-config (actionSet parameter):
+To display `Delete` button on `Properties` tab of `Case Details` view, ensure that actionSet parameter inside 
+Views/Cases/Active/Tabs[CaseType={appropriate_case_type}]/Tab/CustomParameters contains this action:
 
 ```xml
 <SolutionConfig SolutionName="CustomerComplaints">

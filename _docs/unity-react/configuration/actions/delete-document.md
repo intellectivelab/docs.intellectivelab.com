@@ -1,5 +1,5 @@
 ---
-title: Document Delete Action Configuration
+title: Delete Document Action Configuration
 layout: docs
 category: Unity 7
 ---
@@ -44,8 +44,8 @@ To see `Delete` action in grid context-menu it should be added to grid configura
 
 ``` 
 
-For `Delete` button on `Properties` tab of `Document Details` view, add this action to `Open` view in solution 
-config (actionSet parameter):
+To display `Delete` button on `Properties` tab of `Document Details` view, ensure that actionSet parameter inside 
+Views/Documents/Open/Tabs[CaseType={appropriate_document_type}]/Tab/CustomParameters contains this action:
 
 ```xml
 <SolutionConfig SolutionName="CustomerComplaints">

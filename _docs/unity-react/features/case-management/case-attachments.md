@@ -25,9 +25,9 @@ Detach action is available from context-menu and allows to detach selected docum
 
 ![Attachments context-menu](case-attachments/images/detach-document.png)
 
-After `Detach Document` action selecting confirmation dialog will appear:
+After `Detach Document` action is selected confirmation dialog will appear:
 
-![Confirmation dialog for detach action](case-attachments/images/detach-document-confirmation.png)
+![Confirmation dialog](case-attachments/images/detach-document-confirmation.png)
 
 Clicking on `Cancel` button will lead to closing confirmation dialog without detaching the document.
 
