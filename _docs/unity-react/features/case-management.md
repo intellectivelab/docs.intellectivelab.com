@@ -20,6 +20,7 @@ category: Unity 7
 ## Attach an existing document to the case 
 ## [Split Case](case-management/split-case.md)
 ## Copy Case
+## [Delete Case](case-management/delete-case.md)
 ## Close Case 
 ## Re-open Case 
 ## Case tasks view (search, create, view, complete, reassign) 

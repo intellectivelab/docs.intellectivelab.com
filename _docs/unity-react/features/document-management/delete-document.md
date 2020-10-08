@@ -18,11 +18,11 @@ context-menu or `Properties` tab of `Document Details` page.
 
 - Click `Delete` action
 
-    ![Context-menu](document-delete/images/delete-document-context-menu.png)
+    ![Context-menu](delete-document/images/delete-document-context-menu.png)
 
 - Confirmation dialog will appear:
 
-    ![Confirmation dialog](document-delete/images/delete-document-confirmation-from-grid.png)
+    ![Confirmation dialog](delete-document/images/delete-document-confirmation-from-grid.png)
 
 Clicking on `Cancel` button will lead to closing confirmation dialog without document deleting.
 
@@ -36,11 +36,11 @@ in a separate tab ...
 
 - Click `Delete` button
 
-    ![Document Deatils](document-delete/images/document-details.png)
+    ![Document Details](delete-document/images/document-details.png)
 
 - Confirmation dialog will appear:
 
-    ![Confirmation dialog](document-delete/images/delete-document-confirmation-from-details.png)
+    ![Confirmation dialog](delete-document/images/delete-document-confirmation-from-details.png)
 
 Clicking on `Cancel` button will lead to closing confirmation dialog without document deleting.
 
@@ -50,4 +50,4 @@ refreshed as well.
 
 # Configuration
 
-[Document Delete action configuration](../../configuration/actions/document-delete.md)
+[Document Delete action configuration](../../configuration/actions/delete-document.md)

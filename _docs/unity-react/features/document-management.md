@@ -21,5 +21,5 @@ category: Unity 7
 ## Document versioning
 ## Document content action (view content and download)
 ## Document copy/move to folder
-## Document delete
+## [Document delete](document-management/delete-document.md)
 ## Copy link
