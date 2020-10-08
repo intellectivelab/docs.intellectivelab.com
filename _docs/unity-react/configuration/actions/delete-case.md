@@ -3,8 +3,6 @@ title: Delete Case Action Configuration
 layout: docs
 category: Unity 7
 ---
-# Delete Case Action Configuration
-
 For `Delete` case action following section should be added to the Unity System XML file:
  
 ```xml
@@ -72,4 +70,4 @@ Views/Cases/Active/Tabs[CaseType={appropriate_case_type}]/Tab/CustomParameters c
 </SolutionConfig>
 ```
 
-actionSet parameter contains set of actions, separated by comma 
+`actionSet` parameter contains set of actions, separated by comma 

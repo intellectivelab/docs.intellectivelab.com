@@ -3,7 +3,7 @@ title: Case User Comments
 layout: docs
 category: Unity 7
 ---
-# Description
+# Overview
 
 *content to be added*
 
@@ -25,7 +25,7 @@ category: Unity 7
 
 # Delete
 
-Each user comment row has delete icon button on the right bottom corner:
+Each user comment row has `Delete` icon button on the right bottom corner:
 
 ![Delete comment](case-user-comments/images/delete-comment.png)
 
@@ -38,5 +38,7 @@ To remove the comment click on that button and confirm deletion by choosing `Yes
 It will lead to comment deletion and grid refresh.
 
 `Cancel` button is intended for action cancellation.
+
+## Configuration 
 
 Action appears automatically, no configuration is required.

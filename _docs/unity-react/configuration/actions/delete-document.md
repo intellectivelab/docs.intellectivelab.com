@@ -3,8 +3,6 @@ title: Delete Document Action Configuration
 layout: docs
 category: Unity 7
 ---
-# Delete Document Action Configuration
-
 For `Delete` document action following section should be added to the Unity System XML file:
  
 ```xml
@@ -72,4 +70,4 @@ Views/Documents/Open/Tabs[CaseType={appropriate_document_type}]/Tab/CustomParame
 </SolutionConfig>
 ```
 
-actionSet parameter contains set of actions, separated by comma 
+`actionSet` parameter contains set of actions, separated by comma 
