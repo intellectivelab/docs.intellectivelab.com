@@ -12,7 +12,7 @@ category: Unity 7
 ## Case search and navigation
 ## Case view and update properties 
 ## Case history
-## Case user comments (search, add, view, update, delete) 
+## [Case user comments (search, add, view, update, delete)](case-management/case-user-comments.md) 
 ## Case activity feed with infinite scrolling
 ## Case events timeline with infinite scrolling
 ## Case attachments with folder view (search, navigate, attach, detach) 
