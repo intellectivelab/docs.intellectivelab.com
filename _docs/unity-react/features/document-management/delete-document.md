@@ -1,5 +1,5 @@
 ---
-title: Document Delete Feature
+title: Delete Document Feature
 layout: docs
 category: Unity 7
 ---
@@ -50,4 +50,4 @@ refreshed as well.
 
 # Configuration
 
-[Document Delete action configuration](../../configuration/actions/delete-document.md)
+[Delete Document action configuration](../../configuration/actions/delete-document.md)
