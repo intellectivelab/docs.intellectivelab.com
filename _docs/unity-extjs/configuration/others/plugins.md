@@ -3,6 +3,7 @@ title: Plugins Configuration
 layout: docs
 category: Unity 7
 ---
+# Plugin for `OR` clause
 The following plugins should be defined for `OR` clause configuration: 
 
 ```xml

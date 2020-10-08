@@ -3,6 +3,7 @@ title: Search Templates Configuration
 layout: docs
 category: Unity 7
 ---
+# Common configuration
 ```xml
   <SearchTemplate ID="document_Search_DateAdded">
             <DataProviderId>ce_repository</DataProviderId>
