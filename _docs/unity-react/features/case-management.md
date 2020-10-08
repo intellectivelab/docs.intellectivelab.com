@@ -15,7 +15,7 @@ category: Unity 7
 ## [Case user comments (search, add, view, update, delete)](case-management/case-user-comments.md) 
 ## Case activity feed with infinite scrolling
 ## Case events timeline with infinite scrolling
-## Case attachments with folder view (search, navigate, attach, detach) 
+## [Case attachments with folder view (search, navigate, attach, detach)](case-management/case-attachments.md) 
 ## Attach a local document to the case
 ## Attach an existing document to the case 
 ## [Split Case](case-management/split-case.md)
