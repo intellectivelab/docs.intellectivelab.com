@@ -1,5 +1,5 @@
 ---
-title: Case Delete Feature
+title: Delete Case Feature
 layout: docs
 category: Unity 7
 ---
