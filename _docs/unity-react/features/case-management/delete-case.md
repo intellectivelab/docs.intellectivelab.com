@@ -50,4 +50,4 @@ refreshed as well.
 
 # Configuration
 
-[Case Delete action configuration](../../configuration/actions/delete-case.md)
+[Delete Case action configuration](../../configuration/actions/delete-case.md)
