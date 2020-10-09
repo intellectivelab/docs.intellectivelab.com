@@ -3,9 +3,6 @@ title: Split Case Configuration
 layout: docs
 category: Unity 7
 ---
-
-# React UI Split Case
-
 Split Case Action configuration section should be added to the Unity System XML file. An example:
  
 ```xml
