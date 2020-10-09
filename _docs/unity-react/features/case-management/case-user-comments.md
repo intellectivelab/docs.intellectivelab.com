@@ -41,4 +41,6 @@ It will lead to comment deletion and grid refresh.
 
 ## Configuration 
 
-Action appears automatically, no configuration is required.
+*content to be added*
+
+`Update` and `Delete` actions appear automatically, no configuration is required.
