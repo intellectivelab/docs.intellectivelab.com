@@ -22,4 +22,4 @@ An example of using this feature can be opening a case from the React UI grid in
 
 # Configuration
 
-Please refer to [React UI Open By Url action configuration](../../configuration/actions/open-by-url.md) for more information about the configuration.
+[React UI Open By Url action configuration](../../configuration/actions/open-by-url.md)
