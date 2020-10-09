@@ -37,5 +37,7 @@ As a result new case will be created on top of existing case. Relevant informati
 
 ![result](split-case/images/react-ui-image4.png)
 
+# Configuration
+
 Please refer to [React UI Case split action configuration](../../configuration/actions/split-case.md) for more information about the configuration.
 
