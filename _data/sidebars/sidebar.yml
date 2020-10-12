@@ -143,6 +143,10 @@ entries:
                 output: web
                 url: /docs/unity-extjs/configuration/solutions-configuration/
 
+              - title: Access Roles
+                output: web
+                url: /docs/unity-extjs/configuration/access-roles/
+
               - title: Others
                 output: web
                 url: /docs/unity-extjs/configuration/others/
