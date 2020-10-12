@@ -25,3 +25,4 @@ category: Unity 7
 ## Case tasks view (search, create, view, complete, reassign) 
 ## Case work items view (search, view, process, complete, reassign) 
 ## Copy link
+## [Open Case By URL](case-management/open-case-by-url.md)
