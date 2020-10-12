@@ -13,6 +13,6 @@ Indicators are UI components designed for graphical representation of different 
 
 *Content to be added*
 
-If the metric is empty, `-` will be shown below the indicator title with `No Data To Display` tooltip:
+If the metric is empty, `-` will be shown below the indicator title with `No content to display` tooltip:
 
 ![Empty indicator](indicator/images/empty-indicator.png)
