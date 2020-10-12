@@ -341,6 +341,10 @@ entries:
                 output: web
                 url: /docs/unity-react/configuration/ui-components/
 
+              - title: Access Roles
+                output: web
+                url: /docs/unity-react/configuration/access-roles/
+
               - title: Others
                 output: web
                 url: /docs/unity-react/configuration/others/
