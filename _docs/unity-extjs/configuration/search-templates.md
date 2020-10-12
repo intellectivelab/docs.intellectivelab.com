@@ -65,7 +65,7 @@ category: Unity 7
 ```
 # Clause configuration
 
-All criterias work as "AND" clause but "OR" clause can be configured using specific plugin "orGroupSupportTemplateQueryPlugin". 
+All criterias work as `AND` clause but `OR` clause can be configured using specific plugin "orGroupSupportTemplateQueryPlugin". 
 1. [Plugin](../configuration/others.md) should be configured
 2. The following parameters should be added to the Search Templates
 ```xml
