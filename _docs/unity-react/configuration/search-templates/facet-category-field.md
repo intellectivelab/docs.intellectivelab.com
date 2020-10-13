@@ -5,8 +5,8 @@ category: Unity 7
 ---
 # Common configuration rules
 
-Besides common criteria tags like `FieldName`, `Type`, `Operator`, etc. category criterion have 2 additional: 
-`Facets` & `Ui`.  
+Besides common criteria tags like `FieldName`, `Type`, `Operator`, etc. category criterion has 2 additional: 
+`Facets` & `Ui`:  
 
 | Parameter   | Description        |
 |:------------|:-------------------|
@@ -22,10 +22,9 @@ Besides common criteria tags like `FieldName`, `Type`, `Operator`, etc. category
 |Ui           |Category field Ui representation. Available values: `radio` / `toggle` / `checkbox` / `combobox`. Default value: `toggle` (if tag is absent / it's value is not specified / specified value is not allowed)|
 |Facets       |This section is used to bind criteria field to a specific facet, so that criterion has ability to load facets' values|
 
-Ensure that `FieldName` tag has value of corresponding property, defined in `Properties` section 
-([link](../properties.md))
+Ensure that `FieldName` tag has value of corresponding property, defined in [Properties](../properties.md) section.  
 
-Please refer this [link](../facets.md#terms-facet) for facets configuration information.
+For more information see [Terms Facets configuration](../facets.md#terms-facet).
 
 # Radio category criterion
 
@@ -88,4 +87,4 @@ Example of `cases-by-state-city` and its inner facets configuration:
 </Facets>
 ```
 
-Please refer to following [link](../facets.md#terms-facet) for more precise information on facets configuration
+For more information see [Terms Facets configuration](../facets.md#terms-facet).  

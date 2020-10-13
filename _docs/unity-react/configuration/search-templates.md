@@ -13,7 +13,7 @@ category: Unity 7
 
 ## Criteria section configuration
 
-Criteria section may contain set of `Criterion`s, which will be used to render criteria search panel.
+Criteria section can contain a set of `Criterion`s to be used for rendering criteria search panel.
 
 ### [Facet (category) field](search-templates/facet-category-field.md)
 
