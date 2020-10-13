@@ -49,7 +49,7 @@ Last column width may not be changed. If grid occupies whole container form widt
 
 The minimum size of the columns is determined by column header, the actual column data in the grid rows may be shortened when shown in too narrow columns.
 
-Width of a column becomes fixed once it was resized. Other columns width remains automatically maintained. To reset the columns width to default (and revert the visible state of the columns and their order) use `Reset` command from grid menu.
+Width of a column becomes fixed once it was resized. Other columns width remains automatically maintained. To reset the columns width to default (and revert the visible state of the columns and their order) use `Reset` command from grid menu: 
 
 ![react_column-resizing-reset-menu](grid/images/columnresize_react_reset_menu.png) 
 
