@@ -19,7 +19,7 @@ category: Unity 7
 ## Date range picker
 ## Client-side select field
 ## Remote select field
-## Facet(category) field
+## Facet (category) field
 ## Range slider
 ## Ability to add a custom field
 ## Linked dropdowns
