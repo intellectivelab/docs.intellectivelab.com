@@ -3,9 +3,7 @@ title: Facet (category) field configuration
 layout: docs
 category: Unity 7
 ---
-# Facet (category) field configuration
-
-## Common configuration rules
+# Common configuration rules
 
 Besides common criteria tags like `FieldName`, `Type`, `Operator`, etc. category criterion have 2 additional: 
 `Facets` & `Ui`.  
@@ -29,13 +27,19 @@ Ensure that `FieldName` tag has value of corresponding property, defined in `Pro
 
 Please refer this [link](../facets.md#terms-facet) for facets configuration information.
 
-## Radio category criterion
+# Radio category criterion
 
-## Toggle category criterion
+*content to be added*
 
-## Checkbox category criterion
+# Toggle category criterion
 
-## Combobox category criterion
+*content to be added*
+
+# Checkbox category criterion
+
+*content to be added*
+
+# Combobox category criterion
 
 Example of criterion configuration:
 
