@@ -45,10 +45,6 @@ entries:
           - title: Components
             output: web, pdf
             subfolders:
-              - title: Design Principles
-                output: web
-                url: /docs/unity-extjs/components/design-principles/
-
               - title: Page/Tab
                 output: web
                 url: /docs/unity-extjs/components/page-tab/
