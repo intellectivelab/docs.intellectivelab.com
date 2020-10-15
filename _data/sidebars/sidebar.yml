@@ -158,41 +158,6 @@ entries:
                 output: web
                 url: /docs/unity-extjs/customization/environment-setup/
 
-          - title: API
-            output: web, pdf
-            subfolders:
-              - title: Overview
-                output: web
-                url: /docs/unity-extjs/api/overview/
-
-              - title: Security
-                output: web
-                url: /docs/unity-extjs/api/security/
-
-              - title: Documents
-                output: web
-                url: /docs/unity-extjs/api/documents/
-
-              - title: Cases
-                output: web
-                url: /docs/unity-extjs/api/cases/
-
-              - title: Data Export
-                output: web
-                url: /docs/unity-extjs/api/data-export/
-
-              - title: Selectors
-                output: web
-                url: /docs/unity-extjs/api/selectors/
-
-              - title: Configuration
-                output: web
-                url: /docs/unity-extjs/api/configuration/
-
-              - title: References
-                output: web
-                url: /docs/unity-extjs/api/references/
-
       - title: Unity React
         output: web, pdf
         folderitems:
@@ -360,41 +325,6 @@ entries:
                 output: web
                 url: /docs/unity-react/customization/environment-setup/
 
-          - title: API
-            output: web, pdf
-            subfolders:
-              - title: Overview
-                output: web
-                url: /docs/unity-react/api/overview/
-
-              - title: Security
-                output: web
-                url: /docs/unity-react/api/security/
-
-              - title: Documents
-                output: web
-                url: /docs/unity-react/api/documents/
-
-              - title: Cases
-                output: web
-                url: /docs/unity-react/api/cases/
-
-              - title: Data Export
-                output: web
-                url: /docs/unity-react/api/data-export/
-
-              - title: Selectors
-                output: web
-                url: /docs/unity-react/api/selectors/
-
-              - title: Configuration
-                output: web
-                url: /docs/unity-react/api/configuration/
-
-              - title: References
-                output: web
-                url: /docs/unity-react/api/references/
-
       - title: Unity for CRM
         output: web, pdf
         folderitems:
@@ -462,22 +392,60 @@ entries:
             output: web
             url: /docs/release-notes/unity-7-7-release-notes/
 
-      - title: Tutorials and Development
+      - title: Tutorials
         output: web
         folderitems:
           - title: How To Create Page
             output: web
-            url: /docs/tutorials-and-development/how-to-create-page/
+            url: /docs/tutorials/how-to-create-page/
 
           - title: How To Install Docker
             output: web
-            url: /docs/tutorials-and-development/how-to-install-docker/
+            url: /docs/tutorials/how-to-install-docker/
 
           - title: Unity Video Tutorials
             output: web
-            url: /docs/tutorials-and-development/unity-video-tutorials/
+            url: /docs/tutorials/unity-video-tutorials/
+
+      - title: Development
+        output: web
+        folderitems:
+          - title: API
+            output: web, pdf
+            subfolders:
+              - title: Overview
+                output: web
+                url: /docs/development/unity-api/overview/
+
+              - title: Security
+                output: web
+                url: /docs/development/unity-api/security/
+
+              - title: Documents
+                output: web
+                url: /docs/development/unity-api/documents/
+
+              - title: Cases
+                output: web
+                url: /docs/development/unity-api/cases/
+
+              - title: Data Export
+                output: web
+                url: /docs/development/unity-api/data-export/
+
+              - title: Selectors
+                output: web
+                url: /docs/development/unity-api/selectors/
+
+              - title: Configuration
+                output: web
+                url: /docs/development/unity-api/configuration/
+
+              - title: References
+                output: web
+                url: /docs/development/unity-api/references/
 
           - title: Development Materials
             output: web
-            url: /docs/tutorials-and-development/development-materials/
+            url: /docs/development/development-materials/
 
