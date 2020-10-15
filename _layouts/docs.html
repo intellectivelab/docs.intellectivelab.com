@@ -12,7 +12,9 @@ layout: default
     {% unless page.toc == false %}
     {% include toc.html %}
     {% endunless %}
-    <div id="markdown-content-container">{{ content }}</div>
+    <div id="markdown-content-container">
+      {{ content }}
+    </div>
     <div style="clear: both;">
       <p class="text-center">
         <br />
