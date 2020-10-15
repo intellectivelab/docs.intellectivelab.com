@@ -9,11 +9,11 @@ To try Unity demo version [install Docker](../tutorials-and-development/how-to-i
  
 ## Configuration 
 
-- Create folder on the drive you shared to store Open Liberty & Unity configuration files, `C:\DockerUnity` for example 
+- Create a folder on the drive you shared to store Open Liberty & Unity configuration files, `C:\DockerUnity` for example 
 - [Download](quick-start/downloads/unity-package.zip) Unity package, unpack and place files to folder you created 
 - Open Command Prompt or PowerShell in admin mode and navigate to this folder, running command 
  `cd C:\DockerUnity\`
-- Run `docker login docker.devops.intellectivelab.com` 
+- Run `docker login registry.intellective.com` 
 
 	Username: `serviceaccount`  
 	Password: `password` 
@@ -22,7 +22,7 @@ To try Unity demo version [install Docker](../tutorials-and-development/how-to-i
 
 	![unity-cmd](quick-start/images/image1.png) 
 	
-- Run `docker run -it -v c:/DockerUnity:/opt/vu  -p 9080:9080  --rm docker.devops.intellectivelab.com/unity-classic/unity-7:7.6.1-ol`, here `c:/DockerUnity` is a folder you copied Unity files 
+- Run `docker run -it -v c:/<folder you created>:/opt/vu  -p 9080:9080  --rm registry.intellective.com/unity/unity:7.7.0.1`  
 
 It will check if the docker image is available locally.
 If not then it will be downloaded automatically.

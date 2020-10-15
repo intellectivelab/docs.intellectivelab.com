@@ -25,7 +25,7 @@ Continue until you reach the max number of sort columns (3 by default):
 This feature implemented for:
 
 - Tabs: Search Template, Folder View, Advanced Search
-- Data Providers: FileNet, CMIS, UIE (except JOIN function) 
+- Data Providers: FileNet, CMIS, Unity Enterprise Search (except JOIN function) 
 
 [Configure Multiple Column Sorting](../configuration/grids.md)
 

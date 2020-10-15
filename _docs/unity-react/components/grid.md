@@ -12,13 +12,13 @@ category: Unity 7
 
 ## Multiple Column Sorting
 
-Default Grid allows multiple columns to be sorted at a time within the content list.
+Default grid allows multiple columns to be sorted at a time within the content list. Grid column can be configured as sortable or not.
 
-To sort grid by a column, move mouse over the column header and grayed out arrow (sorting direction indicator) will appear. Clicking to column will activate ascending sorting and its icon will become contrast. Next click will toggle sorting to descending, and third click will remove sorting for the column, and so on.
+To sort grid by a sortable column, move mouse over the column header and grayed out arrow (sorting direction indicator) will appear. Clicking to the column header or the arrow will activate ascending sorting and its icon will become contrast. Next click will toggle sorting to descending, and third click will remove sorting for the column, and so on.
 
 ![react_multiple-column-sorting-arrow](grid/images/multicolumnsort_react_arrow.png) 
 
-Sorting direction may be changed also via column menu. Click to down-pointing triangle in the column header, and menu will open. There are options _Sort Ascending_, _Sort Descending_ and _Remove sort_ that work as per above. 
+Sorting direction may be changed also via column menu. To open the menu, click to down-pointing triangle in the column header. There are options _Sort Ascending_, _Sort Descending_ and _Remove sort_ that work as per above. 
 
 ![react_multiple-column-sorting-menu](grid/images/multicolumnsort_react_menu.png) 
 
@@ -28,12 +28,38 @@ It is allowed to have up to 6 columns sorted simultaneously per grid. To change 
 
 ![react_multiple-column-sorting-order](grid/images/multicolumnsort_react_order.png) 
 
-Per each grid, user defined sorting order is saved into browser storage and restored on next session.
+Per each grid, user defined sorting order is saved into browser storage and restored on next session. 
+
+Default sorting order may be configured on a per-grid or per-SearchTemplate basis. It is used until user overrides it.
 
 This feature implemented for:
 
-- Tabs: Search Template, Folder View, Advanced Search
-- Data Providers: FileNet, CMIS, UIE (except JOIN function) 
+- Tabs: Search Template, Folder View
+- Data Providers: FileNet, CMIS, Unity Enterprise Search (except JOIN function) 
+
+[Configure Multiple Column Sorting](../configuration/grids.md)
+
+## Column resizing
+
+Normally grid columns width is set automatically in order to fill whole grid horizontal space. The columns may be resized by mouse by dragging column separators. To show the separators, move mouse over the column heading and left and right side separators will be shown. Hold a separator with mouse and move horizontally to resize the column:  
+
+![react_column-resizing-separators](grid/images/columnresize_react_separators.png) 
+
+Last column width may not be changed. If grid occupies whole container form width, the last column takes all the remaining width till the right side of the grid. However, if grid is wider than its container, the last column width is set automatically by actual content.
+
+The minimum size of the columns is determined by column header, the actual column data in the grid rows may be shortened when shown in too narrow columns.
+
+Width of a column becomes fixed once it was resized. Other columns width remains automatically maintained. To reset the columns width to default (and revert the visible state of the columns and their order) use `Reset` command from grid menu: 
+
+![react_column-resizing-reset-menu](grid/images/columnresize_react_reset_menu.png) 
+
+Per each grid, changed columns width is saved into browser storage and restored on next session. Width units are pixels, so if in next session the grid will be shown in narrower window or in smaller screen resolution, horizontal scrollbars may appear. 
+
+Auxiliary columns, such as leftmost checkbox column and action menu (ellipsis) column, are not resizable: 
+
+![react_column-resizing-aux_columns](grid/images/columnresize_react_aux_columns.png) 
+
+The column resizing feature is not configurable.
 
 ## Column spanning 
 *Content to be added*

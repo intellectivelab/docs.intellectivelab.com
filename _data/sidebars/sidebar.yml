@@ -34,6 +34,10 @@ entries:
                 output: web
                 url: /docs/unity-extjs/features/enterprise-search/
 
+              - title: Analytics
+                output: web
+                url: /docs/unity-extjs/features/analytics/
+
               - title: Integration
                 output: web
                 url: /docs/unity-extjs/features/integration/
@@ -138,6 +142,10 @@ entries:
               - title: Solutions Configuration
                 output: web
                 url: /docs/unity-extjs/configuration/solutions-configuration/
+
+              - title: Access Roles
+                output: web
+                url: /docs/unity-extjs/configuration/access-roles/
 
               - title: Others
                 output: web
@@ -336,6 +344,10 @@ entries:
               - title: UI Components
                 output: web
                 url: /docs/unity-react/configuration/ui-components/
+
+              - title: Access Roles
+                output: web
+                url: /docs/unity-react/configuration/access-roles/
 
               - title: Others
                 output: web

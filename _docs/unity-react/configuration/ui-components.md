@@ -46,10 +46,10 @@ Chart configuration parameters:
 |:----|:-------------------|
 |id | Chart identifier |
 |label | Chart label |
-|type | Chart type. Supported types: vComposite, hComposite, pie, treeMap, tableHeatMap |
+|type | Chart type. Supported types: vComposite, hComposite, pie, treeMap, tableHeatMap, sunburst |
 |Description | Optional. Chart description  |
 |Facets | Chart facets configuration | 
-|Plot | Optional. Chart plot configuration  | 
+|Plot | Optional. Chart plot configuration. Applicable only for plot charts (i.e. vComposite, hComposite)  | 
 
 Facets configuration parameters:
 
@@ -270,6 +270,35 @@ Pie Chart configuration examples:
 *Content to be added*
 
 ### Sunburst    
+
+Sunburst Chart configuration examples:
+
+```xml
+<Configuration>
+    ...
+    <UiComponents>
+        <Charts>
+            <Chart id="cases-by-location-breakdown" label="Cases By Location" type="sunburst">
+                <Description>Cases By Location</Description>
+                <Facets scope="analytics_repository">
+                    <Facet>cases-by-location-facet</Facet>
+                </Facets>
+            </Chart>
+        </Charts>
+    </UiComponents>
+    ...
+    <Facets>
+        <Facet id="cases-by-location-facet" field="Region" type="TERMS">
+            <Facet id="sub-region-facet" field="SubRegion" type="TERMS">
+                <Facet id="case-type-facet" field="CaseType" type="TERMS"/>
+            </Facet>
+        </Facet>
+    </Facets>
+    ...
+</Configuration>
+```
+
+### Zoomable Sunburst
 
 *Content to be added*
 

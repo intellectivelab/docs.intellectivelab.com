@@ -1,0 +1,24 @@
+name: Deploy site (master)
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Deploy site on the server
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Install SSH key
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.SSH_KEY }}
+          known_hosts: ${{ secrets.SSH_KNOWNHOSTS }}
+
+      - name: Deploy site
+        run: ssh -t ubuntu@54.214.112.196 "export COMMIT_SHA=$GITHUB_SHA && bash -s" < update_site.sh
