@@ -134,6 +134,10 @@ body {
   }
 }
 
+.doc-title {
+  font-size: 2.75em;
+}
+
 .page-content {
   margin-top: 64px;
   height: calc(100vh - 64px);
@@ -150,6 +154,7 @@ body {
   .starboard {
     padding: 0px 48px;
     > h1:first-of-type {
+      font-size: 2.75em;
       color: #dc3840;
     }
   }
