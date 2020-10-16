@@ -22,7 +22,7 @@ The following Container UI variants are supported (`tabs` by default if not spec
 - view_tabs
 - tree
 
-An example of dashboard configuration including the tree vew container with 4 search templates:
+An example of dashboard configuration including the tree view container with 4 search templates:
  
 ```xml
   <Dashboard builder="default" default="true" iconCls="dashboard-cls" id="DocumentsSearch" lazy="true" title="Documents Search" tooltip="Unity Documents Search">
