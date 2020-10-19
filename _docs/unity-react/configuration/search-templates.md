@@ -20,7 +20,7 @@ category: Unity 7
 
 | Parameter           | Description |
 |:--------------------|:------------|
-| SortField           | `SortField` value refers to a `Property`'s `ID` attribute (the property should be sortable).  Default sorting may be defined on the `SearchTemplate` level or on the `Grid` level. If defained on both levels, setting from the grid is in effect.     |
+| SortField           | `SortField` value refers to a `Property`'s `ID` attribute (the property should be sortable).  Default sorting may be defined on the `SearchTemplate` level or on the `Grid` level. If defined on both levels, setting from the grid is in effect.     |
 | SortField >> Order  | Optional `Order` attribute may have value `ASC` for ascending and `DESC` for descending order (`ASC` is a default). |
  
 ## Operation section configuration
