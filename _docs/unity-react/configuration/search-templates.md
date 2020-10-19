@@ -6,6 +6,22 @@ category: Unity 7
 # Search Templates configuration
 
 *content to be added*
+
+## Sorting configuration
+```xml
+<SearchTemplate ID="templateByDate">
+    <SortFields>
+        <SortField Order="DESC">$modify_date</SortField>
+        <SortField Order="ASC">$title</SortField>
+    </SortFields>
+    <!-- not relevant nodes skipped -->
+</SearchTemplate>
+```
+
+| Parameter           | Description |
+|:--------------------|:------------|
+| SortField           | `SortField` value refers to a `Property`'s `ID` attribute (the property should be sortable).  Default sorting may be defined on the `SearchTemplate` level or on the `Grid` level. If defained on both levels, setting from the grid is in effect.     |
+| SortField >> Order  | Optional `Order` attribute may have value `ASC` for ascending and `DESC` for descending order (`ASC` is a default). |
  
 ## Operation section configuration
 
