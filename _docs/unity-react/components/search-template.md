@@ -24,3 +24,4 @@ category: Unity 7
 ## Adaptive
 ## Responsive
 ## Ability to compose with other components
+## [Supported data providers](search-template/supported-data-providers.md)
