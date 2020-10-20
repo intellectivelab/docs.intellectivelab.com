@@ -9,7 +9,7 @@ category: Unity 7
  
 ## Operation section configuration
 
-Set of properties inside `Opertaion` -> `OperationProperties` section depends on data provider and type of resource. 
+Set of properties inside `Operation` -> `OperationProperties` section depends on data provider and type of resource. 
 
 ### FileNet (CERepositoryDataProvider)
 
@@ -72,18 +72,14 @@ List of available properties for documents search template is in the table below
 
 List of available properties for search template is in the table below:
 
-<table>
-    <thead>
-        <tr>
-            <th>Parameter</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td style="vertical-align: top;">query</td>
-            <td>Query for data selection, e.g.
-            <pre lang="sql">SELECT 
+| Parameter   | Description|
+|:------------|:------------|
+|query        |Query for data selection <sup>1</sup>|
+|idField      |Identifier field name. Equals `Id`, `ID`, `id` or `document_id` depending on mapping in repository data provider|
+
+<sup>1</sup> Query example:
+```text
+SELECT 
     OBJECT_ID, 
     U1708_DOCUMENTTITLE, 
     MIME_TYPE, 
@@ -97,26 +93,18 @@ List of available properties for search template is in the table below:
     MINOR_VERSION_NUMBER, 
     VERSIONING_ENABLED, 
     VERSION_STATUS 
-FROM DOCVERSION WHERE {Macro.QueryCriterion}</pre>
+FROM DOCVERSION WHERE {Macro.QueryCriterion}
+```
 List of column names in select clause should always contain id column 
 (OBJECT_ID in the sample above). Inside repository data provider those properties
-should be mapped to external names, defined inside <code>Properties</code> section (in case internal 
-and external names are different). Use <code>Id</code>, <code>ID</code>, <code>id</code> 
-or <code>document_id</code> external name for id column.<br/> 
+should be mapped to external names, defined inside `Properties` section (in case internal 
+and external names are different). Use `Id`, `ID`, `id` or `document_id` external name for id column.
+
 If database doesn't support a particular data type, value in select clause should be casted 
 to string (example above is for db2, which doesn't support BOOLEAN, that's why IS_RESERVED_DOC 
-and IS_CURRENT_DOC are returned as 'True' / 'False' text).<br/> 
+and IS_CURRENT_DOC are returned as 'True' / 'False' text).
+ 
 {Macro.QueryCriterion} is a macros allowing to build a query that relies on user input. 
-            </td>
-        </tr>
-        <tr>
-            <td>idField</td>
-            <td>Identifier field name. Equals <code>Id</code>, <code>ID</code>, <code>id</code> or 
-                <code>document_id</code> depending on mapping in repository data provider.
-            </td>
-        </tr>
-    </tbody>
-</table>
 
 See [Example of configuration for DBRepositoryDataProvider](./search-templates/examples/db.md)
 
