@@ -17,7 +17,7 @@ be rendered as a separate button (if only one attach action is bound to the grid
 - Open case for edit and switch to one of `Attachments` tab 
 
 - Click `attach` action on a grid toolbar and select particular type of document to be uploaded and attached 
-(if dropdown is available).
+(if dropdown is available): 
 
     ![Attach document action](attach-document/images/attach-action.png)
 
@@ -41,4 +41,4 @@ be rendered as a separate button (if only one attach action is bound to the grid
     
 # Configuration
 
-See [Attach document action configuration](../../configuration/actions/attach-document.md) for more details. 
+[Attach document action configuration](../../configuration/actions/attach-document.md)

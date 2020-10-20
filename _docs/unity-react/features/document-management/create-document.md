@@ -36,4 +36,4 @@ available).
     
 # Configuration
 
-See [Create document action configuration](../../configuration/actions/create-document.md) for more details. 
+[Create document action configuration](../../configuration/actions/create-document.md)
