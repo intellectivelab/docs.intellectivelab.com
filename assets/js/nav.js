@@ -1,26 +1,47 @@
-var addOpenClass = function(id) {
-    var li = document.getElementById(id);
-    if(li) li.classList.add('open');
-}
-
-var addActiveClass = function(id) {
-    var li = document.getElementById(id);
-    if(li) li.classList.add('active');
-}
-
-var ref = document.URL.match(/docs.*/g);      // Get the last parts of the url
-
-if(ref && ref.length > 0) { 
-    ref = ref[0];
-
-    var keys = ref.split('/');
-    keys.splice(0, 1);                        // Remove 'docs'
-    keys.splice(keys.length-1, 1);            // Remove empty string at end
-
-    var i = 1;
-    for(i; i < keys.length; i++) {
-        addOpenClass(keys.slice(0, i).join('-'));
+$(function() {
+    function parseUrl(url) {
+        var keys = url.split('/');
+        keys.splice(0, 1);                        // Remove 'docs'
+        keys.splice(keys.length-1, 1);            // Remove empty string at end
+    
+        return keys;
     }
 
-    addActiveClass(keys.slice(0, i).join('-'));
-}
+    function closePreviousItems(prevUrl, currentUrl) {
+        var keysPrev = parseUrl(prevUrl), 
+            keysCurr = parseUrl(currentUrl),
+            i = 1,
+            id = "";
+        
+        for(i; i < keysPrev.length; i++) {
+            id = keysPrev.slice(0, i).join('-');
+
+            if(i < keysCurr.length && keysCurr.slice(0, i).join('-') === id) {
+                continue;
+            }
+
+            $('#' + id + ', #' + id + '2').navgoco('toggle', false);
+        }
+    }
+    
+    var ref = document.URL.match(/docs.*/g);      // Get the last parts of the url
+    if(ref && ref.length > 0) {
+        ref = ref[0];
+
+        var prevUrl = window.sessionStorage.getItem('previousUrl');
+        if(prevUrl) {
+            closePreviousItems(prevUrl, ref);
+        }
+
+        window.sessionStorage.setItem('previousUrl', ref);
+    
+        var keys = parseUrl(ref), i = 1, id = "";
+        for(i; i < keys.length; i++) {
+            id = keys.slice(0, i).join('-');
+            $('#' + id + ', #' + id + '2').navgoco('toggle', true);
+        }
+
+        id = keys.slice(0, i).join('-');
+        $('#' + id + ', #' + id + '2').parent().addClass('active');
+    }
+});

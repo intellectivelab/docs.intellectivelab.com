@@ -8,8 +8,8 @@
 
         <!-- First level of items -->
         {% for entry in item.folders %}
-          <li class="nav-item" id={{ entry.id }}>
-            <a class="nav-link" href="#">{{ entry.title }}</a>
+          <li class="nav-item">
+            <a id={{ entry.id }} class="nav-link" href="#">{{ entry.title }}</a>
 
             {% if entry.folderitems[0] %}
               <!-- Second level list -->
@@ -17,8 +17,8 @@
 
                 <!-- Second level of items -->
                 {% for subentry in entry.folderitems %}
-                  <li class="list-group-item" id={{ subentry.id }} >
-                    <a class="{% if subentry.subfolders[0] %}contains{% endif %}" href="{{subentry.url  | relative_url}}">{{subentry.title}}</a>
+                  <li class="list-group-item">
+                    <a id={{ subentry.id }} class="{% if subentry.subfolders[0] %}contains{% endif %}" href="{{subentry.url  | relative_url}}">{{subentry.title}}</a>
                     
                     {% if subentry.subfolders[0] %}
                       <!-- Third level list -->
@@ -26,8 +26,8 @@
 
                         <!-- Third level of items -->
                         {% for subsubentry in subentry.subfolders %}
-                          <li class="list-group-item" id={{ subsubentry.id }}>
-                            <a href="{{subsubentry.url  | relative_url}}">{{subsubentry.title}}</a>
+                          <li class="list-group-item">
+                            <a id={{ subsubentry.id }} href="{{subsubentry.url  | relative_url}}">{{subsubentry.title}}</a>
                           </li>
                         {% endfor %}
 
