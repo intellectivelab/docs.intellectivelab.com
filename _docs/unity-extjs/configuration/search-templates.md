@@ -28,7 +28,7 @@ category: Unity 7
             <SortFields/>
             <Grid ID="document_search"/>
             <Criteria>
-				<Criterion>
+		<Criterion>
                     <FieldName>DocumentTitle</FieldName>
                     <Comment>at least 3 characters are required to start the search</Comment>
                     <Type>string</Type>
@@ -49,7 +49,7 @@ category: Unity 7
                     <Hidden>false</Hidden>
                     <Readonly>false</Readonly>
                     <MultiValue>false</MultiValue>
-					<DefaultValue>from:{Date.-3MONTH};to:{Date.+2YEARS}</DefaultValue>
+		    <DefaultValue>from:{Date.-3MONTH};to:{Date.+2YEARS}</DefaultValue>
                 </Criterion>
                 <Criterion>
                     <FieldName>DateLastModified</FieldName>
