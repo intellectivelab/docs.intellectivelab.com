@@ -87,9 +87,9 @@ entries:
           - title: Configuration
             output: web, pdf
             subfolders:
-              - title: First Steps
+              - title: Basic Steps
                 output: web
-                url: /docs/unity-extjs/configuration/first-steps/
+                url: /docs/unity-extjs/configuration/basic-steps/
 
               - title: Tree Models
                 output: web
@@ -250,9 +250,9 @@ entries:
           - title: Configuration
             output: web, pdf
             subfolders:
-              - title: First Steps
+              - title: Basic Steps
                 output: web
-                url: /docs/unity-react/configuration/first-steps/
+                url: /docs/unity-react/configuration/basic-steps/
 
               - title: System Properties
                 output: web
