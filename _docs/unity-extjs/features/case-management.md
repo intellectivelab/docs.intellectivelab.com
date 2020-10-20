@@ -28,6 +28,7 @@ Work items are the actions in a process that must be completed for a task.
 # Case Management Features
 
 ## Create a case
+
 ## Create a case with attachments 
 ## Case search and navigation
 ## Case view and update properties 
