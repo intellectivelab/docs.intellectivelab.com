@@ -314,6 +314,10 @@ entries:
                 output: web
                 url: /docs/unity-react/configuration/access-roles/
 
+              - title: Lookups
+                output: web
+                url: /docs/unity-react/configuration/lookups/
+
               - title: Others
                 output: web
                 url: /docs/unity-react/configuration/others/
