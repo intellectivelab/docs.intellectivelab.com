@@ -11,6 +11,11 @@ category: Unity 7
 
 *content to be added*
 
+# Solution Configuration
+
+*content to be added*
+[Solution Configuration](basic-steps/solution-configuration.md)
+
 # Macros Configuration
 
 *content to be added*

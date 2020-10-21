@@ -40,3 +40,4 @@ Out of the box, the following link strategies are supported:
 - ucmCMIS - operations with documents stored in any repository that supports CMIS
 standard (i.e. Alfresco)
 - ucmBox - operations with documents stored in Box repository
+- ucmUie - operations with documents stored in Enterprise Search index

@@ -24,6 +24,16 @@ A case contains tasks. A task represents a specific activity that is performed a
 The task consists of one or more work items. 
 Work items are the actions in a process that must be completed for a task.
 
+## UCM/ICM Workbaskets
+
+UCM/ICM workbaskets represent the list of cases or work items which are logically grouped by
+certain criteria. From the business perspective work baskets can be personal or public.
+
+Personal work basket contains work items for tasks that are assigned to a specific user. 
+
+Public work basket contains work items that are assigned to a role, but not to a specific
+person. Work items in a public work basket can be accepted by any user to work on.
+
 
 # Case Management Features
 
