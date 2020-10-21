@@ -3,8 +3,8 @@ title: Search Templates Configuration
 layout: docs
 category: Unity 7
 ---
+# Example of SearchTemplate configuration
 
-Example of SearchTemplate configuration
 ```xml
   <SearchTemplate ID="document_Search_DateAdded">
             <DataProviderId>ce_repository</DataProviderId>
@@ -64,29 +64,33 @@ Example of SearchTemplate configuration
             </Criteria>
         </SearchTemplate>
 ```
-## Clause configuration
+# Clause configuration
 
-All criterias work as "AND" clause but "OR" clause can be configured using specific plugin "orGroupSupportTemplateQueryPlugin". 
-1. [Plugin](../configuration/others.md) should be configured
-2. The following parameters should be added to the Search Templates
+All criteria work as `AND` clause but `OR` clause can be configured using specific plugin `orGroupSupportTemplateQueryPlugin`. 
 
-```xml
-<SearchTemplate ID="document_Search_DateAdded">
-....
-    <QueryPlugin>orGroupSupportTemplateQueryPlugin</QueryPlugin>
-....
-    <Criteria>
-        <Criterion>
-        ....
-            <GroupName>orGroup</GroupName>
-        ....
-        </Criterion>
-    </Criteria>
-</SearchTemplate>
-```
+Steps to configure `OR` clause: 
+- [Plugin for `OR` clause](../configuration/plugins/plugin-for-or-clause.md) should be configured
+- The following parameters should be added to the Search Templates: 
 
-## DefaultValue configuration
-### Default values for Range operator for DateTime properties
+    ```xml
+    <SearchTemplate ID="document_Search_DateAdded">
+    ....
+        <QueryPlugin>orGroupSupportTemplateQueryPlugin</QueryPlugin>
+    ....
+        <Criteria>
+            <Criterion>
+            ....
+                <GroupName>orGroup</GroupName>
+            ....
+            </Criterion>
+        </Criteria>
+    </SearchTemplate>
+    ```
+
+# DefaultValue configuration
+
+## Default values for Range operator for DateTime properties
+
 ```xml
 <DefaultValue>from:01/10/2020;to:{Date.-3DAY}</DefaultValue>
 ```
