@@ -270,10 +270,6 @@ entries:
                 output: web
                 url: /docs/unity-react/configuration/selectors/
 
-              - title: Lookups
-                output: web
-                url: /docs/unity-react/configuration/lookups/
-
               - title: Properties
                 output: web
                 url: /docs/unity-react/configuration/properties/
@@ -313,6 +309,10 @@ entries:
               - title: Access Roles
                 output: web
                 url: /docs/unity-react/configuration/access-roles/
+
+              - title: Lookups
+                output: web
+                url: /docs/unity-react/configuration/lookups/
 
               - title: Others
                 output: web
