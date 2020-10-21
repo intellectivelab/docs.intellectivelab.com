@@ -7,7 +7,7 @@ category: Unity 7
 
 # Document Management Features
 
-## Create a document     
+## [Create a document](document-management/create-document.md)     
 ## Create a document with multiple content      
 ## Drag and drop a file into the grid
 [U7-2714](https://jira.intellective.com/browse/U7-2714)
