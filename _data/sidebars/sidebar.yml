@@ -3,14 +3,13 @@ entries:
     product: Jekyll Doc Theme
     version: 1.0
     folders:
+      - title: Unity Overview
+        output: web
+        url: /docs/unity-overview/
+
       - title: Unity ExtJs
         output: web, pdf
         folderitems:
-          - title: Overview
-            url: /docs/unity-extjs/overview/
-            output: web, pdf
-            type: homepage
-
           - title: Quick Start
             url: /docs/unity-extjs/quick-start/
             output: web, pdf
@@ -165,11 +164,6 @@ entries:
       - title: Unity React
         output: web, pdf
         folderitems:
-          - title: Overview
-            url: /docs/unity-react/overview/
-            output: web, pdf
-            type: homepage
-
           - title: Features
             output: web, pdf
             subfolders:
