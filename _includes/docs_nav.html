@@ -1,33 +1,50 @@
 
 {% if site.data.sidebars.sidebar.entries[0] %}
   {% for item in site.data.sidebars.sidebar.entries %}
+
     {% if item.folders[0] %}
+      <!-- First level list -->
       <ul id="side-nav" class="nav flex-column">
+
+        <!-- First level of items -->
         {% for entry in item.folders %}
           <li class="nav-item">
-            <a class="nav-link" href="#">{{ entry.title }}</a>
+            <a id={{ entry.id }} class="nav-link" href="#">{{ entry.title }}</a>
+
             {% if entry.folderitems[0] %}
+              <!-- Second level list -->
               <ul id="sub-nav" class="list-group">
+
+                <!-- Second level of items -->
                 {% for subentry in entry.folderitems %}
-                    <li class="list-group-item {% if subentry.url == page.url %}active{% endif %}">
-                      <a class=" {% if subentry.subfolders[0] %}contains{% endif %}" href="{{subentry.url  | relative_url}}">{{subentry.title}}</a>
-                      {% if subentry.subfolders[0] %}
+                  <li class="list-group-item">
+                    <a id={{ subentry.id }} class="{% if subentry.subfolders[0] %}contains{% endif %}" href="{{subentry.url  | relative_url}}">{{subentry.title}}</a>
+                    
+                    {% if subentry.subfolders[0] %}
+                      <!-- Third level list -->
                       <ul id="sub-sub-nav" class="list-group">
+
+                        <!-- Third level of items -->
                         {% for subsubentry in subentry.subfolders %}
-                        <li class="list-group-item {% if subsubentry.url == page.url %}active{% endif %}">
-                          <a href="{{subsubentry.url  | relative_url}}">{{subsubentry.title}}</a>
-                        </li>
+                          <li class="list-group-item">
+                            <a id={{ subsubentry.id }} href="{{subsubentry.url  | relative_url}}">{{subsubentry.title}}</a>
+                          </li>
                         {% endfor %}
+
                       </ul>
-                      {% endif %}
-                    </li>
+                    {% endif %}
+
+                  </li>
                 {% endfor %}
+
               </ul>
             {% endif %}
+
           </li>
-          {% endfor %}
+        {% endfor %}
       </ul>
     {% endif %}
+
   {% endfor %}
 {% endif %}
 
