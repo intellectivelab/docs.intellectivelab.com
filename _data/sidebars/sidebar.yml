@@ -389,6 +389,7 @@ entries:
               - title: Lookups
                 output: web
                 url: /docs/unity-react/configuration/lookups/
+                id: unity-react-configuration-lookups
 
               - title: Others
                 output: web
