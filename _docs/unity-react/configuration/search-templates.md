@@ -9,7 +9,7 @@ category: Unity 7
 
 Set of properties inside `Operation` -> `OperationProperties` section depends on data provider and type of resource. 
 
-### FileNet (CERepositoryDataProvider)
+## FileNet (CERepositoryDataProvider)
 
 List of available properties for documents search template is in the table below: 
 
@@ -26,7 +26,7 @@ List of available properties for workitems search template is in the table below
 
 *content to be added*
 
-### CMIS (CMISRepositoryDataProvider)
+## CMIS (CMISRepositoryDataProvider)
 
 List of available properties for documents search template is in the table below:
  
@@ -35,7 +35,7 @@ List of available properties for documents search template is in the table below
 |ResourceName |`documents`|
 |ResourceType |Optional. The name of concrete resource type, i.e. document `Type`, e.g. `D:TM:DiffProperties`. If not specified, search will be executed against all documents with cmis:document `Base Type`|
 
-### Box (BoxRepositoryDataProvider)
+## Box (BoxRepositoryDataProvider)
 
 List of available properties for documents search template is in the table below:
  
@@ -44,7 +44,7 @@ List of available properties for documents search template is in the table below
 |ResourceName |`documents`|
 |ResourceType |The name of concrete resource type, i.e. document's template name, e.g. `metadataTemplate_1`. This parameter is required even if search should be executed against all documents; use `file` value for this case.|
 
-### CMOD (CmodRepositoryDataProvider)
+## CMOD (CmodRepositoryDataProvider)
 
 List of available properties for documents search template is in the table below:
  
@@ -53,7 +53,7 @@ List of available properties for documents search template is in the table below
 |ResourceName |`documents`|
 |ResourceType |`CMOD_Document`|
 
-### CM8 (Cm8RepositoryDataProvider)
+## CM8 (Cm8RepositoryDataProvider)
 
 List of available properties for documents search template is in the table below:
  
@@ -62,11 +62,11 @@ List of available properties for documents search template is in the table below
 |ResourceName |`documents`|
 |ResourceType |The name of concrete resource type, i.e. item type, e.g. `UTESTDOC1`. *todo: add information on whether it's optional or not and if it's possible to search against all documents*|
 
-### Enterprise search
+## Enterprise search
 
 *content to be added*
 
-### DB (DBRepositoryDataProvider)
+## DB (DBRepositoryDataProvider)
 
 Example of configuration:
 
