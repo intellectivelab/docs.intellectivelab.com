@@ -5,447 +5,570 @@ entries:
     folders:
       - title: Unity ExtJs
         output: web, pdf
+        id: unity-extjs
         folderitems:
           - title: Overview
             url: /docs/unity-extjs/overview/
             output: web, pdf
+            id: unity-extjs-overview
             type: homepage
 
           - title: Quick Start
             url: /docs/unity-extjs/quick-start/
+            id: unity-extjs-quick-start
             output: web, pdf
 
           - title: Features
             output: web, pdf
+            id: unity-extjs-features
             subfolders:
               - title: Document Management
                 output: web
                 url: /docs/unity-extjs/features/document-management/
+                id: unity-extjs-features-document-management
 
               - title: Case Management
                 output: web
                 url: /docs/unity-extjs/features/case-management/
+                id: unity-extjs-features-case-management
 
               - title: Process Management
                 output: web
                 url: /docs/unity-extjs/features/process-management/
+                id: unity-extjs-features-process-management
 
               - title: Enterprise Search
                 output: web
                 url: /docs/unity-extjs/features/enterprise-search/
+                id: unity-extjs-features-enterprise-search
 
               - title: Analytics
                 output: web
                 url: /docs/unity-extjs/features/analytics/
+                id: unity-extjs-features-analytics
 
               - title: Integration
                 output: web
                 url: /docs/unity-extjs/features/integration/
+                id: unity-extjs-features-integration
 
           - title: Components
             output: web, pdf
+            id: unity-extjs-components
             subfolders:
               - title: Page/Tab
                 output: web
                 url: /docs/unity-extjs/components/page-tab/
+                id: unity-extjs-components-page-tab
 
               - title: Grid
                 output: web
                 url: /docs/unity-extjs/components/grid/
+                id: unity-extjs-components-grid
 
               - title: Search Criteria Panel
                 output: web
                 url: /docs/unity-extjs/components/search-criteria-panel/
+                id: unity-extjs-components-search-criteria-panel
 
               - title: Properties View Form
                 output: web
                 url: /docs/unity-extjs/components/properties-view-form/
+                id: unity-extjs-components-properties-view-form
 
               - title: Search Template
                 output: web
                 url: /docs/unity-extjs/components/search-template/
+                id: unity-extjs-components-search-template
 
               - title: User Preferences
                 output: web
                 url: /docs/unity-extjs/components/user-preferences/
+                id: unity-extjs-components-user-preferences
 
           - title: Installation
             output: web, pdf
+            id: unity-extjs-installation
             subfolders:
               - title: Software Requirements
                 output: web
                 url: /docs/unity-extjs/installation/software-requirements/
+                id: unity-extjs-installation-software-requirements
 
               - title: Hardware Requirements
                 output: web
                 url: /docs/unity-extjs/installation/hardware-requirements/
+                id: unity-extjs-installation-hardware-requirements
 
               - title: Installing Unity 7
                 output: web
                 url: /docs/unity-extjs/installation/installing-unity-7/
+                id: unity-extjs-installation-installing-unity-7
 
           - title: Configuration
             output: web, pdf
+            id: unity-extjs-configuration
             subfolders:
               - title: First Steps
                 output: web
                 url: /docs/unity-extjs/configuration/first-steps/
+                id: unity-extjs-configuration-first-steps
 
               - title: Tree Models
                 output: web
                 url: /docs/unity-extjs/configuration/tree-models/
+                id: unity-extjs-configuration-tree-models
 
               - title: System Properties
                 output: web
                 url: /docs/unity-extjs/configuration/system-properties/
+                id: unity-extjs-configuration-system-properties
 
               - title: Actions
                 output: web
                 url: /docs/unity-extjs/configuration/actions/
+                id: unity-extjs-configuration-actions
 
               - title: Datasources
                 output: web
                 url: /docs/unity-extjs/configuration/datasources/
+                id: unity-extjs-configuration-datasources
 
               - title: Selectors
                 output: web
                 url: /docs/unity-extjs/configuration/selectors/
+                id: unity-extjs-configuration-selectors
 
               - title: Properties
                 output: web
                 url: /docs/unity-extjs/configuration/properties/
+                id: unity-extjs-configuration-properties
 
               - title: Grids
                 output: web
                 url: /docs/unity-extjs/configuration/grids/
+                id: unity-extjs-configuration-grids
 
               - title: Tabs
                 output: web
                 url: /docs/unity-extjs/configuration/tabs/
+                id: unity-extjs-configuration-tabs
 
               - title: Search Templates
                 output: web
                 url: /docs/unity-extjs/configuration/search-templates/
+                id: unity-extjs-configuration-search-templates
 
               - title: Column Sets
                 output: web
                 url: /docs/unity-extjs/configuration/column-sets/
+                id: unity-extjs-configuration-column-sets
 
               - title: Repository Data Providers
                 output: web
                 url: /docs/unity-extjs/configuration/repository-data-providers/
+                id: unity-extjs-configuration-repository-data-providers
 
               - title: Solutions Configuration
                 output: web
                 url: /docs/unity-extjs/configuration/solutions-configuration/
+                id: unity-extjs-configuration-solutions-configuration
 
               - title: Access Roles
                 output: web
                 url: /docs/unity-extjs/configuration/access-roles/
+                id: unity-extjs-configuration-access-roles
+
+              - title: Plugins
+                output: web
+                url: /docs/unity-extjs/configuration/plugins/
 
               - title: Others
                 output: web
                 url: /docs/unity-extjs/configuration/others/
+                id: unity-extjs-configuration-others
 
           - title: Customization
             output: web, pdf
+            id: unity-extjs-customization
             subfolders:
               - title: Overview
                 output: web
                 url: /docs/unity-extjs/customization/overview/
+                id: unity-extjs-customization-overview
 
               - title: Environment Setup
                 output: web
                 url: /docs/unity-extjs/customization/environment-setup/
+                id: unity-extjs-customization-environmet-setup
 
       - title: Unity React
         output: web, pdf
+        id: unity-react
         folderitems:
           - title: Overview
             url: /docs/unity-react/overview/
             output: web, pdf
             type: homepage
+            id: unity-react-overview
 
           - title: Features
             output: web, pdf
+            id: unity-react-features
             subfolders:
               - title: Document Management
                 output: web
                 url: /docs/unity-react/features/document-management/
+                id: unity-react-features-document-management
 
               - title: Case Management
                 output: web
                 url: /docs/unity-react/features/case-management/
+                id: unity-react-features-case-management
 
               - title: Process Management
                 output: web
                 url: /docs/unity-react/features/process-management/
+                id: unity-react-features-process-management
 
               - title: Enterprise Search
                 output: web
                 url: /docs/unity-react/features/enterprise-search/
+                id: unity-react-features-enterprise-search
 
               - title: Actionable Analytics
                 output: web
                 url: /docs/unity-react/features/actionable-analytics/
+                id: unity-react-features-actionable-analytics
 
               - title: Integration
                 output: web
                 url: /docs/unity-react/features/integration/
+                id: unity-react-features-integration
 
           - title: Components
             output: web, pdf
+            id: unity-react-components
             subfolders:
               - title: Design Principles
                 output: web
                 url: /docs/unity-react/components/design-principles/
+                id: unity-react-components-design-principles
 
               - title: Grid
                 output: web
                 url: /docs/unity-react/components/grid/
+                id: unity-react-components-grid
 
               - title: Search Criteria Panel
                 output: web
                 url: /docs/unity-react/components/search-criteria-panel/
+                id: unity-react-components-search-criteria-panel
 
               - title: Properties View Form
                 output: web
                 url: /docs/unity-react/components/properties-view-form/
+                id: unity-react-components-properties-view-form
 
               - title: Search Template
                 output: web
                 url: /docs/unity-react/components/search-template/
+                id: unity-react-components-search-template
 
               - title: Dashboard
                 output: web
                 url: /docs/unity-react/components/dashboard/
+                id: unity-react-components-dashboard
 
               - title: Chart
                 output: web
                 url: /docs/unity-react/components/chart/
+                id: unity-react-components-chart
 
               - title: Indicator
                 output: web
                 url: /docs/unity-react/components/indicator/
+                id: unity-react-components-indicator
 
               - title: User Preferences
                 output: web
                 url: /docs/unity-react/components/user-preferences/
+                id: unity-react-components-user-preferences
 
           - title: Installation
             output: web, pdf
+            id: unity-react-installation
             subfolders:
               - title: Software Requirements
                 output: web
                 url: /docs/unity-react/installation/software-requirements/
+                id: unity-react-installation-software-requirements
 
               - title: Hardware Requirements
                 output: web
                 url: /docs/unity-react/installation/hardware-requirements/
+                id: unity-react-installation-hardware-requirements
 
               - title: Installing Unity 7
                 output: web
                 url: /docs/unity-react/installation/installing-unity-7/
+                id: unity-react-installation-installing-unity-7
 
           - title: Configuration
             output: web, pdf
+            id: unity-react-configuration
             subfolders:
               - title: First Steps
                 output: web
                 url: /docs/unity-react/configuration/first-steps/
+                id: unity-react-configuration-first-steps
 
               - title: System Properties
                 output: web
                 url: /docs/unity-react/configuration/system-properties/
+                id: unity-react-configuration-system-properties
 
               - title: Actions
                 output: web
                 url: /docs/unity-react/configuration/actions/
+                id: unity-react-configuration-actions
 
               - title: Datasources
                 output: web
                 url: /docs/unity-react/configuration/datasources/
+                id: unity-react-configuration-datasources
 
               - title: Selectors
                 output: web
                 url: /docs/unity-react/configuration/selectors/
+                id: unity-react-configuration-selectors
 
               - title: Properties
                 output: web
                 url: /docs/unity-react/configuration/properties/
+                id: unity-react-configuration-properties
 
               - title: Grids
                 output: web
                 url: /docs/unity-react/configuration/grids/
+                id: unity-react-configuration-grids
 
               - title: Search Templates
                 output: web
                 url: /docs/unity-react/configuration/search-templates/
+                id: unity-react-configuration-search-templates
 
               - title: Column Sets
                 output: web
                 url: /docs/unity-react/configuration/column-sets/
+                id: unity-react-configuration-column-sets
 
               - title: Repository Data Providers
                 output: web
                 url: /docs/unity-react/configuration/repository-data-providers/
+                id: unity-react-configuration-repository-data-providers
 
               - title: Solutions Configuration
                 output: web
                 url: /docs/unity-react/configuration/solutions-configuration/
+                id: unity-react-configuration-solutions-configuration
 
               - title: Facets
                 output: web
                 url: /docs/unity-react/configuration/facets/
+                id: unity-react-configuration-facets
 
               - title: Perspectives
                 output: web
                 url: /docs/unity-react/configuration/perspectives/
+                id: unity-react-configuration-perspectives
 
               - title: UI Components
                 output: web
                 url: /docs/unity-react/configuration/ui-components/
+                id: unity-react-configuration-ui-components
 
               - title: Access Roles
                 output: web
                 url: /docs/unity-react/configuration/access-roles/
+                id: unity-react-configuration-access-roles
+
+              - title: Lookups
+                output: web
+                url: /docs/unity-react/configuration/lookups/
 
               - title: Others
                 output: web
                 url: /docs/unity-react/configuration/others/
+                id: unity-react-configuration-others
 
           - title: Customization
             output: web, pdf
+            id: unity-react-customization
             subfolders:
               - title: Overview
                 output: web
                 url: /docs/unity-react/customization/overview/
+                id: unity-react-customization-overview
 
               - title: Environment Setup
                 output: web
                 url: /docs/unity-react/customization/environment-setup/
+                id: unity-react-customization-environment-setup
 
       - title: Unity for CRM
         output: web, pdf
+        id: unity-for-crm
         folderitems:
           - title: Unity for Salesforce
             url: /docs/unity-for-crm/unity-for-salesforce/
+            id: unity-for-crm-unity-for-salesforce
             output: web, pdf
 
           - title: Unity for Dynamics
             url: /docs/unity-for-crm/unity-for-dynamics/
+            id: unity-for-crm-unity-for-dynamics
             output: web, pdf
 
       - title: Enterprise Search
         output: web
+        id: enterprise-search
         folderitems:
           - title: Overview
             url: /docs/enterprise-search/overview/
+            id: enterprise-search-overview
             output: web, pdf
             type: homepage
 
           - title: Installation
             output: web, pdf
+            id: enterprise-search-installation
             subfolders:
               - title: Prerequisites
                 output: web
                 url: /docs/enterprise-search/installation/prerequisites/
+                id: enterprise-search-installation-prerequisites
 
               - title: Installing Enterprise Search
                 output: web
                 url: /docs/enterprise-search/installation/installing-enterprise-search/
+                id: enterprise-search-installation-installing-enterprise-search
 
           - title: Configuration
             output: web, pdf
+            id: enterprise-search-configuration
             subfolders:
               - title: Security
                 output: web
                 url: /docs/enterprise-search/configuration/security/
+                id: enterprise-search-configuration-security
                 
               - title: Configure Enterprise Search for Use
                 output: web
                 url: /docs/enterprise-search/configuration/configure-enterprise-search-for-use/
+                id: enterprise-search-configuration-configure-enterprise-search-for-use
 
           - title: Development
             output: web, pdf
+            id: enterprise-search-development
             subfolders:
               - title: Environment Setup
                 output: web
                 url: /docs/enterprise-search/development/environment-setup/
+                id: enterprise-search-development-environment-setup
 
               - title: Customization
                 output: web
                 url: /docs/enterprise-search/development/customization/
+                id: enterprise-search-development-customization
 
               - title: API
                 output: web
                 url: /docs/enterprise-search/development/api/
+                id: enterprise-search-development-spi
 
       - title: Release Notes
         output: web, pdf
+        id: release-notes
         folderitems:
           - title: Unity 7.6 Release Notes
             output: web
             url: /docs/release-notes/unity-7-6-release-notes/
+            id: release-notes-unity-7-6-release-notes
 
           - title: Unity 7.7 Release Notes
             output: web
             url: /docs/release-notes/unity-7-7-release-notes/
+            id: release-notes-unity-7-7-release-notes
 
       - title: Tutorials
         output: web
+        id: tutorials
         folderitems:
           - title: How To Create Page
             output: web
             url: /docs/tutorials/how-to-create-page/
+            id: tutorials-how-to-create-page
 
           - title: How To Install Docker
             output: web
             url: /docs/tutorials/how-to-install-docker/
+            id: tutorials-how-to-install-docker
 
           - title: Unity Video Tutorials
             output: web
             url: /docs/tutorials/unity-video-tutorials/
+            id: tutorials-unity-video-tutorials
 
       - title: Development
         output: web
+        id: development
         folderitems:
           - title: API
             output: web, pdf
+            id: development-unity-api
             subfolders:
               - title: Overview
                 output: web
                 url: /docs/development/unity-api/overview/
+                id: development-unity-api-overview
 
               - title: Security
                 output: web
                 url: /docs/development/unity-api/security/
+                id: development-unity-api-security
 
               - title: Documents
                 output: web
                 url: /docs/development/unity-api/documents/
+                id: development-unity-api-documents
 
               - title: Cases
                 output: web
                 url: /docs/development/unity-api/cases/
+                id: development-unity-api-cases
 
               - title: Data Export
                 output: web
                 url: /docs/development/unity-api/data-export/
+                id: development-unity-api-data-export
 
               - title: Selectors
                 output: web
                 url: /docs/development/unity-api/selectors/
+                id: development-unity-api-selectors
 
               - title: Configuration
                 output: web
                 url: /docs/development/unity-api/configuration/
+                id: development-unity-api-configuration
 
               - title: References
                 output: web
                 url: /docs/development/unity-api/references/
+                id: development-unity-api-references
 
           - title: Development Materials
             output: web
             url: /docs/development/development-materials/
-
+            id: development-development-materials
