@@ -314,7 +314,7 @@ entries:
               - title: Basic Steps
                 output: web
                 url: /docs/unity-react/configuration/basic-steps/
-                id: unity-react-configuration-first-steps
+                id: unity-react-configuration-basic-steps
 
               - title: System Properties
                 output: web
