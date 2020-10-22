@@ -7,7 +7,11 @@ category: Unity 7
 
 # DBRepositoryDataProvider
 
-Search templates based on the DB connector allow to make searches against db records. Only `Export` action can
-be found on a grid toolbar, no row actions available:
+Search templates based on the DB connector allows to make searches against db records. Only `Export` action can
+be found on a grid toolbar:
 
 ![Search template based on the DB connector](supported-data-providers/images/db-search-template.png)
+
+Click on grid row doesn't open record view since no row actions are available:
+
+![Grid context-menu](supported-data-providers/images/db-search-template-context-menu.png)
