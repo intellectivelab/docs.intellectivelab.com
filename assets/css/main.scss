@@ -33,7 +33,7 @@ body {
   &-brand {
     flex: 0 0 16.6666666667%;
     max-width: 16.6666666667%;
-    margin-right: 0;
+    margin-right: 50px;
     color: #dc3840 !important;
     font-size: 2em;
     display: flex;
@@ -45,12 +45,22 @@ body {
       padding-right: 5px;
     }
   }
-  &-collapse {
-    flex-grow: 0;
+  &-brand-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-content-container {
+    background-color: #fff;
+    flex-grow: 1;
+  }
+  &-search {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
-#side-nav {
+.side-nav {
   position: fixed;
   top: 65px;
   width: 100%;
@@ -61,6 +71,13 @@ body {
   display: flex;
   flex-flow: column;
   
+  &.top {
+    position: initial;
+    height:400px;
+    border-left: 1px solid #e3e8ee;
+    border-bottom: 1px solid #e3e8ee;
+    border-right: 1px solid #e3e8ee;
+  }
 
   &:hover {
     overflow-y: auto;

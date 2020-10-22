@@ -4,7 +4,7 @@
 
     {% if item.folders[0] %}
       <!-- First level list -->
-      <ul id="side-nav" class="nav flex-column">
+      <ul id="side-nav" class="nav flex-column side-nav{% if include.topNav %} top d-lg-none{% endif %}">
 
         <!-- First level of items -->
         {% for entry in item.folders %}
