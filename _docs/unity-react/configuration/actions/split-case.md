@@ -53,7 +53,9 @@ TargetResourceTypes parameters:
 |viewType | Optional. If not specified `Active` Case view will be used. Example: `Split` |
 |ResourceType | Split target case type. Can be one to many ResourceType rows |
 
-Action itself should be added to the actions list for grids:
+Action itself should be added to the actions list for grids. Refer to [How to Add Action to the Grid](../grids.md#how-to-add-action-to-the-grid) 
+
+Example: 
   
 ```xml
 <Grid ID="UCM_ICM_Case_Search_ComplaintsProcessing" enableColumnReorder="false" groupSearchResults="false">
