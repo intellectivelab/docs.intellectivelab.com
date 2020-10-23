@@ -15,3 +15,7 @@ be found on a grid toolbar:
 Click on grid row doesn't open record view since no row actions are available:
 
 ![Grid context-menu](supported-data-providers/images/db-search-template-context-menu.png)
+
+# Configuration
+
+[DBRepositoryDataProvider Configuration](../../configuration/search-templates.md#db-dbrepositorydataprovider)
