@@ -33,7 +33,7 @@ body {
   &-brand {
     flex: 0 0 16.6666666667%;
     max-width: 16.6666666667%;
-    margin-right: 50px;
+    margin-right: 80px;
     color: #dc3840 !important;
     font-size: 2em;
     display: flex;
@@ -58,6 +58,11 @@ body {
     display: flex;
     justify-content: space-between;
   }
+}
+
+.sidebar {
+  width: 20%;
+  padding-left: 15px;
 }
 
 .side-nav {
@@ -86,7 +91,7 @@ body {
 
   @media (min-width: 991px) {
     background-color: rgba(255, 255, 255, 0);
-    width: 15.6%;
+    width: 19%;
   }
 
   li.open > a > span:after {
