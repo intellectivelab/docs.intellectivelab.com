@@ -34,30 +34,9 @@ Personal work basket contains work items for tasks that are assigned to a specif
 Public work basket contains work items that are assigned to a role, but not to a specific
 person. Work items in a public work basket can be accepted by any user to work on.
 
-# UCM/ICM Document Management Concepts
-
-UCM/ICM module itself is not responsible for document management. All document related
-operations like add a new document, search/filter documents, edit document properties and
-versioning operations are re-used from Unity document management modules. UCM/ICM module
-only manages the relationships between documents and UCM/ICM entities (Case/Task). Please note
-that in Unity only Case document operations are supported.
-The mechanism of linking documents and cases depends on the specific Case Management
-platform (ICM, jBPM or other) and on the type of target document repository (CE,
-CMIS/Alfresco, Box) and is implemented as separate document link strategies. Each document
-link strategy implements link/unlink document operations and mechanism of searching
-documents related to UCM/ICM Case.
-Out of the box, the following link strategies are supported:
-- 'ucm' prefix strategies are used for non ICM Case Management platforms (i.e. jBPM)
-- ucmP8 - operations with documents stored in FileNet Content Engine repository
-- ucmCMIS - operations with documents stored in any repository that supports CMIS
-standard (i.e. Alfresco)
-- ucmBox - operations with documents stored in Box repository
-- ucmUie - operations with documents stored in Enterprise Search index
-
 # Case Management Features
 
 ## Create a case
-
 ## Create a case with attachments 
 ## Case search and navigation
 ## Case view and update properties 
