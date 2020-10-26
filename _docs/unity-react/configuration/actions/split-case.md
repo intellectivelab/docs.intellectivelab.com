@@ -1,5 +1,5 @@
 ---
-title: Split Case Configuration
+title: Split Case Action Configuration
 layout: docs
 category: Unity 7
 ---
@@ -42,19 +42,20 @@ Split Case Action custom configuration parameters:
 |:----|:-------------------|
 |ResourceName | `cases` |
 |ActionType | `split` |
-|ResourceType | Optional. if provided will be used to replace a view link for Original case page |
-|ViewType | Optional. if provided will be used to replace a view link for Original case page. If not specified View link of the record will be used |
+|ResourceType | Optional. If provided will be used to replace a view link for Original case page |
+|ViewType | Optional. If provided will be used to replace a view link for Original case page. If not specified View link of the record will be used |
 |TargetResourceTypes | Optional. Includes target resource types configuration. Please refer to the table below for details |
 
 TargetResourceTypes parameters:
 
 | Parameter | Description |
 |:----|:-------------------|
-| Parameter | Description |
 |viewType | Optional. If not specified `Active` Case view will be used. Example: `Split` |
 |ResourceType | Split target case type. Can be one to many ResourceType rows |
 
-Action itself should be added to the actions list for grids:
+Action itself should be added to the actions list for grids. Refer to [How to Add Action to the Grid](../grids.md#how-to-add-action-to-the-grid). 
+
+Example: 
   
 ```xml
 <Grid ID="UCM_ICM_Case_Search_ComplaintsProcessing" enableColumnReorder="false" groupSearchResults="false">

@@ -58,7 +58,7 @@ Example of criterion configuration:
 </Criterion>
 ```
 
-`FieldName` = `CustomerState`, so `CustomerState` property should be specified inside Properties section, e.g.:
+`FieldName` = `CustomerState`, so `CustomerState` property should be specified in [Properties](../properties.md) section, e.g.:
 
 ```xml
 <Property ID="CustomerState">
