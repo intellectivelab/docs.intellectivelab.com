@@ -14,7 +14,7 @@ Open By URL Action configuration section should be added to the Unity System XML
         <Parameters/>
         <CustomParameters>
             <ActionType>open_by_url</ActionType>
-            <UrlPattern>OpenCase.jsp?solution=CustomerComplaints&amp;providerId=ucm_over_icm_provider&amp;caseId=${id}</UrlPattern>
+            <UrlPattern>OpenCase.jsp?solution=CustomerComplaints&amp;providerId=ucm_over_icm_provider&amp;caseId=${caseId}&amp;caseObjectId=${caseObjectId}</UrlPattern>
         </CustomParameters>
         <Security>
             <AllowRole>Unity Users</AllowRole>
