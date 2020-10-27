@@ -351,11 +351,6 @@ entries:
                 url: /docs/unity-react/configuration/search-templates/
                 id: unity-react-configuration-search-templates
 
-              - title: Column Sets
-                output: web
-                url: /docs/unity-react/configuration/column-sets/
-                id: unity-react-configuration-column-sets
-
               - title: Repository Data Providers
                 output: web
                 url: /docs/unity-react/configuration/repository-data-providers/
@@ -381,20 +376,20 @@ entries:
                 url: /docs/unity-react/configuration/ui-components/
                 id: unity-react-configuration-ui-components
 
-              - title: Access Roles
+              - title: Security
                 output: web
-                url: /docs/unity-react/configuration/access-roles/
-                id: unity-react-configuration-access-roles
+                url: /docs/unity-react/configuration/security/
+                id: unity-react-configuration-security
 
-              - title: Lookups
+              - title: Unity Tags
                 output: web
-                url: /docs/unity-react/configuration/lookups/
-                id: unity-react-configuration-lookups
+                url: /docs/unity-react/configuration/unity-tags/
+                id: unity-react-configuration-unity-tags
 
-              - title: Others
+              - title: Solution Tags
                 output: web
-                url: /docs/unity-react/configuration/others/
-                id: unity-react-configuration-others
+                url: /docs/unity-react/configuration/solution-tags/
+                id: unity-react-configuration-solution-tags
 
           - title: Customization
             output: web, pdf
