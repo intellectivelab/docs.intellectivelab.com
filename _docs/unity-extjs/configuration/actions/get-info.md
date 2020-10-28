@@ -29,7 +29,7 @@ Following action should be added to Unity system configuration file:
 
 For more details on each action see
 
-- [properties action configuration]
+- [properties action configuration](properties.md)
 
 - versions action configuration
 
