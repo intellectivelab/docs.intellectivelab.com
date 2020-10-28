@@ -1,9 +1,5 @@
 ---
-title: Selectors Configuration
+title: Indicators Tag Configuration
 layout: docs
 category: Unity 7
 ---
-
-
-
-

@@ -3,35 +3,17 @@ title: Unity Components - Design Principles
 layout: docs
 category: Unity 7
 ---
-# MVVM 
+# Design Principles
 
-Ensures clear responsibility segregation between business and presentation logic.
-
-# Single responsibility 
-
-Suggests creating a component that implements only one responsibility and has one reason to change. 
-
-# Encapsulated component 
-
-Hides its internal structure and implementation details, and defines props to control the behavior and output. 
-
-# Composable component 
-
-It is created from the composition of smaller specialized components. 
-
-# Reusable component 
-
-It is written once but used multiple times.
-
-# Pure component 
-
-Always renders same elements for same prop values.
-
-# Responsive component 
-
-Effectively responds to various screen sizes. 
-
-# Modern Design System 
+|Design Principle|Description|
+|:---------------|:----------|
+|MVVM|Ensures clear responsibility segregation between business and presentation logic.|
+|Single responsibility|Suggests creating a component that implements only one responsibility and has one reason to change.| 
+| Encapsulated component|Hides its internal structure and implementation details, and defines props to control the behavior and output.| 
+| Composable component|It is created from the composition of smaller specialized components.|
+| Reusable component|It is written once but used multiple times.|
+| Pure component|Always renders same elements for same prop values.|
+| Responsive component|Effectively responds to various screen sizes.| 
 
 # Unity API support
 

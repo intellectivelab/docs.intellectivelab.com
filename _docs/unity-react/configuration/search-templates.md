@@ -129,7 +129,7 @@ List of available properties for search template is in the table below:
 
 <sup>1</sup> List of column names in select clause should always contain id column 
 (OBJECT_ID in the sample above). Inside repository data provider those properties
-should be [mapped](repository-data-providers.md) to external names, defined inside [`Properties`](properties.md) section (in case internal 
+should be [mapped](repository-data-providers.md) to external names, defined inside [`Properties`](unity-tags/properties-tag.md) section (in case internal 
 and external names are different). Use `Id`, `ID`, `id` or `document_id` external name for id column.
 
 If database doesn't support a particular data type, value in select clause should be casted 
@@ -161,5 +161,5 @@ Criteria section can contain a set of `Criterion`s to be used for rendering crit
 
 | Parameter           | Description |
 |:--------------------|:------------|
-| SortField           | `SortField` value refers to a [Property](../configuration/properties.md) `ID` attribute (the property should be sortable).  Default sorting may be defined on the [Grid](../configuration/grids.md#multiple-column-sorting) level or on the `SearchTemplate` level. If defined on both levels, setting from the `Grid` is in effect.     |
+| SortField           | `SortField` value refers to a [Property](unity-tags/properties-tag.md) `ID` attribute (the property should be sortable).  Default sorting may be defined on the [Grid](../configuration/grids.md#multiple-column-sorting) level or on the `SearchTemplate` level. If defined on both levels, setting from the `Grid` is in effect.     |
 | SortField >> Order  | Optional `Order` attribute may have value `ASC` for ascending and `DESC` for descending order (`ASC` is a default). |

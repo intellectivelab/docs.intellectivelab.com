@@ -1,5 +1,5 @@
 ---
-title: Facets Configuration
+title: Facets Tag Configuration
 layout: docs
 category: Unity 7
 ---

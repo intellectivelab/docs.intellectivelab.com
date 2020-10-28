@@ -107,6 +107,9 @@ Auxiliary columns, such as leftmost checkbox column and action menu (ellipsis) c
 
 The column resizing feature is not configurable.
 
+## Column locking 
+*Content to be added*
+
 ## Column spanning 
 *Content to be added*
 

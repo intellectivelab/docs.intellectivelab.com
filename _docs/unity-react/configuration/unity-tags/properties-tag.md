@@ -1,5 +1,5 @@
 ---
-title: Properties Configuration
+title: Properties Tag Configuration
 layout: docs
 category: Unity 7
 ---

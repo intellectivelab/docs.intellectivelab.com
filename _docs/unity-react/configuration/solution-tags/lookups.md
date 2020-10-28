@@ -1,5 +1,5 @@
 ---
-title: Lookups Configuration
+title: Lookups Tag Configuration
 layout: docs
 category: Unity 7
 ---

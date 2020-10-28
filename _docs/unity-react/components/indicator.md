@@ -16,3 +16,7 @@ Indicators are UI components designed for graphical representation of different 
 If the metric is empty, `-` will be shown below the indicator title with `No content to display` tooltip:
 
 ![Empty indicator](indicator/images/empty-indicator.png)
+
+# Configuration
+
+[Indicators Configuration](../configuration/unity-tags/indicators-tag.md)

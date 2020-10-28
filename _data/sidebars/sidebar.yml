@@ -239,6 +239,11 @@ entries:
                 url: /docs/unity-react/features/integration/
                 id: unity-react-features-integration
 
+              - title: Features Comparison List
+                output: web
+                url: /docs/unity-react/features/features-comparison-list/
+                id: unity-react-features-features-comparison-list
+
           - title: Components
             output: web, pdf
             id: unity-react-components
@@ -268,6 +273,11 @@ entries:
                 url: /docs/unity-react/components/search-template/
                 id: unity-react-components-search-template
 
+              - title: Perspective
+                output: web
+                url: /docs/unity-react/components/perspective/
+                id: unity-react-components-perspective
+
               - title: Dashboard
                 output: web
                 url: /docs/unity-react/components/dashboard/
@@ -282,11 +292,6 @@ entries:
                 output: web
                 url: /docs/unity-react/components/indicator/
                 id: unity-react-components-indicator
-
-              - title: User Preferences
-                output: web
-                url: /docs/unity-react/components/user-preferences/
-                id: unity-react-components-user-preferences
 
           - title: Installation
             output: web, pdf
@@ -316,35 +321,15 @@ entries:
                 url: /docs/unity-react/configuration/basic-steps/
                 id: unity-react-configuration-basic-steps
 
-              - title: System Properties
+              - title: Grids
                 output: web
-                url: /docs/unity-react/configuration/system-properties/
-                id: unity-react-configuration-system-properties
+                url: /docs/unity-react/configuration/grids/
+                id: unity-react-configuration-grids
 
               - title: Actions
                 output: web
                 url: /docs/unity-react/configuration/actions/
                 id: unity-react-configuration-actions
-
-              - title: Datasources
-                output: web
-                url: /docs/unity-react/configuration/datasources/
-                id: unity-react-configuration-datasources
-
-              - title: Selectors
-                output: web
-                url: /docs/unity-react/configuration/selectors/
-                id: unity-react-configuration-selectors
-
-              - title: Properties
-                output: web
-                url: /docs/unity-react/configuration/properties/
-                id: unity-react-configuration-properties
-
-              - title: Grids
-                output: web
-                url: /docs/unity-react/configuration/grids/
-                id: unity-react-configuration-grids
 
               - title: Search Templates
                 output: web
@@ -361,20 +346,10 @@ entries:
                 url: /docs/unity-react/configuration/solutions-configuration/
                 id: unity-react-configuration-solutions-configuration
 
-              - title: Facets
-                output: web
-                url: /docs/unity-react/configuration/facets/
-                id: unity-react-configuration-facets
-
               - title: Perspectives
                 output: web
                 url: /docs/unity-react/configuration/perspectives/
                 id: unity-react-configuration-perspectives
-
-              - title: UI Components
-                output: web
-                url: /docs/unity-react/configuration/ui-components/
-                id: unity-react-configuration-ui-components
 
               - title: Security
                 output: web

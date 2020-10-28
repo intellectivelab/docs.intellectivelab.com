@@ -20,4 +20,3 @@ category: Unity 7
 - [Open by URL](../configuration/actions/open-by-url.md)
 
 
-

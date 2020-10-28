@@ -1,9 +1,8 @@
 ---
-title: UI Components Configuration
+title: Charts Tag Configuration
 layout: docs
 category: Unity 7
 ---
-
 # Charts
 
 Chart configuration examples:
@@ -299,9 +298,5 @@ Sunburst Chart configuration examples:
 ```
 
 ### Zoomable Sunburst
-
-*Content to be added*
-
-# Indicators
 
 *Content to be added*

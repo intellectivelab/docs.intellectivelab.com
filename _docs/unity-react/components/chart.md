@@ -3,17 +3,11 @@ title: Unity Components - Chart
 layout: docs
 category: Unity 7
 ---
-# Overview
+Charts are UI components designed for graphical representation of data.  
 
-# Charts
+# Plot Charts
 
-Charts are UI components designed for graphical representation of data. 
-
-Please refer to [Charts Configuration Section](../configuration/ui-components.md#charts) for more information about charts configuration. 
-
-## Plot Charts
-
-### Bar Chart
+## Bar Chart
 
 The **Bar Chart** presents categorical data with rectangular bars with heights or lengths proportional to the values that they represent. The bars can be plotted vertically or horizontally. A vertical bar chart is sometimes called a **Column Chart**.
 
@@ -27,7 +21,7 @@ The Bar Chart shows comparisons among discrete categories. One axis of the chart
 
 The Bar Chart component is built based on [React-Vis Bar chart](https://uber.github.io/react-vis/documentation/series-reference/bar-series).
 
-### Line Chart
+## Line Chart
 
 The **Line Chart** displays information as a line segments. The Line Chart is often used to visualize a trend in data over intervals of time. The lines can be plotted vertically or horizontally: 
 
@@ -35,7 +29,7 @@ The **Line Chart** displays information as a line segments. The Line Chart is of
 
 The Line Chart component is built based on [React-Vis Line chart](https://uber.github.io/react-vis/documentation/series-reference/line-series).
 
-### Mark Chart
+## Mark Chart
 
 The **Mark Chart** displays discrete information. The marks can be plotted vertically or horizontally: 
 
@@ -43,7 +37,7 @@ The **Mark Chart** displays discrete information. The marks can be plotted verti
 
 The Mark Chart component is built based on [React-Vis Mark chart](https://uber.github.io/react-vis/documentation/series-reference/mark-series).
 
-### LineMark Chart
+## LineMark Chart
 
 The **LineMark Chart** displays information as a series of data points called 'marks' connected by straight line segments. The LineMark Chart is often used to visualize a trend in data over intervals of time. The lines and marks can be plotted vertically or horizontally.
 
@@ -53,7 +47,7 @@ The LineMark Chart is a combination of a [Line Chart](#line-chart) and a [Mark C
 
 The LineMark Chart component is built based on [React-Vis LineMark chart](https://uber.github.io/react-vis/documentation/series-reference/line-mark-series).
 
-### Area Chart
+## Area Chart
 
 The **Area Chart** displays graphically quantitative data. It is based on the [Line Chart](#line-chart). 
 The Area Chart is often used to visualize a trend in data over intervals of time. The areas can be plotted vertically or horizontally: 
@@ -62,15 +56,15 @@ The Area Chart is often used to visualize a trend in data over intervals of time
 
 The Area Chart component is built based on [React-Vis Area chart](https://uber.github.io/react-vis/documentation/series-reference/area-series).
 
-### Composite Chart
+## Composite Chart
 
 Several Plot charts can be combined into one Composite Chart.
 
 *Content to be added*
 
-## Radial Charts
+# Radial Charts
 
-### Pie Chart
+## Pie Chart
 
 The **Pie Chart** (Radial/Circle Chart) is a circular statistical graphic, which is divided into slices to illustrate numerical proportion. 
 In the Pie Chart, the arc length of each slice (and consequently its central angle and area), is proportional to the quantity it represents: 
@@ -85,17 +79,17 @@ Pie charts can be replaced in most cases by other charts such as the [Bar Chart]
 
 The Pie Chart component is built based on [React-Vis Radial chart](https://uber.github.io/react-vis/documentation/other-charts/radial-chart).
 
-## Hierarchical Charts
+# Hierarchical Charts
     
-### Tree Map
+## Tree Map
 
 *Content to be added*
 
-### Table Heat Map
+## Table Heat Map
 
 *Content to be added*
 
-### Sunburst
+## Sunburst
 
 The **Sunburst Chart** is a hierarchical graphic, where each data node of a tree is represented by an annular segment within multi-layered rings.
 
@@ -107,7 +101,7 @@ Sunburst charts allow for at a glance understanding of distributions of nested g
 
 The Sunburst Chart component is built based on [React-Vis Sunburst diagram](https://uber.github.io/react-vis/documentation/other-charts/sunburst-diagram).
 
-### Zoomable Sunburst
+## Zoomable Sunburst
 
 *Content to be added*
 
@@ -119,4 +113,6 @@ If data is empty or has no values, `No content to display` warning message will 
 
 ![Chart with no data](chart/images/empty-chart.png)
 
+# Configuration
 
+[Charts Configuration](../configuration/unity-tags/charts-tag.md)
