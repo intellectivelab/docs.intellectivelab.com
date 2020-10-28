@@ -22,3 +22,8 @@ provider. User sees the display name of the class in the dropdown.
 - `Update` button, which is disabled by default and becomes enabled once user changes property values.
 
 - `Close` button to close the dialog.
+
+# Configuration
+
+See [Get Info feature configuration](../../configuration/actions/get-info.md) and [Properties action configuration](../../configuration/actions/properties.md) 
+for the details.
