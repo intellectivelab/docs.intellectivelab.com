@@ -1622,9 +1622,208 @@ comment action definition:
             </CustomParameters>
         </Action>
 ```
+Action has the following configuration parameters:
 
+|Parameter    |Description   |
+|:------------|:-------------|
+| Solution    | Required. ICM solution identifier|
+| CommentType | Optional. Type/Object Class of the ICM annotation entity. If not specified, `UserComment` value is used by default.|
+| FieldSet    | Optional. Reference to the ICM field set definition. Is used to build ICM annotation view form containing the fields that are defined in the field set. If not specified, only comment field is displayed on the add comment form.|
 
 ### Delete User Comment Tool
+
+Delete User Comment tool allows delete user comment from the ICM Case.
+Delete User Comment tool is implemented as a standard Unity action and associated with the
+correspondent history/comments search template grid. The following are example of delete user
+comment action definition:
+
+```xml
+<Action ID="ucmDeleteComment" multiselect="true" scope="single" type="toolbar">
+            <Name>Delete comment</Name>
+            <IconCls>action-delete-document</IconCls>
+            <Tooltip>Delete comment</Tooltip>
+            <Uri>uri</Uri>
+            <CustomParameters>
+                <EnableRule skipOnMissingProperty="false">#_ucmAnnotationType=='UserComment'</EnableRule>
+            </CustomParameters>
+        </Action>
+```
+Action rule can be defined to allow delete operation only for `UserComment` annotation
+entities.
+
 ### Calendar View
+
+List of cases or workitems can be represented as Calendar View on Case Search or Inbasket tabs:
+
+![Calendar View](ucm-icm-feature-guide/images/image18.png)
+
+The following steps should be executed for Calendar View configuration:
+
+- Add the following parameters to the appropriate Tab to the CustomParameters section:
+    
+    ```xml
+    <CustomParameters>
+    ……
+       <calendarViewColor>green</calendarViewColor> 
+                           <calendarViewDateRangeCriteria>DateCreated</calendarViewDateRangeCriteria> 
+                        <calendarViewEventMappingTitle>ucmCaseId</calendarViewEventMappingTitle>
+    <calendarViewEventMappingDescription>ucmStatus</calendarViewEventMappingDescription>
+    <calendarViewEventDateFormat>M j Y  g:iA</calendarViewEventDateFormat>
+    <calendarViewEventDateFormat2>M  j Y  g:iA</calendarViewEventDateFormat2>
+    <calendarViewEventDateFormat4>M j Y g:iA</calendarViewEventDateFormat4>
+    <calendarViewEventDateFormat5>M  j Y g:iA</calendarViewEventDateFormat5>
+    <calendarViewEventDateFormatISO8601>c</calendarViewEventDateFormatISO8601>
+    <calendarViewEventMappingStartDate>DateCreated</calendarViewEventMappingStartDate>             <calendarViewEventMappingEndDate>DateCreated</calendarViewEventMappingEndDate>
+     </CustomParameters>
+    ```
+|Tag	|Description|
+|:------|:----------|
+|calendarViewColor	|CSS color for calendar events|
+|calendarViewPrefetchMode	|The prefetch mode for pre-loading records on either side of the active range. Possible values are: month, week, day. Default value: week|
+|calendarViewDateRangeCriteria	|The name of search template's date range criteria that will be used to get documents at the required date range|
+|calendarViewEventMappingTitle	|The name of document's property that is used for event title|
+|calendarViewEventMappingDescription	|The name of document's property that is used for event description|
+|calendarViewEventDateFormat	|The format string that is used to parse event start/end date and time|
+|calendarViewEventDateFormatXXXX	|The alternative date and time formats (XXX is any string. For example: calendarViewEventDateFormat2, calendarViewEventDateFormat3, calendarViewEventDateFormatISO8601)|
+|calendarViewEventMappingStartDate	|The name of document's property that is used for event's start date and time|
+|calendarViewEventMappingEndDate	|The name of document's property that is used for event's end date and time|
+|calendarViewEventMappingAllDay	|The name of document's property that is used for event flag indicating that the event is all day (boolean)|
+|calendarViewEventMappingDuration	|The name of document's property that is used for event duration (number)|
+
+- Configure separate Calendar View grid (Please note that calendar view only supports ClickColumn event listener):
+
+    ```xml
+    <Grid ID="Case_Search_CV" enableColumnReorder="false"
+    groupSearchResults="false">
+     …..
+     <Listeners>
+     <Listener ID="ClickColumn">
+     <Action>ucmCaseGridColumnDblClick</Action>
+     </Listener>
+     </Listeners>
+     <XType>unity-calendar-view</XType>
+     …….
+     </Grid>
+    ```
+- Configure Search template that contains date range criteria that will be used to get
+  documents at the required date range (should be matched with
+  `calendarViewDateRangeCriteria` parameter from the Tab):
+  
+    ```xml
+    <SearchTemplate ID="ALL_WI_CW_Search-CustomerComplaints">
+        <DataProviderId>ucm_over_icm_provider</DataProviderId>
+        <Description>All Work Calendar</Description>
+        <Comment>All Work Calendar</Comment>
+        <Security>
+        <AllowRole>ContactCenter</AllowRole>
+         <AllowRole>BillingAgent</AllowRole>
+        <AllowRole>Specialist</AllowRole>
+        <AllowRole>Investigator</AllowRole>
+        </Security>
+         <Operation dataProviderId="ucm_over_icm_provider" type="search">
+         <OperationProperties>
+         <Property ID="SolutionId">CustomerComplaints</Property>
+         <Property ID="UCM.PE.Queue">*</Property>
+         </OperationProperties>
+         </Operation>
+        <SortFields />
+        <Groups>
+         <Group ID="criteriagroup" Title="All Work Item Search" />
+        </Groups>
+        <Grid ID="UCM_WI_CW_Search" />
+        <Criteria>
+        <Criterion>
+        <FieldName>ucmWiName</FieldName>
+        <!-- <FieldName>CC_CaseNumber</FieldName> -->
+        <Type>string</Type>
+        <Operator>starts</Operator>
+        <Required>false</Required>
+        <Hidden>false</Hidden>
+        <Readonly>false</Readonly>
+        <MultiValue>false</MultiValue>
+        </Criterion>
+        <Criterion>
+        <FieldName>ucmWiOwner</FieldName>
+        <Type>string</Type>
+        <Operator>starts</Operator>
+        <Required>false</Required>
+        <Hidden>false</Hidden>
+        <Readonly>false</Readonly>
+        <MultiValue>false</MultiValue>
+        </Criterion>
+        <Criterion>
+        <FieldName>ucmStatus</FieldName>
+        <Type>string</Type>
+        <Operator>eq</Operator>
+        <Required>false</Required>
+        <Hidden>false</Hidden>
+        <Readonly>false</Readonly>
+        <MultiValue>false</MultiValue>
+         <SelectorId>ucmWiStatus</SelectorId>
+        </Criterion>
+        <Criterion>
+        <FieldName>F_CreateTime</FieldName>
+        <Type>datetime</Type>
+        <Operator>range</Operator>
+        <Required>false</Required>
+        <Hidden>false</Hidden>
+        <Readonly>false</Readonly>
+        <MultiValue>false</MultiValue>
+        </Criterion>
+        </Criteria>
+    </SearchTemplate>
+    ```
+
 ### Action Reason dialog
-### Lookup confoguration
+
+Reason can be published while any action execution:
+
+![Reason Dialog](ucm-icm-feature-guide/images/image19.png)
+
+The following section should be added to the Action section for an Inbasket to the solution
+configuration file:
+
+```xml
+<Action ID="2" Name="Billing adjustment" WFResponse="ValidBilling" LoggedAs="">
+                    <Assignments>
+                        <Assignment FieldID="_DateCreated" Expression="$e.formatCurrentDate('yyyy-MM-dd\'T\'HH:mm:ss')" />
+                        <Assignment FieldID="_LastComment" Expression="$e.currentUser()" />
+                        <Assignment FieldID="ComplaintCategory" Expression="_LastComment == 'p8admin'? 'Billing' : 'Other'" />
+                    </Assignments>
+                    <Reasons>
+                        <Reason CommentRequired="true">TEST_REASON_1</Reason>
+                        <Reason CommentRequired="true">TEST_REASON_Approve</Reason>
+                        <Reason CommentRequired="false">TEST_REASON_3</Reason>
+                        <Reason CommentRequired="true">TEST_REASON_4</Reason>
+                    </Reasons>
+                    <RequiredFields>
+                        <RequiredField FieldID="_LastComment"/>
+                    </RequiredFields>
+                </Action>
+```
+Properties from the `Assighments` section will be filled in automatically after action execution.
+
+### Lookup configuration
+
+![Lookup](ucm-icm-feature-guide/images/image20.png)
+
+Lookups can be configured using appropriate section in the solution configuration file:
+
+```xml
+<Lookup ID="TestLookup" Type="DB">
+            <DataSource>THORDS</DataSource>
+            <Header>
+                <Column>_LastComment2</Column>
+                <Column>RequiredProp</Column>
+                <Column>DateProp</Column>
+            </Header>
+            <Query>select distinct DOC_CAT_NM as "_LastComment2", DOC_CAT_ID as "RequiredProp", TO_CHAR(CREAT_TS, 'MM/DD/YYYY')  as "DateProp" from T_DOC_CAT where DOC_CAT_NM like ? order by DOC_CAT_NM</Query>
+        </Lookup>
+```
+Header section contains properties that will be filled in after Lookup execution. 
+
+Created lookup should be linked with the property in the FieldSet:
+
+```xml
+<Field ID="_LastComment2" Label="Last Comment" Required="true" Lookup="TestLookup?query={_LastComment2}" DisableLookupValidation="true"/>
+```
