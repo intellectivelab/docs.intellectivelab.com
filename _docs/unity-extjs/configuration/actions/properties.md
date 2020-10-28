@@ -20,3 +20,9 @@ properties. Example of action configuration:
   </Security>
 </Action>
 ```
+
+`Properties` action custom configuration parameters:
+
+| Parameter | Description |
+|:----|:-------------------|
+|UpdateTemplate | Update template identifier |

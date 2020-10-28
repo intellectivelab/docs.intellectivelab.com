@@ -25,7 +25,11 @@ Following action should be added to Unity system configuration file:
 </Action>
 ```
 
-`CustomParameter`'s `Actions` section contains set of actions, that represent tabs to be added to `Get Info` dialog.
+`Get Info` action custom configuration parameters:
+
+| Parameter | Description |
+|:----|:-------------------|
+|Actions | This section contains set of actions, that represent tabs to be added to `Get Info` dialog |
 
 For more details on each action see
 
