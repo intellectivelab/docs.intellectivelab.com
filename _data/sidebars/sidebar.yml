@@ -202,6 +202,11 @@ entries:
                 url: /docs/unity-extjs/customization/environment-setup/
                 id: unity-extjs-customization-environmet-setup
 
+          - title: API
+            output: web, pdf
+            id: unity-extjs-api
+            url: /docs/unity-extjs/api/
+
       - title: Unity React
         output: web, pdf
         id: unity-react
