@@ -424,6 +424,11 @@ entries:
             id: unity-for-crm-unity-for-dynamics
             output: web, pdf
 
+          - title: Unity for ICN
+            url: /docs/unity-for-crm/unity-for-icn/
+            id: unity-for-crm-unity-for-icn
+            output: web, pdf
+
       - title: Enterprise Search
         output: web
         id: enterprise-search

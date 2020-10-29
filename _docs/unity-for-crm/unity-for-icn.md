@@ -1,19 +1,24 @@
 ---
-title: Unity as ICN plugin. Known issues.
+title: Unity for ICN
 layout: docs
 category: Unity 7
 ---
+*content to be added*
 
-# 'SameSite' cookie (JIRA: U7-3369)
+# Known Issues
 
-Since Chrome v80 (February 2020) vast majority of browsers set this param to 'Lax'. Previously it was 'None'.
-This means that browser won't send the cookies to the server back unless it is simple http GET request or first-party interaction.
+## `SameSite` cookie
+
+Reference to JIRA: U7-3369
+
+Since Chrome v80 (February 2020) vast majority of browsers set this param to `Lax`. Previously it was `None`.
+This means that browser won't send the cookies to the server back unless it is simple http `GET` request or first-party interaction.
 
 ```text
 Set-Cookie: session=your_session; SameSite=None; Secure 
 ```
 
-this part is important here:
+This part is important here:
 ```text
 SameSite=None; Secure 
 ```
@@ -26,7 +31,7 @@ Example:
 1. 192.168.210.19 - PC with installed Unity
 2. 192.168.210.18 - PC with installed ICN
      
-in order to make it as common 192.168.210.19 domain install nginx on 192.168.210.19 with next conf:
+In order to make it as common 192.168.210.19 domain install nginx on 192.168.210.19 with next conf:
 ```text
     ...
     server {
@@ -44,7 +49,7 @@ in order to make it as common 192.168.210.19 domain install nginx on 192.168.210
     ...
     }    
 ```
-in order to make it as common 192.168.210.18 domain install nginx on 192.168.210.18 with next conf:
+In order to make it as common 192.168.210.18 domain install nginx on 192.168.210.18 with next conf:
 ```text
     ...
     server {
@@ -60,7 +65,7 @@ in order to make it as common 192.168.210.18 domain install nginx on 192.168.210
     }    
 ```
 
-As another approach there is an option to set proxy_cookie_path directive (install nginx on 192.168.210.18):
+As another approach there is an option to set `proxy_cookie_path` directive (install nginx on 192.168.210.18):
 ```text
     ...
     server {
@@ -80,9 +85,11 @@ As another approach there is an option to set proxy_cookie_path directive (insta
 
 For debugging (or temporary fast solution) it is possible to change settings to the Chrome browser like that:
  
-1. Enter the following into your browser location bar and select “Disabled” in the drop-down. 
-chrome://flags/#same-site-by-default-cookies
-2. Select 'Disabled' option for "SameSite by default cookies" setting
-3. Select the “Relaunch” button.
+- Enter the following into your browser location bar and select `Disabled` in the drop-down: 
+    `chrome://flags/#same-site-by-default-cookies`
+    
+- Select 'Disabled' option for `SameSite by default cookies` setting
 
-Optionally do the same steps for chrome://flags/#cookies-without-same-site-must-be-secure setting.
+- Select the `Relaunch` button.
+
+Optional: do the same steps for `chrome://flags/#cookies-without-same-site-must-be-secure` setting.
