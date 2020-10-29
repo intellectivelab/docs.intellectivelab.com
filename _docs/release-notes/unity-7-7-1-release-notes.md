@@ -12,7 +12,7 @@ The following stories were implemented in the Unity 7.7.1 release. The ID and De
 | ------- | ------------------------------------------------------------------------------------------------------------------- |
 | U7-3451 | UIE CMOD Ability to perform backward crawling and also process current modifications                                |
 | U7-3430 | Sharepoint Add Document dialog with Permissions tab                                                                 |
-| U7-3395 | Add support for DB connector in Unity APIbbbbbbbbbbbbbbb                                                            |
+| U7-3395 | Add support for DB connector in Unity API                                                                           |
 | U7-3365 | Sharepoint permissions dialog 'No Access' option throws an error                                                    |
 | U7-3362 | Implement opening resource by link                                                                                  |
 | U7-3359 | Handle deletes in enterprise index for CMOD repository                                                              |
