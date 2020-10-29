@@ -7,6 +7,18 @@ category: Unity 7
 
 *content to be added*
 
+# Access Roles
+
+*content to be added*
+
+# Security Restrictions
+
+*content to be added*
+
+# SSO
+
+*content to be added*
+
 # Configuration
 
 [Security Configuration](../configuration/security.md)

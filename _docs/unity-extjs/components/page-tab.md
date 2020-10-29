@@ -7,9 +7,9 @@ category: Unity 7
 
 # Page/Tab Features
 
-## Configurable
-## Grid
-## Criteria
-## Search Template
-## Ability to add a custom component
-## Ability to create a custom layout
+Configurable  
+Grid  
+Criteria  
+Search Template  
+Ability to add a custom component  
+Ability to create a custom layout  
