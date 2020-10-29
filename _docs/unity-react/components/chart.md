@@ -7,7 +7,7 @@ category: Unity 7
 
 # Charts
 
-Charts are UI components designed for graphical representation of data.
+Charts are UI components designed for graphical representation of data. 
 
 Please refer to [Charts Configuration Section](../configuration/ui-components.md#charts) for more information about charts configuration. 
 
@@ -110,3 +110,13 @@ The Sunburst Chart component is built based on [React-Vis Sunburst diagram](http
 ### Zoomable Sunburst
 
 *Content to be added*
+
+# How To Use Charts
+
+*Content to be added*
+
+If data is empty or has no values, `No content to display` warning message will be shown below the chart title:
+
+![Chart with no data](chart/images/empty-chart.png)
+
+

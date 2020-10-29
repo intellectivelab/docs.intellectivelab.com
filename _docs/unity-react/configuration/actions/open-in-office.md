@@ -1,9 +1,9 @@
 ---
-title: Open in Office Action Configuration
+title: Open in Office Actions Configuration
 layout: docs
 category: Unity 7
 ---
-# Open in Office Action Configuration via Unity Office Plugin
+# Open in Office Actions Configuration via Unity Office Plugin
 
 ## Unity Office Plugin overview
 
@@ -38,6 +38,8 @@ For `Open in Office` action following section should be added to the Unity Syste
 |ResourceName | documents |
 |ActionType   | open.addon|
 
+Security section defines action accessibility. Please refer to [Security Restrictions](../access-roles.md#security-restrictions) for more information about security configuration.
+
 ## Check Out and Open in Office action
 
 For `Check Out and Open in Office` action following section should be added to the Unity System XML file:
@@ -67,9 +69,13 @@ For `Check Out and Open in Office` action following section should be added to t
 |ResourceName | documents |
 |ActionType   | checkout.addon |
 
-## Grid
+Security section defines action accessibility. Please refer to [Security Restrictions](../access-roles.md#security-restrictions) for more information about security configuration.
 
-Both actions should be added to grid configuration, e.g.:
+## Adding actions to the Grid
+
+Both actions should be added to the Grid configuration. Refer to [How to Add Action to the Grid](../grids.md#how-to-add-action-to-the-grid).
+
+Example: 
 
 ```xml
 <Grid ID="document_search" enableColumnReorder="false" groupSearchResults="false">

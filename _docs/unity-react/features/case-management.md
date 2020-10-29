@@ -16,7 +16,7 @@ category: Unity 7
 ## Case activity feed with infinite scrolling
 ## Case events timeline with infinite scrolling
 ## [Case attachments with folder view (search, navigate, attach, detach)](case-management/case-attachments.md) 
-## Attach a local document to the case
+## [Attach a local document to the case](case-management/attach-document.md)
 ## Attach an existing document to the case 
 ## [Split Case](case-management/split-case.md)
 ## Copy Case
@@ -26,3 +26,4 @@ category: Unity 7
 ## Case tasks view (search, create, view, complete, reassign) 
 ## Case work items view (search, view, process, complete, reassign) 
 ## Copy link
+## [Open Case By URL](case-management/open-case-by-url.md)

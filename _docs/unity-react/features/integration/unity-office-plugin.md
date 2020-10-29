@@ -26,7 +26,7 @@ Actions are available from grid context menu depending on document reservation s
 
 ![Open in Office via Grid context menu](unity-office-plugin/images/open-in-office-grid.png) 
 
-For configuration details see [grid actions configuration](../../configuration/actions/open-in-office.md).  
+For configuration details see [Open in Office actions configuration](../../configuration/actions/open-in-office.md).  
 
 `Open in Office` action is also available on `Document Details` view:
 

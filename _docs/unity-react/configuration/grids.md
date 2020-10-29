@@ -3,39 +3,40 @@ title: Grids Configuration
 layout: docs
 category: Unity 7
 ---
-## Multiple Column Sorting
+# How to Add Action to the Grid
 
-`Property` boolean attribute `Sortable` controls sorting by the column:
+*content to be added*
 
-```xml
-<Property ID="ContentSize">
-    <Name>File Size</Name>
-    <Type>int</Type>
-    <Resizable>true</Resizable>
-    <Sortable>true</Sortable>
-    <MultiValue>false</MultiValue>
-    <XType>vspace-filesize-column</XType>
-    <Width>70</Width>
-    <Tooltip/>
-</Property>
-```
-
-Default sorting may be defined on the `SearchTemplate` level or on the `Grid` level. If defained on both levels, setting from the grid is in effect.
-
-`SortField` value refers to a `Property`'s `ID` attribute (the property should be sortable).
-
-Optional `Order` attribute may have value `ASC` for ascending and `DESC` for descending order (`ASC` is a default). 
+Example for Split Case action:
 
 ```xml
-<SearchTemplate ID="templateByDate">
-    <SortFields>
-        <SortField Order="DESC">$modify_date</SortField>
-        <SortField Order="ASC">$title</SortField>
-    </SortFields>
-    <!-- not relevant nodes skipped -->
-</SearchTemplate>
+<Grid ID="UCM_ICM_Case_Search_ComplaintsProcessing" enableColumnReorder="false" groupSearchResults="false">
+    <Toolbar>
+        <Actions>
+            <Action ID="splitCase"/>
+            <!-- other actions -->
+        </Actions>
+    </Toolbar>
+    <!-- rest config-->
+</Grid>        
 ```
+Example for Open In Office actions:
 
+```xml
+<Grid ID="document_search" enableColumnReorder="false" groupSearchResults="false">
+  <Toolbar>
+    <Actions>
+      <!-- other actions -->
+      <Action ID="openInOffice"/>
+      <Action ID="checkOutOpenInOffice"/>
+    </Actions>
+  </Toolbar>
+  <!-- not relevant nodes skipped -->
+</Grid>
+
+``` 
+
+# Multiple Column Sorting
 ```xml
 <Grid ID="parents-grid">
     <Columns>
@@ -48,3 +49,8 @@ Optional `Order` attribute may have value `ASC` for ascending and `DESC` for des
     <!-- not relevant nodes skipped -->
 </Grid>
 ```
+
+| Parameter           | Description |
+|:--------------------|:------------|
+| SortField           | `SortField` value refers to a [Property](../configuration/properties.md) `ID` attribute (the property should be sortable).  Default sorting may be defined on the `Grid` level or on the [SearchTemplate](../configuration/search-templates.md#sorting-configuration) level. If defined on both levels, setting from the `Grid` is in effect.     |
+| SortField >> Order  | Optional `Order` attribute may have value `ASC` for ascending and `DESC` for descending order (`ASC` is a default). |

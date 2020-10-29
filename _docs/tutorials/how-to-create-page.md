@@ -258,10 +258,10 @@ It will look on page:
 
 To insert a link to any page of documentation portal type:  
 `[Link Title](page-name.md)`, if it is placed in the same folder as your page  
-`[Link Title](path/page-name.md)`, if it is placed in another folder. Use relative path for `path`.  
+`[Link Title](path/page-name.md)`, if it is placed in another folder. Use a relative path for `path`.  
 
 To insert a link to any header of another documentation portal page type:  
-`[Link Title](path/page-name.md/#header-title)`  
+`[Link Title](path/page-name.md#header-title)`  
 
 #### Link to external page 
 
