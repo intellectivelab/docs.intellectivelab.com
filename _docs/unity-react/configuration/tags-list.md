@@ -1,5 +1,5 @@
 ---
-title: Tags Configuration
+title: Configuration - Tags List
 layout: docs
 category: Unity 7
 ---
@@ -15,24 +15,24 @@ TreeModels
 Plugins  
 UIProperties  
 SystemProperties  
-[SSO](tags/sso-tag.md)  
+[SSO](tags-list/sso-tag.md)  
 EnterpriseSearch  
-[AccessRoles](tags/access-roles-tag.md)  
+[AccessRoles](tags-list/access-roles-tag.md)  
 Actions  
-[Datasources](tags/datasources-tag.md)  
+[Datasources](tags-list/datasources-tag.md)  
 Selectors  
-[Facets](tags/facets-tag.md)  
-[Properties](tags/properties-tag.md)  
+[Facets](tags-list/facets-tag.md)  
+[Properties](tags-list/properties-tag.md)  
 Grids  
 Tabs  
 SearchTemplates  
 ColumnSets  
-[UiComponents](tags/ui-components-tag.md)  
-[Charts](tags/charts-tag.md)  
-[Indicators](tags/indicators-tag.md)  
+[UiComponents](tags-list/ui-components-tag.md)  
+[Charts](tags-list/charts-tag.md)  
+[Indicators](tags-list/indicators-tag.md)  
 RepositoryDataProviders  
 Perspectives  
-[Dashboard](tags/dashboard-tag.md)  
+[Dashboard](tags-list/dashboard-tag.md)  
 CustomConfiguration  
 Solutions  
 SolutionsConfiguration  
@@ -50,7 +50,7 @@ FieldSets
 FieldTypes  
 - FieldType  
 
-[Lookups](tags/lookups.md)  
+[Lookups](tags-list/lookups.md)  
 - Lookup  
 - Parameters  
 - Parameter  

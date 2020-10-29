@@ -3,24 +3,20 @@ title: Unity Features Comparison List
 layout: docs
 category: Unity 7
 ---
-# Unity Features Comparison List 
-
-## Design principles 
+# Design principles 
 
 | Feature | Unity ExtJs | Unity React | Feature details  |
-|:--------|:-----------:|:-----------:|:----------------:|
-|MVVM | + | + | [description](../components/design-principles.md) |
-|Single responsibility |  | + |[description](../components/design-principles.md) |
-|Encapsulated component |  | + |[description](../components/design-principles.md) |
-|Composable component |  | + |[description](../components/design-principles.md) |
-|Reusable component |  | + |[description](../components/design-principles.md) |
-|Pure component |  | + |[description](../components/design-principles.md) |
-|Responsive component |  | + |[description](../components/design-principles.md) |
-|Modern Design System |  | + |[add description](../components/design-principles.md) | 
-|Unity API support |   | + |  [description](../components/design-principles.md) |
-|Environment Variables | ? | ? |  [description](../components/design-principles.md) |
+|:--------|:-----------:|:-----------:|:-----------------|
+|MVVM | + | + | Ensures clear responsibility segregation between business and presentation logic.|
+|Single responsibility |  | + |Suggests creating a component that implements only one responsibility and has one reason to change.|
+|Encapsulated component |  | + |Hides its internal structure and defines props to control the behavior and output.|
+|Composable component |  | + |It is created from the composition of smaller specialized components.|
+|Reusable component |  | + |It is written once but used multiple times.|
+|Pure component |  | + |Always renders same elements for same prop values.|
+|Responsive component |  | + |Effectively responds to various screen sizes.| 
+|Modern Design System |  | + |*content to be added* | 
 
-## Grid 
+# Grid 
 
 | Feature | Unity ExtJs | Unity React | Feature details |
 |:--------------------|:-------------------:|:-------:|:-------:|
@@ -50,7 +46,7 @@ category: Unity 7
 |Responsive	|   | + | [add description](../components/grid.md#responsive) |
 |Configurable | + | + | [add description](../components/grid.md#configurable) |
 
-## Search criteria panel 
+# Search criteria panel 
 
 | Feature | Unity ExtJs | Unity React | Feature details |
 |:--------------------|:-------------------:|:-------:|:-------:|
@@ -82,7 +78,7 @@ category: Unity 7
 |Responsive |   | + | [add description](../components/search-criteria-panel.md) |
 |Ability to compose with other components |   | + | [add description](../components/search-criteria-panel.md) |
 
-## Properties view form  
+# Properties view form  
 
 | Feature | Unity ExtJs | Unity React | Feature details |
 |:--------------------|:-------------------:|:-------:|:-------:|
@@ -123,7 +119,7 @@ category: Unity 7
 |Ability to compose with other components |   | + | [add description](../components/properties-view-form.md) |
 |Responsive |   | + | [add description](../components/properties-view-form.md) |
 
-## Search template 
+# Search template 
 
 | Feature | Unity ExtJs | Unity React | Feature details |
 |:--------------------|:-------------------:|:-------:|:-------:|
@@ -144,7 +140,7 @@ category: Unity 7
 |Responsive |   | + | [add description](../components/search-template.md) |
 |Ability to compose with other components |   | + | [add description](../components/search-template.md) |
 
-## Page/Tab 
+# Page/Tab 
 
 | Feature | Unity ExtJs | Unity React | Feature details |
 |:--------------------|:-------------------:|:-------:|:-------:|
@@ -156,7 +152,7 @@ category: Unity 7
 |Ability to create a custom layout | + | + | [add description](../components/dashboard.md) |
 |Ability to bundle components into containers (tabs) |   | + | [add description](../components/dashboard.md) |
 
-## Dashboard 
+# Dashboard 
 
 | Feature | Unity ExtJs | Unity React | Feature details |
 |:--------------------|:-------------------:|:-------:|:-------:|
@@ -186,7 +182,7 @@ category: Unity 7
 |Data Export |   | + | [add description](../components/chart.md) |
 
 
-## Document management 
+# Document management 
 
 | Feature | Unity ExtJs | Unity React | Feature details |
 |:--------------------|:-------------------:|:-------:|:-------:|
@@ -204,7 +200,7 @@ category: Unity 7
 |Document delete       | + | + | [add description](document-management.md) |
 |Copy link        | + | + | [add description](document-management.md) |
 
-## Case management 
+# Case management 
 
 | Feature | Unity ExtJs | Unity React | Feature details |
 |:--------------------|:-------------------:|:-------:|:-------:|
@@ -228,7 +224,7 @@ category: Unity 7
 |Ability to show case related entities via virtual folders | + |   |  [add description](case-management.md) |
 |Copy link | + | + |  [add description](case-management.md) |
 
-## Process management 
+# Process management 
 
 | Feature | Unity ExtJs | Unity React | Feature details |
 |:--------------------|:-------------------:|:-------:|:-------:|
@@ -243,7 +239,7 @@ category: Unity 7
 |Reassign work item | + | + |  [add description](process-management.md) |
 |Process analytics |   | + |  [add description](process-management.md) |
 
-## User preferences 
+# User preferences 
 
 | Feature | Unity ExtJs | Unity React | Feature details |
 |:--------------------|:-------------------:|:-------:|:-------:|

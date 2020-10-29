@@ -248,11 +248,6 @@ entries:
             output: web, pdf
             id: unity-react-components
             subfolders:
-              - title: Design Principles
-                output: web
-                url: /docs/unity-react/components/design-principles/
-                id: unity-react-components-design-principles
-
               - title: Grid
                 output: web
                 url: /docs/unity-react/components/grid/
@@ -293,6 +288,11 @@ entries:
                 url: /docs/unity-react/components/indicator/
                 id: unity-react-components-indicator
 
+              - title: Security
+                output: web
+                url: /docs/unity-react/components/security/
+                id: unity-react-components-security
+
           - title: Installation
             output: web, pdf
             id: unity-react-installation
@@ -331,6 +331,16 @@ entries:
                 url: /docs/unity-react/configuration/actions/
                 id: unity-react-configuration-actions
 
+              - title: Search Criteria Panel
+                output: web
+                url: /docs/unity-react/configuration/search-criteria-panel/
+                id: unity-react-configuration-search-criteria-panel
+
+              - title: Properties View Form
+                output: web
+                url: /docs/unity-react/configuration/properties-view-form/
+                id: unity-react-configuration-properties-view-form
+
               - title: Search Templates
                 output: web
                 url: /docs/unity-react/configuration/search-templates/
@@ -351,15 +361,30 @@ entries:
                 url: /docs/unity-react/configuration/perspectives/
                 id: unity-react-configuration-perspectives
 
+              - title: Dashboards
+                output: web
+                url: /docs/unity-react/configuration/dashboards/
+                id: unity-react-configuration-dashboards
+
+              - title: Charts
+                output: web
+                url: /docs/unity-react/configuration/charts/
+                id: unity-react-configuration-charts
+
+              - title: Indicators
+                output: web
+                url: /docs/unity-react/configuration/indicators/
+                id: unity-react-configuration-indicators
+
               - title: Security
                 output: web
                 url: /docs/unity-react/configuration/security/
                 id: unity-react-configuration-security
 
-              - title: Tags
+              - title: Tags List
                 output: web
-                url: /docs/unity-react/configuration/unity-tags/
-                id: unity-react-configuration-tags
+                url: /docs/unity-react/configuration/tags-list/
+                id: unity-react-configuration-tags-list
 
           - title: Customization
             output: web, pdf

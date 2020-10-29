@@ -8,7 +8,7 @@ category: Unity 7
 
 *Content to be added*
 
-[AccessRoles Unity tag](tags/access-roles-tag.md)
+[AccessRoles Unity tag](tags-list/access-roles-tag.md)
 
 # Security Restrictions
 
@@ -34,4 +34,4 @@ Rules are evaluated in the following order:
 
 *Content to be added*
 
-[SSO Unity Tag](tags/sso-tag.md)
+[SSO Unity Tag](tags-list/sso-tag.md)

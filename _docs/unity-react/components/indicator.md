@@ -19,4 +19,4 @@ If the metric is empty, `-` will be shown below the indicator title with `No con
 
 # Configuration
 
-[Indicators Configuration](../configuration/tags/indicators-tag.md)
+[Indicators Configuration](../configuration/tags-list/indicators-tag.md)

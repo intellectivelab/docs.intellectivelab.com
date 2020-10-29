@@ -22,9 +22,9 @@ Besides common criteria tags like `FieldName`, `Type`, `Operator`, etc. category
 |Ui           |Category field Ui representation. Available values: `radio` / `toggle` / `checkbox` / `combobox`. Default value: `toggle` (if tag is absent / it's value is not specified / specified value is not allowed)|
 |Facets       |This section is used to bind criteria field to a specific facet, so that criterion has ability to load facets' values|
 
-Ensure that `FieldName` tag has value of corresponding property, defined in [Properties](../tags/properties-tag.md) section.  
+Ensure that `FieldName` tag has value of corresponding property, defined in [Properties](../tags-list/properties-tag.md) section.  
 
-For more information see [Terms Facets configuration](../tags/facets-tag.md#terms-facet).
+For more information see [Terms Facets configuration](../tags-list/facets-tag.md#terms-facet).
 
 # Radio category criterion
 
@@ -58,7 +58,7 @@ Example of criterion configuration:
 </Criterion>
 ```
 
-`FieldName` = `CustomerState`, so `CustomerState` property should be specified in [Properties](../tags/properties-tag.md) section, e.g.:
+`FieldName` = `CustomerState`, so `CustomerState` property should be specified in [Properties](../tags-list/properties-tag.md) section, e.g.:
 
 ```xml
 <Property ID="CustomerState">
@@ -87,4 +87,4 @@ Example of `cases-by-state-city` and its inner facets configuration:
 </Facets>
 ```
 
-For more information see [Terms Facets configuration](../tags/facets-tag.md#terms-facet).  
+For more information see [Terms Facets configuration](../tags-list/facets-tag.md#terms-facet).  
