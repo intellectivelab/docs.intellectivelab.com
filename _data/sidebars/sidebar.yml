@@ -356,15 +356,10 @@ entries:
                 url: /docs/unity-react/configuration/security/
                 id: unity-react-configuration-security
 
-              - title: Unity Tags
+              - title: Tags
                 output: web
                 url: /docs/unity-react/configuration/unity-tags/
-                id: unity-react-configuration-unity-tags
-
-              - title: Solution Tags
-                output: web
-                url: /docs/unity-react/configuration/solution-tags/
-                id: unity-react-configuration-solution-tags
+                id: unity-react-configuration-tags
 
           - title: Customization
             output: web, pdf
