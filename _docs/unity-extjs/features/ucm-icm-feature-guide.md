@@ -958,7 +958,7 @@ The Unity 7.2 introduces the new supported action custom parameter named ActionH
 (HandlerId) that can be used to define which actual Java Script action handler should be used to
 handle the concrete action. This allows to create generic/parametric JS action handlers that can
 handle multiple actions with different parameters for each concrete action. For example, the
-generic `cmCreateCaseAtSameTab` action handler is used to create actions with different solution
+generic `ucmCreateCaseAtSameTab` action handler is used to create actions with different solution
 ids, case types and role assignments.
 
 ### Case Tools
