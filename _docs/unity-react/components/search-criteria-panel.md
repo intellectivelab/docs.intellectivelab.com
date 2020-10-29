@@ -19,7 +19,7 @@ Date and time picker
 Date range picker  
 Client-side select field  
 Remote select field  
-## [Facet (category) field](search-criteria-panel/facet-category-field.md)  
+[Facet (category) field](search-criteria-panel/facet-category-field.md)  
 Range slider  
 Ability to add a custom field  
 Linked dropdowns [U7-2698](https://jira.intellective.com/browse/U7-2698)  
@@ -35,3 +35,7 @@ Drawer viewport
 Docked viewport  
 Responsive  
 Ability to compose with other components  
+
+# Configuration
+
+[Search Criteria Panel Configuration](../configuration/search-criteria-panel.md)

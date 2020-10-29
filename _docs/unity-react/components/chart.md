@@ -115,4 +115,4 @@ If data is empty or has no values, `No content to display` warning message will 
 
 # Configuration
 
-[Charts Configuration](../configuration/tags-list/charts-tag.md)
+[Charts Configuration](../configuration/charts.md)

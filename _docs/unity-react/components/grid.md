@@ -54,8 +54,8 @@ Details View screen is divided into several panels as shown below:
 # Grid Features
 
 Grouping  
-## [Multiple Column Sorting](grid/multiple-column-sorting.md)  
-## [Column resizing](grid/column-resizing.md)  
+[Multiple Column Sorting](grid/multiple-column-sorting.md)  
+[Column resizing](grid/column-resizing.md)  
 Column locking  
 Column spanning  
 Column reordering  
@@ -80,4 +80,6 @@ Adaptive
 Responsive  
 Configurable  
 
+# Configuration
 
+[Grids Configuration](../configuration/grids.md)

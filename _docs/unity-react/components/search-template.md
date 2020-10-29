@@ -24,4 +24,8 @@ Skimming view
 Adaptive  
 Responsive  
 Ability to compose with other components  
-## [Supported data providers](search-template/supported-data-providers.md)  
+[Supported data providers](search-template/supported-data-providers.md)  
+
+# Configuration
+
+[Search Templates Configuration](../configuration/search-templates.md)

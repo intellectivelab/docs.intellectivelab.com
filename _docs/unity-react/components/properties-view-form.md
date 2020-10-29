@@ -45,3 +45,7 @@ Tab viewport
 Viewport aspect ratio   
 Ability to compose with other components   
 Responsive   
+
+# Configuration
+
+[Properties View Form Configuration](../configuration/properties-view-form.md)
