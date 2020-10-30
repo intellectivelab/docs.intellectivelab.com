@@ -201,11 +201,6 @@ entries:
                 url: /docs/unity-extjs/customization/environment-setup/
                 id: unity-extjs-customization-environmet-setup
 
-          - title: API
-            output: web, pdf
-            id: unity-extjs-api
-            url: /docs/unity-extjs/api/
-
       - title: Unity React
         output: web, pdf
         id: unity-react
@@ -551,6 +546,11 @@ entries:
                 output: web
                 url: /docs/development/unity-api/data-export/
                 id: development-unity-api-data-export
+
+              - title: Facet
+                output: web
+                url: /docs/development/unity-api/facet/
+                id: development-unity-api-facet
 
               - title: Selectors
                 output: web
