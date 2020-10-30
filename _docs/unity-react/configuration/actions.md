@@ -14,6 +14,7 @@ category: Unity 7
 - [Split Case](../configuration/actions/split-case.md)
 - [Delete Case](../configuration/actions/delete-case.md)
 - [Attach new document to a case](../configuration/actions/attach-document.md)
+- [Attach existing document to a case](../configuration/actions/attach-existing-document.md)
 - [Detach Document](../configuration/actions/detach-document.md)
 
 # Workitem related actions
