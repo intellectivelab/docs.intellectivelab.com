@@ -113,79 +113,60 @@ entries:
                 url: /docs/unity-extjs/configuration/basic-steps/
                 id: unity-extjs-configuration-basic-steps
 
-              - title: Tree Models
+              - title: Tabs
                 output: web
-                url: /docs/unity-extjs/configuration/tree-models/
-                id: unity-extjs-configuration-tree-models
-
-              - title: System Properties
-                output: web
-                url: /docs/unity-extjs/configuration/system-properties/
-                id: unity-extjs-configuration-system-properties
-
-              - title: Actions
-                output: web
-                url: /docs/unity-extjs/configuration/actions/
-                id: unity-extjs-configuration-actions
-
-              - title: Datasources
-                output: web
-                url: /docs/unity-extjs/configuration/datasources/
-                id: unity-extjs-configuration-datasources
-
-              - title: Selectors
-                output: web
-                url: /docs/unity-extjs/configuration/selectors/
-                id: unity-extjs-configuration-selectors
-
-              - title: Properties
-                output: web
-                url: /docs/unity-extjs/configuration/properties/
-                id: unity-extjs-configuration-properties
+                url: /docs/unity-extjs/configuration/tabs/
+                id: unity-extjs-configuration-tabs
 
               - title: Grids
                 output: web
                 url: /docs/unity-extjs/configuration/grids/
                 id: unity-extjs-configuration-grids
 
-              - title: Tabs
+              - title: Actions
                 output: web
-                url: /docs/unity-extjs/configuration/tabs/
-                id: unity-extjs-configuration-tabs
+                url: /docs/unity-extjs/configuration/actions/
+                id: unity-extjs-configuration-actions
+
+              - title: Search Criteria Panel
+                output: web
+                url: /docs/unity-extjs/configuration/search-criteria-panel/
+                id: unity-extjs-configuration-search-criteria-panel
+
+              - title: Properties View Form
+                output: web
+                url: /docs/unity-extjs/configuration/properties-view-form/
+                id: unity-extjs-configuration-properties-view-form
 
               - title: Search Templates
                 output: web
                 url: /docs/unity-extjs/configuration/search-templates/
                 id: unity-extjs-configuration-search-templates
 
-              - title: Column Sets
-                output: web
-                url: /docs/unity-extjs/configuration/column-sets/
-                id: unity-extjs-configuration-column-sets
-
               - title: Repository Data Providers
                 output: web
                 url: /docs/unity-extjs/configuration/repository-data-providers/
                 id: unity-extjs-configuration-repository-data-providers
+
+              - title: Datasources
+                output: web
+                url: /docs/unity-extjs/configuration/datasources/
+                id: unity-extjs-configuration-datasources
 
               - title: Solutions Configuration
                 output: web
                 url: /docs/unity-extjs/configuration/solutions-configuration/
                 id: unity-extjs-configuration-solutions-configuration
 
-              - title: Access Roles
+              - title: Security
                 output: web
-                url: /docs/unity-extjs/configuration/access-roles/
-                id: unity-extjs-configuration-access-roles
+                url: /docs/unity-extjs/configuration/security/
+                id: unity-extjs-configuration-security
 
-              - title: Plugins
+              - title: Tags List
                 output: web
-                url: /docs/unity-extjs/configuration/plugins/
-
-              - title: Others
-                output: web
-                url: /docs/unity-extjs/configuration/others/
-                id: unity-extjs-configuration-others
+                url: /docs/unity-extjs/configuration/tags-list/
+                id: unity-extjs-configuration-tags-list
 
           - title: Customization
             output: web, pdf
@@ -350,6 +331,11 @@ entries:
                 output: web
                 url: /docs/unity-react/configuration/repository-data-providers/
                 id: unity-react-configuration-repository-data-providers
+
+              - title: Datasources
+                output: web
+                url: /docs/unity-react/configuration/datasources/
+                id: unity-react-configuration-datasources
 
               - title: Solutions Configuration
                 output: web
