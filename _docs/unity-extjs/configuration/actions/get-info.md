@@ -1,5 +1,5 @@
 ---
-title: Get Info feature configuration
+title: Get Info Action Configuration
 layout: docs
 category: Unity 7
 ---

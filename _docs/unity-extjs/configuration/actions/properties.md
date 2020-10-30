@@ -1,5 +1,5 @@
 ---
-title: Properties feature configuration
+title: Properties Action Configuration
 layout: docs
 category: Unity 7
 ---
