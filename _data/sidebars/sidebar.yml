@@ -532,35 +532,10 @@ entries:
                 url: /docs/development/unity-api/security/
                 id: development-unity-api-security
 
-              - title: Documents
+              - title: Resources
                 output: web
-                url: /docs/development/unity-api/documents/
-                id: development-unity-api-documents
-
-              - title: Cases
-                output: web
-                url: /docs/development/unity-api/cases/
-                id: development-unity-api-cases
-
-              - title: Data Export
-                output: web
-                url: /docs/development/unity-api/data-export/
-                id: development-unity-api-data-export
-
-              - title: Facet
-                output: web
-                url: /docs/development/unity-api/facet/
-                id: development-unity-api-facet
-
-              - title: Selectors
-                output: web
-                url: /docs/development/unity-api/selectors/
-                id: development-unity-api-selectors
-
-              - title: Configuration
-                output: web
-                url: /docs/development/unity-api/configuration/
-                id: development-unity-api-configuration
+                url: /docs/development/unity-api/resources/
+                id: development-unity-api-resources
 
               - title: References
                 output: web
