@@ -1,11 +1,11 @@
 ---
-title: Unity 7 React Overview
+title: Unity Overview
 layout: docs
 category: Unity 7
 ---
 # What Unity Does
  
-[![unity-wheel-diagram](overview/images/Wheel-Diagram-Business-Applications-475x445.png)](overview/images/Wheel-Diagram-Business-Applications-1024x959.png)  
+[![unity-wheel-diagram](unity-overview/images/Wheel-Diagram-Business-Applications-475x445.png)](unity-overview/images/Wheel-Diagram-Business-Applications-1024x959.png)  
 
 Unity connects your business application users with multiple repositories, workflows, and content systems.
 
@@ -63,7 +63,7 @@ Users can search for content and data in a variety of ways:
 
 ## Actionable analytics
 
-[![analytics](overview/images/analytics-308x280.png)](overview/images/analytics-770x701.png)  
+[![analytics](unity-overview/images/analytics-308x280.png)](unity-overview/images/analytics-770x701.png)  
 
 Users can get interactive real-time reports (including various charts and graphs) for case tasks and apply actions directly from the report view.  
 

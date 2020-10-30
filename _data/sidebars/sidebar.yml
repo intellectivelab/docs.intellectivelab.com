@@ -3,16 +3,15 @@ entries:
     product: Jekyll Doc Theme
     version: 1.0
     folders:
+      - title: Unity Overview
+        output: web
+        url: /docs/unity-overview/
+        id: unity-overview
+
       - title: Unity ExtJs
         output: web, pdf
         id: unity-extjs
         folderitems:
-          - title: Overview
-            url: /docs/unity-extjs/overview/
-            output: web, pdf
-            id: unity-extjs-overview
-            type: homepage
-
           - title: Quick Start
             url: /docs/unity-extjs/quick-start/
             id: unity-extjs-quick-start
@@ -109,10 +108,10 @@ entries:
             output: web, pdf
             id: unity-extjs-configuration
             subfolders:
-              - title: First Steps
+              - title: Basic Steps
                 output: web
-                url: /docs/unity-extjs/configuration/first-steps/
-                id: unity-extjs-configuration-first-steps
+                url: /docs/unity-extjs/configuration/basic-steps/
+                id: unity-extjs-configuration-basic-steps
 
               - title: Tree Models
                 output: web
@@ -211,12 +210,6 @@ entries:
         output: web, pdf
         id: unity-react
         folderitems:
-          - title: Overview
-            url: /docs/unity-react/overview/
-            output: web, pdf
-            type: homepage
-            id: unity-react-overview
-
           - title: Features
             output: web, pdf
             id: unity-react-features
@@ -323,10 +316,10 @@ entries:
             output: web, pdf
             id: unity-react-configuration
             subfolders:
-              - title: First Steps
+              - title: Basic Steps
                 output: web
-                url: /docs/unity-react/configuration/first-steps/
-                id: unity-react-configuration-first-steps
+                url: /docs/unity-react/configuration/basic-steps/
+                id: unity-react-configuration-basic-steps
 
               - title: System Properties
                 output: web
@@ -401,6 +394,7 @@ entries:
               - title: Lookups
                 output: web
                 url: /docs/unity-react/configuration/lookups/
+                id: unity-react-configuration-lookups
 
               - title: Others
                 output: web
@@ -467,7 +461,7 @@ entries:
                 output: web
                 url: /docs/enterprise-search/configuration/security/
                 id: enterprise-search-configuration-security
-                
+
               - title: Configure Enterprise Search for Use
                 output: web
                 url: /docs/enterprise-search/configuration/configure-enterprise-search-for-use/

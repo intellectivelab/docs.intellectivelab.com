@@ -4,12 +4,12 @@
 
     {% if item.folders[0] %}
       <!-- First level list -->
-      <ul id="side-nav" class="nav flex-column">
+      <ul id="side-nav" class="nav flex-column side-nav{% if include.topNav %} top d-lg-none{% endif %}">
 
         <!-- First level of items -->
         {% for entry in item.folders %}
           <li class="nav-item">
-            <a id={{ entry.id }} class="nav-link" href="#">{{ entry.title }}</a>
+            <a id="{{ entry.id }}" class="nav-link" href="{{ entry.url }}">{{ entry.title }}</a>
 
             {% if entry.folderitems[0] %}
               <!-- Second level list -->
@@ -18,7 +18,7 @@
                 <!-- Second level of items -->
                 {% for subentry in entry.folderitems %}
                   <li class="list-group-item">
-                    <a id={{ subentry.id }} class="{% if subentry.subfolders[0] %}contains{% endif %}" href="{{subentry.url  | relative_url}}">{{subentry.title}}</a>
+                    <a id="{{ subentry.id }}" class="{% if subentry.subfolders[0] %}contains{% endif %}" href="{{subentry.url  | relative_url}}">{{subentry.title}}</a>
                     
                     {% if subentry.subfolders[0] %}
                       <!-- Third level list -->
@@ -27,7 +27,7 @@
                         <!-- Third level of items -->
                         {% for subsubentry in subentry.subfolders %}
                           <li class="list-group-item">
-                            <a id={{ subsubentry.id }} href="{{subsubentry.url  | relative_url}}">{{subsubentry.title}}</a>
+                            <a id="{{ subsubentry.id }}" href="{{subsubentry.url  | relative_url}}">{{subsubentry.title}}</a>
                           </li>
                         {% endfor %}
 
