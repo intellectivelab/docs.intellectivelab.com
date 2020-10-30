@@ -136,7 +136,7 @@ Add document action supports adding document with permission.
 
 Override default dialog used for add document action with custom XType: `widget.unity-add-document-dialog` 
 
-    ```xml
+```xml
     <CustomParameters>
         <RepositoryDataProvider ID="sharepoint_repository">
             ... skipped ...
@@ -144,7 +144,7 @@ Override default dialog used for add document action with custom XType: `widget.
             ... skipped ...
         </RepositoryDataProvider>
     </CustomParameters>
-     ```
+```
 
 ## Configuration specific for data providers
 
