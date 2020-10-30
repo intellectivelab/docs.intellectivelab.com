@@ -200,6 +200,15 @@ h1 {
   color: #dc3840;
 }
 
+h1::before {
+  display: block;
+  content: " ";
+  margin-top: -64px;
+  height: 64px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 h2 {
   font-size: 2rem;
   margin-top: 0.5rem;
