@@ -6,8 +6,9 @@ category: Unity 7
 
 # Description  
 Add document action defines UI options when adding document. It could be used as row context menu action or toolbar action.
-Add document support folder selection or inherit context of selected folder when used in folder view. [Tree model](#tree-model-configuration) must be properly configured. 
-Add document support document class selection. [Document class selector](#document-class-selector) must be properly configured.
+Add document action supports folder selection or inherit context of selected folder when used in folder view. [Tree model](#tree-model-configuration) must be properly configured. 
+Add document action supports document class selection. [Document class selector](#document-class-selector) must be properly configured.
+Add document action supports adding document with permission. 
 
 *content to be added*  
 
@@ -121,17 +122,33 @@ Add document support document class selection. [Document class selector](#docume
     </Security>
 </Action>
 ```
+# Configuration
 
-# Tree model configuration
+## Tree model configuration
+ 
 *content to be added*
 
-# Document class selector configuration
+## Document class selector configuration
+
 *content to be added*
 
+## Adding with permissions
 
-# Configuration specific for data providers
+Override default dialog used for add document action with custom XType: `widget.unity-add-document-dialog` 
 
-## SharePoint data provider
+    ```xml
+    <CustomParameters>
+        <RepositoryDataProvider ID="sharepoint_repository">
+            ... skipped ...
+            <XType>widget.unity-add-document-dialog</XType>
+            ... skipped ...
+        </RepositoryDataProvider>
+    </CustomParameters>
+     ```
+
+## Configuration specific for data providers
+
+### SharePoint data provider
 
 - Document class selector for SharePoint depends on Library. To work properly IsFolderRelatedDocClass tag must be set to true in custom parameters:
  
