@@ -20,4 +20,4 @@ category: Unity 7
 
 # Configuration
 
-[Add Document Configuration](../../configuration/actions/add-document.md)  
+[Add Document Action Configuration](../../configuration/actions/add-document.md)  
