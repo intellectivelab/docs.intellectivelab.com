@@ -12,7 +12,7 @@ Unity datasource connectors is a unified facade to integrate content from differ
 - CMOD Connector
 - CM8 Connector
 - CMIS Connector
-- [SharePoint Connector](../datasources/sharepoint.md)
+- [SharePoint Connector](datasources-tag/sharepoint.md)
 - UIE Connector
 
 

@@ -148,11 +148,6 @@ entries:
                 url: /docs/unity-extjs/configuration/repository-data-providers/
                 id: unity-extjs-configuration-repository-data-providers
 
-              - title: Datasources
-                output: web
-                url: /docs/unity-extjs/configuration/datasources/
-                id: unity-extjs-configuration-datasources
-
               - title: Solutions Configuration
                 output: web
                 url: /docs/unity-extjs/configuration/solutions-configuration/
@@ -331,11 +326,6 @@ entries:
                 output: web
                 url: /docs/unity-react/configuration/repository-data-providers/
                 id: unity-react-configuration-repository-data-providers
-
-              - title: Datasources
-                output: web
-                url: /docs/unity-react/configuration/datasources/
-                id: unity-react-configuration-datasources
 
               - title: Solutions Configuration
                 output: web

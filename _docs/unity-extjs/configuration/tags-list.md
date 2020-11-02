@@ -12,14 +12,14 @@ LDAP
 UpdateTemplates    
 ViewerConfiguration    
 TreeModels    
-[Plugins](tags-list/plugins.md)    
+[Plugins](tags-list/plugins-tag.md)    
 UIProperties    
 SystemProperties    
 SSO  
 EnterpriseSearch    
 AccessRoles  
 Actions    
-Datasources  
+[Datasources](tags-list/datasources-tag.md)  
 Selectors    
 Facets  
 Properties   
