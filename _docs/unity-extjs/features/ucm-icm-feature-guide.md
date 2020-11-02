@@ -68,7 +68,9 @@ ICM requires Case Manager version 5.3.0.0 or above, IBM WebSphere JDK 1.8, SQL S
 The following classes should be created in a Target object store for IBM Case Manager
 solution:
 
-*images to be added*
+![Ucm Case External Link](ucm-icm-feature-guide/images/ucm-case-external-link.png)
+
+![Audit](ucm-icm-feature-guide/images/audit.png)
 
 # Feature Configuration
 
@@ -1204,10 +1206,9 @@ Sample configuration:
 ```
 
 ### Work Item Tools
-Out of the box, the following tools are supported for the UCM work item:
-- [Reassign](#reassign)
 
 #### Reassign
+
 Allows to reassign selected work item to another user.
 
 Sample configuration for `Assign To` field as a `Lookup`:
@@ -1363,7 +1364,7 @@ Sample configuration:
 
 ### Document Tools
 
-ICM documents tools are used to take actions on documents in the iCM context. You can link
+ICM documents tools are used to take actions on documents in the ICM context. You can link
 existing repository document to the ICM Case or upload a new document to the repository and
 associate this document with ICM Case. Also, you can unlink associated documents from the
 ICM Case.
