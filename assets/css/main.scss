@@ -193,15 +193,6 @@ img {
   height: auto;
 }
 
-h1::before {
-  display: block;
-  content: " ";
-  margin-top: -64px;
-  height: 64px;
-  visibility: hidden;
-  pointer-events: none;
-}
-
 h1 {
   font-size: 2.5rem;
   margin: 0.5rem 0;
