@@ -14,6 +14,8 @@ category: Unity 7
 - Adding document with permission. 
     [Adding document with permission](../../configuration/actions/add-document.md#adding-with-permissions)  
 
+![AddDocument Image](add-document/add-document.png)
+
 *content to be added*  
 
 # Configuration
