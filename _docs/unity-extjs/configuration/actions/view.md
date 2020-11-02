@@ -3,7 +3,6 @@ title: View Action Configuration
 layout: docs
 category: Unity 7
 ---
-
 Following action can be added to Unity system configuration file:
 
 ```xml
@@ -33,7 +32,7 @@ Following action can be added to Unity system configuration file:
             </Parameters>
             <CustomParameters>
                 <CheckExistence>true</CheckExistence>
-				<ViewerProperties>
+                <ViewerProperties>
                     <ViewerProperty>MimeType</ViewerProperty>
                     <ViewerProperty>DocumentTitle</ViewerProperty>
                     <ViewerProperty>$id</ViewerProperty>
@@ -47,7 +46,17 @@ Following action can be added to Unity system configuration file:
             </Security>
         </Action>
 ```
+View action custom parameters:
 
-### Make Unity check if user has access to view document before trying to open document in viewer
+| Parameter       | Description |
+|:----------------|:------------|
+|CheckExistence   | *content to be added* |
+|ViewerProperties | *content to be added* |
+|EnableRule       | *content to be added* |
 
-Once multiselect set to false and CheckExistence in CustomParameters section is set to true then 'permissions/check' roundtrip to server will be performed before the actual action. It may be useful for crawled items being retrieved by the user with no rights to view it.
+# Configuration options
+
+## How to check if user has access to view document before trying to open document in viewer
+
+Once `multiselect` set to `false` and `CheckExistence` in `CustomParameters` section is set to `true` then `'permissions/check'` roundtrip to server will be performed before the actual action. 
+It may be useful for crawled items being retrieved by the user with no rights to view it.
