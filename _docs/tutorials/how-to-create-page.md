@@ -193,6 +193,8 @@ Use `# Heading Level 1` with all capital letters to write titles of chapters. Th
 
 Use `## Heading level 2`, `### Heading level 3` and `#### Heading level 4` with only first capital letter to write subchapters.  
 
+Use proper order for heading levels. Do not place `### Heading level` under `# Heading Level`.
+
 | **Note:** All headings must be different, then they might be anchors for links.  
 
 Use backticks (`) to write: 
@@ -275,7 +277,8 @@ Make sure this file doesn't contain any confidential information like passwords 
 
 ### Tables using 
 
-The simpler the better. Big tables might be rendered unpredictable. 
+The simpler the better. Big tables might be rendered unpredictable.  
+Keep empty row before and after table code. 
 
 ### Confidential information 
 
@@ -315,7 +318,7 @@ To open page in local environment:
 - go to Docker's `Settings > Resources > File Sharing` and add project directory: 
     ![docker-sharing](how-to-create-page/images/docker-sharing.png) 
 - in Command Prompt go to project directory 
-- run `jekyll.bat`
+- run `jekyll.bat` or `jekyll.bat --incremental` for faster processing
 - open `localhost:4000` in browser to view project
 
 # Verifying
