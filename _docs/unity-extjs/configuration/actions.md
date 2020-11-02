@@ -4,7 +4,7 @@ layout: docs
 category: Unity 7
 ---
 
-# About actions
+# Overview
 
 Actions section in Unity configuration defines a list of available actions. 
 ```xml
@@ -37,6 +37,6 @@ Action behavior customized by attributes and tags. There are attributes and tags
 
 # Specific actions options
 There are a lot of options for specific actions that could be customized:
-### [Add Document](actions/add-document.md)
-### [Get Info](actions/get-info.md)
-### [Properties](actions/properties.md)
+- [Add Document](actions/add-document.md)
+- [Get Info](actions/get-info.md)
+- [Properties](actions/properties.md)
