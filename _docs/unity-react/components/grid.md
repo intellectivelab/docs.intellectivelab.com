@@ -53,32 +53,32 @@ Details View screen is divided into several panels as shown below:
 
 # Grid Features
 
-Grouping  
-[Multiple Column Sorting](grid/multiple-column-sorting.md)  
-[Column resizing](grid/column-resizing.md)  
-Column locking  
-Column spanning  
-Column reordering  
-Column menu  
-Column cell formatting  
-Column cell tools and actions   
-Column cell rendering customization  
-Record text links   
-Multiple row selection  	
-Row action  
-Bulk action  
-Ability to add a custom grid action   
-Row actions menu   
-Expandable rows  
-Pagination  
-Ability to use a custom grid pagination   
-Infinite scrolling  
-Data export  
-Display density settings  
-Ability to compose with other components   
-Adaptive  
-Responsive  
-Configurable  
+## Grouping
+## [Multiple Column Sorting](grid/multiple-column-sorting.md)
+## [Column resizing](grid/column-resizing.md)
+## Column locking
+## Column spanning
+## Column reordering
+## Column menu
+## Column cell formatting
+## Column cell tools and actions 
+## Column cell rendering customization
+## Record text links 
+## Multiple row selection	
+## Row action
+## Bulk action
+## Ability to add a custom grid action 
+## Row actions menu 
+## Expandable rows
+## Pagination
+## Ability to use a custom grid pagination 
+## Infinite scrolling
+## Data export
+## Display density settings
+## Ability to compose with other components 
+## Adaptive
+## Responsive
+## Configurable
 
 # Configuration
 
