@@ -11,10 +11,9 @@ category: Unity 7
     [Tree model](../../configuration/actions/add-document.md#tree-model-configuration) must be properly configured. 
 - Document class selection. 
     [Document class selector](../../configuration/actions/add-document.md#document-class-selector-configuration) must be properly configured.
-- Adding document with permission. 
-    [Adding document with permission](../../configuration/actions/add-document.md#adding-with-permissions)  
+- [Adding document with permission](../../configuration/actions/add-document.md#adding-with-permissions).  
 
-![AddDocument Image](add-document/add-document.png)
+![AddDocument Image](add-document/images/add-document.png)
 
 *content to be added*  
 
