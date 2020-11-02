@@ -108,13 +108,21 @@ $(function () {
     tocs.toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h1,h2,h3,h4' });
 
     /* this offset helps account for the space taken up by the floating toolbar. */
-    tocs.on('click', 'a', function () {
-        var target = $(this.getAttribute('href'))
-            , scroll_target = target.offset().top
+    var offsetTop = function() {
+        var href = this.getAttribute('href');
 
-        $(window).scrollTop(scroll_target - 90);
-        return false
-    })
+        if(href && href.indexOf('http') !== 0) {
+            var target = $(href),
+            scrollTarget = target.offset().top;
+
+            $(window).scrollTop(scrollTarget - 90);
+            return false;
+        }
+    }
+
+    tocs.on('click', 'a', offsetTop);
+
+    $('#markdown-content-container').on('click', 'a', offsetTop);
 
 });
 

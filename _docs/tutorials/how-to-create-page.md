@@ -3,7 +3,7 @@ title: How To Create Page
 layout: docs
 category: Unity 7
 ---
-This is a guide how to create page for github documentation site using Markdown syntax. If you know Markdown syntax, start from [Markdown file structure and page structure](how-to-create-page.md#markdown-file-structure-and-page-structure).  
+This is a guide how to create page for github documentation site using Markdown syntax. If you know Markdown syntax, start from [Markdown file structure and page structure](#markdown-file-structure-and-page-structure).  
 
 # Markdown Syntax 
 
