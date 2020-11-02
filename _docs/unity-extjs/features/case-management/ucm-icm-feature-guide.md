@@ -14,9 +14,13 @@ The following UI elements were implemented:
 
 - Inbasket Search
 
-    ![Inbasket Search Horizontal](ucm-icm-feature-guide/images/image7.png)
+    - Horizontal:  
 
-    ![Inbasket Search Vertical](ucm-icm-feature-guide/images/image8.png)
+        ![Inbasket Search Horizontal](ucm-icm-feature-guide/images/image7.png)
+
+    - Vertical:  
+
+        ![Inbasket Search Vertical](ucm-icm-feature-guide/images/image8.png)
     
 - Case View
 
@@ -32,13 +36,17 @@ The following UI elements were implemented:
 
 - History/Comment Tab
 
-    ![History Tabl](ucm-icm-feature-guide/images/image12.png)
+    ![History Tab](ucm-icm-feature-guide/images/image12.png)
 
 - Add Local Document
 
-    ![Document Source Selection](ucm-icm-feature-guide/images/image13.png)
+    - Document source selection:  
+
+        ![Document Source Selection](ucm-icm-feature-guide/images/image13.png)
+ 
+    - Document adding:  
     
-    ![Document Adding](ucm-icm-feature-guide/images/image14.png)
+        ![Document Adding](ucm-icm-feature-guide/images/image14.png)
     
 - Attach Repository Document
 
@@ -46,13 +54,13 @@ The following UI elements were implemented:
 
 - Reassign
 
-    `Assign To` field as a Selector:
+    - `Assign To` field as a Selector:  
     
-    ![Assign Selector](ucm-icm-feature-guide/images/image-assign-selector.png)
+        ![Assign Selector](ucm-icm-feature-guide/images/image-assign-selector.png)
    
-    `Assign To` field as a Lookup
+    - `Assign To` field as a Lookup:  
     
-    ![Assign Lookup](ucm-icm-feature-guide/images/image-assign-lookup.png)
+        ![Assign Lookup](ucm-icm-feature-guide/images/image-assign-lookup.png)
 
 
 
