@@ -40,54 +40,11 @@ UserAudit
 
 # Solution Tags
 
-SolutionConfig  
-
-FieldSets  
-- FieldSet  
-- Field  
-- Expando  
-
-FieldTypes  
-- FieldType  
-
-[Lookups](tags-list/lookups.md)  
-- Lookup  
-- Parameters  
-- Parameter  
-
-Inbaskets  
-- Inbasket  
-- Roles  
-- Role  
-- WorkQueueFilter  
-- Query  
-- BrowseColumns  
-- InbasketFilters  
-- Actions  
-
-Pages  
-
-Tools  
-- Tool  
-- CustomParameters  
-- Parameter  
-
-Views 
- 
-- Cases  
-    - Create  
-    - Tabs  
-    - Tab  
-    - Active  
-    - Tools  
-    - CustomParameters  
-    - Parameter  
-    - Closed   
-- Documents  
-    - Create  
-    - Open  
-- WorkItems  
-    - TabSets  
-    - Rules  
-    - Rule  
-    - Definition
+SolutionConfig    
+FieldSets    
+FieldTypes    
+[Lookups](tags-list/lookups.md)    
+Inbaskets    
+Pages    
+Tools    
+Views  

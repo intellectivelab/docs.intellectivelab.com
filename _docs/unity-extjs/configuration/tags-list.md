@@ -40,7 +40,12 @@ UserAudit
 
 # Solution Tags
 
-
-
-
+SolutionConfig    
+FieldSets    
+FieldTypes    
+Lookups  
+Inbaskets    
+Pages    
+Tools    
+Views  
 
