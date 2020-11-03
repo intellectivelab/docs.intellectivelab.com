@@ -39,7 +39,7 @@ It will lead to comment deletion and grid refresh.
 
 `Cancel` button is intended for action cancellation.
 
-## Configuration 
+# Configuration 
 
 *content to be added*
 

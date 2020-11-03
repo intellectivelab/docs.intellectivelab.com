@@ -77,5 +77,5 @@ If action configuration contains references to viewTypes, please make sure the p
 </Tabs>
 ```
 
-Security section defines action accessibility. Please refer to [Security Restrictions](../access-roles.md#security-restrictions) for more information about security configuration. 
+Security section defines action accessibility. Please refer to [Security Restrictions](../security.md#security-restrictions) for more information about security configuration. 
 
