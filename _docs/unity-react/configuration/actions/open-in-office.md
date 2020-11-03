@@ -90,3 +90,121 @@ Example:
 </Grid>
 
 ``` 
+
+# Open in Office Actions Configuration for SharePoint documents
+
+## Open in browser action
+
+For `Open in browser` action following section should be added to the Unity System XML file:
+ 
+```xml
+<Action ID="openInBrowser" multiselect="false" scope="any" type="toolbar">
+  <Name>Open In Office 365</Name>
+  <IconCls>action-view-link</IconCls>
+  <Tooltip>Open In Office 365</Tooltip>
+  <Uri/>
+  <Parameters/>
+  <CustomParameters>
+    <ResourceName>documents</ResourceName>
+    <ActionType>open.browser</ActionType>
+    <!-- not relevant nodes skipped -->
+  </CustomParameters>
+  <Security>
+    <AllowRole>canCheckOutDownload</AllowRole>
+  </Security>
+</Action>
+```
+
+`Open in browser` action custom configuration parameters:
+
+| Parameter   | Description |
+|:------------|:------------|
+|ResourceName | documents |
+|ActionType   | open.browser|
+
+## Check out and open in browser action
+
+For `Check out and open in browser` action following section should be added to the Unity System XML file:
+ 
+```xml
+<Action ID="checkOutOpenInBrowser" multiselect="false" scope="any" type="toolbar">
+  <Name>Check Out and Open In Office 365</Name>
+  <IconCls>action-view-link</IconCls>
+  <Tooltip>Check Out and Open In Office 365</Tooltip>
+  <Uri/>
+  <Parameters/>
+  <CustomParameters>
+    <ResourceName>documents</ResourceName>
+    <ActionType>checkout.browser</ActionType>
+    <!-- not relevant nodes skipped -->
+  </CustomParameters>
+  <Security>
+    <AllowRole>canCheckOutDownload</AllowRole>
+  </Security>
+</Action>
+```
+
+`Check out and open in browser` action custom configuration parameters:
+
+| Parameter   | Description |
+|:------------|:------------|
+|ResourceName | documents |
+|ActionType   | checkout.browser|
+
+## Open in desktop app action
+
+For `Open in desktop app` action following section should be added to the Unity System XML file:
+ 
+```xml
+<Action ID="openInDesktopApp" multiselect="false" scope="any" type="toolbar">
+  <Name>Open In Office Desktop App</Name>
+  <IconCls>action-view-link</IconCls>
+  <Tooltip>Open In Office Desktop App</Tooltip>
+  <Uri/>
+  <Parameters/>
+  <CustomParameters>
+    <ResourceName>documents</ResourceName>
+    <ActionType>open.desktop</ActionType>
+    <!-- not relevant nodes skipped -->
+  </CustomParameters>
+  <Security>
+    <AllowRole>canCheckOutDownload</AllowRole>
+  </Security>
+</Action>
+```
+
+`Open in desktop app` action custom configuration parameters:
+
+| Parameter   | Description |
+|:------------|:------------|
+|ResourceName | documents |
+|ActionType   | open.desktop|
+
+##  Check out and open in desktop app action
+
+For `Check out and open in desktop app` action following section should be added to the Unity System XML file:
+ 
+```xml
+<Action ID="checkOutOpenInDesktopApp" multiselect="false" scope="any" type="toolbar">
+  <Name>Check Out and Open In Office Desktop App</Name>
+  <IconCls>action-view-link</IconCls>
+  <Tooltip>Check Out and Open In Office Desktop App</Tooltip>
+  <Uri/>
+  <Parameters/>
+  <CustomParameters>
+    <ResourceName>documents</ResourceName>
+    <ActionType>checkout.desktop</ActionType>
+    <!-- not relevant nodes skipped -->
+  </CustomParameters>
+  <Security>
+    <AllowRole>canCheckOutDownload</AllowRole>
+  </Security>
+</Action>
+```
+
+`Check out and open in desktop app` action custom configuration parameters:
+
+| Parameter   | Description |
+|:------------|:------------|
+|ResourceName | documents |
+|ActionType   | checkout.desktop|

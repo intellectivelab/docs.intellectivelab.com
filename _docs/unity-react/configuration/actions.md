@@ -26,12 +26,14 @@ Action behavior customized by attributes and tags. There are attributes and tags
 - [Create document](../configuration/actions/create-document.md)
 - [Delete Document](../configuration/actions/delete-document.md)
 - [Open in Office](../configuration/actions/open-in-office.md)
+- [View content](../configuration/actions/view-content.md)
 
 ## Case related actions
  
 - [Split Case](../configuration/actions/split-case.md)
 - [Delete Case](../configuration/actions/delete-case.md)
 - [Attach new document to a case](../configuration/actions/attach-document.md)
+- [Attach existing document to a case](../configuration/actions/attach-existing-document.md)
 - [Detach Document](../configuration/actions/detach-document.md)
 
 ## Workitem related actions

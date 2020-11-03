@@ -19,7 +19,7 @@ category: Unity 7
 ## Case events timeline with infinite scrolling
 ## [Case attachments with folder view (search, navigate, attach, detach)](case-management/case-attachments.md) 
 ## [Attach a local document to the case](case-management/attach-document.md)
-## Attach an existing document to the case 
+## [Attach an existing document to the case](case-management/attach-existing-document.md) 
 ## [Split Case](case-management/split-case.md)
 ## Copy Case
 ## [Delete Case](case-management/delete-case.md)
