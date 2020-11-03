@@ -7,9 +7,9 @@ category: Unity 7
 
 ## Description
 
-View content action opens document in a new browser tab or downloads it (depending on document mime type). 
+`View content` action opens document in a new browser tab or downloads it (depending on document mime type). 
 
-View content action will be hidden if at least one of following actions are configured and available for the document:
+`View content` action will be hidden if at least one of following actions are configured and available for the document:
 
 - Open in Office
 
