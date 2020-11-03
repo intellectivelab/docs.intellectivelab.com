@@ -14,3 +14,7 @@ category: Unity 7
 # Macros Configuration
 
 *content to be added*
+
+# Environment Variables
+
+[Environment Variables](basic-steps/environment-variables.md)

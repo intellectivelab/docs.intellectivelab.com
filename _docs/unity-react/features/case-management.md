@@ -5,6 +5,8 @@ category: Unity 7
 ---
 # Overview
 
+*content to be added*
+
 # Case Management Features
 
 ## Create a case
@@ -12,7 +14,7 @@ category: Unity 7
 ## Case search and navigation
 ## Case view and update properties 
 ## Case history
-## [Case user comments (search, add, view, update, delete)](case-management/case-user-comments.md) 
+## [Case user comments (search, add, view, update, delete)](case-management/case-user-comments.md)   
 ## Case activity feed with infinite scrolling
 ## Case events timeline with infinite scrolling
 ## [Case attachments with folder view (search, navigate, attach, detach)](case-management/case-attachments.md) 
@@ -22,8 +24,9 @@ category: Unity 7
 ## Copy Case
 ## [Delete Case](case-management/delete-case.md)
 ## Close Case 
-## Re-open Case 
+## Re-open Case
 ## Case tasks view (search, create, view, complete, reassign) 
 ## Case work items view (search, view, process, complete, reassign) 
 ## Copy link
 ## [Open Case By URL](case-management/open-case-by-url.md)
+  
