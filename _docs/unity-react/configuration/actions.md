@@ -8,6 +8,7 @@ category: Unity 7
 - [Create document](../configuration/actions/create-document.md)
 - [Delete Document](../configuration/actions/delete-document.md)
 - [Open in Office](../configuration/actions/open-in-office.md)
+- [View content](../configuration/actions/view-content.md)
 
 # Case related actions
 
