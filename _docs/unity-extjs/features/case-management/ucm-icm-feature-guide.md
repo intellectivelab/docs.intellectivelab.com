@@ -138,8 +138,8 @@ For example:
 ```
 ### WorkObjects search
 
-In order to configure SearchTemplate with WorkObjects 
-- through the Queue it is necessary to put these parameters: 
+In order to configure SearchTemplate with WorkObjects use the following: 
+- through the `Queue`: 
     ```xml
     <OperationProperties> 
         <Property ID="SolutionId">CustomerComplaints</Property> 
@@ -148,7 +148,7 @@ In order to configure SearchTemplate with WorkObjects
     </OperationProperties> 
     ```
 
-- through the Database use following approach: 
+- through the `Database`: 
     ```xml
     <OperationProperties> 
         <Property ID="SolutionId">CustomerComplaints</Property> 
@@ -157,7 +157,8 @@ In order to configure SearchTemplate with WorkObjects
         <Property ID="UCM.DB.Where"></Property>
     </OperationProperties> 
     ```
-    - through the DB (My Work): 
+  
+- through the `DB (My Work)`: 
     ```xml
     <OperationProperties> 
         <Property ID="SolutionId">CustomerComplaints</Property> 
@@ -167,7 +168,7 @@ In order to configure SearchTemplate with WorkObjects
     </OperationProperties> 
     ```
 
-- through the roster (all workitems): 
+- through the `roster (all workitems)`: 
     ```xml
     <OperationProperties> 
         <Property ID="SolutionId">CustomerComplaints</Property>
@@ -385,9 +386,9 @@ Sample view configuration:
 ```
 The following view types are supported at ICM:
 
-1. Case view (existing case views, new case views). It's possible to define case view
+- Case view (existing case views, new case views). It's possible to define case view
 separately for each case type.
-2. Work Item / Task view. Each work item type can have different view definition. The rulebased approach is used to establish the link between the existing work item and the view
+- Work Item / Task view. Each work item type can have different view definition. The rulebased approach is used to establish the link between the existing work item and the view
 definition that should be used to display/edit the data of this work item.
 
 ## Work Item views
@@ -458,7 +459,7 @@ The rules definitions include Rule elements:
 
 |Tag   |Description   |
 |:-----|:-------------|
-|TabSet	              |Tab set reference (refers SolutionConfig/Views/WorkItems/TabSets/Tabs/@ID) Used to get specific tab set if the rule evaluation results in `TRUE`.|
+|TabSet	              |Tab set reference (refers `SolutionConfig/Views/WorkItems/TabSets/Tabs/@ID`) Used to get specific tab set if the rule evaluation results in `TRUE`.|
 |TaskType	          |The work item type. The rule is only evaluated if the source work item has the same type as Rule's `TaskType` value. The rule is skipped otherwise.|
 |Type	              |The rule syntax type. The only supported value for Unity 7.2 is `spring`. `spring` type means that rule definition should be in [Spring Expression format](https://docs.spring.io/spring/docs/4.1.6.RELEASE/spring-framework-reference/html/expressions.html).|
 |skipOnMissingProperty|	
@@ -475,7 +476,7 @@ main Unity configuration file and ICM solution configuration file.
 item details tabs). The configuration of such tabs is located solely at ICM solution configuration
 file.
 
-Another possible option of ICM view tab can be xtype defined tab. Tab panel xtype can be set
+Another possible option of ICM view tab can be `xtype` defined tab. Tab panel `xtype` can be set
 using `Tabs/Tab/@XType` attribute.
 
 ### Field set definition
@@ -484,25 +485,25 @@ Location: `SolutionConfig/FieldSets/FieldSet`
 
 |Tag   |Description   |
 |:-----|:-------------|
-|FieldSet/@ID         | Unique field set id, used to link field set with other entities (for example view tabs).|
-|FieldSet/Field/@ID   | Field id should match symbolic name of the property in Content Engine (for CE fields) or workflow property (for PE only fields)|
-|FieldSet/Field/@Label| Field label will be displayed to the user as a column header for grid view or property name for form view|
-|FieldSet/Field/@Required| Application will validate that property values is not null and will not allow to save the changes if `Required="true"` for the field. This property is applicable only for form view and will be ignored for grid view.|
-|FieldSet/Field/@Favorite| Favorite (`Favorite="true"`) field will be displayed as case header for case details. Only one field can be set as Favorite. This property will be ignored for all field sets, except the one used for case fields configuration.|
-|FieldSet/Field/@Format| Format field allows to configure date format (Please see Date format definition for more details) format for example, `d/m/Y`, `m/d/Y`, or `m/d/Y g:i A`)|
-|FieldSet/Field/@Hidden| Hidden (`Hidden = true`) fields are not displayed on the screen, but can be used by client code.|
-|FieldSet/Field/@ReadOnly| Read only (`ReadOnly="true"`) fields will be displayed on the screen, but users will not be able to edit them. This property is applicable only for form view and will be ignored for grid view.|
-|FieldSet/Field/@Row| Row property determines the row on a form, where the field will be displayed. Several fields may have the same row, but different columns. Row/column combination should be unique. Fields will be displayed in the same order as in a field set if row property is not populated. This property is applicable only for form view and will be ignored for grid view.|
-|FieldSet/Field/@Rows| Number of rows for multi-row fields (`MultiRow="true"`). This property is applicable only for multi-row fields on a form view and will be ignored for all other fields.|
-|FieldSet/Field/@Column| Column property determines the column on a form, where the field will be displayed. Row property should be configured for fields with column property. Row/column combination should be unique. This property is applicable only for form view and will be ignored for grid view.|
-|FieldSet/Field/@MultiRow| Field box will have multiple rows if `MultiRow="true"`. Number of rows is configured in Rows field.|
-|FieldSet/Field/@Custom| Configure `Custom="true"` for custom fields. XType property is required for custom field configuration.|
-|FieldSet/Field/@XType| XType registered for the custom field.|
-|FieldSet/Field/@Length| Maximum length field in characters. Application will show an error message if field length exceeds the configured length.|
-|FieldSet/Field/@SelectorID| Selector ID for Vega Unity selectors.|
+|FieldSet/`ID`         | Unique field set id, used to link field set with other entities (for example view tabs).|
+|FieldSet/Field/`ID`   | Field id should match symbolic name of the property in Content Engine (for CE fields) or workflow property (for PE only fields)|
+|FieldSet/Field/`Label`| Field label will be displayed to the user as a column header for grid view or property name for form view|
+|FieldSet/Field/`Required`| Application will validate that property values is not null and will not allow to save the changes if `Required="true"` for the field. This property is applicable only for form view and will be ignored for grid view.|
+|FieldSet/Field/`Favorite`| Favorite (`Favorite="true"`) field will be displayed as case header for case details. Only one field can be set as Favorite. This property will be ignored for all field sets, except the one used for case fields configuration.|
+|FieldSet/Field/`Format`| Format field allows to configure date format (Please see Date format definition for more details) format for example, `d/m/Y`, `m/d/Y`, or `m/d/Y g:i A`)|
+|FieldSet/Field/`Hidden`| Hidden (`Hidden = "true"`) fields are not displayed on the screen, but can be used by client code.|
+|FieldSet/Field/`ReadOnly`| Read only (`ReadOnly="true"`) fields will be displayed on the screen, but users will not be able to edit them. This property is applicable only for form view and will be ignored for grid view.|
+|FieldSet/Field/`Row`| Row property determines the row on a form, where the field will be displayed. Several fields may have the same row, but different columns. Row/column combination should be unique. Fields will be displayed in the same order as in a field set if row property is not populated. This property is applicable only for form view and will be ignored for grid view.|
+|FieldSet/Field/`Rows`| Number of rows for multi-row fields (`MultiRow="true"`). This property is applicable only for multi-row fields on a form view and will be ignored for all other fields.|
+|FieldSet/Field/`Column`| Column property determines the column on a form, where the field will be displayed. Row property should be configured for fields with column property. Row/column combination should be unique. This property is applicable only for form view and will be ignored for grid view.|
+|FieldSet/Field/`MultiRow`| Field box will have multiple rows if `MultiRow="true"`. Number of rows is configured in Rows field.|
+|FieldSet/Field/`Custom`| Configure `Custom="true"` for custom fields. XType property is required for custom field configuration.|
+|FieldSet/Field/`XType`| XType registered for the custom field.|
+|FieldSet/Field/`Length`| Maximum length field in characters. Application will show an error message if field length exceeds the configured length.|
+|FieldSet/Field/`SelectorID`| Selector ID for Vega Unity selectors.|
 |FieldSet/Expando| Expandos are used to group properties (fields). User can collapse the expando to hide all properties configured for it and save some space on the screen. Only one level of expandos is supported. One expando cannot be placed in another expando. Expandos are applicable for form view only.|
-|FieldSet/Expando/@Expanded| Configure `Expanded="false"` if you want expando to be collapsed by default and `Expanded="true"` if you want it to be expanded by default
-|FieldSet/Expando/@Name| Expando Name will be displayed in expando header|
+|FieldSet/Expando/`Expanded`| Configure `Expanded="false"` if you want expando to be collapsed by default and `Expanded="true"` if you want it to be expanded by default
+|FieldSet/Expando/`Name`| Expando Name will be displayed in expando header|
 
 ```xml
 <FieldSets>
