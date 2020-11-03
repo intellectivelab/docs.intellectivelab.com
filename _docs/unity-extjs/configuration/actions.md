@@ -14,9 +14,9 @@ Actions section in Unity configuration defines a list of available actions.
 </Actions>
 ```
 
-Action behavior customized by attributes and tags. There are attributes and tags common for most actions: 
+Action behavior customized by attributes and tags. There are attributes and tags common for most actions and [specific options](#specific-actions-options) for each action.  
 
-## Common action attributes
+# Common action attributes and tags
 
 | Attribute | Description                              | 
 |:--------------|:-----------------------------------------|
@@ -25,7 +25,6 @@ Action behavior customized by attributes and tags. There are attributes and tags
 | scope         | ```[single|any]``` TBD|
 | type          | ```[toolbar|context-menu|column-click]``` TBD|
 
-## Common action tags
 
 | Tag       | Description                              | 
 |:----------|:-----------------------------------------|
@@ -36,7 +35,15 @@ Action behavior customized by attributes and tags. There are attributes and tags
 | CustomParameters  | Define custom action parameters. Could be overridden per data provider.   | 
 
 # Specific actions options
-There are a lot of options for specific actions that could be customized:
+
+## Document related actions
+
 - [Add Document](actions/add-document.md)
 - [Get Info](actions/get-info.md)
 - [Properties](actions/properties.md)
+
+## Case related actions
+
+## Workitem related actions
+
+## Other actions
