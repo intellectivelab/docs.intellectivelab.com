@@ -69,7 +69,7 @@ category: Unity 7
 All criteria work as `AND` clause but `OR` clause can be configured using specific plugin `orGroupSupportTemplateQueryPlugin`. 
 
 Steps to configure `OR` clause: 
-- [Plugin for `OR` clause](../configuration/plugins/plugin-for-or-clause.md) should be configured
+- [Plugin for `OR` clause](tags-list/plugins-tag/plugin-for-or-clause.md) should be configured
 - The following parameters should be added to the Search Templates: 
 
     ```xml

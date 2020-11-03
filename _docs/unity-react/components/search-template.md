@@ -5,17 +5,17 @@ category: Unity 7
 ---
 # Overview
 
+*content to be added*
+
 # Search Template Features
 
-## Configurable 
-## Grid 
+## Configurable
+## Grid
 ## Search criteria 
 ## Folder view 
 ## Ability to bundle multiple search templates 
-## Ability to link multiple search templates 
-[U7-2713](https://jira.intellective.com/browse/U7-2713) 
-
-## Fuzzy search 
+## Ability to link multiple search templates [U7-2713](https://jira.intellective.com/browse/U7-2713)
+## Fuzzy search
 ## Enterprise search 
 ## Quick search (date ranges, text input, choices, and categories)
 ## Recent view history – a list of references to recently viewed items
@@ -25,3 +25,7 @@ category: Unity 7
 ## Responsive
 ## Ability to compose with other components
 ## [Supported data providers](search-template/supported-data-providers.md)
+
+# Configuration
+
+[Search Templates Configuration](../configuration/search-templates.md)

@@ -30,6 +30,6 @@ Open By URL Action custom configuration parameters:
 |ActionType | `open_by_url` |
 |UrlPattern | URL pattern. Supports macros in the following format: `${key}`, where `key` is a property name of the object being opened. Macros will be replaced with the object property values. |
 
-Security section defines action accessibility. Please refer to [Security Restrictions](../access-roles.md#security-restrictions) for more information about security configuration. 
+Security section defines action accessibility. Please refer to [Security Restrictions](../security.md#security-restrictions) for more information about security configuration. 
 
 Action should be added to the Grid. Refer to [How to Add Action to the Grid](../grids.md#how-to-add-action-to-the-grid)

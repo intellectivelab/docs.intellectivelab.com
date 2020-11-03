@@ -52,5 +52,5 @@ Example for Open In Office actions:
 
 | Parameter           | Description |
 |:--------------------|:------------|
-| SortField           | `SortField` value refers to a [Property](../configuration/properties.md) `ID` attribute (the property should be sortable).  Default sorting may be defined on the `Grid` level or on the [SearchTemplate](../configuration/search-templates.md#sorting-configuration) level. If defined on both levels, setting from the `Grid` is in effect.     |
+| SortField           | `SortField` value refers to a [Property](tags-list/properties-tag.md) `ID` attribute (the property should be sortable).  Default sorting may be defined on the `Grid` level or on the [SearchTemplate](../configuration/search-templates.md#sorting-configuration) level. If defined on both levels, setting from the `Grid` is in effect.     |
 | SortField >> Order  | Optional `Order` attribute may have value `ASC` for ascending and `DESC` for descending order (`ASC` is a default). |

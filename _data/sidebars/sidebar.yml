@@ -113,55 +113,35 @@ entries:
                 url: /docs/unity-extjs/configuration/basic-steps/
                 id: unity-extjs-configuration-basic-steps
 
-              - title: Tree Models
+              - title: Tabs
                 output: web
-                url: /docs/unity-extjs/configuration/tree-models/
-                id: unity-extjs-configuration-tree-models
-
-              - title: System Properties
-                output: web
-                url: /docs/unity-extjs/configuration/system-properties/
-                id: unity-extjs-configuration-system-properties
-
-              - title: Actions
-                output: web
-                url: /docs/unity-extjs/configuration/actions/
-                id: unity-extjs-configuration-actions
-
-              - title: Datasources
-                output: web
-                url: /docs/unity-extjs/configuration/datasources/
-                id: unity-extjs-configuration-datasources
-
-              - title: Selectors
-                output: web
-                url: /docs/unity-extjs/configuration/selectors/
-                id: unity-extjs-configuration-selectors
-
-              - title: Properties
-                output: web
-                url: /docs/unity-extjs/configuration/properties/
-                id: unity-extjs-configuration-properties
+                url: /docs/unity-extjs/configuration/tabs/
+                id: unity-extjs-configuration-tabs
 
               - title: Grids
                 output: web
                 url: /docs/unity-extjs/configuration/grids/
                 id: unity-extjs-configuration-grids
 
-              - title: Tabs
+              - title: Actions
                 output: web
-                url: /docs/unity-extjs/configuration/tabs/
-                id: unity-extjs-configuration-tabs
+                url: /docs/unity-extjs/configuration/actions/
+                id: unity-extjs-configuration-actions
+
+              - title: Search Criteria Panel
+                output: web
+                url: /docs/unity-extjs/configuration/search-criteria-panel/
+                id: unity-extjs-configuration-search-criteria-panel
+
+              - title: Properties View Form
+                output: web
+                url: /docs/unity-extjs/configuration/properties-view-form/
+                id: unity-extjs-configuration-properties-view-form
 
               - title: Search Templates
                 output: web
                 url: /docs/unity-extjs/configuration/search-templates/
                 id: unity-extjs-configuration-search-templates
-
-              - title: Column Sets
-                output: web
-                url: /docs/unity-extjs/configuration/column-sets/
-                id: unity-extjs-configuration-column-sets
 
               - title: Repository Data Providers
                 output: web
@@ -173,19 +153,15 @@ entries:
                 url: /docs/unity-extjs/configuration/solutions-configuration/
                 id: unity-extjs-configuration-solutions-configuration
 
-              - title: Access Roles
+              - title: Security
                 output: web
-                url: /docs/unity-extjs/configuration/access-roles/
-                id: unity-extjs-configuration-access-roles
+                url: /docs/unity-extjs/configuration/security/
+                id: unity-extjs-configuration-security
 
-              - title: Plugins
+              - title: Tags List
                 output: web
-                url: /docs/unity-extjs/configuration/plugins/
-
-              - title: Others
-                output: web
-                url: /docs/unity-extjs/configuration/others/
-                id: unity-extjs-configuration-others
+                url: /docs/unity-extjs/configuration/tags-list/
+                id: unity-extjs-configuration-tags-list
 
           - title: Customization
             output: web, pdf
@@ -239,15 +215,15 @@ entries:
                 url: /docs/unity-react/features/integration/
                 id: unity-react-features-integration
 
+              - title: Features Comparison List
+                output: web
+                url: /docs/unity-react/features/features-comparison-list/
+                id: unity-react-features-features-comparison-list
+
           - title: Components
             output: web, pdf
             id: unity-react-components
             subfolders:
-              - title: Design Principles
-                output: web
-                url: /docs/unity-react/components/design-principles/
-                id: unity-react-components-design-principles
-
               - title: Grid
                 output: web
                 url: /docs/unity-react/components/grid/
@@ -268,6 +244,11 @@ entries:
                 url: /docs/unity-react/components/search-template/
                 id: unity-react-components-search-template
 
+              - title: Perspective
+                output: web
+                url: /docs/unity-react/components/perspective/
+                id: unity-react-components-perspective
+
               - title: Dashboard
                 output: web
                 url: /docs/unity-react/components/dashboard/
@@ -283,10 +264,10 @@ entries:
                 url: /docs/unity-react/components/indicator/
                 id: unity-react-components-indicator
 
-              - title: User Preferences
+              - title: Security
                 output: web
-                url: /docs/unity-react/components/user-preferences/
-                id: unity-react-components-user-preferences
+                url: /docs/unity-react/components/security/
+                id: unity-react-components-security
 
           - title: Installation
             output: web, pdf
@@ -316,45 +297,30 @@ entries:
                 url: /docs/unity-react/configuration/basic-steps/
                 id: unity-react-configuration-basic-steps
 
-              - title: System Properties
+              - title: Grids
                 output: web
-                url: /docs/unity-react/configuration/system-properties/
-                id: unity-react-configuration-system-properties
+                url: /docs/unity-react/configuration/grids/
+                id: unity-react-configuration-grids
 
               - title: Actions
                 output: web
                 url: /docs/unity-react/configuration/actions/
                 id: unity-react-configuration-actions
 
-              - title: Datasources
+              - title: Search Criteria Panel
                 output: web
-                url: /docs/unity-react/configuration/datasources/
-                id: unity-react-configuration-datasources
+                url: /docs/unity-react/configuration/search-criteria-panel/
+                id: unity-react-configuration-search-criteria-panel
 
-              - title: Selectors
+              - title: Properties View Form
                 output: web
-                url: /docs/unity-react/configuration/selectors/
-                id: unity-react-configuration-selectors
-
-              - title: Properties
-                output: web
-                url: /docs/unity-react/configuration/properties/
-                id: unity-react-configuration-properties
-
-              - title: Grids
-                output: web
-                url: /docs/unity-react/configuration/grids/
-                id: unity-react-configuration-grids
+                url: /docs/unity-react/configuration/properties-view-form/
+                id: unity-react-configuration-properties-view-form
 
               - title: Search Templates
                 output: web
                 url: /docs/unity-react/configuration/search-templates/
                 id: unity-react-configuration-search-templates
-
-              - title: Column Sets
-                output: web
-                url: /docs/unity-react/configuration/column-sets/
-                id: unity-react-configuration-column-sets
 
               - title: Repository Data Providers
                 output: web
@@ -366,35 +332,35 @@ entries:
                 url: /docs/unity-react/configuration/solutions-configuration/
                 id: unity-react-configuration-solutions-configuration
 
-              - title: Facets
-                output: web
-                url: /docs/unity-react/configuration/facets/
-                id: unity-react-configuration-facets
-
               - title: Perspectives
                 output: web
                 url: /docs/unity-react/configuration/perspectives/
                 id: unity-react-configuration-perspectives
 
-              - title: UI Components
+              - title: Dashboards
                 output: web
-                url: /docs/unity-react/configuration/ui-components/
-                id: unity-react-configuration-ui-components
+                url: /docs/unity-react/configuration/dashboards/
+                id: unity-react-configuration-dashboards
 
-              - title: Access Roles
+              - title: Charts
                 output: web
-                url: /docs/unity-react/configuration/access-roles/
-                id: unity-react-configuration-access-roles
+                url: /docs/unity-react/configuration/charts/
+                id: unity-react-configuration-charts
 
-              - title: Lookups
+              - title: Indicators
                 output: web
-                url: /docs/unity-react/configuration/lookups/
-                id: unity-react-configuration-lookups
+                url: /docs/unity-react/configuration/indicators/
+                id: unity-react-configuration-indicators
 
-              - title: Others
+              - title: Security
                 output: web
-                url: /docs/unity-react/configuration/others/
-                id: unity-react-configuration-others
+                url: /docs/unity-react/configuration/security/
+                id: unity-react-configuration-security
+
+              - title: Tags List
+                output: web
+                url: /docs/unity-react/configuration/tags-list/
+                id: unity-react-configuration-tags-list
 
           - title: Customization
             output: web, pdf

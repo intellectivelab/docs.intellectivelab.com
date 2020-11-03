@@ -38,7 +38,7 @@ For `Open in Office` action following section should be added to the Unity Syste
 |ResourceName | documents |
 |ActionType   | open.addon|
 
-Security section defines action accessibility. Please refer to [Security Restrictions](../access-roles.md#security-restrictions) for more information about security configuration.
+Security section defines action accessibility. Please refer to [Security Restrictions](../security.md#security-restrictions) for more information about security configuration.
 
 ## Check Out and Open in Office action
 
@@ -69,7 +69,7 @@ For `Check Out and Open in Office` action following section should be added to t
 |ResourceName | documents |
 |ActionType   | checkout.addon |
 
-Security section defines action accessibility. Please refer to [Security Restrictions](../access-roles.md#security-restrictions) for more information about security configuration.
+Security section defines action accessibility. Please refer to [Security Restrictions](../security.md#security-restrictions) for more information about security configuration.
 
 ## Adding actions to the Grid
 

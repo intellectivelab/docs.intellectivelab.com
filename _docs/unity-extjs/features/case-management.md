@@ -5,6 +5,8 @@ category: Unity 7
 ---
 # Overview
 
+*content to be added*
+
 ## Case 
 
 Case is a basic concept in Case Management. 
@@ -48,7 +50,7 @@ person. Work items in a public work basket can be accepted by any user to work o
 ## Split Case
 ## Copy Case
 ## Close Case 
-## Re-open Case 
+## Re-open Case
 ## Case tasks view (search, create, view, complete, reassign) 
 ## Case work items view (search, view, process, complete, reassign) 
 ## Ability to show case related entities via virtual folders
