@@ -115,7 +115,7 @@ $(function () {
             var target = $(href),
             scrollTarget = target.offset().top;
 
-            $(window).scrollTop(scrollTarget - 90);
+            $(window).scrollTop(scrollTarget - 120);
             return false;
         }
     }

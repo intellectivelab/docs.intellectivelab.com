@@ -24,6 +24,13 @@ body {
   background-color: #fff;
 }
 
+.breadcrumb-container {
+  position: fixed;
+  height: 50px;
+  background-color: #fff;
+  width: 100%;
+}
+
 .navbar {
   height: 4em;
   font-size: 16px;
@@ -158,6 +165,10 @@ body {
       border-color: #eee;
     }
   }
+}
+
+.content-container {
+  margin-top: 50px;
 }
 
 .page-content {
