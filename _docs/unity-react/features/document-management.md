@@ -19,7 +19,7 @@ category: Unity 7
 ## Document search and navigation
 ## Document view and update properties
 ## Document versioning
-## Document content action (view content and download)
+## [Document content actions (view content and download)](document-management/document-content-actions.md)
 ## Copy/move document to folder
 ## [Delete document](document-management/delete-document.md)
 ## Copy link
