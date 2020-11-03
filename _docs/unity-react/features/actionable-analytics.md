@@ -12,3 +12,4 @@ This feature allows you to integrate analytics components into your screens or t
 
 ![Analytics Dashboard](actionable-analytics/images/analytics-dashboard2.png) 
 
+*content to be added*
