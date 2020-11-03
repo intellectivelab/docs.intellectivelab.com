@@ -225,7 +225,7 @@ on this, workbasket can be configured as a separate Unity tab (Cases workbasket 
 below)
 
 There is also the possibility to group set of workbaskets into a separate Unity tab. This can be
-done through the new Unity tab component which is referenced by ‘advanced-searchtemplates-tab’ XType.
+done through the new Unity tab component which is referenced by `advanced-searchtemplates-tab` XType.
 This component is very similar to the standard Unity search templates tab and provide
 additional configuration options for grouping search templates:
 
