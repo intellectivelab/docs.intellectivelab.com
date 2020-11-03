@@ -3,23 +3,31 @@ title: Actions Configuration
 layout: docs
 category: Unity 7
 ---
-# Overview
+# Common Actions Configuration Steps
 
-Actions section in Unity configuration defines a list of available actions. 
-```xml
-<Actions>
- <Action ID="someAction">...</Action>
- <Action ID="someOtherAction">...</Action>
-</Actions>
-```
+- add [Common actions attributes and tags](#common-actions-attributes-and-tags)
+- add [Specific actions options](#specific-actions-options)
+- add action to [Actions tag](tags-list/actions-tag.md)
+- [add action to the Grid](grids.md#how-to-add-action-to-the-grid)
 
-Action behavior customized by attributes and tags. There are attributes and tags common for most actions and [specific options](#specific-actions-options) for each action.  
+# Common Actions Attributes and Tags
 
-# Common action attributes and tags
+Action behavior customized by attributes and tags. 
+There are attributes and tags common for most actions and [specific options](#specific-actions-options) for each action. 
 
-*content to be added*
+|Attribute            | Description         |
+|:--------------------|:--------------------|
+|*content to be added*|*content to be added*|
+
+|Tag                  | Description         |
+|:--------------------|:--------------------|
+|*content to be added*|*content to be added*|
 
 # Specific actions options
+
+Action behavior customized by attributes and tags. 
+There are attributes and tags [common for most actions](#common-actions-attributes-and-tags) and specific options for each action. 
+Choose the action from the list below to find specific options for it.
 
 ## Document related actions
 
