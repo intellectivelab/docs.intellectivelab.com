@@ -23,7 +23,7 @@ category: Unity 7
 ## Split Case
 ## Copy Case
 ## Close Case 
-## Re-open Case 
+## Re-open Case
 ## Case tasks view (search, create, view, complete, reassign) 
 ## Case work items view (search, view, process, complete, reassign) 
 ## Ability to show case related entities via virtual folders

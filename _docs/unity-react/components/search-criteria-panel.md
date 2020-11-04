@@ -5,14 +5,14 @@ category: Unity 7
 ---
 # Overview
 
+*content to be added*
+
 # Search Criteria Panel Features
 
 ## Configurable
 ## HTML5 input types support
 ## RTL & LTR support
-## RTF support 
-[U7-2697](https://jira.intellective.com/browse/U7-2697)
-
+## RTF support [U7-2697](https://jira.intellective.com/browse/U7-2697)
 ## Currency field
 ## Formatted text input field
 ## Date and time picker
@@ -22,14 +22,10 @@ category: Unity 7
 ## [Facet (category) field](search-criteria-panel/facet-category-field.md)
 ## Range slider
 ## Ability to add a custom field
-## Linked dropdowns
-[U7-2698](https://jira.intellective.com/browse/U7-2698)
-
+## Linked dropdowns [U7-2698](https://jira.intellective.com/browse/U7-2698)
 ## Conditional criteria fields rendering
 ## Client-side criteria field validation
-## Remote criteria field validation
-[U7-2700](https://jira.intellective.com/browse/U7-2700)
-
+## Remote criteria field validation [U7-2700](https://jira.intellective.com/browse/U7-2700)
 ## Ability to add a custom criteria field validation
 ## Criteria defaults
 ## Criteria sections (fields grouping)
@@ -39,3 +35,7 @@ category: Unity 7
 ## Docked viewport
 ## Responsive
 ## Ability to compose with other components
+
+# Configuration
+
+[Search Criteria Panel Configuration](../configuration/search-criteria-panel.md)
