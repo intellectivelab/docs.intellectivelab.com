@@ -229,12 +229,12 @@ done through the new Unity tab component which is referenced by `advanced-search
 This component is very similar to the standard Unity search templates tab and provide
 additional configuration options for grouping search templates:
 
-1. `templateSelectionType` – type of search templates grouping/selection. Allowed values:
-- selector - search templates will be displayed as combobox component
-- flat – search templates will be displayed in a tab panel view
-2. `templateSelectionOrientation` – applicable only for 'flat' type. Allowed values:
-- horizontal
-- vertical
+- `templateSelectionType` – type of search templates grouping/selection. Allowed values:
+    - selector - search templates will be displayed as combobox component
+    - flat – search templates will be displayed in a tab panel view
+- `templateSelectionOrientation` – applicable only for `flat` type. Allowed values:
+    - horizontal
+    - vertical
 
 Sample workbasket configuration:
 
@@ -1223,65 +1223,69 @@ Allows to reassign selected work item to another user.
 Sample configuration for `Assign To` field as a `Lookup`:
 - Add to solution configuration file:
 
-```xml
-<Lookup ID="SelectorLookup" Type="Selector">
-    <Header>
-        <Column>assignUser</Column>
-    </Header>
-    <Parameters>
-        <Parameter Name="SelectorID" Value="reassignUsers"/>
-    </Parameters>
-</Lookup>
-```
+    ```xml
+    <Lookup ID="SelectorLookup" Type="Selector">
+        <Header>
+            <Column>assignUser</Column>
+        </Header>
+        <Parameters>
+            <Parameter Name="SelectorID" Value="reassignUsers"/>
+        </Parameters>
+    </Lookup>
+    ```
+  
 - Add to solution configuration file:
 
-```xml
-<Tool ID="Reassign" Label="Reassign" Tooltip="Reassign Work Item" Action="Reassign">
-...
-    <CustomParameters>
-        <Parameter Name="lookup" Value="SelectorLookup?query={assignUser}"/>
-    </CustomParameters>
-</Tool>
-
-```
+    ```xml
+    <Tool ID="Reassign" Label="Reassign" Tooltip="Reassign Work Item" Action="Reassign">
+    ...
+        <CustomParameters>
+            <Parameter Name="lookup" Value="SelectorLookup?query={assignUser}"/>
+        </CustomParameters>
+    </Tool>
+    
+    ```
+  
 - Add to main configuration file:
 
-```xml
-<Selector ID="reassignUsers">
-    <ClassName>com.vegaecm.vspace.selectors.XMLSelector</ClassName>
-    <Description/>
-    <Option name="p8admin" value="p8admin"/>
-    <Option name="test_user" value="test_user"/>
-    <Option name="test-user2" value="test-user2"/>
-    <Option name="test-user3" value="test-user3"/>
-    <Option name="test-user4" value="test-user4"/>
-</Selector>
-```
+    ```xml
+    <Selector ID="reassignUsers">
+        <ClassName>com.vegaecm.vspace.selectors.XMLSelector</ClassName>
+        <Description/>
+        <Option name="p8admin" value="p8admin"/>
+        <Option name="test_user" value="test_user"/>
+        <Option name="test-user2" value="test-user2"/>
+        <Option name="test-user3" value="test-user3"/>
+        <Option name="test-user4" value="test-user4"/>
+    </Selector>
+    ```
+  
 Sample configuration for `Assign To` field as a `Selector`:
 
 - Add to solution configuration file:
 
-```xml
-<Tool ID="Reassign" Label="Reassign" Tooltip="Reassign Work Item" Action="Reassign">
-...
-    <CustomParameters>
-        <Parameter Name="selectorid" Value="reassignUsers"/>
-    </CustomParameters>
-</Tool>
-```
+    ```xml
+    <Tool ID="Reassign" Label="Reassign" Tooltip="Reassign Work Item" Action="Reassign">
+    ...
+        <CustomParameters>
+            <Parameter Name="selectorid" Value="reassignUsers"/>
+        </CustomParameters>
+    </Tool>
+    ```
+  
 - Add to main configuration file:
 
-```xml
-<Selector ID="reassignUsers">
-    <ClassName>com.vegaecm.vspace.selectors.XMLSelector</ClassName>
-    <Description/>
-    <Option name="p8admin" value="p8admin"/>
-    <Option name="test_user" value="test_user"/>
-    <Option name="test-user2" value="test-user2"/>
-    <Option name="test-user3" value="test-user3"/>
-    <Option name="test-user4" value="test-user4"/>
-</Selector>
-```
+    ```xml
+    <Selector ID="reassignUsers">
+        <ClassName>com.vegaecm.vspace.selectors.XMLSelector</ClassName>
+        <Description/>
+        <Option name="p8admin" value="p8admin"/>
+        <Option name="test_user" value="test_user"/>
+        <Option name="test-user2" value="test-user2"/>
+        <Option name="test-user3" value="test-user3"/>
+        <Option name="test-user4" value="test-user4"/>
+    </Selector>
+    ```
 
 ### Work Item Actions
 These actions are used at the UCM work item search template tab (scope: `WORK_ITEM` or `WORK_ITEM:*`)
@@ -1686,19 +1690,20 @@ The following steps should be executed for Calendar View configuration:
     <calendarViewEventMappingStartDate>DateCreated</calendarViewEventMappingStartDate>             <calendarViewEventMappingEndDate>DateCreated</calendarViewEventMappingEndDate>
      </CustomParameters>
     ```
-|Tag	|Description|
-|:------|:----------|
-|calendarViewColor	|CSS color for calendar events|
-|calendarViewPrefetchMode	|The prefetch mode for pre-loading records on either side of the active range. Possible values are: month, week, day. Default value: week|
-|calendarViewDateRangeCriteria	|The name of search template's date range criteria that will be used to get documents at the required date range|
-|calendarViewEventMappingTitle	|The name of document's property that is used for event title|
-|calendarViewEventMappingDescription	|The name of document's property that is used for event description|
-|calendarViewEventDateFormat	|The format string that is used to parse event start/end date and time|
-|calendarViewEventDateFormatXXXX	|The alternative date and time formats (XXX is any string. For example: calendarViewEventDateFormat2, calendarViewEventDateFormat3, calendarViewEventDateFormatISO8601)|
-|calendarViewEventMappingStartDate	|The name of document's property that is used for event's start date and time|
-|calendarViewEventMappingEndDate	|The name of document's property that is used for event's end date and time|
-|calendarViewEventMappingAllDay	|The name of document's property that is used for event flag indicating that the event is all day (boolean)|
-|calendarViewEventMappingDuration	|The name of document's property that is used for event duration (number)|
+      
+    |Tag	|Description|
+    |:------|:----------|
+    |calendarViewColor	|CSS color for calendar events|
+    |calendarViewPrefetchMode	|The prefetch mode for pre-loading records on either side of the active range. Possible values are: month, week, day. Default value: week|
+    |calendarViewDateRangeCriteria	|The name of search template's date range criteria that will be used to get documents at the required date range|
+    |calendarViewEventMappingTitle	|The name of document's property that is used for event title|
+    |calendarViewEventMappingDescription	|The name of document's property that is used for event description|
+    |calendarViewEventDateFormat	|The format string that is used to parse event start/end date and time|
+    |calendarViewEventDateFormatXXXX	|The alternative date and time formats (XXX is any string. For example: calendarViewEventDateFormat2, calendarViewEventDateFormat3, calendarViewEventDateFormatISO8601)|
+    |calendarViewEventMappingStartDate	|The name of document's property that is used for event's start date and time|
+    |calendarViewEventMappingEndDate	|The name of document's property that is used for event's end date and time|
+    |calendarViewEventMappingAllDay	|The name of document's property that is used for event flag indicating that the event is all day (boolean)|
+    |calendarViewEventMappingDuration	|The name of document's property that is used for event duration (number)|
 
 - Configure separate Calendar View grid (Please note that calendar view only supports ClickColumn event listener):
 
@@ -1811,7 +1816,7 @@ configuration file:
                     </RequiredFields>
                 </Action>
 ```
-Properties from the `Assighments` section will be filled in automatically after action execution.
+Properties from the `Assignments` section will be filled in automatically after action execution.
 
 ### Lookup configuration
 
