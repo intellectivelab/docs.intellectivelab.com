@@ -1,16 +1,5 @@
 $(function() {
 
-    function caps(key) {
-        var keys = key.split(' '),
-            newKey = "";
-            
-        keys.forEach(k => {
-            newKey += ' ' + k.charAt(0).toUpperCase() + k.slice(1);
-        });
-
-        return newKey;
-    }
-
     function buildHref(key) {
         var url = document.URL,
             index = url.indexOf(key);
@@ -34,7 +23,7 @@ $(function() {
 
         keys.forEach((key, i) => {
             crumb = key.replace(/-/g, " ");
-            crumb = caps(crumb);
+            crumb = crumb.toTitleCase();          // Use js library for proper title case (https://github.com/gouch/to-title-case)
             crumbs += '<li class="breadcrumb-item">';
 
             if(i > 1) {
