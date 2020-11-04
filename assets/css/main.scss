@@ -199,6 +199,11 @@ body {
   border: none;
 }
 
+.a-nonclick {
+  pointer-events: none;
+  color: gray;
+}
+
 a {
   color: #0067d5;
 }
