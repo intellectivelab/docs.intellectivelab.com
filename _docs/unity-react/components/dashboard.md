@@ -8,6 +8,7 @@ category: Unity 7
 # Dashboard Features
 
 ## Configurable
+## [Containers](dashboard/containers.md)
 ## Grid
 ## Search Criteria
 ## Facet(category) field
