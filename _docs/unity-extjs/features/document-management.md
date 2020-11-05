@@ -9,7 +9,7 @@ category: Unity 7
 
 # Document Management Features
 
-## Create a document   
+## [Add document](document-management/add-document.md)     
 ## Create a document with multiple content      
 ## Drag and drop a file into the grid
 ## Folder select - upload a document into the selected folder
