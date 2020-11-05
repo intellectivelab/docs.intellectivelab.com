@@ -114,20 +114,20 @@ category: Unity 7
 </Action>
 ```
 
-# Tree model configuration
+# Tree Model Configuration
 
 `Add document` action supports folder selection or inherit context of selected folder when used in folder view. 
 Tree model must be properly configured. 
 
 *content to be added*
 
-# Document class selector configuration
+# Document Class Selector Configuration
 
 Document class selector must be properly configured. 
 
 *content to be added*
 
-# Adding with permissions
+# Adding with Permissions
 
 Override default dialog used for add document action with custom XType: `widget.unity-add-document-dialog` 
 
