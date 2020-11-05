@@ -32,12 +32,6 @@ Following action can be added to Unity system configuration file:
             </Parameters>
             <CustomParameters>
                 <CheckExistence>true</CheckExistence>
-                <ViewerProperties>
-                    <ViewerProperty>MimeType</ViewerProperty>
-                    <ViewerProperty>DocumentTitle</ViewerProperty>
-                    <ViewerProperty>$id</ViewerProperty>
-                    <ViewerProperty>$repository_id</ViewerProperty>
-                </ViewerProperties>
                 <EnableRule skipOnMissingProperty="false">(#VersionStatus==null or #VersionStatus!=3)</EnableRule>
 
             </CustomParameters>
@@ -50,9 +44,8 @@ View action custom parameters:
 
 | Parameter       | Description |
 |:----------------|:------------|
-|CheckExistence   | *content to be added* |
-|ViewerProperties | *content to be added* |
-|EnableRule       | *content to be added* |
+|CheckExistence   | Once `multiselect` set to `false` and `CheckExistence` in `CustomParameters` section is set to `true` then `'permissions/check'` roundtrip to server will be performed before the actual action.|
+|EnableRule       | Checks document properties values corresponding to SPEL condition. If true then menu item is supposed to be enabled.|
 
 # Configuration options
 
