@@ -11,6 +11,7 @@ category: Unity 7
 
 ## [Add document](document-management/add-document.md)     
 ## Create a document with multiple content      
+## [View Document](document-management/view-document.md)   
 ## Drag and drop a file into the grid
 ## Folder select - upload a document into the selected folder
 ## Document search and navigation
