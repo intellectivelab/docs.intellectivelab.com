@@ -11,6 +11,8 @@ category: Unity 7
 
 Reference to JIRA: U7-3369
 
+### Problem
+
 Since Chrome v80 (February 2020) vast majority of browsers set this param to `Lax`. Previously it was `None`.
 This means that browser won't send the cookies to the server back unless it is simple http `GET` request or first-party interaction.
 
@@ -23,7 +25,9 @@ This part is important here:
 SameSite=None; Secure 
 ```
 
-### Reverse-Proxy
+### Solution
+
+#### Reverse-Proxy
 
 In order to avoid that consider using any reverse-proxy, such as Nginx so that both ICN and Unity become on the same domain.
 
@@ -81,7 +85,7 @@ As another approach there is an option to set `proxy_cookie_path` directive (ins
     }
 ```
 
-### Browser
+#### Browser
 
 For debugging (or temporary fast solution) it is possible to change settings to the Chrome browser like that:
  
