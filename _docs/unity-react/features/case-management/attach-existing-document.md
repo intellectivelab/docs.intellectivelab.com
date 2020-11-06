@@ -2,6 +2,7 @@
 title: Attach Existing Document to Case Feature
 layout: docs
 category: Unity 7
+breadcrumbs: Unity React/Features/Case Management
 ---
 # Description
 

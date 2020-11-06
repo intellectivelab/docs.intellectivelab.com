@@ -2,6 +2,7 @@
 title: Plugin for `OR` Clause Configuration
 layout: docs
 category: Unity 7
+breadcrumbs: Unity ExtJs/Configuration/Tags List/Plugins Tag
 ---
 The following plugin should be defined for `OR` clause configuration: 
 

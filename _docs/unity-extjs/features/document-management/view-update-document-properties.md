@@ -2,6 +2,7 @@
 title: View And Update Document Properties
 layout: docs
 category: Unity 7
+breadcrumbs: Unity ExtJs/Features/Document Management
 ---
 # Description
 

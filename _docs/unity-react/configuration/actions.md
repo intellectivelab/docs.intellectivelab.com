@@ -2,6 +2,7 @@
 title: Actions Configuration
 layout: docs
 category: Unity 7
+breadcrumbs: Unity React/Configuration
 ---
 # Common Actions Configuration Steps
 

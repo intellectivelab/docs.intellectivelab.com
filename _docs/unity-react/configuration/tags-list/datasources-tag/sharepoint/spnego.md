@@ -2,6 +2,7 @@
 title: Unity Features - Sharepoint Connector - SPNEGO SSO
 layout: docs
 category: Unity 7
+breadcrumbs: Unity React/Configuration/Tags List/Datasources Tag/Sharepoint
 ---
 
 # Description 

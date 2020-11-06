@@ -2,6 +2,7 @@
 title: Unity Components - User Preferences
 layout: docs
 category: Unity 7
+breadcrumbs: Unity ExtJs/Components
 ---
 # Overview
 

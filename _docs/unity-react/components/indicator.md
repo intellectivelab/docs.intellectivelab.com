@@ -2,6 +2,7 @@
 title: Unity Components - Indicator
 layout: docs
 category: Unity 7
+breadcrumbs: Unity React/Components
 ---
 # Unity Components - Indicator
 

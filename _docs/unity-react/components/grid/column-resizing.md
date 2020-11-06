@@ -2,6 +2,7 @@
 title: Column Resizing Grid Feature
 layout: docs
 category: Unity 7
+breadcrumbs: Unity React/Components/Grid
 ---
 Normally grid columns width is set automatically in order to fill whole grid horizontal space. The columns may be resized by mouse by dragging column separators. To show the separators, move mouse over the column heading and left and right side separators will be shown. Hold a separator with mouse and move horizontally to resize the column:  
 

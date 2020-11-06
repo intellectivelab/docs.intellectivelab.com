@@ -2,6 +2,7 @@
 title: Case Attachments With Folder View
 layout: docs
 category: Unity 7
+breadcrumbs: Unity React/Features/Case Management
 ---
 # Overview
 

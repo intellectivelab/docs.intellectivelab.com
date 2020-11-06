@@ -2,6 +2,7 @@
 title: Unity 7.7 Release Notes
 layout: docs
 category: Unity 7
+breadcrumbs: Unity ExtJs/Release Notes
 ---
 
 # New Features

@@ -2,6 +2,7 @@
 title: Unity Components - Supported data providers for Search Template component
 layout: docs
 category: Unity 7
+breadcrumbs: Unity React/Components/Search Template
 ---
 *content to be added*
 

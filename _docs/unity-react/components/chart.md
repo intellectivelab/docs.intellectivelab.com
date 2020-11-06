@@ -2,6 +2,7 @@
 title: Unity Components - Chart
 layout: docs
 category: Unity 7
+breadcrumbs: Unity React/Components
 ---
 Charts are UI components designed for graphical representation of data.  
 

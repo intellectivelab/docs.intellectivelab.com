@@ -2,6 +2,7 @@
 title: Unity Components - Search Template
 layout: docs
 category: Unity 7
+breadcrumbs: Unity ExtJs/Components
 ---
 # Overview
 

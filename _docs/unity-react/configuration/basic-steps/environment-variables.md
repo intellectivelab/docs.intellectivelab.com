@@ -2,6 +2,7 @@
 title: Configuration - Environment Variables
 layout: docs
 category: Unity 7
+breadcrumbs: Unity React/Configuration/Basic Steps
 ---
 # Overview
 

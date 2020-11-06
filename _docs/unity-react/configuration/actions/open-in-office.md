@@ -2,6 +2,7 @@
 title: Open in Office Actions Configuration
 layout: docs
 category: Unity 7
+breadcrumbs: Unity React/Configuration/Actions
 ---
 # Open in Office Actions Configuration via Unity Office Plugin
 

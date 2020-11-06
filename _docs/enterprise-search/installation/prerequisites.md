@@ -2,6 +2,7 @@
 title: Enterprise Search Installation Prerequisites
 layout: docs
 category: Enterprise Search
+breadcrumbs: Enterprise Search/Installation
 ---
 # Review Prerequisites 
 

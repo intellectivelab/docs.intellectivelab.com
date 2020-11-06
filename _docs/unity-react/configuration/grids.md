@@ -2,6 +2,7 @@
 title: Grids Configuration
 layout: docs
 category: Unity 7
+breadcrumbs: Unity React/Configuration
 ---
 # How to Add Action to the Grid
 

@@ -2,6 +2,7 @@
 title: Lookups Tag Configuration
 layout: docs
 category: Unity 7
+breadcrumbs: Unity React/Configuration/Tags List
 ---
 
 Lookups description section should be added into UCM Solution XML file. An example:

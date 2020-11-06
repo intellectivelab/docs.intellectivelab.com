@@ -2,6 +2,7 @@
 title: Properties Action Configuration
 layout: docs
 category: Unity 7
+breadcrumbs: Unity ExtJs/Configuration/Actions
 ---
 `Properties` action is responsible for `Properties` tab on Get Info dialog. This tab allows to view and update document 
 properties. Example of action configuration:

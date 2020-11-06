@@ -2,6 +2,7 @@
 title: Unity Components - Search Criteria Panel
 layout: docs
 category: Unity 7
+breadcrumbs: Unity React/Components
 ---
 # Overview
 

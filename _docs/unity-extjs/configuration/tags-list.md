@@ -2,6 +2,7 @@
 title: Configuration - Tags List
 layout: docs
 category: Unity 7
+breadcrumbs: Unity ExtJs/Configuration
 ---
 # Unity Tags
 

@@ -2,6 +2,7 @@
 title: Multiple Column Sorting Grid Feature
 layout: docs
 category: Unity 7
+breadcrumbs: Unity ExtJs/Components/Grid
 ---
 You can configure the default Grid to allow multiple columns to be sorted at a time within the content list.
 

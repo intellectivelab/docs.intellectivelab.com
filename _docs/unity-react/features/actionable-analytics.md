@@ -2,6 +2,7 @@
 title: Unity Features - Actionable Analytics
 layout: docs
 category: Unity 7
+breadcrumbs: Unity React/Features
 ---
 
 Unity Analytics Feature brings the ability to add leading-edge visualization and powerful analytics capabilities to the web applications based on Unity platform. It allows to summarize, aggregate, analyze and visualize various kind of data to discover insights and make more informed decisions.

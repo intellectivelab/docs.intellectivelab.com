@@ -2,6 +2,7 @@
 title: Delete Case Action Configuration
 layout: docs
 category: Unity 7
+breadcrumbs: Unity React/Configuration/Actions
 ---
 For `Delete` case action following section should be added to the Unity System XML file:
  

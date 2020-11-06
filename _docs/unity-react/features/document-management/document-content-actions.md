@@ -2,6 +2,7 @@
 title: Document Content Actions
 layout: docs
 category: Unity 7
+breadcrumbs: Unity React/Features/Document Management
 ---
 # View content action
 

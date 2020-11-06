@@ -2,6 +2,7 @@
 title: Datasources Configuration
 layout: docs
 category: Unity 7
+breadcrumbs: Unity React/Configuration
 ---
 
 Unity datasource connectors is a unified facade to integrate content from different external sources:   

@@ -2,6 +2,7 @@
 title: Facet (category) field configuration
 layout: docs
 category: Unity 7
+breadcrumbs: Unity React/Configuration/Search Templates
 ---
 # Common configuration rules
 

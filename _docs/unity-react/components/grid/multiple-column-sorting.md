@@ -2,6 +2,7 @@
 title: Multiple Column Sorting Grid Feature
 layout: docs
 category: Unity 7
+breadcrumbs: Unity React/Components/Grid
 ---
 Default grid allows multiple columns to be sorted at a time within the content list. Grid column can be configured as sortable or not.
 

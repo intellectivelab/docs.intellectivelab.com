@@ -2,6 +2,7 @@
 title: Configuration - Basic Steps
 layout: docs
 category: Unity 7
+breadcrumbs: Unity ExtJs/Configuration
 ---
 # Overview
 

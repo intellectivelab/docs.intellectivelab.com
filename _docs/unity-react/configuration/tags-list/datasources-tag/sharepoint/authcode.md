@@ -2,6 +2,7 @@
 title: Unity Features - Sharepoint Connector - Auth Code Flow
 layout: docs
 category: Unity 7
+breadcrumbs: Unity React/Configuration/Tags List/Datasources Tag/Sharepoint
 ---
 
 # Description

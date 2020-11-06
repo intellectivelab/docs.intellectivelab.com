@@ -2,6 +2,7 @@
 title: Unity Office Plugin
 layout: docs
 category: Unity 7
+breadcrumbs: Unity React/Features/Integration
 ---
 # Overview
 

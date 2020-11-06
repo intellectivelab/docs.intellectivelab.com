@@ -2,6 +2,7 @@
 title: Unity Components - Facet (Category) Field
 layout: docs
 category: Unity 7
+breadcrumbs: Unity React/Components/Search Criteria Panel
 ---
 # Overview
 

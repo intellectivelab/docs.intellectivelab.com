@@ -2,6 +2,7 @@
 title: Installing Enterprise Search
 layout: docs
 category: Enterprise Search
+breadcrumbs: Enterprise Search/Installation
 ---
 # Install Enterprise Index  
 

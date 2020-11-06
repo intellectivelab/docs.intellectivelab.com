@@ -2,6 +2,7 @@
 title: Delete Document Feature
 layout: docs
 category: Unity 7
+breadcrumbs: Unity React/Features/Document Management
 ---
 # Description
 

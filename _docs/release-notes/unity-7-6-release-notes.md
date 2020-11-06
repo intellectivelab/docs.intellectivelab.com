@@ -2,6 +2,7 @@
 title: Unity 7.6 Release Notes
 layout: docs
 category: Unity 7
+breadcrumbs: Release Notes
 ---
 # New Features
 # Resolved Issues

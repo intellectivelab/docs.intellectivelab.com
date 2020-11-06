@@ -2,6 +2,7 @@
 title: Unity Components - Properties View Form
 layout: docs
 category: Unity 7
+breadcrumbs: Unity ExtJs/Components
 ---
 # Overview
 

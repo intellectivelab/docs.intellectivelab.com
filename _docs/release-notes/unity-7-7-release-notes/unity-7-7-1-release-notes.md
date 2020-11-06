@@ -2,6 +2,7 @@
 title: Unity 7.7.1 Release Notes
 layout: docs
 category: Unity 7
+breadcrumbs: Release Notes/Unity 7.7 Release Notes
 ---
 
 # New Features

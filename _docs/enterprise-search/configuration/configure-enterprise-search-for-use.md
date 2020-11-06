@@ -2,6 +2,7 @@
 title: Configure Enterprise Search for Use
 layout: docs
 category: Enterprise Search
+breadcrumbs: Enterprise Search/Configuration
 --- 
 # Post-Installation Configuration   
 

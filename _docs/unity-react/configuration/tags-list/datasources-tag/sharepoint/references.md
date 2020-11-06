@@ -2,6 +2,7 @@
 title: Unity Features - Sharepoint Connector - References
 layout: docs
 category: Unity 7
+breadcrumbs: Unity React/Configuration/Tags List/Datasources Tag/Sharepoint
 ---
 
 [Sharepoint OData REST API](https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/complete-basic-operations-using-sharepoint-rest-endpoints)
