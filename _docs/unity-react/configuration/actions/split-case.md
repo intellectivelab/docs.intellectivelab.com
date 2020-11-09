@@ -53,22 +53,6 @@ TargetResourceTypes parameters:
 |viewType | Optional. If not specified `Active` Case view will be used. Example: `Split` |
 |ResourceType | Split target case type. Can be one to many ResourceType rows |
 
-Action itself should be added to the actions list for grids. Refer to [How to Add Action to the Grid](../grids.md#how-to-add-action-to-the-grid). 
-
-Example: 
-  
-```xml
-<Grid ID="UCM_ICM_Case_Search_ComplaintsProcessing" enableColumnReorder="false" groupSearchResults="false">
-    <Toolbar>
-        <Actions>
-            <Action ID="splitCase"/>
-            <!-- other actions -->
-        </Actions>
-    </Toolbar>
-    <!-- rest config-->
-</Grid>        
-```
-
 If action configuration contains references to viewTypes, please make sure the proper views are defined in UCM Solution XML file:
 ```xml
 <Tabs CaseType="CC_Complaint"  ViewType="Split">
@@ -77,5 +61,4 @@ If action configuration contains references to viewTypes, please make sure the p
 </Tabs>
 ```
 
-Security section defines action accessibility. Please refer to [Security Restrictions](../security.md#security-restrictions) for more information about security configuration. 
-
+Perform the rest of [Common Action Configuration Steps](../actions.md#common-actions-configuration-steps). 

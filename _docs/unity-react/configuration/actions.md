@@ -3,17 +3,20 @@ title: Actions Configuration
 layout: docs
 category: Unity 7
 ---
-# Common Actions Configuration Steps
+# Common Actions Configuration Options
 
-- add [Common actions attributes and tags](#common-actions-attributes-and-tags)
-- add [Specific actions options](#specific-actions-options)
+## Common actions configuration steps
+
+- set [Common actions attributes and tags](#common-actions-attributes-and-tags)
+- set [Specific actions configuration options](#specific-actions-configuration-options)
 - add action to [Actions tag](tags-list/actions-tag.md)
 - [add action to the Grid](grids.md#how-to-add-action-to-the-grid)
+- [add action to the View](tags-list/views-tag.md#how-to-add-action-to-the-view) (optional)
 
-# Common Actions Attributes and Tags
+## Common actions attributes and tags
 
 Action behavior customized by attributes and tags. 
-There are attributes and tags common for most actions and [specific options](#specific-actions-options) for each action. 
+There are attributes and tags common for most actions and [specific options](#specific-actions-configuration-options) for each action. 
 
 |Attribute            | Description         |
 |:--------------------|:--------------------|
@@ -22,8 +25,11 @@ There are attributes and tags common for most actions and [specific options](#sp
 |Tag                  | Description         |
 |:--------------------|:--------------------|
 |*content to be added*|*content to be added*|
+| Security  | [Action security restrictions](../../unity-react/configuration/security.md#security-restrictions) | 
+| CustomParameters  | Defines custom action parameters. Could be overridden per data provider.   | 
 
-# Specific actions options
+
+# Specific Actions Configuration Options
 
 Action behavior customized by attributes and tags. 
 There are attributes and tags [common for most actions](#common-actions-attributes-and-tags) and specific options for each action. 

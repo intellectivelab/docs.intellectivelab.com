@@ -3,7 +3,7 @@ title: Get Info Action Configuration
 layout: docs
 category: Unity 7
 ---
-Following action should be added to Unity system configuration file:
+Following action should be added to Unity system configuration XML file:
  
 ```xml
 <Action ID="getinfo" multiselect="false" scope="any" type="toolbar">
@@ -30,6 +30,8 @@ Following action should be added to Unity system configuration file:
 | Parameter | Description |
 |:----|:-------------------|
 |Actions | This section contains set of actions, that represent tabs to be added to `Get Info` dialog |
+
+Perform the rest of [Common Action Configuration Steps](../actions.md#common-actions-configuration-steps). 
 
 For more details on each action see
 
