@@ -20,7 +20,7 @@ EnterpriseSearch
 [AccessRoles](tags-list/access-roles-tag.md)  
 Actions  
 [Datasources](tags-list/datasources-tag.md)  
-Selectors  
+[Selectors](tags-list/selectors-tag.md)    
 [Facets](tags-list/facets-tag.md)  
 [Properties](tags-list/properties-tag.md)  
 Grids  

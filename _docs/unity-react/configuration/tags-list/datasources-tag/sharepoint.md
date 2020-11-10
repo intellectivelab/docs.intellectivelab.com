@@ -3,6 +3,7 @@ title: Unity Features - Sharepoint Connector
 layout: docs
 category: Unity 7
 ---
+|**Note**: SharePoint Connector Configuration is the same for Unity ExtJs and Unity React.
 
 # Description
 Unity SharePoint connector provides tight integration with MS SharePoint. 
@@ -53,13 +54,13 @@ Different authentication options (flows) supported for SP in Cloud:
  - SPNEGO SSO - must be properly configured in SP and application container hosting Unity application. 
  Please check [Spnego Setup](sharepoint/spnego.md) page for details.
    
-# Sharepoint List metadata URLs   
+# SharePoint List metadata URLs   
 Use browser to find a proper configuration values as described below.
 - Open browser tab and navigate to sharepoint site at `<RootUrl>`.
 - Enter different urls in the tab location from the table below. 
 - Find value tags in returned XML and use them in unity configuration.    
 
-## Sharepoint metadata urls
+## SharePoint metadata urls
 
 | Metadata             | Description                            | URL                                              |
 |:---------------------|:---------------------------------------|:-------------------------------------------------|
@@ -67,7 +68,7 @@ Use browser to find a proper configuration values as described below.
 | SP Content Type      | Use ```<ListTitle>\<Content Type Name>``` in unity configuration.          | `https://<RootUrl>/_api/lists/getbytitle('<ListTitle>')/ContentTypes?$select=Name,Id`|
 | SP Field             | Use Field InternalName  in unity configuration.          | `https://<RootUrl>/_api/lists/getbytitle('<ListTitle>')/Fields?$select=InternalName,Id'`   |
    
-# Unity features configuration specific to Sharepoint connector
+# Unity features configuration specific to SharePoint connector
     
 ## SharePoint repository data provider
   Sharepoint repository data provider supports all sections common to Unity data providers - mapping:   
@@ -78,7 +79,7 @@ Use browser to find a proper configuration values as described below.
    .... skipped ...
  ```
   
-- Site (optional) - Sharepoint Site relative to datasource RootUrl. By default, root site is used.
+- Site (optional) - SharePoint Site relative to datasource RootUrl. By default, root site is used.
   
 **Note:** Internal Field Names used in provider field mapping are InternalName for SharePoint list items. 
   All available fields for particular list could be retrieved by following REST API call: `https://<RootUrl>/_api/lists/getbytitle('<ListTitle>')/Fields`, for example:`https://vkozyr.sharepoint.com/_api/lists/getbytitle('Documents')/Fields`
@@ -95,7 +96,7 @@ Use browser to find a proper configuration values as described below.
             <Property ID="DefaultList" value="Documents"/>
  </Selector>
 ```
-- DefaultList - Sharepoint List Title used to select document content types
+- DefaultList - SharePoint List Title used to select document content types
 
 ## Lookup Selector 
 ```$xml
@@ -109,7 +110,7 @@ Use browser to find a proper configuration values as described below.
             <Property ID="TitleField" value="BaseName"/>
 </Selector>
 ```
-- DefaultList - Sharepoint List Title used to select items
+- DefaultList - SharePoint List Title used to select items
 - TitleField - List Item field displayed in the selector. List Item ID field always used as selector value.
 
 ## Add document action 

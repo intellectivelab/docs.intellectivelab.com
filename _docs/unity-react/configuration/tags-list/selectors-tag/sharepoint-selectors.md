@@ -1,11 +1,13 @@
 ---
-title: Sharepoint Selectors Tag Configuration
+title: SharePoint Selectors Tag Configuration
 layout: docs
 category: Unity 7
 ---
+|**Note**: SharePoint Selectors Tag Configuration is the same for Unity ExtJs and Unity React.
+
 # Description
 
-Sharepoint selectors use Sharepoint REST API to read List metadata from SP. 
+SharePoint selectors use SharePoint REST API to read List metadata from SP. 
 Check [generic selector configuration options](../selectors-tag.md#generic-selector-properties) first.
 
 # Sharepoint Choice List Selector
@@ -13,14 +15,14 @@ Check [generic selector configuration options](../selectors-tag.md#generic-selec
 *ClassName:* ```com.vegaecm.vspace.selectors.SharepointChoiceListSelector```
  
 Use this selector to configure criterion selector for the choice field.
-It reads an information from Sharepoint choice data for a particular column in a list.
+It reads an information from SharePoint choice data for a particular column in a list.
    
 | Property ID | Property value                  | Example        |
 |:------------------|:--------------------------------|:---------------|
 | DocumentClass     | Required. Specify [SP content type](../datasources-tag/sharepoint.md#sharepoint-metadata-urls).  | Documents\Document| 
 | FieldName         | Required. Specify [SP Field](../datasources-tag/sharepoint.md#sharepoint-metadata-urls).  | ChoiceColumn | 
 
-This is ["Cached" selector](../selectors-tag.md#description).
+This is a ["Cached" selector](../selectors-tag.md#description).
 
 Example:
 
@@ -34,11 +36,11 @@ Example:
 </Selector>
 ```
 
-# Sharepoint Lookup Selector
+# SharePoint Lookup Selector
 *ClassName:* ```com.vegaecm.vspace.selectors.SharepointLookupSelector```
 
 Use this selector to configure criterion selector for the lookup field.
-It reads selector items from Sharepoint list items. 
+It reads selector items from SharePoint list items. 
 SP list item ID always used as selector item value.
 SP field to use as selector item name is configurable.
 
@@ -59,9 +61,9 @@ Example:
 </Selector>
 ```
 
-This is ["Cached" selector](../selectors-tag.md#description).
+This is a ["Cached" selector](../selectors-tag.md#description).
 
-# Sharepoint Principal Selector 
+# SharePoint Principal Selector 
 
 *ClassName:* ```com.vegaecm.vspace.selectors.SharepointPrincipalSelector```
 
@@ -79,7 +81,7 @@ It could be configured to read:
 | TitleField        | Optional. Defaults to Title. | LoginName | 
 | ShowHidden        | Optional. Defaults to false. Includes hidden SP people or groups in selector  | Title | 
 
-This is ["Cached" selector](../selectors-tag.md#description).
+This is a ["Cached" selector](../selectors-tag.md#description).
 
 Examples:
 
@@ -123,14 +125,14 @@ Examples:
 </Selector>
 ```
 
-# Sharepoint Document Class Selector 
+# SharePoint Document Class Selector 
 
 *ClassName:* ```com.vegaecm.vspace.selectors.SharepointDocumentClassSelector```
 
 Use this selector to configure document class selector for 
 [React Create Document](../../actions/create-document.md) and
 [Extjs Add Document](../../../../unity-extjs/configuration/actions/add-document.md) actions.
-It represents content types for Sharepoint list. 
+It represents content types for SharePoint list. 
 This selector depends on node context when used in folder view.
 
 | Property ID       | Property value                  | Example        |
@@ -148,4 +150,4 @@ Example:
 </Selector>
 ```
 
-This is ["Cached" selector](../selectors-tag.md#description).
+This is a ["Cached" selector](../selectors-tag.md#description).

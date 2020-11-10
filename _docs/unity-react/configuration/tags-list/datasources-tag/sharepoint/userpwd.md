@@ -3,6 +3,7 @@ title: Unity Features - Sharepoint Connector - User Password Flow
 layout: docs
 category: Unity 7
 ---
+|**Note**: SharePoint Connector Configuration is the same for Unity ExtJs and Unity React.
 
 # Description
 Username Password flow used by Unity connector to call SP on behalf of user. It uses logged in session credentials data 
@@ -12,7 +13,7 @@ Unity needs additional system account Read only SP permissions level to manage S
  
  | Datasource Configuration | Description | Example |
  |--------------------------|-------------|---------|
- | RootUrl | Root Sharepoint URL. **Note:** site path configured at RepositoryDataProvider level and should not be included. | https://yourdomaincom.sharepoint.com |
+ | RootUrl | Root SharePoint URL. **Note:** site path configured at RepositoryDataProvider level and should not be included. | https://yourdomaincom.sharepoint.com |
  | ApplicationId | Azure App registration applicationId (aka clientId) | f1d7c8bc-6284-4db8-968f-e88a9bca70e1 |
  | Login | System account used internally by a connector to cache SP metadata. Read SP permission level is enough for this account.  | read_only@yourdomain.com |
  | Password | Password for system account above. Should be stored encrypted (use Unity config console to encrypt the value)  |  |
