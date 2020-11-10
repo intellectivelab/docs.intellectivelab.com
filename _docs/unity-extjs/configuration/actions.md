@@ -7,8 +7,8 @@ category: Unity 7
 
 ## Common actions configuration steps
 
-- add [Common actions attributes and tags](#common-actions-attributes-and-tags)
-- add [Specific actions options](#specific-actions-configuration-options)
+- set [Common actions attributes and tags](#common-actions-attributes-and-tags)
+- set [Specific actions options](#specific-actions-configuration-options)
 - add action to [Actions tag](tags-list/actions-tag.md)
 - [add action to the Grid](../../unity-react/configuration/grids.md#how-to-add-action-to-the-grid)
 
