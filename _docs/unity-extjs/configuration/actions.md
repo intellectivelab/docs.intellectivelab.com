@@ -15,7 +15,7 @@ category: Unity 7
 ## Common actions attributes and tags
 
 Action behavior customized by attributes and tags. 
-There are attributes and tags common for most actions and [specific options](#specific-actions-configuration-options) for each action. 
+There are attributes and tags common for most actions: 
 
 | Attribute | Description                              | 
 |:--------------|:-----------------------------------------|
