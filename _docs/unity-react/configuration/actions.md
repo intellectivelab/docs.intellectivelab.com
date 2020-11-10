@@ -24,6 +24,7 @@ There are attributes and tags common for most actions and [specific options](#sp
 
 |Tag                  | Description         |
 |:--------------------|:--------------------|
+| Name      | Action name shown in toolbar or context menu.|
 |*content to be added*|*content to be added*|
 | Security  | [Action security restrictions](../../unity-react/configuration/security.md#security-restrictions) | 
 | CustomParameters  | Defines custom action parameters. Could be overridden per data provider.   | 
