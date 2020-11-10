@@ -53,6 +53,20 @@ Different authentication options (flows) supported for SP in Cloud:
  - SPNEGO SSO - must be properly configured in SP and application container hosting Unity application. 
  Please check [Spnego Setup](sharepoint/spnego.md) page for details.
    
+# Sharepoint List metadata URLs   
+Use browser to find a proper configuration values as described below.
+- Open browser tab and navigate to sharepoint site at `<RootUrl>`.
+- Enter different urls in the tab location from the table below. 
+- Find value tags in returned XML and use them in unity configuration.    
+
+## Sharepoint metadata urls
+
+| Metadata             | Description                            | URL                                              |
+|:---------------------|:---------------------------------------|:-------------------------------------------------|
+| SP List              | Use SP List Title tag value to specify list in a unity configuration. | `https://<RootUrl>/_api/lists?$select=Title`    |
+| SP Content Type      | Use ```<ListTitle>\<Content Type Name>``` in unity configuration.          | `https://<RootUrl>/_api/lists/getbytitle('<ListTitle>')/ContentTypes?$select=Name,Id`|
+| SP Field             | Use Field InternalName  in unity configuration.          | `https://<RootUrl>/_api/lists/getbytitle('<ListTitle>')/Fields?$select=InternalName,Id'`   |
+   
 # Unity features configuration specific to Sharepoint connector
     
 ## SharePoint repository data provider
