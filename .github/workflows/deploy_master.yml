@@ -17,8 +17,8 @@ jobs:
       - name: Install SSH key
         uses: shimataro/ssh-key-action@v2
         with:
-          key: ${{ secrets.SSH_KEY }}
-          known_hosts: ${{ secrets.SSH_KNOWNHOSTS }}
+          key: ${{ secrets.DOCS_SSH_KEY }}
+          known_hosts: ${{ secrets.DOCS_SSH_KNOWNHOSTS }}
 
       - name: Deploy site
-        run: ssh -t ubuntu@54.184.2.139 "export COMMIT_SHA=$GITHUB_SHA && bash -s" < update_site.sh
+        run: ssh -t ubuntu@docs.devops.intellectivelab.com "export COMMIT_SHA=$GITHUB_SHA && bash -s" < update_site.sh
