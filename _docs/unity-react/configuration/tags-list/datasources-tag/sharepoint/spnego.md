@@ -1,8 +1,9 @@
 ---
-title: Unity Features - Sharepoint Connector - SPNEGO SSO
+title: Unity Features - SharePoint Connector - SPNEGO SSO
 layout: docs
 category: Unity 7
 ---
+|**Note**: SharePoint Connector Configuration is the same for Unity ExtJs and Unity React.
 
 # Description 
 Unity SharePoint connector support SPNEGO delegated credentials authentication to seamless authenticate already authenticated user to SP target.
@@ -42,7 +43,7 @@ Note that no password for admin user and no ApplicationId and AzureDomain define
  
     ![Edit Authentication dialog](spnego/images/sp_auth_providers.png)
 
-- Check or create SPNs for sharepoint servers and mssql servers. 
+- Check or create SPNs for SharePoint servers and mssql servers. 
     Use `setspn -Q` commands to verify SPN are linked to proper service accounts:
 
     ```console
@@ -96,7 +97,7 @@ Say we have web container hosting Unity at `ec2amaz-40727rf.intellectivelab.com`
     ```
 
 - Setup delegation options for service account. 
-    Go to Active Directory Users and Computers control panel. Add proper SPN for sharepoint services at Delegation tab for WASServerSSO account:
+    Go to Active Directory Users and Computers control panel. Add proper SPN for SharePoint services at Delegation tab for WASServerSSO account:
 
     ![Service Delegation](spnego/images/sp_account_delegation.png)
 

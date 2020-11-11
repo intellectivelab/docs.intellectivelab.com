@@ -1,10 +1,10 @@
 ---
-title: Unity Features - Sharepoint Connector - References
+title: Unity Features - SharePoint Connector - References
 layout: docs
 category: Unity 7
 ---
 
-[Sharepoint OData REST API](https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/complete-basic-operations-using-sharepoint-rest-endpoints)
+[SharePoint OData REST API](https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/complete-basic-operations-using-sharepoint-rest-endpoints)
 [MSAL4J](https://github.com/AzureAD/microsoft-authentication-library-for-java)
 [ODATA Rest](https://www.odata.org/getting-started/)
 

@@ -1,8 +1,9 @@
 ---
-title: Unity Features - Sharepoint Connector - Auth Code Flow
+title: Unity Features - SharePoint Connector - Auth Code Flow
 layout: docs
 category: Unity 7
 ---
+|**Note**: SharePoint Connector Configuration is the same for Unity ExtJs and Unity React.
 
 # Description
 Authorization Code flow used by Unity SharePoint connector to call SP on behalf of user. 
@@ -18,7 +19,7 @@ App registration certificate and application grants also used as system read onl
  
  | Datasource Configuration | Description | Example|
  |--------------------------|-------------|--------|
- | RootUrl | Required. Root Sharepoint URL. Note: site path configured at RepositoryDataProvider level and should not be included. | https://yourdomain.sharepoint.com |
+ | RootUrl | Required. Root SharePoint URL. Note: site path configured at RepositoryDataProvider level and should not be included. | https://yourdomain.sharepoint.com |
  | ApplicationId | Required. Azure App registration applicationId(aka clientId) | f1d7c8bc-6284-4db8-968f-e88a9bca70e1 |
  | AuthorityUrl | Required. `https://login.microsoftonline.com/${AzureTenantId}`. Please find Directory (tenant) Id value at "App registration" -> "Overview" page | https://login.microsoftonline.com/b128c161-3661-441c-8212-5116e40ef414 |
  | RedirectUrl | Required. `http://${UnityServer}:${UnityPort}/${ContextRoot}/services/oauth2/callback`. UnityServer - host name for the web unity application. UnityPort - port value for the unity web application. ContextRoot - server path unity web application mapped. **Note:** http could be only used for localhost, https MUST be used otherwise. | https://unity.server.com:9443/vu/services/oauth2/callback |
