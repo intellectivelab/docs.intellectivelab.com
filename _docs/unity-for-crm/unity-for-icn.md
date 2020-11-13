@@ -4,8 +4,10 @@ layout: docs
 category: Unity 7
 ---
 This document describes the installation/configuration/use and environmental requirements of the Unity IBM Content Navigator Plug-In.
-The Unity ICN Plug-In allows Unity functionality to be exposed in the UI tier of IBM Content Navigator.
+The Unity ICN Plug-In allows Unity functionality to be exposed in the UI tier of IBM Content Navigator:
  
+![ICN](unity-for-icn/images/image1.png)
+
 The integration can be configured in one of three modes by the IBM Content Navigator administrator:
 
 1.	One icon per Unity instance - This mode displays one ICN feature icon per Unity instance.
@@ -29,14 +31,22 @@ In order to the Unity Plug-In to not display a login dialog whenever the plugin 
 
 The Single Sign-On (SSO) works by configuring the Unity ICN Plug-In component to be a trusted sub system of IBM Content Navigator. This means that Unity will trust the authentication made by IBM Content Navigator and not require the user to re-authenticate when using the Unity ICN Plug-In.
 As part of the setup of IBM Content Navigator and Unity they both need to be configured to connect to an external service for authentication and authorization. Since they are two different products, they both need to be configured to connect to an external service.
-IBM Content Navigator does not connect to a directory for authentication. It uses one of the configured repositories for authentication. This can be configured per desktop as seen in the red box in the screen shot below.
+IBM Content Navigator does not connect to a directory for authentication. It uses one of the configured repositories for authentication. This can be configured per desktop: 
  
+![authentication](unity-for-icn/images/image2.png)
+
 Normally IBM Content Navigator and Unity ICN Plug-In will be configured (indirectly) to use the same directory service as shown in the diagram below. When both products are configured to connect to the same directory service the SSO/authentication and authorization is completely transparent.
-The authentication of the user is done by IBM Content Navigator. That authentication is carried on to the Unity ICN Plug-In using SSO.
+The authentication of the user is done by IBM Content Navigator. That authentication is carried on to the Unity ICN Plug-In using SSO:
+
+![SSO](unity-for-icn/images/image3.png)
  
 The two green arrows show the connection from IBM Content Engine to its directory service. 
-In more complex environments IBM Content Navigator and Unity could be configured to connect (indirectly) to two different directory services. This is a supported configuration, but there are some limitations that the installer/configurator need to be aware of.
+
+In more complex environments IBM Content Navigator and Unity could be configured to connect (indirectly) to two different directory services. 
+This is a supported configuration, but there are some limitations that the installer/configurator need to be aware of.
  
+![SSO](unity-for-icn/images/image4.png)
+
 The limitations are as follows. The user name for example `joe.public` should be the same in `Directory Service 1` and `Directory Service 2`. The passwords do not need to be kept in sync or be the same value in the two directory services.
 Important note: time should be correctly synchronized with UTC on both servers.
 
@@ -126,6 +136,8 @@ To set the timeout can be set using the following steps.
 2.	Set the LTPA timeout as shown below. The timeout is set in minutes.
 3.	Click `Apply`.
 4.	
+
+![websphere](unity-for-icn/images/image5.png)
  
 ## Restart IBM WebSphere Application Server.
 
@@ -143,7 +155,9 @@ The following three steps are needed in order to configure the Unity ICN Plug-In
 IBM Content Navigator has a concept called a "Desktop". The desktop determines the available features and appearance of the web client. For example, you can display or hide specific panes, menus, toolbars, plug-ins etc. There must be at least one desktop defined for users in order for them to use IBM Content Navigator.
 In order to define a desktop in ICN please following instructions in the IBM Content Navigator manual in the section [Defining desktops](http://www-01.ibm.com/support/knowledgecenter/SSEUEX_2.0.3/com.ibm.installingeuc.doc/eucco006.htm).
 
-In the desktop configuration pay special attention to the Authentication Repository configured for the desktop.
+In the desktop configuration pay special attention to the Authentication Repository configured for the desktop:
+
+![authentication](unity-for-icn/images/image6.png)
  
 For a discussion of the authentication repository and its effect on Single Sign-On please see the section on SSO. 
 
@@ -165,11 +179,19 @@ The default location on a Windows installation is `C:\Program Files (x86)\IBM\EC
 
 ## Register the Plug-In with IBM Content Navigator
 
-The next step is to register the Plug-In with IBM Content Navigator. In order to this you must log into IBM Content Navigator as an administrative user. Navigate to the `Administrative View`. This is done by clicking on the blue `gear` icon on the left feature icon toolbar.
+The next step is to register the Plug-In with IBM Content Navigator. In order to this you must log into IBM Content Navigator as an administrative user. 
+Navigate to the `Administrative View` by clicking on the blue `gear` icon on the left feature icon toolbar:
+
+![administrative view](unity-for-icn/images/image7.png)
  
-Next click on the Plug-ins icon in the Administrative View.
+Next click on the Plug-ins icon in the Administrative View:
+
+![plugins registration](unity-for-icn/images/image8.png)
  
-In order to register the Unity ICN Plug-In click the `New Plugin` button as shown below. Note that the plug-ins that you see in your application below the toolbar will depend on what plug-ins have been installed by your site administrator.
+In order to register the Unity ICN Plug-In click the `New Plugin` button as shown below. 
+Note that the plug-ins that you see in your application below the toolbar will depend on what plug-ins have been installed by your site administrator:
+
+![new plugin](unity-for-icn/images/image9.png)
  
 In the `New Plug-in` tab that opens up type in the absolute path for the JAR file that was copied in the previous section. 
 If you did not copy the JAR file to the ICN server as outlined in section (Optional) Copy the JAR file to the ICN Server, then the HTTP path to the JAR file can be used. In the deployed Unity application, file `http://<host>/<Unity-app>/resources/icn/latest_version.txt` contains the latest version of ICN plugin, i.e.:
@@ -184,16 +206,28 @@ Correspondently, URL to the latest plugin for loading by ICN will be:
 http://<host>/<Unity-app>/resources/icn/vu-icn-plugin-1.0.5.jar
 ```
 
+![jar file path](unity-for-icn/images/image10.png)
+
 Click the `Load` button to display the JAR information. The properties of the JAR should be as follows. The Version might be different if you are loading a newer version of the Unity ICN Plug-In.
  
+![jar properties](unity-for-icn/images/image11.png)
+
 After the JAR has been loaded click the `Save and Close` button to save the Plug-in registration.
+
+![save](unity-for-icn/images/image12.png)
  
-If registration is successful, the new Unity user interface plug-in will show up in the available plug-ins for IBM Content Navigator.
+If registration is successful, the new Unity user interface plug-in will show up in the available plug-ins for IBM Content Navigator:
+
+![new plugin](unity-for-icn/images/image13.png)
  
 ## Configuration of the Plug-In
 
 When the Unity ICN Plug-In has been registered in ICN by following the directions in the section Register the Plug-In with IBM Content Navigator the Plug-In can be configured.
-Log into IBM Content Navigator as an administrative user and open the desktop configuration for the desktop that should include the Unity ICN Plug-In. Once the desktop configuration is shown click the checkbox next to the "Intellective - Unity user interface" as shown below.
+
+Log into IBM Content Navigator as an administrative user and open the desktop configuration for the desktop that should include the Unity ICN Plug-In. 
+Once the desktop configuration is shown click the checkbox next to the `Intellective - Unity user interface` as shown below:
+
+![plugin selection](unity-for-icn/images/image14.png)
   
 When the Plug-In is selected the `Feature Configuration` is displayed to the right as shown in the screen shot above.
 
@@ -212,21 +246,33 @@ The fields that should be configured are:
 
 Note that there is no security configuration per Unity solution/tab. This is because at runtime the Unity ICN Plug-In evaluates current users’ credentials against the Unity XML configuration and automatically displays applicable solutions/tabs to the user. 
 This provides unified and consistent security between native Unity and the Unity ICN Plug-In.
-Initially the connection status will have a value of `Unknown` as shown below. The connection status will also be reset to `Unknown` if any changes are made to the Unity URL or SSO Key.
+Initially the connection status will have a value of `Unknown` as shown below. The connection status will also be reset to `Unknown` if any changes are made to the Unity URL or SSO Key:
+
+![test connection](unity-for-icn/images/image15.png)
  
-When the administrator clicks the `Test connection` button the Unity URL and SSO Key are verified. If the connection verifies with no errors the connection status changes to `Success` as shown below.
+When the administrator clicks the `Test connection` button the Unity URL and SSO Key are verified. If the connection verifies with no errors the connection status changes to `Success`:
+
+![test connection](unity-for-icn/images/image16.png)
  
-If there are any errors during connection validation the error is displayed in an error dialog as seen below. In this example the URL is incorrect.
+If there are any errors during connection validation the error is displayed in an error dialog as seen below. In this example the URL is incorrect:
+
+![error](unity-for-icn/images/image17.png)
  
-After the connection error dialog is dismissed the connection status is updated to `Failure` as shown below.
+After the connection error dialog is dismissed the connection status is updated to `Failure`:
+
+![failure](unity-for-icn/images/image18.png)
  
-If there is an error in the SSO key then a 500 error will typically be displayed.
+If there is an error in the SSO key then a 500 error will typically be displayed:
+
+![SSO error](unity-for-icn/images/image19.png)
  
 The Unity ICN Plug-In configuration can be repeated for any ICN desktop that the Unity ICN Plug-In should be shown on.
 
 ## (Optional) Change the Layout of the ICN Desktop
 
 The layout can be changed by selecting a different Dojo layout class. IBM Content Navigator ships with a default layout, but custom layouts can be created using standard Dojo layout techniques. The administrator can create custom layouts as needed.
+
+![layout selection](unity-for-icn/images/image20.png)
  
 Instructions on how to create a new layout class is described in the [IBM Content Navigator documentation](http://www-01.ibm.com/support/knowledgecenter/SSEUEX_2.0.3/com.ibm.developingeuc.doc/eucso005.htm).
 
@@ -318,6 +364,8 @@ Please note the `src="v1files/viewone.js"` value
 
 The Unity ICN Plug-In ships with a standard icon for the IBM Content Navigator feature icons. This are the icons that are displayed in the left feature icon toolbar. 
 If needed the administrator can configure custom icons instead of the standard feature icons that ship with Unity ICN Plug-In.
+
+![icons](unity-for-icn/images/image21.png)
  
 Custom icons can be used for any integration mode. See Unity ICN Plug-In Configuration for an explanation of integration modes.
 
@@ -333,12 +381,19 @@ Custom icons can be created with any graphic editing software. The custom icons 
 The sprite should contain both `not activated` and `activated` images - with `not activated` with position 0px 0px and `activated` with position 0px 32px. Therefore, the vertical size of the sprite is 64 px. 
 
 Example of the sprite:
+
+![sprite icon](unity-for-icn/images/image22.png)
  
 The standard icons that ship with are the same for Instance, Solution and Tabs:
+
+- Not-activated:
+
+    ![not activated icon](unity-for-icn/images/image24.png)
+
 - Activated:
- 
-- Non-activated:
- 
+
+    ![activated icon](unity-for-icn/images/image23.png)
+  
 It is recommended to create simplified grey/blue custom icons in line with the icons above to stay with the visual style of the OOTB IBM Content Navigator icons.
 
 ## Deploy Custom Icons
@@ -420,7 +475,9 @@ If the custom icons that are being deployed are SVG files, then WebSphere must b
 Verify that WebSphere has been configured to serve SVG files correctly. If this has not been set up already in your IBM Content Navigator WebSphere instance this has to be set up.
 
 1.	Open the WebSphere administration console. The default URL is `https://[server name]:9043/ibm/console`.
-2.	Navigate to `Environment > Virtual Hosts > default_host > MIME Types`
+2.	Navigate to `Environment > Virtual Hosts > default_host > MIME Types`:
+    
+   ![test connection](unity-for-icn/images/image25.png)
  
 3.	Verify that the MIME type shown above is configured. If not, then click the `New...` button and add the new MIME type association. 
     Note that on some server platforms the extensions are case sensitive, so it is a good practice to add the extensions in both lower and upper case.
@@ -431,9 +488,13 @@ This section describes the end user experience for the Unity ICN Plug-In. It is 
 
 ## IBM Content Navigator Authentication
 
-When the end user initially accesses IBM Content Navigator the user will be authenticated. The screen shot below shows the standard IBM Content Navigator login screen.
+When the end user initially accesses IBM Content Navigator the user will be authenticated. The screen shot below shows the standard IBM Content Navigator login screen:
+
+![login screen](unity-for-icn/images/image26.png)
  
 Once the user has been authenticated the main IBM Content navigator screen shown. This section will concentrate on the Unity Plug-In elements and generic IBM Content Navigator UI components will not be described.
+
+![ICN layout](unity-for-icn/images/image27.png)
  
 There are three areas of the screen. They are shown and marked with numbers in the screen shot above.
 1.	Unity Role Selector
@@ -452,6 +513,8 @@ This is default behavior for Unity. This will clear any data currently displayed
 
 The confirmation dialog is shown below. 
 If the user answers `Yes` then the Unity UI will be reloaded.
+
+![change role](unity-for-icn/images/image28.png)
  
 If the browser is refreshed because the user hits `F5` or `Refresh` in the browser, the Role selection will be retained. 
 It is important to note though that object edits that had not been saved prior to the browser refresh will not be saved.
