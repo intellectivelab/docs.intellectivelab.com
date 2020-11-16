@@ -4,7 +4,7 @@ layout: docs
 category: Unity 7
 ---
 ## Unity React UI Storybook
-Documentation and examples on how to use and customize default Unity React UI components.
+Documentation and examples on how to use and customize Unity React UI components.
 
 [Unity React UI Storybook](https://docs.intellectivelab.com/storybook)
 
