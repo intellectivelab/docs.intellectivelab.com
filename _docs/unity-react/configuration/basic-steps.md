@@ -13,10 +13,13 @@ category: Unity 7
 
 ### Link with Unity
 
-If the solution configuration file is broken, or the configFolder tag in the mail configuration file is not valid, then the default profile would be jbpm.
+ConfigFolder tag in the main configuration file has to point to the full path of the solution configuration file.  
+Make sure that the path includes the drive letter.
+If it is not valid, you may see the following errors. Please also note that, in this case also the default profile for Unity would be jbpm.
 
-![Bar Chart Horizontal](images/solution-configuration-file-error.png)
+![Bar Chart Horizontal](images/solution-configuration-file-front-error.png)
 
+![Bar Chart Horizontal](images/solution-configuration-file-back-error.png)
 
 # Macros Configuration
 
