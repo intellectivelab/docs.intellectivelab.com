@@ -9,7 +9,14 @@ category: Unity 7
 
 # Deployment Wizard
 
-*content to be added*
+## Solution Configuration
+
+### Link with Unity
+
+If the solution configuration file is broken, or the configFolder tag in the mail configuration file is not valid, then the default profile would be jbpm.
+
+![Bar Chart Horizontal](images/solution-configuration-file-error.png)
+
 
 # Macros Configuration
 
