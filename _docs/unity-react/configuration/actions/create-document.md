@@ -31,28 +31,6 @@ For `Create` document action following section should be added to the Unity Syst
 |ActionType   | create      |
 |Scope        | Optional. The repository data provider id. Default value: `inherit` (it means that this parameter will be inherited from `Search Template` or `Grid` component) |
 
-It's also required to specify `View` in solution configuration file:
+It's required to specify `View` in solution configuration file.
 
-```xml
-<Views>
-  <Documents>
-    <Create>
-      <Tabs DocumentType="Documents\Document" Scope="sharepoint_repository_testteamsite" EnableSaveButton="true" EnableCloseButton="true">
-        <Tab ID="1" Type="Details" Label="Document Properties" Tooltip="Document Properties" FieldSet="Document_Create_testteamsite">
-          <Tools/>
-        </Tab>
-      </Tabs>
-    </Create>
-  <!-- not relevant nodes skipped -->
-  </Documents>
-<!-- not relevant nodes skipped -->
-</Views>
-```
-
-`Tabs` tag parameters:
-
-| Parameter   | Description |
-|:------------|:------------|
-|DocumentType | The name of concrete resource type view is created for.   |
-|Scope        | Optional. The repository data provider id. No need to specify this parameter if DocumentType belongs to one data provider. |
-
+Perform the rest of [Common Action Configuration Steps](../actions.md#common-actions-configuration-steps). 
