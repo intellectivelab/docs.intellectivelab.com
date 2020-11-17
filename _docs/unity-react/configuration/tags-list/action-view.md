@@ -57,7 +57,7 @@ This tab is supported for all document actions listed in [Actions with view](#ac
 |:----------|:--------------------|
 | ID        | Tab identifier      |
 | Label     | Tab label           |
-| Fieldset  | Fieldset identifier |
+| FieldSet  | Fieldset identifier |
 
 *content to be added (other tab types + fieldset configuration)*
 
