@@ -4,6 +4,7 @@ layout: docs
 category: Unity 7
 ---
 # Example
+
 ```xml
 <Action ID="add_document" multiselect="true" scope="single" type="toolbar">
     <Name>Add Document</Name>
@@ -187,4 +188,5 @@ Override default dialog used for add document action with custom XType: `widget.
         ```xml
          <Property ID="FolderPath" value="/sites/TeamSite/Shared Documents"/>
         ```
-    
+   
+Perform the rest of [Common Action Configuration Steps](../actions.md#common-actions-configuration-steps).  

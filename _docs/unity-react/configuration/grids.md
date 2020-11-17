@@ -3,9 +3,11 @@ title: Grids Configuration
 layout: docs
 category: Unity 7
 ---
-# How to Add Action to the Grid
+# How To Add Action To The Grid
 
 *content to be added*
+
+To see action in grid context-menu it should be added to grid configuration.
 
 Example for Split Case action:
 
