@@ -47,4 +47,4 @@ FieldTypes
 Inbaskets    
 Pages    
 Tools    
-Views  
+[Views](tags-list/views-tag.md)  

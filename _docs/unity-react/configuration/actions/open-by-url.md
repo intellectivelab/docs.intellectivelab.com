@@ -3,6 +3,7 @@ title: Open By URL Action Configuration
 layout: docs
 category: Unity 7
 ---
+# Specific Action Configuration Options
 
 Open By URL Action configuration section should be added to the Unity System XML file. An example:
 
@@ -27,9 +28,7 @@ Open By URL Action custom configuration parameters:
 
 | Parameter | Description |
 |:----|:-------------------|
-|ActionType | `open_by_url` |
+|ActionType | open_by_url |
 |UrlPattern | URL pattern. Supports macros in the following format: `${key}`, where `key` is a property name of the object being opened. Macros will be replaced with the object property values. |
 
-Security section defines action accessibility. Please refer to [Security Restrictions](../security.md#security-restrictions) for more information about security configuration. 
-
-Action should be added to the Grid. Refer to [How to Add Action to the Grid](../grids.md#how-to-add-action-to-the-grid)
+Perform the rest of [Common Action Configuration Steps](../actions.md#common-actions-configuration-steps). 

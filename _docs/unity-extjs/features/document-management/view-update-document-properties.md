@@ -1,5 +1,5 @@
 ---
-title: View And Update Document Properties
+title: View And Update Document Properties Feature
 layout: docs
 category: Unity 7
 ---

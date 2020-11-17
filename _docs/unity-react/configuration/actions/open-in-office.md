@@ -38,7 +38,7 @@ For `Open in Office` action following section should be added to the Unity Syste
 |ResourceName | documents |
 |ActionType   | open.addon|
 
-Security section defines action accessibility. Please refer to [Security Restrictions](../security.md#security-restrictions) for more information about security configuration.
+Perform the rest of [Common Action Configuration Steps](../actions.md#common-actions-configuration-steps). 
 
 ## Check Out and Open in Office action
 
@@ -69,27 +69,7 @@ For `Check Out and Open in Office` action following section should be added to t
 |ResourceName | documents |
 |ActionType   | checkout.addon |
 
-Security section defines action accessibility. Please refer to [Security Restrictions](../security.md#security-restrictions) for more information about security configuration.
-
-## Adding actions to the Grid
-
-Both actions should be added to the Grid configuration. Refer to [How to Add Action to the Grid](../grids.md#how-to-add-action-to-the-grid).
-
-Example: 
-
-```xml
-<Grid ID="document_search" enableColumnReorder="false" groupSearchResults="false">
-  <Toolbar>
-    <Actions>
-      <!-- other actions -->
-      <Action ID="openInOffice"/>
-      <Action ID="checkOutOpenInOffice"/>
-    </Actions>
-  </Toolbar>
-  <!-- not relevant nodes skipped -->
-</Grid>
-
-``` 
+Perform the rest of [Common Action Configuration Steps](../actions.md#common-actions-configuration-steps). 
 
 # Open in Office Actions Configuration for SharePoint documents
 
@@ -122,6 +102,8 @@ For `Open in browser` action following section should be added to the Unity Syst
 |ResourceName | documents |
 |ActionType   | open.browser|
 
+Perform the rest of [Common Action Configuration Steps](../actions.md#common-actions-configuration-steps). 
+
 ## Check out and open in browser action
 
 For `Check out and open in browser` action following section should be added to the Unity System XML file:
@@ -150,6 +132,8 @@ For `Check out and open in browser` action following section should be added to 
 |:------------|:------------|
 |ResourceName | documents |
 |ActionType   | checkout.browser|
+
+Perform the rest of [Common Action Configuration Steps](../actions.md#common-actions-configuration-steps). 
 
 ## Open in desktop app action
 
@@ -180,6 +164,8 @@ For `Open in desktop app` action following section should be added to the Unity 
 |ResourceName | documents |
 |ActionType   | open.desktop|
 
+Perform the rest of [Common Action Configuration Steps](../actions.md#common-actions-configuration-steps). 
+
 ##  Check out and open in desktop app action
 
 For `Check out and open in desktop app` action following section should be added to the Unity System XML file:
@@ -208,3 +194,5 @@ For `Check out and open in desktop app` action following section should be added
 |:------------|:------------|
 |ResourceName | documents |
 |ActionType   | checkout.desktop|
+
+Perform the rest of [Common Action Configuration Steps](../actions.md#common-actions-configuration-steps). 

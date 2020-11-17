@@ -3,7 +3,7 @@ title: Properties Action Configuration
 layout: docs
 category: Unity 7
 ---
-`Properties` action is responsible for `Properties` tab on Get Info dialog. This tab allows to view and update document 
+`Properties` action is responsible for `Properties` tab on [Get Info](get-info.md) dialog. This tab allows to view and update document 
 properties. Example of action configuration:
 
 ```xml
@@ -26,3 +26,5 @@ properties. Example of action configuration:
 | Parameter | Description |
 |:----|:-------------------|
 |UpdateTemplate | Update template identifier |
+
+Perform the rest of [Common Action Configuration Steps](../actions.md#common-actions-configuration-steps). 
