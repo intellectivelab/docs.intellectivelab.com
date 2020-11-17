@@ -43,13 +43,16 @@ It's also required to specify `View` in solution configuration file:
         </Tab>
       </Tabs>
     </Create>
+  <!-- not relevant nodes skipped -->
   </Documents>
+<!-- not relevant nodes skipped -->
 </Views>
 ```
 
 `Tabs` tag parameters:
+
 | Parameter   | Description |
 |:------------|:------------|
-|DocumentType | Documents\Document   |
+|DocumentType | The name of concrete resource type view is created for.   |
 |Scope        | Optional. The repository data provider id. No need to specify this parameter if DocumentType belongs to one data provider. |
 
