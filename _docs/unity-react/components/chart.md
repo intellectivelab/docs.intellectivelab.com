@@ -21,6 +21,8 @@ The Bar Chart shows comparisons among discrete categories. One axis of the chart
 
 The Bar Chart component is built based on [React-Vis Bar chart](https://uber.github.io/react-vis/documentation/series-reference/bar-series).
 
+[Bar Chart configuration](../configuration/charts.md#bar-chart)
+
 ## Line Chart
 
 The **Line Chart** displays information as a line segments. The Line Chart is often used to visualize a trend in data over intervals of time. The lines can be plotted vertically or horizontally: 
@@ -29,6 +31,8 @@ The **Line Chart** displays information as a line segments. The Line Chart is of
 
 The Line Chart component is built based on [React-Vis Line chart](https://uber.github.io/react-vis/documentation/series-reference/line-series).
 
+[Line Chart configuration](../configuration/charts.md#line-chart)
+
 ## Mark Chart
 
 The **Mark Chart** displays discrete information. The marks can be plotted vertically or horizontally: 
@@ -36,6 +40,8 @@ The **Mark Chart** displays discrete information. The marks can be plotted verti
 ![Mark Chart Vertical](chart/images/mark-chart-vertical.png) 
 
 The Mark Chart component is built based on [React-Vis Mark chart](https://uber.github.io/react-vis/documentation/series-reference/mark-series).
+
+[Mark Chart configuration](../configuration/charts.md#mark-chart)
 
 ## LineMark Chart
 
@@ -47,6 +53,8 @@ The LineMark Chart is a combination of a [Line Chart](#line-chart) and a [Mark C
 
 The LineMark Chart component is built based on [React-Vis LineMark chart](https://uber.github.io/react-vis/documentation/series-reference/line-mark-series).
 
+[LineMark Chart configuration](../configuration/charts.md#linemark-chart)
+
 ## Area Chart
 
 The **Area Chart** displays graphically quantitative data. It is based on the [Line Chart](#line-chart). 
@@ -56,11 +64,15 @@ The Area Chart is often used to visualize a trend in data over intervals of time
 
 The Area Chart component is built based on [React-Vis Area chart](https://uber.github.io/react-vis/documentation/series-reference/area-series).
 
+[Area Chart configuration](../configuration/charts.md#area-chart)
+
 ## Composite Chart
 
 Several Plot charts can be combined into one Composite Chart.
 
 *Content to be added*
+
+[Composite Chart configuration](../configuration/charts.md#composite-chart)
 
 # Radial Charts
 
@@ -79,11 +91,15 @@ Pie charts can be replaced in most cases by other charts such as the [Bar Chart]
 
 The Pie Chart component is built based on [React-Vis Radial chart](https://uber.github.io/react-vis/documentation/other-charts/radial-chart).
 
+[Pie Chart configuration](../configuration/charts.md#pie-chart)
+
 # Hierarchical Charts
     
 ## Tree Map
 
 *Content to be added*
+
+[Tree Map Chart configuration](../configuration/charts.md#tree-map)
 
 ## Table Heat Map
 
@@ -101,9 +117,13 @@ Sunburst charts allow for at a glance understanding of distributions of nested g
 
 The Sunburst Chart component is built based on [React-Vis Sunburst diagram](https://uber.github.io/react-vis/documentation/other-charts/sunburst-diagram).
 
+[Sunburst Chart configuration](../configuration/charts.md#sunburst)
+
 ## Zoomable Sunburst
 
 *Content to be added*
+
+[Zoomable Sunburst Chart configuration](../configuration/charts.md#zoomable-sunburst)
 
 # How To Use Charts
 
