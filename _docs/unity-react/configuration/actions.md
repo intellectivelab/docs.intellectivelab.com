@@ -11,8 +11,8 @@ category: Unity 7
 - set [Specific actions configuration options](#specific-actions-configuration-options)
 - add action to [Actions tag](tags-list/actions-tag.md)
 - [add action to the Grid](grids.md#how-to-add-action-to-the-grid)
-- [add action to the View](tags-list/views-tag.md#how-to-add-action-to-the-view) (optional)
-- [specify View for the action](tags-list/action-view.md) (required for particular actions)
+- [add action to the View](tags-list/views-tag/tab-action-set.md#how-to-add-action-to-the-view) (optional)
+- [specify View for the action](tags-list/views-tag.md) (required for particular actions)
 
 ## Common actions attributes and tags
 
