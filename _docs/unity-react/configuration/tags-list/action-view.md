@@ -55,9 +55,12 @@ This tab is supported for all document actions listed in [Actions with view](#ac
 
 | Attribute | Description         |
 |:----------|:--------------------|
+| Type      | `Details` (tab type)|
 | ID        | Tab identifier      |
 | Label     | Tab label           |
 | FieldSet  | Fieldset identifier |
+
+For `view` action it's possible to [add a toolbar with other actions](./views-tag.md) on `Property` tab. 
 
 *content to be added (other tab types + fieldset configuration)*
 
