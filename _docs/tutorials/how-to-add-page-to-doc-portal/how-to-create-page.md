@@ -3,179 +3,20 @@ title: How To Create Page
 layout: docs
 category: Unity 7
 ---
-This is a guide how to create page for github documentation site using Markdown syntax. If you know Markdown syntax, start from [Markdown file structure and page structure](how-to-create-page.md#markdown-file-structure-and-page-structure).  
+This is a guide how to create page for github documentation site using [Markdown syntax](markdown-syntax.md). 
 
-# Markdown Syntax 
-
-## Headings 
-
-To create a heading, add number signs (#) in front of a word or phrase:   
-```
-# Heading Level 1  
-## Heading level 2  
-### Heading level 3  
-```
-Heading Level 1 is the biggest. 
-Don't forget type a space between `#` and `Heading`. 
-
-## Paragraphs 
-
-To create paragraphs, use a blank line between text lines. Don't put tabs or spaces in front of your paragraphs.  
-```
-This is the first paragraph of text.
-
-This is the second paragraph of text.
-```
-
-## Line breaks 
-
-To create a line break, end a line with two or more spaces, and then press `Enter`.  
-Next text will be on the next line. 
-```
-This is the first line of paragraph.  
-This is the second line of paragraph. 
-```
-
-## Lists 
-
-To organize items in unordered list, type: 
-```
-- First item  
-- Second item  
-- Third item 
-``` 
-It will look on page:  
-- First item
-- Second item
-- Third item  
-
-To organize items in ordered list, type:
-``` 
-1. First item
-2. Second item
-3. Third item 
-```
-
-It will look on page: 
-1. First item
-2. Second item
-3. Third item 
-
-## Links 
-
-To create a link, type: 
-```
-[Title of link](url)
-```
-It will look on page:  
-[Title of link](#links) 
-
-## Images 
-
-To insert an image, type: 
-```
-![Title of image](url)
-``` 
-
-## Code and code blocks 
-
-To denote a word or phrase as code, enclose it in backticks (`):
-
-```
-`code word` 
-```
-
-It will look on page: 
-
-`code word` 
-
-To create code block, use three backticks (```) on the lines before and after the code block: 
-
-```
-{
-  "firstName": "John",
-  "lastName": "Smith",
-  "age": 25
-}
-```
-
-Many Markdown processors support syntax highlighting for fenced code blocks. 
-To highlight code, add `json` just after three backticks before the code block: 
-
-```json
-{
-  "firstName": "John",
-  "lastName": "Smith",
-  "age": 25
-}
-```
-
-## Tables 
-
-To create a table, type: 
-```
-| Column 1     | Column 2     |
-| ------------ | ------------ |
-| cell content | cell content |
-| cell content | cell content |
-```
-It will look on page: 
-
-| Column 1     | Column 2     |
-| ------------ | ------------ |
-| cell content | cell content |
-| cell content | cell content | 
-
-To align columns to the left or right edge, or center add `:` sign: 
-```
-| Column 1             | Column 2          | Column 3        |
-| :------------------- | :---------------: | --------------: |
-| left                 | centered          | right           |
-| alignment            | alignment         | alignment       |
-```
-It will look on page: 
-
-| Column 1             | Column 2          | Column 3        |
-| :------------------- | :---------------: | --------------: |
-| left                 | centered          | right           |
-| alignment            | alignment         | alignment       |
-
-You can add links, code (words or phrases in backticks (`) only, not code blocks), and emphasis.
-You can’t add headings, blockquotes, lists, horizontal rules, images, or HTML tags.  
-Use [Markdown Tables Generator](https://www.tablesgenerator.com/markdown_tables) to create tables. 
-
-## Emphasis 
-
-To **bold** text, add two asterisks before and after word or phrase: `**bold**`
-
-## Blockquotes 
-
-To create a blockquote, add a > in front of a paragraph: 
-
-```
-> This is a citation from another document  
-```
-It will look on page: 
-
-> This is a citation from another document  
-
-
-For additional information about Markdown syntax see:  
-- [https://www.markdownguide.org/basic-syntax/](https://www.markdownguide.org/basic-syntax/)  
-- [https://www.markdownguide.org/extended-syntax/](https://www.markdownguide.org/extended-syntax/)
-
-# Markdown file structure and page structure 
+# Markdown File Structure And Page Structure 
 
 ## Metadata in the beginning of .md file 
 
 ```
 ---
-title: New Page Template
+title: New Page Title
 layout: docs
 category: Unity 7
 ---
 ```
-This information is not visible on site page, but required to properly embed page in the site. Start page text just below metadata, without empty rows.  
+This information is not visible on site page except title. Use first capital letters in each word to write title. Start page text just below metadata, without empty rows.  
 
 ## Title of page 
  
@@ -189,7 +30,7 @@ Table of contents is created automatically from headers on page. It is important
 
 ### Text 
 
-Use `# Heading Level 1` with all capital letters to write titles of chapters. The first heading on page should be `# Heading`, otherwise automatic ToC might work incorrectly.    
+Use `# Heading Level 1` with first capital letters in each word to write titles of chapters. The first heading on page should be `# Heading`, otherwise automatic ToC might work incorrectly.    
 
 Use `## Heading level 2`, `### Heading level 3` and `#### Heading level 4` with only first capital letter to write subchapters.  
 
@@ -199,55 +40,60 @@ Use proper order for heading levels. Do not place `### Heading level` under `# H
 
 Use backticks (`) to write: 
 - commands and messages in Command Prompt: `cd C:\DockerUnity\`, `Login Succeeded` 
-- names and paths to directories and files: `C:/DockerUnity` 
+- file names and paths to directories and files: `config.xml`, `C:/DockerUnity`  
 - paths to sections: `Resources > File sharing` 
 - buttons: `Apply` button 
 - boolean operators: `AND`,`OR`  
 
 Bold text is automatically used in tables for column titles. 
-Also use bold text to title parts of text like **Problem** and **Solution** in Troubleshooting chapter  
+Also use bold text to title parts of text like **Problem** and **Solution** in Troubleshooting chapter.  
 
-To emphasize important notes, type `| **Note:** plain text of note`. 
+To emphasize important notes, type: `| **Note:** plain text of note.`   
 It will look on page:  
 
-| **Note:** plain text of note  
-
-Use blockquotes to write quotes from an external sources.
+| **Note:** plain text of note.  
 
 Use plain text for the rest of content.  
 
-### Lists using 
+### Lists
 
-Unordered lists are preferable. Use ordered lists if only it is necessary to count items. 
+Unordered lists are preferable. Use ordered lists if only it is necessary to count items.  
+To align next paragraph inside list use `tab` before paragraph. 
 
-### Code blocks using 
+### Code blocks
 
-Use simple and highlighted code blocks with `json`, `xml` or `java` tags. 
+Use simple and highlighted code blocks with `json`, `xml` or `java` tags.  
+To align code block with text in list use `tab` before code block.
 
 ### Images and screenshots requirements 
 
 - Preferable image format is .png 
 - Do not scale or compressed images, use actual pixel size
 - Crop screenshots accurately 
-- Screenshots to illustrate process steps should have the same size 
 - For highlighting use red frames, red color is R220 G56 B64 (#dc3840):  
 	![highlight](how-to-create-page/images/image10.png) 
+- If you need to add text on screenshot, use the same red color and Lato font
 - Use `:` after the text before image if the image illustrates this text 
-- Keep empty row before and after image row
-- To align left edge of the image with text in list, use `tab` before `![Title of image](url)`
-
-Optional: Most images look better when adding a grey 1px border, grey color is R167 G167 B167 (#a7a7a7). 
-Some images like schemes or diagrams on white background don't need any border. 
 
 Images should be placed to `name-of-your-md-file/images/` folder:
 
 ![files-structure](how-to-create-page/images/files-structure.png) 
   
-To insert image into page use `![image-title](name-of-your-md-file/images/name-of-image.png)` 
+To insert image into page use `![image-title](name-of-your-md-file/images/name-of-image.png)` with empty rows before and after.  
+To align left edge of the image with text in list, use `tab` before image code.
 
-To insert a clickable image preview into page use `[![image-title](name-of-your-md-file/images/name-of-image-preview.png)](name-of-your-md-file/images/name-of-fullsize-image.png)`
+To insert a clickable image preview into page use `[![image-title](name-of-your-md-file/images/name-of-image-preview.png)](name-of-your-md-file/images/name-of-fullsize-image.png)` 
+with empty rows before and after.
+
+Optional: Most images look better when adding a grey 1px border, grey color is R167 G167 B167 (#a7a7a7). 
+These borders will be added by a technical writer. 
+Some images like schemes or diagrams on white background don't need any border. 
+
 
 ### Links to pages 
+
+Use links on your page, and don't forget to add links to your page on other pages if needed.  
+If you need to edit header on page, make sure there are no links to this header from another places.
 
 #### Link to current page 
 
@@ -270,12 +116,15 @@ To insert a link to any header of another documentation portal page type:
 To insert a link to external page type:  
 `[Link Title](url)`  
 
+Don't use `here` as a link title, always try to use a meaningful name.  
+Use `[url](url)` if you need to make url visible.
+
 #### Downloads
 
 If user should download file from your page, for example `config.xml` for tutorial, place it in `name-of-your-md-file/downloads/` folder.  
 Make sure this file doesn't contain any confidential information like passwords etc.
 
-### Tables using 
+### Tables
 
 The simpler the better. Big tables might be rendered unpredictable.  
 Keep empty row before and after table code. 
@@ -298,7 +147,7 @@ It will look on page:
 
 &rarr; [Next step: Next Page Title](#next-step-recommendations-optional)
 
-# Creating subpages
+# Creating Subpages
 
 If content is too big to place it on one primary page, you can create secondary pages (subpages) and place links there on the primary page.  
 Thus, there are:
@@ -311,7 +160,7 @@ Place `secondary-page-name.md` file in the folder `primary-page-name`, where ima
 
 Create folder `secondary-page-name` to place images and downloads for this subpage.
 
-# Viewing page in local environment
+# Viewing Page In Local Environment
 
 To open page in local environment:
 - run Docker
@@ -323,9 +172,10 @@ To open page in local environment:
 
 # Verifying
 
-Read whole page before publishing. Verify that all images are shown properly and each link works.  
-Check automatic Table of Contents in the beginning of page, that its structure corresponds to content.
+Read whole page before creating pull request. Verify that all images are shown properly and each link works.  
+Check automatic Table of Contents in the beginning of page, if its structure corresponds to content.
 
+&rarr; [Next step: How To Add Page To Documentation Portal](../how-to-add-page-to-doc-portal.md)
 
 
 

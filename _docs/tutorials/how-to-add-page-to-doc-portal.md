@@ -7,9 +7,10 @@ Documentation portal - [https://docs.intellectivelab.com/](https://docs.intellec
 Documentation portal github repository - [https://github.com/intellectivelab/docs.intellectivelab.com](https://github.com/intellectivelab/docs.intellectivelab.com)
 
 To edit and add new content to documentation portal you should:
+- know basic [Markdown syntax](how-to-add-page-to-doc-portal/markdown-syntax.md)
 - have environment and basic skills to work with [git](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/git-and-github-learning-resources)
 - be a member of Intellective github organization 
-- use SSH key for authentication 
+- use [SSH key](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/connecting-to-github-with-ssh) for authentication 
 
 To add new content to the project perform the following steps:
 - Clone [documentation portal github repository]((https://github.com/intellectivelab/docs.intellectivelab.com)) to your local environment.
