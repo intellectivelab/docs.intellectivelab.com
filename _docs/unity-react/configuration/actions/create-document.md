@@ -31,6 +31,6 @@ For `Create` document action following section should be added to the Unity Syst
 |ActionType   | create      |
 |Scope        | Optional. The repository data provider id. Default value: `inherit` (it means that this parameter will be inherited from `Search Template` or `Grid` component) |
 
-It's required to specify `View` in solution configuration file.
+It's required to [specify View](../tags-list/views-tag.md) in solution configuration file.
 
 Perform the rest of [Common Action Configuration Steps](../actions.md#common-actions-configuration-steps). 

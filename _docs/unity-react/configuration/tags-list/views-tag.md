@@ -8,9 +8,7 @@ category: Unity 7
 ## Actions with view
 
 - [Create document](../actions/create-document.md)
-
 - [View document](../actions/view-document.md)
-
 - [Check In document](../actions/checkin-document.md)
 
 ## Tabs section configuration
@@ -39,7 +37,7 @@ Tabs section attributes:
 | Scope        | Optional. The repository data provider id. No need to specify this parameter if DocumentType belongs to one data provider |
 | ViewType     | This parameter is required for `checkin` action and should match action's ViewType value |
 
-Tabs section may contain one or more `Tab` tags
+Tabs section may contain one or more `Tab` tags.
  
 ### Properties tab
 
