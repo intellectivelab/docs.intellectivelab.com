@@ -235,10 +235,12 @@ Case attachments search template properties:
 |SolutionId   |Solution id|
 |TargetDataProviderId |Target data provider id|
 |objectStore |Object Store (for FileNet only)|
-|Query |Query |
+|Query |Query<sup>1</sup> |
 |DocumentLinkStrategy |Link strategy, depends on data provider: `ucmP8` - FileNet, `ucmCMIS` - CMIS, `ucmBox` - Box, `ucmCmod` - CMOD, `ucmUie` - Enterprise Search, `ucmSp` - SharePoint |
 |DocumentLinkScope |Document link scope |
 |FolderPath   |Optional. In order to show case folders for attachments search template, this parameter should equal `/`|
+
+<sup>1</sup> See [macros configuration](./basic-steps.md#macros-configuration) for details.
 
 # Criteria section configuration
 
