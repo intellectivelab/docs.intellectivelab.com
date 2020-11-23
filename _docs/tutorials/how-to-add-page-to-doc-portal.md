@@ -9,11 +9,15 @@ Documentation portal github repository - [https://github.com/intellectivelab/doc
 To edit and add new content to documentation portal you should:
 - know basic [Markdown syntax](how-to-add-page-to-doc-portal/markdown-syntax.md)
 - have environment and basic skills to work with [git](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/git-and-github-learning-resources)
-- be a member of Intellective github organization 
-- use [SSH key](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/connecting-to-github-with-ssh) for authentication 
+- be a member of Intellective github organization called `intellectivelab` 
 
 To add new content to the project perform the following steps:
-- Clone [documentation portal github repository]((https://github.com/intellectivelab/docs.intellectivelab.com)) to your local environment.
+- Clone [documentation portal github repository]((https://github.com/intellectivelab/docs.intellectivelab.com)) to your local environment.  
+    You can use either HTTPS or [SSH key](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/connecting-to-github-with-ssh) for authentication: 
+    
+    ![Clone repository](how-to-add-page-to-doc-portal/images/clone-repo.png)
+    
+    [How to clone repository](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
 - Create a `new branch` from `master`. Use JIRA task number in name of your branch if needed.  
     Branch name examples:
     - feature/U7-3236_sunburst_chart
