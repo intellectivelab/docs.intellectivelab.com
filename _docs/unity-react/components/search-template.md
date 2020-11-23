@@ -18,7 +18,7 @@ category: Unity 7
 ## Fuzzy search
 ## Enterprise search 
 ## Quick search (date ranges, text input, choices, and categories)
-## Recent view history – a list of references to recently viewed items
+## [Recent view history](search-template/recent-view-history.md) – a list of references to recently viewed items
 ## Data export 
 ## Skimming view
 ## Adaptive
