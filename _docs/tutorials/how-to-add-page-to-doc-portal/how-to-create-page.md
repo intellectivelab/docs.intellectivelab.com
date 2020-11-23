@@ -176,6 +176,3 @@ Read whole page before creating pull request. Verify that all images are shown p
 Check automatic Table of Contents in the beginning of page, if its structure corresponds to content.
 
 &rarr; [Next step: How To Add Page To Documentation Portal](../how-to-add-page-to-doc-portal.md)
-
-
-
