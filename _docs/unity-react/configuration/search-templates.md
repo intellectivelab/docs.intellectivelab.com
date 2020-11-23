@@ -17,6 +17,7 @@ List of available properties for documents search template is in the table below
 |:------------|:------------|
 |ResourceName |`documents`|
 |ResourceType |Optional. The name of concrete resource type, i.e. document class, e.g. `DiffProperties`. If not specified, search will be executed among items of `Document` document class and it's subclasses.|
+|FolderPath   |Optional. When specified, it is used as a root path for folder view, that will be displayed on the left side of search template.|
 
 List of available properties for cases search template is in the table below: 
 
@@ -34,6 +35,7 @@ List of available properties for documents search template is in the table below
 |:------------|:------------|
 |ResourceName |`documents`|
 |ResourceType |Optional. The name of concrete resource type, i.e. document `Type`, e.g. `D:TM:DiffProperties`. If not specified, search will be executed against all documents with cmis:document `Base Type`|
+|FolderPath   |Optional. When specified, it is used as a root path for folder view, that will be displayed on the left side of search template.|
 
 ## Box (BoxRepositoryDataProvider)
 
@@ -61,6 +63,7 @@ List of available properties for documents search template is in the table below
 |:------------|:------------|
 |ResourceName |`documents`|
 |ResourceType |The name of concrete resource type, i.e. item type, e.g. `UTESTDOC1`. *todo: add information on whether it's optional or not and if it's possible to search against all documents*|
+|FolderPath   |Optional. When specified, it is used as a root path for folder view, that will be displayed on the left side of search template.|
 
 ## Enterprise search
 
@@ -137,6 +140,105 @@ to string (example above is for db2, which doesn't support BOOLEAN, that's why I
 and IS_CURRENT_DOC are returned as 'True' / 'False' text).
 
 *content to be added (other data providers)*
+
+## SharePoint
+
+| Parameter   | Description |
+|:------------|:------------|
+|ResourceName |`documents`|
+|ResourceType |Optional. The name of concrete resource type, e.g. `Documents\Document`. *todo: add description for case when parameter is absent*|
+|FolderPath   |Optional. When specified, it is used as a root path for folder view, that will be displayed on the left side of search template.|
+
+## Case attachments
+
+Example of configuration:
+
+```xml
+<SearchTemplate ID="UCM_Case_DiffDocs_Search_P8">
+  <DataProviderId>ucm_over_icm_provider</DataProviderId>
+  <Description>UCM P8 DiffDocument search for attachments tab</Description>
+  <Comment>Enter search criteria</Comment>
+  <Autoexecute>true</Autoexecute>
+  <Hidden>false</Hidden>
+  <Security>
+    <AllowRole>Unity Users</AllowRole>
+  </Security>
+  <Operation dataProviderId="ucm_over_icm_provider" type="ucm_search_documents">
+    <OperationProperties>
+      <Property ID="FolderPath" value="/"/>
+      <Property ID="objectStore" type="FIRST">
+        <SecuredValue>
+          <Value>SODemo</Value>
+        </SecuredValue>
+      </Property>
+      <Property ID="SolutionId" type="FIRST">
+        <SecuredValue>
+          <Value>CustomerComplaints</Value>
+        </SecuredValue>
+      </Property>
+      <Property ID="TargetDataProviderId" type="FIRST">
+        <SecuredValue>
+          <Value>ce_repository</Value>
+        </SecuredValue>
+      </Property>
+      <Property ID="ResourceName" type="FIRST">
+        <SecuredValue>
+          <Value>documents</Value>
+        </SecuredValue>
+      </Property>
+      <Property ID="query" type="FIRST">
+        <SecuredValue>
+          <Value>SELECT {Macro.ResultProperties}, [Reservation] FROM DiffProperties WHERE ({UCM.IN_FOLDER}) AND {Macro.QueryCriterion} AND {Macro.FilterCriterion}</Value>
+        </SecuredValue>
+      </Property>
+      <Property ID="DocumentLinkStrategy" type="FIRST">
+        <SecuredValue>
+          <Value>ucmP8</Value>
+        </SecuredValue>
+      </Property>
+      <Property ID="ResourceType" type="FIRST">
+        <SecuredValue>
+          <Value>DiffProperties</Value>
+        </SecuredValue>
+      </Property>
+      <Property ID="DocumentLinkScope" type="FIRST">
+        <SecuredValue>
+          <Value>CASE</Value>
+        </SecuredValue>
+      </Property>
+    </OperationProperties>
+  </Operation>
+  <SortFields/>
+  <Grid ID="UCM_Case_Docs_Search_FileNet"/>
+  <Criteria>
+    <Criterion>
+      <FieldName>DocumentTitle</FieldName>
+      <Type>string</Type>
+      <Operator>starts</Operator>
+      <Required>false</Required>
+      <Hidden>false</Hidden>
+      <Readonly>false</Readonly>
+      <MultiValue>false</MultiValue>
+      <MaxLength>20</MaxLength>
+    </Criterion>
+  </Criteria>
+  <SavePanel>false</SavePanel>
+</SearchTemplate>
+```
+
+Case attachments search template properties: 
+
+| Parameter   | Description |
+|:------------|:------------|
+|ResourceName |`documents`|
+|ResourceType |Resource type; it's value depends on target data provider|
+|SolutionId   |Solution id|
+|TargetDataProviderId |Target data provider id|
+|objectStore |Object Store (for FileNet only)|
+|Query |Query |
+|DocumentLinkStrategy |Link strategy, depends on data provider: `ucmP8` - FileNet, `ucmCMIS` - CMIS, `ucmBox` - Box, `ucmCmod` - CMOD, `ucmUie` - Enterprise Search, `ucmSp` - SharePoint |
+|DocumentLinkScope |Document link scope |
+|FolderPath   |Optional. In order to show case folders for attachments search template, this parameter should equal `/`|
 
 # Criteria section configuration
 
