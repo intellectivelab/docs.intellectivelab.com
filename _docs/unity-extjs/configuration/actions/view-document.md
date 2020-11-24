@@ -44,14 +44,14 @@ View action custom parameters:
 
 | Parameter       | Description |
 |:----------------|:------------|
-|CheckExistence   | Once `multiselect` set to `false` and `CheckExistence` in `CustomParameters` section is set to `true` then `'permissions/check'` roundtrip to server will be performed before the actual action.|
+|CheckExistence   | Once `CheckExistence` in `CustomParameters` section is set to `true` then `'permissions/check'` roundtrip to server will be performed before the actual action.|
 |EnableRule       | Checks document properties values corresponding to SPEL condition. If true then menu item is supposed to be enabled.|
 
 # Configuration options
 
 ## How to check if user has access to view document before trying to open document in viewer
 
-Once `multiselect` set to `false` and `CheckExistence` in `CustomParameters` section is set to `true` then `'permissions/check'` roundtrip to server will be performed before the actual action. 
+Once `CheckExistence` in `CustomParameters` section is set to `true` then `'permissions/check'` roundtrip to server will be performed before the actual action. 
 It may be useful for crawled items being retrieved by the user with no rights to view it.
 
 Perform the rest of [Common Action Configuration Steps](../actions.md#common-actions-configuration-steps). 
