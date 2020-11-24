@@ -16,6 +16,10 @@ be rendered as a separate button (if only one attach action is bound to the grid
 
 - Open case for edit and switch to one of `Attachments` tab 
 
+- Select a case folder to attach document to (if this feature is available):
+
+    ![Case folders](attach-document/images/attach-document-to-case-folder.png)
+
 - Click `attach` action on a grid toolbar and select particular type of document to be uploaded and attached 
 (if dropdown is available): 
 
