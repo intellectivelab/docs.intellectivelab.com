@@ -1,5 +1,5 @@
 ---
-title: Unity Components - Recent view history
+title: Unity Components - Recent View History
 layout: docs
 category: Unity 7
 ---
