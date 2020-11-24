@@ -15,6 +15,7 @@ category: Unity 7
 ## Drag and Drop a file into the create/view form 
 ## Folder select - upload a document into the selected folder [U7-2715](https://jira.intellective.com/browse/U7-2715)
 ## Document search and navigation
+## [View document](document-management/view-document.md)
 ## View and update document properties
 ## Document versioning
 ## [Document content actions (view content and download)](document-management/document-content-actions.md)
