@@ -60,7 +60,39 @@ This tab is supported for all document actions listed in [Actions with view](#ac
 
 For `view` action it's possible to [add a toolbar with other actions](./views-tag/tab-action-set.md) on `Property` tab. 
 
-*content to be added (other tab types + fieldset configuration)*
+*content to be added (fieldset configuration)*
+
+### Versions tab
+
+Example of `Versions` tab configuration.
+
+```xml
+<Tab ID="2" Label="Versions" Tooltip="Document Versions" Type="Versions">
+  <CustomParameters>
+    <Parameter Value="searchTemplate" Name="viewMode"/>
+    <Parameter Value="document_versions_testteamsite-templates-set" Name="templateSet"/>
+    <Parameter Value="testteamsite-getinfo-versions-grid" Name="gridId"/>
+  </CustomParameters>
+  <Tools/>
+</Tab>
+```
+
+This tab is supported for `View` action only. Available attributes are in the table below:
+
+| Attribute | Description         |
+|:----------|:--------------------|
+| Type      | `Versions` (tab type)|
+| ID        | Tab identifier      |
+| Label     | Tab label           |
+
+Custom parameters section should contain following parameters:
+
+| Parameter name | Description         |
+|:---------------|:--------------------|
+| viewMode       | `searchTemplate`    |
+| templateSet    | Versions template set id |
+| gridId         | Grid id |
+
 
 # Cases
 
