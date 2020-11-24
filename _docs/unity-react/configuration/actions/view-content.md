@@ -3,6 +3,8 @@ title: View Content Action Configuration
 layout: docs
 category: Unity 7
 ---
+[View Content feature description](../../features/document-management/view-content.md)
+
 For `View Content` action following section should be added to the Unity System XML file:
  
 ```xml
