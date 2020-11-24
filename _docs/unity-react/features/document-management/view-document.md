@@ -5,11 +5,31 @@ category: Unity 7
 ---
 # Description
 
-*content to be added*
+View document action allows to 
 
-# How to view a document(-s)
+- view document properties
 
-*content to be added*
+- view versions
+
+- perform some actions on document like check out, check in, cancel check out, view content, download, delete, 
+open in office, etc. List of document actions depends on action view configuration and data provider
+
+- perform some actions on document versions like promote / demote / make version current / delete version. List of 
+actions depends on configuration and data provider
+
+# How to view document properties
+
+- Click on context menu icon of the document, and select `Edit` action
+
+    ![Context-menu](view-document/images/view-action-context-menu.png)
+    
+    Alternatively just click on link in favorite column:
+    
+    ![View link](view-document/images/view-action-link.png)
+    
+- Document Details view will appear:
+
+    ![View document action](view-document/images/view-document-action.png)
    
 # Configuration
 
