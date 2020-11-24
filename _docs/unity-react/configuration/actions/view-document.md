@@ -18,7 +18,7 @@ For `View` document action following section should be added to the Unity System
     <!-- not relevant nodes skipped -->
   </CustomParameters>
   <Security/>
-    <!-- not relevant nodes skipped -->
+  <!-- not relevant nodes skipped -->
 </Action>
 ```
 
