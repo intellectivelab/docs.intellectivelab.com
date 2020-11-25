@@ -5,7 +5,7 @@ category: Unity 7
 ---
 *content to be added*
  
-# Operation section configuration
+# Operation Section Configuration
 
 ## Documents/Cases/Workitems search
 
@@ -23,10 +23,9 @@ Set of properties inside `Operation` -> `OperationProperties` section depends on
 ## Search templates for view action tabs
 
 [Document versions](search-templates/document-versions.md)  
-
 [Case attachments](search-templates/case-attachments.md)
 
-# Criteria section configuration
+# Criteria Section Configuration
 
 Criteria section can contain a set of `Criterion`s to be used for rendering criteria search panel.
 
@@ -36,7 +35,7 @@ Criteria section can contain a set of `Criterion`s to be used for rendering crit
 
 [Facet (category) field](search-templates/facet-category-field.md)
 
-# Sorting configuration
+# Sorting Configuration
 ```xml
 <SearchTemplate ID="templateByDate">
     <SortFields>

@@ -21,7 +21,7 @@ To create a view for document action, following tag should be added to solution 
 </Tabs>
 ```
 
-Tabs tag should be placed inside one of following sections:
+`Tabs` tag should be placed inside one of following sections:
 
 | Section                            | Action types |
 |:-----------------------------------|:-------------|
@@ -98,6 +98,6 @@ Custom parameters section should contain following parameters:
 
 *content to be added*
 
-# Work items
+# Work Items
 
 *content to be added*
