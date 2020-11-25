@@ -3,7 +3,7 @@ title: Create Document Action Configuration
 layout: docs
 category: Unity 7
 ---
-[Create document feature description](../../features/document-management/create-document.md)
+[Create Document feature description](../../features/document-management/create-document.md)
 
 For `Create` document action following section should be added to the Unity System XML file:
  

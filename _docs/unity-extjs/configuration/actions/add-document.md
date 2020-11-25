@@ -3,7 +3,7 @@ title: Add Document Action Configuration
 layout: docs
 category: Unity 7
 ---
-[Add document feature description](../../features/document-management/add-document.md)
+[Add Document feature description](../../features/document-management/add-document.md)
 
 # Example
 
