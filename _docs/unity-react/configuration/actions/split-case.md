@@ -3,7 +3,7 @@ title: Split Case Action Configuration
 layout: docs
 category: Unity 7
 ---
-[Split Case action description](../../features/case-management/split-case.md)
+[Split Case feature description](../../features/case-management/split-case.md)
 
 Split Case Action configuration section should be added to the Unity System XML file. An example:
  

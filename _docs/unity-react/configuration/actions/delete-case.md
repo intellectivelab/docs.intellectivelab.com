@@ -3,7 +3,7 @@ title: Delete Case Action Configuration
 layout: docs
 category: Unity 7
 ---
-[Delete Case action description](../../features/case-management/delete-case.md)
+[Delete Case feature description](../../features/case-management/delete-case.md)
 
 For `Delete` case action following section should be added to the Unity System XML file:
  

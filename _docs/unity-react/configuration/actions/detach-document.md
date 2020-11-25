@@ -3,7 +3,7 @@ title: Detach Document Action Configuration
 layout: docs
 category: Unity 7
 ---
-[Detach Document action description](../../features/case-management/case-attachments.md#detach)
+[Detach Document feature description](../../features/case-management/case-attachments.md#detach)
 
 *content to be added*
 
