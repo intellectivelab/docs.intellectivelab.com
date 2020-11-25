@@ -5,8 +5,8 @@ category: Unity 7
 ---
 # Overview
 
-Each case can have timeline comments. Each comment is only of the types which are shown on the table below.  
-Also, they have corresponding icon except for CASE UPDATED and TASK CREATED ones.
+Each case has timeline comments. The table below shows the type of each comment.
+Each type has corresponding icon except CASE UPDATED and TASK CREATED ones.
 Please note that instead of ID in each template, you'll see actual ID.
 
 | Comment Type | Code | Template | Icon |
@@ -22,6 +22,24 @@ Please note that instead of ID in each template, you'll see actual ID.
 | DOCUMENT ADDED | 401 | Document ID successfully added | ![document-added](case-history-timeline/images/icons/document-added.svg) |
 | DOCUMENT REMOVED | 402 | Document ID successfully removed | ![document-removed](case-history-timeline/images/icons/document-removed.svg) |
 | TASK CREATED | 501 | Task ID successfully created | |
+
+
+# How To See Case Historical Timeline
+
+First, open a case to see its timeline.
+
+![case-created](case-history-timeline/images/open-activity.png)
+
+
+Then click on activity
+
+![case-created](case-history-timeline/images/open-timeline.png)
+
+
+Finally, click on historical timeline
+
+![case-created](case-history-timeline/images/historical-timeline.png)
+
 
 # Configuration
 
