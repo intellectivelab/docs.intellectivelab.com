@@ -135,7 +135,7 @@ Commented CE 5.5 dependencies, as a reference:
 
     ![Topology.xml](customization/images/17-topology-xml.png)
 
-5. Copy `topology.xml` and `streams-schema.xsd` into topologies folder in Interchange root:
+5. Copy `topology.xml` and `streams-schema.xsd` into `topologies` folder in Interchange root:
 
     ![Topology.xml](customization/images/18-interchange-folder.png)
 
