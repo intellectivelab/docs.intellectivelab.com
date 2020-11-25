@@ -43,4 +43,4 @@ Please note that instead of `ID` in each template, you'll see actual ID.
 
 # Configuration
 
-*content to be added*
+Case history timeline feature appears automatically after configuring `ACTIVITY` tab.
