@@ -7,7 +7,7 @@ category: Unity 7
 
 Interchange package contains maven archetype project to quickly create connectors and transformers customization project.
 
-# Maven archetype
+# Maven Archetype
 Before you can use archetype project, you should update your `$HOME/.m2/settings.xml`. Add the following lines:
 
 ```xml
@@ -56,7 +56,7 @@ Open archetype project in IDE as maven project using Java 8 SDK:
 
 ![Mvn generate](customization/images/01-cmd-mvn.png)
 
-# Project structure
+# Project Structure
 
 `$PROJECT/src/README.md` contains instructions how to install custom project artefacts:
 
@@ -103,7 +103,7 @@ Commented CE 5.5 dependencies, as a reference:
 
 ![Assembly xml](customization/images/10-xml-assembly.png)
 
-# Build custom code and integrate in Interchange product 
+# Build Custom Code and Integrate in Interchange Product 
 
 1. Build project and review project artefacts:
 
