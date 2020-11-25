@@ -39,19 +39,19 @@ Choose the action from the list below to find specific options for it.
 
 ## Document related actions
 
-- [Create document](../configuration/actions/create-document.md)
-- [View document](../configuration/actions/view-document.md)
+- [Create Document](../configuration/actions/create-document.md)
+- [View Document](../configuration/actions/view-document.md)
 - [Delete Document](../configuration/actions/delete-document.md)
 - [Open in Office](../configuration/actions/open-in-office.md)
-- [View content](../configuration/actions/view-content.md)
+- [View Content](../configuration/actions/view-content.md)
 - [Check In Document](../configuration/actions/checkin-document.md)
 
 ## Case related actions
  
 - [Split Case](../configuration/actions/split-case.md)
 - [Delete Case](../configuration/actions/delete-case.md)
-- [Attach new document to a case](../configuration/actions/attach-document.md)
-- [Attach existing document to a case](../configuration/actions/attach-existing-document.md)
+- [Attach New Document to a Case](../configuration/actions/attach-document.md)
+- [Attach Existing Document to a Case](../configuration/actions/attach-existing-document.md)
 - [Detach Document](../configuration/actions/detach-document.md)
 
 ## Workitem related actions

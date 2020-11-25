@@ -3,6 +3,8 @@ title: View Document Action Configuration
 layout: docs
 category: Unity 7
 ---
+[View document feature description](../../features/document-management/view-document.md)
+
 Following action can be added to Unity system configuration file:
 
 ```xml
