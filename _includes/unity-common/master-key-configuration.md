@@ -43,7 +43,6 @@ The generated master key will be displayed at the new `Generated key` popup wind
 
 #### Master key at application's web.xml file
 
-
 In this case, the master key is specified at application's web.xml file in the same way as the location of main Unity configuration  
 file (`vSpaceConfigURL` one).  
 The following env entry names can be used for that purpose (each next item at the list can be used to override key from the item before):  
@@ -69,15 +68,6 @@ For example:
 </web-app>
 ```
 
-The encryption keys file is the plain text file that contains the list of master keys for each supported encryption algorithms (3DES, AES and AES256).  
-For example:
-
-```text
-3DES=s1f449/mMbbLiQ0Ef78LmFTltQRPx83x
-AES=ZGVmYXVsdCBhZXMxMjgga2V5LCBwbGVhc2UgcmVwbGFjZSBpbiBwcm9kdWN0aW9u
-AES256=ZGVmYXVsdCBhZXMyNTYga2V5LCBwbGVhc2UgcmVwbGFjZSBpbiBwcm9kdWN0aW9u
-```
-
 *or*
 
 ```xml
@@ -97,6 +87,25 @@ AES256=ZGVmYXVsdCBhZXMyNTYga2V5LCBwbGVhc2UgcmVwbGFjZSBpbiBwcm9kdWN0aW9u
 </web-app>
 ```
 
+The encryption keys file is the plain text file that contains the list of master keys for each supported encryption algorithms (3DES, AES and AES256).  
+For example:
+
+```text
+3DES=s1f449/mMbbLiQ0Ef78LmFTltQRPx83x
+AES=ZGVmYXVsdCBhZXMxMjgga2V5LCBwbGVhc2UgcmVwbGFjZSBpbiBwcm9kdWN0aW9u
+AES256=ZjJwRjFHZ04yM091bUJrb0t3amFHUTViNkVqU280RE0=
+```
+
+#### Master key at application's web.xml file
+
+In this case, the master key is specified via java runtime property (-Dkey=value) for the whole application server.  
+The following java runtime properties can be used for that purpose (each next item at the list can be used to override key from the item before):  
+
+* `encryptionKeysFile` (-DencryptionKeysFile=_file_path_). This value points to the location of encryption keys file. See the file format description above.
+* `uKey.AES256` (-DuKey.AES256=_key_value_). This is exact value of AES256 encryption key.
+* `uKey.3DES` (-DuKey.3DES=_key_value_). This is exact value of 3DES encryption key.
+* `uKey.AES` (-DuKey.AES=_key_value_). This is exact value of AES (AES with 128 bits key) encryption key.
+* `uKey` (-DuKey=_key_value_). This is alias for `uKey.AES256` java runtime property.
 
 *TODO*
 
