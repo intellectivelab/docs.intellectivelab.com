@@ -13,3 +13,4 @@ Also, infinite scrolling method in configuration may be overridden in the code a
 
 # Configuration
 
+[Pagination and Infinite Scrolling configuration](../../configuration/grids/pagination-and-infinite-scrolling.md)
