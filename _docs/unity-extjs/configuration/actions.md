@@ -44,7 +44,7 @@ Choose the action from the list below to find specific options for it.
 - [Add Document](actions/add-document.md)
 - [Get Info](actions/get-info.md)
 - [Properties](actions/properties.md)  
-- [View](actions/view-document.md)
+- [View Document](actions/view-document.md)
 
 ## Case related actions
 

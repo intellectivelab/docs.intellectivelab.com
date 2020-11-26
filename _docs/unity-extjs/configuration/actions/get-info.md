@@ -3,6 +3,8 @@ title: Get Info Action Configuration
 layout: docs
 category: Unity 7
 ---
+[View And Update Document Properties feature description](../../features/document-management/view-update-document-properties.md)
+
 Following action should be added to Unity system configuration XML file:
  
 ```xml
