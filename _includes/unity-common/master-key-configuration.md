@@ -96,7 +96,7 @@ AES=ZGVmYXVsdCBhZXMxMjgga2V5LCBwbGVhc2UgcmVwbGFjZSBpbiBwcm9kdWN0aW9u
 AES256=ZjJwRjFHZ04yM091bUJrb0t3amFHUTViNkVqU280RE0=
 ```
 
-#### Master key at application's web.xml file
+#### Master key at java runtime properties
 
 In this case, the master key is specified via java runtime property (-Dkey=value) for the whole application server.  
 The following java runtime properties can be used for that purpose (each next item at the list can be used to override key from the item before):  
@@ -106,6 +106,4 @@ The following java runtime properties can be used for that purpose (each next it
 * `uKey.3DES` (-DuKey.3DES=_key_value_). This is exact value of 3DES encryption key.
 * `uKey.AES` (-DuKey.AES=_key_value_). This is exact value of AES (AES with 128 bits key) encryption key.
 * `uKey` (-DuKey=_key_value_). This is alias for `uKey.AES256` java runtime property.
-
-*TODO*
 
