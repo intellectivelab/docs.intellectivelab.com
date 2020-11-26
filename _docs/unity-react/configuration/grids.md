@@ -20,7 +20,7 @@ Example for Split Case action:
         </Actions>
     </Toolbar>
     <!-- rest config-->
-</Grid>        
+</Grid>
 ```
 Example for Open In Office actions:
 
@@ -36,7 +36,7 @@ Example for Open In Office actions:
   <!-- not relevant nodes skipped -->
 </Grid>
 
-``` 
+```
 
 # Multiple Column Sorting
 ```xml
@@ -56,3 +56,24 @@ Example for Open In Office actions:
 |:--------------------|:------------|
 | SortField           | `SortField` value refers to a [Property](tags-list/properties-tag.md) `ID` attribute (the property should be sortable).  Default sorting may be defined on the `Grid` level or on the [SearchTemplate](../configuration/search-templates.md#sorting-configuration) level. If defined on both levels, setting from the `Grid` is in effect.     |
 | SortField >> Order  | Optional `Order` attribute may have value `ASC` for ascending and `DESC` for descending order (`ASC` is a default). |
+
+# Pagination or Infinite Scrolling methods
+
+Data loading method is controlled by `ui` optional attribute of the Grid.
+By default, grid uses pagination. `ui` attribute may have following values.
+| Value               | Description |
+|:--------------------|:------------|
+| paging              | Pagination is used      |
+| infinite            | Infinite loading is used |
+
+Any other value means using pagination.
+
+```xml
+<Grid ID="parents-grid" ui="infinite">
+    <!-- not relevant nodes skipped -->
+</Grid>
+
+<Grid ID="relatives-grid" ui="paging">
+    <!-- not relevant nodes skipped -->
+</Grid>
+```
