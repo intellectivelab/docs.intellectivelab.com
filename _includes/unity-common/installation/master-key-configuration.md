@@ -98,8 +98,8 @@ The encryption keys file is the plain text file that contains the list of master
 For example:
 
 ```text
-3DES=s1f449/mMbbLiQ0Ef78LmFTltQRPx83x
-AES=ZGVmYXVsdCBhZXMxMjgga2V5LCBwbGVhc2UgcmVwbGFjZSBpbiBwcm9kdWN0aW9u
+3DES=s1f449/mMbbLi423f78LmFTltQRPx83x
+AES=ZGVmYXVsdCBhZXMxMjgga2V5LCBwbGVhc2U4643wbGFjZSBpbiBwcm9kdWN0aW9u
 AES256=ZjJwRjFHZ04yM091bUJrb0t3amFHUTViNkVqU280RE0=
 ```
 
