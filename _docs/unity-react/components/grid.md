@@ -54,7 +54,7 @@ Details View screen is divided into several panels as shown below:
 # Grid Features
 
 ## Grouping
-## [Multiple Column Sorting](grid/multiple-column-sorting.md)
+## [Multiple column sorting](grid/multiple-column-sorting.md)
 ## [Column resizing](grid/column-resizing.md)
 ## Column locking
 ## Column spanning
@@ -70,19 +70,8 @@ Details View screen is divided into several panels as shown below:
 ## Ability to add a custom grid action
 ## Row actions menu
 ## Expandable rows
-## Pagination
-
-For loading data, Grid supports pagination and infinite scrolling. The selected method is defined in the Grid configuration. If no method is defined, the grid will use pagination. Also, infinite scrolling method in configuration may be overrided in the code and force some grids to use pagination regardless of configuration.
-
-With pagination, user may view the grid data by pages, cicking pages in pagination control under the grid.
-
+## [Pagination and infinite scrolling](grid/pagination-and-infinite-scrolling.md)
 ## Ability to use a custom grid pagination
-## Infinite scrolling
-
-For loading data, Grid supports pagination and infinite scrolling. The selected method is defined in the Grid configuration. If no method is defined, the grid will use pagination. Also, infinite scrolling method in configuration may be overrided in the code and force some grids to use pagination regardless of configuration.
-
-With infinite scrolling, user may load next portion of data into the grid simply by scrolling grid down, until no more data is available.
-
 ## Data export
 ## Display density settings
 ## Ability to compose with other components
