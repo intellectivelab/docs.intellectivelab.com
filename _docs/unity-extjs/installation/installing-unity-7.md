@@ -7,6 +7,6 @@ category: Unity 7
 
 *content to be added*
 
-# Unity master key configuration
+# Unity Master Key Configuration
 
-{% include unity-common/master-key-configuration.md %}
+{% include unity-common/installation/master-key-configuration.md %}
