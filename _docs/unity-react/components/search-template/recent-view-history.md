@@ -15,7 +15,7 @@ like on Workitems grid:
 History titles are different for different grids, depending on their content. Usually it's just a title of an item,
 but for some grids it can be other item parameter or even be composed of several parameters like it used by Workitems grid. 
 
-It uses composed value of case title and own title for better readability and uniqueness:
+It composes case title parameter value and own title parameter for better readability and uniqueness:
 
 ![History with composed title](recent-view-history/images/history_with_composed_title.png)
 
