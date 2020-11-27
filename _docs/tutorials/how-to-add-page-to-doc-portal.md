@@ -1,5 +1,5 @@
 ---
-title: How To Add Page To Documentation Portal
+title: How to Add a Page to Documentation Portal
 layout: docs
 category: Unity 7
 ---
@@ -11,7 +11,7 @@ To edit and add new content to documentation portal you should:
 - have environment and basic skills to work with [git](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/git-and-github-learning-resources)
 - be a member of Intellective github organization called `intellectivelab` 
 
-To add new content to the project perform the following steps:
+To add a new content to the project perform the following steps:
 - Clone [documentation portal github repository]((https://github.com/intellectivelab/docs.intellectivelab.com)) to your local environment.  
     You can use either HTTPS or [SSH key](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/connecting-to-github-with-ssh) for authentication: 
     
@@ -24,18 +24,18 @@ To add new content to the project perform the following steps:
     - bugfix/U7-2759
     - release_notes  
 - Define appropriate portal section for your new content and investigate what content already exists for this theme. 
-- Create a new page or add content to existing page, using Markdown syntax, styling and folders structure 
-requirements described in [How To Create Page](how-to-add-page-to-doc-portal/how-to-create-page.md). 
+- Create a new page or add a content to existing page, using Markdown syntax, styling and folders structure 
+requirements described in [How to Create a Page](how-to-add-page-to-doc-portal/how-to-create-page.md). 
 - Commit changes in your local branch.
 - Push these commits to remote branch with the same name.
-- Go to [Pull requests](https://github.com/intellectivelab/docs.intellectivelab.com/pulls) and create new pull request from your branch.
+- Go to [Pull requests](https://github.com/intellectivelab/docs.intellectivelab.com/pulls) and create a new pull request from your branch.
 - Open your pull request page, click `Reviewers` on the right pane and choose reviewers from the list. Pull request creator and reviewers must represent:
     - Developers Team
-    - QA
+    - Quality Assurance
     - Technical writer (ikozyr-intellective)
     
-    For example, if you are developer and create pull request, 
-    you should request someone from QA team and technical writer for review. 
+    For example, if you are developer and create a pull request, 
+    you should request someone from QA team and a technical writer for review. 
     At least 2 approving reviews required for merging pull request.
 - Merging will be performed by a technical writer or doc portal support (ozimakov-intellective). 
 - After merging, your content will appear on [documentation portal](https://docs.intellectivelab.com/) in seconds.
