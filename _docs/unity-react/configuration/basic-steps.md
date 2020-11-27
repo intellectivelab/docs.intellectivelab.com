@@ -24,7 +24,7 @@ Make sure the path includes the drive letter.
 
 If the path is not valid, the following error message is shown: 
 
-`Unknown error:PluggableConfiguration provider not found. Please ensure solution configuration file is provided with the valid configFolder tag.`  
+`Unknown error:PluggableConfiguration provider is not found. Please ensure solution configuration file is provided with the valid configFolder tag.`  
 
 ![Wrong path error](basic-steps/images/solution-configuration-file-front-error.png)
 
