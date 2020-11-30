@@ -18,24 +18,19 @@ SystemProperties
 SSO  
 EnterpriseSearch    
 AccessRoles  
-Actions    
 [Datasources](tags-list/datasources-tag.md)  
 [Selectors](tags-list/selectors-tag.md)  
 Facets  
 Properties   
-Grids    
 Tabs    
-SearchTemplates    
 ColumnSets    
 UiComponents  
 Charts  
 Indicators  
-RepositoryDataProviders    
 Perspectives    
 Dashboard      
 CustomConfiguration    
 Solutions    
-SolutionsConfiguration    
 UserAudit  
 
 # Solution Tags

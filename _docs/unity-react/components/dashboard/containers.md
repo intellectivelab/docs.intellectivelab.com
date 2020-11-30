@@ -25,4 +25,4 @@ Dashboard containers organize and allow navigation between dashboard components 
 
 # Configuration
 
-[Dashboard Containers Configuration](../../configuration/tags-list/dashboard-tag/container-tag.md)
+[Dashboard Containers Configuration](../../configuration/dashboards/container-tag.md)
