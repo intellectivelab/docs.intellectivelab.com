@@ -28,6 +28,6 @@ This feature implemented for:
 - Tabs: Search Template, Folder View
 - Data Providers: FileNet, CMIS, Unity Enterprise Search (except JOIN function) 
 
-[Configure Multiple Column Sorting](../../configuration/grids.md#multiple-column-sorting)
+[Multiple Column Sorting configuration](../../configuration/grids/multiple-column-sorting.md)
 
 
