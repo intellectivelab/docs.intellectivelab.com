@@ -450,7 +450,16 @@ entries:
               - title: API
                 output: web
                 url: /docs/enterprise-search/development/api/
-                id: enterprise-search-development-spi
+                id: enterprise-search-development-api
+
+      - title: Interchange
+        output: web, pdf
+        id: interchange
+        folderitems:
+          - title: Customization
+            url: /docs/interchange/customization/
+            id: interchange-customization
+            output: web, pdf
 
       - title: Release Notes
         output: web, pdf
