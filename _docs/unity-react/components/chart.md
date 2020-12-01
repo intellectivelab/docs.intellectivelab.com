@@ -107,7 +107,36 @@ The Sunburst Chart component is built based on [React-Vis Sunburst diagram](http
 
 # How To Use Charts
 
-*Content to be added*
+First of all, we need to understand that each chart consists from several colored segments, where every segment is a display of 
+grouped data, related to the chart:
+
+![Chart tips](chart/images/chart_tips.png)
+
+## Chart data filtering
+
+Clicking on several segments will lead to filter whole page data so other charts will change. E.g. clicking on "*Telecommunications*" 
+segment on "*Salary by Industry*" chart will cause displaying only "*Telecommunications*" segment on "*Jobs by Industry*" chart:
+
+!["Salary by Industry" chart](chart/images/chart_select1.png)
+!["Jobs by Industry" chart](chart/images/chart_select2.png)
+
+## Chart legend
+
+Some charts, that doesn't follow hierarchical structure, are using legend to operate with groups of data. Click on it enables/disables 
+several data group view:
+
+![Disabling some chart data view with legend](chart/images/legend_operations.png)
+
+## Chart settings
+
+To open chart settings you need to click on an icon on top right corner of a chart:
+
+![Chart settings icon](chart/images/chart_settings.png)
+
+On icon click dropdown with settings of particular chart will open. All changes are saving to browser localStorage on fly, 
+so even after reopening page all your chart customizations will apply:
+
+![Chart settings dropdown](chart/images/chart_settings_dropdown.png)
 
 If data is empty or has no values, `No content to display` warning message will be shown below the chart title:
 
