@@ -28,13 +28,13 @@ To add new item to history you should click on grid item
 
 or choose "Properties" in context menu of an item:
 
-![Choosing an item from list](recent-view-history/images/choose_workitem.png)
+![Choosing an item properties from list](recent-view-history/images/choose_workitem.png)
 
 # How To clear History
 
 To clear history you should open history dropdown and click on a clear icon:
 
-![Choosing an item from list](recent-view-history/images/clear_history.png)
+![Clearing history pressing the button in history dropdown menu](recent-view-history/images/clear_history.png)
 
 # Configuration
 
