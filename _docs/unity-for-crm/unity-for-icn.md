@@ -19,7 +19,7 @@ The different integration modes are explained in the section: [Configuration of 
 The Unity ICN Plug-In documentation assumes that you have both a working instance of IBM Content Navigator and Unity. If you any questions regarding the installation/configuration of these products, please refer to their respective documentation:
 
 [IBM Content Navigator documentation](http://www-01.ibm.com/support/knowledgecenter/SSEUEX_2.0.3/contentnavigator_2.0.3.htm)    
-[Unity documentation](https://confluence.vegaecm.com/display/ENG/%28vs%29+Documentation)
+[Unity documentation](https://docs.intellectivelab.com)
 
 In order to install/configure the Unity ICN Plug-In the following steps must be completed. 
 
@@ -109,7 +109,7 @@ The key value above `E5ubhLkzPex1IwO6zsviBA==` represents a unique authenticatio
 
 ## Update JCE Policy files in IBM WebSphere
 
-In order for the SSO configuration to work the IBM WebSphere JCE Policy files must be updated.
+In order for the SSO configuration to work the IBM WebSphere JCE Policy files must be updated to enable strong cryptography (AES-256).
 
 The updated JCE Policy files can be downloaded from IBM's web site. Note that an IBM id is required in order to download the files.
 The instructions for downloading and updating the JCE Policy files can be found [here](http://www-01.ibm.com/support/knowledgecenter/SS8JFY_7.5.0/com.ibm.lmt75.doc/com.ibm.license.mgmt.security.doc/lmt_scr_downloading_installing_jce_policyfiles_max.html?cp=SS8JFY_7.5.0%2F0-8-2-0&lang=en).
@@ -120,26 +120,25 @@ Add TAI login module binary into WebSphere Application Server installation. File
 
 ## Configure Unity Login Module to IBM WebSphere
 
-New login module should be registered using the following steps.
-1.	In WebSphere Application Server administration console: navigate to `Security > Global Security`, under Java Authentication and Authorization Service select `Application logins`. 
-2.	Click `New`, Alias should be set to `TrustedLogin`. 
-3.	Click `New...` to add JAAS login modules. 
-4.	Set `com.vegaecm.security.login.IDLoginModule` for Module class name, click `Apply`. 
-5.	Click `New...` to add another JAAS login module, set `com.ibm.wsspi.security.common.auth.module.IdentityAssertionLoginModule` for Module class name, click `Apply`. 
-6.	Make sure that in resulting table module `com.vegaecm.security.login.IDLoginModule` is REQUIRED with Model order = 1 and module `com.ibm.wsspi.security.common.auth.module.IdentityAssertionLoginModule` is REQUIRED with Module Order = 2.
+New login module should be registered using the following steps:
+- In WebSphere Application Server administration console navigate to `Security > Global Security`, under Java Authentication and Authorization Service select `Application logins`. 
+- Click `New`, Alias should be set to `TrustedLogin`. 
+- Click `New...` to add JAAS login modules. 
+- Set `com.vegaecm.security.login.IDLoginModule` for Module class name, click `Apply`. 
+- Click `New...` to add another JAAS login module, set `com.ibm.wsspi.security.common.auth.module.IdentityAssertionLoginModule` for Module class name, click `Apply`. 
+- Make sure that in resulting table module `com.vegaecm.security.login.IDLoginModule` is REQUIRED with Model order = 1 and module `com.ibm.wsspi.security.common.auth.module.IdentityAssertionLoginModule` is REQUIRED with Module Order = 2.
 
 ## Configure LTPA Token Timeout in IBM WebSphere
 
 The LTPA Token Timeout should be increased to the max time users are expected to maintain a session with the server. This would normally be 12 or 24 hours. The timeout is set in minutes in WebSphere.
-To set the timeout can be set using the following steps.
-1.	In WebSphere Application Server administration console: navigate to `Security > Global Security -> LTPA`.
-2.	Set the LTPA timeout as shown below. The timeout is set in minutes.
-3.	Click `Apply`.
-4.	
-
-![websphere](unity-for-icn/images/image5.png)
+To set the timeout perform the following steps:
+- In WebSphere Application Server administration console navigate to `Security > Global Security -> LTPA`.
+- Set the LTPA timeout as shown below. The timeout is set in minutes.
+- Click `Apply`. 
  
-## Restart IBM WebSphere Application Server.
+    ![websphere](unity-for-icn/images/image5.png)
+ 
+## Restart IBM WebSphere Application Server
 
 Restart IBM WebSphere Application Server in order for the changes made to take effect in WebSphere.
 
@@ -276,15 +275,12 @@ The layout can be changed by selecting a different Dojo layout class. IBM Conten
  
 Instructions on how to create a new layout class is described in the [IBM Content Navigator documentation](http://www-01.ibm.com/support/knowledgecenter/SSEUEX_2.0.3/com.ibm.developingeuc.doc/eucso005.htm).
 
-# Support Daeja from ICN package
+# Support Daeja from ICN Package
 
-The existing Unity - Daeja viewer integration mechanism can be used as is.
-The only required step is to properly expose the IBM Daeja ViewONE Virtual viewer at IBM Navigator side.
-
-The following links describe the required steps:
-
+The existing Unity - Daeja viewer integration mechanism can be used as is.  
+The following links describe the steps required to expose the IBM Daeja ViewONE Virtual viewer at IBM Navigator side:
 - [Configuring the Viewer Servlet](https://www.ibm.com/support/knowledgecenter/SSTPHR_4.1.5/com.ibm.viewone.install/dvoin006.htm)  
-- [https://render-prd-trops.events.ibm.com/support/pages/sites/default/files/support/swg/swgdocs.nsf/0/7f14f1f4d7e09e8885257df600621486/%24FILE/GC27-8105-01.pdf](https://render-prd-trops.events.ibm.com/support/pages/sites/default/files/support/swg/swgdocs.nsf/0/7f14f1f4d7e09e8885257df600621486/%24FILE/GC27-8105-01.pdf), page 4  
+- [Installing, Configuring, and Using IBM Daeja ViewOne](https://render-prd-trops.events.ibm.com/support/pages/sites/default/files/support/swg/swgdocs.nsf/0/7f14f1f4d7e09e8885257df600621486/%24FILE/GC27-8105-01.pdf), page 4  
 
 [This Unity instance](https://unity-trn-rb.intellectivelab.com:9443/navigator/?desktop=cdm) has been updated this way.  
 
@@ -474,12 +470,12 @@ If the custom icons that are being deployed are SVG files, then WebSphere must b
 
 Verify that WebSphere has been configured to serve SVG files correctly. If this has not been set up already in your IBM Content Navigator WebSphere instance this has to be set up.
 
-1.	Open the WebSphere administration console. The default URL is `https://[server name]:9043/ibm/console`.
-2.	Navigate to `Environment > Virtual Hosts > default_host > MIME Types`:
+- Open the WebSphere administration console. The default URL is `https://[server name]:9043/ibm/console`.
+- Navigate to `Environment > Virtual Hosts > default_host > MIME Types`:
     
    ![test connection](unity-for-icn/images/image25.png)
  
-3.	Verify that the MIME type shown above is configured. If not, then click the `New...` button and add the new MIME type association. 
+- Verify that the MIME type shown above is configured. If not, then click the `New...` button and add the new MIME type association. 
     Note that on some server platforms the extensions are case sensitive, so it is a good practice to add the extensions in both lower and upper case.
 
 # Unity ICN Plug-In Usage
@@ -544,7 +540,7 @@ After the call is completed the user can go back to the work that was in process
 
 ## Software Compatibility/Requirements
 
-The Unity ICN Plug-In is shipped with Unity Version X.X and higher. It is not supported with any earlier versions of Unity.
+The Unity ICN Plug-In is shipped with Unity.
 
 IBM Content Navigator version 3.0.3 or higher is required for the Plug-In.
 
