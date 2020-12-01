@@ -22,9 +22,19 @@ It composes case title parameter value and own title parameter for better readab
 
 # How To Add New Item To History
 
-To add new item to history you should click on grid item or choose "Properties" in context menu of an item:
+To add new item to history you should click on grid item 
+
+![Choosing an item from list](recent-view-history/images/select_one.png)
+
+or choose "Properties" in context menu of an item:
 
 ![Choosing an item from list](recent-view-history/images/choose_workitem.png)
+
+# How To clear History
+
+To clear history you should open history dropdown and click on a clear icon:
+
+![Choosing an item from list](recent-view-history/images/clear_history.png)
 
 # Configuration
 
