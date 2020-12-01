@@ -72,7 +72,7 @@ Open archetype project in IDE as maven project using Java 8 SDK:
 
 Check regular and `TODO` comments in the class. Sample code shows to work with extract and load methods and read/write content items to content store.
 
-Transformer is another flowcomponent type. Transformer modifies documents in Kafka stream:
+Transformer is another flow component type. Transformer modifies documents in Kafka stream:
 
 ![Custom transformer configuration](customization/images/05-code-transformer-confg.png)
 
