@@ -18,7 +18,7 @@ Dashboard configuration parameters:
 |filter | *add definition later* |
 |disableProviderLevelSecurity | The attribute allows to turn off security check on data provider level<sup>1</sup> when equals `true`. Default value: `false` |
 
-<sup>1</sup> Provider level security check hides inner components if both conditions match:
+<sup>1</sup> Provider level security check hides inner components if all conditions match:
 - component is referenced to SharePoint search template
 - component has `folderPath` parameter specified OR search template has `FolderPath` parameter specified
 - user doesn't have permissions to access corresponding folder in repository data provider
