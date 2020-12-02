@@ -9,4 +9,4 @@ category: Unity 7
 
 # Configuration
 
-[View Document feature configuration](../../configuration/actions/view-document.md). 
+[View Document action configuration](../../configuration/actions/view-document.md) 

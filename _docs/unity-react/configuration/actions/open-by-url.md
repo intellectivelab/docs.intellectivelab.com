@@ -3,7 +3,7 @@ title: Open By URL Action Configuration
 layout: docs
 category: Unity 7
 ---
-# Specific Action Configuration Options
+[Open By URL feature description](../../features/case-management/open-case-by-url.md)
 
 Open By URL Action configuration section should be added to the Unity System XML file. An example:
 

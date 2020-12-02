@@ -1,11 +1,11 @@
 ---
-title: How To Create Page
+title: How to Create a Page
 layout: docs
 category: Unity 7
 ---
-This is a guide how to create page for github documentation site using [Markdown syntax](markdown-syntax.md). 
+This is a guide how to create a page for github documentation site using [Markdown syntax](markdown-syntax.md). 
 
-# Markdown File Structure And Page Structure 
+# Markdown File Structure and Page Structure 
 
 ## Metadata in the beginning of .md file 
 
@@ -16,7 +16,7 @@ layout: docs
 category: Unity 7
 ---
 ```
-This information is not visible on site page except title. Use first capital letters in each word to write title. Start page text just below metadata, without empty rows.  
+This information is not visible on site page except title. Use first capital letters in each word to write title, except articles and prepositions. Start page text just below metadata, without empty rows.  
 
 ## Title of page 
  
@@ -30,7 +30,7 @@ Table of contents is created automatically from headers on page. It is important
 
 ### Text 
 
-Use `# Heading Level 1` with first capital letters in each word to write titles of chapters. The first heading on page should be `# Heading`, otherwise automatic ToC might work incorrectly.    
+Use `# Heading Level 1` with first capital letters in each word except articles and prepositions to write titles of chapters. The first heading on page should be `# Heading`, otherwise automatic ToC might work incorrectly.    
 
 Use `## Heading level 2`, `### Heading level 3` and `#### Heading level 4` with only first capital letter to write subchapters.  
 
@@ -95,6 +95,8 @@ Some images like schemes or diagrams on white background don't need any border.
 Use links on your page, and don't forget to add links to your page on other pages if needed.  
 If you need to edit header on page, make sure there are no links to this header from another places.
 
+Do not create pages with the same content, use links.
+
 #### Link to current page 
 
 To insert a link to any header of current page type:  
@@ -119,9 +121,18 @@ To insert a link to external page type:
 Don't use `here` as a link title, always try to use a meaningful name.  
 Use `[url](url)` if you need to make url visible.
 
-#### Downloads
+### Links between Unity ExtJs and Unity React
 
-If user should download file from your page, for example `config.xml` for tutorial, place it in `name-of-your-md-file/downloads/` folder.  
+Some content is common for Unity ExtJs and React. Do not create pages with the same content, use links instead:
+
+- Write a note that this content is the same for both Unity and place this note on both pages.
+- Place a content just on one of them (preferrably in Unity React), and place a link on another.  
+
+![ExtJs-React linking](how-to-create-page/images/extjs-react-linking.png)
+
+### Downloads
+
+If user should download file from your page, for example `config.xml`, place it in `name-of-your-md-file/downloads/` folder.  
 Make sure this file doesn't contain any confidential information like passwords etc.
 
 ### Tables
@@ -154,13 +165,13 @@ Thus, there are:
 - primary pages, that user can open from navigation tree
 - secondary pages, that user can open from links on primary pages  
 
-Place `secondary-page-name.md` file in the folder `primary-page-name`, where images and downloads for primary page are placed: 
+Place `secondary-page-name.md` file in the folder `primary-page-name`, where images and downloads for a primary page are placed: 
    
 ![subpages-structure](how-to-create-page/images/subpages-structure.png) 
 
 Create folder `secondary-page-name` to place images and downloads for this subpage.
 
-# Viewing Page In Local Environment
+# Viewing Page in Local Environment
 
 To open page in local environment:
 - run Docker
@@ -169,6 +180,8 @@ To open page in local environment:
 - in Command Prompt go to project directory 
 - run `jekyll.bat` or `jekyll.bat --incremental` for faster processing
 - open `localhost:4000` in browser to view project
+
+| **Note**: With `jekyll.bat --incremental` not all files are regenerated each time, but it works 5 times faster than `jekyll.bat`. If you don't see your changes in browser, restart with `jekyll.bat`, and all files will be regenerated.
 
 # Verifying
 

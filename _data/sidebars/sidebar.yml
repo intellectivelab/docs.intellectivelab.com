@@ -428,7 +428,7 @@ entries:
                 url: /docs/enterprise-search/configuration/security/
                 id: enterprise-search-configuration-security
 
-              - title: Configure Enterprise Search For Use
+              - title: Configure Enterprise Search for Use
                 output: web
                 url: /docs/enterprise-search/configuration/configure-enterprise-search-for-use/
                 id: enterprise-search-configuration-configure-enterprise-search-for-use
@@ -450,7 +450,16 @@ entries:
               - title: API
                 output: web
                 url: /docs/enterprise-search/development/api/
-                id: enterprise-search-development-spi
+                id: enterprise-search-development-api
+
+      - title: Interchange
+        output: web, pdf
+        id: interchange
+        folderitems:
+          - title: Customization
+            url: /docs/interchange/customization/
+            id: interchange-customization
+            output: web, pdf
 
       - title: Release Notes
         output: web, pdf
@@ -470,12 +479,12 @@ entries:
         output: web
         id: tutorials
         folderitems:
-          - title: How To Add Page To Documentation
+          - title: How to Add a Page to Documentation
             output: web
             url: /docs/tutorials/how-to-add-page-to-doc-portal/
             id: tutorials-how-to-add-page-to-doc-portal
 
-          - title: How To Install Docker
+          - title: How to Install Docker
             output: web
             url: /docs/tutorials/how-to-install-docker/
             id: tutorials-how-to-install-docker

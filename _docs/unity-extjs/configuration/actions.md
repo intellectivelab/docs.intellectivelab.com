@@ -9,7 +9,7 @@ category: Unity 7
 
 - set [Common actions attributes and tags](#common-actions-attributes-and-tags)
 - set [Specific actions options](#specific-actions-configuration-options)
-- add action to [Actions tag](tags-list/actions-tag.md)
+- [add action to Actions tag](#adding-action-to-actions-tag)
 - [add action to the Grid](../../unity-react/configuration/grids.md#how-to-add-action-to-the-grid)
 
 ## Common actions attributes and tags
@@ -33,6 +33,21 @@ There are attributes and tags common for most actions:
 | Security  | [Action security restrictions](../../unity-react/configuration/security.md#security-restrictions) | 
 | CustomParameters  | Defines custom action parameters. Could be overridden per data provider.   | 
 
+## Adding action to `Actions` tag
+
+Actions section in Unity configuration defines a list of available actions:
+
+```xml
+<Actions>
+ <Action ID="someAction">...</Action>
+ <Action ID="someOtherAction">...</Action>
+</Actions>
+```
+
+Example:
+
+*content to be added*
+
 # Specific Actions Configuration Options
 
 Action behavior customized by attributes and tags. 
@@ -44,7 +59,7 @@ Choose the action from the list below to find specific options for it.
 - [Add Document](actions/add-document.md)
 - [Get Info](actions/get-info.md)
 - [Properties](actions/properties.md)  
-- [View](actions/view-document.md)
+- [View Document](actions/view-document.md)
 
 ## Case related actions
 

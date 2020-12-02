@@ -3,6 +3,8 @@ title: Properties Action Configuration
 layout: docs
 category: Unity 7
 ---
+[View And Update Document Properties feature description](../../features/document-management/view-update-document-properties.md)
+
 `Properties` action is responsible for `Properties` tab on [Get Info](get-info.md) dialog. This tab allows to view and update document 
 properties. Example of action configuration:
 
