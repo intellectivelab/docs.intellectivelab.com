@@ -5,6 +5,25 @@ category: Unity 7
 ---
 # Dashboards tag
 
+Example of dashboard configuration:
+
+```xml
+<Dashboard disableProviderLevelSecurity="false" default="false" iconCls="dashboard-cls" id="FolderSearch" lazy="true" title="Folder Search" tooltip="SharePoint Documents Search">
+  <Container ui="tree">                    
+    <Component ref="sharepoint_Search_productmanagement" title="Product Management Teamsite" type="searchTemplate">
+      <Property name="resourceName" value="documents"/>
+      <Property name="queryScope" value="sharepoint_repository_productmanagement"/>
+      <Property name="folderPath" value="/productmanagement"/>
+    </Component>
+    <Component ref="sharepoint_Search_ConsultingServices_U4I" title="​Professional Services Teamsite - U4I" type="searchTemplate">
+      <Property name="resourceName" value="documents"/>
+      <Property name="queryScope" value="sharepoint_repository_ConsultingServices_U4I"/>
+      <Property name="folderPath" value="/Consulting Services/Projects/internal/unity4intellective"/>
+    </Component>
+  </Container>
+</Dashboard>
+```
+
 Dashboard configuration parameters:
 
 | Parameter | Description |
