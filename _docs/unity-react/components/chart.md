@@ -108,16 +108,20 @@ The Sunburst Chart component is built based on [React-Vis Sunburst diagram](http
 # How To Use Charts
 
 First of all, we need to understand that each chart consists from several colored segments, where every segment is a display of 
-grouped data, related to the chart:
+grouped data, related to the chart. Usually grids are using as grouped data structure so on the screenshots below 
+X and Y axis are some columns of a grid:
 
 ![Chart tips](chart/images/chart_tips.png)
 
 ## Chart data filtering
 
-Clicking on several segments will lead to filter whole page data so other charts will change. E.g. clicking on "*Telecommunications*" 
-segment on "*Salary by Industry*" chart will cause displaying only "*Telecommunications*" segment on "*Jobs by Industry*" chart:
+Filtering with charts is just the same as [Search criteria panel](./search-criteria-panel.md) filtering but with some visual interaction.  
+Clicking on several segments will lead to filter connected grid data so other charts will change. E.g. clicking on "*Telecommunications*" 
+segment on "*Salary by Industry*" chart will cause selection only records with "*Telecommunications*" in "*Industry*" column on the grid 
+and displaying only "*Telecommunications*" segment on "*Jobs by Industry*" chart:
 
 !["Salary by Industry" chart](chart/images/chart_select1.png)
+!["Users" grid filtered by "Telecommunications" industry](grid/images/filtered_grid.png)
 !["Jobs by Industry" chart](chart/images/chart_select2.png)
 
 ## Chart legend
