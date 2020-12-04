@@ -34,7 +34,7 @@ Once downloaded, the local Unity instance will be up & running.
 ## Access the Unity  
 
 - Connect to [Intellective VPN](https://vpn.intellective.com/)
-- Make sure the FileNet environment is up and accessible, hit [here](http://172.31.27.3:9080/wsi/FNCEWS40MTOM/) to confirm.
+- Make sure the FileNet environment is up and accessible, hit [here](http://172.31.27.3:9080/wsi/FNCEWS40MTOM/) to confirm
 
 - Hit [http://localhost:9080/vu](http://localhost:9080/vu) to access the Unity
 
@@ -43,7 +43,7 @@ Once downloaded, the local Unity instance will be up & running.
 	
 Welcome to Unity! 
 	
-# Unity Interface ## 
+# Unity Interface
 
 ## Tabs 
 
