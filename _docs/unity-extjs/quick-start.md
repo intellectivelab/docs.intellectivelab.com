@@ -10,19 +10,21 @@ To try Unity demo version [install Docker](../tutorials/how-to-install-docker.md
 ## Configuration 
 
 - Create a folder on the drive you shared to store Open Liberty & Unity configuration files, `C:\DockerUnity` for example 
-- [Download](quick-start/downloads/unity-package.zip) Unity package, unpack and place files to folder you created 
+- [Download](quick-start/downloads/unity-package.zip) Unity package, unpack and place to folder you created the following files:
+    - `server.xml`
+    - `unity_config.xml`
+    - `unity_config-environment.ini`
+    - `icm-CustomerComplaints.xml`
+    	 
 - Open Command Prompt or PowerShell in admin mode and navigate to this folder, running command 
  `cd C:\DockerUnity\`
-- Run `docker login registry.intellective.com` 
+- Run `docker login registry.intellective.com`, use Intellective email as user name and domain password  
 
-	Username: `serviceaccount`  
-	Password: `password` 
-
-	You should get the message `Login Succeeded` 
+	You should get the message `Login Succeeded`: 
 
 	![unity-cmd](quick-start/images/image1.png) 
 	
-- Run `docker run -it -v c:/<folder you created>:/opt/vu  -p 9080:9080  --rm registry.intellective.com/unity/unity:7.7.0.1`  
+- Run `docker run -it -v c:/dockerunity:/opt/vu  -p 9080:9080  --rm registry.intellective.com/unity/unity:7.7.0.1`  
 
 It will check if the docker image is available locally.
 If not then it will be downloaded automatically.
@@ -31,15 +33,14 @@ Once downloaded, the local Unity instance will be up & running.
 
 ## Access the Unity  
 
-- Connect to Intellective VPN
+- Connect to [Intellective VPN](https://vpn.intellective.com/)
 - Make sure the FileNet environment is up and accessible, hit [here](http://172.31.27.3:9080/wsi/FNCEWS40MTOM/) to confirm.
 
 - Hit [http://localhost:9080/vu](http://localhost:9080/vu) to access the Unity
 
 	> Username: `p8admin_demo`  
-	> Password: `password`
+	> Password: provided by Intellective support
 	
-Wizard should guide you through establishing connection to FileNet, use the [endpoint](http://172.31.27.3:9080/wsi/FNCEWS40MTOM/) to connect to Filenet. 
 Welcome to Unity! 
 	
 # Unity Interface ## 
