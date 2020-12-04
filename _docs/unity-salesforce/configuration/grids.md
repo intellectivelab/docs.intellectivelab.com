@@ -9,7 +9,7 @@ category: Unity 7
 
 To see action in grid context-menu it should be added to grid configuration.
 
-Example for Open In Office actions:
+Example for Open In Office 365 action:
 
 ```xml
 <Grid ID="document_search" enableColumnReorder="false" groupSearchResults="false">

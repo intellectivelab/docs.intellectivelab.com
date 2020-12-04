@@ -25,7 +25,7 @@ Toolbar on `Document Properties` tab may contain one of following actions:
 - `open in browser`. Action is only available for SharePoint office documents and opens the document in Office 365.
 
 - `open in desktop app`. Action is only available for SharePoint office documents and opens the document in 
-Office Desktop.
+Office Desktop App.
 
     `open in browser`, `open in destop app` actions are automatically grouped into `Office Actions` dropdown:
 
@@ -33,7 +33,7 @@ Office Desktop.
 
 *other actions to be added*
 
-- delete
+- `delete`
 
 For listed above actions to appear on the toolbar:
  
