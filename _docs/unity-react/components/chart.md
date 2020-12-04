@@ -107,17 +107,18 @@ The Sunburst Chart component is built based on [React-Vis Sunburst diagram](http
 
 # How To Use Charts
 
-First of all, we need to understand that each chart consists from several colored segments, where every segment is a display of 
-grouped data, related to the chart. Usually grids are using as grouped data structure so on the screenshots below 
-X and Y axis are some columns of a grid:
+Each chart consists of several colored segments, every displays particular group of data on the page. 
+Charts provide an interactive way to use and work with datasets:
 
 ![Chart tips](chart/images/chart_tips.png)
 
 ## Chart data filtering
 
-Filtering with charts is just the same as [Search criteria panel](./search-criteria-panel.md) filtering but with some visual interaction.  
-Clicking on several segments will lead to filter connected grid data so other charts will change. E.g. clicking on "*Telecommunications*" 
-segment on "*Salary by Industry*" chart will cause selection only records with "*Telecommunications*" in "*Industry*" column on the grid 
+Charts support filtering data by clicking on one or more segments. 
+It works like [Search criteria panel](./search-criteria-panel.md) but gives opportunity to do it right on chart.
+
+E.g. clicking on "*Telecommunications*" segment on "*Salary by Industry*" chart will cause selection 
+only records with "*Telecommunications*" in "*Industry*" column on the grid 
 and displaying only "*Telecommunications*" segment on "*Jobs by Industry*" chart:
 
 !["Salary by Industry" chart](chart/images/chart_select1.png)
@@ -126,12 +127,25 @@ and displaying only "*Telecommunications*" segment on "*Jobs by Industry*" chart
 
 ## Chart legend
 
-Some charts, that doesn't follow hierarchical structure, are using legend to operate with groups of data. Click on it enables/disables 
-several data group view:
+The legend is associated with a graphical display of data in the graph area. 
+Each specific entry in the legend contains a legend key that displays the color of a specific data group. 
+Some charts, that doesn't follow hierarchical structure, are using legend to operate with groups of data. 
+Click on it enables/disables several data group view:
 
 ![Disabling some chart data view with legend](chart/images/legend_operations.png)
 
 ## Chart settings
+
+By default, charts support settings with some preset configurations.
+
+[Radial charts](#radial-charts) support:
+
+- Enable/Disable chart legend,
+- Enable/Disable chart labels.
+
+[Plot charts](#plot-charts) support:
+
+- Enable/Disable chart legend.
 
 To open chart settings you need to click on an icon on top right corner of a chart:
 
