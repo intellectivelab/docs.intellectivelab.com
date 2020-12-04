@@ -122,7 +122,7 @@ only records with "*Telecommunications*" in "*Industry*" column on the grid
 and displaying only "*Telecommunications*" segment on "*Jobs by Industry*" chart:
 
 !["Salary by Industry" chart](chart/images/chart_select1.png)
-!["Users" grid filtered by "Telecommunications" industry](grid/images/filtered_grid.png)
+!["Users" grid filtered by "Telecommunications" industry](chart/images/filtered_grid.png)
 !["Jobs by Industry" chart](chart/images/chart_select2.png)
 
 ## Chart legend
