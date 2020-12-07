@@ -11,16 +11,16 @@ category: Unity 7
 
 Toolbar on `Document Properties` tab may contain following actions:
 
-- `checkout`
+- `Check Out`
 
-- `cancel checkout`
+- `Cancel Check Out`
 
-- `checkin`
+- `Check In`
 
-- `view content`. This action opens document content in a new tab or downloads the document depending on it's content type. 
+- `View Content`. This action opens document content in a new tab or downloads the document depending on it's content type. 
     Action will be hidden if one of `open in office` actions is available for the document.
 
-- `download`
+- `Download`
 
 - `Open in Office 365` (open in browser). Action is only available for SharePoint Office documents and opens the 
 document in Office 365.
@@ -34,17 +34,17 @@ document in Office Desktop App.
 
 *other actions to be added*
 
-- `delete`
+- `Delete`
 
 For listed above actions to appear on the toolbar:
  
-- They should be added to the view in solution configuration file. 
-See [How To Add Action To The View](../../configuration/tags-list/views-tag/tab-action-set.md) for details on toolbar 
-configuration.
+- They should be [added to the view](../../configuration/tags-list/views-tag/tab-action-set.md) in solution configuration file 
 
-- User should have enough rights to perform the action and action itself has to be available for the document.
+- User should have enough rights to perform the action
+ 
+- Action should to be available for the document
 
-- None of the described above specific hiding rules are applied. 
+- None of the described above specific hiding rules are applied 
 
 ## Document properties
 
