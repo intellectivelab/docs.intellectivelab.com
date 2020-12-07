@@ -13,7 +13,7 @@ category: Unity 7
 
 *content to be added*
 
-## Check Out and Open in Office action
+## Check out and Open in Office action
 
 *content to be added*
 
@@ -48,7 +48,7 @@ For `Open in browser` action following section should be added to the Unity Syst
 |ResourceName | documents |
 |ActionType   | open.browser|
 
-## Check out and open in browser action
+## Check out and Open in browser action
 
 *content to be added*
 
@@ -81,6 +81,6 @@ For `Open in desktop app` action following section should be added to the Unity 
 |ResourceName | documents |
 |ActionType   | open.desktop|
 
-##  Check out and open in desktop app action
+##  Check out and Open in desktop app action
 
 *content to be added*

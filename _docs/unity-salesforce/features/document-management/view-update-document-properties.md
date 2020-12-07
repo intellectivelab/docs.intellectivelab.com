@@ -1,5 +1,5 @@
 ---
-title: View Document Feature
+title: View and Update Document Properties Feature
 layout: docs
 category: Unity 7
 ---
@@ -22,12 +22,12 @@ Toolbar on `Document Properties` tab may contain following actions:
 
 - `download`
 
-- `open in browser`. Action is only available for SharePoint office documents and opens the document in Office 365.
+- `open in browser`. Action is only available for SharePoint Office documents and opens the document in Office 365.
 
-- `open in desktop app`. Action is only available for SharePoint office documents and opens the document in 
+- `open in desktop app`. Action is only available for SharePoint Office documents and opens the document in 
 Office Desktop App.
 
-    `open in browser`, `open in destop app` actions are automatically grouped into `Office Actions` dropdown:
+    `open in browser`, `open in desktop app` actions are automatically grouped into `Office Actions` dropdown:
 
     ![Office Actions](view-update-document-properties/images/office-actions-on-toolbar.png)
 

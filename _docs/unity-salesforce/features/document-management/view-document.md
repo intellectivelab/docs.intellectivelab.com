@@ -5,7 +5,7 @@ category: Unity 7
 ---
 # Description
 
-`View document` feature allows to 
+`View document` feature allows to: 
 
 - view document properties
 
