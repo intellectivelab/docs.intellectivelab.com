@@ -78,7 +78,8 @@ It could be configured to read:
 |:------------------|:--------------------------------|:---------------|
 | PeopleOnly        | Optional. Defaults to true. When true includes SP groups in selector.  | false | 
 | ChooseFrom        | Optional. When configured reads SP people from specified group.  | RO Group | 
-| TitleField        | Optional. Defaults to Title. | LoginName | 
+| TitleField        | Optional. Field used to represent selector name. nameDefaults to Title. | LoginName | 
+| ValueField        | Optional. Field used to represent selector value. Defaults to Id. | Id |
 | ShowHidden        | Optional. Defaults to false. Includes hidden SP people or groups in selector  | Title | 
 
 This is a ["Cached" selector](../selectors-tag.md#description).

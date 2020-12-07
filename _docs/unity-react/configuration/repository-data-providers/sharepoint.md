@@ -1,5 +1,5 @@
 ---
-title: Unity Features - Sharepoint Connector
+title: Sharepoint Data Provider
 layout: docs
 category: Unity 7
 ---
@@ -64,54 +64,29 @@ Use browser to find a proper configuration values as described below.
 
 | Metadata             | Description                            | URL                                              |
 |:---------------------|:---------------------------------------|:-------------------------------------------------|
-| SP List              | Use SP List Title tag value to specify list in a unity configuration. | `https://<RootUrl>/_api/lists?$select=Title`    |
-| SP Content Type      | Use ```<ListTitle>\<Content Type Name>``` in unity configuration.          | `https://<RootUrl>/_api/lists/getbytitle('<ListTitle>')/ContentTypes?$select=Name,Id`|
-| SP Field             | Use Field InternalName  in unity configuration.          | `https://<RootUrl>/_api/lists/getbytitle('<ListTitle>')/Fields?$select=InternalName,Id'`   |
+| Root Url             | SharePoint online Root Url for SP Online uses Tenant name (Azure registered name of organization) to construct RootUrl. SP OnPremise uses arbitrary url (consult admin). | `https://<Tenant>.sharepoint.com`   |
+| SP Lists             | Use SP List Title tag value to specify list in a unity configuration. | `https://<RootUrl>/_api/lists?$select=Title`    |
+| SP Content Types     | Use ```<ListTitle>\<Content Type Name>``` in unity configuration.          | `https://<RootUrl>/_api/lists/getbytitle('<ListTitle>')/ContentTypes?$select=Name,Id`|
+| SP Fields            | Use Field InternalName  in unity configuration.          | `https://<RootUrl>/_api/lists/getbytitle('<ListTitle>')/Fields?$select=InternalName,Id'`   |
+| SP Sites             | Use SharePoint admin url to find sites list.             | `https://<Tenant>-admin.sharepoint.com/`|
    
 # Unity features configuration specific to SharePoint connector
     
 ## SharePoint repository data provider
-  Sharepoint repository data provider supports all sections common to Unity data providers - mapping:   
- ```$xml
-<RepositoryDataProvider ID="sptest_site" class="com.vegaecm.vspace.providers.sharepoint.SharepointRepositoryDataProvider">
-   .... skipped ...
-            <Site>sites/foo</Site>
-   .... skipped ...
- ```
-  
-- Site (optional) - SharePoint Site relative to datasource RootUrl. By default, root site is used.
-  
-**Note:** Internal Field Names used in provider field mapping are InternalName for SharePoint list items. 
-  All available fields for particular list could be retrieved by following REST API call: `https://<RootUrl>/_api/lists/getbytitle('<ListTitle>')/Fields`, for example:`https://vkozyr.sharepoint.com/_api/lists/getbytitle('Documents')/Fields`
-  
-## Document class (Document Library Content Type) selector
 
-```$xslt
- <Selector ID="sharepoint_document_class_add_document_auto">
-            <ClassName>com.vegaecm.vspace.selectors.SharepointDocumentClassSelector</ClassName>
-            <Description/>
-            <Property ID="DataProviderId" value="sharepoint_repository"/>
-            <Property ID="RefreshTimeoutSec" value="86400"/>
-            <!-- associate selector with sharepoint list-->
-            <Property ID="DefaultList" value="Documents"/>
- </Selector>
-```
-- DefaultList - SharePoint List Title used to select document content types
+Sharepoint repository data provider supports all sections [common to Unity data providers](../repository-data-providers.md#property-mapping).   
+Check [Metadata Urls](#sharepoint-metadata-urls) on how to list all available fields for particular list.  
+|**Note:** Internal Field Names used in provider field mapping are InternalName for SharePoint list items.   
 
-## Lookup Selector 
-```$xml
-<Selector ID="sharepoint_custom_link">
-            <ClassName>com.vegaecm.vspace.selectors.SharepointLookupSelector</ClassName>
-            <Description/>
-            <Property ID="DataProviderId" value="sharepoint_repository"/>
-            <Property ID="RefreshTimeoutSec" value="86400"/>
-            <!-- associate selector with sharepoint list-->
-            <Property ID="DefaultList" value="Documents"/>
-            <Property ID="TitleField" value="BaseName"/>
-</Selector>
-```
-- DefaultList - SharePoint List Title used to select items
-- TitleField - List Item field displayed in the selector. List Item ID field always used as selector value.
+  Custom properties for SharePoint data provider:    
+ 
+| Property       | Property description              | Example        |
+|:---------------|:--------------------------------|:---------------|
+| Site | Each repository data provider linked to the SharePoint site. Set this property to Site relative to datasource RootUrl. Defaults to root site. See [Links above](#sharepoint-metadata-urls).  | `<Site>sites/foo</Site>` |
+| SecurityNotification | Set this property to enable e-mail notification when sharing documents. Notifications are disabled by default. | `<SecurityNotification>enabled</SecurityNotification>` |
+| RootFolderFilter | Filter document libraries. Uses [OData notation](https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/use-odata-query-operations-in-sharepoint-rest-requests)  | `<RootFolderFilter>(Hidden eq false and IsCatalog eq false and BaseTemplate eq 101)</RootFolderFilter>` |  
+  
+## [SharePoint selectors](../tags-list/selectors-tag/sharepoint-selectors.md)
 
 ## Add document action 
 ```$xml
@@ -175,16 +150,6 @@ UIE properties mapping maps UIE ids to sharepoint connector ids. For example:
                     </DefineProperties>
                 </Repository>
             </ViewerProperties>
-
-            <RepositoryMapper>
-                 <Mapping external="SharePoint" internal="sharepoint_repository">
-                    <DefineProperties>
-                        <Property ID="Id" value="{This.$id}@{OData__UIVersionString}"/>
-                        <Property ID="versionSeriesId" value="{This.$id}"/>
-                        <Property ID="pid" value="{This.collection_name}/{This.ID}"/>
-                    </DefineProperties>
-                </Mapping>
-            </RepositoryMapper>
 ```
 ## Case links
 *Content to be added* 

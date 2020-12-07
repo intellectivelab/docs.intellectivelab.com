@@ -4,34 +4,69 @@ layout: docs
 category: Unity 7
 ---
 
-*content to be added*
+|**Note**: Provider Configuration is the same for Unity ExtJs and Unity React. 
 
-# DB (DBRepositoryDataProvider)
+# Data providers
 
-Repository data provider should specify mapping for all columns from select clause (if external and internal names 
-don't match):
+Unity Data Provider is a unified facade to integrate content from different external sources:
 
-```xml
-    <RepositoryDataProvider ID="db_repository" class="com.vegaecm.vspace.providers.db.DBRepositoryDataProvider">
-      <!-- not relevant nodes skipped -->
-      <Datasource>db2_sodemo</Datasource>
-      <PropertyNameMapper>
-        <Mapping external="Id" internal="OBJECT_ID"/>
-        <Mapping external="DocumentTitle" internal="U1708_DOCUMENTTITLE"/>
-        <Mapping external="MimeType" internal="MIME_TYPE"/>
-        <Mapping external="DateCreated" internal="CREATE_DATE"/>
-        <Mapping external="DateLastModified" internal="MODIFY_DATE"/>
-        <Mapping external="LastModifier" internal="MODIFY_USER"/>
-        <Mapping external="IsReserved" internal="IS_RESERVED_DOC"/>
-        <Mapping external="IsCurrentVersion" internal="IS_CURRENT_DOC"/>
-        <Mapping external="ContentSize" internal="CONTENT_SIZE"/>
-        <Mapping external="MajorVersionNumber" internal="MAJOR_VERSION_NUMBER"/>
-        <Mapping external="MinorVersionNumber" internal="MINOR_VERSION_NUMBER"/>
-        <Mapping external="IsVersioningEnabled" internal="VERSIONING_ENABLED"/>
-        <Mapping external="VersionStatus" internal="VERSION_STATUS"/>
-      </PropertyNameMapper>
-    </RepositoryDataProvider>
+- FileNet CE
+- [Database](repository-data-providers/db.md)
+- JNDI
+- CMOD
+- CM8
+- CMIS
+- [SharePoint](repository-data-providers/sharepoint.md)
+- [Enterprise Search](repository-data-providers/uie.md)
+
+# Basic configuration options
+
+Main steps configuring Data Provider are:  
+ 
+- Define data provider ID and its class specific for target repository type:  
+
+|Repository Type| Class Name|
+|:--------------|:----------|
+|IBM FileNet P8 |com.vegaecm.vspace.providers.ce.CERepositoryDataProvider|
+|[SharePoint](repository-data-providers/sharepoint.md) |com.vegaecm.vspace.providers.sharepoint.SharepointRepositoryDataProvider|
+|CM8 |com.vegaecm.vspace.providers.cm8.Cm8RepositoryDataProvider|
+|CMOD |com.vegaecm.vspace.providers.cmod.CmodRepositoryDataProvider|
+|[Enterprise Search](repository-data-providers/uie.md) |com.vegaecm.vu.providers.uie.hli.Provider|
+|Box |com.vegaecm.vspace.providers.box.BoxRepositoryDataProvider|
+|CMIS, Alfresco |com.vegaecm.vspace.providers.cmis.CMISRepositoryDataProvider|
+|[Database](repository-data-providers/db.md) |com.vegaecm.vspace.providers.db.DBRepositoryDataProvider|
+|Case Management |com.vegaecm.vu.ucm.providers.UcmProvider|
+|TBD |com.vegaecm.vspace.providers.categorization.CategorizationProvider|
+|TBD |com.vegaecm.vspace.providers.categorization.PropertyCategorizationProvider|
+|TBD |com.vegaecm.vspace.providers.bo.BusinessObjectDataProvider|
+
+Example:
 ```
+<RepositoryDataProvider ID="sharepoint_repository"
+                                   class="com.vegaecm.vspace.providers.sharepoint.SharepointRepositoryDataProvider">
+```
+   
+- Define [Property Name Mapping](#property-mapping)
+- Verify connection related and other options specific to [data provider](#data-providers)
 
+# Property name mapping
 
+PropertyNameMapper section define how field names in target repository mapped to Unity property name:  
+```xml
+<RepositoryDataProviders>
+    <RepositoryDataProvider ID="sharepoint_repository"
+                                class="com.vegaecm.vspace.providers.sharepoint.SharepointRepositoryDataProvider">
+            <PropertyNameMapper>
+                <Mapping external="Id" internal="UniqueId"/>
+                <Mapping external="VersionSeriesId" internal="UniqueId"/>
+  .. skipped ..
+        </PropertyNameMapper>
+    </RepositoryDataProvider>
+</RepositoryDataProviders>
+``` 
+
+|Attribute | Description |
+|:---------|:------------|
+|Mapping/@external| Property name in Unity configuration|
+|Mapping/@internal| Property (field, column) name in target repository|
 
