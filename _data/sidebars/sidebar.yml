@@ -376,15 +376,52 @@ entries:
                 url: /docs/unity-react/customization/environment-setup/
                 id: unity-react-customization-environment-setup
 
+      - title: Unity for Salesforce
+        output: web, pdf
+        id: unity-salesforce
+        folderitems:
+          - title: Features
+            output: web, pdf
+            id: unity-salesforce-features
+            subfolders:
+              - title: Document Management
+                output: web
+                url: /docs/unity-salesforce/features/document-management/
+                id: unity-salesforce-features-document-management
+
+          - title: Installation
+            output: web, pdf
+            id: unity-salesforce-installation
+            subfolders:
+
+              - title: Installing Unity for Salesforce
+                output: web
+                url: /docs/unity-salesforce/installation/installing-unity-salesforce/
+                id: unity-salesforce-installation-installing-unity-salesforce
+
+          - title: Configuration
+            output: web, pdf
+            id: unity-salesforce-configuration
+            subfolders:
+              - title: Grids
+                output: web
+                url: /docs/unity-salesforce/configuration/grids/
+                id: unity-salesforce-configuration-grids
+
+              - title: Actions
+                output: web
+                url: /docs/unity-salesforce/configuration/actions/
+                id: unity-salesforce-configuration-actions
+
+              - title: Tags List
+                output: web
+                url: /docs/unity-salesforce/configuration/tags-list/
+                id: unity-salesforce-configuration-tags-list
+
       - title: Unity for CRM
         output: web, pdf
         id: unity-for-crm
         folderitems:
-          - title: Unity for Salesforce
-            url: /docs/unity-for-crm/unity-for-salesforce/
-            id: unity-for-crm-unity-for-salesforce
-            output: web, pdf
-
           - title: Unity for Dynamics
             url: /docs/unity-for-crm/unity-for-dynamics/
             id: unity-for-crm-unity-for-dynamics

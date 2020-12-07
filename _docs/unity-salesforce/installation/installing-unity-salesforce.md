@@ -1,5 +1,5 @@
 ---
-title: Unity for Salesforce
+title: Installing Unity for Salesforce
 layout: docs
 category: Unity for CRM
 ---
@@ -42,15 +42,15 @@ After certificate for a given Unity site is obtained it should be installed on a
 
 - Login to Unity application using the appropriate URL: 
 
-	![u4sf](unity-for-salesforce/images/image2.png) 
+	![u4sf](installing-unity-salesforce/images/image2.png) 
 
 - Verify the Search Template in the tab. This search template tab will be displayed from within Salesforce: 
 
-	![u4sf](unity-for-salesforce/images/image3.png) 
+	![u4sf](installing-unity-salesforce/images/image3.png) 
 	
 - Verify the search results in the search template: 	
 	
-	![u4sf](unity-for-salesforce/images/image4.png) 
+	![u4sf](installing-unity-salesforce/images/image4.png) 
 
 # Installing Unity for Salesforce 
 
@@ -60,58 +60,58 @@ After certificate for a given Unity site is obtained it should be installed on a
 	Link for UnityApp version 2.2: [https://login.salesforce.com/packaging/installPackage.apexp?p0=04tf4000004PtwA](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tf4000004PtwA) 
 - Login screen as shown in screenshot below will appear. Enter the credentials (Username and Password for the Org (e.g. `intellective-demo-qa-dev-ed-dev-ed.my.salesforce.com`) the package should be installed on): 
 
-	![u4sf](unity-for-salesforce/images/image5.png) 
+	![u4sf](installing-unity-salesforce/images/image5.png) 
 	
 - Select `Install for All Users` and click `Install` button: 
 
-	![u4sf](unity-for-salesforce/images/image6.png) 
+	![u4sf](installing-unity-salesforce/images/image6.png) 
 	
 - Check `Yes, grant access to these third-party web sites` and click `Continue`: 
 	
-	![u4sf](unity-for-salesforce/images/image7.png) 
+	![u4sf](installing-unity-salesforce/images/image7.png) 
 	
 - Click `Done` when the installation is complete: 
 
-	![u4sf](unity-for-salesforce/images/image8.png) 
+	![u4sf](installing-unity-salesforce/images/image8.png) 
 	
 - On clicking `Done`, the page will be redirected to Installed Packages page with all installed packages: 
 	
-	![u4sf](unity-for-salesforce/images/image9.png) 
+	![u4sf](installing-unity-salesforce/images/image9.png) 
 
 ## Package configuration in Salesforce 
 
 - Login to Salesforce
 - Click `Setup`
 
-	![u4sf](unity-for-salesforce/images/image10.png) 
+	![u4sf](installing-unity-salesforce/images/image10.png) 
 	
 - Go to `Users > User Management Settings`. Enable Enhanced Profile User Interface if not already enabled: 
 	
-	![u4sf](unity-for-salesforce/images/image11.png) 
+	![u4sf](installing-unity-salesforce/images/image11.png) 
 	
 - Go to `Users > Profiles` and click on `System Administrator`: 
 	
-	![u4sf](unity-for-salesforce/images/image12.png) 
+	![u4sf](installing-unity-salesforce/images/image12.png) 
 	
 - Click on `Assigned Apps`: 
 	
-	![u4sf](unity-for-salesforce/images/image13.png) 
+	![u4sf](installing-unity-salesforce/images/image13.png) 
 	
 - Click on `Edit` and check the Visible checkbox for “Unity for Salesforce”. Save the changes:
 	
-	![u4sf](unity-for-salesforce/images/image14.png) 
+	![u4sf](installing-unity-salesforce/images/image14.png) 
 	
 - Go to `Security > Session Settings`, uncheck “Enable secure and persistent browser caching to improve performance” in the Caching section and under “Extended use of IE11 with Lightning Experience” section check “I AGREE, Use IE11 with Lightning Experience during the Extended Period”. Click Save: 
 
-	![u4sf](unity-for-salesforce/images/image15.png) 
+	![u4sf](installing-unity-salesforce/images/image15.png) 
 	
 - Go to `Setup > My Domain`. If custom domain is already set skip this step, otherwise enter domain name, press `Check Availability` and `Register Domain` and then click `Deploy to Users` (if available):
 	
-	![u4sf](unity-for-salesforce/images/image16.png) 
+	![u4sf](installing-unity-salesforce/images/image16.png) 
 	
 - Go to `Identity > Auth. Providers`. Edit UnityOAuth2Provider if it exists, otherwise press `New` and select UnityOAuth2Provider in the Provider Type field: 
 	
-	![u4sf](unity-for-salesforce/images/image17.png) 
+	![u4sf](installing-unity-salesforce/images/image17.png) 
 	
 - Enter the following fields and click `Save`: 
 
@@ -130,11 +130,11 @@ After certificate for a given Unity site is obtained it should be installed on a
 
 	| **Note**: `vu_nc` should match the Named Credentials. 
 	
-	![u4sf](unity-for-salesforce/images/image18.png) 
+	![u4sf](installing-unity-salesforce/images/image18.png) 
 	
 - Go to `Security > CSP Trusted Sites` and `Edit` Unity site name: 
 	
-	![u4sf](unity-for-salesforce/images/image19.png) 
+	![u4sf](installing-unity-salesforce/images/image19.png) 
 	
 - Enter the following fields and click `Save`: 
 
@@ -143,11 +143,11 @@ After certificate for a given Unity site is obtained it should be installed on a
 	| Trusted Site Name      | any unique name                           | Unity                            |
 	| URL Suffix             |`https://<Unity server>:<Unity port>`      | https://sf-demo.vegaecm.com:9443 |
 	
-	![u4sf](unity-for-salesforce/images/image20.png) 
+	![u4sf](installing-unity-salesforce/images/image20.png) 
 	
 - Go to `Security > Remote Site Settings` and `Edit` Unity site name: 
 	
-	![u4sf](unity-for-salesforce/images/image21.png) 
+	![u4sf](installing-unity-salesforce/images/image21.png) 
 	
 - Enter the following fields and click `Save`: 
 
@@ -157,7 +157,7 @@ After certificate for a given Unity site is obtained it should be installed on a
 	| Remote URL Site           |`https://<Unity server>:<Unity port>`   | https://sf-demo.vegaecm.com:9443 |
 	| Disable Protocol Security | checked                                |                                  |	
 	
-	![u4sf](unity-for-salesforce/images/image22.png) 
+	![u4sf](installing-unity-salesforce/images/image22.png) 
 	
 - Go to `Security > Named Credentials` and edit `vu_nc` if it exists or create a new Named Credential with the following information and click `Save`: 
 
@@ -172,19 +172,19 @@ After certificate for a given Unity site is obtained it should be installed on a
 	| Scope                             | api                                                       |                                     |
 	| Start Authentication Flow on Save | checked                                                   |                                     |
 
-	![u4sf](unity-for-salesforce/images/image23.png)  
+	![u4sf](installing-unity-salesforce/images/image23.png)  
 	
 - Check that correct Unity application login dialog is opened and enter correct login and password
 
 - Open Unity for Salesforce app:
 
-	![u4sf](unity-for-salesforce/images/image24.png) 
+	![u4sf](installing-unity-salesforce/images/image24.png) 
 	
 ## Configure authentication between Salesforce and Unity 
 
 - Go to `Settings` under User profile: 
 
-	![u4sf](unity-for-salesforce/images/image25.png) 
+	![u4sf](installing-unity-salesforce/images/image25.png) 
 	
 - Go to `Authentication Settings for External Systems`. Edit `vu_nc` if it exists otherwise create New setting with the information below and click `Save`: 
 	
@@ -207,11 +207,11 @@ After certificate for a given Unity site is obtained it should be installed on a
 - Login to Salesforce 
 - Click `Setup`:  
 	
-	![u4sf](unity-for-salesforce/images/image10.png) 
+	![u4sf](installing-unity-salesforce/images/image10.png) 
 	
 - Go to `Tabs` and Click `New` on the Lightning Component Tabs: 
 	
-	![u4sf](unity-for-salesforce/images/image27.png) 
+	![u4sf](installing-unity-salesforce/images/image27.png) 
 	
 - Enter the information below to create the new tab and click `Save`: 
 	
@@ -222,19 +222,19 @@ After certificate for a given Unity site is obtained it should be installed on a
 	| Tab Name            | Should be matched with Tab Id that was configured in the Unity application. This ID can be used only for one Tab. | search_templates |
 	| Tab Style           | Select from the list                                                                                              | Lightning        |
 	
-	![u4sf](unity-for-salesforce/images/image28.png) 
+	![u4sf](installing-unity-salesforce/images/image28.png) 
 
 - Go to App Manager and click `Edit` for `Unity for Salesforce`: 
 
-	![u4sf](unity-for-salesforce/images/image29.png) 
+	![u4sf](installing-unity-salesforce/images/image29.png) 
 	
 - Click `Navigation Items` and select `Documents Search` tab as created above from Available Items and click `Save`: 
 	
-	![u4sf](unity-for-salesforce/images/image30.png) 
+	![u4sf](installing-unity-salesforce/images/image30.png) 
 	
 - Open Unity from the App Launcher: 
 
-	![u4sf](unity-for-salesforce/images/image24.png) 
+	![u4sf](installing-unity-salesforce/images/image24.png) 
 	
 ## Configure reCAPTCHA (Optional) 
 
@@ -246,7 +246,7 @@ After certificate for a given Unity site is obtained it should be installed on a
 
 - Login to [https://www.google.com/recaptcha/admin](https://www.google.com/recaptcha/admin) and register a new domain: 
 
-	![u4sf](unity-for-salesforce/images/image31.png) 
+	![u4sf](installing-unity-salesforce/images/image31.png) 
 	
 - Copy the generated keys and add them to `<Unity installed application>/vu.war/WEB-INF/lib/vu-auth-provider-<unity version>.jar/auth.properties` to the following properties: 
 
@@ -254,19 +254,19 @@ After certificate for a given Unity site is obtained it should be installed on a
 	
 	google.recaptcha.key.secret = secret key 
 	
-	![u4sf](unity-for-salesforce/images/image32.png) 
+	![u4sf](installing-unity-salesforce/images/image32.png) 
 
 - In WebSphere admin console, go to `Security > SSL certificate and key management > Key stores and certificates > NodeDefaultTrustStore > Signer certificates`: 
 	
-	![u4sf](unity-for-salesforce/images/image33.png) 
+	![u4sf](installing-unity-salesforce/images/image33.png) 
 	
 - Click `Retrieve from port` button, and specify Host `google.com`, Port `443`, and Alias `google`: 
 	
-	![u4sf](unity-for-salesforce/images/image34.png) 
+	![u4sf](installing-unity-salesforce/images/image34.png) 
 	
 - Click `Retrieve signer information` button: 
 	
-	![u4sf](unity-for-salesforce/images/image35.png) 
+	![u4sf](installing-unity-salesforce/images/image35.png) 
 	
 - Press `Apply` and restart WebSphere 
 
@@ -275,21 +275,21 @@ After certificate for a given Unity site is obtained it should be installed on a
 - Login to Salesforce
 - Open Unity from the App Launcher, if not already open: 
 	
-	![u4sf](unity-for-salesforce/images/image24.png) 
+	![u4sf](installing-unity-salesforce/images/image24.png) 
 	
 - `Documents Search` tab is displayed by default and the search is auto-executed to display the documents from FileNet CE: 
 	
-	![u4sf](unity-for-salesforce/images/image36.png) 
+	![u4sf](installing-unity-salesforce/images/image36.png) 
 	
 - Click on `View` action to view the document: 
 	
-	![u4sf](unity-for-salesforce/images/image37.png) 
+	![u4sf](installing-unity-salesforce/images/image37.png) 
 	
 ## Unity Validator 
 
 Unity Validator is a great tool, that allows to test main Salesforce settings and provides brief information on main possible reasons in case of problems:
 	
-![u4sf](unity-for-salesforce/images/image44.png) 
+![u4sf](installing-unity-salesforce/images/image44.png) 
 	
 In most cases error messages allow to understand what is wrong.
 How to add Unity Validator tab:
@@ -298,21 +298,21 @@ How to add Unity Validator tab:
 - Select found result (it belongs to Object Settings)
 - Ensure that tab is not hidden, i.e. Tab settings set to `Default On` 
 		
-	![u4sf](unity-for-salesforce/images/image45.png) 
+	![u4sf](installing-unity-salesforce/images/image45.png) 
 	
 - If it’s hidden, click `Edit` button and change visibility. Click `Save`: 
 	
-	![u4sf](unity-for-salesforce/images/image46.png) 
+	![u4sf](installing-unity-salesforce/images/image46.png) 
 	
 - Go to `Setup > App Manager` 
 - Find `Unity for Salesforce Application` and click `Edit`: 
 	
-	![u4sf](unity-for-salesforce/images/image47.png) 
+	![u4sf](installing-unity-salesforce/images/image47.png) 
 	
 - Go to `Navigation Items`
 - Ensure that `Unity Validator` tab is presented under Selected Items: 
 
-	![u4sf](unity-for-salesforce/images/image48.png) 
+	![u4sf](installing-unity-salesforce/images/image48.png) 
 	
 - If it’s not there, select Unity Validator under Available Items and click arrow button between 2 lists
 - Click `Save` 
@@ -324,30 +324,30 @@ How to add Unity Validator tab:
 - Login to Salesforce
 - Click Setup: 
 
-	![u4sf](unity-for-salesforce/images/image10.png) 
+	![u4sf](installing-unity-salesforce/images/image10.png) 
 	
 - Go to `Custom Code > Custom Metadata Types`. Find Unity OAuth settings and click `Manage Records`:
 	
-	![u4sf](unity-for-salesforce/images/image38.png) 
+	![u4sf](installing-unity-salesforce/images/image38.png) 
 	
 - Delete `UnityOAuth2Provider` by clicking on `Del` link: 
 	
-	![u4sf](unity-for-salesforce/images/image39.png) 
+	![u4sf](installing-unity-salesforce/images/image39.png) 
 	
 - Go to `Security > Named Credentials` and delete `vu_nc`: 
 	
-	![u4sf](unity-for-salesforce/images/image40.png) 
+	![u4sf](installing-unity-salesforce/images/image40.png) 
 	
 - Go to `Identity > Auth. Providers` and delete `UnityOAuth2Provider`: 
 	
-	![u4sf](unity-for-salesforce/images/image41.png) 
+	![u4sf](installing-unity-salesforce/images/image41.png) 
 	
 - Remove global components from all layouts where they were added
 - Remove other dependent components if there is any
 - Go to `Apps > Installed Packages` Uninstall UnityApp: 
 
-	![u4sf](unity-for-salesforce/images/image42.png) 
+	![u4sf](installing-unity-salesforce/images/image42.png) 
 	
 - Select options as shown on screenshot below and click `Uninstall`: 
 	
-	![u4sf](unity-for-salesforce/images/image43.png) 
+	![u4sf](installing-unity-salesforce/images/image43.png) 

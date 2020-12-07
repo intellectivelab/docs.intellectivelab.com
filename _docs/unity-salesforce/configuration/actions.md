@@ -1,0 +1,29 @@
+---
+title: Actions Configuration
+layout: docs
+category: Unity 7
+---
+# Common Actions Configuration Options
+
+## Common actions configuration steps
+
+- [add action to the Grid](grids.md#how-to-add-action-to-the-grid)
+- [add action to the View](tags-list/views-tag/tab-action-set.md#how-to-add-action-to-the-view) (optional)
+
+*content to be added*
+
+# Specific Actions Configuration Options
+
+*content to be added*
+
+## Document related actions
+
+- [View Document](../configuration/actions/view-document.md)
+- [Open in Office](../configuration/actions/open-in-office.md)
+- [View Content](../configuration/actions/view-content.md)
+
+## Case related actions
+
+## Workitem related actions
+
+## Other actions
