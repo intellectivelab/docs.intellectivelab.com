@@ -156,7 +156,7 @@ In order to define a desktop in ICN please following instructions in the IBM Con
 
 In the desktop configuration pay special attention to the Authentication Repository configured for the desktop:
 
-![authentication](unity-for-icn/images/image6.png)
+![authentication](unity-for-icn/images/image6-auth-os.png)
 
 For a discussion of the authentication repository and its effect on Single Sign-On please see the section on SSO.
 
@@ -179,20 +179,24 @@ The default location on a Windows installation is `C:\Program Files (x86)\IBM\EC
 ## Register the Plug-In with IBM Content Navigator
 
 The next step is to register the Plug-In with IBM Content Navigator. In order to this you must log into IBM Content Navigator as an administrative user.
-Navigate to the `Administrative View` by clicking on the blue `gear` icon on the left feature icon toolbar:
+Navigate to the `Administration` by clicking the `gear` icon on the left top dropdown toolbar:
 
-![administrative view](unity-for-icn/images/image7.png)
+![administrative view](unity-for-icn/images/image7-admin.png)
 
 Next click on the Plug-ins icon in the Administrative View:
 
-![plugins registration](unity-for-icn/images/image8.png)
+![plugins registration](unity-for-icn/images/image8-plugins.png)
 
 In order to register the Unity ICN Plug-In click the `New Plugin` button as shown below.
 Note that the plug-ins that you see in your application below the toolbar will depend on what plug-ins have been installed by your site administrator:
 
-![new plugin](unity-for-icn/images/image9.png)
+![new plugin](unity-for-icn/images/image9-new-plugin.png)
 
-In the `New Plug-in` tab that opens up type in the absolute path for the JAR file that was copied in the previous section.
+The `New Plug-In` tab appears:
+
+![jar file path](unity-for-icn/images/image10-new-plugin-opened.png)
+
+Type in the absolute path for the JAR file that was copied in the previous section.
 If you did not copy the JAR file to the ICN server as outlined in section (Optional) Copy the JAR file to the ICN Server, then the HTTP path to the JAR file can be used. In the deployed Unity application, file `http://<host>/<Unity-app>/resources/icn/latest_version.txt` contains the latest version of ICN plugin, i.e.:
 
 ```
@@ -205,19 +209,15 @@ Correspondently, URL to the latest plugin for loading by ICN will be:
 http://<host>/<Unity-app>/resources/icn/vu-icn-plugin-1.0.5.jar
 ```
 
-![jar file path](unity-for-icn/images/image10.png)
+Click the `Load` button to display the JAR information. The properties of the JAR should be as follows. The Version might be different if you are loading a newer version of the Unity ICN Plug-In:
 
-Click the `Load` button to display the JAR information. The properties of the JAR should be as follows. The Version might be different if you are loading a newer version of the Unity ICN Plug-In.
-
-![jar properties](unity-for-icn/images/image11.png)
+![jar properties](unity-for-icn/images/image11-plugin-loaded-info.png)
 
 After the JAR has been loaded click the `Save and Close` button to save the Plug-in registration.
 
-![save](unity-for-icn/images/image12.png)
-
 If registration is successful, the new Unity user interface plug-in will show up in the available plug-ins for IBM Content Navigator:
 
-![new plugin](unity-for-icn/images/image13.png)
+![new plugin](unity-for-icn/images/image13-plugins-list.png)
 
 ## Configuration of the Plug-In
 
@@ -226,12 +226,12 @@ When the Unity ICN Plug-In has been registered in ICN by following the direction
 Log into IBM Content Navigator as an administrative user and open the desktop configuration for the desktop that should include the Unity ICN Plug-In.
 Once the desktop configuration is shown click the checkbox next to the `Intellective - Unity user interface` as shown below:
 
-![plugin selection](unity-for-icn/images/image14.png)
+![plugin selection](unity-for-icn/images/image14-plugin.png)
 
 When the Plug-In is selected the `Feature Configuration` is displayed to the right as shown in the screen shot above.
 
 The fields that should be configured are:
-- Description: This description is used as `tooltip` on the Integration Mode `One icon per Unity instance`. It is not used for any other integration mode.
+- Unity feature label: This description is used as `tooltip` on the Integration Mode `One icon per Unity instance`. It is not used for any other integration mode.
 - Unity URL: This is the fully qualified base URL to Unity. The URL can be either HTTP or HTTPS.
 - Unity SSO key: This is the generated SSO key. See Single Sign-On Configuration (SSO) - Generate a Unique SSO Key
 - Integration Mode: This is the Integration Mode for Unity in the Plug-In mode. The possible modes are:
@@ -239,7 +239,7 @@ The fields that should be configured are:
     - One icon per Unity solution - This mode displays one ICN feature icon per Unity solution.
     - One icon per Unity tab - This mode displays one ICN feature icon per Unity tab in all solutions.
 - Show Unity tab header: Display tab header in the Unity frame. This setting is grayed out if Integration Mode is not set to One icon per Unity tab.
-- Suppress `No features available for selected role` warning: Disable the message box with warning `No features available for selected role` when ICN desktop with Unity plugin is opened by user which is not assigned to any Unity roles allowed to access tabs.
+- Suppress 'No features available for selected role' warning: click this checkbox to disable the message box with warning `No features available for selected role when ICN desktop with Unity plugin is opened by user which is not assigned to any Unity roles allowed to access tabs.`
     This message may be useful for administrator to discover misconfiguration or lack of access, but in the same time might be annoying for ordinary users who intentionally has no access to Unity.
 - `Test connection` button: When the button is clicked the Unity URL and SSO key are verified. Any errors will be displayed to the administrator.
 
@@ -247,11 +247,11 @@ Note that there is no security configuration per Unity solution/tab. This is bec
 This provides unified and consistent security between native Unity and the Unity ICN Plug-In.
 Initially the connection status will have a value of `Unknown` as shown below. The connection status will also be reset to `Unknown` if any changes are made to the Unity URL or SSO Key:
 
-![test connection](unity-for-icn/images/image15.png)
+![test connection](unity-for-icn/images/image15-test-connection.png)
 
 When the administrator clicks the `Test connection` button the Unity URL and SSO Key are verified. If the connection verifies with no errors the connection status changes to `Success`:
 
-![test connection](unity-for-icn/images/image16.png)
+![test connection](unity-for-icn/images/image16-success-test-connection.png)
 
 If there are any errors during connection validation the error is displayed in an error dialog as seen below. In this example the URL is incorrect:
 
@@ -259,7 +259,7 @@ If there are any errors during connection validation the error is displayed in a
 
 After the connection error dialog is dismissed the connection status is updated to `Failure`:
 
-![failure](unity-for-icn/images/image18.png)
+![failure](unity-for-icn/images/image18-failure-test-connection.png)
 
 If there is an error in the SSO key then a 500 error will typically be displayed:
 
@@ -271,7 +271,7 @@ The Unity ICN Plug-In configuration can be repeated for any ICN desktop that the
 
 The layout can be changed by selecting a different Dojo layout class. IBM Content Navigator ships with a default layout, but custom layouts can be created using standard Dojo layout techniques. The administrator can create custom layouts as needed.
 
-![layout selection](unity-for-icn/images/image20.png)
+![layout selection](unity-for-icn/images/image20-select-layout.png)
 
 Instructions on how to create a new layout class is described in the [IBM Content Navigator documentation](http://www-01.ibm.com/support/knowledgecenter/SSEUEX_2.0.3/com.ibm.developingeuc.doc/eucso005.htm).
 
@@ -358,10 +358,10 @@ Please note the `src="v1files/viewone.js"` value
 
 # (Optional) Configure Custom Icons for Plug-In Features
 
-The Unity ICN Plug-In ships with a standard icon for the IBM Content Navigator feature icons. This are the icons that are displayed in the left feature icon toolbar.
+The Unity ICN Plug-In ships with a standard icon for the IBM Content Navigator feature icons displayed in the left feature icon toolbar.
 If needed the administrator can configure custom icons instead of the standard feature icons that ship with Unity ICN Plug-In.
 
-![icons](unity-for-icn/images/image21.png)
+![icons](unity-for-icn/images/image21-features-menu-opened.png)
 
 Custom icons can be used for any integration mode. See Unity ICN Plug-In Configuration for an explanation of integration modes.
 
@@ -504,7 +504,11 @@ The layout of the ICN regions can be changed by [modifying the ICN layout](#opti
 ## Unity Role Selector
 
 The Unity Role selector displays all the Unity roles that are available for the current user.
-The user can select any available role. When a different role is selected the Unity user interface will refresh displaying data for the new role.
+The user can select any available role:
+
+![role selector](unity-for-icn/images/image27a-role-selector.png)
+ 
+When a different role is selected the Unity user interface will refresh displaying data for the new role.
 This is default behavior for Unity. This will clear any data currently displayed in Unity will be cleared. Therefore, the Unity ICN Plug-In will display a confirmation dialog before the role is changed.
 
 The confirmation dialog is shown below.
