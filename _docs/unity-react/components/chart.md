@@ -149,7 +149,7 @@ By default, charts support settings with some preset configurations.
 
 - Enable/Disable chart legend
 
-To open a dropdown with chart settings click an icon in the top right corner of chart:
+To open a dropdown with chart settings click the icon in the top right corner of chart:
 
 ![Chart settings icon](chart/images/chart_settings.png)
 
