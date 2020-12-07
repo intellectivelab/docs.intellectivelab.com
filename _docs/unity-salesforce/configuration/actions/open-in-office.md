@@ -48,6 +48,8 @@ For `Open in browser` action following section should be added to the Unity Syst
 |ResourceName | documents |
 |ActionType   | open.browser|
 
+Perform the rest of [Common Action Configuration Steps](../actions.md#common-actions-configuration-steps).
+
 ## Check out and Open in browser action
 
 *content to be added*
@@ -80,6 +82,8 @@ For `Open in desktop app` action following section should be added to the Unity 
 |:------------|:------------|
 |ResourceName | documents |
 |ActionType   | open.desktop|
+
+Perform the rest of [Common Action Configuration Steps](../actions.md#common-actions-configuration-steps).
 
 ##  Check out and Open in desktop app action
 
