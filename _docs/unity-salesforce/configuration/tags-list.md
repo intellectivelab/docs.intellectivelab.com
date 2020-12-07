@@ -10,7 +10,7 @@ AccessRoles
 ColumnSets   
 CustomConfiguration   
 Datasources  
-Grids   
+[Grids](grids.md)   
 EnterpriseSearch   
 Facets  
 Filters   

@@ -403,6 +403,11 @@ entries:
             output: web, pdf
             id: unity-salesforce-configuration
             subfolders:
+              - title: Grids
+                output: web
+                url: /docs/unity-salesforce/configuration/grids/
+                id: unity-salesforce-configuration-grids
+
               - title: Actions
                 output: web
                 url: /docs/unity-salesforce/configuration/actions/
