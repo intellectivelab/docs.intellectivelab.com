@@ -9,7 +9,7 @@ category: Unity 7
 
 ## Toolbar
 
-Toolbar on `Document Properties` tab may contain one of following actions:
+Toolbar on `Document Properties` tab may contain following actions:
 
 - `checkout`
 
