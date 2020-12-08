@@ -8,7 +8,7 @@ category: Unity 7
 
 The following stories were implemented in the Unity 7.7.2 release. The ID and Description are from Intellective’s internal ticket tracking system:
 
-# Unity for Intellective
+## Unity for Intellective
 
 | ID      | Summary                                                                                                                                                |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -26,7 +26,7 @@ The following stories were implemented in the Unity 7.7.2 release. The ID and De
 | U7-3155 | Sharepoint: Folders with custom class should be displayed in the folder view                                                                           |
 | U7-3080 | React UI: Support column configuration for cases                                                                                                       |
 
-# Enterprise Search
+## Enterprise Search
 
 | ID      | Summary                                                                              |
 | ------- | ------------------------------------------------------------------------------------ |
@@ -70,11 +70,11 @@ As an example, do the following:
 
 - Open Document Search
 - Switch to `Detailed View`
-- Open document `Version` tab
+- Open document `Versions` tab
 
 Detailed view element is removed from the upper right corner.
 
-![Document Versions](images/VersionsNoDetailedView.jpg)
+![Document Versions](images/VersionsNoDetailedView.png)
 
 ## U7-3498
 
@@ -83,7 +83,7 @@ As an example, do the following:
 
 - Open Document Search
 - Switch to `Detailed View`
-- Add any document's bookmark by clicking "Bookmark this Item" from the context menu
-- Hovering over the bookmark shows the tooltip
+- Add any document's bookmark by clicking `Bookmark this Item` from the context menu
+- Hovering over the bookmark shows the tooltip:
 
-![Bookmark tooltip](images/BookmarkTooltips.jpg)
+    ![Bookmark tooltip](images/BookmarkTooltips.png)
