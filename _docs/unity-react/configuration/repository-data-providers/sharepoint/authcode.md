@@ -1,5 +1,5 @@
 ---
-title: Unity Features - SharePoint Connector - Auth Code Flow
+title: SharePoint Connector Configuration - Auth Code Flow
 layout: docs
 category: Unity 7
 ---

@@ -1,5 +1,5 @@
 ---
-title: Sharepoint Data Provider
+title: Sharepoint Data Provider Configuration
 layout: docs
 category: Unity 7
 ---
@@ -24,7 +24,7 @@ Unity SharePoint connector uses Sharepoint OData REST API to access SharePoint o
 SP REST calls made on behalf of Unity logged in user to fully preserve SP security model. 
 Read only system account used to cache metadata about SP Document Libraries (fields, choices etc) for performance reason. 
 
-# Environment setup
+# Environment Setup
 An information about SharePoint instance and some setup action required to configure Unity SP connector.
 Different setup actions and options depends on the SP instance type and Unity project requirement. 
 Single Unity `<Datasource>` must be configured for SP root url. Each site must be setup as `<RepositoryDataProvider>` with relative site path defined in `<Site>site/path</Site>` tag defaults to root `/`.   
@@ -54,13 +54,13 @@ Different authentication options (flows) supported for SP in Cloud:
  - SPNEGO SSO - must be properly configured in SP and application container hosting Unity application. 
  Please check [Spnego Setup](sharepoint/spnego.md) page for details.
    
-# SharePoint List metadata URLs   
+# SharePoint List Metadata URLs   
 Use browser to find a proper configuration values as described below.
-- Open browser tab and navigate to sharepoint site at `<RootUrl>`.
-- Enter different urls in the tab location from the table below. 
-- Find value tags in returned XML and use them in unity configuration.    
+- Open browser tab and navigate to sharepoint site at `<RootUrl>`
+- Enter different URLs in the tab location from the table below 
+- Find value tags in returned XML and use them in unity configuration    
 
-## SharePoint metadata urls
+## SharePoint metadata URLs
 
 | Metadata             | Description                            | URL                                              |
 |:---------------------|:---------------------------------------|:-------------------------------------------------|
@@ -70,15 +70,16 @@ Use browser to find a proper configuration values as described below.
 | SP Fields            | Use Field InternalName  in unity configuration.          | `https://<RootUrl>/_api/lists/getbytitle('<ListTitle>')/Fields?$select=InternalName,Id'`   |
 | SP Sites             | Use SharePoint admin url to find sites list.             | `https://<Tenant>-admin.sharepoint.com/`|
    
-# Unity features configuration specific to SharePoint connector
+# Unity Features Configuration Specific to SharePoint Connector
     
 ## SharePoint repository data provider
 
-Sharepoint repository data provider supports all sections [common to Unity data providers](../repository-data-providers.md#property-mapping).   
+Sharepoint repository data provider supports all sections [common to Unity data providers](../repository-data-providers.md#property-name-mapping).   
 Check [Metadata Urls](#sharepoint-metadata-urls) on how to list all available fields for particular list.  
+
 |**Note:** Internal Field Names used in provider field mapping are InternalName for SharePoint list items.   
 
-  Custom properties for SharePoint data provider:    
+Custom properties for SharePoint data provider:    
  
 | Property       | Property description              | Example        |
 |:---------------|:--------------------------------|:---------------|
@@ -138,8 +139,8 @@ Check [Metadata Urls](#sharepoint-metadata-urls) on how to list all available fi
  - DefaultValue - Identify default content type using format `<ListTitle>/<ContentTypeId>` ```{value:"Documents\Document", name: "Document"}```.
   All available content types for a list could be get from API call: `https://<RootUrl>/_api/lists/getbytitle('<ListTitle>')/ContentTypes?$select=Name,Id`
         
-## UIE integration
-UIE properties mapping maps UIE ids to sharepoint connector ids. For example:    
+## Enterprise Search integration
+Enterprise Search properties mapping maps Enterprise Search ids to SharePoint connector IDs. For example:    
 ```$xml
             <ViewerProperties>
                  <Repository internal="SharePoint">

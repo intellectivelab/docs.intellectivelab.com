@@ -1,5 +1,5 @@
 ---
-title: Unity Features - Sharepoint Connector - User Password Flow
+title: Sharepoint Connector Configuration - User Password Flow
 layout: docs
 category: Unity 7
 ---

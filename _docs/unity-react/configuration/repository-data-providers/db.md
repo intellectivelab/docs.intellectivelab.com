@@ -1,5 +1,5 @@
 ---
-title: Database Data Provider 
+title: Database Data Provider Configuration 
 layout: docs
 category: Unity 7
 ---
