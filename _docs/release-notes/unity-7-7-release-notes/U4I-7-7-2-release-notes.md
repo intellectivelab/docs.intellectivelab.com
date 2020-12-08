@@ -72,7 +72,7 @@ As an example, do the following:
 - Switch to `Detailed View`
 - Open document `Versions` tab
 
-Detailed view element is removed from the upper right corner.
+Detailed view element is removed from the upper right corner of Detailed View:
 
 ![Document Versions](images/VersionsNoDetailedView.png)
 
