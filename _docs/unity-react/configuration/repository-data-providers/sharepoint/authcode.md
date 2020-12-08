@@ -97,13 +97,13 @@ PS C:\Code> .\Create-SelfSignedCertificate.ps1 -CommonName "UnitySpConnector" -S
 
     ![Add permissionsName for the App registrations](authcode/images/app_permissions_add.png)
  
+- Select `SharePoint` API:
+  
+    ![select sharePoint API](authcode/images/app_permissions_sp.png)
+    
 - Select `Delegated permissions`:
  
     ![delegated permissions for the App registrations](authcode/images/app_permissions_delegated.png)
-  
- - Select `SharePoint` API:
- 
-    ![select sharePoint API](authcode/images/app_permissions_sp.png)
  
  - Check `AllSites.FullControl` (if users need to manage permissions) or `AllSites.Read`, `AllSites.Write` and apply:
   
