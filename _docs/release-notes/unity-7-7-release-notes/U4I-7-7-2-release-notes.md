@@ -1,0 +1,69 @@
+---
+title: Unity 7.7.2 Release Notes
+layout: docs
+category: Unity 7
+---
+
+# New Features
+
+The following stories were implemented in the Unity 7.7.2 release. The ID and Description are from Intellective’s internal ticket tracking system:
+
+# Unity for Intellective
+
+| ------- | --------------------------- ------------------------------------------------------------|
+
+| U7-3514 | Add support of templateId parameter to the case query API |
+| U7-3502 | Detailed view should be implemented on Documents, Cases search grids only |
+| U7-3498 | Detailed view: add bookmark tooltip |
+| U7-3491 | U4I: For Mime Types replace the text name of the Mime Type with the Icon |
+| U7-3478 | React: Document Versions tab can't be configured for a specific dataprovider for Container = tree if several Sharepoint data providers were configured |
+| U7-3467 | React: RootFolder = / for Container = tree if several Sharepoint data providers were configured |
+| U7-3465 | React: View Document properties can't be opened for Container = tree if several Sharepoint data providers were configured |
+| U7-3464 | React: New document can not be added for Container = tree if several Sharepoint data providers were configured |
+| U7-3430 | Sharepoint Add Document dialog with Permissions tab |
+| U7-3417 | React Case Folders |
+| U7-3157 | Sharepoint: Implement Sharing and Permissions tab for Folders |
+| U7-3155 | Sharepoint: Folders with custom class should be displayed in the folder view |
+| U7-3080 | React UI: Support column configuration for cases |
+
+# UIE
+
+| ID      | Summary                                                                              |
+| ------- | ------------------------------------------------------------------------------------ |
+| U7-3555 | UIE: Support "id" as unique field (document id) in SOLR schema instead of d_ida_s    |
+| U7-3547 | UIE: Replace special chars in fields names in index                                  |
+| U7-3546 | UIE: SharePoint connector - don't crawl Folder objects                               |
+| U7-3452 | UIE CM8 Ability to perform backward crawling and also process current modifications  |
+| U7-3451 | UIE CMOD Ability to perform backward crawling and also process current modifications |
+| U7-3423 | UIE crawler shutdown command                                                         |
+| U7-3404 | Add support for field synonyms in UIE searcher request                               |
+| U7-3402 | UIE: "Google like search" - add double quotes around the searched value              |
+
+# Resolved Issues
+
+The following issues were resolved in the Unity 7.7.2 release. The ID and Description are from Intellective’s internal ticket tracking system:
+
+| ID      | Summary                                                                                                     |
+| ------- | ----------------------------------------------------------------------------------------------------------- |
+| U7-3487 | Multiselect download action does not work for some documents                                                |
+| U7-3486 | Information message displayed in ICN if user does not have access to Unity                                  |
+| U7-3474 | Unity should check if user has access to view document before trying to open in Daeja viewer                |
+| U7-3473 | Analytics grid missing settings dialog                                                                      |
+| U7-3472 | Unity doesn't support the "parent last" class loader mode                                                   |
+| U7-3471 | Unity Sharepoint connector error after config reset                                                         |
+| U7-3446 | Get Info action is executed for the checked document instead of the document with row context menu Get Info |
+| U7-3421 | Analytics tab scroll bar hardly visible                                                                     |
+| U7-3329 | Error when viewing CMOD document properties for some folders due to date format                             |
+| U7-3256 | (CM8/CMOD) SSO - Ability to login to Unity from within Navigator                                            |
+
+# Description
+
+## U7-3502
+
+Detailed view implementation toched all existing search templates, but it is not necessary for the following tabs as: `Tasks tab`, `Attach existing document tabs` and `Documents versions tab`. Detailed view is removed from metioned tabs.
+
+## U7-3498
+
+In case of Unity user adds several bookmarks on the `Detailed View`, it is difficuilt to select proper bookmark. Bookmark tooltips were added to make bookmarks in easy-to-read format
+
+![Bookmark tooltip](unity-7-7-release-notes/images/BookmarkTooltips.jpg)
