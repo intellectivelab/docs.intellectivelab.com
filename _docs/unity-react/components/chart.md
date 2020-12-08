@@ -110,7 +110,7 @@ The Sunburst Chart component is built based on [React-Vis Sunburst diagram](http
 Each chart consists of several colored segments, every displays particular group of data on the page. 
 Charts provide an interactive way to use and work with datasets:
 
-![Chart tips](chart/images/chart_tips.png)
+![Chart tips](chart/images/chart_in_interface.png)
 
 ## Chart data filtering
 
@@ -155,6 +155,8 @@ On icon click dropdown with settings of particular chart will open. All changes 
 so even after reopening page all your chart customizations will apply:
 
 ![Chart settings dropdown](chart/images/chart_settings_dropdown.png)
+
+##Empty data message
 
 If data is empty or has no values, `No content to display` warning message will be shown below the chart title:
 
