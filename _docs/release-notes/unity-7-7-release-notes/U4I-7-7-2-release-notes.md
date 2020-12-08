@@ -10,21 +10,21 @@ The following stories were implemented in the Unity 7.7.2 release. The ID and De
 
 # Unity for Intellective
 
-| ------- | --------------------------- ------------------------------------------------------------|
-
-| U7-3514 | Add support of templateId parameter to the case query API |
-| U7-3502 | Detailed view should be implemented on Documents, Cases search grids only |
-| U7-3498 | Detailed view: add bookmark tooltip |
-| U7-3491 | U4I: For Mime Types replace the text name of the Mime Type with the Icon |
+| ID      | Summary                                                                                                                                                |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| U7-3514 | Add support of templateId parameter to the case query API                                                                                              |
+| U7-3502 | Detailed view should be implemented on Documents, Cases search grids only                                                                              |
+| U7-3498 | Detailed view: add bookmark tooltip                                                                                                                    |
+| U7-3491 | U4I: For Mime Types replace the text name of the Mime Type with the Icon                                                                               |
 | U7-3478 | React: Document Versions tab can't be configured for a specific dataprovider for Container = tree if several Sharepoint data providers were configured |
-| U7-3467 | React: RootFolder = / for Container = tree if several Sharepoint data providers were configured |
-| U7-3465 | React: View Document properties can't be opened for Container = tree if several Sharepoint data providers were configured |
-| U7-3464 | React: New document can not be added for Container = tree if several Sharepoint data providers were configured |
-| U7-3430 | Sharepoint Add Document dialog with Permissions tab |
-| U7-3417 | React Case Folders |
-| U7-3157 | Sharepoint: Implement Sharing and Permissions tab for Folders |
-| U7-3155 | Sharepoint: Folders with custom class should be displayed in the folder view |
-| U7-3080 | React UI: Support column configuration for cases |
+| U7-3467 | React: RootFolder = / for Container = tree if several Sharepoint data providers were configured                                                        |
+| U7-3465 | React: View Document properties can't be opened for Container = tree if several Sharepoint data providers were configured                              |
+| U7-3464 | React: New document can not be added for Container = tree if several Sharepoint data providers were configured                                         |
+| U7-3430 | Sharepoint Add Document dialog with Permissions tab                                                                                                    |
+| U7-3417 | React Case Folders                                                                                                                                     |
+| U7-3157 | Sharepoint: Implement Sharing and Permissions tab for Folders                                                                                          |
+| U7-3155 | Sharepoint: Folders with custom class should be displayed in the folder view                                                                           |
+| U7-3080 | React UI: Support column configuration for cases                                                                                                       |
 
 # UIE
 
@@ -58,12 +58,19 @@ The following issues were resolved in the Unity 7.7.2 release. The ID and Descri
 
 # Description
 
+## U7-3514
+
+Added support of the templateId parameter to the case query API.
+Using the templateId parameter is needed when a solution architect wants to use UCM related functionality configured within the Unity search template, such as ContextQuery configuration for contextual cases filtering.
+
 ## U7-3502
 
-Detailed view implementation toched all existing search templates, but it is not necessary for the following tabs as: `Tasks tab`, `Attach existing document tabs` and `Documents versions tab`. Detailed view is removed from metioned tabs.
+`Detailed view` implementation removed from the following tabs: `Tasks`, `Attach document` and `Documents versions`
+
+![Document Versions](images/VersionsNoDetailedView.jpg)
 
 ## U7-3498
 
-In case of Unity user adds several bookmarks on the `Detailed View`, it is difficuilt to select proper bookmark. Bookmark tooltips were added to make bookmarks in easy-to-read format
+In order to make bookmarked items readable on `Delailed View`, bookmark tooltips were implemented.
 
-![Bookmark tooltip](unity-7-7-release-notes/images/BookmarkTooltips.jpg)
+![Bookmark tooltip](images/BookmarkTooltips.jpg)
