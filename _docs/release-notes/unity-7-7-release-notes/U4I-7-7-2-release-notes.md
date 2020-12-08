@@ -1,5 +1,5 @@
 ---
-title: Unity 7.7.2 Release Notes
+title: U4I 7.7.2 Release Notes
 layout: docs
 category: Unity 7
 ---
