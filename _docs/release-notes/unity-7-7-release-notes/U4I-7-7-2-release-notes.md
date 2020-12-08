@@ -65,12 +65,25 @@ Using the templateId parameter is needed when a solution architect wants to use 
 
 ## U7-3502
 
-`Detailed view` implementation removed from the following tabs: `Tasks`, `Attach document` and `Documents versions`
+`Detailed view` implementation removed from the following tabs: `Tasks`, `Attach document` and `Documents versions`.
+As an example, do the following:
+
+- Open Document Search
+- Switch to `Detailed View`
+- Open document `Version` tab
+
+Detailed view element is removed from the upper right corner.
 
 ![Document Versions](images/VersionsNoDetailedView.jpg)
 
 ## U7-3498
 
 In order to make bookmarked items readable on `Delailed View`, bookmark tooltips were implemented.
+As an example, do the following:
+
+- Open Document Search
+- Switch to `Detailed View`
+- Add any document's bookmark by clicking "Bookmark this Item" from the context menu
+- Hovering over the bookmark shows the tooltip
 
 ![Bookmark tooltip](images/BookmarkTooltips.jpg)
