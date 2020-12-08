@@ -26,7 +26,7 @@ The following stories were implemented in the Unity 7.7.2 release. The ID and De
 | U7-3155 | Sharepoint: Folders with custom class should be displayed in the folder view                                                                           |
 | U7-3080 | React UI: Support column configuration for cases                                                                                                       |
 
-# UIE
+# Enterprise Search
 
 | ID      | Summary                                                                              |
 | ------- | ------------------------------------------------------------------------------------ |
@@ -78,7 +78,7 @@ Detailed view element is removed from the upper right corner.
 
 ## U7-3498
 
-In order to make bookmarked items readable on `Delailed View`, bookmark tooltips were implemented.
+In order to make bookmarked items readable on `Detailed View`, bookmark tooltips were implemented.
 As an example, do the following:
 
 - Open Document Search
