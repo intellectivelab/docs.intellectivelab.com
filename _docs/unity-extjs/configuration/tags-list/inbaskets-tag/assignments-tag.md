@@ -1,15 +1,16 @@
 ---
-title: Expression Tag Configuration
+title: Assignments Tag Configuration
 layout: docs
 category: Unity 7
 ---
 
 # Description
-Expression tag provides current date or the current user to property.
 
-# Current Date
+`Assignments` tag allows assigning current date or current user to property.
 
-The function ```formatCurrentDate()``` requires either no arguments or only ones from the table pattern column.
+# Current Date Assignment
+
+The function `formatCurrentDate()` requires either no arguments or only ones from the table pattern column.
 
 | Formatter | Description | Example | Pattern |
 |-------|--------|---------|--------|
@@ -17,7 +18,7 @@ The function ```formatCurrentDate()``` requires either no arguments or only ones
 | ISO_OFFSET_DATE_TIME | Date Time with Offset | '2011-12-03T10:15:30+01:00' | 'yyyy-MM-dd'T'HH:mm:ss.SSSZ' |
 | ISO_INSTANT |	Date and Time of an Instant | '2011-12-03T10:15:30Z' | 'yyyy-MM-dd\'T\'HH:mm:ss\'Z\'' |
 
-## Example
+Examples:
 
 ```xml
     <Assignment Expression="$e.formatCurrentDate('yyyy-MM-dd\'T\'HH:mm:ss')" FieldID="_DateCreated"/>
@@ -27,16 +28,16 @@ The function ```formatCurrentDate()``` requires either no arguments or only ones
     <Assignment Expression="$e.formatCurrentDate()" FieldID="_DateUpdated"/>
 ```
 
-`_DateUpdated` and `_DateCreated` fields are assigned to current date
+`_DateUpdated` and `_DateCreated` fields assigned to current date.
 
-## Current User
+# Current User Assignment
 
-To pass current user use function ```currentUser()```.
+To assign current user use function `currentUser()`.
 
-## Example
+Example:
 
 ```xml 
     <Assignment Expression="$e.currentUser()" FieldID="_LastComment"/>
 ```
 
-`_LastComment` field are assigned to current user
+`_LastComment` field assigned to current user.

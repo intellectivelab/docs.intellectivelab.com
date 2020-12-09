@@ -13,12 +13,6 @@ category: Unity 7
 ## RTF support
 ## Date and time picker
 ## Date range picker
-## Expression
-
-Through the expression tag in the configuration files the current date and current user can be assigned to property.
-
-Please see [Expression tag configuration](../../configuration/tags-list/expression-tag.md) for further reference.
-
 ## Client-side select field
 ## Remote select field
 ## Lookup field
