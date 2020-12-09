@@ -1,9 +1,9 @@
 ---
-title: Unity Features - Sharepoint Connector
+title: Sharepoint Data Provider Configuration
 layout: docs
 category: Unity 7
 ---
-|**Note**: SharePoint Connector Configuration is the same for Unity ExtJs and Unity React.
+|**Note**: SharePoint Data Provider Configuration is the same for Unity ExtJs and Unity React.
 
 # Description
 Unity SharePoint connector provides tight integration with MS SharePoint. 
@@ -24,7 +24,7 @@ Unity SharePoint connector uses Sharepoint OData REST API to access SharePoint o
 SP REST calls made on behalf of Unity logged in user to fully preserve SP security model. 
 Read only system account used to cache metadata about SP Document Libraries (fields, choices etc) for performance reason. 
 
-# Environment setup
+# Environment Setup
 An information about SharePoint instance and some setup action required to configure Unity SP connector.
 Different setup actions and options depends on the SP instance type and Unity project requirement. 
 Single Unity `<Datasource>` must be configured for SP root url. Each site must be setup as `<RepositoryDataProvider>` with relative site path defined in `<Site>site/path</Site>` tag defaults to root `/`.   
@@ -54,64 +54,40 @@ Different authentication options (flows) supported for SP in Cloud:
  - SPNEGO SSO - must be properly configured in SP and application container hosting Unity application. 
  Please check [Spnego Setup](sharepoint/spnego.md) page for details.
    
-# SharePoint List metadata URLs   
+# SharePoint List Metadata URLs   
 Use browser to find a proper configuration values as described below.
-- Open browser tab and navigate to sharepoint site at `<RootUrl>`.
-- Enter different urls in the tab location from the table below. 
-- Find value tags in returned XML and use them in unity configuration.    
+- Open browser tab and navigate to sharepoint site at `<RootUrl>`
+- Enter different URLs in the tab location from the table below 
+- Find value tags in returned XML and use them in unity configuration    
 
-## SharePoint metadata urls
+## SharePoint metadata URLs
 
 | Metadata             | Description                            | URL                                              |
 |:---------------------|:---------------------------------------|:-------------------------------------------------|
-| SP List              | Use SP List Title tag value to specify list in a unity configuration. | `https://<RootUrl>/_api/lists?$select=Title`    |
-| SP Content Type      | Use ```<ListTitle>\<Content Type Name>``` in unity configuration.          | `https://<RootUrl>/_api/lists/getbytitle('<ListTitle>')/ContentTypes?$select=Name,Id`|
-| SP Field             | Use Field InternalName  in unity configuration.          | `https://<RootUrl>/_api/lists/getbytitle('<ListTitle>')/Fields?$select=InternalName,Id'`   |
+| Root Url             | SharePoint online Root Url for SP Online uses Tenant name (Azure registered name of organization) to construct RootUrl. SP OnPremise uses arbitrary url (consult admin). | `https://<Tenant>.sharepoint.com`   |
+| SP Lists             | Use SP List Title tag value to specify list in a Unity configuration. | `https://<RootUrl>/_api/lists?$select=Title`    |
+| SP Content Types     | Use ```<ListTitle>\<Content Type Name>``` in Unity configuration.          | `https://<RootUrl>/_api/lists/getbytitle('<ListTitle>')/ContentTypes?$select=Name,Id`|
+| SP Fields            | Use Field `InternalName`  in Unity configuration.          | `https://<RootUrl>/_api/lists/getbytitle('<ListTitle>')/Fields?$select=InternalName,Id'`   |
+| SP Sites             | Use SharePoint admin url to find sites list.             | `https://<Tenant>-admin.sharepoint.com/`|
    
-# Unity features configuration specific to SharePoint connector
+# Unity Features Configuration Specific to SharePoint Connector
     
 ## SharePoint repository data provider
-  Sharepoint repository data provider supports all sections common to Unity data providers - mapping:   
- ```$xml
-<RepositoryDataProvider ID="sptest_site" class="com.vegaecm.vspace.providers.sharepoint.SharepointRepositoryDataProvider">
-   .... skipped ...
-            <Site>sites/foo</Site>
-   .... skipped ...
- ```
-  
-- Site (optional) - SharePoint Site relative to datasource RootUrl. By default, root site is used.
-  
-**Note:** Internal Field Names used in provider field mapping are InternalName for SharePoint list items. 
-  All available fields for particular list could be retrieved by following REST API call: `https://<RootUrl>/_api/lists/getbytitle('<ListTitle>')/Fields`, for example:`https://vkozyr.sharepoint.com/_api/lists/getbytitle('Documents')/Fields`
-  
-## Document class (Document Library Content Type) selector
 
-```$xslt
- <Selector ID="sharepoint_document_class_add_document_auto">
-            <ClassName>com.vegaecm.vspace.selectors.SharepointDocumentClassSelector</ClassName>
-            <Description/>
-            <Property ID="DataProviderId" value="sharepoint_repository"/>
-            <Property ID="RefreshTimeoutSec" value="86400"/>
-            <!-- associate selector with sharepoint list-->
-            <Property ID="DefaultList" value="Documents"/>
- </Selector>
-```
-- DefaultList - SharePoint List Title used to select document content types
+Perform configuration steps [common to all Unity data providers](../repository-data-providers.md#common-steps-to-configure-data-provider).   
+Check [Metadata Urls](#sharepoint-metadata-urls) on how to list all available fields for particular list.  
 
-## Lookup Selector 
-```$xml
-<Selector ID="sharepoint_custom_link">
-            <ClassName>com.vegaecm.vspace.selectors.SharepointLookupSelector</ClassName>
-            <Description/>
-            <Property ID="DataProviderId" value="sharepoint_repository"/>
-            <Property ID="RefreshTimeoutSec" value="86400"/>
-            <!-- associate selector with sharepoint list-->
-            <Property ID="DefaultList" value="Documents"/>
-            <Property ID="TitleField" value="BaseName"/>
-</Selector>
-```
-- DefaultList - SharePoint List Title used to select items
-- TitleField - List Item field displayed in the selector. List Item ID field always used as selector value.
+|**Note:** Internal Field Names used in provider field mapping are `InternalName`s for SharePoint list items.   
+
+Custom properties for SharePoint data provider:    
+ 
+| Property       | Property description              | Example        |
+|:---------------|:--------------------------------|:---------------|
+| Site | Each repository data provider linked to the SharePoint site. Set this property to Site relative to datasource RootUrl. Defaults to root site. See [Links above](#sharepoint-metadata-urls).  | `<Site>sites/foo</Site>` |
+| SecurityNotification | Set this property to enable e-mail notification when sharing documents. Notifications are disabled by default. | `<SecurityNotification>enabled</SecurityNotification>` |
+| RootFolderFilter | Filter document libraries. Uses [OData notation](https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/use-odata-query-operations-in-sharepoint-rest-requests)  | `<RootFolderFilter>(Hidden eq false and IsCatalog eq false and BaseTemplate eq 101)</RootFolderFilter>` |  
+  
+## [SharePoint selectors](../tags-list/selectors-tag/sharepoint-selectors.md)
 
 ## Add document action 
 ```$xml
@@ -163,8 +139,8 @@ Use browser to find a proper configuration values as described below.
  - DefaultValue - Identify default content type using format `<ListTitle>/<ContentTypeId>` ```{value:"Documents\Document", name: "Document"}```.
   All available content types for a list could be get from API call: `https://<RootUrl>/_api/lists/getbytitle('<ListTitle>')/ContentTypes?$select=Name,Id`
         
-## UIE integration
-UIE properties mapping maps UIE ids to sharepoint connector ids. For example:    
+## Enterprise Search integration
+Enterprise Search properties mapping maps Enterprise Search ids to SharePoint connector IDs. For example:    
 ```$xml
             <ViewerProperties>
                  <Repository internal="SharePoint">
@@ -175,16 +151,6 @@ UIE properties mapping maps UIE ids to sharepoint connector ids. For example:
                     </DefineProperties>
                 </Repository>
             </ViewerProperties>
-
-            <RepositoryMapper>
-                 <Mapping external="SharePoint" internal="sharepoint_repository">
-                    <DefineProperties>
-                        <Property ID="Id" value="{This.$id}@{OData__UIVersionString}"/>
-                        <Property ID="versionSeriesId" value="{This.$id}"/>
-                        <Property ID="pid" value="{This.collection_name}/{This.ID}"/>
-                    </DefineProperties>
-                </Mapping>
-            </RepositoryMapper>
 ```
 ## Case links
 *Content to be added* 

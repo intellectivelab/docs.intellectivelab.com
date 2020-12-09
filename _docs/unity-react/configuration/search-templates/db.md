@@ -66,9 +66,9 @@ List of available properties for search template is in the table below:
 
 <sup>1</sup> List of column names in select clause should always contain id column 
 (OBJECT_ID in the sample above). Inside repository data provider those properties
-should be [mapped](../repository-data-providers.md) to external names, defined inside [`Properties`](../tags-list/properties-tag.md) section (in case internal 
+should be [mapped](../repository-data-providers/db.md#mapping) to external names, defined inside [`Properties`](../tags-list/properties-tag.md) section (in case internal 
 and external names are different). Use `Id`, `ID`, `id` or `document_id` external name for id column.
 
 If database doesn't support a particular data type, value in select clause should be casted 
-to string (example above is for db2, which doesn't support BOOLEAN, that's why IS_RESERVED_DOC 
-and IS_CURRENT_DOC are returned as 'True' / 'False' text).
+to string (example above is for db2, which doesn't support BOOLEAN, that's why `IS_RESERVED_DOC` 
+and `IS_CURRENT_DOC` are returned as `True` / `False` text).

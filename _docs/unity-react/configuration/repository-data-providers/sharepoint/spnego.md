@@ -1,5 +1,5 @@
 ---
-title: Unity Features - SharePoint Connector - SPNEGO SSO
+title: SharePoint Connector Configuration - SPNEGO SSO
 layout: docs
 category: Unity 7
 ---

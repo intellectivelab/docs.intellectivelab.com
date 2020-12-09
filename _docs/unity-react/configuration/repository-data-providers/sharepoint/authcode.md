@@ -1,5 +1,5 @@
 ---
-title: Unity Features - SharePoint Connector - Auth Code Flow
+title: SharePoint Connector Configuration - Auth Code Flow
 layout: docs
 category: Unity 7
 ---
@@ -30,7 +30,7 @@ App registration certificate and application grants also used as system read onl
  | OAuthDisableMessage | Optional. `[true|false]`. Defaults to false - additional Unity message will be presented before Azure popup | `<OAuthDisableMessage>true</OAuthDisableMessage>` |
  
 Example datasource configuration:
-```
+```xml
 <Datasource ID="sharepoint_ds" class="com.vegaecm.vspace.datasources.SharepointDatasource">
             <RootUrl>https://yourdomaincom.sharepoint.com</RootUrl>
             <AuthorityUrl>https://login.microsoftonline.com/${AzureTenantId}</AuthorityUrl>
@@ -97,13 +97,13 @@ PS C:\Code> .\Create-SelfSignedCertificate.ps1 -CommonName "UnitySpConnector" -S
 
     ![Add permissionsName for the App registrations](authcode/images/app_permissions_add.png)
  
+- Select `SharePoint` API:
+  
+    ![select sharePoint API](authcode/images/app_permissions_sp.png)
+    
 - Select `Delegated permissions`:
  
     ![delegated permissions for the App registrations](authcode/images/app_permissions_delegated.png)
-  
- - Select `SharePoint` API:
- 
-    ![select sharePoint API](authcode/images/app_permissions_sp.png)
  
  - Check `AllSites.FullControl` (if users need to manage permissions) or `AllSites.Read`, `AllSites.Write` and apply:
   
