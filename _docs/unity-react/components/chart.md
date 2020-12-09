@@ -115,7 +115,7 @@ Charts provide an interactive way to use and work with datasets:
 ## Chart data filtering
 
 Charts support filtering data by clicking on one or more segments. 
-It works like [Search criteria panel](./search-criteria-panel.md) but gives opportunity to do it right on chart.
+It works like Search criteria panel but gives an opportunity to do it right on the chart.
 
 E.g. clicking `Telecommunications` segment on `Salary by Industry` chart will cause selection 
 only records with `Telecommunications` in `Industry` column on the grid 
@@ -156,7 +156,7 @@ To open a dropdown with chart settings click the icon in the top right corner of
 All changes are saved in the browser localStorage on fly, 
 so even after reopening page all your chart customizations will apply.
 
-##Empty data message
+## Empty data message
 
 If data is empty or has no values, `No content to display` warning message will be shown below the chart title:
 
