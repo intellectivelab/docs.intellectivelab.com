@@ -3,7 +3,7 @@ title: View Document Action Configuration
 layout: docs
 category: Unity 7
 ---
-[View Document feature description](../../features/document-management/view-document.md)
+[View Document feature description](../../features/document-management/context-menu.md)
 
 For `View` document action following section should be added to the Unity System XML file:
 

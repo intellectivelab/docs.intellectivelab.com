@@ -8,6 +8,7 @@ category: Unity 7
 *content to be added*
 
 # Document Management Features
-## [View document](document-management/view-document.md)
+
+## [Context Menu](document-management/context-menu.md)
 ## [View and update document properties](document-management/view-update-document-properties.md)
 ## [Document content actions (view content and download)](document-management/document-content-actions.md)

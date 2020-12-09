@@ -5,11 +5,35 @@ category: Unity 7
 ---
 # Description
 
-*content to be added*
+`View and update document properties` feature allows to: 
+
+- view document properties
+
+- view versions
+
+- perform some actions on document like `check out`, `check in`, `cancel check out`, `view content`, `download`, `delete`, 
+`open in office`, etc. List of document actions depends on action view configuration and data provider
+
+- perform some actions on document versions like `promote`, `demote`, `make version current`, `delete version`. List of 
+actions depends on configuration and data provider
+
+# How to View and Update Document Properties
+
+- Click on Document title, or click on context menu icon of the document and select `Edit`/`Details` action (the name depends on configuration):
+
+    ![Context-menu](view-update-document-properties/images/view-action-context-menu.png)
+    
+- `Document Details` view will be opened in a modal or separate tab:
+
+    ![Document Details View](view-update-document-properties/images/view-action-document-details-tab.png)
+    
+`Properties` view is shown by default, user can switch to `Versions`. 
+
+User can edit available fields and save changes by clicking `Save` button.
 
 ## Toolbar
 
-Toolbar on `Document Properties` tab may contain following actions:
+Toolbar on `Document Details` tab may contain following actions for the document:
 
 - `Check Out`
 
@@ -45,7 +69,3 @@ For listed above actions to appear on the toolbar:
 - Action should to be available for the document
 
 - None of the described above specific hiding rules are applied 
-
-## Document properties
-
-*content to be added*

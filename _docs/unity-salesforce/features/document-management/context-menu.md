@@ -1,11 +1,11 @@
 ---
-title: View Document Feature
+title: Context Dropdown Menu Feature
 layout: docs
 category: Unity 7
 ---
 # Description
 
-`View document` feature allows to: 
+Document context dropdown menu allows to: 
 
 - view document properties
 
@@ -17,16 +17,14 @@ category: Unity 7
 - perform some actions on document versions like `promote`, `demote`, `make version current`, `delete version`. List of 
 actions depends on configuration and data provider
 
-# How to view document properties
+# How to Use Context Menu
 
-- Click on context menu icon of the document, and select `Edit` action:
+- Click a dropdown icon in the document row, a dropdown menu with available actions appears:
+  
+    ![Context-menu](context-menu/images/context-menu.png)
+     
+- Click the action you need, action will be performed for this document
 
-    ![Context-menu](view-document/images/view-action-context-menu.png)
-    
-- `Document Details` view will be opened in a modal or separate tab:
-
-    ![View document action](view-document/images/view-action-document-details-tab.png)
-   
 # Configuration
 
-[View document action configuration](../../configuration/actions/view-document.md)
+*content to be added*
