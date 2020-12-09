@@ -1,5 +1,5 @@
 ---
-title: Unity Features - SharePoint Connector - References
+title: SharePoint Connector Configuration - References
 layout: docs
 category: Unity 7
 ---

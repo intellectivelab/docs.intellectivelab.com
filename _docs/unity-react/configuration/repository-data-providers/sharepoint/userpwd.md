@@ -1,5 +1,5 @@
 ---
-title: Unity Features - Sharepoint Connector - User Password Flow
+title: Sharepoint Connector Configuration - User Password Flow
 layout: docs
 category: Unity 7
 ---
@@ -20,7 +20,7 @@ Unity needs additional system account Read only SP permissions level to manage S
  | AzureDomain| Domain name to be added/replaced for unity user session if container authenticate user by simple name. This map username like 'myuser' to 'myuser@yourdomain.com' known to Azure AD. **Note:** this is case sensitive value. | yourdomain.com |
  
 Example datasource configuration:
-```
+```xml
         <Datasource ID="sharepoint_ds" class="com.vegaecm.vspace.datasources.SharepointDatasource">
             <RootUrl>https://yourdomaincom.sharepoint.com</RootUrl>
             <Login>read_only@yourdomain.com</Login>
@@ -51,15 +51,15 @@ Example datasource configuration:
 - At `App registration > API permissions` select `Add a permission`: 
 
     ![Add permissionsName for the App registrations](userpwd/images/app_permissions_add.png)
- 
-- Select `Delegated permissions`: 
- 
-    ![delegated permissions for the App registrations](userpwd/images/app_permissions_delegated.png)
-  
+
 - Select `SharePoint` API: 
  
     ![select sharePoint API](userpwd/images/app_permissions_sp.png)
+  
+- Select `Delegated permissions`: 
  
+    ![delegated permissions for the App registrations](userpwd/images/app_permissions_delegated.png)  
+
 - Check `AllSites.FullControl` (if users need to manage permissions) or `AllSites.Read`, `AllSites.Write` and apply:
   
     ![select sharePoint API](userpwd/images/app_permissions_sp_delegated_fc.png)

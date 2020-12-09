@@ -19,8 +19,8 @@ It reads an information from SharePoint choice data for a particular column in a
    
 | Property ID | Property value                  | Example        |
 |:------------------|:--------------------------------|:---------------|
-| DocumentClass     | Required. Specify [SP content type](../datasources-tag/sharepoint.md#sharepoint-metadata-urls).  | Documents\Document| 
-| FieldName         | Required. Specify [SP Field](../datasources-tag/sharepoint.md#sharepoint-metadata-urls).  | ChoiceColumn | 
+| DocumentClass     | Required. Specify [SP content type](../../repository-data-providers/sharepoint.md#sharepoint-metadata-urls).  | Documents\Document| 
+| FieldName         | Required. Specify [SP Field](../../repository-data-providers/sharepoint.md#sharepoint-metadata-urls).  | ChoiceColumn | 
 
 This is a ["Cached" selector](../selectors-tag.md#description).
 
@@ -46,8 +46,8 @@ SP field to use as selector item name is configurable.
 
 | Property ID       | Property value                  | Example        |
 |:------------------|:--------------------------------|:---------------|
-| DefaultList       | Required. Specify [SP List](../datasources-tag/sharepoint.md#sharepoint-metadata-urls) to read selector items.  | Documents\Document| 
-| TitleField        | Optional. Defaults to BaseName. Specify [SP Field](../datasources-tag/sharepoint.md#sharepoint-metadata-urls) to use as selector item name. Item ID SP Field is always used as selector item value.   | ChoiceColumn | 
+| DefaultList       | Required. Specify [SP List](../../repository-data-providers/sharepoint.md#sharepoint-metadata-urls) to read selector items.  | Documents\Document| 
+| TitleField        | Optional. Defaults to BaseName. Specify [SP Field](../../repository-data-providers/sharepoint.md#sharepoint-metadata-urls) to use as selector item name. Item ID SP Field is always used as selector item value.   | ChoiceColumn | 
 
 Example:
 
@@ -78,10 +78,30 @@ It could be configured to read:
 |:------------------|:--------------------------------|:---------------|
 | PeopleOnly        | Optional. Defaults to true. When true includes SP groups in selector.  | false | 
 | ChooseFrom        | Optional. When configured reads SP people from specified group.  | RO Group | 
-| TitleField        | Optional. Defaults to Title. | LoginName | 
+| TitleField        | Optional. Field used to represent selector name. nameDefaults to Title. | LoginName | 
+| ValueField        | Optional. Field used to represent selector value. Defaults to Id. | Id |
 | ShowHidden        | Optional. Defaults to false. Includes hidden SP people or groups in selector  | Title | 
 
 This is a ["Cached" selector](../selectors-tag.md#description).
+
+|*Notes* on ValueField setting
+
+Let's have following [Property name mapping](../../repository-data-providers.md#property-name-mapping):
+
+```xml
+<PropertyNameMapper>
+    <Mapping external="LastModifier" internal="Editor/Title"/>
+    <Mapping external="LastModifierSearcher" internal="Editor"/>
+</PropertyNameMapper>
+```
+
+LastModifier field is different from LastModifierSearcher.
+LastModifierSearcher mapped to Editor SP Lookup field - selector could be used as is (it uses Id attribute as a selector value by default).
+LastModifier mapped to Editor/Title SP field - selector must return Title field as a selector item value. Additional property should be configured for selector:
+
+`<Property ID="ValueField" value="Title"/>`
+
+|*Last note* - searching by Editor/Title will be slower than by Editor id.
 
 Examples:
 
@@ -137,7 +157,7 @@ This selector depends on node context when used in folder view.
 
 | Property ID       | Property value                  | Example        |
 |:------------------|:--------------------------------|:---------------|
-| DefaultList       | Optional. Default to Documents. Specify [SP List](../datasources-tag/sharepoint.md#sharepoint-metadata-urls) to read selector items.  | Documents\Document|
+| DefaultList       | Optional. Default to Documents. Specify [SP List](../../repository-data-providers/sharepoint.md#sharepoint-metadata-urls) to read selector items.  | Documents\Document|
 
 Example:
 
