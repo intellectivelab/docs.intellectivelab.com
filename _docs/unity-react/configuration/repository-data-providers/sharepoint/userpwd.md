@@ -51,15 +51,15 @@ Example datasource configuration:
 - At `App registration > API permissions` select `Add a permission`: 
 
     ![Add permissionsName for the App registrations](userpwd/images/app_permissions_add.png)
- 
-- Select `Delegated permissions`: 
- 
-    ![delegated permissions for the App registrations](userpwd/images/app_permissions_delegated.png)
-  
+
 - Select `SharePoint` API: 
  
     ![select sharePoint API](userpwd/images/app_permissions_sp.png)
+  
+- Select `Delegated permissions`: 
  
+    ![delegated permissions for the App registrations](userpwd/images/app_permissions_delegated.png)  
+
 - Check `AllSites.FullControl` (if users need to manage permissions) or `AllSites.Read`, `AllSites.Write` and apply:
   
     ![select sharePoint API](userpwd/images/app_permissions_sp_delegated_fc.png)
