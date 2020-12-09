@@ -93,6 +93,13 @@ Custom parameters section should contain following parameters:
 | templateSet    | Versions template set id |
 | gridId         | Grid id |
 
+## Solution File section configuration
+
+To specify path to attach documents use ```FolderPath``` property. For example,
+
+```xml
+    <Field ID="FolderPath" Label="Folder" Required="false" Row="2" Column="1" FolderPath="/Shared Documents" Default="/Shared Documents"/>
+```
 
 # Cases
 
