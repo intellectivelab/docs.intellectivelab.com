@@ -67,7 +67,7 @@ Use browser to find a proper configuration values as described below.
 | Root Url             | SharePoint online Root Url for SP Online uses Tenant name (Azure registered name of organization) to construct RootUrl. SP OnPremise uses arbitrary url (consult admin). | `https://<Tenant>.sharepoint.com`   |
 | SP Lists             | Use SP List Title tag value to specify list in a unity configuration. | `https://<RootUrl>/_api/lists?$select=Title`    |
 | SP Content Types     | Use ```<ListTitle>\<Content Type Name>``` in unity configuration.          | `https://<RootUrl>/_api/lists/getbytitle('<ListTitle>')/ContentTypes?$select=Name,Id`|
-| SP Fields            | Use Field InternalName  in unity configuration.          | `https://<RootUrl>/_api/lists/getbytitle('<ListTitle>')/Fields?$select=InternalName,Id'`   |
+| SP Fields            | Use Field InternalName  in Unity configuration.          | `https://<RootUrl>/_api/lists/getbytitle('<ListTitle>')/Fields?$select=InternalName,Id'`   |
 | SP Sites             | Use SharePoint admin url to find sites list.             | `https://<Tenant>-admin.sharepoint.com/`|
    
 # Unity Features Configuration Specific to SharePoint Connector
