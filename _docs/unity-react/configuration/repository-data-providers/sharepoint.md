@@ -3,7 +3,7 @@ title: Sharepoint Data Provider Configuration
 layout: docs
 category: Unity 7
 ---
-|**Note**: SharePoint Connector Configuration is the same for Unity ExtJs and Unity React.
+|**Note**: SharePoint Data Provider Configuration is the same for Unity ExtJs and Unity React.
 
 # Description
 Unity SharePoint connector provides tight integration with MS SharePoint. 
@@ -65,19 +65,19 @@ Use browser to find a proper configuration values as described below.
 | Metadata             | Description                            | URL                                              |
 |:---------------------|:---------------------------------------|:-------------------------------------------------|
 | Root Url             | SharePoint online Root Url for SP Online uses Tenant name (Azure registered name of organization) to construct RootUrl. SP OnPremise uses arbitrary url (consult admin). | `https://<Tenant>.sharepoint.com`   |
-| SP Lists             | Use SP List Title tag value to specify list in a unity configuration. | `https://<RootUrl>/_api/lists?$select=Title`    |
-| SP Content Types     | Use ```<ListTitle>\<Content Type Name>``` in unity configuration.          | `https://<RootUrl>/_api/lists/getbytitle('<ListTitle>')/ContentTypes?$select=Name,Id`|
-| SP Fields            | Use Field InternalName  in Unity configuration.          | `https://<RootUrl>/_api/lists/getbytitle('<ListTitle>')/Fields?$select=InternalName,Id'`   |
+| SP Lists             | Use SP List Title tag value to specify list in a Unity configuration. | `https://<RootUrl>/_api/lists?$select=Title`    |
+| SP Content Types     | Use ```<ListTitle>\<Content Type Name>``` in Unity configuration.          | `https://<RootUrl>/_api/lists/getbytitle('<ListTitle>')/ContentTypes?$select=Name,Id`|
+| SP Fields            | Use Field `InternalName`  in Unity configuration.          | `https://<RootUrl>/_api/lists/getbytitle('<ListTitle>')/Fields?$select=InternalName,Id'`   |
 | SP Sites             | Use SharePoint admin url to find sites list.             | `https://<Tenant>-admin.sharepoint.com/`|
    
 # Unity Features Configuration Specific to SharePoint Connector
     
 ## SharePoint repository data provider
 
-Sharepoint repository data provider supports all sections [common to Unity data providers](../repository-data-providers.md#property-name-mapping).   
+Perform configuration steps [common to all Unity data providers](../repository-data-providers.md#common-steps-to-configure-data-provider).   
 Check [Metadata Urls](#sharepoint-metadata-urls) on how to list all available fields for particular list.  
 
-|**Note:** Internal Field Names used in provider field mapping are InternalName for SharePoint list items.   
+|**Note:** Internal Field Names used in provider field mapping are `InternalName`s for SharePoint list items.   
 
 Custom properties for SharePoint data provider:    
  

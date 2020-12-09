@@ -3,8 +3,7 @@ title: Repository Data Providers Configuration
 layout: docs
 category: Unity 7
 ---
-
-|**Note**: Repository Data Provider Configuration is the same for Unity ExtJs and Unity React. 
+|**Note**: Repository Data Providers Configuration is the same for Unity ExtJs and Unity React. 
 
 # Data Providers
 
@@ -21,38 +20,41 @@ Unity Data Provider is a unified facade to integrate content from different exte
 
 # Basic Configuration Options
 
-Main steps to configure Data Provider are:  
+## Common steps to configure data provider 
  
-- Define data provider ID and its class specific for target repository type:  
-
-    |Repository Type| Class Name|
-    |:--------------|:----------|
-    |IBM FileNet P8 |com.vegaecm.vspace.providers.ce.CERepositoryDataProvider|
-    |[SharePoint](repository-data-providers/sharepoint.md) |com.vegaecm.vspace.providers.sharepoint.SharepointRepositoryDataProvider|
-    |CM8 |com.vegaecm.vspace.providers.cm8.Cm8RepositoryDataProvider|
-    |CMOD |com.vegaecm.vspace.providers.cmod.CmodRepositoryDataProvider|
-    |[Enterprise Search](repository-data-providers/enterprise-search.md) |com.vegaecm.vu.providers.uie.hli.Provider|
-    |Box |com.vegaecm.vspace.providers.box.BoxRepositoryDataProvider|
-    |CMIS, Alfresco |com.vegaecm.vspace.providers.cmis.CMISRepositoryDataProvider|
-    |[Database](repository-data-providers/db.md) |com.vegaecm.vspace.providers.db.DBRepositoryDataProvider|
-    |Case Management |com.vegaecm.vu.ucm.providers.UcmProvider|
-    |*content to be added* |com.vegaecm.vspace.providers.categorization.CategorizationProvider|
-    |*content to be added* |com.vegaecm.vspace.providers.categorization.PropertyCategorizationProvider|
-    |*content to be added* |com.vegaecm.vspace.providers.bo.BusinessObjectDataProvider|
-    
-    Example:
-    
-    ```
-    <RepositoryDataProvider ID="sharepoint_repository"
-                                       class="com.vegaecm.vspace.providers.sharepoint.SharepointRepositoryDataProvider">
-    ```
-   
+- Define [RepositoryDataProvider ID and its class](#repositorydataprovider-id-and-its-class-definition) specific for target repository type   
 - Define [Property Name Mapping](#property-name-mapping)
-- Verify connection related and other options specific to [Data Provider](#data-providers)
+- Verify connection related and other options specific for [data provider](#data-providers)
 
-# Property Name Mapping
+## RepositoryDataProvider ID and its class definition
 
-`PropertyNameMapper` section define how field names in target repository mapped to Unity property name:  
+In Unity configuration `xml` file define unique `RepositoryDataProvider ID` and its `class` specific for target repository type:
+
+|Repository Type| Class Name|
+|:--------------|:----------|
+|IBM FileNet P8 |com.vegaecm.vspace.providers.ce.CERepositoryDataProvider|
+|[SharePoint](repository-data-providers/sharepoint.md) |com.vegaecm.vspace.providers.sharepoint.SharepointRepositoryDataProvider|
+|CM8 |com.vegaecm.vspace.providers.cm8.Cm8RepositoryDataProvider|
+|CMOD |com.vegaecm.vspace.providers.cmod.CmodRepositoryDataProvider|
+|[Enterprise Search](repository-data-providers/enterprise-search.md) |com.vegaecm.vu.providers.uie.hli.Provider|
+|Box |com.vegaecm.vspace.providers.box.BoxRepositoryDataProvider|
+|CMIS, Alfresco |com.vegaecm.vspace.providers.cmis.CMISRepositoryDataProvider|
+|[Database](repository-data-providers/db.md) |com.vegaecm.vspace.providers.db.DBRepositoryDataProvider|
+|Case Management |com.vegaecm.vu.ucm.providers.UcmProvider|
+|*content to be added* |com.vegaecm.vspace.providers.categorization.CategorizationProvider|
+|*content to be added* |com.vegaecm.vspace.providers.categorization.PropertyCategorizationProvider|
+|*content to be added* |com.vegaecm.vspace.providers.bo.BusinessObjectDataProvider|
+
+Example:
+
+```xml
+<RepositoryDataProvider ID="sharepoint_repository"
+                                   class="com.vegaecm.vspace.providers.sharepoint.SharepointRepositoryDataProvider">
+```
+
+## Property Name Mapping
+
+`PropertyNameMapper` section defines how field names in target repository mapped to Unity property name:  
 ```xml
 <RepositoryDataProviders>
     <RepositoryDataProvider ID="sharepoint_repository"

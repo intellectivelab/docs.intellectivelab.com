@@ -20,7 +20,7 @@ Unity needs additional system account Read only SP permissions level to manage S
  | AzureDomain| Domain name to be added/replaced for unity user session if container authenticate user by simple name. This map username like 'myuser' to 'myuser@yourdomain.com' known to Azure AD. **Note:** this is case sensitive value. | yourdomain.com |
  
 Example datasource configuration:
-```
+```xml
         <Datasource ID="sharepoint_ds" class="com.vegaecm.vspace.datasources.SharepointDatasource">
             <RootUrl>https://yourdomaincom.sharepoint.com</RootUrl>
             <Login>read_only@yourdomain.com</Login>

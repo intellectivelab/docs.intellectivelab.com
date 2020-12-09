@@ -30,7 +30,7 @@ App registration certificate and application grants also used as system read onl
  | OAuthDisableMessage | Optional. `[true|false]`. Defaults to false - additional Unity message will be presented before Azure popup | `<OAuthDisableMessage>true</OAuthDisableMessage>` |
  
 Example datasource configuration:
-```
+```xml
 <Datasource ID="sharepoint_ds" class="com.vegaecm.vspace.datasources.SharepointDatasource">
             <RootUrl>https://yourdomaincom.sharepoint.com</RootUrl>
             <AuthorityUrl>https://login.microsoftonline.com/${AzureTenantId}</AuthorityUrl>

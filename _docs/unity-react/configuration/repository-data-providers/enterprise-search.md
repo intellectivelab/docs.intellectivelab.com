@@ -3,6 +3,7 @@ title: Enterprise Search Data Provider Configuration
 layout: docs
 category: Unity 7
 ---
+|**Note**: Enterprise Search Data Provider Configuration is the same for Unity ExtJs and Unity React. 
 
 # Description
 
@@ -11,6 +12,8 @@ Enterprise Search Data Provider integrates Unity with Enterprise Search.
 *content to be added*
 
 # Configuration
+
+Perform configuration steps [common to all Unity data providers](../repository-data-providers.md#common-steps-to-configure-data-provider).   
 
 ## Connection options
 
