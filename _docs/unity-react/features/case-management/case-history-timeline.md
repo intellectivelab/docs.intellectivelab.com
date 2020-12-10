@@ -24,7 +24,7 @@ Please note that instead of `ID` in each template, you'll see actual ID.
 | TASK CREATED | 501 | Task ID successfully created |no icon |
 
 
-# How To See Case Historical Timeline
+# How to See Case Historical Timeline
 
 - Open a case to see its timeline:
 

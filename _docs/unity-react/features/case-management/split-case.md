@@ -1,18 +1,18 @@
 ---
-title: Split Case Feature
+title: Split a Case Feature
 layout: docs
 category: Unity 7
 ---
 
 # Description
 
-Split Case is a feature for creating a case that reuses data from an existing case. The new case can be the same type as the original case, or it can be a different case type.
+`Split case` action allows creating a case that reuses data from an existing case. The new case can be the same type as the original case, or it can be a different case type.
 
 Unity supports IBM Case Manager Split Case feature via Unity ICM over UCM Data Provider.
 
-# How To Split Case
+# How to Split a Case
 
-Split Case feature in React UI is implemented as a grid action available for Cases resources via a grid's context menu:
+`Split case` in React UI is implemented as a grid action available for Cases resources via a grid's context menu:
 
 ![context-menu](split-case/images/react-ui-image1.png) 
 
