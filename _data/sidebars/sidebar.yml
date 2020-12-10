@@ -512,6 +512,11 @@ entries:
             url: /docs/release-notes/unity-7-7-release-notes/
             id: release-notes-unity-7-7-release-notes
 
+          - title: Unity for Intellective Release Notes
+            output: web
+            url: /docs/release-notes/U4I-release-notes/
+            id: release-notes-U4I-release-notes
+
       - title: Tutorials
         output: web
         id: tutorials
