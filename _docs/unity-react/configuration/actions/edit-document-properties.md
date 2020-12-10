@@ -1,11 +1,11 @@
 ---
-title: View Document Action Configuration
+title: Edit Document Properties Action Configuration
 layout: docs
 category: Unity 7
 ---
-[View Document feature description](../../features/document-management/view-document.md)
+[Document Details feature description](../../features/document-management/document-details.md)
 
-For `View` document action following section should be added to the Unity System XML file:
+For `Edit document properties` action following section should be added to the Unity System XML file:
 
 ```xml
 <Action ID="edit" multiselect="true" scope="single" type="toolbar">
@@ -24,7 +24,7 @@ For `View` document action following section should be added to the Unity System
 </Action>
 ```
 
-`View` document action custom configuration parameters:
+`Edit` document action custom configuration parameters:
 
 | Parameter   | Description |
 |:------------|:------------|
