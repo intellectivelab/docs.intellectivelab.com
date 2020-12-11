@@ -4,34 +4,44 @@ layout: docs
 category: Unity 7
 ---
 
-# Unity for Intellective common description
+# Unity for Intellective Overview
 
-Unity for Intellective can be reached using the folliwng link
-[Unity for Intellctive](https://u4i.unity7.devops.intellectivelab.com/vu/main.jsp).
-Login and password should be matched with intellective login and password. **Note** pop-ups should be enabled in the browser.
+Unity for Intellective can be reached using the following link: [https://u4i.unity7.devops.intellectivelab.com/vu/main.jsp](https://u4i.unity7.devops.intellectivelab.com/vu/main.jsp).  
+Use Intellective login and password. 
 
-Unity for Intellective contains 2 dashboards: Documents Search, Folder View.
-Documents Search can be used for documents searching that are stored in the indixes.
-![Document Search](U4I-release-notes/images/Documents_Search_Dashboard.PNG)
-Folder View is used for searching documents in different Folders
-![Folder View](U4I-release-notes/images/Folder_View_Dashboard.PNG)
+| **Note:** Pop-ups should be enabled in the browser.
+
+Unity for Intellective contains 2 dashboards: Documents Search (DS), Folder View (FV), user can switch between them.
+
+Documents Search can be used for documents stored in the indices:
+
+![Document Search](u4i-release-notes/images/document-search-dashboard.png)
+
+Folder View is used for searching documents in different folders:
+
+![Folder View](u4i-release-notes/images/folder-view-dashboard.png)
 
 ## Documents searching
-Both dashboards support quick search and detailed search.
 
-User can enter word or sentences for searching to the search field. Searching will be executed in Document Title, Document Content and Reporitory properties for Document Search dashboard and only in Document Title for Folder View dashboard
-![Quick Search](U4I-release-notes/images/Quick_search.PNG)
+Both dashboards support Quick Search and Detailed Search.
 
-More parameters for searching can be used on searching panel
-![Detailed Search](U4I-release-notes/images/Detailed_search.PNG)
+User can enter a word or sentences for searching to the search field. Searching will be executed in Document Title, Document Content and Reporitory properties for Document Search dashboard and only in Document Title for Folder View dashboard:
+
+![Quick Search](u4i-release-notes/images/quick-search.png)
+
+More parameters for searching can be used on search panel:
+
+![Detailed Search](u4i-release-notes/images/detailed_search.png)
 
 ## Documents Search actions
+
 The following actions are supported in the Documents Search dashboard for Office documents: Word, Excel, PowerPoint, etc
 - Details
 - Download
 - Open in Office 365
 - Open in Office Desktop App
-![Documents Search actions](U4I-release-notes/images/Documents_search_context_menu.PNG)
+
+    ![Documents Search actions](u4i-release-notes/images/document-search-context-menu.png)
 
 The following actions are supported for non Office documents:
 - Details
@@ -39,6 +49,7 @@ The following actions are supported for non Office documents:
 - View Content
 
 ## Folder View actions
+
 The following actions are supported in the Folder View dashboard for Office document:
 - Details
 - Download
@@ -46,7 +57,8 @@ The following actions are supported in the Folder View dashboard for Office docu
 - Open in Office 365
 - Open in Office Desktop App
 - Delete
-![Folder View actions](U4I-release-notes/images/Folder_View_context_menu.PNG)
+
+    ![Folder View actions](u4i-release-notes/images/folder-view-context-menu.png)
 
 The following actions are supported for non Office documents:
 - Details
@@ -56,9 +68,12 @@ The following actions are supported for non Office documents:
 - Delete
 
 ## Details dialog
-Details dialog contains information about document properties and versions. 
-![Document Properties](U4I-release-notes/images/Document_Details.PNG)
-![Versions](U4I-release-notes/images/Document_Versions.PNG)
+
+Details dialog contains information about document properties and versions: 
+
+![Document Properties](u4i-release-notes/images/document-details.png)
+
+![Versions](u4i-release-notes/images/document-versions.png)
 
 The following actions can be executed from Details dialog
 Office documents:
@@ -95,7 +110,7 @@ The following tasks and stories were implemented in the Unity for Intellective r
 | U7-3325 | React & public API: Add ability to show several sites inside FolderView                                                    |
 | U7-3465 | React: View Document properties can't be opened for Container = tree if several Sharepoint data providers were configured             |
 | U7-3464 | React: New document can not be added for Container = tree if several Sharepoint data providers were configured             |
-| U7-3478 | React: Document Versions tab can't be configured for a specific dataprovider for Container = tree if several Sharepoint data providers were configured                                                                                                         |
+| U7-3478 | React: Document Versions tab can't be configured for a specific datap rovider for Container = tree if several Sharepoint data providers were configured                                                                                                         |
 | U7-3635 | Sharepoint: Folders should be hidden if user hasn't permissions to read  them                                              |
 
 
