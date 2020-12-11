@@ -6,6 +6,11 @@ category: Unity 7
 
 ## System properties description
 
+User selects one or more documents, clicks View and these documents are opened in viewer in separate windows. 
+
+![daeja-selected](images/daeja-viewer-selected-docs.png)
+![daeja-opened](images/daeja-viewer-opened-docs.png)
+
 To enable separate multiple Daeja viewer windows mode add the following properties,
 ```xml
 <SystemProperties>
