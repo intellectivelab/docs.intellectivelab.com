@@ -1,11 +1,11 @@
 ---
-title: Document Details
+title: Document Details Feature
 layout: docs
 category: Unity 7
 ---
 # Description
 
-`Document details` allow to: 
+`Document details` feature allows to: 
 
 - view and edit document properties
 
@@ -21,7 +21,7 @@ actions depends on configuration and data provider
 
 To open Document Details:
 
-- In the grid click on Document Title, or click a dropdown icon in the document row and select `Edit` action:
+- In the grid click a dropdown icon in the document row and select `Edit` action:
 
     ![Context-menu](document-details/images/view-action-context-menu.png)
     
@@ -29,7 +29,7 @@ To open Document Details:
 
     ![Document Details View](document-details/images/view-action-document-details-tab.png)
     
-`Document Properties` view is shown by default, user can switch to `Versions`.
+`Document Properties` tab is shown by default, user can switch to `Versions`.
 
 Edit available fields and save changes by clicking `Save` button.
 
@@ -58,3 +58,7 @@ To appear on the toolbar:
 - User should have enough rights to perform the action 
 - Action should to be available for the document
 - None of the described above specific hiding rules are applied 
+
+# Configuration
+
+[Document details](../../configuration/actions/document-details.md)

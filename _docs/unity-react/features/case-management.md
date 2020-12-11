@@ -3,12 +3,6 @@ title: Unity Features - Case Management
 layout: docs
 category: Unity 7
 ---
-# Basic  Principles
-
-*content to be added*
-
-# Case Management Features
-
 [Case user comments (search, add, view, update, delete)](case-management/case-user-comments.md)  
 [Case history timeline](case-management/case-history-timeline.md)  
 [Case attachments with folder view (search, navigate, attach, detach)](case-management/case-attachments.md)   

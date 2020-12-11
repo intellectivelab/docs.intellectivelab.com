@@ -11,7 +11,7 @@ category: Unity 7
 
 You will find `View content` action (depends on configuration):
 
-- in [Context menu](context-menu.md) of the document in the grid
+- in context menu of the document in the grid
 - on toolbar in [Document details](document-details.md)
 
 Click on `View content` action and depending on document mime type it will be opened in a new browser tab or downloaded.

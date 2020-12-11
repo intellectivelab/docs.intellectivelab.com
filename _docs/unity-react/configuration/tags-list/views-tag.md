@@ -8,7 +8,7 @@ category: Unity 7
 ## Actions with view
 
 - [Create document](../actions/create-document.md)
-- [View document](../actions/edit-document-properties.md)
+- [Document details](../actions/document-details.md)
 - [Check In document](../actions/checkin-document.md)
 
 ## Tabs section configuration

@@ -1,11 +1,11 @@
 ---
-title: View Document Action Configuration
+title: Document Details Action Configuration
 layout: docs
 category: Unity 7
 ---
-[View Document feature description](../../features/document-management/context-menu.md)
+[Document Details feature description](../../features/document-management/document-details.md)
 
-For `View` document action following section should be added to the Unity System XML file:
+For `Document details` action following section should be added to the Unity System XML file:
 
 ```xml
 <Action ID="edit" multiselect="true" scope="single" type="toolbar">
@@ -16,7 +16,7 @@ For `View` document action following section should be added to the Unity System
   <Parameters/>
   <CustomParameters>
     <ResourceName>documents</ResourceName>
-    <ActionType>edit</ActionType>
+    <ActionType>view</ActionType>
     <!-- not relevant nodes skipped -->
   </CustomParameters>
   <Security/>
@@ -24,14 +24,14 @@ For `View` document action following section should be added to the Unity System
 </Action>
 ```
 
-`View` document action custom configuration parameters:
+`Document details` action custom configuration parameters:
 
 | Parameter   | Description |
 |:------------|:------------|
 |ResourceName | documents   |
-|ActionType   | edit        |
+|ActionType   | view        |
 |Scope        | Optional. The repository data provider id. Default value: `inherit` (it means that this parameter will be inherited from `Search Template` or `Grid` component) |
 
 It's required to [specify View](../tags-list/views-tag.md) in solution configuration file.
 
-Perform the rest of [Common Action Configuration Steps](../actions.md#common-actions-configuration-steps).
+Perform the rest of [Common Action Configuration Steps](../actions.md#common-actions-configuration-steps). 

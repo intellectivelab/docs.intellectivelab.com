@@ -1,11 +1,11 @@
 ---
-title: Document Details
+title: Document Details Feature
 layout: docs
 category: Unity 7
 ---
 # Description
 
-`Document details` allow to: 
+`Document details` feature allows to: 
 
 - view and edit document properties
 
@@ -29,30 +29,10 @@ To open Document Details:
 
     ![View document action](document-details/images/view-document-action.png)
 
-`Document Properties` view is shown by default, user can switch to `Versions`.
+`Document Properties` tab is shown by default, user can switch to `Versions`.
 
 Edit available fields and save changes by clicking `Save` button.
 
-## Toolbar
+# Configuration
 
-Toolbar on `Document Details` tab may contain following actions for the document:
-
-- `Check Out`
-- `Cancel Check Out`
-- `Check In`
-- [View Content](view-content.md)
-- `Download`
-- [Delete](delete-document.md)
-- `Open in Office 365` (open in browser). Action is only available for SharePoint Office documents and opens the 
-document in Office 365.
-- `Open in Office` (open in desktop app). Action is only available for SharePoint Office documents and opens the 
-document in Office Desktop App.
-
-    `Open in Office 365`, `Open in Office` actions are automatically grouped into `Office Actions` dropdown.
-
-To appear on the toolbar:
- 
-- These actions should be [added to the view](../../configuration/tags-list/views-tag/tab-action-set.md) in solution configuration file 
-- User should have enough rights to perform the action
-- Action should to be available for the document
-- None of the described above specific hiding rules are applied 
+[Document details action configuration](../../configuration/actions/document-details.md)
