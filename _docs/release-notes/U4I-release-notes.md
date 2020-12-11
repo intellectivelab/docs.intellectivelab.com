@@ -10,14 +10,14 @@ Unity for Intellective can be reached using the folliwng link
 [Unity for Intellctive](https://u4i.unity7.devops.intellectivelab.com/vu/main.jsp).
 Login and password should be matched with intellective login and password. **Note** pop-ups should be enabled in the browser.
 
-Unity for Intellective contains 2 dashboard: Documents Search, Folder View.
+Unity for Intellective contains 2 dashboards: Documents Search, Folder View.
 Documents Search can be used for documents searching that are stored in the indixes.
 ![Document Search](U4I-release-notes/images/Documents_Search_Dashboard.PNG)
 Folder View is used for searching documents in different Folders
 ![Folder View](U4I-release-notes/images/Folder_View_Dashboard.PNG)
 
 ## Documents searching
-Both dashboard support quick search and detailed search.
+Both dashboards support quick search and detailed search.
 
 User can enter word or sentences for searching to the search field. Searching will be executed in Document Title, Document Content and Reporitory properties for Document Search dashboard and only in Document Title for Folder View dashboard
 ![Quick Search](U4I-release-notes/images/Quick_search.PNG)
@@ -60,7 +60,7 @@ Details dialog contains information about document properties and versions.
 ![Document Properties](U4I-release-notes/images/Document_Details.PNG)
 ![Versions](U4I-release-notes/images/Document_Versions.PNG)
 
-The following action can be executed from Details dialog
+The following actions can be executed from Details dialog
 Office documents:
 - Download
 - Open in Office 365
@@ -116,7 +116,7 @@ The following issues were resolved in the Unity for Intellective release. The ID
 
 # Known Issues
 
-Unity for Intellective contains the following know issues. The ID and Description are from Intellective’s internal ticket tracking system:
+Unity for Intellective contains the following known issues. The ID and Description are from Intellective’s internal ticket tracking system:
 
 | ID      | Summary                                                                                                                   |
 | ------- | ------------------------------------------------------------------------------------------------------------------------- |
