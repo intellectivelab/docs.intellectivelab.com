@@ -7,8 +7,8 @@ category: Unity 7
 
 *content to be added*
 
-# Document Actions
+# Document Management Features
 
-[Add document](document-management/add-document.md)       
+[Add a document](document-management/add-document.md)       
 [View document](document-management/view-document.md)   
 [View and update document properties](document-management/view-update-document-properties.md)

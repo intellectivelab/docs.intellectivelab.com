@@ -10,6 +10,6 @@ category: Unity 7
 [Context menu](document-management/context-menu.md)  
 [Document details](document-management/document-details.md)  
 
-# Document Actions
+# Document Management Features
 
 [View document content](document-management/view-content.md)  

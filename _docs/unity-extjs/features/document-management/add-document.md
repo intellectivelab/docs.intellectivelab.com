@@ -1,5 +1,5 @@
 ---
-title: Add Document Feature
+title: Add a Document Feature
 layout: docs
 category: Unity 7
 ---

@@ -7,7 +7,7 @@ category: Unity 7
 
 *content to be added*
 
-# Case Actions
+# Case Management Features
 
 [Case user comments (search, add, view, update, delete)](case-management/case-user-comments.md)  
 [Case history timeline](case-management/case-history-timeline.md)  
@@ -17,4 +17,3 @@ category: Unity 7
 [Split a case](case-management/split-case.md)  
 [Delete a case](case-management/delete-case.md)  
 [Open case by URL](case-management/open-case-by-url.md)  
-  
