@@ -12,18 +12,18 @@ Login and password should be matched with intellective login and password. **Not
 
 Unity for Intellective contains 2 dashboard: Documents Search, Folder View.
 Documents Search can be used for documents searching that are stored in the indixes.
-![Document Search](U4I-release-notes/images/Documents_Search_Dashboard.JPG)
+![Document Search](U4I-release-notes/images/Documents_Search_Dashboard.PNG)
 Folder View is used for searching documents in different Folders
-![Folder View](U4I-release-notes/images/Folder_View_Dashboard.JPG)
+![Folder View](U4I-release-notes/images/Folder_View_Dashboard.PNG)
 
 ## Documents searching
 Both dashboard support quick search and detailed search.
 
 User can enter word or sentences for searching to the search field. Searching will be executed in Document Title, Document Content and Reporitory properties for Document Search dashboard and only in Document Title for Folder View dashboard
-![Quick Search](U4I-release-notes/images/Quick_search.JPG)
+![Quick Search](U4I-release-notes/images/Quick_search.PNG)
 
 More parameters for searching can be used on searching panel
-![Detailed Search](U4I-release-notes/images/Detailed_search.JPG)
+![Detailed Search](U4I-release-notes/images/Detailed_search.PNG)
 
 ## Documents Search actions
 The following actions are supported in the Documents Search dashboard for Office documents: Word, Excel, PowerPoint, etc
@@ -31,7 +31,7 @@ The following actions are supported in the Documents Search dashboard for Office
 - Download
 - Open in Office 365
 - Open in Office Desktop App
-![Documents Search actions](U4I-release-notes/images/Documents_search_context_menu.JPG)
+![Documents Search actions](U4I-release-notes/images/Documents_search_context_menu.PNG)
 
 The following actions are supported for non Office documents:
 - Details
@@ -46,7 +46,7 @@ The following actions are supported in the Folder View dashboard for Office docu
 - Open in Office 365
 - Open in Office Desktop App
 - Delete
-![Folder View actions](U4I-release-notes/images/Folder_View_context_menu.JPG)
+![Folder View actions](U4I-release-notes/images/Folder_View_context_menu.PNG)
 
 The following actions are supported for non Office documents:
 - Details
@@ -57,8 +57,8 @@ The following actions are supported for non Office documents:
 
 ## Details dialog
 Details dialog contains information about document properties and versions. 
-![Document Properties](U4I-release-notes/images/Document_Details.JPG)
-![Versions](U4I-release-notes/images/Document_Versions.JPG)
+![Document Properties](U4I-release-notes/images/Document_Details.PNG)
+![Versions](U4I-release-notes/images/Document_Versions.PNG)
 
 The following action can be executed from Details dialog
 Office documents:
@@ -68,6 +68,7 @@ Office documents:
 
 Non Office documents:
 - Download
+- View Content
 
 # New Features
 
