@@ -3,6 +3,8 @@ title: Document Details Action Configuration
 layout: docs
 category: Unity 7
 ---
+[Document Details feature description](../../features/document-management/document-details.md)
+
 For `Document details` action following section should be added to the Unity System XML file:
 
 ```xml
