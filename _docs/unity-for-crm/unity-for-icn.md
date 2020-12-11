@@ -6,7 +6,7 @@ category: Unity 7
 This document describes the installation/configuration/use and environmental requirements of the Unity IBM Content Navigator Plug-In.
 The Unity ICN Plug-In allows Unity functionality to be exposed in the UI tier of IBM Content Navigator:
 
-![ICN](unity-for-icn/images/image1.png)
+![ICN](unity-for-icn/images/image1-main-screen.png)
 
 The integration can be configured in one of three modes by the IBM Content Navigator administrator:
 
@@ -33,7 +33,7 @@ The Single Sign-On (SSO) works by configuring the Unity ICN Plug-In component to
 As part of the setup of IBM Content Navigator and Unity they both need to be configured to connect to an external service for authentication and authorization. Since they are two different products, they both need to be configured to connect to an external service.
 IBM Content Navigator does not connect to a directory for authentication. It uses one of the configured repositories for authentication. This can be configured per desktop:
 
-![authentication](unity-for-icn/images/image2.png)
+![authentication](unity-for-icn/images/image6-auth-os.png)
 
 Normally IBM Content Navigator and Unity ICN Plug-In will be configured (indirectly) to use the same directory service as shown in the diagram below. When both products are configured to connect to the same directory service the SSO/authentication and authorization is completely transparent.
 The authentication of the user is done by IBM Content Navigator. That authentication is carried on to the Unity ICN Plug-In using SSO:
@@ -486,7 +486,7 @@ This section describes the end user experience for the Unity ICN Plug-In. It is 
 
 When the end user initially accesses IBM Content Navigator the user will be authenticated. The screen shot below shows the standard IBM Content Navigator login screen:
 
-![login screen](unity-for-icn/images/image26.png)
+![login screen](unity-for-icn/images/image26-login.png)
 
 Once the user has been authenticated the main IBM Content navigator screen shown. This section will concentrate on the Unity Plug-In elements and generic IBM Content Navigator UI components will not be described.
 
@@ -514,7 +514,7 @@ This is default behavior for Unity. This will clear any data currently displayed
 The confirmation dialog is shown below.
 If the user answers `Yes` then the Unity UI will be reloaded.
 
-![change role](unity-for-icn/images/image28.png)
+![change role](unity-for-icn/images/image28-change-role.png)
 
 If the browser is refreshed because the user hits `F5` or `Refresh` in the browser, the Role selection will be retained.
 It is important to note though that object edits that had not been saved prior to the browser refresh will not be saved.
