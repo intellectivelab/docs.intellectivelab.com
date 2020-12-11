@@ -9,16 +9,16 @@ category: Unity 7
 
 # Document Management Features
 
-## [Create a document](document-management/create-document.md)     
-## Create a document with multiple content      
+## [Create a document](document-management/create-document.md)
+## Create a document with multiple content
 ## Drag and drop a file into the grid [U7-2714](https://jira.intellective.com/browse/U7-2714)
-## Drag and Drop a file into the create/view form 
+## Drag and Drop a file into the create/view form
 ## Folder select - upload a document into the selected folder [U7-2715](https://jira.intellective.com/browse/U7-2715)
 ## Document search and navigation
 ## [View document](document-management/view-document.md)
 ## View and update document properties
 ## Document versioning
 ## [Document content actions (view content and download)](document-management/document-content-actions.md)
-## Copy/move document to folder
+## Copy/move document to folder(document-management/copy-move-document-to-folder.md)
 ## [Delete document](document-management/delete-document.md)
 ## Copy link

@@ -16,8 +16,8 @@ category: Unity 7
 
 ## Common actions attributes and tags
 
-Action behavior customized by attributes and tags. 
-There are attributes and tags common for most actions: 
+Action behavior customized by attributes and tags.
+There are attributes and tags common for most actions:
 
 |Attribute            | Description         |
 |:--------------------|:--------------------|
@@ -27,8 +27,8 @@ There are attributes and tags common for most actions:
 |:--------------------|:--------------------|
 | Name      | Action name shown in toolbar or context menu.|
 |*content to be added*|*content to be added*|
-| Security  | [Action security restrictions](../../unity-react/configuration/security.md#security-restrictions) | 
-| CustomParameters  | Defines custom action parameters. Could be overridden per data provider.   | 
+| Security  | [Action security restrictions](../../unity-react/configuration/security.md#security-restrictions) |
+| CustomParameters  | Defines custom action parameters. Could be overridden per data provider.   |
 
 ## Adding action to `Actions` tag
 
@@ -47,8 +47,8 @@ Example:
 
 # Specific Actions Configuration Options
 
-Action behavior customized by attributes and tags. 
-There are attributes and tags [common for most actions](#common-actions-attributes-and-tags) and specific options for each action. 
+Action behavior customized by attributes and tags.
+There are attributes and tags [common for most actions](#common-actions-attributes-and-tags) and specific options for each action.
 Choose the action from the list below to find specific options for it.
 
 ## Document related actions
@@ -59,9 +59,11 @@ Choose the action from the list below to find specific options for it.
 - [Open in Office](../configuration/actions/open-in-office.md)
 - [View Content](../configuration/actions/view-content.md)
 - [Check In Document](../configuration/actions/checkin-document.md)
+- [Copy Document To Folder](../configuration/actions/copy-document-to-folder.md)
+- [Move Document To Folder](../configuration/actions/move-document-to-folder.md)
 
 ## Case related actions
- 
+
 - [Split Case](../configuration/actions/split-case.md)
 - [Delete Case](../configuration/actions/delete-case.md)
 - [Attach New Document to a Case](../configuration/actions/attach-document.md)
