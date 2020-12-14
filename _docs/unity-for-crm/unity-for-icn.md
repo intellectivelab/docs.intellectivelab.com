@@ -261,9 +261,14 @@ After the connection error dialog is dismissed the connection status is updated 
 
 ![failure](unity-for-icn/images/image18-failure-test-connection.png)
 
-If there is an error in the SSO key then a 500 error will typically be displayed:
+If SSO key is corrupted and cannot be used, following error will be shown:
 
+**[PUT HERE - ERROR CREATING SSO TOKEN]**
 ![SSO error](unity-for-icn/images/image19.png)
+
+If SSO key in ICN Plugin settings is different from SSO key in connected Unity configuration, following error will be shown:
+
+**[PUT HERE - ERROR REQUESTING VUPlugin configuration - Unity was not able to decrypt SSO token. Check encryption key]**
 
 The Unity ICN Plug-In configuration can be repeated for any ICN desktop that the Unity ICN Plug-In should be shown on.
 
@@ -507,7 +512,7 @@ The Unity Role selector displays all the Unity roles that are available for the 
 The user can select any available role:
 
 ![role selector](unity-for-icn/images/image27a-role-selector.png)
- 
+
 When a different role is selected the Unity user interface will refresh displaying data for the new role.
 This is default behavior for Unity. This will clear any data currently displayed in Unity will be cleared. Therefore, the Unity ICN Plug-In will display a confirmation dialog before the role is changed.
 
