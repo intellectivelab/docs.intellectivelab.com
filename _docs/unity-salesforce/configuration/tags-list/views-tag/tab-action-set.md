@@ -3,7 +3,7 @@ title: Views Tag Configuration
 layout: docs
 category: Unity 7
 ---
-# How To Add Action To The View
+# How to Add Action to the View
 
 *content to be added*
 

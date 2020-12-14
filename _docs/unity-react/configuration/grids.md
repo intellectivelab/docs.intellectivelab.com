@@ -3,7 +3,7 @@ title: Grids Configuration
 layout: docs
 category: Unity 7
 ---
-# How To Add Action To The Grid
+# How to Add Action to the Grid
 
 *content to be added*
 
