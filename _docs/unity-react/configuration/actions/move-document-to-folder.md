@@ -1,13 +1,13 @@
 ---
-title: Move Document To Folder Action Configuration
+title: Move Document to Folder Action Configuration
 layout: docs
 category: Unity 7
 ---
-[Move Document To Folder feature description](../../features/document-management/move-document-to-folder.md)
+[Copy/Move Document to Folder feature description](../../features/document-management/copy-move-document-to-folder.md)
 
-For `Move Document To Folder` document action following section should be added to the Unity System XML file:
+For `Move Document to Folder` document action following section should be added to the Unity System XML file:
 
-Configuration may include or not include root folder. If it is defined, only its subfolders can be choosen as a move destination.
+Configuration may include or not include root folder. If it is defined, only its subfolders can be chosen as a move destination.
 
 Example of the action with root folder defined as '/Folder1/SubFolder':
 ```xml
@@ -42,6 +42,6 @@ Example of the action without root folder defined (all  folders will be presente
 |:------------|:------------|
 |ResourceName | documents   |
 |ActionType   | move_to_folder |
-|RootFolder   | optional root folder (if omited, repository root '/' is used) |
+|RootFolder   | optional root folder (if omitted, repository root '/' is used) |
 
 Perform the rest of [Common Action Configuration Steps](../actions.md#common-actions-configuration-steps).

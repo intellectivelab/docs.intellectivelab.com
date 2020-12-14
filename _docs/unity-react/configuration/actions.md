@@ -59,8 +59,8 @@ Choose the action from the list below to find specific options for it.
 - [Open in Office](../configuration/actions/open-in-office.md)
 - [View Content](../configuration/actions/view-content.md)
 - [Check In Document](../configuration/actions/checkin-document.md)
-- [Copy Document To Folder](../configuration/actions/copy-document-to-folder.md)
-- [Move Document To Folder](../configuration/actions/move-document-to-folder.md)
+- [Copy Document to Folder](../configuration/actions/copy-document-to-folder.md)
+- [Move Document to Folder](../configuration/actions/move-document-to-folder.md)
 
 ## Case related actions
 
