@@ -54,7 +54,7 @@ Choose the action from the list below to find specific options for it.
 ## Document related actions
 
 - [Create Document](../configuration/actions/create-document.md)
-- [View Document](../configuration/actions/view-document.md)
+- [Document Details](actions/document-details.md)
 - [Delete Document](../configuration/actions/delete-document.md)
 - [Open in Office](../configuration/actions/open-in-office.md)
 - [View Content](../configuration/actions/view-content.md)
