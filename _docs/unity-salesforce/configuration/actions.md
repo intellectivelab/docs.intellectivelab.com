@@ -18,7 +18,7 @@ category: Unity 7
 
 ## Document related actions
 
-- [View Document](../configuration/actions/view-document.md)
+- [Document Details](actions/document-details.md)
 - [Open in Office](../configuration/actions/open-in-office.md)
 - [View Content](../configuration/actions/view-content.md)
 

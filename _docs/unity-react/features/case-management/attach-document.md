@@ -5,14 +5,14 @@ category: Unity 7
 ---
 # Description
 
-Attach document feature allows to upload a file (set of files) into a particular data provider and link uploaded 
+`Attach` document feature allows to upload a file (set of files) into a particular data provider and link uploaded 
 document(-s) to selected case. This type of action can be added on `Attachments` tab on a grid toolbar and will 
 be rendered as a separate button (if only one attach action is bound to the grid) or a dropdown (in case grid contains 
 2 or more actions with `ActionType` custom parameter = `attach`).
 
 *content to be added*
 
-# How to attach a document(-s)
+# How to Attach a Document(-s)
 
 - Open case for edit and switch to one of `Attachments` tab 
 
@@ -20,7 +20,7 @@ be rendered as a separate button (if only one attach action is bound to the grid
 
     ![Case folders](attach-document/images/attach-document-to-case-folder.png)
 
-- Click `attach` action on a grid toolbar and select particular type of document to be uploaded and attached 
+- Click `Attach` action on a grid toolbar and select particular type of document to be uploaded and attached 
 (if dropdown is available): 
 
     ![Attach document action](attach-document/images/attach-action.png)

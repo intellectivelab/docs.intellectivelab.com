@@ -5,14 +5,14 @@ category: Unity 7
 ---
 # Description
 
-Attach existing document feature allows to link document(-s) from different data providers to selected case. 
+`Attach` existing document action allows linking document(-s) from different data providers to selected case. 
 This type of action can be added on `Attachments` tab on a grid toolbar and will be rendered as a separate button 
 (if only one attach action is bound to the grid) or a dropdown (in case grid contains 2 or more actions with 
 `ActionType` custom parameter = `attach`).
 
 *content to be added*
 
-# How to attach a document(-s)
+# How to Attach a Document(-s)
 
 - Open case for edit and switch to one of `Attachments` tab 
 
