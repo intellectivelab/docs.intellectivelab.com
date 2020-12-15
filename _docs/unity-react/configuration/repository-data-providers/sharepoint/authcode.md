@@ -17,17 +17,18 @@ Unity backend uses authentication code to get access token for session user and 
 App registration certificate and application grants also used as system read only user to cache SP metadata.  
 
  
- | Datasource Configuration | Description | Example|
- |--------------------------|-------------|--------|
- | RootUrl | Required. Root SharePoint URL. Note: site path configured at RepositoryDataProvider level and should not be included. | https://yourdomain.sharepoint.com |
- | ApplicationId | Required. Azure App registration applicationId(aka clientId) | f1d7c8bc-6284-4db8-968f-e88a9bca70e1 |
- | AuthorityUrl | Required. `https://login.microsoftonline.com/${AzureTenantId}`. Please find Directory (tenant) Id value at "App registration" -> "Overview" page | https://login.microsoftonline.com/b128c161-3661-441c-8212-5116e40ef414 |
- | RedirectUrl | Required. `http://${UnityServer}:${UnityPort}/${ContextRoot}/services/oauth2/callback`. UnityServer - host name for the web unity application. UnityPort - port value for the unity web application. ContextRoot - server path unity web application mapped. **Note:** http could be only used for localhost, https MUST be used otherwise. | https://unity.server.com:9443/vu/services/oauth2/callback |
- | ClientCert | Required. Signed client certificate password protected. Certificate used to get access code from Azure authority url. It's also used to authenticate system user to SP. Please see [Create Self Signed Certificate](#self-signed-certificate) page for details |  |
- | Password | Required. Password for certificate above. Should be stored encrypted (use Unity config console to encrypt the value)  |  |
- | AzureDomain| Required. Domain name to be added/replaced for unity user session if container authenticate user by simple name. This map username like 'myuser' to 'myuser@yourdomain.com' known to Azure AD. **Note:** this is case sensitive value. Unity connector validates Azure access token from auth popup belongs to the session user. | yourdomain.com |
- | OAuthPrompt | Optional. `[login|none]`. Defaults to the behaviour - sso credentials will be used. login - will force the user to enter their credentials, negating single-sign on.  Please check [prompt option documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow) for details | ```<OAuthPrompt>login</OAuthPrompt>``` |
- | OAuthDisableMessage | Optional. `[true|false]`. Defaults to false - additional Unity message will be presented before Azure popup | `<OAuthDisableMessage>true</OAuthDisableMessage>` |
+ | Datasource Configuration | Required/Optional|Description | Example|
+ |--------------------------|--------------------|-------------|--------|
+ | RootUrl | Required| Root SharePoint URL. **Note:** site path configured at RepositoryDataProvider level and should not be included. | `<RootUrl>https://yourdomain.sharepoint.com</RootUrl>` |
+ | ApplicationId | Required| Azure App registration applicationId (clientId) | `<ApplicationId>f1d7c8bc-6284-4db8-968f-e88a9bca70e1</ApplicationId>` |
+ | AuthorityUrl | Required| `https://login.microsoftonline.com/${AzureTenantId}`. Please find Directory (tenant) Id value at `App registration` > `Overview` page | `<AuthorityUrl>https://login.microsoftonline.com/b128c161-3661-441c-8212-5116e40ef414</AuthorityUrl>` |
+ | RedirectUrl | Required| `http://${UnityServer}:${UnityPort}/${ContextRoot}/services/oauth2/callback`. `UnityServer` - host name for the web unity application. `UnityPort` - port value for the unity web application. `ContextRoot` - server path unity web application mapped. **Note:** http could be only used for localhost, https MUST be used otherwise. | `<RedirectUrl>https://unity.server.com:9443/vu/services/oauth2/callback</RedirectUrl>` |
+ | ClientCert | Required| Signed client certificate password protected. Certificate used to get access code from Azure authority url. It's also used to authenticate system user to SP. Please see [Create Self Signed Certificate](#self-signed-certificate) page for details | `<ClientCert>MIIKTQIBAz...=</ClientCert>` |
+ | Password | Required| Password for certificate above. Should be stored encrypted (use Unity config console to encrypt the value)  | `<Password>...</Password>` |
+ | AzureDomain| Required| Domain name to be added/replaced for Unity user session if container authenticate user by simple name. This map username like 'myuser' to 'myuser@yourdomain.com' known to Azure AD. **Note:** this is case sensitive value. Unity connector validates Azure access token from auth popup belongs to the session user. | `<AzureDomain>yourdomain.com</AzureDomain>` |
+ | OAuthPrompt | Optional| `[login|none]`. `login` - will force the user to enter their credentials, negating single-sign on. Defaults to the Single Sign On behaviour - no interactive prompts if possible.  Please check [prompt option documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow) for details | `<OAuthPrompt>login</OAuthPrompt>` |
+ | OAuthDisableMessage | Optional| `[true|false]`. Defaults to `false` - additional Unity message will be presented before Azure popup | `<OAuthDisableMessage>true</OAuthDisableMessage>` |
+ | OAuthMode | Optional| `[redirect|popup]`. Defaults to `redirect` - Azure interaction in the same Unity window. `popup` - Azure interaction in a separate popup window | `<OAuthMode>redirect</OAuthMode>` |
  
 Example datasource configuration:
 ```xml
