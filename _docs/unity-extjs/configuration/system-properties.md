@@ -3,7 +3,7 @@ title: System Properties Configuration
 layout: docs
 category: Unity 7
 ---
-# Separate Daeja viewer windows configuration
+# Separate Daeja Viewer Windows Configuration
 
 [View Document feature description](../features/document-management/view-document.md)
 
