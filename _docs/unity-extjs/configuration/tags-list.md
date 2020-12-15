@@ -22,7 +22,7 @@ Properties
 SSO  
 [Selectors](tags-list/selectors-tag.md)  
 Solution    
-Solutions    
+[Solutions](tags-list/solutions-tag.md)    
 SystemProperties    
 Tabs    
 TreeModels    

@@ -1,11 +1,8 @@
 ---
-title: Solutions
+title: Solutions Tag Configuration
 layout: docs
 category: Unity 7
 ---
-
-## Solutions section
-
 Example:
 ```xml
 <Solutions configFolder="./">
@@ -26,4 +23,5 @@ Example:
     </Solution>
 </Solutions>
 ```
-All or part of the parameters inside 'ce-config' and 'pe-config' subsections may be missing, if they are not necessary.  
+
+All or part of the parameters inside `ce-config` and `pe-config` subsections may be missing, if they are not necessary.  
