@@ -6,13 +6,13 @@ category: Unity 7
 This document describes the installation/configuration/use and environmental requirements of the Unity IBM Content Navigator Plug-In.
 The Unity ICN Plug-In allows Unity functionality to be exposed in the UI tier of IBM Content Navigator:
 
-![ICN](unity-for-icn/images/image1-main-screen.png)
+![ICN](unity-for-icn/images/image1-unity-main-screen.png)
 
 The integration can be configured in one of three modes by the IBM Content Navigator administrator:
 
-1.	One icon per Unity instance - This mode displays one ICN feature icon per Unity instance.
-2.	One icon per Unity solution - This mode displays one ICN feature icon per Unity solution.
-3.	One icon per Unity tab - This mode displays one ICN feature icon per Unity tab in all solutions.
+1.	One feature per Unity instance - This mode displays one ICN feature per Unity instance.
+2.	One feature per Unity solution - This mode displays one ICN feature per Unity solution.
+3.	One feature per Unity tab - This mode displays one ICN feature per Unity tab in all solutions.
 
 The different integration modes are explained in the section: [Configuration of the Plug-In](#configuration-of-the-plug-in).
 
@@ -235,9 +235,9 @@ The fields that should be configured are:
 - Unity URL: This is the fully qualified base URL to Unity. The URL can be either HTTP or HTTPS.
 - Unity SSO key: This is the generated SSO key. See Single Sign-On Configuration (SSO) - Generate a Unique SSO Key
 - Integration Mode: This is the Integration Mode for Unity in the Plug-In mode. The possible modes are:
-    - One icon per Unity instance - This mode displays one ICN feature icon per Unity instance.
-    - One icon per Unity solution - This mode displays one ICN feature icon per Unity solution.
-    - One icon per Unity tab - This mode displays one ICN feature icon per Unity tab in all solutions.
+    - One icon per Unity instance - This mode displays one ICN feature per Unity instance.
+    - One icon per Unity solution - This mode displays one ICN feature per Unity solution.
+    - One icon per Unity tab - This mode displays one ICN feature per Unity tab in all solutions.
 - Show Unity tab header: Display tab header in the Unity frame. This setting is grayed out if Integration Mode is not set to One icon per Unity tab.
 - Suppress 'No features available for selected role' warning: click this checkbox to disable the message box with warning `No features available for selected role when ICN desktop with Unity plugin is opened by user which is not assigned to any Unity roles allowed to access tabs.`
     This message may be useful for administrator to discover misconfiguration or lack of access, but in the same time might be annoying for ordinary users who intentionally has no access to Unity.
@@ -255,7 +255,7 @@ When the administrator clicks the `Test connection` button the Unity URL and SSO
 
 If there are any errors during connection validation the error is displayed in an error dialog as seen below. In this example the URL is incorrect:
 
-![error](unity-for-icn/images/image17.png)
+![error](unity-for-icn/images/image17a-error-url.png)
 
 After the connection error dialog is dismissed the connection status is updated to `Failure`:
 
@@ -263,12 +263,11 @@ After the connection error dialog is dismissed the connection status is updated 
 
 If SSO key is corrupted and cannot be used, following error will be shown:
 
-**[PUT HERE - ERROR CREATING SSO TOKEN]**
-![SSO error](unity-for-icn/images/image19.png)
+![SSO error](unity-for-icn/images/image17b-error-sso.png)
 
 If SSO key in ICN Plugin settings is different from SSO key in connected Unity configuration, following error will be shown:
 
-**[PUT HERE - ERROR REQUESTING VUPlugin configuration - Unity was not able to decrypt SSO token. Check encryption key]**
+![SSO error](unity-for-icn/images/image17c-error-decrypt.png)
 
 The Unity ICN Plug-In configuration can be repeated for any ICN desktop that the Unity ICN Plug-In should be shown on.
 
@@ -363,7 +362,7 @@ Please note the `src="v1files/viewone.js"` value
 
 # (Optional) Configure Custom Icons for Plug-In Features
 
-The Unity ICN Plug-In ships with a standard icon for the IBM Content Navigator feature icons displayed in the left feature icon toolbar.
+The Unity ICN Plug-In ships with a standard icon for the IBM Content Navigator feature icons displayed in the left top dropdown feature toolbar.
 If needed the administrator can configure custom icons instead of the standard feature icons that ship with Unity ICN Plug-In.
 
 ![icons](unity-for-icn/images/image21-features-menu-opened.png)
@@ -495,12 +494,12 @@ When the end user initially accesses IBM Content Navigator the user will be auth
 
 Once the user has been authenticated the main IBM Content navigator screen shown. This section will concentrate on the Unity Plug-In elements and generic IBM Content Navigator UI components will not be described.
 
-![ICN layout](unity-for-icn/images/image27.png)
+![ICN layout](unity-for-icn/images/image26-main-screen-areas.png)
 
 There are three areas of the screen. They are shown and marked with numbers in the screen shot above.
 1.	Unity Role Selector
 2.	Unity Main User Interface
-3.	IBM Content Navigator Feature Icons
+3.	IBM Content Navigator Features
 
 These three areas of the screen are described in the following sections.
 
@@ -549,23 +548,24 @@ To show it set `role.mode` to `RoleSelection`.
 ## Unity Main User Interface
 
 The Unity main user interface is displayed in the center region.
-The contents of the user interface depend on the IBM Content Navigator feature icon that is clicked and the Unity configuration corresponding to the feature icon.
+The contents of the user interface depend on the IBM Content Navigator feature that is clicked and the Unity configuration corresponding to the feature.
 
-## IBM Content Navigator Feature Icons
+## IBM Content Navigator Features
 
-The Unity ICN Plug-In displays at runtime dynamically the appropriate feature icons to the user. The number and functionality of the Unity ICN Feature Icons depend on the following:
+The Unity ICN Plug-In displays at runtime dynamically the appropriate features to the user. The number and functionality of the Unity ICN Features depend on the following:
 
 - [Configuration of the Unity ICN Plug-In](#configuration-of-the-plug-in)
 - Current user credentials – only features that the user is authorized to see will be shown
 - Current role selected in the [Unity ICN Plug-In role selector](#unity-role-selector)
 - Unity configuration that is stored in one or more Unity Configuration XML Files
 
-When the user clicks on an ICN Feature Icon that is related to Unity the main panel containing the Unity user interface for that Feature Icon is loaded.
+When the user clicks on an ICN Feature that is related to Unity the main panel containing the Unity user interface for that Feature is loaded.
 All loaded Unity features will stay resident in memory during the ICN session.
 
-This means that the user can click on Feature Icon "A" type in some values, then click on Feature Icon "B" and do some work.
-When the user then later clicks back to Feature Icon "A" in the same session the values that were typed in will have been retained as the feature was kept in memory.
+This means that the user can click on Feature "A", type in some values, then click on Feature "B" and do some work.
+When the user then later clicks back to Feature "A" in the same session the values that were typed in will have been retained as the feature was kept in memory.
 This allows the user to have very flexible interactions with IBM Content Navigator/Unity.
+
 One typical business scenario is that the user is working on something, receives a call that needs to be handled by another feature.
 After the call is completed the user can go back to the work that was in process before.
 
