@@ -1,28 +1,22 @@
 ---
-title: System properties
+title: System Properties Configuration
 layout: docs
 category: Unity 7
 ---
+# Separate Daeja Viewer Windows Configuration
 
-## System properties description
+[View Document feature description](../features/document-management/view-document.md)
 
-User selects one or more documents, clicks View and these documents are opened in viewer in separate windows. 
+Separate Daeja viewer windows mode allows viewing multiple documents in separate windows.  
 
-![daeja-selected](images/daeja-viewer-selected-docs.png)
-![daeja-opened](images/daeja-viewer-opened-docs.png)
+To enable this mode add the following properties:
 
-To enable separate multiple Daeja viewer windows mode add the following properties,
 ```xml
 <SystemProperties>
     <Property ID="documentviewer.separatewindows.enabled" value="true"/>
     <Property ID="documentviewer.separatewindows.maxopen" value="2"/>
 </SystemProperties>
 ```
-where "documentviewer.separatewindows.maxopen" is the maximum number of open viewer windows at a time.  
-There is no maximum limit for this field (it can be 10 or 50).  
-The meaning of this field is that when the user selects several documents, it opens as many as specified in the property.  
-For example, if  
-```xml
-<Property ID="documentviewer.separatewindows.maxopen" value="4"/>
-```
-but you select all documents, only 4 will open.
+where `documentviewer.separatewindows.maxopen` is the maximum number of open viewer windows at a time.  
+Only this number of documents will be opened simultaneously even if user selected more documents to view.  
+There is no maximum limit for this field.  
