@@ -25,19 +25,19 @@ Example:
 </Solutions>
 ```
 
-|Tag|Need to fill in|
+|Tag             |Required/Optional|
 |:---------------|:-------|
-|<Solution>               |`required`|
-|<ce-config>              |optional|
-|<default-object-store>   |optional (`required` if <ce-config> exists)|
-|<server-uri>             |optional|
-|<object-store>           |optional|
-|<pe-config>              |optional|
-|<datasource>             |optional|
-|<connection-point>       |optional|
-|<roster-name>            |optional|
-|<search-templates-folder>|optional|
-|<content-view-widget>    |optional|
+|Solution               |required|
+|ce-config              |optional|
+|default-object-store   |optional (required if `<ce-config>` exists)|
+|server-uri             |optional|
+|object-store           |optional|
+|pe-config              |optional|
+|datasource             |optional|
+|connection-point       |optional|
+|roster-name            |optional|
+|search-templates-folder|optional|
+|content-view-widget    |optional|
 
-Tags marked as 'required' are needed in configuration file to start the Unity application.
+Tags marked as `required` are needed in configuration file to start the Unity application.
 However, missing parameters may be necessary for the correct operation of individual parts of the application.
