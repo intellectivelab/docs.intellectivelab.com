@@ -28,43 +28,24 @@ category: Unity 7
         </elevated-privileges-user> 
         <queries>
             <query name="select-case">select * from CmAcmCaseFolder where Id = {0}</query>
-            <query name="select-choice-list">select top 1 this\, Id from ChoiceList where DisplayName = ''{0}''</query>
+            ...
         </queries> 
         <attachment-object name="Bp8CommentAttachment">
             <fields>
                 <field type="string" name="Id"/>
-                <field type="string" name="CommentId"/>
-                <field type="int" name="CaseId"/>
-                <field type="string" name="ObjectClass"/>
-                <field type="string" name="ObjectId"/>
-                <field type="string" name="ObjectRepositoryID"/>
-                <field type="int" name="ObjectType"/>
-                <field type="string" name="DocumentTitle"/>
-                <field type="string" name="Creator"/>
-                <field type="date" name="DateCreated"/>
-                <field type="string" name="MimeType"/>
-                <field type="string" name="VersionSeries"/>
+                ...
             </fields>
         </attachment-object>
         <audit-object name="Bp8UserComment">
             <fields>
                 <field type="string" name="Id"/>
-                <field type="int" name="CaseId"/>
-                <field type="string" name="Action"/>
-                <field type="string" name="Creator"/>
-                <field type="date" name="DateCreated"/>
-                <field type="string" name="EventCategory"/>
-                <field type="string" name="Comment"/>
-                <field type="string" name="CommentType"/>
+                ...
             </fields>
         </audit-object>
         <comments-and-history>
             <columns>
                 <column dataIndex="DateCreated" header="Date Created" menuDisabled="false" sortable="true" tooltip="Date Created" width="80"/>
-                <column dataIndex="Action" header="Action" menuDisabled="false" sortable="true" tooltip="Action" width="100"/>
-                <column dataIndex="Creator" header="User" menuDisabled="false" sortable="true" tooltip="User" width="50"/>
-                <column dataIndex="Comment" header="Comment" menuDisabled="false" sortable="true" tooltip="Comment"/>
-                <column dataIndex="CommentType" header="CommentType" menuDisabled="false" sortable="true" tooltip="CommentType" width="80"/>
+                ...
             </columns> 
             <sort-info field="DateCreated" direction="DESC"/>
             <filters width="150">
@@ -121,17 +102,13 @@ category: Unity 7
     <inbasket-widget>
         <panels>
             <panel title="Inbasket" url="/Inbasket.jsp" visibility="inbasket"/>
-            <panel title="Search Templates" url="/Search.jsp" visibility="search"/>
+            ...
         </panels>
     </inbasket-widget> 
     <search-widget>
         <context-menu-actions searchType="Document">
             <action id="check_in" label="Check in" toolAction="CheckIn"/>
-            <action id="check_out" label="Check out" toolAction="CheckOut"/>
-            <action id="cancel_check_out" label="Cancel check out" toolAction="CancelCheckOut"/>
-            <action id="view" label="View" toolAction="View"/>
-            <action id="download" label="Download" toolAction="Download"/>
-            <action id="properties" label="Properties" toolAction="Properties"/>
+            ...
         </context-menu-actions>
     </search-widget> 
     <content-view-widget>
@@ -142,23 +119,17 @@ category: Unity 7
         </grid-toolbar-actions> 
         <grid-context-menu-actions>
             <action id="view" label="View (SC)" toolAction="View"/>
-            <action id="download" label="Download (SC)" toolAction="Download"/>
-            <action id="properties" label="Properties (SC)" toolAction="Properties"/>
+            ...
         </grid-context-menu-actions> 
         <tree-context-menu-actions>
             <action id="view" label="View" toolAction="View"/>
-            <action id="folderSecuritySC" label="Security SC" toolAction="folderSecurity_SC"/>
+            ...
         </tree-context-menu-actions> 
     </content-view-widget>
     <document-properties-view-widget>
         <related-context-menu-actions>
             <action id="check_in" label="Check in (SC)" toolAction="CheckIn"/>
-            <action id="check_out" label="Check out (SC)" toolAction="CheckOut"/>
-            <action id="cancel_check_out" label="Cancel check out (SC)" toolAction="CancelCheckOut"/>
-            <action id="view" label="View (SC)" toolAction="View"/>
-            <action id="download" label="Download (SC)" toolAction="Download"/>
-            <action id="properties" label="Properties (SC)" toolAction="Properties"/>
-            <action id="remove_related" label="Remove Relationship (SC)" toolAction="RemoveRelatedDocument"/>
+            ...
         </related-context-menu-actions>
     </document-properties-view-widget> 
 </SolutionsConfiguration>
