@@ -21,11 +21,15 @@ The function `formatCurrentDate()` requires either no arguments or only ones fro
 Examples:
 
 ```xml
+<Assignments>
     <Assignment Expression="$e.formatCurrentDate('yyyy-MM-dd\'T\'HH:mm:ss')" FieldID="_DateCreated"/>
+</Assignments>
 ```
 
 ```xml
+<Assignments>
     <Assignment Expression="$e.formatCurrentDate()" FieldID="_DateUpdated"/>
+</Assignments>
 ```
 
 `_DateUpdated` and `_DateCreated` fields assigned to current date.
