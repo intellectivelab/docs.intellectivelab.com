@@ -418,19 +418,15 @@ entries:
                 url: /docs/unity-salesforce/configuration/tags-list/
                 id: unity-salesforce-configuration-tags-list
 
-      - title: Unity for CRM
+      - title: Unity for ICN
+        url: /docs/unity-for-icn/
+        id: unity-for-icn
         output: web, pdf
-        id: unity-for-crm
-        folderitems:
-          - title: Unity for Dynamics
-            url: /docs/unity-for-crm/unity-for-dynamics/
-            id: unity-for-crm-unity-for-dynamics
-            output: web, pdf
 
-          - title: Unity for ICN
-            url: /docs/unity-for-crm/unity-for-icn/
-            id: unity-for-crm-unity-for-icn
-            output: web, pdf
+      - title: Unity for Dynamics
+        url: /docs/unity-for-dynamics/
+        id: unity-for-dynamics
+        output: web, pdf
 
       - title: Enterprise Search
         output: web
