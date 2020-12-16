@@ -15,7 +15,7 @@ Example:
             <Actions>
                 ...
                 <Action AllowBulk="false" ID="4" LoggedAs="" Name="ValidBilling" WFResponse="ValidBilling">
-					<Assignments>
+                    <Assignments>
                         <Assignment Expression="$e.formatCurrentDate('yyyy-MM-dd\'T\'HH:mm:ss')" FieldID="CC_ComplaintReceivedDate"/>
                     </Assignments>
                     <Reasons>
