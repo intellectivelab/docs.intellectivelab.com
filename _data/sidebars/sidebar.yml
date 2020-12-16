@@ -550,15 +550,10 @@ entries:
                 url: /docs/development/unity-api/security/
                 id: development-unity-api-security
 
-              - title: Resources
+              - title: OpenAPI Specification
                 output: web
-                url: /docs/development/unity-api/resources/
-                id: development-unity-api-resources
-
-              - title: References
-                output: web
-                url: /docs/development/unity-api/references/
-                id: development-unity-api-references
+                url: /docs/development/unity-api/openapi-specification/
+                id: development-unity-api-openapi-specification
 
           - title: Development Materials
             output: web
