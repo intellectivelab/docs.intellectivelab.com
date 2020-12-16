@@ -6,7 +6,7 @@ category: Unity 7
 
 # Unity for Intellective Overview
 
-Unity for Intellective can be reached using the following link: [https://u4i.unity7.devops.intellectivelab.com/vu/main.jsp](https://u4i.unity7.devops.intellectivelab.com/vu/main.jsp).  
+Unity for Intellective can be reached using the following link: [https://u4i.unity7.devops.intellectivelab.com/unity/main.jsp](https://u4i.unity7.devops.intellectivelab.com/unity/main.jsp).  
 Use Intellective login and password. 
 
 | **Note:** Pop-ups should be enabled in the browser.
