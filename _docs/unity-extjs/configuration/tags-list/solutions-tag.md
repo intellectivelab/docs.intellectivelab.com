@@ -4,6 +4,7 @@ layout: docs
 category: Unity 7
 ---
 Example:
+
 ```xml
 <Solutions configFolder="./">
     <Solution file="customer-complaints-jbpm.xml" name="CustomerComplaints">
@@ -24,4 +25,19 @@ Example:
 </Solutions>
 ```
 
-All or part of the parameters inside `ce-config` and `pe-config` subsections may be missing, if they are not necessary.  
+|Tag|Need to fill in|
+|:---------------|:-------|
+|<Solution>               |`required`|
+|<ce-config>              |optional|
+|<default-object-store>   |optional (`required` if <ce-config> exists)|
+|<server-uri>             |optional|
+|<object-store>           |optional|
+|<pe-config>              |optional|
+|<datasource>             |optional|
+|<connection-point>       |optional|
+|<roster-name>            |optional|
+|<search-templates-folder>|optional|
+|<content-view-widget>    |optional|
+
+Tags marked as 'required' are needed in configuration file to start the Unity application.
+However, missing parameters may be necessary for the correct operation of individual parts of the application.
