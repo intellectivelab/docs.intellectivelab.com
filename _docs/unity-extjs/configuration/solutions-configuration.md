@@ -4,7 +4,7 @@ layout: docs
 category: Unity 7
 ---
 
-`<SolutionConfiguration>` section example:
+`<SolutionsConfiguration>` section example:
 
 ```xml
 <SolutionsConfiguration>
