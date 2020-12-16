@@ -188,4 +188,4 @@ To open page in local environment:
 Read whole page before creating pull request. Verify that all images are shown properly and each link works.  
 Check automatic Table of Contents in the beginning of page, if its structure corresponds to content.
 
-&rarr; [Next step: How To Add Page To Documentation Portal](../how-to-add-page-to-doc-portal.md)
+&rarr; [Next step: How to Add a Page to Documentation Portal](../how-to-add-page-to-doc-portal.md)
