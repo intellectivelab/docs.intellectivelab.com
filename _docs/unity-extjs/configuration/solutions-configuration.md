@@ -137,31 +137,14 @@ category: Unity 7
 
 |Tag             |Required/Optional|
 |:---------------|:----------------|
-|UcmUieClientConfiguration        |optional|
-|HliServiceUrl                    |optional|
-|IndexGroup                       |optional|
-|DocumentLinkClass                |optional|
-|LinkRepositoryId                 |optional|
-|LinkRepositoryType               |optional|
-|FieldCaseId                      |optional|
-|FieldCaseSubFolderId             |optional|
-|FieldDocumentId                  |optional|
 |ce-config                        |required|
 |server-uri                       |required|
 |object-store                     |required|
-|elevated-privileges-user         |optional|
-|security-principal               |optional|
-|security-encryption-key          |optional|
-|security-credentials             |optional|
-|queries                          |optional|
-|query                            |optional|
 |attachment-object                |required|
 |fields                           |required|
 |field                            |required|
 |audit-object                     |required|
 |comments-and-history             |required|
-|columns                          |optional|
-|column                           |optional|
 |sort-info                        |required|
 |filters                          |required|
 |filter                           |required|
@@ -170,44 +153,11 @@ category: Unity 7
 |viewer                           |required|
 |dialog-case-popup                |required|
 |security-tab                     |required|
-|pe-config                        |optional|
-|connection-point                 |optional|
-|roster-name                      |optional|
-|integration-config               |optional|
-|case-model                       |optional|
-|icm-config                       |optional|
-|case-manager-rest-uri            |optional|
-|solution-name                    |optional|
-|forms-config                     |optional|
-|create-form                      |optional|
-|tool                             |optional|
-|name                             |optional|
-|case-type                        |optional|
-|form-policy-location             |optional|
 |ae-config                        |required|
 |workplace-uri                    |required|
 |case-fields-audit-config         |required|
 |content-search                   |required|
-|object-classes                   |optional|
-|queries                          |optional|
-|filters                          |optional|
 |sort-info                        |required|
-|advanced-search                  |optional|
-|choice-lists                     |optional|
-|inbasket-widget                  |optional|
-|panels                           |optional|
-|panel                            |optional|
-|search-widget                    |optional|
-|context-menu-actions             |optional|
-|action                           |optional|
-|content-view-widget              |optional|
-|tree-title                       |optional|
-|tree-level                       |optional|
-|grid-toolbar-actions             |optional|
-|grid-context-menu-actions        |optional|
-|tree-context-menu-actions        |optional|
-|document-properties-view-widget  |optional|
-|related-context-menu-actions     |optional|
 
 Tags marked as `required` are needed in configuration file to start the Unity application.
 However, missing parameters may be necessary for the correct operation of individual parts of the application.
