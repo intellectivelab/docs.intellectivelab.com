@@ -37,7 +37,7 @@ ViewerConfiguration
 
 FieldSets    
 FieldTypes    
-Inbaskets    
+[Inbaskets](tags-list/inbaskets-tag.md)      
 Lookups  
 Pages    
 SolutionConfig    
