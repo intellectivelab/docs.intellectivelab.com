@@ -9,25 +9,15 @@ category: Unity 7
 ```xml
 <SolutionsConfiguration>
     <UcmUieClientConfiguration>
-        <HliServiceUrl>http://...</HliServiceUrl>
-        <IndexGroup>allRepos</IndexGroup>
-        <DocumentLinkClass>Link</DocumentLinkClass>
-        <LinkRepositoryId>UCM</LinkRepositoryId>
-        <LinkRepositoryType>UCMLinks</LinkRepositoryType>
-        <FieldCaseId>case_id@s</FieldCaseId>
-        <FieldCaseSubFolderId>case_sub_folder_id@s</FieldCaseSubFolderId>
-        <FieldDocumentId>document_id@s</FieldDocumentId>
+        ...
     </UcmUieClientConfiguration> 
     <ce-config>
         <server-uri>http://...</server-uri>
         <object-store>Target</object-store>
         <elevated-privileges-user>
-            <security-principal>CN=user\,CN=Users\,DC=com</security-principal>
-            <security-encryption-key>*</security-encryption-key>
-            <security-credentials>*</security-credentials>
+            ...
         </elevated-privileges-user> 
         <queries>
-            <query name="select-case">select * from CmAcmCaseFolder where Id = {0}</query>
             ...
         </queries> 
         <attachment-object name="Bp8CommentAttachment">
@@ -68,96 +58,61 @@ category: Unity 7
         <roster-name>MortgageOriginationProcess</roster-name>
     </pe-config> 
     <integration-config>
-        <case-model>ICM</case-model>
+        ...
     </integration-config> 
     <icm-config>
-        <case-manager-rest-uri>/CaseManagerProxy</case-manager-rest-uri>
-        <solution-name>ACM_TEST</solution-name>
+        ...
     </icm-config> 
     <forms-config>
-        <create-form>
-            <tool>
-                <name>create_form_case</name>
-                <case-type>Disclosure Case</case-type>
-                <form-policy-location>/Forms/Disclosure Form Policy</form-policy-location>
-            </tool>
-        </create-form>
+        ...
     </forms-config> 
     <ae-config>
         <workplace-uri>http://...</workplace-uri>
     </ae-config>
     <case-fields-audit-config enabled="true"/>
     <content-search>
-        <object-classes/>
-        <queries/>
-        <filters/>
-        <sort-info field="rank" direction="DESC"/>
+        ...
     </content-search>
     <advanced-search>
-        <object-classes/>
-        <queries/>
-        <filters/>
-        <choice-lists/>
+        ...
     </advanced-search>
     <inbasket-widget>
-        <panels>
-            <panel title="Inbasket" url="/Inbasket.jsp" visibility="inbasket"/>
-            ...
-        </panels>
+        ...
     </inbasket-widget> 
     <search-widget>
-        <context-menu-actions searchType="Document">
-            <action id="check_in" label="Check in" toolAction="CheckIn"/>
-            ...
-        </context-menu-actions>
+        ...
     </search-widget> 
     <content-view-widget>
-        <tree-title>Root</tree-title> 
-        <tree-level>/Documents</tree-level> 
-        <grid-toolbar-actions>
-            <action id="create" label="Create Document (SC)" toolId="CreateDocProfile"/>
-        </grid-toolbar-actions> 
-        <grid-context-menu-actions>
-            <action id="view" label="View (SC)" toolAction="View"/>
-            ...
-        </grid-context-menu-actions> 
-        <tree-context-menu-actions>
-            <action id="view" label="View" toolAction="View"/>
-            ...
-        </tree-context-menu-actions> 
+        ...
     </content-view-widget>
     <document-properties-view-widget>
-        <related-context-menu-actions>
-            <action id="check_in" label="Check in (SC)" toolAction="CheckIn"/>
-            ...
-        </related-context-menu-actions>
+        ...
     </document-properties-view-widget> 
 </SolutionsConfiguration>
 ```
 
 |Tag             |Required/Optional|
 |:---------------|:----------------|
-|ce-config                        |required|
-|server-uri                       |required|
-|object-store                     |required|
+|ae-config                        |required|
 |attachment-object                |required|
-|fields                           |required|
-|field                            |required|
 |audit-object                     |required|
+|case-fields-audit-config         |required|
+|ce-config                        |required|
 |comments-and-history             |required|
-|sort-info                        |required|
-|filters                          |required|
-|filter                           |required|
+|content-search                   |required|
 |dialog                           |required|
+|dialog-case-popup                |required|
+|field                            |required|
+|fields                           |required|
+|filter                           |required|
+|filters                          |required|
+|object-store                     |required|
+|security-tab                     |required|
+|server-uri                       |required|
+|sort-info                        |required|
 |ui-control                       |required|
 |viewer                           |required|
-|dialog-case-popup                |required|
-|security-tab                     |required|
-|ae-config                        |required|
 |workplace-uri                    |required|
-|case-fields-audit-config         |required|
-|content-search                   |required|
-|sort-info                        |required|
 
 Tags marked as `required` are needed in configuration file to start the Unity application.
 However, missing parameters may be necessary for the correct operation of individual parts of the application.
