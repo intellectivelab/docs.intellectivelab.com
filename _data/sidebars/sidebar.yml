@@ -493,9 +493,9 @@ entries:
             url: /docs/interchange/customization/
             id: interchange-customization
             output: web, pdf
-          - title: Deploy
-            url: /docs/interchange/deploy/
-            id: interchange-deploy
+          - title: Deployment
+            url: /docs/interchange/deployment/
+            id: interchange-deployment
             output: web, pdf
 
       - title: Release Notes
