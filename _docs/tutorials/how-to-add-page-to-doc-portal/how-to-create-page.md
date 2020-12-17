@@ -5,6 +5,13 @@ category: Unity 7
 ---
 This is a guide how to create a page for github documentation site using [Markdown syntax](markdown-syntax.md). 
 
+# Filenames and Folder Names
+
+Use lowercase letters and `-` for filenames and folder names. Examples: 
+
+`search-templates.md`  
+`attach-document.png`
+
 # Markdown File Structure and Page Structure 
 
 ## Metadata in the beginning of .md file 
@@ -72,7 +79,7 @@ To align code block with text in list use `tab` before code block.
 - Crop screenshots accurately 
 - For highlighting use red frames, red color is R220 G56 B64 (#dc3840):  
 	![highlight](how-to-create-page/images/image10.png) 
-- If you need to add text on screenshot, use the same red color and Lato font
+- If you need to add text on a screenshot, use the same red color and Lato font
 - Use `:` after the text before image if the image illustrates this text 
 
 Images should be placed to `name-of-your-md-file/images/` folder:
@@ -142,11 +149,11 @@ Keep empty row before and after table code.
 
 ### Confidential information 
 
-Remove all confidential information (passwords etc) from your content. Check carefully: 
+Remove all confidential information (passwords, customer data etc) from your content. Check carefully: 
 - text
 - images 
 - links 
-- files for downloads (configs etc)
+- files to download
 
 ## Next step recommendations (optional) 
 

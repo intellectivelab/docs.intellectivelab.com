@@ -17,7 +17,7 @@ To add a new content to the project perform the following steps:
     
     ![Clone repository](how-to-add-page-to-doc-portal/images/clone-repo.png)
     
-    [How to clone a repository](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
+    [How to Clone a Repository](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
 - Create a `new branch` from `master`. Use JIRA task number in name of your branch if needed.  
     Branch name examples:
     - feature/U7-3236_sunburst_chart
