@@ -16,8 +16,7 @@ Interchange is provided with Docker compose configuration that allows user to ru
 
 # Crawler Configuration
 
-Crawler configuration should be created or taken from the one of examples located in `samples` folder and put into the `bootstrap`.
-Details about advanced crawler configuration to be done.
+Crawler configuration xml should be created or taken from the one of examples located in `samples` folder and put into the `bootstrap`.
 
 To work with a basic configuration you should change the following:
 
