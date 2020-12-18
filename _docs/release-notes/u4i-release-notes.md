@@ -17,6 +17,8 @@ Documents Search can be used for documents stored in the indices:
 
 ![Document Search](u4i-release-notes/images/document-search-dashboard.png)
 
+| **Note:** If you create a new Site and want it to be crawled you should create [Request](https://docs.intellectivelab.com/docs/contact/contact-us/).
+
 Folder View is used for searching documents in different folders:
 
 ![Folder View](u4i-release-notes/images/folder-view-dashboard.png)
