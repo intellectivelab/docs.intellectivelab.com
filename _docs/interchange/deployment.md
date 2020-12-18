@@ -16,7 +16,7 @@ Interchange is provided with Docker compose configuration that allows user to ru
 
 # Crawler Configuration
 
-Crawler configuration should be created of taken from the one of examples located in `samples` folder and put into the `bootstrap`.
+Crawler configuration should be created or taken from the one of examples located in `samples` folder and put into the `bootstrap`.
 Details about advanced crawler configuration to be done.
 
 To work with a basic configuration you should change the following:
@@ -56,7 +56,7 @@ To work with a basic configuration you should change the following:
 
 # Dispatcher Configuration
 
-Dispatcher also requires configuration. You can prepare your own config or take sample from `samples` folder. File should be put to the `topologies` folder.
+Dispatcher also requires configuration. You can prepare your own config or take sample `topology.xml` from `samples` folder. File should be put to the `topologies` folder.
 
 ```xml
     <EventLoggers>
@@ -72,7 +72,7 @@ Dispatcher also requires configuration. You can prepare your own config or take 
 |:---------|:---------------------|
 |`<BootstrapServers>localhost:9092</BootstrapServers>` | `<BootstrapServers>kafka:9092</BootstrapServers>`|
 
-Topology `id` should be taken from the `id` attribute of the following tag:
+Topology `id` should be taken from the `topology.xml` file `id` attribute of the following tag:
 
 ```xml
     <Topology xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="processor" id="input-to-ce">
