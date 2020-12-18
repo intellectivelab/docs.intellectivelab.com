@@ -5,7 +5,7 @@ category: Unity 7
 ---
 # Description
 
-`Create` document action allows to upload a file (set of files) into a particular data provider with ability to specify
+`Create` document action allows to upload a file into a particular data provider with ability to specify
 document properties. This type of action can be added on a grid toolbar and will be rendered as a separate button
 (if only one create action is bound to the grid) or a dropdown (in case grid contains many create actions).
 
