@@ -489,13 +489,13 @@ entries:
         output: web, pdf
         id: interchange
         folderitems:
-          - title: Customization
-            url: /docs/interchange/customization/
-            id: interchange-customization
-            output: web, pdf
           - title: Deployment
             url: /docs/interchange/deployment/
             id: interchange-deployment
+            output: web, pdf
+          - title: Customization
+            url: /docs/interchange/customization/
+            id: interchange-customization
             output: web, pdf
 
       - title: Release Notes
