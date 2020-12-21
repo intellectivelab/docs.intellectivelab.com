@@ -3,7 +3,6 @@ title: Repository Data Providers Configuration
 layout: docs
 category: Unity 7
 ---
+|**Note**: Repository Data Providers Configuration is the same for Unity ExtJS and Unity React. 
 
-Unity Data Provider is a unified facade to integrate content from different external sources.  
-
-|**Note**: Configuration for Unity ExtJS is the same as [Repository Data Providers Configuration for Unity React](../../unity-react/configuration/repository-data-providers.md).
+Please see [Repository Data Providers Configuration](../../unity-react/configuration/repository-data-providers.md) in Unity React section.
