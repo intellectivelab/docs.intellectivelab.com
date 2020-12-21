@@ -8,7 +8,7 @@ entries:
         url: /docs/unity-overview/
         id: unity-overview
 
-      - title: Unity ExtJs
+      - title: Unity ExtJS
         output: web, pdf
         id: unity-extjs
         folderitems:

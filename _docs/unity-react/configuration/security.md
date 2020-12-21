@@ -12,7 +12,7 @@ category: Unity 7
 
 # Security Restrictions
 
-| **Note**: Security Restrictions are the same for Unity ExtJs and Unity React. 
+| **Note**: Security Restrictions are the same for Unity ExtJS and Unity React. 
 
 Some configuration items support security restriction rules configuration. For example: dashboards, search templates, actions, etc.
 

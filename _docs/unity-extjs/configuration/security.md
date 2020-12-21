@@ -9,7 +9,7 @@ category: Unity 7
 
 # Security Restrictions
 
-| **Note**: Security Restrictions are the same for Unity ExtJs and Unity React.  
+| **Note**: Security Restrictions are the same for Unity ExtJS and Unity React.  
 
 Please see [Security Restrictions](../../unity-react/configuration/security.md#security-restrictions) in Unity React configuration section.
 

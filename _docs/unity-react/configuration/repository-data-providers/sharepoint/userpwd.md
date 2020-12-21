@@ -3,7 +3,7 @@ title: Sharepoint Connector Configuration - User Password Flow
 layout: docs
 category: Unity 7
 ---
-|**Note**: SharePoint Connector Configuration is the same for Unity ExtJs and Unity React.
+|**Note**: SharePoint Connector Configuration is the same for Unity ExtJS and Unity React.
 
 # Description
 Username Password flow used by Unity connector to call SP on behalf of user. It uses logged in session credentials data 
