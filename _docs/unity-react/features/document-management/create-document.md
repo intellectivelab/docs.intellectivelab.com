@@ -18,7 +18,7 @@ available).
 
 - Drop a file into drop zone or click it to select a file for upload:
 
-    ![Create document form before file are selected](create-document/images/create-document-empty-form.png)
+    ![Create document form before file is selected](create-document/images/create-document-empty-form.png)
 
 - Selected file info will appear below the drop zone area. Fill in properties and click `Create` button:
 
