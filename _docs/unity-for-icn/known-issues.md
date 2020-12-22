@@ -5,8 +5,6 @@ category: Unity 7
 ---
 # `SameSite` cookie
 
-Reference to JIRA: U7-3369
-
 ## Problem
 
 Since Chrome v80 (February 2020) vast majority of browsers set this param to `Lax`. Previously it was `None`.
