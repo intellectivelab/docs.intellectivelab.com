@@ -128,14 +128,14 @@ To insert a link to external page type:
 Don't use `here` as a link title, always try to use a meaningful name.  
 Use `[url](url)` if you need to make url visible.
 
-### Links between Unity ExtJs and Unity React
+### Links between Unity ExtJS and Unity React
 
-Some content is common for Unity ExtJs and React. Do not create pages with the same content, use links instead:
+Some content is common for Unity ExtJS and React. Do not create pages with the same content, use links instead:
 
-- Write a note that this content is the same for both Unity and place this note on both pages.
-- Place a content just on one of them (preferrably in Unity React), and place a link on another.  
+- Write a note that this content is the same for both Unity and place this note on both pages
+- Place a content just on one of them (preferably in Unity React), and place a link on another:  
 
-![ExtJs-React linking](how-to-create-page/images/extjs-react-linking.png)
+![ExtJS-React linking](how-to-create-page/images/extjs-react-linking.png)
 
 ### Downloads
 
