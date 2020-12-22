@@ -3,6 +3,8 @@ title: Search Templates Configuration
 layout: docs
 category: Unity 7
 ---
+[Search Template Component description](../components/search-template.md)
+
 # Example of SearchTemplate configuration
 
 ```xml
