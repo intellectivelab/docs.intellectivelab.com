@@ -3,7 +3,7 @@ title: SharePoint Connector Configuration - SPNEGO SSO
 layout: docs
 category: Unity 7
 ---
-|**Note**: SharePoint Connector Configuration is the same for Unity ExtJs and Unity React.
+|**Note**: SharePoint Connector Configuration is the same for Unity ExtJS and Unity React.
 
 # Description 
 Unity SharePoint connector support SPNEGO delegated credentials authentication to seamless authenticate already authenticated user to SP target.

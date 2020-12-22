@@ -3,7 +3,7 @@ title: SharePoint Connector Configuration - Auth Code Flow
 layout: docs
 category: Unity 7
 ---
-|**Note**: SharePoint Connector Configuration is the same for Unity ExtJs and Unity React.
+|**Note**: SharePoint Connector Configuration is the same for Unity ExtJS and Unity React.
 
 # Description
 Authorization Code flow used by Unity SharePoint connector to call SP on behalf of user. 

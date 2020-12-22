@@ -3,7 +3,7 @@ title: Sharepoint Data Provider Configuration
 layout: docs
 category: Unity 7
 ---
-|**Note**: SharePoint Data Provider Configuration is the same for Unity ExtJs and Unity React.
+|**Note**: SharePoint Data Provider Configuration is the same for Unity ExtJS and Unity React.
 
 # Description
 Unity SharePoint connector provides tight integration with MS SharePoint. 

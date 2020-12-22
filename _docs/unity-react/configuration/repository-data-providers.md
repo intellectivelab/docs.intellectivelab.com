@@ -3,7 +3,7 @@ title: Repository Data Providers Configuration
 layout: docs
 category: Unity 7
 ---
-|**Note**: Repository Data Providers Configuration is the same for Unity ExtJs and Unity React. 
+|**Note**: Repository Data Providers Configuration is the same for Unity ExtJS and Unity React. 
 
 # Data Providers
 
