@@ -35,5 +35,3 @@ Rules are evaluated in the following order:
 # SSO
 
 *Content to be added*
-
-[SSO Unity Tag](tags-list/sso-tag.md)

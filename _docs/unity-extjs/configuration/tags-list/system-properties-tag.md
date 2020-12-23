@@ -5,7 +5,7 @@ category: Unity 7
 ---
 # Separate Daeja Viewer Windows Configuration
 
-[View Document feature description](../features/document-management/view-document.md)
+[View Document feature description](../../features/document-management/view-document.md)
 
 Separate Daeja viewer windows mode allows viewing multiple documents in separate windows.  
 

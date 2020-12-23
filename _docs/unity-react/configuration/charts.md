@@ -3,7 +3,7 @@ title: Charts Configuration
 layout: docs
 category: Unity 7
 ---
-[Description of Chart Component](../components/chart.md)
+[Chart Component description](../components/chart.md)
 
 # Charts Tag
 

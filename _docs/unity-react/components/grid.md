@@ -3,10 +3,6 @@ title: Unity Components - Grid
 layout: docs
 category: Unity 7
 ---
-# Overview
-
-*content to be added*
-
 # Display Modes
 
 Out of the box, the Grid supports three display modes: **Table View**, **List View** and **Details View**. No any specific configuration required to enable all these modes.
@@ -53,31 +49,30 @@ Details View screen is divided into several panels as shown below:
 
 # Grid Features
 
-## Grouping
-## [Multiple column sorting](grid/multiple-column-sorting.md)
-## [Column resizing](grid/column-resizing.md)
-## Column locking
-## Column spanning
-## Column reordering
-## Column menu
-## Column cell formatting
-## Column cell tools and actions
-## Column cell rendering customization
-## Record text links
-## Multiple row selection
-## Row action
-## Bulk action
-## Ability to add a custom grid action
-## Row actions menu
-## Expandable rows
-## [Pagination and infinite scrolling](grid/pagination-and-infinite-scrolling.md)
-## Ability to use a custom grid pagination
-## Data export
-## Display density settings
-## Ability to compose with other components
-## Adaptive
-## Responsive
-## Configurable
+- Grouping
+- [Multiple column sorting](grid/multiple-column-sorting.md)
+- [Column resizing](grid/column-resizing.md)
+- Column locking
+- Column spanning
+- Column reordering
+- Column menu
+- Column cell formatting
+- Column cell tools and actions
+- Column cell rendering customization
+- Record text links
+- Multiple row selection
+- Row action
+- Bulk action
+- Ability to add a custom grid action
+- Row actions menu
+- Expandable rows
+- [Pagination and infinite scrolling](grid/pagination-and-infinite-scrolling.md)
+- Ability to use a custom grid pagination
+- Data export
+- Display density settings
+- Ability to compose with other components
+- Adaptive
+- Responsive
 
 # Configuration
 

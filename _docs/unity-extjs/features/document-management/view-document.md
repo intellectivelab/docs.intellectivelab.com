@@ -26,4 +26,4 @@ category: Unity 7
 # Configuration
 
 [View Document action configuration](../../configuration/actions/view-document.md)  
-[Viewing multiple documents in separate Daeja viewer windows configuration](../../configuration/system-properties.md)
+[Viewing multiple documents in separate Daeja viewer windows configuration](../../configuration/tags-list/system-properties-tag.md)

@@ -89,15 +89,10 @@ entries:
             output: web, pdf
             id: unity-extjs-installation
             subfolders:
-              - title: Software Requirements
+              - title: System Requirements
                 output: web
-                url: /docs/unity-extjs/installation/software-requirements/
-                id: unity-extjs-installation-software-requirements
-
-              - title: Hardware Requirements
-                output: web
-                url: /docs/unity-extjs/installation/hardware-requirements/
-                id: unity-extjs-installation-hardware-requirements
+                url: /docs/unity-extjs/installation/system-requirements/
+                id: unity-extjs-installation-system-requirements
 
               - title: Installing Unity 7
                 output: web
@@ -273,15 +268,10 @@ entries:
             output: web, pdf
             id: unity-react-installation
             subfolders:
-              - title: Software Requirements
+              - title: System Requirements
                 output: web
-                url: /docs/unity-react/installation/software-requirements/
-                id: unity-react-installation-software-requirements
-
-              - title: Hardware Requirements
-                output: web
-                url: /docs/unity-react/installation/hardware-requirements/
-                id: unity-react-installation-hardware-requirements
+                url: /docs/unity-react/installation/system-requirements/
+                id: unity-react-installation-system-requirements
 
               - title: Installing Unity 7
                 output: web
