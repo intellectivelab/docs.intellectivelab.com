@@ -8,7 +8,7 @@ category: Unity 7
 This document describes the basic deployment of the Interchange product.  
 Interchange is provided with Docker compose configuration that allows user to run all necessary applications in containers.
 
-# Prereqisites
+# Prerequisites
 
 - Docker version 2.0  
 - Docker-compose version 1.10.0+  
