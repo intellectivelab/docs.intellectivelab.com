@@ -51,6 +51,11 @@ entries:
                 url: /docs/unity-extjs/features/integration/
                 id: unity-extjs-features-integration
 
+              - title: User Preferences
+                output: web
+                url: /docs/unity-extjs/features/user-preferences/
+                id: unity-extjs-features-user-preferences
+
           - title: Components
             output: web, pdf
             id: unity-extjs-components
@@ -214,6 +219,11 @@ entries:
                 output: web
                 url: /docs/unity-react/features/integration/
                 id: unity-react-features-integration
+
+              - title: User Preferences
+                output: web
+                url: /docs/unity-react/features/user-preferences/
+                id: unity-react-features-user-preferences
 
               - title: Features Comparison List
                 output: web

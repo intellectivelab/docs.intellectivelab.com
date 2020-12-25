@@ -29,3 +29,6 @@ Tables below lists all the attributes and child tag names for `Component` elemen
 |:----------|:------------|
 |Property   | *definition to be added* |
 |Security   | [Component security restrictions](../../configuration/security.md#security-restrictions) |
+
+[Container tag configuration](container-tag.md)  
+[Dashboards tag configuration](../dashboards.md)  

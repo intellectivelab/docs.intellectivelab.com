@@ -14,7 +14,7 @@ ViewerConfiguration
 TreeModels  
 Plugins  
 UIProperties  
-SystemProperties  
+[SystemProperties](tags-list/system-properties-tag.md)   
 [SSO](tags-list/sso-tag.md)  
 EnterpriseSearch  
 [AccessRoles](tags-list/access-roles-tag.md)  

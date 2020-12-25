@@ -243,10 +243,10 @@ category: Unity 7
 
 | Feature | Unity ExtJs | Unity React | Feature details |
 |:--------------------|:-------------------:|:-------:|:-------:|
-|Localization | + |   |  [add description](features-comparison-list/user-preferences.md) |
-|Choosing user role | + | + |  [add description](features-comparison-list/user-preferences.md) |
-|Choosing preferred language | + |   |  [add description](features-comparison-list/user-preferences.md) |
-|Choosing time zone | + |   |  [add description](features-comparison-list/user-preferences.md) |
-|Choosing theme | + | + |  [add description](features-comparison-list/user-preferences.md) |
-|Help Authoring | + |   |  [add description](features-comparison-list/user-preferences.md) |
-|System Notifications | + |  [U7-2661](https://jira.intellective.com/browse/U7-2661) |  [add description](features-comparison-list/user-preferences.md) |
+|Localization | + |   |  [add description](user-preferences.md) |
+|Choosing user role | + | + |  [add description](user-preferences.md) |
+|Choosing preferred language | + |   |  [add description](user-preferences.md) |
+|Choosing time zone | + |   |  [add description](user-preferences.md) |
+|Choosing theme | + | + |  [add description](user-preferences.md) |
+|Help Authoring | + |   |  [add description](user-preferences.md) |
+|System Notifications | + |  [U7-2661](https://jira.intellective.com/browse/U7-2661) |  [add description](user-preferences.md) |

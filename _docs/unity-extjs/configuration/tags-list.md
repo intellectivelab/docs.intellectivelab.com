@@ -14,10 +14,10 @@ ViewerConfiguration
 TreeModels    
 [Plugins](tags-list/plugins-tag.md)    
 UIProperties    
-SystemProperties    
+[SystemProperties](tags-list/system-properties-tag.md)    
 SSO  
 EnterpriseSearch    
-AccessRoles  
+[AccessRoles](tags-list/access-roles-tag.md)  
 [Datasources](tags-list/datasources-tag.md)  
 [Selectors](tags-list/selectors-tag.md)  
 Facets  

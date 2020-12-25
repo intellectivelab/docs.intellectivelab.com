@@ -43,4 +43,5 @@ Dashboard configuration parameters:
 - component has `folderPath` parameter specified OR search template has `FolderPath` parameter specified
 - user doesn't have permissions to access corresponding folder in repository data provider
 
-[Containers Configuration](dashboards/container-tag.md)
+[Container tag configuration](dashboards/container-tag.md)  
+[Component tag configuration](dashboards/component-tag.md)

@@ -59,4 +59,5 @@ An example of dashboard configuration including the tree view container with 4 s
   </Dashboard>
 ```
    
-See [Component tag configuration](./component-tag.md) for more information on `Component` element configuration.
+[Component tag configuration](./component-tag.md)  
+[Dashboards tag configuration](../dashboards.md)  
