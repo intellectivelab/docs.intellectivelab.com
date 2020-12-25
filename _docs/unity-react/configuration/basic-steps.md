@@ -34,10 +34,6 @@ Also logs contain the following error messages:
 
 | **Note**: in this case `jbpm` is the default profile for Unity.
 
-# System Properties
-
-[System Properties](basic-steps/system-properties.md)
-
 # Macros Configuration
 
 *content to be added*

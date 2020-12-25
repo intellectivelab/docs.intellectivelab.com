@@ -27,7 +27,7 @@ It will show a dropdown with non-system user roles:
 
 `All` role, which represents all roles assigned to the user account, can be set by removing current selector value, 
 i.e. by clicking ![remove](./user-preferences/images/icons/remove.svg) icon. If due to 
-[System Properties Configuration](../../configuration/basic-steps/system-properties.md) `All` role is disabled, 
+[System Properties Configuration](../../configuration/tags-list/system-properties.md) `All` role is disabled, 
 dropdown will be not clearable.
 
 Selecting and clearing the role will lead to page reload after user clicks on `Yes` button of confirmation modal:
@@ -38,7 +38,7 @@ Selecting and clearing the role will lead to page reload after user clicks on `Y
 - If user changes role on analytics page, he will be redirected to `/<context-root>/analytics`.
 - If user changes role on main.jsp page, he will be redirected to `/<context-root>/main.jsp`.
 - This feature is disabled for case when role mode is `RoleUnion` in 
-[System Properties Configuration](../../configuration/basic-steps/system-properties.md) section.
+[System Properties Configuration](../../configuration/tags-list/system-properties.md) section.
 
 See [Access Roles Configuration](../../configuration/tags-list/access-roles-tag.md) for details on roles configuration.
 
