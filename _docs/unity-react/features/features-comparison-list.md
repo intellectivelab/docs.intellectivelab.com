@@ -20,40 +20,40 @@ category: Unity 7
 
 | Feature | Unity ExtJs | Unity React | Feature details |
 |:--------------------|:-------------------:|:-------:|:-------:|
-|Grouping |	 + | [U7-2691](https://jira.intellective.com/browse/U7-2691) | [add description](../components/grid.md#grouping) | 
-|Multiple column sorting | + | + | [description](../components/grid/multiple-column-sorting.md) |
-|Column locking	| + |   | [add description](../components/grid.md#column-locking) |
-|Column spanning | + | + | [add description](../components/grid.md#column-spanning) |
-|Column reordering | + | + | [add description](../components/grid.md#column-reordering) |
-|Column menu | + | + | [add description](../components/grid.md#column-menu) |
-|Column cell formatting (data type formatting) | + | + | [add description](../components/grid.md#column-cell-formatting) |
-|Column cell tools and actions | + | + | [add description](../components/grid.md#column-cell-tools-and-actions) |
-|Column cell rendering customization | + | + | [add description](../components/grid.md#column-cell-rendering-customization) |
-|Record text links |   | + | [add description](../components/grid.md#record-text-links) |
-|Multiple row selection	| + | + | [add description](../components/grid.md#multiple-row-selection) |
-|Row action	| + | + | [add description](../components/grid.md#row-action) |
-|Bulk action | + | + | [add description](../components/grid.md#bulk-action) |
-|Ability to add a custom grid action | + | + | [add description](../components/grid.md#ability-to-add-a-custom-grid-action) |
-|Row actions menu | + | + | [add description](../components/grid.md#row-actions-menu) |
-|Expandable rows | + | [U7-2696](https://jira.intellective.com/browse/U7-2696) | [add description](../components/grid.md#expandable-rows) |
-|Pagination	| + | + | [add description](../components/grid/pagination-and-infinite-scrolling.md) |
-|Ability to use a custom grid pagination |   | + | [add description](../components/grid.md#ability-to-use-a-custom-grid-pagination) |
-|Infinite scrolling	| + | + | [add description](../components/grid/pagination-and-infinite-scrolling.md) |
-|Data export | + | + | [add description](../components/grid.md#data-export) |
-|Display density settings |   | + | [add description](../components/grid.md#display-density-settings) |
-|Ability to compose with other components |   | + | [add description](../components/grid.md#ability-to-compose-with-other-components) |
-|Adaptive |   | + | [add description](../components/grid.md#adaptive) |
-|Responsive	|   | + | [add description](../components/grid.md#responsive) |
-|Configurable | + | + | [add description](../components/grid.md#configurable) |
+|Grouping |	 + |  | [add description](../components/grid.md) | 
+|Multiple column sorting | + | + | [description](../components/grid.md) |
+|Column locking	| + |   | [add description](../components/grid.md) |
+|Column spanning | + | + | [add description](../components/grid.md) |
+|Column reordering | + | + | [add description](../components/grid.md) |
+|Column menu | + | + | [add description](../components/grid.md) |
+|Column cell formatting (data type formatting) | + | + | [add description](../components/grid.md) |
+|Column cell tools and actions | + | + | [add description](../components/grid.md) |
+|Column cell rendering customization | + | + | [add description](../components/grid.md) |
+|Record text links |   | + | [add description](../components/grid.md) |
+|Multiple row selection	| + | + | [add description](../components/grid.md) |
+|Row action	| + | + | [add description](../components/grid.md) |
+|Bulk action | + | + | [add description](../components/grid.md) |
+|Ability to add a custom grid action | + | + | [add description](../components/grid.md) |
+|Row actions menu | + | + | [add description](../components/grid.md) |
+|Expandable rows | + | | [add description](../components/grid.md) |
+|Pagination	| + | + | [add description](../components/grid.md) |
+|Ability to use a custom grid pagination |   | + | [add description](../components/grid.md) |
+|Infinite scrolling	| + | + | [add description](../components/grid.md) |
+|Data export | + | + | [add description](../components/grid.md) |
+|Display density settings |   | + | [add description](../components/grid.md) |
+|Ability to compose with other components |   | + | [add description](../components/grid.md) |
+|Adaptive |   | + | [add description](../components/grid.md) |
+|Responsive	|   | + | [add description](../components/grid.md) |
+|Configurable | + | + | [add description](../components/grid.md) |
 
 # Search criteria panel 
 
 | Feature | Unity ExtJs | Unity React | Feature details |
 |:--------------------|:-------------------:|:-------:|:-------:|
-|Configurable | + | + | [add description](../components/search-criteria-panel.md#configurable) |
+|Configurable | + | + | [add description](../components/search-criteria-panel.md) |
 |HTML5 input types support | + | + | [add description](../components/search-criteria-panel.md) |
 |RTL & LTR support | + | + | [add description](../components/search-criteria-panel.md) |
-|RTF support |   | [U7-2697](https://jira.intellective.com/browse/U7-2697) | [add description](../components/search-criteria-panel.md) |
+|RTF support |   | | [add description](../components/search-criteria-panel.md) |
 |Currency field |   | + | [add description](../components/search-criteria-panel.md) |
 |Formatted text input field |   | + | [add description](../components/search-criteria-panel.md) |
 |Date and time picker | + | + | [add description](../components/search-criteria-panel.md) |
@@ -63,10 +63,10 @@ category: Unity 7
 |Facet(category) field |   | + | [add description](../components/search-criteria-panel.md) |
 |Range slider |   | + | [add description](../components/search-criteria-panel.md) |
 |Ability to add a custom field | + | + | [add description](../components/search-criteria-panel.md) |
-|Linked dropdowns | + | [U7-2698](https://jira.intellective.com/browse/U7-2698) | [add description](../components/search-criteria-panel.md) |
+|Linked dropdowns | + |  | [add description](../components/search-criteria-panel.md) |
 |Conditional criteria fields rendering |   | + | [add description](../components/search-criteria-panel.md) |
 |Client-side criteria field validation | + | + | [add description](../components/search-criteria-panel.md) |
-|Remote criteria field validation |   | [U7-2700](https://jira.intellective.com/browse/U7-2700) | [add description](../components/search-criteria-panel.md) |
+|Remote criteria field validation |   | | [add description](../components/search-criteria-panel.md) |
 |Ability to add a custom criteria field validation | + | + | [add description](../components/search-criteria-panel.md) |
 |Criteria defaults | + | + | [add description](../components/search-criteria-panel.md) |
 |Criteria sections (fields grouping) | + | + | [add description](../components/search-criteria-panel.md) |
@@ -85,7 +85,7 @@ category: Unity 7
 |Configurable | + | + | [add description](../components/properties-view-form.md) |
 |HTML5 input types support | + | + | [add description](../components/properties-view-form.md) |
 |RTL & LTR support | + | + | [add description](../components/properties-view-form.md) |
-|RTF support | + | [U7-2697](https://jira.intellective.com/browse/U7-2697) | [add description](../components/properties-view-form.md) |
+|RTF support | + || [add description](../components/properties-view-form.md) |
 |Date and time picker | + | + | [add description](../components/properties-view-form.md) |
 |Date range picker | + | + | [add description](../components/properties-view-form.md) |
 |Range slider |   | + | [add description](../components/properties-view-form.md) |
@@ -93,15 +93,15 @@ category: Unity 7
 |Formatted text input field |   | + | [add description](../components/properties-view-form.md) |
 |Client-side select field | + | + | [add description](../components/properties-view-form.md) |
 |Remote select field | + | + | [add description](../components/properties-view-form.md) |
-|Lookup field | + | [U7-2702](https://jira.intellective.com/browse/U7-2702) | [add description](../components/properties-view-form.md) |
+|Lookup field | + || [add description](../components/properties-view-form.md) |
 |Categories field – facet field |   | + | [add description](../components/properties-view-form.md) |
-|Selection field with the choice description input |   | [U7-2703](https://jira.intellective.com/browse/U7-2703) | [add description](../components/properties-view-form.md) |
+|Selection field with the choice description input |   | | [add description](../components/properties-view-form.md) |
 |Autocomplete location field via Google Maps |   | + | [add description](../components/properties-view-form.md) |
 |Client-side form field validation | + | + | [add description](../components/properties-view-form.md) |
-|Remote form field validation | + | [U7-2700](https://jira.intellective.com/browse/U7-2700) | [add description](../components/properties-view-form.md) |
+|Remote form field validation | + |  | [add description](../components/properties-view-form.md) |
 |Ability to add a custom form field | + | + | [add description](../components/properties-view-form.md) |
 |Ability to add a custom form field validation | + | + | [add description](../components/properties-view-form.md) |
-|Linked selectors | + | [U7-2698](https://jira.intellective.com/browse/U7-2698) | [add description](../components/properties-view-form.md) |
+|Linked selectors | + |  | [add description](../components/properties-view-form.md) |
 |Conditional form fields rendering |   | + | [add description](../components/properties-view-form.md) |
 |Form defaults | + | + | [add description](../components/properties-view-form.md) |
 |Form sections (fields grouping) | + | + | [add description](../components/properties-view-form.md) |
@@ -128,7 +128,7 @@ category: Unity 7
 |Search criteria | + | + | [add description](../components/search-template.md) |
 |Folder view | + | + | [add description](../components/search-template.md) |
 |Ability to bundle multiple search templates | + | + | [add description](../components/search-template.md) |
-|Ability to link multiple search templates |   | [U7-2713](https://jira.intellective.com/browse/U7-2713) | [add description](../components/search-template.md) |
+|Ability to link multiple search templates |   | | [add description](../components/search-template.md) |
 |Fuzzy search |   |   | [add description](../components/search-template.md) |
 |Enterprise search | + | + | [add description](../components/search-template.md) |
 |Quick search (date ranges, text input, choices, and categories) |   | + | [add description](../components/search-template.md) |
@@ -170,12 +170,12 @@ category: Unity 7
 |Scatter Chart |   | + | [add description](../components/chart.md) |
 |Composite Chart |   | + | [add description](../components/chart.md) |
 |Pivot | + |   | [add description](../components/chart.md) |
-|Sunburst |   | [IB-1091](https://jira.intellective.com/browse/IB-1091) | [add description](../components/chart.md) |
+|Sunburst |   || [add description](../components/chart.md) |
 |Treemap |   | + | [add description](../components/chart.md) |
 |Heatmap |   | + | [add description](../components/chart.md) |
 |Table Heatmap |   | + | [add description](../components/chart.md) |
-|Chart drill down capability |   | [IB-616](https://jira.intellective.com/browse/IB-616) | [add description](../components/chart.md) |
-|Show/hide dashboard components |   | [IB-767](https://jira.intellective.com/browse/IB-767) | [add description](../components/chart.md) |
+|Chart drill down capability |   || [add description](../components/chart.md) |
+|Show/hide dashboard components |   |  | [add description](../components/chart.md) |
 |Ability to add a custom component |   | + | [add description](../components/chart.md) |
 |Ability to clusterize/bundle components into containers |   | + | [add description](../components/chart.md) |
 |Saved Filters |   | + | [add description](../components/chart.md) |
@@ -188,9 +188,9 @@ category: Unity 7
 |:--------------------|:-------------------:|:-------:|:-------:|
 |Create a document       | + | + |  [add description](document-management.md) |
 |Create a document with multiple content        | + | + |  [add description](document-management.md) |
-|Drag and drop a file into the grid  | + | [U7-2714](https://jira.intellective.com/browse/U7-2714) | [add description](document-management.md) |
+|Drag and drop a file into the grid  | + || [add description](document-management.md) |
 |Drag and Drop a file into the create/view form   |   | + |  [add description](document-management.md)      |
-|Folder select - upload a document into the selected folder | + | [U7-2715](https://jira.intellective.com/browse/U7-2715) |[add description](document-management.md) |
+|Folder select - upload a document into the selected folder | + |  |[add description](document-management.md) |
 |Document search and navigation        | + | + |[add description](document-management.md) |
 |Document view and update properties      | + | + | [add description](document-management.md) |
 |Document versioning        | + | + |[add description](document-management.md) |
@@ -249,4 +249,4 @@ category: Unity 7
 |Choosing time zone | + |   |  [add description](user-preferences.md) |
 |Choosing theme | + | + |  [add description](user-preferences.md) |
 |Help Authoring | + |   |  [add description](user-preferences.md) |
-|System Notifications | + |  [U7-2661](https://jira.intellective.com/browse/U7-2661) |  [add description](user-preferences.md) |
+|System Notifications | + |   |  [add description](user-preferences.md) |

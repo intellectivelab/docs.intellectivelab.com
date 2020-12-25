@@ -5,42 +5,47 @@ category: Unity 7
 ---
 # Unity Tags
 
-Solution    
-Filters    
-VersionsAPI    
-LDAP    
-UpdateTemplates    
-ViewerConfiguration    
-TreeModels    
-[Plugins](tags-list/plugins-tag.md)    
-UIProperties    
-[SystemProperties](tags-list/system-properties-tag.md)    
-SSO  
-EnterpriseSearch    
 [AccessRoles](tags-list/access-roles-tag.md)  
-[Datasources](tags-list/datasources-tag.md)  
-[Selectors](tags-list/selectors-tag.md)  
-Facets  
-Properties   
-Tabs    
-ColumnSets    
-UiComponents  
+[Actions](actions.md)   
 Charts  
-Indicators  
-Perspectives    
-Dashboard      
+ColumnSets    
 CustomConfiguration    
+Dashboard      
+[Datasources](tags-list/datasources-tag.md)  
+EnterpriseSearch    
+Facets  
+Filters   
+[Grids](grids.md)   
+Indicators  
+LDAP    
+Perspectives    
+[Plugins](tags-list/plugins-tag.md)    
+Properties   
+[RepositoryDataProviders](repository-data-providers.md)  
+SSO  
+[SearchTemplates](search-templates.md)  
+[Selectors](tags-list/selectors-tag.md)  
+Solution    
 Solutions    
+[SolutionsConfiguration](solutions-configuration.md)  
+[SystemProperties](tags-list/system-properties-tag.md)      
+Tabs    
+TreeModels    
+UIProperties    
+UiComponents  
+UpdateTemplates    
 UserAudit  
+VersionsAPI    
+ViewerConfiguration    
 
 # Solution Tags
 
-SolutionConfig    
 FieldSets    
 FieldTypes    
+[Inbaskets](tags-list/inbaskets-tag.md)      
 Lookups  
-Inbaskets    
 Pages    
+SolutionConfig    
 Tools    
 Views  
 

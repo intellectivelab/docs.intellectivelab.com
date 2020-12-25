@@ -1,11 +1,11 @@
 ---
-title: Delete Document Feature
+title: Delete a Document Feature
 layout: docs
 category: Unity 7
 ---
 # Description
 
-Delete document action allows to delete a document from repository data provider. It can be executed from grid 
+`Delete` document action allows to delete a document from repository data provider. It can be executed from grid 
 context-menu or `Properties` tab of `Document Details` page. 
 
 *content to be added*

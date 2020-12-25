@@ -3,7 +3,7 @@ title: Installing Unity 7
 layout: docs
 category: Unity 7
 ---
-|**Note**: Unity Installation is the same for Unity ExtJs and Unity React.
+|**Note**: Unity Installation is the same for Unity ExtJS and Unity React.
 
 *content to be added*
 

@@ -5,37 +5,46 @@ category: Unity 7
 ---
 # Unity Tags
 
-Solution  
-Filters  
-VersionsAPI  
-LDAP  
-UpdateTemplates  
-ViewerConfiguration  
-TreeModels  
-Plugins  
-UIProperties  
-[SystemProperties](tags-list/system-properties-tag.md)   
-[SSO](tags-list/sso-tag.md)  
-EnterpriseSearch  
 [AccessRoles](tags-list/access-roles-tag.md)  
-[Datasources](tags-list/datasources-tag.md)  
-[Selectors](tags-list/selectors-tag.md)    
-[Facets](tags-list/facets-tag.md)  
-[Properties](tags-list/properties-tag.md)  
-Tabs  
+[Actions](actions.md)   
+[Charts](charts.md)  
 ColumnSets  
-[UiComponents](tags-list/ui-components-tag.md)  
 CustomConfiguration  
+[Dashboards](dashboards.md)  
+[Datasources](tags-list/datasources-tag.md)  
+EnterpriseSearch  
+[Facets](tags-list/facets-tag.md)  
+Filters  
+[Grids](grids.md)  
+[Indicators](indicators.md)  
+LDAP  
+[Perspectives](perspectives.md)  
+Plugins  
+[Properties](tags-list/properties-tag.md)  
+[RepositoryDataProviders](repository-data-providers.md)     
+[SSO](tags-list/sso-tag.md)  
+[SearchTemplates](search-templates.md)  
+[Selectors](tags-list/selectors-tag.md)    
+Solution  
 Solutions  
+[SolutionsConfiguration](solutions-configuration.md)   
+[SystemProperties](tags-list/system-properties-tag.md)   
+Tabs  
+TreeModels  
+UIProperties  
+[UiComponents](tags-list/ui-components-tag.md)  
+UpdateTemplates  
 UserAudit
+VersionsAPI  
+ViewerConfiguration  
 
 # Solution Tags
 
-SolutionConfig    
 FieldSets    
 FieldTypes    
-[Lookups](tags-list/lookups.md)    
 Inbaskets    
+[Lookups](tags-list/lookups.md)    
 Pages    
+SolutionConfig    
 Tools    
 [Views](tags-list/views-tag.md)  
