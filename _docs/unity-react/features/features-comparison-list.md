@@ -21,7 +21,7 @@ category: Unity 7
 | Feature | Unity ExtJs | Unity React | Feature details |
 |:--------------------|:-------------------:|:-------:|:-------:|
 |Grouping |	 + | [U7-2691](https://jira.intellective.com/browse/U7-2691) | [add description](../components/grid.md#grouping) | 
-|Multiple column sorting | + | + | [description](../components/grid.md#multiple-column-sorting) |
+|Multiple column sorting | + | + | [description](../components/grid/multiple-column-sorting.md) |
 |Column locking	| + |   | [add description](../components/grid.md#column-locking) |
 |Column spanning | + | + | [add description](../components/grid.md#column-spanning) |
 |Column reordering | + | + | [add description](../components/grid.md#column-reordering) |
@@ -36,9 +36,9 @@ category: Unity 7
 |Ability to add a custom grid action | + | + | [add description](../components/grid.md#ability-to-add-a-custom-grid-action) |
 |Row actions menu | + | + | [add description](../components/grid.md#row-actions-menu) |
 |Expandable rows | + | [U7-2696](https://jira.intellective.com/browse/U7-2696) | [add description](../components/grid.md#expandable-rows) |
-|Pagination	| + | + | [add description](../components/grid.md#pagination) |
+|Pagination	| + | + | [add description](../components/grid/pagination-and-infinite-scrolling.md) |
 |Ability to use a custom grid pagination |   | + | [add description](../components/grid.md#ability-to-use-a-custom-grid-pagination) |
-|Infinite scrolling	| + | + | [add description](../components/grid.md#infinite-scrolling) |
+|Infinite scrolling	| + | + | [add description](../components/grid/pagination-and-infinite-scrolling.md) |
 |Data export | + | + | [add description](../components/grid.md#data-export) |
 |Display density settings |   | + | [add description](../components/grid.md#display-density-settings) |
 |Ability to compose with other components |   | + | [add description](../components/grid.md#ability-to-compose-with-other-components) |
@@ -244,7 +244,7 @@ category: Unity 7
 | Feature | Unity ExtJs | Unity React | Feature details |
 |:--------------------|:-------------------:|:-------:|:-------:|
 |Localization | + |   |  [add description](features-comparison-list/user-preferences.md) |
-|Choosing user role | + |   |  [add description](features-comparison-list/user-preferences.md) |
+|Choosing user role | + | + |  [add description](features-comparison-list/user-preferences.md) |
 |Choosing preferred language | + |   |  [add description](features-comparison-list/user-preferences.md) |
 |Choosing time zone | + |   |  [add description](features-comparison-list/user-preferences.md) |
 |Choosing theme | + | + |  [add description](features-comparison-list/user-preferences.md) |
