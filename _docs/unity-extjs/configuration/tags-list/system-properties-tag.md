@@ -1,5 +1,5 @@
 ---
-title: System Properties Tag Configuration
+title: SystemProperties Tag Configuration
 layout: docs
 category: Unity 7
 ---
