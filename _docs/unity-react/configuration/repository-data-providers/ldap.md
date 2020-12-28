@@ -9,9 +9,9 @@ category: Unity 7
 
 Perform configuration steps [common to all Unity data providers](../repository-data-providers.md#common-steps-to-configure-data-provider).
 
-# Datasource
+# Datasource Configuration
 
-The LDAP provider requires configuring datasource of `com.intellective.unity.datasources.LdapDatasource` class that points to the target LDAP server.
+The LDAP data provider requires configuring datasource of `com.intellective.unity.datasources.LdapDatasource` class that points to the target LDAP server.
 
 |Attribute | Description |
 |:---------|:------------|
@@ -22,8 +22,8 @@ The LDAP provider requires configuring datasource of `com.intellective.unity.dat
 | Host | LDAP server host name | `<Host>192.168.111.123</Host>` |
 | Port | (optional) LDAP server port | `<Port>389</Port>` |
 | BaseDN | LDAP Base Distinguished Name | `<BaseDN>CN=Users,DC=ext,DC=acme,DC=com</BaseDN>` | 
-| SSLEnabled | Boolean flag to enable LDAP SSL connection. Default value: false | `<SSLEnabled>true</SSLEnabled>` | 
-| TraceEnabled | Boolean flag to enable LDAP trace. Default value: false | `<TraceEnabled>true</TraceEnabled>` | 
+| SSLEnabled | Boolean flag to enable LDAP SSL connection. Default value: `false` | `<SSLEnabled>true</SSLEnabled>` | 
+| TraceEnabled | Boolean flag to enable LDAP trace. Default value: `false` | `<TraceEnabled>true</TraceEnabled>` | 
 | Authentication | LDAP authentication type. Default value: `simple` | `<Authentication>simple</Authentication>` | 
 | SearchScope | LDAP search scope. Default value: `SUBTREE_SCOPE` | `<SearchScope>SUBTREE_SCOPE</SearchScope>` | 
 | User | LDAP bind user | `<User>ldap_svc_acc@ext.acme.com</User>` | 
@@ -44,9 +44,9 @@ For example:
 ...
 ```
 
-# Repository Data Provider
+# Repository Data Provider Configuration
 
-The LDAP provider requires configuring repository data provider of `com.intellective.unity.providers.ldap.LdapProvider` class that points to the target LDAP server.  
+The LDAP data provider requires configuring repository data provider of `com.intellective.unity.providers.ldap.LdapProvider` class that points to the target LDAP server.  
 
 |Attribute | Description |
 |:---------|:------------|
@@ -55,10 +55,10 @@ The LDAP provider requires configuring repository data provider of `com.intellec
 | Property       | Property description              | Example        |
 |:---------------|:--------------------------------|:---------------|
 | OperatorsSet | [Operators set](ldap.md#operators-set) that should be used | `<OperatorsSet>LDAP</OperatorsSet>` | 
-| Datasource | [LDAP data source](ldap.md#datasource) reference| `<Datasource>ldapDS</Datasource>` |
+| Datasource | [LDAP data source](ldap.md#datasource-configuration) reference| `<Datasource>ldapDS</Datasource>` |
 | ResultLimit | (Optional) Sets the maximum number of entries to be returned as a result of the search. Default value: unlimited | `<ResultLimit>150</ResultLimit>` |
 
-This repository data provider supports the standard [PropertyNameMapper](../repository-data-providers.md#property-name-mapping) section configuration.  
+The LDAP data provider supports standard [PropertyNameMapper](../repository-data-providers.md#property-name-mapping) section configuration.  
 
 For example:
 ```xml
@@ -107,7 +107,7 @@ For example:
 ...
 ```
 
-# Context Query
+# Context Query Configuration
 
 Please refer to [LDAP Search Template configuration](../search-templates/ldap.md) for the context query configuration details (search using current user's LDAP groups, etc...).
 
