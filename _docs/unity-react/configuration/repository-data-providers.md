@@ -17,6 +17,7 @@ Unity Data Provider is a unified facade to integrate content from different exte
 - CMIS
 - [SharePoint](repository-data-providers/sharepoint.md)
 - [Enterprise Search](repository-data-providers/enterprise-search.md)
+- [LDAP](repository-data-providers/ldap.md)
 
 # Basic Configuration Options
 
@@ -41,6 +42,7 @@ In Unity configuration `xml` file define unique `RepositoryDataProvider ID` and 
 |CMIS, Alfresco |com.vegaecm.vspace.providers.cmis.CMISRepositoryDataProvider|
 |[Database](repository-data-providers/db.md) |com.vegaecm.vspace.providers.db.DBRepositoryDataProvider|
 |Case Management |com.vegaecm.vu.ucm.providers.UcmProvider|
+|LDAP |com.intellective.unity.providers.ldap.LdapProvider|
 |*content to be added* |com.vegaecm.vspace.providers.categorization.CategorizationProvider|
 |*content to be added* |com.vegaecm.vspace.providers.categorization.PropertyCategorizationProvider|
 |*content to be added* |com.vegaecm.vspace.providers.bo.BusinessObjectDataProvider|
