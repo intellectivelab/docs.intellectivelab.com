@@ -14,7 +14,7 @@ Example of configuration:
 </SystemProperties>
 ```
 
-| Property name | Description |
+| Property ID | Description |
 |:--------------|:------------|
 |`role.mode` | `RoleSelection` - provides ability for user to change the role <br/>`RoleUnion` - uses union of all available for current user roles, with no ability to choose a specific one |
 |`role.all_role.disabled`| `[true|false]` Disables `All` role for user when equals `true`. Default value: `false` |
