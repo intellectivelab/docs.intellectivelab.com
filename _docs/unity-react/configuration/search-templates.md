@@ -50,3 +50,19 @@ Criteria section can contain a set of `Criterion`s to be used for rendering crit
 |:--------------------|:------------|
 | SortField           | `SortField` value refers to a [Property](tags-list/properties-tag.md) `ID` attribute (the property should be sortable).  Default sorting may be defined on the [Grid](../configuration/grids.md#multiple-column-sorting) level or on the `SearchTemplate` level. If defined on both levels, setting from the `Grid` is in effect.     |
 | SortField >> Order  | Optional `Order` attribute may have value `ASC` for ascending and `DESC` for descending order (`ASC` is a default). |
+
+# Expand/Collapse configuration
+```xml
+<SearchTemplate ID="document_Search_Documents">
+    <Groups>
+        <Group ID="criteriagroup" Title="Search criteria" Expanded="false"/>
+        <Group ID="multiValue" Title="Multi Value fields"/>
+        <Group ID="selectors" Title="Selectors" Expanded="true"/>
+        <Group ID="document_Search_Documents" Title="Documents searching" Expanded="false"/>
+    </Groups>
+</SearchTemplate>
+```
+ 
+Group value can have an expanded tag with values ``true`` or `false`.
+
+![Filters](search-templates/images/filters.png)
