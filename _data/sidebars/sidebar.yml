@@ -8,7 +8,7 @@ entries:
         url: /docs/unity-overview/
         id: unity-overview
 
-      - title: Unity ExtJs
+      - title: Unity ExtJS
         output: web, pdf
         id: unity-extjs
         folderitems:
@@ -89,15 +89,10 @@ entries:
             output: web, pdf
             id: unity-extjs-installation
             subfolders:
-              - title: Software Requirements
+              - title: System Requirements
                 output: web
-                url: /docs/unity-extjs/installation/software-requirements/
-                id: unity-extjs-installation-software-requirements
-
-              - title: Hardware Requirements
-                output: web
-                url: /docs/unity-extjs/installation/hardware-requirements/
-                id: unity-extjs-installation-hardware-requirements
+                url: /docs/unity-extjs/installation/system-requirements/
+                id: unity-extjs-installation-system-requirements
 
               - title: Installing Unity 7
                 output: web
@@ -273,15 +268,10 @@ entries:
             output: web, pdf
             id: unity-react-installation
             subfolders:
-              - title: Software Requirements
+              - title: System Requirements
                 output: web
-                url: /docs/unity-react/installation/software-requirements/
-                id: unity-react-installation-software-requirements
-
-              - title: Hardware Requirements
-                output: web
-                url: /docs/unity-react/installation/hardware-requirements/
-                id: unity-react-installation-hardware-requirements
+                url: /docs/unity-react/installation/system-requirements/
+                id: unity-react-installation-system-requirements
 
               - title: Installing Unity 7
                 output: web
@@ -418,19 +408,15 @@ entries:
                 url: /docs/unity-salesforce/configuration/tags-list/
                 id: unity-salesforce-configuration-tags-list
 
-      - title: Unity for CRM
+      - title: Unity for ICN
+        url: /docs/unity-for-icn/
+        id: unity-for-icn
         output: web, pdf
-        id: unity-for-crm
-        folderitems:
-          - title: Unity for Dynamics
-            url: /docs/unity-for-crm/unity-for-dynamics/
-            id: unity-for-crm-unity-for-dynamics
-            output: web, pdf
 
-          - title: Unity for ICN
-            url: /docs/unity-for-crm/unity-for-icn/
-            id: unity-for-crm-unity-for-icn
-            output: web, pdf
+      - title: Unity for Dynamics
+        url: /docs/unity-for-dynamics/
+        id: unity-for-dynamics
+        output: web, pdf
 
       - title: Enterprise Search
         output: web
@@ -493,6 +479,10 @@ entries:
         output: web, pdf
         id: interchange
         folderitems:
+          - title: Deployment
+            url: /docs/interchange/deployment/
+            id: interchange-deployment
+            output: web, pdf
           - title: Customization
             url: /docs/interchange/customization/
             id: interchange-customization
@@ -511,6 +501,11 @@ entries:
             output: web
             url: /docs/release-notes/unity-7-7-release-notes/
             id: release-notes-unity-7-7-release-notes
+
+          - title: Unity for Intellective Release Notes
+            output: web
+            url: /docs/release-notes/u4i-release-notes/
+            id: release-notes-u4i-release-notes
 
       - title: Tutorials
         output: web
@@ -549,15 +544,10 @@ entries:
                 url: /docs/development/unity-api/security/
                 id: development-unity-api-security
 
-              - title: Resources
+              - title: OpenAPI Specification
                 output: web
-                url: /docs/development/unity-api/resources/
-                id: development-unity-api-resources
-
-              - title: References
-                output: web
-                url: /docs/development/unity-api/references/
-                id: development-unity-api-references
+                url: /docs/development/unity-api/openapi-specification/
+                id: development-unity-api-openapi-specification
 
           - title: Development Materials
             output: web

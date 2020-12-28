@@ -5,6 +5,13 @@ category: Unity 7
 ---
 This is a guide how to create a page for github documentation site using [Markdown syntax](markdown-syntax.md). 
 
+# Filenames and Folder Names
+
+Use lowercase letters and `-` for filenames and folder names. Examples: 
+
+`search-templates.md`  
+`attach-document.png`
+
 # Markdown File Structure and Page Structure 
 
 ## Metadata in the beginning of .md file 
@@ -72,7 +79,7 @@ To align code block with text in list use `tab` before code block.
 - Crop screenshots accurately 
 - For highlighting use red frames, red color is R220 G56 B64 (#dc3840):  
 	![highlight](how-to-create-page/images/image10.png) 
-- If you need to add text on screenshot, use the same red color and Lato font
+- If you need to add text on a screenshot, use the same red color and Lato font
 - Use `:` after the text before image if the image illustrates this text 
 
 Images should be placed to `name-of-your-md-file/images/` folder:
@@ -121,14 +128,14 @@ To insert a link to external page type:
 Don't use `here` as a link title, always try to use a meaningful name.  
 Use `[url](url)` if you need to make url visible.
 
-### Links between Unity ExtJs and Unity React
+### Links between Unity ExtJS and Unity React
 
-Some content is common for Unity ExtJs and React. Do not create pages with the same content, use links instead:
+Some content is common for Unity ExtJS and React. Do not create pages with the same content, use links instead:
 
-- Write a note that this content is the same for both Unity and place this note on both pages.
-- Place a content just on one of them (preferrably in Unity React), and place a link on another.  
+- Write a note that this content is the same for both Unity and place this note on both pages
+- Place a content just on one of them (preferably in Unity React), and place a link on another:  
 
-![ExtJs-React linking](how-to-create-page/images/extjs-react-linking.png)
+![ExtJS-React linking](how-to-create-page/images/extjs-react-linking.png)
 
 ### Downloads
 
@@ -142,11 +149,11 @@ Keep empty row before and after table code.
 
 ### Confidential information 
 
-Remove all confidential information (passwords etc) from your content. Check carefully: 
+Remove all confidential information (passwords, customer data etc) from your content. Check carefully: 
 - text
 - images 
 - links 
-- files for downloads (configs etc)
+- files to download
 
 ## Next step recommendations (optional) 
 
@@ -188,4 +195,4 @@ To open page in local environment:
 Read whole page before creating pull request. Verify that all images are shown properly and each link works.  
 Check automatic Table of Contents in the beginning of page, if its structure corresponds to content.
 
-&rarr; [Next step: How To Add Page To Documentation Portal](../how-to-add-page-to-doc-portal.md)
+&rarr; [Next step: How to Add a Page to Documentation Portal](../how-to-add-page-to-doc-portal.md)

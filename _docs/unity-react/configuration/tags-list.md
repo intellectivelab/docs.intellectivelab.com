@@ -6,20 +6,28 @@ category: Unity 7
 # Unity Tags
 
 [AccessRoles](tags-list/access-roles-tag.md)  
+[Actions](actions.md)   
+[Charts](charts.md)  
 ColumnSets  
 CustomConfiguration  
+[Dashboards](dashboards.md)  
 [Datasources](tags-list/datasources-tag.md)  
 EnterpriseSearch  
 [Facets](tags-list/facets-tag.md)  
 Filters  
+[Grids](grids.md)  
+[Indicators](indicators.md)  
 LDAP  
+[Perspectives](perspectives.md)  
 Plugins  
 [Properties](tags-list/properties-tag.md)  
 [RepositoryDataProviders](repository-data-providers.md)     
-[SSO](tags-list/sso-tag.md)  
+SSO  
+[SearchTemplates](search-templates.md)  
 [Selectors](tags-list/selectors-tag.md)    
 Solution  
 Solutions  
+[SolutionsConfiguration](solutions-configuration.md)   
 SystemProperties  
 Tabs  
 TreeModels  

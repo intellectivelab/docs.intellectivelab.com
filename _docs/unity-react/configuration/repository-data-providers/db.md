@@ -3,7 +3,7 @@ title: Database Data Provider Configuration
 layout: docs
 category: Unity 7
 ---
-|**Note**: Database Data Provider Configuration is the same for Unity ExtJs and Unity React.
+|**Note**: Database Data Provider Configuration is the same for Unity ExtJS and Unity React.
 
 Perform configuration steps [common to all Unity data providers](../repository-data-providers.md#common-steps-to-configure-data-provider).   
 

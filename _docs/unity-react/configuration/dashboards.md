@@ -3,6 +3,8 @@ title: Dashboards Configuration
 layout: docs
 category: Unity 7
 ---
+[Dashboard Component description](../components/dashboard.md)
+
 # Dashboards tag
 
 Example of dashboard configuration:

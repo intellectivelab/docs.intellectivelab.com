@@ -107,7 +107,56 @@ The Sunburst Chart component is built based on [React-Vis Sunburst diagram](http
 
 # How To Use Charts
 
-*Content to be added*
+Chart consists of several colored segments, and each segment displays particular group of data on the page. 
+Charts provide an interactive way to use and work with datasets:
+
+![Chart tips](chart/images/chart_in_interface.png)
+
+## Chart data filtering
+
+Charts support filtering data by clicking on one or more segments. 
+It works like Search criteria panel but gives an opportunity to do it right on the chart.
+
+E.g. clicking `Telecommunications` segment on `Salary by Industry` chart will cause selection 
+only records with `Telecommunications` in `Industry` column on the grid 
+and displaying only `Telecommunications` segment on `Jobs by Industry` chart:
+
+!["Salary by Industry" chart](chart/images/chart_select1.png)
+
+!["Users" grid filtered by "Telecommunications" industry](chart/images/filtered_grid.png)
+
+!["Jobs by Industry" chart](chart/images/chart_select2.png)
+
+## Chart legend
+
+The legend is associated with a graphical display of data in the graph area. 
+Each specific entry in the legend contains a legend key that displays the color of a specific data group. 
+Some charts, that don't follow hierarchical structure, are using legend to operate with groups of data. 
+Click on it enables/disables several data group view:
+
+![Disabling some chart data view with legend](chart/images/legend_operations.png)
+
+## Chart settings
+
+By default, charts support settings with some preset configurations.
+
+[Radial charts](#radial-charts) support:
+
+- Enable/Disable chart legend
+- Enable/Disable chart labels
+
+[Plot charts](#plot-charts) support:
+
+- Enable/Disable chart legend
+
+To open a dropdown with chart settings click the icon in the top right corner of chart:
+
+![Chart settings icon](chart/images/chart_settings.png)
+
+All changes are saved in the browser localStorage on fly, 
+so even after reopening page all your chart customizations will apply.
+
+## Empty data message
 
 If data is empty or has no values, `No content to display` warning message will be shown below the chart title:
 

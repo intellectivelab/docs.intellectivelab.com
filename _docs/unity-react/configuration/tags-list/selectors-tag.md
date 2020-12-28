@@ -3,7 +3,7 @@ title: Selectors Tag Configuration
 layout: docs
 category: Unity 7
 ---
-|**Note**: Selectors Tag Configuration is the same for Unity ExtJs and Unity React.
+|**Note**: Selectors Tag Configuration is the same for Unity ExtJS and Unity React.
 
 # Description
 Unity selector is a server side component providing data for UI combo boxes. Unity selectors are implemented in java code.

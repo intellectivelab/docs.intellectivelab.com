@@ -57,7 +57,7 @@ Other token related activities include:
 
 ## Relevant standards 
 
-The relevant `oAuth2 class="subheader"` standards can be found [here](references.md#relevant-standards).
+The relevant `oAuth2 class="subheader"` standards can be found [here](overview.md#relevant-standards).
 
 # User Authorization 
 

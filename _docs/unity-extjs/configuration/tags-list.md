@@ -6,6 +6,7 @@ category: Unity 7
 # Unity Tags
 
 AccessRoles  
+[Actions](actions.md)   
 Charts  
 ColumnSets    
 CustomConfiguration    
@@ -13,17 +14,21 @@ Dashboard
 [Datasources](tags-list/datasources-tag.md)  
 EnterpriseSearch    
 Facets  
-Filters    
+Filters   
+[Grids](grids.md)   
 Indicators  
 LDAP    
 Perspectives    
 [Plugins](tags-list/plugins-tag.md)    
 Properties   
+[RepositoryDataProviders](repository-data-providers.md)  
 SSO  
+[SearchTemplates](search-templates.md)  
 [Selectors](tags-list/selectors-tag.md)  
 Solution    
 Solutions    
-SystemProperties    
+[SolutionsConfiguration](solutions-configuration.md)  
+[SystemProperties](tags-list/system-properties-tag.md)      
 Tabs    
 TreeModels    
 UIProperties    
@@ -37,7 +42,7 @@ ViewerConfiguration
 
 FieldSets    
 FieldTypes    
-Inbaskets    
+[Inbaskets](tags-list/inbaskets-tag.md)      
 Lookups  
 Pages    
 SolutionConfig    

@@ -3,30 +3,23 @@ title: Unity Components - Search Template
 layout: docs
 category: Unity 7
 ---
-# Overview
-
-*content to be added*
-
 # Search Template Features
 
-## Configurable
-## Grid
-## Search criteria 
-## Folder view 
-## Ability to bundle multiple search templates 
-## Ability to link multiple search templates [U7-2713](https://jira.intellective.com/browse/U7-2713)
-## Fuzzy search
-## Enterprise search 
-## Quick search (date ranges, text input, choices, and categories)
-## [Recent view history](search-template/recent-view-history.md)
-  This is a list of references to recently viewed workitems.
-  
-## Data export 
-## Skimming view
-## Adaptive
-## Responsive
-## Ability to compose with other components
-## [Supported data providers](search-template/supported-data-providers.md)
+- Grid
+- Search criteria 
+- Folder view 
+- Ability to bundle multiple search templates 
+- Ability to link multiple search templates 
+- Fuzzy search
+- Enterprise search 
+- Quick search (date ranges, text input, choices, and categories)
+- [Recent view history](search-template/recent-view-history.md)
+- Data export 
+- Skimming view
+- Adaptive
+- Responsive
+- Ability to compose with other components
+- [Supported data providers](search-template/supported-data-providers.md)
 
 # Configuration
 
