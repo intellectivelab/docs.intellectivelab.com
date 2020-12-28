@@ -3,19 +3,19 @@ title: LDAP Data Provider Configuration
 layout: docs
 category: Unity 7
 ---
-|**Note**: LDAP Data Provider Configuration is the same for Unity ExtJS and Unity React.
+|**Note**: LDAP Data Provider Configuration is the same for Unity ExtJS and Unity React.   
 
-Perform configuration steps [common to all Unity data providers](../repository-data-providers.md#common-steps-to-configure-data-provider).   
+|**Note**: Actual for Unity 7.8.0 : only search operation is supported in this Unity version.
 
-|**Note**: Actual for Unity 7.8.0 : only search operation is supported at this Unity version.
+Perform configuration steps [common to all Unity data providers](../repository-data-providers.md#common-steps-to-configure-data-provider).
 
-# Data source configuration
+# Datasource
 
-The LDAP provider requires the configured datasource of `com.intellective.unity.datasources.LdapDatasource` class that points to the target LDAP server.
+The LDAP provider requires configuring datasource of `com.intellective.unity.datasources.LdapDatasource` class that points to the target LDAP server.
 
 |Attribute | Description |
 |:---------|:------------|
-|`Datasource/@class`| 'com.intellective.unity.datasources.LdapDatasource' OOTB LDAP datasource class name|
+|`Datasource/@class`| `com.intellective.unity.datasources.LdapDatasource` OOTB LDAP datasource class name|
 
 | Property       | Property description              | Example        |
 |:---------------|:--------------------------------|:---------------|
@@ -44,44 +44,21 @@ For example:
 ...
 ```
 
-# Operators set configuration
+# Repository Data Provider
 
-Currently (Unity 7.8.0), the LDAP provider only supports `eq`, `starts` and `contains` string operators.  
-So, the dedicated operators set should be configured for LDAP provider.  
-
-For example:
-```xml
-...
-        <OperatorsSets>
-           <OperatorsSet ID="LDAP">
-                <Operators datatype="string">
-                    <Operator ID="starts"/>
-                    <Operator ID="contains"/>
-                    <Operator ID="eq"/>
-                </Operators>
-           </OperatorsSet>    
-...
-```
-
-# Context query configuration
-
-Please refer to [LDAP Search Template configuration](../search-templates/ldap.md) for the context query configuration details (search using current user's LDAP groups, etc...).
-
-# Provider configuration
-
-The LDAP provider requires the configured datasource of `com.intellective.unity.datasources.LdapDatasource` class that points to the target LDAP server.  
+The LDAP provider requires configuring repository data provider of `com.intellective.unity.providers.ldap.LdapProvider` class that points to the target LDAP server.  
 
 |Attribute | Description |
 |:---------|:------------|
-|`RepositoryDataProvider/@class`| 'com.intellective.unity.providers.ldap.LdapProvider' OOTB LDAP repository data provider class name|
-
-This repository data provider supports the standard `PropertyNameMapper` property mapping section configuration.  
+|`RepositoryDataProvider/@class`| `com.intellective.unity.providers.ldap.LdapProvider` OOTB LDAP repository data provider class name|
 
 | Property       | Property description              | Example        |
 |:---------------|:--------------------------------|:---------------|
-| OperatorsSet | Operators set that should be used | `<OperatorsSet>LDAP</OperatorsSet>` | 
-| Datasource | LDAP data source reference | `<Datasource>ldapDS</Datasource>` |
-| ResultLimit | (optional) Sets the maximum number of entries to be returned as a result of the search. Default value: unlimited | `<ResultLimit>150</ResultLimit>` |
+| OperatorsSet | [Operators set](ldap.md#operators-set) that should be used | `<OperatorsSet>LDAP</OperatorsSet>` | 
+| Datasource | [LDAP data source](ldap.md#datasource) reference| `<Datasource>ldapDS</Datasource>` |
+| ResultLimit | (Optional) Sets the maximum number of entries to be returned as a result of the search. Default value: unlimited | `<ResultLimit>150</ResultLimit>` |
+
+This repository data provider supports the standard [PropertyNameMapper](../repository-data-providers.md#property-name-mapping) section configuration.  
 
 For example:
 ```xml
@@ -110,3 +87,27 @@ For example:
         </RepositoryDataProvider>
 ...
 ```
+
+## Operators Set
+
+Currently (Unity 7.8.0), the LDAP provider only supports `eq`, `starts` and `contains` string operators.  
+So, the dedicated operators set should be configured for LDAP provider.  
+
+For example:
+```xml
+...
+        <OperatorsSets>
+           <OperatorsSet ID="LDAP">
+                <Operators datatype="string">
+                    <Operator ID="starts"/>
+                    <Operator ID="contains"/>
+                    <Operator ID="eq"/>
+                </Operators>
+           </OperatorsSet>    
+...
+```
+
+# Context Query
+
+Please refer to [LDAP Search Template configuration](../search-templates/ldap.md) for the context query configuration details (search using current user's LDAP groups, etc...).
+

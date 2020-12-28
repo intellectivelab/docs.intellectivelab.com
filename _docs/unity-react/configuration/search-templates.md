@@ -21,6 +21,7 @@ Set of properties inside `Operation` -> `OperationProperties` section depends on
 [Enterprise search](search-templates/enterprise-search.md)  
 [DB (DBRepositoryDataProvider)](search-templates/db.md)  
 [SharePoint](search-templates/sharepoint.md)  
+[LDAP (LdapProvider)](search-templates/ldap.md)  
 
 ## Search templates for view action tabs
 

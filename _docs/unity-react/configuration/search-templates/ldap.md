@@ -1,5 +1,5 @@
 ---
-title: Search Templates Configuration - LDAP (com.intellective.unity.providers.ldap.LdapProvider)
+title: Search Templates Configuration - LDAP (LdapProvider)
 layout: docs
 category: Unity 7
 ---
@@ -8,12 +8,12 @@ List of available properties for documents search template is in the table below
 | Parameter   | Description |
 |:------------|:------------|
 |ResourceName |`documents`|
-|ContextQuery |Optional. Allows to define the dynamic search criterias that depend on current user data. See the `Context query configuration` section below for more details.|
+|ContextQuery |Optional. Allows to define dynamic search criteria that depend on current user data. See the `Context query configuration` section below for more details.|
 
-# Context query configuration
+# Context Query Configuration
 
 The LDAP repository data provider supports the standard search operation's `ContextQuery` operation property configuration that can be used to define 
-dynamic search criterias specific for currently logged user like current user LDAP groups.
+dynamic search criteria specific for currently logged user like current user LDAP groups.
 
 For example:
 ```xml
