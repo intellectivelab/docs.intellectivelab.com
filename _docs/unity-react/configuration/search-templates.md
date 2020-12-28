@@ -65,6 +65,6 @@ Criteria section can contain a set of `Criterion`s to be used for rendering crit
 </SearchTemplate>
 ```
  
-Group value can have an expanded tag with values ``true`` or `false`. If it's not specified, default value of expanded is ``true``.
+Group value can have an expanded tag with values ``true`` or `false`. If it's not specified, the default tag value is ``true``.
 
 ![Filters](search-templates/images/filters.png)
