@@ -33,6 +33,42 @@ Criteria section can contain a set of `Criterion`s to be used for rendering crit
 
 *content to be added*
 
+# Grouping Criteria
+
+*content to be added*
+
+| Parameter | Description| Value|
+|:----------|:-----------|:-----|
+|`Group/@ID`| | |
+|`Group/@Title`| | |
+|`Group/@Expanded` | allows to [show group expanded or collapsed](search-templates.md#expandcollapse-criteria-groups-by-default) by default | `[true|false]` |
+
+## Expand/Collapse criteria groups by default
+
+Groups of criteria can be shown collapsed or expanded by default.
+
+| Parameter | Value|
+|:----------|:-----|
+|`Group/@Expanded` |`[true|false]` |
+
+Set `true` to show criteria group expanded, `false` to show criteria group collapsed. If it's not specified, the default value is `true`.
+
+Example:
+
+```xml
+<SearchTemplate ID="document_Search_Documents">
+    <Groups>
+        <Group ID="criteriagroup" Title="Search criteria" Expanded="false"/>
+        <Group ID="multiValue" Title="Multi Value fields"/>
+        <Group ID="selectors" Title="Selectors" Expanded="true"/>
+        <Group ID="document_Search_Documents" Title="Documents searching" Expanded="false"/>
+    </Groups>
+</SearchTemplate>
+```
+It will look in application:
+
+![Filters](search-templates/images/filters.png)
+
 ## Category criteria 
 
 [Facet (category) field](search-templates/facet-category-field.md)
@@ -50,5 +86,6 @@ Criteria section can contain a set of `Criterion`s to be used for rendering crit
 
 | Parameter           | Description |
 |:--------------------|:------------|
-| SortField           | `SortField` value refers to a [Property](tags-list/properties-tag.md) `ID` attribute (the property should be sortable).  Default sorting may be defined on the [Grid](../configuration/grids/multiple-column-sorting.md) level or on the `SearchTemplate` level. If defined on both levels, setting from the `Grid` is in effect.     |
-| SortField >> Order  | Optional `Order` attribute may have value `ASC` for ascending and `DESC` for descending order (`ASC` is a default). |
+| `SortField`           | `SortField` value refers to a [Property](tags-list/properties-tag.md) `ID` attribute (the property should be sortable).  Default sorting may be defined on the [Grid](../configuration/grids/multiple-column-sorting.md) level or on the `SearchTemplate` level. If defined on both levels, setting from the `Grid` is in effect.     |
+| `SortField/@Order`  | Optional `Order` attribute may have value `ASC` for ascending and `DESC` for descending order (`ASC` is a default). |
+
