@@ -24,11 +24,11 @@ Current user role here is `Manager`.
     
     ![Changing User Role](images/changing-user-role.png) 
     
-- Select user role from a dropdown list or set `All` role by clicking ![remove](images/icons/remove.svg) icon:
+- Select user role from a dropdown list or set `All roles` by clicking ![remove](images/icons/remove.svg) icon:
     
     ![All User Role](images/all-user-role.png)  
     
-    `All` role represents all roles assigned to the user account. If `All` role is selected, all available dashboards, components and actions are shown in user interface.
+    `All roles` represents all roles assigned to the user account. If `All roles` is selected, all available dashboards, components and actions are shown in user interface.
     
 - Click `Yes` button of confirmation modal with warning `Selecting another Role will discard all unsaved changes in the current view. The page will be reloaded`:
     
@@ -39,7 +39,7 @@ Current user role here is `Manager`.
 **Notes**: 
 - If user changes role on analytics page, he will be redirected to `/<context-root>/analytics`.
 - If user changes role on main.jsp page, he will be redirected to `/<context-root>/main.jsp`.
-- If `All` role is disabled in [System Properties Configuration](../../configuration/tags-list/system-properties-tag.md), dropdown will be not clearable.
+- If `All roles` is disabled in [System Properties Configuration](../../configuration/tags-list/system-properties-tag.md), dropdown will be not clearable.
 - This feature is disabled for case when role mode is `RoleUnion` in 
 [System Properties Configuration](../../configuration/tags-list/system-properties-tag.md) section.
 

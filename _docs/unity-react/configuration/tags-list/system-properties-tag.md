@@ -3,7 +3,7 @@ title: SystemProperties Tag Configuration
 layout: docs
 category: Unity 7
 ---
-System properties are main properties used throughout the application.
+System properties are the main properties used throughout the application.
 
 Example of configuration:
 
