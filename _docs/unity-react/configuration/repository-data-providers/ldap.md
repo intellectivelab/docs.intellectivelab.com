@@ -65,35 +65,7 @@ For example:
 
 # Context query configuration
 
-This repository data provider supports the standard search operation's `ContextQuery` operation property configuration that can be used to define 
-dynamic search criterias specific for currently logged user like current user LDAP groups.
-
-For example:
-```xml
-...
-    <SearchTemplates>
-...
-        <SearchTemplate ID="LDAP_Search_Starts_WithUserRolesContextQuery">
-            <DataProviderId>ldap_provider</DataProviderId>
-...
-            <Operation dataProviderId="ldap_provider" type="search">
-                <OperationProperties>
-                    <!-- Search 'user' principals belonging to the same groups as the current user belongs. -->
-                    <Property ID="ContextQuery">
-                    {
-                        "operation": "and",
-                        "operand": [
-                            {operation: 'eq', operand: [{field: 'LdapPrincipalType'}, {value: 'user'}]},
-                            {operation: 'contains', operand: [{field: 'memberOf'}, {value: '{UserContext.Groups}'}]}
-                        ]
-                    }
-                    </Property>
-                </OperationProperties>
-...
-```
-Here, the `memberOf` is the standard LDAP object property that contains the list of object groups and the `{UserContext.Groups}` macro is the OOTB Unity 
-macro that provides the list of LDAP groups the current user belongs to.
-
+Please refer to [LDAP Search Template configuration](../search-templates/ldap.md) for the context query configuration details (search using current user's LDAP groups, etc...).
 
 # Provider configuration
 
