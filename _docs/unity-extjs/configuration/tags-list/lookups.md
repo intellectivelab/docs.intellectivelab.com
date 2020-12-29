@@ -134,7 +134,7 @@ This lookup uses the standard Unity search template to populate its data.
 | SearchTemplate | Unity search template ID | `<Parameter Name="SearchTemplate" Value="LDAP_Search_Starts"/>` |
 | FieldSet | Unity column set ID | `<Parameter Name="FieldSet" Value="ldap_search_All"/>` |
 | FormatSet | Unity format set to be used | `<Parameter Name="FormatSet" Value="default"/>` | 
-| UsePropertyLabelAsHeader | Boolean flag to use Unity properties name as label<sup>1</sup>. Default value: `false` | `<Parameter Name="UsePropertyLabelAsHeader" Value="true"/>` | 
+| UsePropertyLabelAsHeader<sup>1</sup> | Boolean flag to use Unity properties name as label. Default value: `false` | `<Parameter Name="UsePropertyLabelAsHeader" Value="true"/>` | 
 | ResultLimit | Boolean flag to enable LDAP trace. Default value: `false` | `<Parameter Name="ResultLimit" Value="500"/>` | 
 | SortField | Sort field name. | `<Parameter Name="SortField" Value="LdapShortUserName"/>` | 
 | SortDirection | Sort direction. Default value: `ASC` | `<Parameter Name="SortDirection" Value="DESC"/>` | 
