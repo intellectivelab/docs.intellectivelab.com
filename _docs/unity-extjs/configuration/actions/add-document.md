@@ -190,5 +190,19 @@ Override default dialog used for add document action with custom XType: `widget.
         ```xml
          <Property ID="FolderPath" value="/sites/TeamSite/Shared Documents"/>
         ```
+    
+    - Template expression replacement for FolderPath supported for case attachments from SharePoint in a form:    
+       {Source.CaseObjectId} - replaced with case object id.   
+       {Source.CaseId} - replaced with case id.    
+       Single level template supported. 
+       Target folder created if does not exist. 
+       User adding document to a case must have proper rights to create a folder. 
+       The created folder inherits permission from parent folder.  
+       
+       Example:
+       ```
+          <Property ID="FolderPath" value="/Shared Documents/UCMLinks/{Source.CaseObjectId}"/>       
+       ```
+      
    
 Perform the rest of [Common Action Configuration Steps](../actions.md#common-actions-configuration-steps).  
