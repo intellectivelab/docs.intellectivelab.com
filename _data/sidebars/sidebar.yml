@@ -158,11 +158,6 @@ entries:
                 url: /docs/unity-extjs/configuration/tags-list/
                 id: unity-extjs-configuration-tags-list
 
-              - title: UCM Lookups
-                output: web
-                url: /docs/unity-extjs/configuration/ucm-lookups/
-                id: unity-extjs-configuration-ucm-lookups
-
           - title: Customization
             output: web, pdf
             id: unity-extjs-customization
