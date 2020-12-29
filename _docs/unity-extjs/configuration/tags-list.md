@@ -43,7 +43,7 @@ ViewerConfiguration
 [FieldSets](tags-list/fieldsets-tag.md)    
 FieldTypes    
 [Inbaskets](tags-list/inbaskets-tag.md)      
-[Lookups](tags-list/lookups.md)    
+[Lookups](tags-list/lookups-tag.md)    
 Pages    
 SolutionConfig    
 Tools    
