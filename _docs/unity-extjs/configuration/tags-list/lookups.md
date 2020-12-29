@@ -4,9 +4,11 @@ layout: docs
 category: Unity 7
 ---
 
-# Supported lookup types
+# Supported Lookup Types
 
-Lookups description section should be added into UCM Solution XML file. An example:
+Lookups description section should be added into UCM Solution XML file. 
+
+An example:
 
 ```xml
     <Lookups>
@@ -64,9 +66,9 @@ ExtJS UI supports several types of UCM lookups:
 
 This lookup uses the database query to populate its data.
 
-|Attribute | Value / Description |
-|:---------|:------------|
-|`Lookup/@Type`| `DB` / OOTB Database lookup type|
+|Attribute | Description | Value|
+|:---------|:------------|:-----|
+|`Lookup/@Type`| OOTB Database lookup type |`DB`|
 
 | Section       | Section description              | Example        |
 |:---------------|:--------------------------------|:---------------|
@@ -93,12 +95,12 @@ For example:
 
 This lookup uses the standard Unity selectors to populate its data.
 
-|Attribute | Value / Description |
-|:---------|:------------|
-|`Lookup/@Type`| `Selector` / OOTB Selector lookup type|
+|Attribute | Description | Value|
+|:---------|:------------|:-----|
+|`Lookup/@Type`| OOTB Selector lookup type |`Selector`|
 
-| Property       | Property description              | Example        |
-|:---------------|:--------------------------------|:---------------|
+| Parameter      | Description              | Example        |
+|:---------------|:-------------------------|:---------------|
 | SelectorID | Unity selector ID | `<Parameter Name="SelectorID" Value="reassignUsers"/>` |
 | Operator | Selector operation | `<Parameter Name="Operator" Value="starts"/>` |
 
@@ -123,19 +125,21 @@ For example:
 
 This lookup uses the standard Unity search template to populate its data.
 
-|Attribute | Value / Description |
-|:---------|:------------|
-|`Lookup/@Type`| `SearchTemplate` / OOTB Search template lookup type|
+|Attribute | Description | Value|
+|:---------|:------------|:-----|
+|`Lookup/@Type`| OOTB Search template lookup type| `SearchTemplate` |
 
-| Property       | Property description              | Example        |
-|:---------------|:--------------------------------|:---------------|
+| Parameter      | Description              | Example        |
+|:---------------|:-------------------------|:---------------|
 | SearchTemplate | Unity search template ID | `<Parameter Name="SearchTemplate" Value="LDAP_Search_Starts"/>` |
 | FieldSet | Unity column set ID | `<Parameter Name="FieldSet" Value="ldap_search_All"/>` |
 | FormatSet | Unity format set to be used | `<Parameter Name="FormatSet" Value="default"/>` | 
-| UsePropertyLabelAsHeader | Boolean flag to use Unity properties name as label. Please see dedicated section below. Default value: `false` | `<Parameter Name="UsePropertyLabelAsHeader" Value="true"/>` | 
+| UsePropertyLabelAsHeader | Boolean flag to use Unity properties name as label<sup>1</sup>. Default value: `false` | `<Parameter Name="UsePropertyLabelAsHeader" Value="true"/>` | 
 | ResultLimit | Boolean flag to enable LDAP trace. Default value: `false` | `<Parameter Name="ResultLimit" Value="500"/>` | 
 | SortField | Sort field name. | `<Parameter Name="SortField" Value="LdapShortUserName"/>` | 
 | SortDirection | Sort direction. Default value: `ASC` | `<Parameter Name="SortDirection" Value="DESC"/>` | 
+
+<sup>1</sup> Unity 7.8.0 introduces the support of the new `UsePropertyLabelAsHeader` lookup parameter. Set this parameter to `true` of you want to use property header/name from the main Unity configuration as the column header title instead of plain value from the Header/Column section. Default value: `false`.
 
 For example:
 ```xml
@@ -165,32 +169,11 @@ For example:
 ...
     </Lookups>
 ```
-# 'UsePropertyLabelAsHeader' lookup parameter
 
-Unity 7.8.0 introduces the support of the new `UsePropertyLabelAsHeader` lookup parameter. 
-Set this parameter to `true` of you want to use property header/name from the main Unity configuration 
-as the column header title instead of plain value from the Header/Column section. Default value: `false`.
+# Lookup Usage
 
+Lookup usage is described in the following sections:
 
-# Usage
-
-Example:
-
-```xml
-<SolutionConfig SolutionName="CustomerComplaints">  
-...
-    <FieldSets>
-...
-        <FieldSet ID="CaseReview">
-...
-                <Field ID="CC_CustomerCity" Label="Customer City" LookupMinChars="2" Lookup="LdapUserLookup?query={CC_CustomerCity}"/>
-		<Field ID="CC_CustomerEmail" Label="C(grp) Email" LookupMinChars="2" Lookup="LdapUserLookupByGroup?query={CC_CustomerEmail}"/>
-...
-         </FieldSet>
-    </FieldSets>
-
-...
-</SolutionConfig>
-```
+[FieldSets](fieldsets-tag.md)
 
 *content to be added*
