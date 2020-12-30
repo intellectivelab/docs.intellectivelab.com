@@ -38,10 +38,12 @@ Dashboard configuration parameters:
 |builder | *definition to be added* |
 |filter | *definition to be added* |
 |disableProviderLevelSecurity | The attribute allows to turn off security check on data provider level<sup>1</sup> when equals `true`. Default value: `false` |
+|Security|[Dashboard security restrictions](../../unity-react/configuration/security.md#security-restrictions)|
 
 <sup>1</sup> Provider level security check hides inner component if all conditions match:
 - component is referenced to SharePoint search template
 - component has `folderPath` parameter specified OR search template has `FolderPath` parameter specified
 - user doesn't have permissions to access corresponding folder in repository data provider
 
-[Containers Configuration](dashboards/container-tag.md)
+[Container tag configuration](dashboards/container-tag.md)  
+[Component tag configuration](dashboards/component-tag.md)

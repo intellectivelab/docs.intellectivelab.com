@@ -22,13 +22,13 @@ LDAP
 Plugins  
 [Properties](tags-list/properties-tag.md)  
 [RepositoryDataProviders](repository-data-providers.md)     
-SSO  
+[SSO](tags-list/sso-tag.md)  
 [SearchTemplates](search-templates.md)  
 [Selectors](tags-list/selectors-tag.md)    
 Solution  
 Solutions  
 [SolutionsConfiguration](solutions-configuration.md)   
-SystemProperties  
+[SystemProperties](tags-list/system-properties-tag.md)   
 Tabs  
 TreeModels  
 UIProperties  

@@ -6,9 +6,9 @@ category: Unity 7
 
 # Access Roles
 
-*Content to be added*
+| **Note**: AccessRoles tag configuration is the same for Unity ExtJS and Unity React, however application behavior may differ.
 
-[AccessRoles Unity tag](tags-list/access-roles-tag.md)
+[AccessRoles tag](tags-list/access-roles-tag.md)
 
 # Security Restrictions
 
