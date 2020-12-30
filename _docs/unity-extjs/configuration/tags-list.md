@@ -40,10 +40,10 @@ ViewerConfiguration
 
 # Solution Tags
 
-FieldSets    
+[FieldSets](tags-list/fieldsets-tag.md)    
 FieldTypes    
 [Inbaskets](tags-list/inbaskets-tag.md)      
-Lookups  
+[Lookups](tags-list/lookups-tag.md)    
 Pages    
 SolutionConfig    
 Tools    
