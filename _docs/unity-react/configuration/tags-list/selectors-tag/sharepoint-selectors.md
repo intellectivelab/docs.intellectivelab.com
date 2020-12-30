@@ -8,7 +8,7 @@ category: Unity 7
 # Description
 
 SharePoint selectors use SharePoint REST API to read List metadata from SP. 
-Check [generic selector configuration options](../selectors-tag.md#generic-selector-properties) first.
+Check [common selector configuration options](../selectors-tag.md#common-selector-properties) first.
 
 # Sharepoint Choice List Selector
 
