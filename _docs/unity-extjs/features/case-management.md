@@ -391,25 +391,6 @@ separately for each case type.
 - Work Item / Task view. Each work item type can have different view definition. The rulebased approach is used to establish the link between the existing work item and the view
 definition that should be used to display/edit the data of this work item.
 
-When opening cases at same tab, the number of cases may be limited. 
-The optional parameter is responsible for this feature - `MaxNumberOfOpenedCases`.
-
-Example:
-```xml
-        <Grid ID="UCM_ICM_Case_Search" enableColumnReorder="false" groupSearchResults="false">
-            <Toolbar>
-                <Actions>
-                    …….
-                </Actions>
-            </Toolbar>
-            <Listeners>
-                …….
-            </Listeners>
-            <MaxNumberOfOpenedCases>10</MaxNumberOfOpenedCases>
-            <XType>vspace-docs</XType>
-        </Grid>
-```
-
 ## Work Item views
 
 The Work Items view definitions are located at the following section of ICM solution
@@ -1075,7 +1056,8 @@ Sample comfiguration:
 These actions are used at the ICM case search template tab (scope: `CASE`)
 
 #### ucmOpenCaseAtSameTab
-Opens selected case at the same tab where the source case search template is located. Does not require any specific configuration besides the actual declaration of the action at the main Unity configuration file.|
+Opens selected case at the same tab where the source case search template is located. Does not require any specific configuration besides the actual declaration of the action at the main Unity configuration file.  
+[Limit on the number of simultaneously opened cases](../configuration/grids/limit-opened-cases.md) can be set.
 
 #### ucmOpenCaseAtSeparateTab
 Opens selected case at newly created Unity tab. Does not require any specific configuration besides the actual declaration of the action at the main Unity configuration file.|
