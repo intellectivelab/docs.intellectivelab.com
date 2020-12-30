@@ -391,6 +391,25 @@ separately for each case type.
 - Work Item / Task view. Each work item type can have different view definition. The rulebased approach is used to establish the link between the existing work item and the view
 definition that should be used to display/edit the data of this work item.
 
+When opening cases at same tab, the number of cases may be limited. 
+The parameter is responsible for this feature - `MaxNumberOfOpenedCases`.
+
+Example:
+```xml
+        <Grid ID="UCM_ICM_Case_Search" enableColumnReorder="false" groupSearchResults="false">
+            <Toolbar>
+                <Actions>
+                    …….
+                </Actions>
+            </Toolbar>
+            <Listeners>
+                …….
+            </Listeners>
+            <MaxNumberOfOpenedCases>10</MaxNumberOfOpenedCases>
+            <XType>vspace-docs</XType>
+        </Grid>
+```
+
 ## Work Item views
 
 The Work Items view definitions are located at the following section of ICM solution
