@@ -19,7 +19,7 @@ JSON selector example:
 
 |Parameter|Description|Value|
 |:--------|:----------|:----|
-|SortOrder|Optional. Allows to sort the loaded list of values|`ASC`, `DESC`|
+|SortOrder|Optional. Allows to sort the loaded list of values in alphabetical order |`ASC`, `DESC`|
 
 JSON file example:
 ```json
