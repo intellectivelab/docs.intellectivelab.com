@@ -148,7 +148,7 @@ Override default dialog used for add document action with custom XType: `widget.
 
 ## SharePoint data provider
 
-- Document class selector for SharePoint depends on Library. To work properly IsFolderRelatedDocClass tag must be set to true in custom parameters:
+- Document class selector for SharePoint depends on Library. To work properly `IsFolderRelatedDocClass` tag must be set to `true` in custom parameters:
  
     ```xml
     <IsFolderRelatedDocClass>true</IsFolderRelatedDocClass>
@@ -179,16 +179,33 @@ Override default dialog used for add document action with custom XType: `widget.
 
     - Folder path for specific site
     
-        all document libraries 
+        all document libraries: 
             
         ```xml
         <Property ID="FolderPath" value="/sites/TeamSite"/>
         ```
           
-        specific document library 
+        specific document library: 
           
         ```xml
          <Property ID="FolderPath" value="/sites/TeamSite/Shared Documents"/>
         ```
-   
+    
+    - Template expression replacement for FolderPath supported for case attachments from SharePoint in a form: 
+              
+       |Template expression|Replaced with|
+       |:------------------|:------------|       
+       |{Source.CaseObjectId}| case object id|   
+       |{Source.CaseId} | case id|
+       
+       Example:
+       ```
+          <Property ID="FolderPath" value="/Shared Documents/UCMLinks/{Source.CaseObjectId}"/>       
+       ```
+                  
+       - Single level template supported 
+       - Target folder created if does not exist 
+       - The created folder inherits permission from the parent folder  
+       - To add a document to a case user must have proper rights to create a folder 
+    
 Perform the rest of [Common Action Configuration Steps](../actions.md#common-actions-configuration-steps).  
