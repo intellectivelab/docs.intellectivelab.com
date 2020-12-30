@@ -392,7 +392,7 @@ separately for each case type.
 definition that should be used to display/edit the data of this work item.
 
 When opening cases at same tab, the number of cases may be limited. 
-The parameter is responsible for this feature - `MaxNumberOfOpenedCases`.
+The optional parameter is responsible for this feature - `MaxNumberOfOpenedCases`.
 
 Example:
 ```xml
