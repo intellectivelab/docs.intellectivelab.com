@@ -13,7 +13,7 @@ The following stories were implemented in the Unity 7.8.0 release. The ID and De
 | U7-3681 | Unity: quick search field does not search by hidden criteria                                                        |
 | U7-3644 | React: Implement lazy loading for pages                                                                             |
 | U7-3642 | Remove "Opening Selected Documents" dialog that is displayed after Open in Office 365                               |
-| U7-3637 | React: Disble autoexpand all folders in Container = tree                                                            |
+| U7-3637 | React: Disable autoexpand all folders in Container = tree                                                            |
 | U7-3635 | Sharepoint: Folders should be hidden if user hasn't permissions to read them                                        |
 | U7-3608 | React UI Changing User Role                                                                                         |
 | U7-3605 | Sharepoint send an email notification once a user has been given an access                                          |
