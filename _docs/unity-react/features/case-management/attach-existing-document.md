@@ -47,4 +47,4 @@ display information on number of successfully uploaded documents, if there are a
     
 # Configuration
 
-[Attach existing document to case action configuration](../../configuration/actions/attach-existing-document.md)
+[Attach existing document to a case action configuration](../../configuration/actions/attach-existing-document.md)
