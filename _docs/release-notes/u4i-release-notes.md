@@ -112,7 +112,7 @@ The following tasks and stories were implemented in the Unity for Intellective r
 | U7-3325 | React & public API: Add ability to show several sites inside FolderView                                                    |
 | U7-3465 | React: View Document properties can't be opened for Container = tree if several Sharepoint data providers were configured             |
 | U7-3464 | React: New document can not be added for Container = tree if several Sharepoint data providers were configured             |
-| U7-3478 | React: Document Versions tab can't be configured for a specific datap rovider for Container = tree if several Sharepoint data providers were configured                                                                                                         |
+| U7-3478 | React: Document Versions tab can't be configured for a specific data provider for Container = tree if several Sharepoint data providers were configured                                                                                                         |
 | U7-3635 | Sharepoint: Folders should be hidden if user hasn't permissions to read  them                                              |
 
 
