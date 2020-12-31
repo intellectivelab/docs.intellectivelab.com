@@ -101,4 +101,3 @@ Custom parameters section should contain following parameters:
 # Work Items
 
 *content to be added*
-

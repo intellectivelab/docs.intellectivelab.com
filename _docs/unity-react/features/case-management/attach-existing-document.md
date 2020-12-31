@@ -1,5 +1,5 @@
 ---
-title: Attach Existing Document to Case Feature
+title: Attach an Existing Document to a Case Feature
 layout: docs
 category: Unity 7
 ---
@@ -47,4 +47,4 @@ display information on number of successfully uploaded documents, if there are a
     
 # Configuration
 
-[Attach existing document action configuration](../../configuration/actions/attach-existing-document.md)
+[Attach existing document to case action configuration](../../configuration/actions/attach-existing-document.md)

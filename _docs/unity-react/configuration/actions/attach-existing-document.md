@@ -1,11 +1,11 @@
 ---
-title: Attach Existing Document Action Configuration
+title: Attach Existing Document to a Case Action Configuration
 layout: docs
 category: Unity 7
 ---
-[Attach Existing Document feature description](../../features/case-management/attach-existing-document.md)
+[Attach an Existing Document to a Case feature description](../../features/case-management/attach-existing-document.md)
 
-For ```Attach an existing document to a case``` action following section should be added to the Unity System XML file:
+For `Attach existing document to a case` action following section should be added to the Unity System XML file:
 
 ```xml
 <Action ID="attach.existing.Documents" multiselect="true" scope="single" type="toolbar">
@@ -23,7 +23,7 @@ For ```Attach an existing document to a case``` action following section should 
 </Action>
 ```
 
-```Attach an existing document to a case``` action custom configuration parameters:
+`Attach existing document to a case` action custom configuration parameters:
 
 | Parameter   | Description |
 |:------------|:------------|
@@ -32,6 +32,4 @@ For ```Attach an existing document to a case``` action following section should 
 |ActionType   | attach      |
 |ViewType     | Attach |
 
-
 Perform the rest of [Common Action Configuration Steps](../actions.md#common-actions-configuration-steps). 
-
