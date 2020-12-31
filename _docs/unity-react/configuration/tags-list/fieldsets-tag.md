@@ -4,7 +4,7 @@ layout: docs
 category: Unity 7
 ---
 
-# Solution File section configuration
+# How to specify path for Attach document to a case action
 
 To specify path to attach documents use ```FolderPath``` property. For example,
 
