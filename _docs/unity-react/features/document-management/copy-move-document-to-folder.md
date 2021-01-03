@@ -70,6 +70,6 @@ Successful action execution will also lead to grid refresh.
 
 # Configuration
 
-Copy document to folder action configuration in [row mode](../../configuration/actions/copy-document-to-folder.md#row-action configuration) and [bulk mode](../../configuration/actions/copy-document-to-folder.md#bulk-action configuration).
+Copy document to folder action configuration in [row mode](../../configuration/actions/copy-document-to-folder.md#row-action-configuration) and [bulk mode](../../configuration/actions/copy-document-to-folder.md#bulk-action-configuration).
 
-Move document to folder action configuration in [row mode](../../configuration/actions/move-document-to-folder.md#row-action configuration) and [bulk mode](../../configuration/actions/move-document-to-folder.md#bulk-action configuration).
+Move document to folder action configuration in [row mode](../../configuration/actions/move-document-to-folder.md#row-action-configuration) and [bulk mode](../../configuration/actions/move-document-to-folder.md#bulk-action-configuration).
