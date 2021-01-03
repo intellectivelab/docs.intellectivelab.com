@@ -46,7 +46,7 @@ This describes how copy or move several documents at once using bulk mode.
 - Using row checkboxes or Select All checkbox in the grid header, select documents that should be copied or moved.
      ![Selected documents](copy-move-document-to-folder/images/copy-move-document-to-folder-select-documents.png)
 
-- Select `Copy to Folder` or `Move to Folder` action from `Actions` bulk mode menu in the grid header.
+- Select `Copy to Folder` or `Move to Folder` action from `Actions` bulk mode menu in the grid toolbar.
      ![Pick an action for selected documents](copy-move-document-to-folder/images/copy-move-document-to-folder-select-bulk-menu.png)
 
 - Folder tree will appear. Select a destination folder and click `Select` button:
