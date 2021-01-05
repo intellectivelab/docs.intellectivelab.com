@@ -39,9 +39,8 @@
 <nav class="navbar navbar-light fixed-top navbar-expand-lg">
   <div class="container-fluid navbar-container">
     <a class="navbar-brand" href="{{ site.baseurl }}/">
-      <img src="{{ "/assets/img/Intellective-Logo-docs.png" |
-      relative_url }}" alt="Logo" class="d-inline-block align-top"
-      loading="lazy" />
+      <img src="{{ "/assets/img/Intellective-Logo-docs.png" | relative_url }}"
+      alt="Logo" class="d-inline-block align-top" loading="lazy" />
     </a>
     <button
       class="navbar-toggler"
@@ -55,21 +54,10 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <div class="d-block d-md-none">
-        {% include docs_nav.html %}
-      </div>
-      
-      <form class="form-inline my-2 my-lg-0">
-        <input
-          class="form-control mr-sm-2"
-          type="search"
-          placeholder="Search documentation "
-          aria-label="Search documentation"
-        />
-        <button class="btn btn-light my-2 my-sm-0" type="submit">
-          Search
-        </button>
-      </form>
+      <div class="d-block d-lg-none">{% include docs_nav.html %}</div>
+
+      {% include searchbar.html %}
+
       <form class="form-inline my-2 my-lg-0" action="/docs/contact/contact-us">
         <button class="btn btn-light my-2 my-sm-0" type="submit">
           Contact Us
