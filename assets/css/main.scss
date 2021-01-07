@@ -164,7 +164,7 @@ body {
   .wrapper {
     height: 100%;
     .row {
-      height: 100%;
+        height: 100%;
     }
   }
 
@@ -172,10 +172,12 @@ body {
     border-right: 1px solid #e3e8ee;
   }
   .starboard {
-    padding: 0px 48px;
-    > h1:first-of-type {
-      font-size: 2.75em;
-      color: #dc3840;
+    &-content-container {
+      padding: 40px 48px;
+      > h1:first-of-type {
+        font-size: 2.75em;
+        color: #dc3840;
+      }
     }
   }
 }
@@ -321,4 +323,17 @@ table {
     background-position: 5px center;
     outline: 0;
   }
+}
+
+.breadcrumbs {
+  padding: 20px 0px;
+  position: fixed;
+  background-color: #ffffff;
+  width:100%;
+  font-size: 12px;
+
+  span {
+    font-weight: 600;
+  }
+
 }
