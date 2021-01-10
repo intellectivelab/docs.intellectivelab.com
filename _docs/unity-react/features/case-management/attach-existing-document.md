@@ -1,11 +1,11 @@
 ---
-title: Attach an Existing Document to a Case Feature
+title: Attach an Existing Document to the Case Feature
 layout: docs
 category: Unity 7
 ---
 # Description
 
-`Attach` existing document action allows linking document(-s) from different data providers to selected case. 
+`Attach existing documents` action allows linking document(-s) from different data providers to selected case. 
 This type of action can be added on `Attachments` tab on a grid toolbar and will be rendered as a separate button 
 (if only one attach action is bound to the grid) or a dropdown (in case grid contains 2 or more actions with 
 `ActionType` custom parameter = `attach`).
@@ -16,7 +16,7 @@ This type of action can be added on `Attachments` tab on a grid toolbar and will
 
 - Open case for edit and switch to one of `Attachments` tab 
 
-- Click `attach` action on a grid toolbar and select an action: 
+- Click `Attach` action on a grid toolbar and select an action: 
 
     ![Attach existing document action](attach-existing-document/images/attach-existing-action.png)
 
@@ -47,4 +47,4 @@ display information on number of successfully uploaded documents, if there are a
     
 # Configuration
 
-[Attach existing document to a case action configuration](../../configuration/actions/attach-existing-document.md)
+[Attach existing documents action configuration](../../configuration/actions/attach-existing-documents.md)

@@ -12,7 +12,7 @@ Unity supports IBM Case Manager Split Case feature via Unity ICM over UCM Data P
 
 # How to Split a Case
 
-`Split case` in React UI is implemented as a grid action available for Cases resources via a grid's context menu:
+`Split case` action in React UI is implemented as a grid action available for Cases resources via a grid's context menu:
 
 ![context-menu](split-case/images/react-ui-image1.png) 
 
@@ -39,4 +39,4 @@ As a result new case will be created on top of existing case. Relevant informati
 
 # Configuration
 
-[React UI Case split action configuration](../../configuration/actions/split-case.md)
+[Split case action configuration](../../configuration/actions/split-case.md)

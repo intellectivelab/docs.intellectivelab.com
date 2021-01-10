@@ -4,9 +4,9 @@ layout: docs
 category: Unity 7
 ---
 
-# How to Specify Path for Attach Document to a Case Action
+# How to Specify Path for Attach Existing Document Action
 
-To specify path to attach documents use `FolderPath` property.  
+To specify a path to attach documents use `FolderPath` attribute.  
 For example:
 
 ```xml
