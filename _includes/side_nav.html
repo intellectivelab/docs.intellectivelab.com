@@ -1,0 +1,16 @@
+
+    <ul id="side-nav" class="nav flex-column side-nav{% if include.topnav %} top d-lg-none{% endif %}">
+
+        {% for item in site.data.sidebars.sidebar_r.nav %}
+        <li class="nav-item">
+            <a id="{{ item.id }}" class="nav-link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+
+        {% if item.subnav %}
+            {% include side_nav.html nav=item.subnav %}
+        {% endif %}
+
+        {% endfor %}
+
+    </ul>
+
