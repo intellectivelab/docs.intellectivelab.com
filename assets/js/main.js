@@ -10,7 +10,7 @@ $(function () {
     });
 
 
-    $("#side-nav, #side-nav2").navgoco({
+    $("#side-nav").navgoco({
         caretHtml: '',
         accordion: true,
         openClass: 'open',
@@ -30,12 +30,12 @@ $(function () {
 
     $("#collapseAll").click(function (e) {
         e.preventDefault();
-        $("#side-nav, #side-nav2").navgoco('toggle', false);
+        $("#side-nav").navgoco('toggle', false);
     });
 
     $("#expandAll").click(function (e) {
         e.preventDefault();
-        $("#side-nav, #side-nav2").navgoco('toggle', true);
+        $("#side-nav").navgoco('toggle', true);
     });
 
     // TOC NAVIGATIONS
