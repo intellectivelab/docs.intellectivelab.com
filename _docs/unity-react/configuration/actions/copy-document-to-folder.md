@@ -5,12 +5,10 @@ category: Unity 7
 ---
 [Copy/Move Document to Folder feature description](../../features/document-management/copy-move-document-to-folder.md)
 
-## Row action configuration
-For `Copy Document to Folder` document action following section should be added to the Unity System XML file:
+# Row Action Configuration
 
-Configuration may include or not include root folder. If it is defined, only its subfolders can be chosen as a copy destination.
+For `Copy Document to Folder` action following section should be added to the Unity System XML file:
 
-Example of the action with root folder defined as '/Folder1/SubFolder':
 ```xml
 <Action ID="copyToFolderWithRootFolder" multiselect="false" scope="single" type="toolbar">
   <Name>Copy To Folder</Name>
@@ -24,7 +22,18 @@ Example of the action with root folder defined as '/Folder1/SubFolder':
 </Action>
 ```
 
-Example of the action without root folder defined (all  folders will be presented starting from repository root '/'):
+`Copy Document to Folder` action custom configuration parameters:
+
+| Parameter   | Description |
+|:------------|:------------|
+|ResourceName | documents   |
+|ActionType   | copy_to_folder |
+|RootFolder   | Optional. In example above defined as `/Folder1/SubFolder`. <sup>1</sup>|
+
+<sup>1</sup> Configuration may include or not include root folder. If it is defined, only its subfolders can be chosen as a copy destination. If `RootFolder` parameter is omitted, repository root `/` is used.
+
+An example of the action without root folder defined:
+
 ```xml
 <Action ID="copyToFolderWithoutRootFolder" multiselect="false" scope="single" type="toolbar">
   <Name>Copy To Folder</Name>
@@ -37,17 +46,9 @@ Example of the action without root folder defined (all  folders will be presente
 </Action>
 ```
 
-`Copy Document to Folder` document action custom configuration parameters:
+# Bulk Action Configuration
 
-| Parameter   | Description |
-|:------------|:------------|
-|ResourceName | documents   |
-|ActionType   | copy_to_folder |
-|RootFolder   | optional root folder (if omitted, repository root '/' is used) |
-
-## Bulk action configuration
-
-For bulk mode in React, separate `Copy Document To Folder` document action should be added. Its configuration matches the [row action configuration](#row-action-configuration), but in addition it has special value in `Uri` parameter: `api/1.0.0/documents/copy`.
+For bulk mode in React, separate `Copy Document To Folder` document action should be added: 
 
 ```xml
 <Action ID="bulk.copyToFolderWithRootFolder" multiselect="false" scope="single" type="toolbar">
@@ -61,5 +62,11 @@ For bulk mode in React, separate `Copy Document To Folder` document action shoul
   </CustomParameters>
 </Action>
 ```
+
+Its configuration matches the [row action configuration](#row-action-configuration), but in addition it has special value in `Uri` parameter:
+
+| Parameter   | Description |
+|:------------|:------------|
+|Uri          | api/1.0.0/documents/copy |
 
 Perform the rest of [Common Action Configuration Steps](../actions.md#common-actions-configuration-steps).
