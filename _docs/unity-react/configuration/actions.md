@@ -66,8 +66,8 @@ Choose the action from the list below to find specific options for it.
 
 - [Split Case](../configuration/actions/split-case.md)
 - [Delete Case](../configuration/actions/delete-case.md)
-- [Attach New Document to a Case](../configuration/actions/attach-document.md)
-- [Attach Existing Document to a Case](../configuration/actions/attach-existing-document.md)
+- [Attach Document](../configuration/actions/attach-document.md)
+- [Attach Existing Documents](actions/attach-existing-documents.md)
 - [Detach Document](../configuration/actions/detach-document.md)
 
 ## Workitem related actions
