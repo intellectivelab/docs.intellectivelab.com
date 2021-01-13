@@ -1,9 +1,12 @@
 <nav class="navbar navbar-light fixed-top navbar-expand-lg">
+
   <div class="container-fluid navbar-container">
+
     <a class="navbar-brand" href="{{ site.baseurl }}/">
       <img src="{{ "/assets/img/Intellective-Logo-docs.png" | relative_url }}"
       alt="Logo" class="d-inline-block align-top" loading="lazy" />
     </a>
+
     <button
       class="navbar-toggler"
       type="button"
@@ -14,9 +17,10 @@
       aria-label="Toggle navigation"
     >
       <span class="navbar-toggler-icon"></span>
+
     </button>
+
     <div class="collapse navbar-collapse" id="navbarNav">
-      <div class="d-block d-lg-none">{% include tree.html %}</div>
 
       {% include searchbar.html %}
 
@@ -25,6 +29,10 @@
           Contact Us
         </button>
       </form>
+
+      <div class="d-block d-lg-none">{% include tree_content.html %}</div>
+
     </div>
   </div>
+
 </nav>

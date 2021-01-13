@@ -78,11 +78,16 @@ main {
   grid-template-rows: auto;
   grid-template-areas:
     "header header header header header"
-    "sidebar main main main main"
+    "main main main main main"
     "footer footer footer footer footer";
   width: 100%;
-  // margin-top: 64px;
-  // height: calc(100vh - 64px);
+
+  @media (min-width: 991px) {
+    grid-template-areas:
+      "header header header header header"
+      "sidebar main main main main"
+      "footer footer footer footer footer";
+  }
 
   nav {
     grid-area: header;
@@ -106,7 +111,6 @@ main {
   min-height: 100%;
 
   .side-nav {
-    grid-area: sidebar;
     position: fixed;
     top: 65px;
     // width: inherit;
@@ -174,6 +178,7 @@ main {
 
 .starboard {
   padding-top: 64px;
+  overflow-x: hidden;
 
   .breadcrumbs {
     padding: 16px 10px;
@@ -224,6 +229,11 @@ main {
   }
   &-collapse {
     justify-content: space-between;
+    background: #ffffff;
+
+    &.show {
+      height: 100vh;
+    }
   }
   &-brand-container {
     display: flex;
@@ -272,19 +282,6 @@ ul[id^="sub-nav-level-"] {
     }
   }
 }
-
-// .page-content {
-//   margin-top: 64px;
-//   height: calc(100vh - 64px);
-//   padding: 0px;
-//   .wrapper {
-//     height: 100%;
-//     .row {
-//       height: 100%;
-//     }
-//   }
-
-// }
 
 .openapi-frame {
   width: 100%;
