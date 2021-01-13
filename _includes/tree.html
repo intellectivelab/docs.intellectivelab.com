@@ -1,17 +1,21 @@
 
-{% assign treeNav=include.nav items=0 %}
+{% assign treeNav=include.nav %}
 
-<ul id="sub-nav-level-{{forloop.index0}}" class="list-group"> 
+{% if treeNav.tree %}
 
-    {% for item in treeNav.tree %}
+    <ul id="sub-nav-level-{{forloop.index0}}" class="list-group"> 
 
-    <li class="list-group-item">
-        <a id="{{ item.id }}" class="nav-link" href="{{ item.url }}">{{ item.title }}</a>
-     
-        {% if item.tree %}
-            {% include tree.html nav=item %}
-        {% endif %}
-    </li>   
+        {% for item in treeNav.tree %}
 
-    {% endfor %}
-</ul>
+        <li class="list-group-item">
+            <a id="{{ item.id }}" class="nav-link" href="{{ item.url }}">{{ item.title }}</a>
+        
+            {% if item.tree %}
+                {% include tree.html nav=item %}
+            {% endif %}
+        </li>   
+
+        {% endfor %}
+    </ul>
+
+{% endif %}
