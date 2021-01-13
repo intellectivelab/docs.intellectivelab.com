@@ -129,7 +129,7 @@ body {
 }
 
 #sub-nav,
-#sub-sub-nav {
+ul[id^="sub-nav-level-"] {
   .list-group-item {
     background-color: rgba(255, 255, 255, 0);
     border: none;

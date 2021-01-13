@@ -1,7 +1,6 @@
 nav:
   - title: Level 1
     id: unity-overview
-    url: /docs/unity-overview/
     output: web
     tree:
       - title: Level 2

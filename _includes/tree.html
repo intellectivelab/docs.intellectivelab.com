@@ -1,9 +1,9 @@
 
+{% assign treeNav=include.nav items=0 %}
+
 <ul id="sub-nav-level-{{forloop.index0}}" class="list-group"> 
 
-    {% for item in treeNav.tree.nav %}
-
-    Here?
+    {% for item in treeNav.tree %}
 
     <li class="list-group-item">
         <a id="{{ item.id }}" class="nav-link" href="{{ item.url }}">{{ item.title }}</a>
