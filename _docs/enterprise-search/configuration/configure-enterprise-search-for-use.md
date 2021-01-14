@@ -5,7 +5,7 @@ category: Enterprise Search
 --- 
 # Post-Installation Configuration   
 
-## Configure UIE crawler and Solr as services 
+## Configure Enterprise Search crawler and Solr as services 
 
 ### Windows 
 
@@ -48,7 +48,7 @@ To remove Solr and Crawler services:
 
 *Content should be added* 
 
-## Clear UIE Solr Index 
+## Clear Enterprise Search Solr Index 
 
 If there is a need to re-crawl the repositories after an index schema change, first clear the Solr index using the instructions in this section, then run the crawler again as discussed in the previous section.
 - Edit `solrconfig.xml` for SODemo under `<solr_install>/server/solr/SODemo/conf` 
@@ -81,17 +81,17 @@ If there is a need to re-crawl the repositories after an index schema change, fi
 
 	![uie-folder](configure-enterprise-search-for-use/images/image74.png) 
 	
-# UIE Crawler Logs 
+# Enterprise Search Crawler Logs 
 
 Crawler log files below are located, by default, under `/uie-crawl/logs`:
 - `error.log`
 - `debug.log`
 
-To change logging level, edit `logback.xml` under `/uie-crawl/ext` folder and change logging at the root level. Restart UIE crawler service. 
+To change logging level, edit `logback.xml` under `/uie-crawl/ext` folder and change logging at the root level. Restart Enterprise Search crawler service. 
 	
 ![uie-folder](configure-enterprise-search-for-use/images/image75.png) 
 	
-# Configure Unity for UIE 
+# Configure Unity for Enterprise Search 
 	
 ## Prerequisites in WebSphere 
 
@@ -138,7 +138,7 @@ Verify all required database JDBC providers are configured in WebSphere:
 ## Configure Datasource and Connector 
 
 - Login to Unity `http://<servername>:<port>/<contextroot>`, by default [http://localhost:9080/vu](http://localhost:9080/vu) using admin username, password is available by request
-- Go to Configuration Console tab and `Global > System > Connectors` and create a UIE connector: 
+- Go to Configuration Console tab and `Global > System > Connectors` and create Enterprise Search connector: 
 	
 	ID: `uie_provider` 
 	
@@ -266,7 +266,7 @@ Verify all required database JDBC providers are configured in WebSphere:
 	
 	![uie-folder](configure-enterprise-search-for-use/images/image99.png) 
 	
-## UIE Search Test 
+## Enterprise Search Test 
 
 - Login to Unity using `http://<servername>:<port>/<context-root>`, by default [http://localhost:9080/vu](http://localhost:9080/vu) 
 - Enter some search criteria and click search:  
