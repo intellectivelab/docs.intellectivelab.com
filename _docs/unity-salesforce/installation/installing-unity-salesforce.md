@@ -197,7 +197,7 @@ After certificate for a given Unity site is obtained it should be installed on a
   | Authentication Provider           | UnityOAuth2Provider           |
   | Start Authentication Flow on Save | checked                       |
 
-  ![u4sf](images/unity-for-salesforce/image26.png)
+  ![u4sf](installing-unity-salesforce/images/image26.png)
 
 - Check that correct Unity application login dialog is opened and enter correct login and password
 
@@ -287,15 +287,19 @@ After certificate for a given Unity site is obtained it should be installed on a
 ## Unity Validator
 
 Unity Validator is a great tool, that allows to test main Salesforce settings and provides brief information on main possible reasons in case of problems:
+
 ![u4sf](installing-unity-salesforce/images/image44.png)
+
 In most cases error messages allow to understand what is wrong.
 How to add Unity Validator tab:
 
 - Go to `Setup > Profiles` and click on profile name, e.g. System Administrator
 - In `Find Settings…` box type `Unity Validator`
 - Select found result (it belongs to Object Settings)
-- Ensure that tab is not hidden, i.e. Tab settings set to `Default On`
+- Ensure that tab is not hidden, i.e. Tab settings set to `Default On`:
+
   ![u4sf](installing-unity-salesforce/images/image45.png)
+  
 - If it’s hidden, click `Edit` button and change visibility. Click `Save`:
 
   ![u4sf](installing-unity-salesforce/images/image46.png)
