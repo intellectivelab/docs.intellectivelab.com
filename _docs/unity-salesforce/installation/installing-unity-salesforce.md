@@ -218,7 +218,7 @@ After certificate for a given Unity site is obtained it should be installed on a
   | :------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------- |
   | Lightning Component | c:UnitySearchTemplatesTab (deployed package), Intellective2:UnitySearchTemplatesTab (installed package)                                                                            |                                |
   | Tab Label           | Any unique Tab name that will be displayed in the Salesforce                                                                                                                       | Documents Search               |
-  | Tab Name            | Should be matched with Tab Id that was configured in the Unity application. This ID can be used only for one Tab. Template IDS must be under 40 characters and contain underscores | sharepoint_documents-templates |
+  | Tab Name            | Must match Tab Id that was configured in the Unity application. This ID can be used only for one Tab. Template IDS must be under 40 characters and contain underscores | sharepoint_documents-templates |
   | Tab Style           | Select from the list                                                                                                                                                               | Lightning                      |
 
   ![u4sf](installing-unity-salesforce/images/image28.png)
@@ -286,7 +286,7 @@ After certificate for a given Unity site is obtained it should be installed on a
 
 ## Unity Validator
 
-Unity Validator is a great tool, that allows to test main Salesforce settings and provides brief information on main possible reasons in case of problems:
+Unity Validator is a great tool that allows to test main Salesforce settings and provides brief information on main possible reasons in case of problems:
 
 ![u4sf](installing-unity-salesforce/images/image44.png)
 
