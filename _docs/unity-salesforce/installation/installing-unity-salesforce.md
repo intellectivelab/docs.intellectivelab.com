@@ -214,12 +214,12 @@ After certificate for a given Unity site is obtained it should be installed on a
 
 - Enter the information below to create the new tab and click `Save`:
 
-  | Field               | Value                                                                                                             | Example          |
-  | :------------------ | :---------------------------------------------------------------------------------------------------------------- | :--------------- |
-  | Lightning Component | c:UnitySearchTemplatesTab (deployed package), Intellective2:UnitySearchTemplatesTab (installed package)           |                  |
-  | Tab Label           | Any unique Tab name that will be displayed in the Salesforce                                                      | Documents Search |
-  | Tab Name            | Should be matched with Tab Id that was configured in the Unity application. This ID can be used only for one Tab. | search_templates |
-  | Tab Style           | Select from the list                                                                                              | Lightning        |
+  | Field               | Value                                                                                                                                                                              | Example                        |
+  | :------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------- |
+  | Lightning Component | c:UnitySearchTemplatesTab (deployed package), Intellective2:UnitySearchTemplatesTab (installed package)                                                                            |                                |
+  | Tab Label           | Any unique Tab name that will be displayed in the Salesforce                                                                                                                       | Documents Search               |
+  | Tab Name            | Should be matched with Tab Id that was configured in the Unity application. This ID can be used only for one Tab. Template IDS must be under 40 characters and contain underscores | sharepoint_documents-templates |
+  | Tab Style           | Select from the list                                                                                                                                                               | Lightning                      |
 
   ![u4sf](installing-unity-salesforce/images/image28.png)
 
@@ -299,7 +299,7 @@ How to add Unity Validator tab:
 - Ensure that tab is not hidden, i.e. Tab settings set to `Default On`:
 
   ![u4sf](installing-unity-salesforce/images/image45.png)
-  
+
 - If it’s hidden, click `Edit` button and change visibility. Click `Save`:
 
   ![u4sf](installing-unity-salesforce/images/image46.png)
