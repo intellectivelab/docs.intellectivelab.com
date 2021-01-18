@@ -146,8 +146,7 @@ Enterprise Search properties mapping maps Enterprise Search ids to SharePoint co
                  <Repository internal="SharePoint">
                     <DefineProperties>
                         <Property ID="repositoryType" value="sharepoint_repository"/>
-                        <Property ID="documentId.Id" value="{This.$id@s}@{This.VersionLabel}"/>
-                        <Property ID="documentId.versionSeriesId" value="{This.$id@s}"/>
+                        <Property ID="documentId.Id" value="{This.$id@s}"/>
                     </DefineProperties>
                 </Repository>
             </ViewerProperties>
