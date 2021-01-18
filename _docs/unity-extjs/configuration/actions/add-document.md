@@ -207,5 +207,26 @@ Override default dialog used for add document action with custom XType: `widget.
        - Target folder created if does not exist 
        - The created folder inherits permission from the parent folder  
        - To add a document to a case user must have proper rights to create a folder 
+        
+       *Note!* To make template replacement working for the Case Folder View tab TargetFolder  must be configured at the DocumentSource level as below:        
+       ```xml
+       <Action ID="ucm_add_document" multiselect="true" scope="single" type="toolbar">
+        <Name>Add Document Sharepoint</Name>
+            <IconCls>action-add-document</IconCls>
+            <Tooltip>Add Document</Tooltip>
+            <Uri/>
+            <CustomParameters>
+                <DocumentSources>
+                    <DocumentSource ID="Sp_Documents" Title="Documents Sp">
+                        <RepositoryDataProvider>sharepoint_repository</RepositoryDataProvider>
+                        <AddDocumentAction>ucmAddSpDocument</AddDocumentAction>
+                        <AttachDocumentAction>ucmAttachSpDocument</AttachDocumentAction>
+                        <DocumentTabId>20</DocumentTabId>
+                        <TargetFolder>/Shared Documents/UCMLinks/{Source.CaseObjectId}</TargetFolder>
+                    </DocumentSource>
+                </DocumentSources>
+            </CustomParameters>
+        </Action>
+       ```    
     
 Perform the rest of [Common Action Configuration Steps](../actions.md#common-actions-configuration-steps).  
