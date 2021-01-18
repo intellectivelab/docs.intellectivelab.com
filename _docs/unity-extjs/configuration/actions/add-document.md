@@ -209,3 +209,75 @@ Override default dialog used for add document action with custom XType: `widget.
        - To add a document to a case user must have proper rights to create a folder 
     
 Perform the rest of [Common Action Configuration Steps](../actions.md#common-actions-configuration-steps).  
+
+## IBM FileNet Content Engine data provider
+
+*content to be added*
+
+### Document entry templates
+
+|**Note**: The support of the [Document Entry Templates](https://www.ibm.com/support/knowledgecenter/SSNW2F_5.5.0/com.ibm.p8.sysoverview.doc/p8sov011.htm) has been added since Unity version 7.8.0
+
+The following configuration steps shoult be executed to enable the Document entry templates at Unity standard  "Add document" dialog:
+ - configure CE document entry template selector that will be used to select the specific entry template at the Unity's Add document dialog;
+ - add the reference to CE document entry template selector at the Unity's Add document action.
+
+#### Configure CE document entry template selector
+
+Create the [CE document selector](../../../unity-react/configuration/tags-list/selectors-tag/ce-selectors.md#ce-document-selector) that will be used to select the document entry template.
+
+For example:
+```xml
+        <Selector ID="ce0_SODemo_docs_templates">
+            <ClassName>com.vegaecm.vspace.selectors.CeDocumentSelector</ClassName>
+            <Description/>
+            <Property ID="Datasource" value="ce_0"/>
+            <Property ID="ObjectStore" value="SODemo"/>
+            <Property ID="RefreshTimeoutSec" value="86400"/>
+
+            <Property ID="NameField" value="name"/>
+            <Property ID="ValueField" value="value"/>
+            <Property ID="NameFormat" value="$name$ ($description$)"/>
+            
+            <Property ID="Sql" value="SELECT Id AS value, DocumentTitle AS name, EntryTemplateDescription AS description FROM EntryTemplate ORDER BY DocumentTitle ASC"/>
+        </Selector>
+```
+
+#### Use CE document entry template selector
+
+Use the `DocumentTemplateSelector` section to refer the just created CE document entry template selector's ID from the corresponding /CustomParameters/RepositoryDataProvider "add_document" Unity action configuration section.
+
+For example:
+```xml
+        <Action ID="add_document" multiselect="true" scope="single" type="toolbar">
+            <Name>Add Document</Name>
+            <IconCls>action-add-document</IconCls>
+            <Tooltip>Add Document</Tooltip>
+            <Uri/>
+            <Parameters>
+                <DocumentClass>
+                    <RepositoryDataProvider ID="ce_repository:SODemo">
+                      ...
+                    </RepositoryDataProvider>
+                </DocumentClass>
+            </Parameters>
+            <CustomParameters>
+                <RepositoryDataProvider ID="ce_repository">
+                    <XType>widget.unity-add-document-dialog</XType>
+                    <FolderPicker>
+                    ...
+                    </FolderPicker>
+                    ...
+                    <!-- Use CE document entry template selector -->
+                    <DocumentTemplateSelector>ce_0_244_ADAMSOS_docs_templates</DocumentTemplateSelector>
+                    <!-- END : Use CE document entry template selector -->
+                    ...
+                </RepositoryDataProvider>
+            </CustomParameters>
+            ...
+        </Action>
+```
+
+|**Note**: The entry templates should be enabled at the target repository: [Enabling entry template management on your repositories](https://www.ibm.com/support/knowledgecenter/SSEUEX_2.0.3/com.ibm.installingeuc.doc/eucco099.htm).
+
+*content to be added*
