@@ -191,7 +191,7 @@ Override default dialog used for add document action with custom XType: `widget.
          <Property ID="FolderPath" value="/sites/TeamSite/Shared Documents"/>
         ```
     
-    - Template expression replacement for FolderPath supported for case attachments from SharePoint in a form: 
+    - Template expression replacement for `FolderPath` supported for case attachments from SharePoint in a form: 
               
        |Template expression|Replaced with|
        |:------------------|:------------|       
@@ -202,13 +202,9 @@ Override default dialog used for add document action with custom XType: `widget.
        ```
           <Property ID="FolderPath" value="/Shared Documents/UCMLinks/{Source.CaseObjectId}"/>       
        ```
-                  
-       - Single level template supported 
-       - Target folder created if does not exist 
-       - The created folder inherits permission from the parent folder  
-       - To add a document to a case user must have proper rights to create a folder 
-        
-       *Note!* To make template replacement working for the Case Folder View tab TargetFolder  must be configured at the DocumentSource level as below:        
+                          
+       For the Case Folder View tab `TargetFolder` must be configured under `DocumentSource` level to make template replacement working:        
+
        ```xml
        <Action ID="ucm_add_document" multiselect="true" scope="single" type="toolbar">
         <Name>Add Document Sharepoint</Name>
@@ -228,5 +224,9 @@ Override default dialog used for add document action with custom XType: `widget.
             </CustomParameters>
         </Action>
        ```    
+       - Single level template supported 
+       - Target folder created if does not exist 
+       - The created folder inherits permission from the parent folder  
+       - To add a document to a case user must have proper rights to create a folder 
     
 Perform the rest of [Common Action Configuration Steps](../actions.md#common-actions-configuration-steps).  
