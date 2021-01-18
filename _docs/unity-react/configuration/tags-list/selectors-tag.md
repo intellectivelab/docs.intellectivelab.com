@@ -63,7 +63,8 @@ There are many types of selectors provided OOTB in Unity.
 
 ## P8 CE selectors
 
-- CESelector 
+- [CESelector](selectors-tag/ce-selectors.md#ce-selector) *cached* selector that allows to execute an arbitrary P8 CE SQL query and use result set as selector items
+- [CeDocumentSelector](selectors-tag/ce-selectors.md#ce-document-selector) *direct* selector that allows to execute an arbitrary P8 CE SQL query and use result set as selector items
 - CEDocumentClassSelector 
 - ChoiceListSelector 
 
