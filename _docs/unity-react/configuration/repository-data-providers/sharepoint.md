@@ -90,7 +90,7 @@ Custom properties for SharePoint data provider:
 ## [SharePoint selectors](../tags-list/selectors-tag/sharepoint-selectors.md)
 
 ## Add document action 
-```$xml
+```xml
 <Action ID="add_document" multiselect="true" scope="single" type="toolbar">
             <Name>Add Document</Name>
             <IconCls>action-add-document</IconCls>
@@ -140,16 +140,22 @@ Custom properties for SharePoint data provider:
   All available content types for a list could be get from API call: `https://<RootUrl>/_api/lists/getbytitle('<ListTitle>')/ContentTypes?$select=Name,Id`
         
 ## Enterprise Search integration
-Enterprise Search properties mapping maps Enterprise Search ids to SharePoint connector IDs. For example:    
-```$xml
-            <ViewerProperties>
-                 <Repository internal="SharePoint">
-                    <DefineProperties>
-                        <Property ID="repositoryType" value="sharepoint_repository"/>
-                        <Property ID="documentId.Id" value="{This.$id@s}"/>
-                    </DefineProperties>
-                </Repository>
-            </ViewerProperties>
+Enterprise Search properties mapping maps Enterprise Search ids to SharePoint connector IDs. For example: 
+   
+```xml
+<RepositoryDataProvider ID="uie_repository"
+                      	class="com.vegaecm.vu.providers.uie.hli.Provider">
+     ...
+     <ViewerProperties>
+          <Repository internal="SharePoint">
+             <DefineProperties>
+                 <Property ID="repositoryType" value="sharepoint_repository"/>
+                 <Property ID="documentId.Id" value="{This.$id@s}"/>
+             </DefineProperties>
+         </Repository>
+     </ViewerProperties>
+     ...
+</RepositoryDataProvider>
 ```
 ## Case links
 *Content to be added* 
