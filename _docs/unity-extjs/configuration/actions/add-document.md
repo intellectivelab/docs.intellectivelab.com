@@ -191,7 +191,7 @@ Override default dialog used for add document action with custom XType: `widget.
          <Property ID="FolderPath" value="/sites/TeamSite/Shared Documents"/>
         ```
     
-    - Template expression replacement for FolderPath supported for case attachments from SharePoint in a form: 
+    - Template expression replacement for `FolderPath` supported for case attachments from SharePoint in a form: 
               
        |Template expression|Replaced with|
        |:------------------|:------------|       
@@ -202,7 +202,28 @@ Override default dialog used for add document action with custom XType: `widget.
        ```
           <Property ID="FolderPath" value="/Shared Documents/UCMLinks/{Source.CaseObjectId}"/>       
        ```
-                  
+                          
+       For the Case Folder View tab `TargetFolder` must be configured under `DocumentSource` level to make template replacement working:        
+
+       ```xml
+       <Action ID="ucm_add_document" multiselect="true" scope="single" type="toolbar">
+        <Name>Add Document Sharepoint</Name>
+            <IconCls>action-add-document</IconCls>
+            <Tooltip>Add Document</Tooltip>
+            <Uri/>
+            <CustomParameters>
+                <DocumentSources>
+                    <DocumentSource ID="Sp_Documents" Title="Documents Sp">
+                        <RepositoryDataProvider>sharepoint_repository</RepositoryDataProvider>
+                        <AddDocumentAction>ucmAddSpDocument</AddDocumentAction>
+                        <AttachDocumentAction>ucmAttachSpDocument</AttachDocumentAction>
+                        <DocumentTabId>20</DocumentTabId>
+                        <TargetFolder>/Shared Documents/UCMLinks/{Source.CaseObjectId}</TargetFolder>
+                    </DocumentSource>
+                </DocumentSources>
+            </CustomParameters>
+        </Action>
+       ```    
        - Single level template supported 
        - Target folder created if does not exist 
        - The created folder inherits permission from the parent folder  
