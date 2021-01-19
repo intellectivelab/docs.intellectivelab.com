@@ -18,7 +18,7 @@ This selector type allows executing of an arbitrary P8 CE SQL query and use resu
 
 This is a ["Cached" selector](../selectors-tag.md#description).
    
-| Property ID | Property value                  | Example        |
+| Property ID | Description                  | Example        |
 |:------------------|:--------------------------------|:---------------|
 | Datasource     | Required. Specify CE data source ID. | ce_0 | 
 | ObjectStore    | Optional. Specify CE object store name. The first object store of the CE data source will be used if omitted.  | SODemo | 
@@ -47,7 +47,7 @@ This selector type allows executing of an arbitrary P8 CE SQL query and use resu
 
 This is a ["Direct" selector](../selectors-tag.md#description).
 
-| Property ID | Property value                  | Example        |
+| Property ID | Description                  | Example        |
 |:------------------|:--------------------------------|:---------------|
 | Datasource     | Required. Specify CE data source ID. | ce_0 | 
 | ObjectStore    | Optional. Specify CE object store name. The first object store of the CE data source will be used if omitted.  | SODemo | 
