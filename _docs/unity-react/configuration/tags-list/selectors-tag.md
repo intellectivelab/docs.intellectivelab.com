@@ -61,9 +61,10 @@ There are many types of selectors provided OOTB in Unity.
 - NoCacheDBSelector
 - UIESelector
 
-## P8 CE selectors
+## [P8 CE selectors](selectors-tag/ce-selectors.md)
 
-- CESelector 
+- [CESelector](selectors-tag/ce-selectors.md#ce-selector) - "Cached" selector that allows to execute an arbitrary P8 CE SQL query and use result set as selector items
+- [CeDocumentSelector](selectors-tag/ce-selectors.md#ce-document-selector) - "Direct" selector that allows to execute an arbitrary P8 CE SQL query and use result set as selector items
 - CEDocumentClassSelector 
 - ChoiceListSelector 
 
