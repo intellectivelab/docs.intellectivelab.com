@@ -30,7 +30,7 @@ This is a ["Cached" selector](../selectors-tag.md#description).
 
 Example:
 
-```xml 
+```xml
 		<Selector ID="vcm_CESelector">
 			<ClassName>com.vegaecm.vspace.selectors.CESelector</ClassName>
             <Datasource>ce_0</Datasource>

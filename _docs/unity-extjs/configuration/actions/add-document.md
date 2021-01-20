@@ -218,9 +218,9 @@ Perform the rest of [Common Action Configuration Steps](../actions.md#common-act
 
 |**Note**: The support of the [Document Entry Templates](https://www.ibm.com/support/knowledgecenter/SSNW2F_5.5.0/com.ibm.p8.sysoverview.doc/p8sov011.htm) has been added since Unity version 7.8.0
 
-The following configuration steps should be executed to enable the Document entry templates at Unity standard  "Add document" dialog:
- - configure CE document entry template selector that will be used to select the specific entry template at the Unity's Add document dialog;
- - use CE document entry selector at the Unity's Add document action.
+The following configuration steps should be executed to enable the Document entry templates in Unity standard  `Add document` dialog:
+ - configure CE document entry template selector that will be used to select the specific entry template in `Add document` dialog
+ - use CE document entry selector in `add_document` action configuration
 
 #### Configure CE document entry template selector
 
@@ -245,7 +245,8 @@ For example:
 
 #### Use CE document entry template selector
 
-Use the `DocumentTemplateSelector` section to refer the just created CE document entry template selector's ID from the corresponding /CustomParameters/RepositoryDataProvider "add_document" Unity action configuration section.
+Add `DocumentTemplateSelector` parameter to `add_document` action configuration in `CustomParameters` > `RepositoryDataProvider` section. 
+Use just created CE document entry template selector's ID for the value.
 
 For example:
 ```xml
@@ -279,5 +280,7 @@ For example:
 ```
 
 |**Note**: The entry templates should be enabled at the target repository: [Enabling entry template management on your repositories](https://www.ibm.com/support/knowledgecenter/SSEUEX_2.0.3/com.ibm.installingeuc.doc/eucco099.htm).
+
+Perform the rest of [Common Action Configuration Steps](../actions.md#common-actions-configuration-steps).
 
 *content to be added*
