@@ -89,55 +89,11 @@ Custom properties for SharePoint data provider:
   
 ## [SharePoint selectors](../tags-list/selectors-tag/sharepoint-selectors.md)
 
-## Add document action 
-```xml
-<Action ID="add_document" multiselect="true" scope="single" type="toolbar">
-            <Name>Add Document</Name>
-            <IconCls>action-add-document</IconCls>
-            <Tooltip>Add Document</Tooltip>
-            <Uri/>
-            <Parameters>
-                <DocumentClass>
-                    <RepositoryDataProvider ID="sharepoint_repository">
-                        <Disabled>true</Disabled>
-                        <DefaultValue>{value: "Document", name: "Document"}</DefaultValue>
-                        <SelectorId>sharepoint_document_class_add_document_auto</SelectorId>
-                        <Roles>
-                            <Role ID="canAddDocument">
-                                <Disabled>false</Disabled>
-                                <DefaultValue>{value:"Documents\Document", name: "Document"}
-                                </DefaultValue>
-                                <SelectorId>sharepoint_document_class_add_document_auto</SelectorId>
-                            </Role>
-                        </Roles>
-                    </RepositoryDataProvider>
-                </DocumentClass>
-            </Parameters>
-            <CustomParameters>
-                <RepositoryDataProvider ID="sharepoint_repository">
-                    <FolderPicker>
-                        <Visible>true</Visible>
-                        <TreeModel name="SharePointFoldersTreeWithRoot">
-                            <Properties>
-                                <Property ID="FolderPath" value="/Shared Documents"/>
-                                <Property ID="DataProviderId" value="sharepoint_repository"/>
-                                <Property ID="LazyLoading" value="true"/>
-                            </Properties>
-                        </TreeModel>
-                    </FolderPicker>
-                    <Fields>
-                        <DocumentTitle>DocumentTitle</DocumentTitle>
-                    </Fields>
-                </RepositoryDataProvider>
-            </CustomParameters>
-            <Security>
-                <AllowRole>canAddDocument</AllowRole>
-            </Security>
-        </Action>
-```
- 
- - DefaultValue - Identify default content type using format `<ListTitle>/<ContentTypeId>` ```{value:"Documents\Document", name: "Document"}```.
-  All available content types for a list could be get from API call: `https://<RootUrl>/_api/lists/getbytitle('<ListTitle>')/ContentTypes?$select=Name,Id`
+## SharePoint specific actions configuration options
+
+### Unity ExtJS actions
+
+[Add document action](../../../unity-extjs/configuration/actions/add-document.md)
         
 ## Enterprise Search integration
 Enterprise Search properties mapping maps Enterprise Search ids to SharePoint connector IDs. For example: 
