@@ -97,11 +97,11 @@ After certificate for a given Unity site is obtained it should be installed on a
 
   ![u4sf](installing-unity-salesforce/images/image13.png)
 
-- Click on `Edit` and check the Visible checkbox for “Unity for Salesforce”. Save the changes:
+- Click on `Edit` and check the `Visible` checkbox for “Unity for Salesforce”. Save the changes:
 
   ![u4sf](installing-unity-salesforce/images/image14.png)
 
-- Go to `Security > Session Settings`, under “Extended use of IE11 with Lightning Experience” section check “I AGREE, Use IE11 with Lightning Experience during the Extended Period”. Click Save:
+- Go to `Security > Session Settings`, under “Extended use of IE11 with Lightning Experience” section check “I AGREE, Use IE11 with Lightning Experience during the Extended Period”. Click `Save`:
 
   ![u4sf](installing-unity-salesforce/images/image15.png)
 
@@ -314,7 +314,7 @@ How to add Unity Validator tab:
 
   ![u4sf](installing-unity-salesforce/images/image48.png)
 
-- If it’s not there, select Unity Validator under Available Items and click arrow button between 2 lists
+- If it’s not there, select `Unity Validator` under Available Items and click arrow button between 2 lists
 - Click `Save`
 
 # Un-installing Unity for Salesforce
@@ -322,7 +322,7 @@ How to add Unity Validator tab:
 ## Un-install UnityApp package
 
 - Login to Salesforce
-- Click Setup:
+- Click `Setup`:
 
   ![u4sf](installing-unity-salesforce/images/image10.png)
 
@@ -343,7 +343,7 @@ How to add Unity Validator tab:
   ![u4sf](installing-unity-salesforce/images/image41.png)
 
 - Remove global components from all layouts where they were added
-- Remove other dependent components if there is any
+- Remove other dependent components if there are any
 - Go to `Apps > Installed Packages` Uninstall UnityApp:
 
   ![u4sf](installing-unity-salesforce/images/image42.png)
