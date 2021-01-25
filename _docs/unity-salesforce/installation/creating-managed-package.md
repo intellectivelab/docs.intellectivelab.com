@@ -17,10 +17,10 @@ category: Unity for CRM
 
 	| Package name       | Terms of use          |
 	|:-------------------|:------------------------------------------|
-	| update.debug.zip   | Debug version of package with additional debug capabilities. For internal use and customers' Org troubleshooting. Should be used when upgrading previously installed `debug` version |
-	| install.debug.zip  | Debug version of package with additional debug capabilities. For internal use and customers' Org troubleshooting. Should be used for initial installation |
-	| update.default.zip | Default version of package created for QA testing. Should be used when upgrading previously installed `default` version |
 	| install.default.zip| Default version of package created for QA testing. Should be used for initial installation |
+	| update.default.zip | Default version of package created for QA testing. Should be used when upgrading previously installed `default` version |
+	| install.debug.zip  | Debug version of package with additional debug capabilities. For internal use and customers' Org troubleshooting. Should be used for initial installation |
+	| update.debug.zip   | Debug version of package with additional debug capabilities. For internal use and customers' Org troubleshooting. Should be used when upgrading previously installed `debug` version |
 	
 - Unzip the archive
 
