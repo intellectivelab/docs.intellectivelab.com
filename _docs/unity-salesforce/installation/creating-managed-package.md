@@ -7,7 +7,7 @@ category: Unity for CRM
 
 ## Prerequisites
 
-- A new Salesforce account should exist or has to be created for managed package
+- Salesforce account should exist or has to be created for managed package
 - Salesforce CLI should be installed in order to deploy a package to Salesforce Org
 
 ## Deploy a package to Salesforce Org
