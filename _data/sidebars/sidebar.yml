@@ -399,7 +399,7 @@ entries:
                 url: /docs/unity-salesforce/installation/installing-unity-salesforce/
                 id: unity-salesforce-installation-installing-unity-salesforce
 
-              - title: Creating managed Salesforce package
+              - title: Creating Managed Salesforce Package
                 output: web
                 url: /docs/unity-salesforce/installation/creating-managed-package/
                 id: unity-salesforce-installation-creating-managed-package
