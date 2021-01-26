@@ -1,20 +1,4 @@
 nav:
-  - title: Level 1
-    id: level1
-    output: web
-    tree:
-      - title: Level 2
-        id: unity-overview
-        tree:
-          - title: level 3
-            id: unity-overview
-            tree:
-              - title: level 4
-                id: unity-overview
-                tree:
-                  - title: level 5
-                    id: unity-overview
-
   - title: Unity Overview
     output: web
     url: /docs/unity-overview/
