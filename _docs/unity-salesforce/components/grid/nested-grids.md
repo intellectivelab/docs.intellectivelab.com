@@ -9,7 +9,7 @@ This feature allows to show cases with workitems as their nested elements in a r
 
 ![sf-nested-grids](nested-grids/images/sf-nested-grids.png)
  
-It supports lazy loading: all children nodes are empty in the beginning and when user clicks on the expand button, nested workitems load along with workitem columns which can not hidden.   
+It supports lazy loading: all children nodes are collapsed in the beginning and when user clicks on the expand button, nested workitems load.   
 Expanded cases can be collapsed so that workitems no longer shown in the grid.
 
 # Configuration
