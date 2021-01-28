@@ -18,9 +18,11 @@ category: Unity 7
 
 ## Document related actions
 
+- [Create Document](actions/create-document.md)
 - [Document Details](actions/document-details.md)
-- [Open in Office](../configuration/actions/open-in-office.md)
-- [View Content](../configuration/actions/view-content.md)
+- [Open in Office](actions/open-in-office.md)
+- [View Content](actions/view-content.md)
+- [Delete Document](actions/delete-document.md)
 
 ## Case related actions
 

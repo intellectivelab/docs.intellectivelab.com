@@ -7,7 +7,7 @@ category: Unity 7
 
 ## Actions with view
 
-- Create document
+- [Create document](../actions/create-document.md)
 - [Document details](../actions/document-details.md)
 - Check In document
 
@@ -33,9 +33,9 @@ Tabs section attributes:
 
 | Attribute    | Description |
 |:-------------|:------------|
-| DocumentType | The name of concrete resource type view is created for |
+| DocumentType | The name of concrete resource type view is created for, should match the `ResourceType` defined in the action custom parameters|
 | Scope        | Optional. The repository data provider id. No need to specify this parameter if DocumentType belongs to one data provider |
-| ViewType     | This parameter is required for `checkin` action and should match action's ViewType value |
+| ViewType     | This parameter is required for `checkin` action and should match action's `ViewType` value |
 
 Tabs section may contain one or more `Tab` tags.
  
@@ -59,6 +59,35 @@ This tab is supported for all document actions listed in [Actions with view](#ac
 | FieldSet  | Fieldset identifier |
 
 For `view` action it's possible to [add a toolbar with other actions](./views-tag/tab-action-set.md) on `Property` tab. 
+
+#### FieldSet
+
+`FieldSet` should contain a list of properties that will be displayed in the document creation dialog.
+
+Example of `FieldSet` for `Create document` view:
+
+```xml
+<FieldSet ID="Document_Create">
+	<Field ID="DocumentTitle" Label="Document Title" Required="true" Row="1" Column="1" Favourite = "true"/>
+</FieldSet>
+```
+
+If property contains a selector, include it in the Unity config file in the Properties section.
+
+Example of Property Selector for `Create document` dialog:
+
+```xml
+Property ID="ComplaintCategory">
+	<Name>Complaint Category</Name>
+	<Type>string</Type>
+	<Resizable>true</Resizable>
+	<Sortable>true</Sortable>
+	<MultiValue>false</MultiValue>
+	<Selector ID="CC_ComplaintCategorySelector"/>
+	<XType/>
+	<Tooltip/>
+</Property>
+```
 
 *content to be added (fieldset configuration)*
 
