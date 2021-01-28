@@ -1,7 +1,7 @@
 nav:
   - title: Unity Overview
     output: web
-    url: /docs/unity-overview/
+    url: /unity-overview/
     id: unity-overview
 
   - title: Unity ExtJS
@@ -9,7 +9,7 @@ nav:
     id: unity-extjs
     tree:
       - title: Quick Start
-        url: /docs/unity-extjs/quick-start/
+        url: /unity-extjs/quick-start/
         id: unity-extjs-quick-start
         output: web, pdf
 
@@ -19,37 +19,37 @@ nav:
         tree:
           - title: Document Management
             output: web
-            url: /docs/unity-extjs/features/document-management/
+            url: /unity-extjs/features/document-management/
             id: unity-extjs-features-document-management
 
           - title: Case Management
             output: web
-            url: /docs/unity-extjs/features/case-management/
+            url: /unity-extjs/features/case-management/
             id: unity-extjs-features-case-management
 
           - title: Process Management
             output: web
-            url: /docs/unity-extjs/features/process-management/
+            url: /unity-extjs/features/process-management/
             id: unity-extjs-features-process-management
 
           - title: Enterprise Search
             output: web
-            url: /docs/unity-extjs/features/enterprise-search/
+            url: /unity-extjs/features/enterprise-search/
             id: unity-extjs-features-enterprise-search
 
           - title: Analytics
             output: web
-            url: /docs/unity-extjs/features/analytics/
+            url: /unity-extjs/features/analytics/
             id: unity-extjs-features-analytics
 
           - title: Integration
             output: web
-            url: /docs/unity-extjs/features/integration/
+            url: /unity-extjs/features/integration/
             id: unity-extjs-features-integration
 
           - title: User Preferences
             output: web
-            url: /docs/unity-extjs/features/user-preferences/
+            url: /unity-extjs/features/user-preferences/
             id: unity-extjs-features-user-preferences
 
       - title: Components
@@ -58,32 +58,32 @@ nav:
         tree:
           - title: Page/Tab
             output: web
-            url: /docs/unity-extjs/components/page-tab/
+            url: /unity-extjs/components/page-tab/
             id: unity-extjs-components-page-tab
 
           - title: Grid
             output: web
-            url: /docs/unity-extjs/components/grid/
+            url: /unity-extjs/components/grid/
             id: unity-extjs-components-grid
 
           - title: Search Criteria Panel
             output: web
-            url: /docs/unity-extjs/components/search-criteria-panel/
+            url: /unity-extjs/components/search-criteria-panel/
             id: unity-extjs-components-search-criteria-panel
 
           - title: Properties View Form
             output: web
-            url: /docs/unity-extjs/components/properties-view-form/
+            url: /unity-extjs/components/properties-view-form/
             id: unity-extjs-components-properties-view-form
 
           - title: Search Template
             output: web
-            url: /docs/unity-extjs/components/search-template/
+            url: /unity-extjs/components/search-template/
             id: unity-extjs-components-search-template
 
           - title: User Preferences
             output: web
-            url: /docs/unity-extjs/components/user-preferences/
+            url: /unity-extjs/components/user-preferences/
             id: unity-extjs-components-user-preferences
 
       - title: Installation
@@ -92,12 +92,12 @@ nav:
         tree:
           - title: System Requirements
             output: web
-            url: /docs/unity-extjs/installation/system-requirements/
+            url: /unity-extjs/installation/system-requirements/
             id: unity-extjs-installation-system-requirements
 
           - title: Installing Unity 7
             output: web
-            url: /docs/unity-extjs/installation/installing-unity-7/
+            url: /unity-extjs/installation/installing-unity-7/
             id: unity-extjs-installation-installing-unity-7
 
       - title: Configuration
@@ -106,57 +106,57 @@ nav:
         tree:
           - title: Basic Steps
             output: web
-            url: /docs/unity-extjs/configuration/basic-steps/
+            url: /unity-extjs/configuration/basic-steps/
             id: unity-extjs-configuration-basic-steps
 
           - title: Tabs
             output: web
-            url: /docs/unity-extjs/configuration/tabs/
+            url: /unity-extjs/configuration/tabs/
             id: unity-extjs-configuration-tabs
 
           - title: Grids
             output: web
-            url: /docs/unity-extjs/configuration/grids/
+            url: /unity-extjs/configuration/grids/
             id: unity-extjs-configuration-grids
 
           - title: Actions
             output: web
-            url: /docs/unity-extjs/configuration/actions/
+            url: /unity-extjs/configuration/actions/
             id: unity-extjs-configuration-actions
 
           - title: Search Criteria Panel
             output: web
-            url: /docs/unity-extjs/configuration/search-criteria-panel/
+            url: /unity-extjs/configuration/search-criteria-panel/
             id: unity-extjs-configuration-search-criteria-panel
 
           - title: Properties View Form
             output: web
-            url: /docs/unity-extjs/configuration/properties-view-form/
+            url: /unity-extjs/configuration/properties-view-form/
             id: unity-extjs-configuration-properties-view-form
 
           - title: Search Templates
             output: web
-            url: /docs/unity-extjs/configuration/search-templates/
+            url: /unity-extjs/configuration/search-templates/
             id: unity-extjs-configuration-search-templates
 
           - title: Repository Data Providers
             output: web
-            url: /docs/unity-extjs/configuration/repository-data-providers/
+            url: /unity-extjs/configuration/repository-data-providers/
             id: unity-extjs-configuration-repository-data-providers
 
           - title: Solutions Configuration
             output: web
-            url: /docs/unity-extjs/configuration/solutions-configuration/
+            url: /unity-extjs/configuration/solutions-configuration/
             id: unity-extjs-configuration-solutions-configuration
 
           - title: Security
             output: web
-            url: /docs/unity-extjs/configuration/security/
+            url: /unity-extjs/configuration/security/
             id: unity-extjs-configuration-security
 
           - title: Tags List
             output: web
-            url: /docs/unity-extjs/configuration/tags-list/
+            url: /unity-extjs/configuration/tags-list/
             id: unity-extjs-configuration-tags-list
 
       - title: Customization
@@ -165,12 +165,12 @@ nav:
         tree:
           - title: Overview
             output: web
-            url: /docs/unity-extjs/customization/overview/
+            url: /unity-extjs/customization/overview/
             id: unity-extjs-customization-overview
 
           - title: Environment Setup
             output: web
-            url: /docs/unity-extjs/customization/environment-setup/
+            url: /unity-extjs/customization/environment-setup/
             id: unity-extjs-customization-environmet-setup
 
   - title: Unity React
@@ -183,42 +183,42 @@ nav:
         tree:
           - title: Document Management
             output: web
-            url: /docs/unity-react/features/document-management/
+            url: /unity-react/features/document-management/
             id: unity-react-features-document-management
 
           - title: Case Management
             output: web
-            url: /docs/unity-react/features/case-management/
+            url: /unity-react/features/case-management/
             id: unity-react-features-case-management
 
           - title: Process Management
             output: web
-            url: /docs/unity-react/features/process-management/
+            url: /unity-react/features/process-management/
             id: unity-react-features-process-management
 
           - title: Enterprise Search
             output: web
-            url: /docs/unity-react/features/enterprise-search/
+            url: /unity-react/features/enterprise-search/
             id: unity-react-features-enterprise-search
 
           - title: Actionable Analytics
             output: web
-            url: /docs/unity-react/features/actionable-analytics/
+            url: /unity-react/features/actionable-analytics/
             id: unity-react-features-actionable-analytics
 
           - title: Integration
             output: web
-            url: /docs/unity-react/features/integration/
+            url: /unity-react/features/integration/
             id: unity-react-features-integration
 
           - title: User Preferences
             output: web
-            url: /docs/unity-react/features/user-preferences/
+            url: /unity-react/features/user-preferences/
             id: unity-react-features-user-preferences
 
           - title: Features Comparison List
             output: web
-            url: /docs/unity-react/features/features-comparison-list/
+            url: /unity-react/features/features-comparison-list/
             id: unity-react-features-features-comparison-list
 
       - title: Components
@@ -227,47 +227,47 @@ nav:
         tree:
           - title: Grid
             output: web
-            url: /docs/unity-react/components/grid/
+            url: /unity-react/components/grid/
             id: unity-react-components-grid
 
           - title: Search Criteria Panel
             output: web
-            url: /docs/unity-react/components/search-criteria-panel/
+            url: /unity-react/components/search-criteria-panel/
             id: unity-react-components-search-criteria-panel
 
           - title: Properties View Form
             output: web
-            url: /docs/unity-react/components/properties-view-form/
+            url: /unity-react/components/properties-view-form/
             id: unity-react-components-properties-view-form
 
           - title: Search Template
             output: web
-            url: /docs/unity-react/components/search-template/
+            url: /unity-react/components/search-template/
             id: unity-react-components-search-template
 
           - title: Perspective
             output: web
-            url: /docs/unity-react/components/perspective/
+            url: /unity-react/components/perspective/
             id: unity-react-components-perspective
 
           - title: Dashboard
             output: web
-            url: /docs/unity-react/components/dashboard/
+            url: /unity-react/components/dashboard/
             id: unity-react-components-dashboard
 
           - title: Chart
             output: web
-            url: /docs/unity-react/components/chart/
+            url: /unity-react/components/chart/
             id: unity-react-components-chart
 
           - title: Indicator
             output: web
-            url: /docs/unity-react/components/indicator/
+            url: /unity-react/components/indicator/
             id: unity-react-components-indicator
 
           - title: Security
             output: web
-            url: /docs/unity-react/components/security/
+            url: /unity-react/components/security/
             id: unity-react-components-security
 
       - title: Installation
@@ -276,12 +276,12 @@ nav:
         tree:
           - title: System Requirements
             output: web
-            url: /docs/unity-react/installation/system-requirements/
+            url: /unity-react/installation/system-requirements/
             id: unity-react-installation-system-requirements
 
           - title: Installing Unity 7
             output: web
-            url: /docs/unity-react/installation/installing-unity-7/
+            url: /unity-react/installation/installing-unity-7/
             id: unity-react-installation-installing-unity-7
 
       - title: Configuration
@@ -290,72 +290,72 @@ nav:
         tree:
           - title: Basic Steps
             output: web
-            url: /docs/unity-react/configuration/basic-steps/
+            url: /unity-react/configuration/basic-steps/
             id: unity-react-configuration-basic-steps
 
           - title: Grids
             output: web
-            url: /docs/unity-react/configuration/grids/
+            url: /unity-react/configuration/grids/
             id: unity-react-configuration-grids
 
           - title: Actions
             output: web
-            url: /docs/unity-react/configuration/actions/
+            url: /unity-react/configuration/actions/
             id: unity-react-configuration-actions
 
           - title: Search Criteria Panel
             output: web
-            url: /docs/unity-react/configuration/search-criteria-panel/
+            url: /unity-react/configuration/search-criteria-panel/
             id: unity-react-configuration-search-criteria-panel
 
           - title: Properties View Form
             output: web
-            url: /docs/unity-react/configuration/properties-view-form/
+            url: /unity-react/configuration/properties-view-form/
             id: unity-react-configuration-properties-view-form
 
           - title: Search Templates
             output: web
-            url: /docs/unity-react/configuration/search-templates/
+            url: /unity-react/configuration/search-templates/
             id: unity-react-configuration-search-templates
 
           - title: Repository Data Providers
             output: web
-            url: /docs/unity-react/configuration/repository-data-providers/
+            url: /unity-react/configuration/repository-data-providers/
             id: unity-react-configuration-repository-data-providers
 
           - title: Solutions Configuration
             output: web
-            url: /docs/unity-react/configuration/solutions-configuration/
+            url: /unity-react/configuration/solutions-configuration/
             id: unity-react-configuration-solutions-configuration
 
           - title: Perspectives
             output: web
-            url: /docs/unity-react/configuration/perspectives/
+            url: /unity-react/configuration/perspectives/
             id: unity-react-configuration-perspectives
 
           - title: Dashboards
             output: web
-            url: /docs/unity-react/configuration/dashboards/
+            url: /unity-react/configuration/dashboards/
             id: unity-react-configuration-dashboards
 
           - title: Charts
             output: web
-            url: /docs/unity-react/configuration/charts/
+            url: /unity-react/configuration/charts/
             id: unity-react-configuration-charts
 
           - title: Indicators
             output: web
-            url: /docs/unity-react/configuration/indicators/
+            url: /unity-react/configuration/indicators/
             id: unity-react-configuration-indicators
 
           - title: Security
             output: web
-            url: /docs/unity-react/configuration/security/
+            url: /unity-react/configuration/security/
             id: unity-react-configuration-security
 
           - title: Tags List
             output: web
-            url: /docs/unity-react/configuration/tags-list/
+            url: /unity-react/configuration/tags-list/
             id: unity-react-configuration-tags-list
 
       - title: Customization
@@ -364,12 +364,12 @@ nav:
         tree:
           - title: Overview
             output: web
-            url: /docs/unity-react/customization/overview/
+            url: /unity-react/customization/overview/
             id: unity-react-customization-overview
 
           - title: Environment Setup
             output: web
-            url: /docs/unity-react/customization/environment-setup/
+            url: /unity-react/customization/environment-setup/
             id: unity-react-customization-environment-setup
 
   - title: Unity for Salesforce
@@ -382,7 +382,7 @@ nav:
         tree:
           - title: Document Management
             output: web
-            url: /docs/unity-salesforce/features/document-management/
+            url: /unity-salesforce/features/document-management/
             id: unity-salesforce-features-document-management
 
       - title: Installation
@@ -391,7 +391,7 @@ nav:
         tree:
           - title: Installing Unity for Salesforce
             output: web
-            url: /docs/unity-salesforce/installation/installing-unity-salesforce/
+            url: /unity-salesforce/installation/installing-unity-salesforce/
             id: unity-salesforce-installation-installing-unity-salesforce
 
       - title: Configuration
@@ -400,26 +400,26 @@ nav:
         tree:
           - title: Grids
             output: web
-            url: /docs/unity-salesforce/configuration/grids/
+            url: /unity-salesforce/configuration/grids/
             id: unity-salesforce-configuration-grids
 
           - title: Actions
             output: web
-            url: /docs/unity-salesforce/configuration/actions/
+            url: /unity-salesforce/configuration/actions/
             id: unity-salesforce-configuration-actions
 
           - title: Tags List
             output: web
-            url: /docs/unity-salesforce/configuration/tags-list/
+            url: /unity-salesforce/configuration/tags-list/
             id: unity-salesforce-configuration-tags-list
 
   - title: Unity for ICN
-    url: /docs/unity-for-icn/
+    url: /unity-for-icn/
     id: unity-for-icn
     output: web, pdf
 
   - title: Unity for Dynamics
-    url: /docs/unity-for-dynamics/
+    url: /unity-for-dynamics/
     id: unity-for-dynamics
     output: web, pdf
 
@@ -428,7 +428,7 @@ nav:
     id: enterprise-search
     tree:
       - title: Overview
-        url: /docs/enterprise-search/overview/
+        url: /enterprise-search/overview/
         id: enterprise-search-overview
         output: web, pdf
         type: homepage
@@ -439,12 +439,12 @@ nav:
         tree:
           - title: Prerequisites
             output: web
-            url: /docs/enterprise-search/installation/prerequisites/
+            url: /enterprise-search/installation/prerequisites/
             id: enterprise-search-installation-prerequisites
 
           - title: Installing Enterprise Search
             output: web
-            url: /docs/enterprise-search/installation/installing-enterprise-search/
+            url: /enterprise-search/installation/installing-enterprise-search/
             id: enterprise-search-installation-installing-enterprise-search
 
       - title: Configuration
@@ -453,12 +453,12 @@ nav:
         tree:
           - title: Security
             output: web
-            url: /docs/enterprise-search/configuration/security/
+            url: /enterprise-search/configuration/security/
             id: enterprise-search-configuration-security
 
           - title: Configure Enterprise Search for Use
             output: web
-            url: /docs/enterprise-search/configuration/configure-enterprise-search-for-use/
+            url: /enterprise-search/configuration/configure-enterprise-search-for-use/
             id: enterprise-search-configuration-configure-enterprise-search-for-use
 
       - title: Development
@@ -467,17 +467,17 @@ nav:
         tree:
           - title: Environment Setup
             output: web
-            url: /docs/enterprise-search/development/environment-setup/
+            url: /enterprise-search/development/environment-setup/
             id: enterprise-search-development-environment-setup
 
           - title: Customization
             output: web
-            url: /docs/enterprise-search/development/customization/
+            url: /enterprise-search/development/customization/
             id: enterprise-search-development-customization
 
           - title: API
             output: web
-            url: /docs/enterprise-search/development/api/
+            url: /enterprise-search/development/api/
             id: enterprise-search-development-api
 
   - title: Interchange
@@ -485,11 +485,11 @@ nav:
     id: interchange
     tree:
       - title: Deployment
-        url: /docs/interchange/deployment/
+        url: /interchange/deployment/
         id: interchange-deployment
         output: web, pdf
       - title: Customization
-        url: /docs/interchange/customization/
+        url: /interchange/customization/
         id: interchange-customization
         output: web, pdf
 
@@ -499,22 +499,22 @@ nav:
     tree:
       - title: Unity 7.6 Release Notes
         output: web
-        url: /docs/release-notes/unity-7-6-release-notes/
+        url: /release-notes/unity-7-6-release-notes/
         id: release-notes-unity-7-6-release-notes
 
       - title: Unity 7.7 Release Notes
         output: web
-        url: /docs/release-notes/unity-7-7-release-notes/
+        url: /release-notes/unity-7-7-release-notes/
         id: release-notes-unity-7-7-release-notes
 
       - title: Unity 7.8 Release Notes
         output: web
-        url: /docs/release-notes/unity-7-8-release-notes/
+        url: /release-notes/unity-7-8-release-notes/
         id: release-notes-unity-7-8-release-notes
 
       - title: Unity for Intellective Release Notes
         output: web
-        url: /docs/release-notes/u4i-release-notes/
+        url: /release-notes/u4i-release-notes/
         id: release-notes-u4i-release-notes
 
   - title: Tutorials
@@ -523,17 +523,17 @@ nav:
     tree:
       - title: How to Add a Page to Documentation
         output: web
-        url: /docs/tutorials/how-to-add-page-to-doc-portal/
+        url: /tutorials/how-to-add-page-to-doc-portal/
         id: tutorials-how-to-add-page-to-doc-portal
 
       - title: How to Install Docker
         output: web
-        url: /docs/tutorials/how-to-install-docker/
+        url: /tutorials/how-to-install-docker/
         id: tutorials-how-to-install-docker
 
       - title: Unity Video Tutorials
         output: web
-        url: /docs/tutorials/unity-video-tutorials/
+        url: /tutorials/unity-video-tutorials/
         id: tutorials-unity-video-tutorials
 
   - title: Development
@@ -546,20 +546,20 @@ nav:
         tree:
           - title: Overview
             output: web
-            url: /docs/development/unity-api/overview/
+            url: /development/unity-api/overview/
             id: development-unity-api-overview
 
           - title: Security
             output: web
-            url: /docs/development/unity-api/security/
+            url: /development/unity-api/security/
             id: development-unity-api-security
 
           - title: OpenAPI Specification
             output: web
-            url: /docs/development/unity-api/openapi-specification/
+            url: /development/unity-api/openapi-specification/
             id: development-unity-api-openapi-specification
 
       - title: Development Materials
         output: web
-        url: /docs/development/development-materials/
+        url: /development/development-materials/
         id: development-development-materials

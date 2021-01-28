@@ -48,7 +48,7 @@ $(function () {
         var target = $(this.getAttribute('href'))
             , scroll_target = target.offset().top
 
-        $(window).scrollTop(scroll_target - 90);
+        $(window).scrollTop(scroll_target - 130);
         return false
     })
 
