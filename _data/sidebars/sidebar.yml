@@ -389,6 +389,15 @@ entries:
                 url: /docs/unity-salesforce/features/document-management/
                 id: unity-salesforce-features-document-management
 
+          - title: Components
+            output: web, pdf
+            id: unity-salesforce-components
+            subfolders:
+              - title: Grid
+                output: web
+                url: /docs/unity-salesforce/components/grid/
+                id: unity-salesforce-components-grid
+
           - title: Installation
             output: web, pdf
             id: unity-salesforce-installation
