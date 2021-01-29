@@ -26,8 +26,6 @@ For `Rename File` document action following section should be added to the Unity
 |:------------|:------------|
 |ResourceName | documents   |
 |ActionType   | rename |
-|NameProperty   | ID of file name property. In example above defined as `DocumentTitleSearch`. <sup>1</sup>|
-
-<sup>1</sup> Property identified by `NameProperty` has to be modifiable.
+|NameProperty   | ID of file name property that should be modifiable on repository level. In example above defined as `DocumentTitleSearch`.|
 
 Perform the rest of [Common Action Configuration Steps](../actions.md#common-actions-configuration-steps).
