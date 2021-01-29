@@ -3,11 +3,9 @@ title: Rename File Action Configuration
 layout: docs
 category: Unity 7
 ---
-[Rename File feature description](../../features/document-management/rename-file.md)
+[Rename a File feature description](../../features/document-management/rename-file.md)
 
-# Rename File action configuration
-
-For `Rename File` action following section should be added to the Unity System XML file:
+For `Rename File` document action following section should be added to the Unity System XML file:
 
 ```xml
 <Action ID="renameFile" multiselect="false" scope="single" type="toolbar">

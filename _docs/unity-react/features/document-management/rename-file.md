@@ -1,18 +1,17 @@
 ---
-title: Rename File Feature
+title: Rename a File Feature
 layout: docs
 category: Unity 7
 ---
 # Description
 
-`Rename File` feature allows to change document file name. It can be executed from grid context-menu. The file name property is defined in action configuration.
+`Rename a File` feature allows to change document file name. It can be executed from grid context-menu. The file name property is defined in action configuration.
 
 The string portion after last dot character is considered as file extension and is not changable.
 
 
-# How to Rename File
+# How to Rename a File
 
-This describes how action works.
 - Click on context menu icon of the document, that should be renamed
 
 - Click `Rename` action:
