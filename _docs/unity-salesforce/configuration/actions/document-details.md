@@ -26,11 +26,11 @@ For `Document details` action following section should be added to the Unity Sys
 
 `Document details` action custom configuration parameters:
 
-| Parameter   | Description |
-|:------------|:------------|
-|ResourceName | documents   |
-|ActionType   | edit        |
-|Scope        | Optional. The repository data provider id. Default value: `inherit` (it means that this parameter will be inherited from `Search Template` or `Grid` component) |
+| Parameter   | Description | Value |
+|:------------|:------------|:------|
+|ResourceName | | documents   |
+|ActionType   | | edit        |
+|Scope        | Optional. The repository data provider id. Default value: `inherit` (it means that this parameter will be inherited from `Search Template` or `Grid` component) | single |
 
 It's required to [specify View](../tags-list/views-tag.md) in solution configuration file.
 

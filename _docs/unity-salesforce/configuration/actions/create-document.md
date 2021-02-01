@@ -20,7 +20,7 @@ For `Create document` action following section should be added to the Unity Syst
 </Action>
 ```
 
-| Parameter   | Description | Example |
+| Parameter   | Description | Value   |
 |:------------|:------------|:--------|
 |ResourceName | Indicated that dialog for document creation will be displayed | documents   |
 |ResourceType | Document with this document class will be created | Document    |

@@ -22,6 +22,7 @@ category: Unity 7
 - [Document Details](actions/document-details.md)
 - [Open in Office](actions/open-in-office.md)
 - [View Content](actions/view-content.md)
+- [Download Document](actions/download-document.md)
 - [Delete Document](actions/delete-document.md)
 
 ## Case related actions
