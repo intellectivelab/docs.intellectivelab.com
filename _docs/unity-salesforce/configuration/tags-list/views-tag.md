@@ -31,11 +31,11 @@ To create a view for document action, following tag should be added to solution 
 
 Tabs section attributes:
 
-| Attribute    | Description |
-|:-------------|:------------|
-| DocumentType | The name of concrete resource type view is created for, should match the `ResourceType` defined in the action custom parameters|
-| Scope        | Optional. The repository data provider id. No need to specify this parameter if DocumentType belongs to one data provider |
-| ViewType     | This parameter is required for `checkin` action and should match action's `ViewType` value |
+| Attribute    | Description | Example |
+|:-------------|:------------|:--------|
+| DocumentType | The name of concrete resource type view is created for, should match the `ResourceType` defined in the action custom parameters| Documents\Document |
+| Scope        | Optional. The repository data provider id. No need to specify this parameter if DocumentType belongs to one data provider | sharepoint_repository_testteamsite |
+| ViewType     | This parameter is required for `checkin` action and should match action's `ViewType` value | open |
 
 Tabs section may contain one or more `Tab` tags.
  
@@ -51,20 +51,20 @@ Example of `Properties` tab configuration:
 
 This tab is supported for all document actions listed in [Actions with view](#actions-with-view). Available attributes are in the table below:
 
-| Attribute | Description         |
-|:----------|:--------------------|
-| Type      | `Details` (tab type)|
-| ID        | Tab identifier      |
-| Label     | Tab label           |
-| FieldSet  | Fieldset identifier |
+| Attribute | Description         | Example |
+|:----------|:--------------------|:--------|
+| Type      | Tab type            | Details |
+| ID        | Tab identifier      | 1       |
+| Label     | Tab label           | Document Properties |
+| FieldSet  | Fieldset identifier | Document_Create_testteamsite |
 
-For `view` action it's possible to [add a toolbar with other actions](./views-tag/tab-action-set.md) on `Property` tab. 
+For `View` action it's possible to [add a toolbar with other actions](./views-tag/tab-action-set.md) on `Property` tab. 
 
 #### FieldSet
 
 `FieldSet` should contain a list of properties that will be displayed in the document creation dialog.
 
-Example of `FieldSet` for `Create document` view:
+Example of `FieldSet` configuration for `Create document` view:
 
 ```xml
 <FieldSet ID="Document_Create">
@@ -72,9 +72,9 @@ Example of `FieldSet` for `Create document` view:
 </FieldSet>
 ```
 
-If property contains a selector, include it in the Unity config file in the Properties section.
+If property contains a selector, include it in the Unity configuration XML file in the `Properties` section.
 
-Example of Property Selector for `Create document` dialog:
+Example of property with selector for `Create document` dialog:
 
 ```xml
 Property ID="ComplaintCategory">
@@ -89,11 +89,9 @@ Property ID="ComplaintCategory">
 </Property>
 ```
 
-*content to be added (fieldset configuration)*
-
 ### Versions tab
 
-Example of `Versions` tab configuration.
+Example of `Versions` tab configuration:
 
 ```xml
 <Tab ID="2" Label="Versions" Tooltip="Document Versions" Type="Versions">
@@ -108,20 +106,55 @@ Example of `Versions` tab configuration.
 
 This tab is supported for `View` action only. Available attributes are in the table below:
 
-| Attribute | Description         |
-|:----------|:--------------------|
-| Type      | `Versions` (tab type)|
-| ID        | Tab identifier      |
-| Label     | Tab label           |
+| Attribute | Description         | Example  |
+|:----------|:--------------------|:---------|
+| Type      | Tab type            | Versions |
+| ID        | Tab identifier      | 2        |
+| Label     | Tab label           | Versions |
 
 Custom parameters section should contain following parameters:
 
-| Parameter name | Description         |
-|:---------------|:--------------------|
-| viewMode       | `searchTemplate`    |
-| templateSet    | Versions template set id |
-| gridId         | Grid id |
+| Parameter name | Description         | Example |
+|:---------------|:--------------------|:--------|
+| viewMode       |              | searchTemplate |
+| templateSet    | Versions template set id | document_versions_testteamsite-templates-set |
+| gridId         | Grid id | testteamsite-getinfo-versions-grid |
 
+### Search Template for document versions
+
+The Search template for document versions also should contain the customer parameter `ResourceName`=documents.
+
+Example of `TemplateSet` and `SearchTemplate` configuration for `Document Details` action:
+
+```xml
+<TemplateSet ID="document_versions-templates-set">
+	<Template>document_versions_Search</Template>
+</TemplateSet>
+
+<SearchTemplate ID="document_versions_Search">
+	<DataProviderId>ce_repository</DataProviderId>
+	<Description>DiffProperties title</Description>
+	<Comment>Enter search criteria</Comment>
+	<Autoexecute>false</Autoexecute>
+	<Hidden>true</Hidden>
+	<Security>
+		<AllowRole>Unity Users</AllowRole>
+	</Security>
+	<Operation dataProviderId="ce_repository" type="search">
+		<OperationProperties>
+			<Property ID="ResourceName" value="documents"/>
+			<Property ID="objectStore" type="FIRST">
+				<SecuredValue>
+					<Value>SODemo</Value>
+				</SecuredValue>
+			</Property>
+		</OperationProperties>
+	</Operation>
+	<SortFields/>
+	<Grid ID="getinfo-versions-grid"/>
+	<Criteria/>
+</SearchTemplate>
+```
 
 # Cases
 

@@ -20,17 +20,18 @@ For `Create document` action following section should be added to the Unity Syst
 </Action>
 ```
 
-| Parameter   | Description |
-|:------------|:------------|
-|ResourceName | documents   |
-|ResourceType | Document    |
-|ActionType   | create, dialog for document creation will be displayed |
-|Scope        | Optional. The repository data provider id. Default value: `inherit` (it means that this parameter will be inherited from `Search Template` or `Grid` component) |
-|Uri        | should be empty |
+| Parameter   | Description | Example |
+|:------------|:------------|:--------|
+|ResourceName | Indicated that dialog for document creation will be displayed | documents   |
+|ResourceType | Document with this document class will be created | Document    |
+|ActionType   | Indicated that dialog for document creation will be displayed | create |
+|Scope        | Optional. The repository data provider id. Default value: `inherit` (it means that this parameter will be inherited from `Search Template` or `Grid` component) | single |
+|Uri        | should be empty | |
 
 It's required to [specify View](../tags-list/views-tag.md) in solution configuration file.
 
-Example:
+Example of `Views` configuration for `Create Document` action:
+
 ```xml
 <Views>
 	<Documents>
@@ -45,6 +46,17 @@ Example:
 </Views>
 ```
 
+The FieldSet should contain a list of properties that will be displayed in the document creation dialog.
+
+Example of `FieldSet` configuration for `Create Document` action:
+
+```xml
+<FieldSet ID="Document_Create">
+	<Field ID="DocumentTitle" Label="Document Title" Required="true" Row="1" Column="1" Favourite = "true"/>
+</FieldSet>
+```
+
+If property contains a selector, include it in the Unity config file in the `Properties` section.
 
 
 Perform the rest of [Common Action Configuration Steps](../actions.md#common-actions-configuration-steps).
