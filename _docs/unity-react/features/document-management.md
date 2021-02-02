@@ -8,3 +8,4 @@ category: Unity 7
 - [View document content](document-management/view-content.md) 
 - [Copy/Move document to folder](document-management/copy-move-document-to-folder.md)  
 - [Delete a document](document-management/delete-document.md)  
+- [Rename a file](document-management/rename-file.md)
