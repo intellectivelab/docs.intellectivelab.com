@@ -22,7 +22,7 @@ The string portion after last dot character is considered as file extension and 
 
      ![Select a folder dialog](rename-file/images/rename-file-dialog.png)
 
-- In case of failure the dialog opened, toast with error message `Server error` appears:
+- In case of failure toast with error message `Server error` appears:
 
      ![Action failure](rename-file/images/rename-file-error.png)
 
