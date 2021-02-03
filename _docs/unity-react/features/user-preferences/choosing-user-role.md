@@ -43,6 +43,19 @@ Current user role here is `Manager`.
 - This feature is disabled for case when role mode is `RoleUnion` in 
 [System Properties Configuration](../../configuration/tags-list/system-properties-tag.md) section.
 
+# Limitation
+
+This feature is available OOTB, but requires customization in case requests to Unity are sent via Gateway. 
+A specific user role header should be added to each request in this case. Public API retrieves it from the 
+header and applies to current user context in order to show only those [dashboards](../../configuration/dashboards.md), 
+[components](../../configuration/dashboards/component-tag.md) and [actions](../../configuration/actions.md) 
+related to that role.
+
+The name of header is `X-{UserContext.UserName}-User-Role` by default. It supports macros, where `UserContext.UserName` 
+is current user name. Header name is stored in auth.properties file and can be modified:
+
+![User role header](./images/current-role-header-name.png)
+
 # Configuration
 
 [Access Roles Configuration](../../configuration/tags-list/access-roles-tag.md)
