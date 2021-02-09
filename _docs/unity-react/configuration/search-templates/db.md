@@ -1,9 +1,11 @@
 ---
-title: Search Templates Configuration - DB (DBRepositoryDataProvider)
+title: Search Templates Configuration - Database (DBRepositoryDataProvider)
 layout: docs
 category: Unity 7
 ---
-[DBRepositoryDataProvider for Search Template component description](../../components/search-template/supported-data-providers/dbrepository-data-provider.md)
+[DBRepositoryDataProvider for Search Template component description in Unity React](../../components/search-template/supported-data-providers/dbrepository-data-provider.md)
+
+# XML Configuration
 
 Example of configuration:
 
@@ -72,3 +74,50 @@ and external names are different). Use `Id`, `ID`, `id` or `document_id` externa
 If database doesn't support a particular data type, value in select clause should be casted 
 to string (example above is for db2, which doesn't support BOOLEAN, that's why `IS_RESERVED_DOC` 
 and `IS_CURRENT_DOC` are returned as `True` / `False` text).
+
+# Configuration Console
+
+When using the database connector for searching, you will need to define which table/view in the database you want to search in. 
+This configuration can be done by directly editing the XML in the Advanced Editor or using the Configuration Console to setup the search template 
+and then using the Advanced Editor to modify the default search template parameters to function with a database.
+
+- Navigate to `User Interface` > `Search Templates`:
+ 
+    ![Navigate to the Search Templates section of Configuration Console](db/images/image16.png)
+
+- Click `New`
+- Enter an `Id` and `Name` for the search template
+- Select a `Content List`
+- Select your database connector for the `Connector Id` and click `Next`:
+ 
+    ![Define parameters for search template](db/images/image17.png)
+
+- Define the search criteria and click `Next`
+- Assign security roles to the tab and click `Next`
+- Assign the search template to the desired tabs and click `Next`
+- Optionally, provide instructions for the search template
+- Click `Save`
+- Click `Apply` to save the changes
+
+As mentioned, we will now need to open the Advanced Editor to do some additional configuration.
+
+- Click the `Advanced Editor` button at the top of the Configuration Console:
+ 
+    ![Button to open Advanced Editor](db/images/image18.png)
+
+- Navigate to `Configuration` > `Search Templates`
+- Find and expand the node for the search template you created
+- Select the Operation node
+- In the editor, configure the query to be used when executing the search
+    - Add a new `Property` element. Refer to the figure below for an example.
+    - Enter "query" for the Id attribute
+    - Enter "FIRST" for the type attribute
+    - Add a `SecuredValue` element.
+    - Add a `Value` element
+    - For the value of the <Value> element, enter the following SQL query. Replace table-name with the database table you want to search.
+    SELECT {Macro.ResultProperties} FROM table-name WHERE {Macro.QueryCriterion} AND {Macro.FilterCriteiron}
+ 
+    ![Define the query for the DB search template](db/images/image19.png)
+
+- Click `Apply` to save your changes
+- Click `Activate` to activate the new configuration

@@ -21,7 +21,7 @@ Unity 7.2.1 added support for PostgreSQL.
 
 # Installation Impact
 
-The database connector is available OOTB and can be configured at anytime after the installation of the Unity application. 
+The database connector is available OOTB and can be configured at any time after the installation of the Unity application. 
 It requires an existing database that the connector will use to provide data to the application.
 If not already done, you will need to install and configure the JDBC drivers for your database to be used when creating the JNDI definition on your web application server.
 
@@ -30,7 +30,7 @@ If not already done, you will need to install and configure the JDBC drivers for
 ## JNDI Configuration
  
 To use the Unity database connector, you will need to define a JNDI definition on the web application server that the connector will reference.
-This process is different for each web application server and you should follow the process for your server, a sample is provided here using the WebSphere Liberty web application server.
+This process is different for each web application server, and you should follow the process for your server. A sample below is provided for the WebSphere Liberty web application server.
 
 ### WebSphere Liberty Profile
 
@@ -60,11 +60,11 @@ This process is different for each web application server and you should follow 
  
     |Parameter|Description|Value|
     |:--------|:----------|:----|
-    |id       |dataSourse ID |trn-lookupdb|
+    |id       |Datasourse ID |trn-lookupdb|
     |jndiName |JNDI name | trnlookup |
     |libraryRef | Library ID previously created| MSSQLLib |
     
-  - Save the file
+- Save the file
 
 ## Unity Configuration – Configuration Console
 
@@ -75,21 +75,20 @@ This process is different for each web application server and you should follow 
     ![Navigate to the Datasources section of Configuration Console](db/images/image8.png)
  
 - Click `New`
-- Enter an Id for the data source, this ID is used by Unity, it is recommended you use consistent data source IDs between the JNDI and Unity definitions. 
-- Select DB for the type:
+- Enter an Id for the data source 
+    This ID is used by Unity, it is recommended to use consistent data source IDs between the JNDI and Unity definitions. 
+- Select `DB` for the type and click `OK`:
 
     ![Configuration for database data source](db/images/image9.png)
 
-- Click `OK`
 - Click to edit the parameters of the data source:
 
     ![Click icon to edit data source parameters](db/images/image10.png)
     
-- Enter the JNDI you configured for the database:
+- Enter the JNDI you configured for the database and click `OK`:
 
     ![Define JNDI for data source](db/images/image11.png)
     
-- Click `OK`
 - Click `Apply` to save your changes
 
 After creating the data source, you will create a new connector that uses the data source.
@@ -102,7 +101,7 @@ After creating the data source, you will create a new connector that uses the da
 
 - Click `New`
 - Enter an Id for the connector
-- Select Database for the type:
+- Select `Database` for the type:
  
     ![Create DB connector](db/images/image13.png)
 
@@ -118,73 +117,27 @@ After creating the data source, you will create a new connector that uses the da
     The Datasource Property ID is the data field as it appears in the database, the VU Property ID is the defined value in Unity. 
     Type is the data type Unity will use for the field, it does not have to be the same as the type that is used in the database. 
 
-    |**Note**:  When using the Configuration Console, if adding new Properties that are not already defined in Unity, the  `Property` definition is added to the configuration. 
-    If adding all  XML manually (direct editing or using Advance Editor), you must add the Properties definition before you can do the Property Mapping. 
- 
+    |**Note**: In Configuration Console, when adding new Properties that are not already defined in Unity, the  `Property` definition is added to the configuration. 
+     
     ![Database Connector Property Mapping](db/images/image15.png)
 
 - Click `Save`
-- Click `Apply` to save your changes
+- Click `Apply`
 - Click `Activate` to activate the new configuration
 
-After creating the new connector, you can confirm that it is working by clicking on the icon in the "Test connection" column of the connector.
+After creating the new connector, you can confirm that it is working by clicking on the icon in the `Test connection` column of the connector.
 
 ### Search Template
 
-When using the database connector for searching, you will need to define which table/view in the database you want to search in. 
-This configuration can be done by directly editing the XML in the Advanced Editor or using the Configuration Console to setup the search template 
-and then using the Advanced Editor to modify the default search template parameters to function with a database.
-
-- Navigate to `User Interface` > `Search Templates`:
- 
-    ![Navigate to the Search Templates section of Configuration Console](db/images/image16.png)
-
-- Click `New`
-- Enter an `Id` and `Name` for the search template
-- Select a `Content List`
-- Select your database connector for the `Connector Id`:
- 
-    ![Define parameters for search template](db/images/image17.png)
-
-- Click `Next`
-- Define the search criteria
-- Click `Next`
-- Assign security roles to the tab
-- Click `Next`
-- Assign the search template to the desired tabs
-- Click `Next`
-- Optionally, provide instructions for the search template
-- Click `Save`
-- Click `Apply` to save the changes
-
-As mentioned, we will now need to open the Advanced Editor to do some additional configuration.
-
-- Click the `Advanced Editor` button at the top of the Configuration Console
- 
-    ![Button to open Advanced Editor](db/images/image18.png)
-
-- Navigate to `Configuration` > `Search Templates`
-- Find and expand the node for the search template you created
-- Select the Operation node
-- In the editor, configure the query to be used when executing the search
-    - Add a new `Property` element. Refer to the figure below for an example.
-    - Enter "query" for the Id attribute
-    - Enter "FIRST" for the type attribute
-    - Add a `SecuredValue` element.
-    - Add a `Value` element
-    - For the value of the <Value> element, enter the following SQL query. Replace table-name with the database table you want to search.
-    SELECT {Macro.ResultProperties} FROM table-name WHERE {Macro.QueryCriterion} AND {Macro.FilterCriteiron}
- 
-    ![Define the query for the DB search template](db/images/image19.png)
-
-- Click `Apply` to save your changes
-- Click `Activate` to activate the new configuration
+[Search Template configuration for Database repository data provider in Configuration Console](../search-templates/db.md#configuration-console)
 
 ## Unity Configuration - XML Configuration
 
-### Add Data Source
+Perform configuration steps [common to all Unity data providers](../repository-data-providers.md#common-steps-to-configure-data-provider).
 
-Add a new Datasource element to the configuration. 
+### Datasource configuration
+
+Add a new Datasource element to the configuration: 
 
 ```xml
 <Datasource ID="datasource_id" class="com.vegaecm.vspace.datasources.JndiDatasource">
@@ -197,35 +150,8 @@ Add a new Datasource element to the configuration.
 |ID 	|Id for the data source| datasource_id|
 |class	|Java class used for the data source|com.vegaecm.vspace.datasources.JndiDatasource|
 |Jndi	|JNDI name created for the database|Jndi Name|
-
-### Add Properties
-
-Each new property must be defined before it can be used in the property mapping of the connector. 
-
-```xml
-<Properties>
-…
-<Property ID="unityPPLState">
-    <Name>PPL MSTR State</Name>
-    <Type>string</Type>
-    <Resizable>true</Resizable>
-    <Sortable>true</Sortable>
-    <MultiValue>false</MultiValue>
-    <XType/>
-    <Tooltip/>
-    <Header>unityPPLState</Header>
-</Property>
-…
-</Properties>
-```
-
-|Parameter|Description|Example|
-|:--------|:----------|:------|
-|ID 	|Id for the metadata property element|unityPPLState|
-|Name	|Name for the metadata property element|PPL MSTR State|
-|Type	|Data type for the metadata property element|string|
 	
-### Add Connector
+### Repository Data Provider configuration
 
 To add the database connector, add the following to the repository data providers section of the configuration:
 
@@ -257,66 +183,12 @@ To add the database connector, add the following to the repository data provider
 |DateTimePattern	|Pattern for datetimes in the database|M/d/yy h:mm a|
 |CaseInsensitiveSearch	|Boolean value that tells the application to perform case insensitive search or not|true|
 |Datasource	|Id of the data source to use for the connector|datasource_id|
-|external	|Unity property Id being mapped to|Unity Property Id|
-|internal	|Database property Id that is being mapped|DB Property Id|
 
-### Search Template
+#### Mapping
 
-The search template configuration is mostly the same as other search template configurations. 
-The only difference is that you need to define the query operation property to tell the application which table in the database to use. 
+The Database data provider supports standard [PropertyNameMapper](../repository-data-providers.md#property-name-mapping) section configuration.  
 
-An example of defining the query operation:
-
-```xml
- <SearchTemplate ID="template_id">
-  <DataProviderId>db_connector_id</DataProviderId>
-  <Description>Template Title</Description>
-  <Comment>Template Instructions</Comment>
-  <Autoexecute>true</Autoexecute>
-  <Security>
-    …
-  </Security>
-  <Operation dataProviderId="db_connector_id" type="search">
-    <OperationProperties>
-      <Property>
-        <SecuredValue>
-          <Value>SELECT {Macro.ResultProperties} FROM table-name WHERE {Macro.QueryCriterion} AND {Macro.FilterCriterion}</Value>
-        </SecuredValue>
-      </Property>
-    </OperationProperties>
-  </Operation>
-  <SortFields/>
-  <Grid ID="grid_id"/>
-  <Criteria>
-    …
-  </Criteria>
-</SearchTemplate>
-```
-
-|Parameter|Description|Example|
-|:--------|:----------|:------|
-| ID 	|Id for the search template| template_id|
-| DataProviderId	|Id for the connector that the search template uses|db_connector_id|
-| Description	|Description for template that is displayed when selecting the template from the dropdown menu on a search template tab|Template Title|
-| Comment	|Comments/instructions displayed when the template is selected|Template Instructions|
-| Autoexecute	|Boolean value for if the application should execute the search when the template is first selected|true|
-| dataProviderId	|Id of the connector for the operation|db_connector_id|
-| type	|The operation type|search|
-| Value	|Value of the Operation property|SELECT {Macro.ResultProperties} FROM table-name WHERE {Macro.QueryCriterion} AND {Macro.FilterCriterion}|
-
-# Limitations
-
-The DB connector is read only. There are no OOTB actions to update the database from Unity. 
-
-
-Perform configuration steps [common to all Unity data providers](../repository-data-providers.md#common-steps-to-configure-data-provider).   
-
-*content to be added*
-
-# Mapping
-
-Repository data provider should specify mapping for all columns from select clause (if external and internal names 
-don't match):
+For example:
 
 ```xml
     <RepositoryDataProvider ID="db_repository" class="com.vegaecm.vspace.providers.db.DBRepositoryDataProvider">
@@ -340,5 +212,11 @@ don't match):
     </RepositoryDataProvider>
 ```
 
+### Search Template
 
+[Search Template XML configuration for Database repository data provider](../search-templates/db.md#xml-configuration)
 
+# Limitations
+
+The DB connector is read only. There are no OOTB actions to update the database from Unity. 
+   
