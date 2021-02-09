@@ -107,17 +107,18 @@ As mentioned, we will now need to open the Advanced Editor to do some additional
 
 - Navigate to `Configuration` > `Search Templates`
 - Find and expand the node for the search template you created
-- Select the Operation node
+- Select the `Operation` node
 - In the editor, configure the query to be used when executing the search
-    - Add a new `Property` element. Refer to the figure below for an example.
-    - Enter "query" for the Id attribute
-    - Enter "FIRST" for the type attribute
-    - Add a `SecuredValue` element.
+    - Add a new `Property` element, refer to an example below
+    - Enter `query` for the `Id` attribute
+    - Enter `FIRST` for the `type` attribute
+    - Add a `SecuredValue` element
     - Add a `Value` element
-    - For the value of the <Value> element, enter the following SQL query. Replace table-name with the database table you want to search.
-    SELECT {Macro.ResultProperties} FROM table-name WHERE {Macro.QueryCriterion} AND {Macro.FilterCriteiron}
- 
-    ![Define the query for the DB search template](db/images/image19.png)
+    - For the value of the `Value` element, enter the following SQL query. Replace `table-name` with the database table you want to search:
+    `SELECT {Macro.ResultProperties} FROM table-name WHERE {Macro.QueryCriterion} AND {Macro.FilterCriteiron}`
+    - An example of query configuration:
+    
+        ![Define the query for the DB search template](db/images/image19.png)
 
 - Click `Apply` to save your changes
 - Click `Activate` to activate the new configuration

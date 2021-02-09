@@ -25,14 +25,12 @@ The database connector is available OOTB and can be configured at any time after
 It requires an existing database that the connector will use to provide data to the application.
 If not already done, you will need to install and configure the JDBC drivers for your database to be used when creating the JNDI definition on your web application server.
 
-# Configuration
-
-## JNDI Configuration
+# JNDI configuration
  
 To use the Unity database connector, you will need to define a JNDI definition on the web application server that the connector will reference.
 This process is different for each web application server, and you should follow the process for your server. A sample below is provided for the WebSphere Liberty web application server.
 
-### WebSphere Liberty Profile
+## WebSphere Liberty Profile
 
 - Open the `server.xml`
 - Add `library` tag with parameters below for a reference to the JDBC jar for your database:
@@ -66,9 +64,9 @@ This process is different for each web application server, and you should follow
     
 - Save the file
 
-## Unity Configuration – Configuration Console
+# Unity configuration – Configuration Console
 
-### Add Data Source
+## Add data source
 
 - Navigate to `System` > `Datasources`:
 
@@ -93,21 +91,19 @@ This process is different for each web application server, and you should follow
 
 After creating the data source, you will create a new connector that uses the data source.
 
-### Add Connector
+## Add connector
 
 - Navigate to `System` > `Connectors`:
  
     ![Navigate to the Connectors section of Configuration Console](db/images/image12.png)
 
 - Click `New`
-- Enter an Id for the connector
-- Select `Database` for the type:
+- Enter an Id for the connector and select `Database` for the type:
  
     ![Create DB connector](db/images/image13.png)
 
 - Click `Next`
-- Select the data source that was created for the database
-- Select a result limit and operators set:
+- Select the data source that was created for the database, a result limit and operators set:
  
     ![Define parameters for DB connector](db/images/image14.png)
 
@@ -127,17 +123,17 @@ After creating the data source, you will create a new connector that uses the da
 
 After creating the new connector, you can confirm that it is working by clicking on the icon in the `Test connection` column of the connector.
 
-### Search Template
+## Search template
 
 [Search Template configuration for Database repository data provider in Configuration Console](../search-templates/db.md#configuration-console)
 
-## Unity Configuration - XML Configuration
+# Unity configuration - XML configuration
 
 Perform configuration steps [common to all Unity data providers](../repository-data-providers.md#common-steps-to-configure-data-provider).
 
-### Datasource configuration
+## Datasource configuration
 
-Add a new Datasource element to the configuration: 
+Add a new Datasource to the configuration: 
 
 ```xml
 <Datasource ID="datasource_id" class="com.vegaecm.vspace.datasources.JndiDatasource">
@@ -151,7 +147,7 @@ Add a new Datasource element to the configuration:
 |class	|Java class used for the data source|com.vegaecm.vspace.datasources.JndiDatasource|
 |Jndi	|JNDI name created for the database|Jndi Name|
 	
-### Repository Data Provider configuration
+## Repository Data Provider configuration
 
 To add the database connector, add the following to the repository data providers section of the configuration:
 
@@ -184,7 +180,7 @@ To add the database connector, add the following to the repository data provider
 |CaseInsensitiveSearch	|Boolean value that tells the application to perform case insensitive search or not|true|
 |Datasource	|Id of the data source to use for the connector|datasource_id|
 
-#### Mapping
+### Mapping
 
 The Database data provider supports standard [PropertyNameMapper](../repository-data-providers.md#property-name-mapping) section configuration.  
 
@@ -212,7 +208,7 @@ For example:
     </RepositoryDataProvider>
 ```
 
-### Search Template
+## Search template
 
 [Search Template XML configuration for Database repository data provider](../search-templates/db.md#xml-configuration)
 
