@@ -10,6 +10,7 @@ category: Unity 7
 *content to be added*
 
 Grid configuration includes Toolbar with Actions configuration and Columns configuration. 
+
 For example:
 
 ```xml

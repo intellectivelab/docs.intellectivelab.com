@@ -427,6 +427,11 @@ entries:
                 url: /docs/unity-salesforce/configuration/actions/
                 id: unity-salesforce-configuration-actions
 
+              - title: Search Templates
+                output: web
+                url: /docs/unity-salesforce/configuration/search-templates/
+                id: unity-salesforce-configuration-search-templates
+
               - title: Tags List
                 output: web
                 url: /docs/unity-salesforce/configuration/tags-list/
