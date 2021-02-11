@@ -5,14 +5,7 @@ category: Unity 7
 ---
 |**Note**: Database Data Provider Configuration is the same for Unity ExtJS and Unity React.
 
-# Introduction
-
-Unity can connect with a variety of data storage methods. 
-One of the options is to use relational databases to provide data to Unity. 
-The Unity DB connector uses JNDI, so it can be configured for multiple database "flavors". 
-The connector can then be used in the same ways that other Unity connectors can be used, as a data provider for example search templates or selection lists.
-
-|**Note**: The database connector does not support updating the database OOTB; it is read only.
+|**Note**: The Database connector does not support updating the database OOTB; it is read only.
  
 # Versions Supported
 
@@ -64,70 +57,7 @@ This process is different for each web application server, and you should follow
     
 - Save the file
 
-# Unity configuration – Configuration Console
-
-## Add data source
-
-- Navigate to `System` > `Datasources`:
-
-    ![Navigate to the Datasources section of Configuration Console](db/images/image8.png)
- 
-- Click `New`
-- Enter an Id for the data source 
-    This ID is used by Unity, it is recommended to use consistent data source IDs between the JNDI and Unity definitions. 
-- Select `DB` for the type and click `OK`:
-
-    ![Configuration for database data source](db/images/image9.png)
-
-- Click to edit the parameters of the data source:
-
-    ![Click icon to edit data source parameters](db/images/image10.png)
-    
-- Enter the JNDI you configured for the database and click `OK`:
-
-    ![Define JNDI for data source](db/images/image11.png)
-    
-- Click `Apply` to save your changes
-
-After creating the data source, you will create a new connector that uses the data source.
-
-## Add connector
-
-- Navigate to `System` > `Connectors`:
- 
-    ![Navigate to the Connectors section of Configuration Console](db/images/image12.png)
-
-- Click `New`
-- Enter an Id for the connector and select `Database` for the type:
- 
-    ![Create DB connector](db/images/image13.png)
-
-- Click `Next`
-- Select the data source that was created for the database, a result limit and operators set:
- 
-    ![Define parameters for DB connector](db/images/image14.png)
-
-- Click `Next`
-- Define the property mappings for the database properties. 
-
-    The Datasource Property ID is the data field as it appears in the database, the VU Property ID is the defined value in Unity. 
-    Type is the data type Unity will use for the field, it does not have to be the same as the type that is used in the database. 
-
-    |**Note**: In Configuration Console, when adding new Properties that are not already defined in Unity, the  `Property` definition is added to the configuration. 
-     
-    ![Database Connector Property Mapping](db/images/image15.png)
-
-- Click `Save`
-- Click `Apply`
-- Click `Activate` to activate the new configuration
-
-After creating the new connector, you can confirm that it is working by clicking on the icon in the `Test connection` column of the connector.
-
-## Search template
-
-[Search Template configuration for Database repository data provider in Configuration Console](../search-templates/db.md#configuration-console)
-
-# Unity configuration - XML configuration
+# Unity XML configuration
 
 Perform configuration steps [common to all Unity data providers](../repository-data-providers.md#common-steps-to-configure-data-provider).
 
@@ -210,9 +140,8 @@ For example:
 
 ## Search template
 
-[Search Template XML configuration for Database repository data provider](../search-templates/db.md#xml-configuration)
+[Search Template configuration for Database repository data provider](../search-templates/db.md)
 
 # Limitations
 
 The DB connector is read only. There are no OOTB actions to update the database from Unity. 
-   
