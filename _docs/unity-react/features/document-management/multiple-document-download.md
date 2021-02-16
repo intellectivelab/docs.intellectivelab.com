@@ -26,6 +26,8 @@ To download multiple documents:
 - You will be prompted to save an archive, click `Save`:
 
     ![Save as prompt](multiple-document-download/images/save-as-prompt.png)
+    
+- If no errors occurred during action execution, the action completed successfully
         
 - In case of failure, error message `Server Error` appears:
 
