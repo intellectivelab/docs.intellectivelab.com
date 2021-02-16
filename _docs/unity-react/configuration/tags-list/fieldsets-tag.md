@@ -59,7 +59,7 @@ Format attribute structure:
 |1,000        | no prefix, negative numbers are allowed, thousands separator - comma, no decimal separator, decimal scale - 0 | `1234` -> `1,234` |
 
 
-## How to Specify Path for Attach Existing Document Action
+## How to specify path for Attach Existing Document action
 
 To specify a path to attach documents use `FolderPath` attribute.  
 For example:

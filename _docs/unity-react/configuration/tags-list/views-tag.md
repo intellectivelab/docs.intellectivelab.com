@@ -121,17 +121,18 @@ To create a view for case action, following tag should be added to solution conf
 | `Views` -> `Cases` -> `Closed` | view<sup>4</sup>         |
 | `Views` -> `Cases`             | *to be added*|
 
-<sup>1</sup> - `Fill in properties` step of `Create` case action uses configuration of `Tab`  
-`Views` -> `Cases` -> `Create` -> `Tabs[CaseType="{CaseType}"]` -> `Tab[Type="Details"]`.
+<sup>1</sup> `Fill in properties` step of `Create` case action uses configuration of `Tab`  
+`Views` -> `Cases` -> `Create` -> `Tabs[CaseType="{CaseType}"]` -> `Tab[Type="Details"]`
 
-<sup>2</sup> - View for non-closed cases
+<sup>2</sup> View for non-closed cases
 
-<sup>3</sup> - `Preview case` step of `Create` case action uses configuration of `Tab`   
-`Views` -> `Cases` -> `Active` -> `Tabs[CaseType="{CaseType}"]` -> `Tab[Type="Details"]`. 
+<sup>3</sup> `Preview case` step of `Create` case action uses configuration of `Tab`   
+`Views` -> `Cases` -> `Active` -> `Tabs[CaseType="{CaseType}"]` -> `Tab[Type="Details"]` 
+
 `Attach documents` step of `Create` case action loads all the `Attachments` tabs configured inside 
-`Views` -> `Cases` -> `Active` for a particular case type.
+`Views` -> `Cases` -> `Active` for a particular case type
 
-<sup>4</sup> - View for closed cases
+<sup>4</sup> View for closed cases
  
 Tabs section attributes:
 
@@ -152,7 +153,7 @@ Example of `Properties` tab configuration:
 </Tab>
 ```
 
-This tab is supported for all document actions listed in [Case actions with view](#case-actions-with-view). 
+This tab is supported for all case actions listed in [Case actions with view](#case-actions-with-view). 
 Available attributes are in the table below:
 
 | Attribute | Description         |

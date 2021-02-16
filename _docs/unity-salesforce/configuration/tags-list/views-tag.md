@@ -49,7 +49,7 @@ Example of `Properties` tab configuration:
 </Tab>
 ```
 
-This tab is supported for all document actions listed in [Actions with view](#document-actions-with-view). Available attributes are in the table below:
+This tab is supported for all document actions listed in [Document actions with view](#document-actions-with-view). Available attributes are in the table below:
 
 | Attribute | Description         | Example |
 |:----------|:--------------------|:--------|
