@@ -10,11 +10,11 @@ toolbar.
 
 # How to create a case
 
-- Find create case associated button on grid toolbar and click it. On screenshot below this button has `Customer Complaint` label:
+Find create case associated button on grid toolbar and click it. On screenshot below this button has `Customer Complaint` label:
 
-    ![Create case button](./create-case/images/create-case-button.png)
+![Create case button](./create-case/images/create-case-button.png)
        
-- The action will be executed as a wizard with several steps
+The action will be executed as a wizard with several steps: Fill in properties, Preview case and Attach documents.
 
 - The first step is `Fill in properties` form where properties for new case can be specified:
 
@@ -37,7 +37,7 @@ unless the same fieldset is specified for both `Create` and `Active` case views:
           
     `next` - move to the next step if you need to attach documents to this case
          
-    `complete` - complete case creation wizard if you don't need to attach documents to case
+    `complete` - complete case creation wizard if you don't need to attach documents to this case
 
 - The third step allows to attach documents to just created case. View is based on tabs with Type = `Attachments`, which
 are defined in solution configuration file for `Active` cases.
