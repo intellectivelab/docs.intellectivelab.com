@@ -1,37 +1,37 @@
 ---
-title: Multiple Documents Download Feature
+title: Download Multiple Documents Feature
 layout: docs
 category: Unity 7
 ---
 # Description
 
-`Multiple Documents Download` feature allows downloading multiple documents as a zip archive.
+This feature allows downloading multiple documents as a ZIP archive.
 
 # How to Download Multiple Documents
 
-To Download Multiple Documents:
+To download multiple documents:
 
-- Using row checkboxes or Select All checkbox in the grid header, select documents that should be downloaded:
+- Using row checkboxes or `Select All` checkbox in the grid header, select documents that should be downloaded:
 
     ![Selected documents](multiple-document-download/images/selected-docs.png)
 
-- Select `Multiple Download` from Actions bulk mode menu in the grid toolbar:
+- Select `Multiple Download` from `Actions` bulk mode menu in the grid toolbar:
 
     ![Action in menu](multiple-document-download/images/action-dropdown.png)
     
-- Then user will see loader with a backdrop, while request is processing:
+- While request is processing, loader with a backdrop is shown:
 
     ![Request processing](multiple-document-download/images/loader-processing.png)
     
-- After that user will be prompted to save an archive:
+- You will be prompted to save an archive, click `Save`:
 
     ![Save as prompt](multiple-document-download/images/save-as-prompt.png)
         
-- If anything has gone wrong, error message will be displayed:
+- In case of failure, error message `Server Error` appears:
 
     ![Error message displayed](multiple-document-download/images/server-error.png)
 
 
 # Configuration
 
-[Multiple Documents Download action configuration](../../configuration/actions/multiple-document-download.md)
+[Multiple Download action configuration](../../configuration/actions/multiple-document-download.md)

@@ -1,9 +1,9 @@
 ---
-title: Multiple Documents Download Action Configuration
+title: Multiple Download Action Configuration
 layout: docs
 category: Unity 7
 ---
-[Multiple Documents Download feature description](../../features/document-management/multiple-document-download.md)
+[Download Multiple Documents feature description](../../features/document-management/multiple-document-download.md)
 
 For `Multiple Download` action following section should be added to the Unity System XML file:
 
@@ -30,11 +30,9 @@ For `Multiple Download` action following section should be added to the Unity Sy
 
 | Parameter       | Description |
 |:----------------|:------------|
-|ActionType       | multiple_download |
-|ResourceType     | In example above defined as `DiffProperties`. |
-|Scope            | Optional. The repository data provider id. Default value: `inherit` (it means that this parameter will be inherited from `Search Template` or `Grid` component). |
-|MaxFilesNumber   | In example above defined as `10`. <sup>1</sup>|
-
-<sup>1</sup> `MaxFilesNumber` sets limited number of documents to download.
+|ActionType       | `multiple_download` |
+|ResourceType     | In example above defined as `DiffProperties` |
+|Scope            | Optional. The repository data provider id. Default value: `inherit` (it means that this parameter will be inherited from `Search Template` or `Grid` component) |
+|MaxFilesNumber   | Sets limited number of documents to download, in example above defined as `10`|
 
 Perform the rest of [Common Action Configuration Steps](../actions.md#common-actions-configuration-steps).
