@@ -29,8 +29,8 @@ For `Create` case action following section should be added to the Unity System X
 
 | Parameter   | Description |
 |:------------|:------------|
-|ResourceName | `cases`       |
-|ResourceType | The name of concrete resource type |
+|ResourceName | `cases`, indicates that action is related to case entity |
+|ResourceType | The name of concrete resource type, case for this TaskType will be created |
 |ActionType   | `create`      |
 |Scope        | Optional. The repository data provider id. Default value: `inherit` (it means that this parameter will be inherited from `Search Template` or `Grid` component) |
 
