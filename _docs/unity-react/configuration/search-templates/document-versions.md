@@ -36,3 +36,15 @@ Document versions search template operation properties:
 | Parameter   | Description |
 |:------------|:------------|
 |ResourceName |`documents`|
+
+Document versions template as a part of TemplateSet:
+
+```xml
+<TemplateSet ID="document_versions-templates-set">
+	<Template>document_versions_sharepoint_testteamsite</Template>
+</TemplateSet>
+```
+
+| Parameter   | Description |
+|:------------|:------------|
+|TemplateSet ID| Template set identifier, should match `templateSet` parameter value in [Versions Tab configuration](../tags-list/views-tag.md#tabs-section-configuration-for-document-actions) |

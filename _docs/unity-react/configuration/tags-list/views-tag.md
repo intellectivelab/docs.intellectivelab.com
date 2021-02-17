@@ -120,7 +120,7 @@ Custom parameters section should contain following parameters:
 | Parameter name | Description         |
 |:---------------|:--------------------|
 | viewMode       | `searchTemplate`    |
-| templateSet    | Versions template set id, defined in [Document Versions Search Template](../search-templates/document-versions.md) |
+| templateSet    | id of template set, that contains 1 search template defined in [Document Versions Search Template](../search-templates/document-versions.md) |
 | gridId         | Grid id |
 
 
@@ -238,7 +238,7 @@ For `view` action it's possible to [add a toolbar with other actions](./views-ta
 
 See [FieldSets tag](./fieldsets-tag.md) for information on field sets configuration.
 
-## Attachments tab
+### Attachments tab
 
 Example of attachments tab configuration:
 
