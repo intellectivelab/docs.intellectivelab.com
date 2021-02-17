@@ -5,7 +5,7 @@ category: Unity 7
 ---
 [Attach a Local Document to the Case feature description](../../features/case-management/attach-document.md)
 
-For `Attach a Local Document` action following section should be added to the Unity System XML file:
+For `Attach document` action following section should be added to the Unity System XML file:
 
 ```xml
     <Action ID="attach.DiffProperties" multiselect="true" scope="single" type="toolbar">
@@ -23,7 +23,7 @@ For `Attach a Local Document` action following section should be added to the Un
     </Action>
 ```
 
-`Attach a Local Document` document action custom configuration parameters:
+`Attach document` action custom configuration parameters:
 
 | Parameter   | Description |
 |:------------|:------------|

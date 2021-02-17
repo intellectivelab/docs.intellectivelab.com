@@ -10,6 +10,7 @@ category: Unity 7
 - [Create document](../actions/create-document.md)
 - [Document details](../actions/document-details.md)
 - [Check In document](../actions/checkin-document.md)
+- [Attach document](../actions/attach-document.md)
 
 ## Tabs section configuration for document actions
 
@@ -33,11 +34,40 @@ Tabs section attributes:
 
 | Attribute    | Description |
 |:-------------|:------------|
-| DocumentType | The name of concrete resource type view is created for |
+| DocumentType | The name of concrete resource type view is created for, DocumentType should match ResourceType defined in the action |
 | Scope        | Optional. The repository data provider id. No need to specify this parameter if DocumentType belongs to one data provider |
 | ViewType     | This parameter is required for `checkin` action and should match action's ViewType value |
 
 Tabs section may contain one or more `Tab` tags.
+
+For example:
+
+```xml
+<Views>
+	<Documents>
+		<Open>
+			<Tabs DocumentType="Document" EnableSaveButton="true" EnableCloseButton="true">
+				<Tab ID="1" Type="Details" Label="Document Properties" Tooltip="Document Properties" FieldSet="Document_Update">
+						<Tools/>
+						<CustomParameters>
+							/* The set of Unity actions linked to this tab */
+							<Parameter Name="actionSet" Value="download,checkOut,checkIn,cancelCheckOut,delete,preview"/>
+						</CustomParameters>
+                </Tab>
+				<Tab ID="2" Label="Versions" Tooltip="Document Versions" Type="Versions">
+                	<CustomParameters>
+                        <Parameter Name="actionSet" Value="download,checkOut,checkIn,cancelCheckOut,delete"/>
+                        <Parameter Value="searchTemplate" Name="viewMode"/>
+                        <Parameter Value="document_versions-templates-set" Name="templateSet"/>
+                        <Parameter Value="getinfo-versions-grid" Name="gridId"/>
+                    </CustomParameters>
+					<Tools/>
+            	</Tab>
+        	</Tabs>
+		</Open>
+	</Documents>
+</Views>
+```
  
 ### Properties tab
 
@@ -90,7 +120,7 @@ Custom parameters section should contain following parameters:
 | Parameter name | Description         |
 |:---------------|:--------------------|
 | viewMode       | `searchTemplate`    |
-| templateSet    | Versions template set id |
+| templateSet    | Versions template set id, defined in [Document Versions Search Template](../search-templates/document-versions.md) |
 | gridId         | Grid id |
 
 
@@ -142,6 +172,47 @@ Tabs section attributes:
 | ViewType     | This parameter is required for actions with specified ViewType value, e.g. `Copy Case` |
 
 Tabs section may contain one or more `Tab` tags.
+
+For example:
+
+```xml
+<Views>
+	<Cases>
+		<Active>
+			<Tabs CaseType="CC_Complaint" EnableSaveButton="true" EnableCloseButton="true">
+				<Tab ID="1" Type="Details" Label="Properties" Tooltip="Properties" FieldSet="CaseReview">
+					<Tools>
+					</Tools> 
+				</Tab>
+				<Tab ID="Attachments.FileNet" Type="Attachments" Label="FileNet Documents" Tooltip="FileNet Documents">
+					<CustomParameters>
+						<Parameter Name="viewMode" Value="searchTemplate"/>
+						<Parameter Name="templateSet" Value="search_templates_case_docs_p8"/>
+						<Parameter Name="gridId" Value="UCM_Case_Docs_Search_FileNet"/>
+						</CustomParameters>
+					<Tools/>
+				</Tab>
+				<Tab ID="Attachments.CMIS" Type="Attachments" Label="CMIS Documents" Tooltip="CMIS Documents">
+					<CustomParameters>
+						<Parameter Name="viewMode" Value="searchTemplate"/>
+						<Parameter Name="templateSet" Value="search-templates-case-docs-icm-ucm-cmis"/>
+						<Parameter Name="gridId" Value="UCM_Case_Docs_Search_CMIS"/>
+					</CustomParameters>
+					<Tools/>
+				</Tab>
+				<Tab ID="3" Type="History" Label="History/Comments" Tooltip="History and Comments">
+					<CustomParameters>
+						<Parameter Name="viewMode" Value="searchTemplate"/>
+						<Parameter Name="templateSet" Value="case_history_search"/>
+						<Parameter Name="gridId" Value="UCM_CaseHistory_Search"/>
+					</CustomParameters>
+					<Tools/>
+				</Tab>                                                  
+			</Tabs>   
+		</Active>
+	</Cases>
+</Views>
+```
 
 ### Properties tab
 
