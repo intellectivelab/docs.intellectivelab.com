@@ -137,7 +137,7 @@ Tabs section attributes:
 
 | Attribute    | Description |
 |:-------------|:------------|
-| CaseType     | The name of concrete resource type view is created for |
+| CaseType     | The name of concrete resource type view is created for, it should match action's ResourceType |
 | ViewType     | This parameter is required for actions with specified ViewType value, e.g. `Copy Case` |
 
 Tabs section may contain one or more `Tab` tags.
