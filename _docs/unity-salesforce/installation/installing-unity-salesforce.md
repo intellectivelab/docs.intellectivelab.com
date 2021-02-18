@@ -120,7 +120,7 @@ After certificate for a given Unity site is obtained it should be installed on a
 
   ![u4sf](installing-unity-salesforce/images/image17.png)
   
-  Or `Open ID Connect` in case of using Gateway application for SharePoint.
+  Or `Open ID Connect` in case of using Gateway application for SharePoint:
   
   ![u4sf](installing-unity-salesforce/images/open-id-connect.png)
 
@@ -145,7 +145,7 @@ After certificate for a given Unity site is obtained it should be installed on a
 
   ![u4sf](installing-unity-salesforce/images/image18.png)
   
-  Gateway application for SharePoint requires different Auth.Provider settings:
+  Gateway application for SharePoint requires different `Auth.Provider` settings:
 
   | Field                  | Value                                      | Notes          |
   | :--------------------- | :----------------------------------------- | :------------- |
@@ -166,7 +166,7 @@ After certificate for a given Unity site is obtained it should be installed on a
   | `Unity Azure` is just an example, it's possible to use different Name and URL Suffix.
   | ${AzureClientId} is an Azure Client Id
   | ${AzureClientSecret} is an Azure Client Secret
-  | ${AzureTenantId} is a Directory (tenant) Id and can be found at App Registration > Overview Page
+  | ${AzureTenantId} is a Directory (tenant) Id and can be found at `App Registration > Overview Page`
   | Example of `Default scopes` parameter - `openid profile offline_access email https://vegaecm2com.sharepoint.com/.default`
 
 - Go to `Security > CSP Trusted Sites` and `Edit` Unity site name:
