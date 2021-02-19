@@ -6,6 +6,7 @@ category: Unity 7
 |**Note**: SharePoint Connector Configuration is the same for Unity ExtJS and Unity React.
 
 # Description
+
 Authorization Code flow used by Unity SharePoint connector to call SP on behalf of user. 
 It uses additional authentication request to present Azure login page redirecting to Unity callback endpoint with authentication code after that.
 There are two points where additional authentication requested:
@@ -16,23 +17,25 @@ User access token is refreshed in background using refresh token, please check [
 Unity backend uses authentication code to get access token for session user and call SP REST API afterward. 
 App registration certificate and application grants also used as system read only user to cache SP metadata.  
 
+ Datasource configuration parameters:
  
- | Datasource Configuration | Required/Optional|Description | Example|
+ | Parameter | Required/Optional|Description | Example|
  |--------------------------|--------------------|-------------|--------|
- | RootUrl | Required| Root SharePoint URL. **Note:** site path configured at RepositoryDataProvider level and should not be included. | `<RootUrl>https://yourdomain.sharepoint.com</RootUrl>` |
- | ApplicationId | Required| Azure App registration applicationId (clientId) | `<ApplicationId>f1d7c8bc-6284-4db8-968f-e88a9bca70e1</ApplicationId>` |
- | AuthorityUrl | Required| `https://login.microsoftonline.com/${AzureTenantId}`. Please find Directory (tenant) Id value at `App registration` > `Overview` page | `<AuthorityUrl>https://login.microsoftonline.com/b128c161-3661-441c-8212-5116e40ef414</AuthorityUrl>` |
- | RedirectUrl | Required| `http://${UnityServer}:${UnityPort}/${ContextRoot}/services/oauth2/callback`. `UnityServer` - host name for the web unity application. `UnityPort` - port value for the unity web application. `ContextRoot` - server path unity web application mapped. **Note:** http could be only used for localhost, https MUST be used otherwise. | `<RedirectUrl>https://unity.server.com:9443/vu/services/oauth2/callback</RedirectUrl>` |
- | ClientCert | Required| Signed client certificate password protected. Certificate used to get access code from Azure authority url. It's also used to authenticate system user to SP. Please see [Create Self Signed Certificate](#self-signed-certificate) page for details | `<ClientCert>MIIKTQIBAz...=</ClientCert>` |
- | Password | Required| Password for certificate above. Should be stored encrypted (use Unity config console to encrypt the value)  | `<Password>...</Password>` |
- | AzureDomain| Required| Domain name to be added/replaced for Unity user session if container authenticate user by simple name. This map username like 'myuser' to 'myuser@yourdomain.com' known to Azure AD. **Note:** this is case sensitive value. Unity connector validates Azure access token from auth popup belongs to the session user. | `<AzureDomain>yourdomain.com</AzureDomain>` |
- | OAuthPrompt | Optional| `[login|none]`. `login` - will force the user to enter their credentials, negating single-sign on. Defaults to the Single Sign On behaviour - no interactive prompts if possible.  Please check [prompt option documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow) for details | `<OAuthPrompt>login</OAuthPrompt>` |
- | OAuthDisableMessage | Optional| `[true|false]`. Defaults to `false`. Additional Unity message will be presented before Azure popup | `<OAuthDisableMessage>true</OAuthDisableMessage>` |
- | OAuthMode | Optional| `[redirect|popup]`. Defaults to `redirect`. Azure interaction in the same Unity window. `popup` - Azure interaction in a separate popup window | `<OAuthMode>redirect</OAuthMode>` |
- | TokenStorage | Optional| `[session|appication]`. Defaults to `session`. Define access token lifecycle. Check [Token Storage](#token-storage) section for details. | `<TokenStorage>application</TokenStorage>` |
- | ForceOAuthPrincipal | Optional| `[true|false]`. Defaults to `true`. `true`- forces the access token to have the same account as authenticated Unity user. `false` - enable user to login to a Azure account that does not match unity user.  | `<TokenStorage>application</TokenStorage>` |
+ | RootUrl | Required| Root SharePoint URL. **Note:** site path configured at RepositoryDataProvider level and should not be included. | https://yourdomain.sharepoint.com |
+ | ApplicationId | Required| Azure App registration applicationId (clientId) | f1d7c8bc-6284-4db8-968f-e88a9bca70e1 |
+ | AuthorityUrl | Required| `https://login.microsoftonline.com/${AzureTenantId}`. Please find Directory (tenant) Id value at `App registration` > `Overview` page | https://login.microsoftonline.com/b128c161-3661-441c-8212-5116e40ef414 |
+ | RedirectUrl | Required| `http://${UnityServer}:${UnityPort}/${ContextRoot}/services/oauth2/callback`. `UnityServer` - host name for the web unity application. `UnityPort` - port value for the unity web application. `ContextRoot` - server path unity web application mapped. **Note:** http could be only used for localhost, https MUST be used otherwise. | https://unity.server.com:9443/vu/services/oauth2/callback |
+ | ClientCert | Required| Signed client certificate password protected. Certificate used to get access code from Azure authority url. It's also used to authenticate system user to SP. Please see [Create Self Signed Certificate](#self-signed-certificate) page for details |  |
+ | Password | Required| Password for certificate above. Should be stored encrypted (use Unity config console to encrypt the value)  | password |
+ | AzureDomain| Required| Domain name to be added/replaced for Unity user session if container authenticates user by simple name. This maps username like 'myuser' to 'myuser@yourdomain.com' known to Azure AD. **Note:** this value is case sensitive. | yourdomain.com|
+ | OAuthPrompt | Optional| `[login|none]`. `login` - forces the user to enter credentials, negating single-sign on. Defaults to the Single Sign On behaviour - no interactive prompts if possible.  Please check [prompt option documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow) for details |login|
+ | OAuthDisableMessage | Optional| `[true|false]`. Defaults to `false`. Additional Unity message will be presented before Azure popup | true |
+ | OAuthMode | Optional| `[redirect|popup]`. Defaults to `redirect`- Azure interaction in the same Unity window. `popup` - Azure interaction in a separate popup window | redirect|
+ | TokenStorage | Optional| `[session|appication]`. Defaults to `session`. Defines access token lifecycle. Check [Token Storage](#token-storage) section below for details. | application|
+ | ForceOAuthPrincipal | Optional| `[true|false]`. Defaults to `true`. `true`- forces the access token to have the same account as authenticated Unity user. `false` - allows user to login to Azure account that does not match Unity user.  | true |
  
-Example datasource configuration:
+An example of datasource configuration:
+
 ```xml
 <Datasource ID="sharepoint_ds" class="com.vegaecm.vspace.datasources.SharepointDatasource">
             <RootUrl>https://yourdomaincom.sharepoint.com</RootUrl>
@@ -46,18 +49,20 @@ Example datasource configuration:
 ```
 
 # Token Storage
-Unity provides two options for an access token lifecycle.
 
-`session` - Azure access token is associated with a user session.
-Authentication done each time the user login in to Unity.
+Unity provides two options for the access token lifecycle.
 
-`application` -  Azure access token associated with user account (e-mail). 
-This mode is recommended when SPNEGO SSO used for web container authentication. 
-An Azure authentication code lookups  access token in application cache by user account and do not perform 
-Azure round trip when found matching valid (not expired) access token. Access tokens remains in application cache
-until refresh token expired. ForceOAuthPrincipal setting must be configured to true (default) to enable this token storage option.
+- `session` - Azure access token associated with a user session.
+Authentication is performed every time the user logs into Unity.
+
+- `application` -  Azure access token associated with user account (e-mail). 
+This mode is recommended when using SPNEGO SSO for web container authentication. 
+An Azure authentication code looks up an access token in application cache by user account and doesn't perform 
+Azure round trip if matching valid (not expired) access token found. Access tokens remain in application cache
+until refresh token expired. `ForceOAuthPrincipal` setting must be configured to `true` (default) to enable this token storage option.
 
 # Create App Registration 
+
 To create App Registration  in Azure Portal for new Unity connector Authorization Code flow:   
 
  - Login to [Azure Portal](https://portal.azure.com) with your domain admin account
