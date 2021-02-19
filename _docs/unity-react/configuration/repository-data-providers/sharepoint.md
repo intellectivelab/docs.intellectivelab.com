@@ -93,7 +93,11 @@ Custom properties for SharePoint data provider:
 
 ### Unity ExtJS actions
 
-[Add document action](../../../unity-extjs/configuration/actions/add-document.md)
+[Add document action](../../../unity-extjs/configuration/actions/add-document.md#sharepoint-data-provider)
+
+### Unity React actions
+
+[Create document action](../../../unity-react/configuration/actions/create-document.md#sharepoint-data-provider)
         
 ## Enterprise Search integration
 Enterprise Search properties mapping maps Enterprise Search ids to SharePoint connector IDs. For example: 

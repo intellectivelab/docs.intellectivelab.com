@@ -5,12 +5,14 @@ category: Unity 7
 ---
 [Create a Document feature description](../../features/document-management/create-document.md)
 
-For `Create` document action following section should be added to the Unity System XML file:
+# Custom Parameters
+
+For `Create document` action following section should be added to the Unity System XML file:
  
 ```xml
 <Action ID="new_document_Document" multiselect="true" scope="single" type="toolbar">
   <Name>Documents\Document</Name>
-  <IconCls>action-delete</IconCls>
+  <IconCls>action-new</IconCls>
   <Tooltip>Documents\Document</Tooltip>
   <Uri/>
   <Parameters/>
@@ -24,7 +26,7 @@ For `Create` document action following section should be added to the Unity Syst
 </Action>
 ```
 
-`Create` document action custom configuration parameters:
+`Create document` action custom configuration parameters:
 
 | Parameter   | Description |
 |:------------|:------------|
@@ -35,4 +37,17 @@ For `Create` document action following section should be added to the Unity Syst
 
 It's required to [specify View](../tags-list/views-tag.md) in solution configuration file.
 
-Perform the rest of [Common Action Configuration Steps](../actions.md#common-actions-configuration-steps). 
+Perform the rest of [Common Action Configuration Steps](../actions.md#common-actions-configuration-steps).
+
+# Configuration Specific for Data Providers
+
+## SharePoint data provider
+
+SharePoint content types are unique in the scope of document libraries. 
+So content type id value might be different between document libraries. 
+
+When configuring `Create document` action, use `*` for `ResourceType` value, if the content type is not known in the scope of an action.
+Data provider will select "default" document type for a new document.
+Usually it is `Document` content type for the target document library.
+
+ 
