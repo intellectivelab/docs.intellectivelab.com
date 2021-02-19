@@ -27,8 +27,10 @@ App registration certificate and application grants also used as system read onl
  | Password | Required| Password for certificate above. Should be stored encrypted (use Unity config console to encrypt the value)  | `<Password>...</Password>` |
  | AzureDomain| Required| Domain name to be added/replaced for Unity user session if container authenticate user by simple name. This map username like 'myuser' to 'myuser@yourdomain.com' known to Azure AD. **Note:** this is case sensitive value. Unity connector validates Azure access token from auth popup belongs to the session user. | `<AzureDomain>yourdomain.com</AzureDomain>` |
  | OAuthPrompt | Optional| `[login|none]`. `login` - will force the user to enter their credentials, negating single-sign on. Defaults to the Single Sign On behaviour - no interactive prompts if possible.  Please check [prompt option documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow) for details | `<OAuthPrompt>login</OAuthPrompt>` |
- | OAuthDisableMessage | Optional| `[true|false]`. Defaults to `false` - additional Unity message will be presented before Azure popup | `<OAuthDisableMessage>true</OAuthDisableMessage>` |
- | OAuthMode | Optional| `[redirect|popup]`. Defaults to `redirect` - Azure interaction in the same Unity window. `popup` - Azure interaction in a separate popup window | `<OAuthMode>redirect</OAuthMode>` |
+ | OAuthDisableMessage | Optional| `[true|false]`. Defaults to `false`. Additional Unity message will be presented before Azure popup | `<OAuthDisableMessage>true</OAuthDisableMessage>` |
+ | OAuthMode | Optional| `[redirect|popup]`. Defaults to `redirect`. Azure interaction in the same Unity window. `popup` - Azure interaction in a separate popup window | `<OAuthMode>redirect</OAuthMode>` |
+ | TokenStorage | Optional| `[session|appication]`. Defaults to `session`. Define access token lifecycle. Check [Token Storage](#token-storage) section for details. | `<TokenStorage>application</TokenStorage>` |
+ | ForceOAuthPrincipal | Optional| `[true|false]`. Defaults to `true`. `true`- forces the access token to have the same account as authenticated Unity user. `false` - enable user to login to a Azure account that does not match unity user.  | `<TokenStorage>application</TokenStorage>` |
  
 Example datasource configuration:
 ```xml
@@ -42,7 +44,19 @@ Example datasource configuration:
             <AzureDomain>yourdomain.com</AzureDomain>
         </Datasource>
 ```
-   
+
+# Token Storage
+Unity provides two options for an access token lifecycle.
+
+`session` - Azure access token is associated with a user session.
+Authentication done each time the user login in to Unity.
+
+`application` -  Azure access token associated with user account (e-mail). 
+This mode is recommended when SPNEGO SSO used for web container authentication. 
+An Azure authentication code lookups  access token in application cache by user account and do not perform 
+Azure round trip when found matching valid (not expired) access token. Access tokens remains in application cache
+until refresh token expired. ForceOAuthPrincipal setting must be configured to true (default) to enable this token storage option.
+
 # Create App Registration 
 To create App Registration  in Azure Portal for new Unity connector Authorization Code flow:   
 
