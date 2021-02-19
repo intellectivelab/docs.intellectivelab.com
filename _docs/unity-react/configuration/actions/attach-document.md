@@ -3,7 +3,7 @@ title: Attach Document Action Configuration
 layout: docs
 category: Unity 7
 ---
-[Attach Document feature description](../../features/case-management/attach-document.md)
+[Attach a Local Document to the Case feature description](../../features/case-management/attach-document.md)
 
 *content to be added*
 

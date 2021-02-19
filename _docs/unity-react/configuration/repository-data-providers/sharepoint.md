@@ -89,73 +89,29 @@ Custom properties for SharePoint data provider:
   
 ## [SharePoint selectors](../tags-list/selectors-tag/sharepoint-selectors.md)
 
-## Add document action 
-```$xml
-<Action ID="add_document" multiselect="true" scope="single" type="toolbar">
-            <Name>Add Document</Name>
-            <IconCls>action-add-document</IconCls>
-            <Tooltip>Add Document</Tooltip>
-            <Uri/>
-            <Parameters>
-                <DocumentClass>
-                    <RepositoryDataProvider ID="sharepoint_repository">
-                        <Disabled>true</Disabled>
-                        <DefaultValue>{value: "Document", name: "Document"}</DefaultValue>
-                        <SelectorId>sharepoint_document_class_add_document_auto</SelectorId>
-                        <Roles>
-                            <Role ID="canAddDocument">
-                                <Disabled>false</Disabled>
-                                <DefaultValue>{value:"Documents\Document", name: "Document"}
-                                </DefaultValue>
-                                <SelectorId>sharepoint_document_class_add_document_auto</SelectorId>
-                            </Role>
-                        </Roles>
-                    </RepositoryDataProvider>
-                </DocumentClass>
-            </Parameters>
-            <CustomParameters>
-                <RepositoryDataProvider ID="sharepoint_repository">
-                    <FolderPicker>
-                        <Visible>true</Visible>
-                        <TreeModel name="SharePointFoldersTreeWithRoot">
-                            <Properties>
-                                <Property ID="FolderPath" value="/Shared Documents"/>
-                                <Property ID="DataProviderId" value="sharepoint_repository"/>
-                                <Property ID="LazyLoading" value="true"/>
-                            </Properties>
-                        </TreeModel>
-                    </FolderPicker>
-                    <Fields>
-                        <DocumentTitle>DocumentTitle</DocumentTitle>
-                    </Fields>
-                </RepositoryDataProvider>
-            </CustomParameters>
-            <Security>
-                <AllowRole>canAddDocument</AllowRole>
-            </Security>
-        </Action>
-```
- 
- - DefaultValue - Identify default content type using format `<ListTitle>/<ContentTypeId>` ```{value:"Documents\Document", name: "Document"}```.
-  All available content types for a list could be get from API call: `https://<RootUrl>/_api/lists/getbytitle('<ListTitle>')/ContentTypes?$select=Name,Id`
+## SharePoint specific actions configuration options
 
-## Create document action
-SharePoint content types are unique in the scope of document libraries. So content type id value might be different between document libraries. Use `*` when configuring resourceType for [Create Action](../actions/create-document.md) 
-when content type is not known in the scope of an action. Data provider select "default" document type for a new document. 
-Usually it will be `Document` content type for the target document library.
+### Unity ExtJS actions
+
+[Add document action](../../../unity-extjs/configuration/actions/add-document.md)
         
 ## Enterprise Search integration
-Enterprise Search properties mapping maps Enterprise Search ids to SharePoint connector IDs. For example:    
-```$xml
-            <ViewerProperties>
-                 <Repository internal="SharePoint">
-                    <DefineProperties>
-                        <Property ID="repositoryType" value="sharepoint_repository"/>
-                        <Property ID="documentId.Id" value="{This.$id@s}@{This.VersionLabel}"/>
-                        <Property ID="documentId.versionSeriesId" value="{This.$id@s}"/>
-                    </DefineProperties>
-                </Repository>
-            </ViewerProperties>
+Enterprise Search properties mapping maps Enterprise Search ids to SharePoint connector IDs. For example: 
+   
+```xml
+<RepositoryDataProvider ID="uie_repository"
+                      	class="com.vegaecm.vu.providers.uie.hli.Provider">
+     ...
+     <ViewerProperties>
+          <Repository internal="SharePoint">
+             <DefineProperties>
+                 <Property ID="repositoryType" value="sharepoint_repository"/>
+                 <Property ID="documentId.Id" value="{This.$id@s}"/>
+             </DefineProperties>
+         </Repository>
+     </ViewerProperties>
+     ...
+</RepositoryDataProvider>
 ```
 ## Case links
 *Content to be added* 

@@ -389,6 +389,15 @@ entries:
                 url: /docs/unity-salesforce/features/document-management/
                 id: unity-salesforce-features-document-management
 
+          - title: Components
+            output: web, pdf
+            id: unity-salesforce-components
+            subfolders:
+              - title: Grid
+                output: web
+                url: /docs/unity-salesforce/components/grid/
+                id: unity-salesforce-components-grid
+
           - title: Installation
             output: web, pdf
             id: unity-salesforce-installation
@@ -398,6 +407,11 @@ entries:
                 output: web
                 url: /docs/unity-salesforce/installation/installing-unity-salesforce/
                 id: unity-salesforce-installation-installing-unity-salesforce
+
+              - title: Creating Managed Salesforce Package
+                output: web
+                url: /docs/unity-salesforce/installation/creating-managed-package/
+                id: unity-salesforce-installation-creating-managed-package
 
           - title: Configuration
             output: web, pdf
@@ -412,6 +426,11 @@ entries:
                 output: web
                 url: /docs/unity-salesforce/configuration/actions/
                 id: unity-salesforce-configuration-actions
+
+              - title: Search Templates
+                output: web
+                url: /docs/unity-salesforce/configuration/search-templates/
+                id: unity-salesforce-configuration-search-templates
 
               - title: Tags List
                 output: web
@@ -511,6 +530,11 @@ entries:
             output: web
             url: /docs/release-notes/unity-7-7-release-notes/
             id: release-notes-unity-7-7-release-notes
+
+          - title: Unity 7.8 Release Notes
+            output: web
+            url: /docs/release-notes/unity-7-8-release-notes/
+            id: release-notes-unity-7-8-release-notes
 
           - title: Unity for Intellective Release Notes
             output: web

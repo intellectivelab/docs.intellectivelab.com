@@ -112,7 +112,7 @@ The following tasks and stories were implemented in the Unity for Intellective r
 | U7-3325 | React & public API: Add ability to show several sites inside FolderView                                                    |
 | U7-3465 | React: View Document properties can't be opened for Container = tree if several Sharepoint data providers were configured             |
 | U7-3464 | React: New document can not be added for Container = tree if several Sharepoint data providers were configured             |
-| U7-3478 | React: Document Versions tab can't be configured for a specific datap rovider for Container = tree if several Sharepoint data providers were configured                                                                                                         |
+| U7-3478 | React: Document Versions tab can't be configured for a specific data provider for Container = tree if several Sharepoint data providers were configured                                                                                                         |
 | U7-3635 | Sharepoint: Folders should be hidden if user hasn't permissions to read  them                                              |
 
 
@@ -130,6 +130,10 @@ The following issues were resolved in the Unity for Intellective release. The ID
 | U7-3617 | Sharepoint: Exception is displayed while folders displaying if Site containts space                                       |
 | U7-3354 | UIE: SharePoint connector - error when crawling multiple Lists                                                            |
 | U7-3620 | UIE: SharePoint connector - crawling documents with special symbols in title                                              |
+| U7-3844 | U4I: Site is not shown in Folder View if user does not have root access                                                   |
+| U7-3715 | Sharepoint: replace OAuth popup with redirect                                                                             |
+| U7-3694 | SharePoint: optimize folder browse requests                                                                               |
+| U7-3647 | Unity: infinite paging grid shows result cyclically                                                                       |
 
 # Known Issues
 
@@ -148,7 +152,4 @@ Unity for Intellective contains the following known issues. The ID and Descripti
 | PR-38   | PS Project Folders in the Folder view                                                                                     |
 | PR-45   | Slow Performance when attempting to build site tree in U4I                                                                |
 | PR-40   | Selecting the Folder a second time loses focus to the actual folder                                                       |
-| U7-3647 | Unity: infinite paging grid shows result cyclically                                                                       |
 | U7-3619 | UIE security filtering improvements                                                                                       |
-| U7-3694 | SharePoint: optimize folder browse requests                                                                               |
-| U7-3715 | Sharepoint: replace OAuth popup with redirect                                                                             |

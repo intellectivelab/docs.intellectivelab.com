@@ -24,7 +24,7 @@ A selector configuration consists of setting proper data for `ClassName`, `Descr
 | `Description`    | Description for the selector visible in Unity configurator. |
 | `Property` | List of properties setup data returned by selector   
 
-# Generic selector properties
+# Common Selector Properties
 
 | Property ID | Property value                  |
 |:------------|:--------------------------------|
@@ -48,22 +48,23 @@ Other properties are specific for [different selector types](#selector-types).
 ```
 Available properties are specific to different selector types defined by `ClassName`.
     
-# Selector types  
+# Selector Types  
 
-There are a lot of selector types provided OOB in Unity.  
+There are many types of selectors provided OOTB in Unity.  
 
 ## Generic selectors
     
 - XMLSelector 
 - BooleanSelector
-- UrlJsonSelector
+- [UrlJsonSelector](selectors-tag/json-selector.md)
 - DBSelector
 - NoCacheDBSelector
 - UIESelector
 
-## P8 CE selectors
+## [P8 CE selectors](selectors-tag/ce-selectors.md)
 
-- CESelector 
+- [CESelector](selectors-tag/ce-selectors.md#ce-selector) - "Cached" selector that allows to execute an arbitrary P8 CE SQL query and use result set as selector items
+- [CeDocumentSelector](selectors-tag/ce-selectors.md#ce-document-selector) - "Direct" selector that allows to execute an arbitrary P8 CE SQL query and use result set as selector items
 - CEDocumentClassSelector 
 - ChoiceListSelector 
 
@@ -83,10 +84,9 @@ There are a lot of selector types provided OOB in Unity.
 - CMISChoiceListSelector 
 - CMISDocumentClassSelector 
  
-## SharePoint selectors 
+## [SharePoint selectors](selectors-tag/sharepoint-selectors.md) 
+
 - [SharePoint ChoiceList Selector](selectors-tag/sharepoint-selectors.md#sharepoint-choice-list-selector) reads data from SharePoint choice list definition 
 - [SharePoint Lookup Selector](selectors-tag/sharepoint-selectors.md#sharepoint-lookup-selector) reads data from SharePoint lookup definition
 - [SharePoint Principal Selector](selectors-tag/sharepoint-selectors.md#sharepoint-principal-selector) reads data from SharePoint People and/or Groups
 - [SharePoint Document Class Selector](selectors-tag/sharepoint-selectors.md#sharepoint-document-class-selector) reads data from SharePoint List Content Type definitions 
-
-

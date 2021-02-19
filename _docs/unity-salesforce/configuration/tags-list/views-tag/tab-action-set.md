@@ -73,4 +73,5 @@ Example for `Delete Document` action:
 </SolutionConfig>
 ```
 
-`actionSet` parameter contains set of actions, separated by comma.   
+`actionSet` parameter contains set of actions, separated by comma.  
+Actions from `actionSet` parameter should be added to the Grid configuration. Please see [How to add action to the grid](../../grids.md#how-to-add-action-to-the-grid). 

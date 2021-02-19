@@ -9,7 +9,7 @@ category: Unity 7
 
 Unity Data Provider is a unified facade to integrate content from different external sources:
 
-- FileNet CE
+- [FileNet CE](repository-data-providers/filenet-ce.md)
 - [Database](repository-data-providers/db.md)
 - JNDI
 - CMOD

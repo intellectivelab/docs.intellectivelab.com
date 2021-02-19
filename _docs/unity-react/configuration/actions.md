@@ -53,25 +53,27 @@ Choose the action from the list below to find specific options for it.
 
 ## Document related actions
 
-- [Create Document](../configuration/actions/create-document.md)
+- [Create Document](actions/create-document.md)
 - [Document Details](actions/document-details.md)
-- [Delete Document](../configuration/actions/delete-document.md)
-- [Open in Office](../configuration/actions/open-in-office.md)
-- [View Content](../configuration/actions/view-content.md)
-- [Check In Document](../configuration/actions/checkin-document.md)
-- [Copy Document to Folder](../configuration/actions/copy-document-to-folder.md)
-- [Move Document to Folder](../configuration/actions/move-document-to-folder.md)
+- [Delete Document](actions/delete-document.md)
+- [Open in Office](actions/open-in-office.md)
+- [View Content](actions/view-content.md)
+- [Check In Document](actions/checkin-document.md)
+- [Copy Document to Folder](actions/copy-document-to-folder.md)
+- [Move Document to Folder](actions/move-document-to-folder.md)
+- [Multiple Download](actions/multiple-document-download.md)
+- [Rename File](actions/rename-file.md)
 
 ## Case related actions
 
-- [Split Case](../configuration/actions/split-case.md)
-- [Delete Case](../configuration/actions/delete-case.md)
-- [Attach New Document to a Case](../configuration/actions/attach-document.md)
-- [Attach Existing Document to a Case](../configuration/actions/attach-existing-document.md)
-- [Detach Document](../configuration/actions/detach-document.md)
+- [Split Case](actions/split-case.md)
+- [Delete Case](actions/delete-case.md)
+- [Attach Document](actions/attach-document.md)
+- [Attach Existing Documents](actions/attach-existing-documents.md)
+- [Detach Document](actions/detach-document.md)
 
 ## Workitem related actions
 
 ## Other actions
 
-- [Open by URL](../configuration/actions/open-by-url.md)
+- [Open by URL](actions/open-by-url.md)

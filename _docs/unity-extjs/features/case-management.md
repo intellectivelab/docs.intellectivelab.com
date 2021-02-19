@@ -1056,7 +1056,8 @@ Sample comfiguration:
 These actions are used at the ICM case search template tab (scope: `CASE`)
 
 #### ucmOpenCaseAtSameTab
-Opens selected case at the same tab where the source case search template is located. Does not require any specific configuration besides the actual declaration of the action at the main Unity configuration file.|
+Opens selected case at the same tab where the source case search template is located. Does not require any specific configuration besides the actual declaration of the action at the main Unity configuration file.  
+[Limit on the number of simultaneously opened cases](../configuration/grids/limit-opened-cases.md) can be set.
 
 #### ucmOpenCaseAtSeparateTab
 Opens selected case at newly created Unity tab. Does not require any specific configuration besides the actual declaration of the action at the main Unity configuration file.|
