@@ -138,6 +138,11 @@ Custom properties for SharePoint data provider:
  
  - DefaultValue - Identify default content type using format `<ListTitle>/<ContentTypeId>` ```{value:"Documents\Document", name: "Document"}```.
   All available content types for a list could be get from API call: `https://<RootUrl>/_api/lists/getbytitle('<ListTitle>')/ContentTypes?$select=Name,Id`
+
+## Create document action
+SharePoint content types are unique in the scope of document libraries. So content type id value might be different between document libraries. Use `*` when configuring resourceType for [Create Action](../actions/create-document.md) 
+when content type is not known in the scope of an action. Data provider select "default" document type for a new document. 
+Usually it will be `Document` content type for the target document library.
         
 ## Enterprise Search integration
 Enterprise Search properties mapping maps Enterprise Search ids to SharePoint connector IDs. For example:    

@@ -29,7 +29,7 @@ For `Create` document action following section should be added to the Unity Syst
 | Parameter   | Description |
 |:------------|:------------|
 |ResourceName | documents   |
-|ResourceType | The name of concrete resource type |
+|ResourceType | The name of concrete resource type. Check for [Sharepoint specifics](../repository-data-providers/sharepoint.md#create-document-action). |
 |ActionType   | create      |
 |Scope        | Optional. The repository data provider id. Default value: `inherit` (it means that this parameter will be inherited from `Search Template` or `Grid` component) |
 
