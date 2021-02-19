@@ -12,7 +12,7 @@ For `Create document` action following section should be added to the Unity Syst
 ```xml
 <Action ID="new_document_Document" multiselect="true" scope="single" type="toolbar">
   <Name>Documents\Document</Name>
-  <IconCls>action-delete</IconCls>
+  <IconCls>action-new</IconCls>
   <Tooltip>Documents\Document</Tooltip>
   <Uri/>
   <Parameters/>
