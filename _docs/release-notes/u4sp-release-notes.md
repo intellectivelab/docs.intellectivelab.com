@@ -7,107 +7,147 @@ category: Unity 7
 # Unity for SharePoint Overview
 
 Unity for SharePoint can be reached using the following link: [https://dev.u4sp.devops.intellectivelab.com/](https://dev.u4sp.devops.intellectivelab.com/).  
-Microsoft login and password is used (no need to enter login and password if user has already been logged to the Sharepoint in the current browser).
+Microsoft login and password are used, no need to enter login and password if user has already been logged to Sharepoint in the current browser.
 
-Unity for SharePoint contains the following window after the first time opening
+Unity for SharePoint window when first opened:
+
 ![Main Screen](u4sp-release-notes/images/Main_screen.png)
 
-Unity for SharePoint contains Tree View that displays all crawled Sites (is user has permissions for Site), Sites contains Sub-Sites, Folders and Sub-Folders.
+Tree View on the left displays all crawled Sites (if user has permissions for Site), Sites contain Sub-Sites, Folders and Sub-Folders:
+
 ![Tree View](u4sp-release-notes/images/tree_view.png)
 
 ## Grid description
-Grid contains list of Favorites documents only for the first time opening. If user select any folder and then return to the All Repositories folder then Documents from all sites are displayed in the grid. List of Favorites documents can be opened using the following menu
+
+Grid contains a list of Favorite documents only for the first time opening. 
+If user selects any folder and then returns to `All Repositories` folder, then documents from all sites are displayed in the grid. 
+
+List of Favorite documents can be opened using the following menu:
+
 ![Open Favorites Documents](u4sp-release-notes/images/open_favorites.png)
 
-Grid contains Full Path for selected folder in the header and also each row contains full path for document.
+Grid contains Full Path for selected folder in the header, and each grid row contains full path for a document:
+
 ![Grid](u4sp-release-notes/images/grid.png)
 
-If Path is displayed incompletely in the grid then tooltip with full path is displayed after hover mouse to the Path value.
+If Path is displayed incompletely in the grid, then tooltip with full path is displayed when hovering mouse to the Path value.
 
-If Path contains a long values with several sub-folder then it's displayed as
+If Path contains long values with several sub-folders then it's displayed as:
+
 ![Long Full Path](u4sp-release-notes/images/long_full_path.png)
 
 ## Advanced Search
-Advanced Search can be opened from the Grid
+
+Advanced Search can be opened from the Grid:
+
 ![Advanced Search Opening](u4sp-release-notes/images/advanced_search_opening.png)
 
-Advanced Search contains the following sections:
+Advanced Search contains 3 sections with criteria:
+
 ![Advanced Search](u4sp-release-notes/images/advanced_search.png)
 
-1. Searching using Document Title and Document Content as "starts with". These values can be used as OR or AND
-2. Searching using selectors and dates: File Types, Modified By, Sharepoint (Sites) contains list of all values that are stored in crawled indices
-3. Custom Field section contains only filter for Date Added property
+- `Document Title` and `Document Content` as "starts with". These values can be used as `OR` or `AND`.
+- Selectors and dates: `File Type`, `Modified By`, `Sharepoint` Sites contain list of all values that are stored in crawled indices
+- `Custom Fields` section contains only filter for `Date Added` property
 
-All these sections work as AND operator.
+All these sections work as `AND` operator.
 
-Searching is executed only after Search button pressing.
-All values in Advanced Search are reseted to the default values after Reset button pressing.
+Searching is executed only after clicking `Search` button.  
+All values in Advanced Search are reset to default values after clicking `Reset` button.
 
 ## Quick search
-Quick search can be using for document searching.
-Document Title contains or Document Content contains queries are used for it
+
+Quick search allows searching across the documents titles and content.  
+`Document Title contains` or `Document Content contains` queries are used for it:
+
 ![Quick Search](u4sp-release-notes/images/quick_search.png)
 
 ## Main actions
-The following actions are supported for any Office document
+
+The following actions are supported for any Office document:
+
 ![Context Menu for Office document](u4sp-release-notes/images/document_context_menu.png)
 
-Non Office document contains only one action Open in browser (Open in app action is absent).
+Non Office document contains only one action `Open in browser` (`Open in app` action is absent).
 
-1. Open in actions is used to view document content in browser or in appropriate Office Desktop application.
-2. Copy link action is formed a link to open Detailes View for document. The following dialog is opened for this action
-![Copy Link](u4sp-release-notes/images/copy_link.png)
+- `Open in` actions are used to view document content in browser or in appropriate Office Desktop application.
+- `Copy link` action provides a link to open document Details View. The following dialog is displayed for this action:
 
-Copy link can be configured only for specific users
-3. Download: selected documents can be downloaded without changes in format.
-4. Delete: document is deleted from indices and repository
-5. Rename action is used to change Document Title without opening Details View
-![Rename](u4sp-release-notes/images/rename.png)
-6. Move to/Copy to actions is using for moving or copying document to other folder (Drag and Drop also can be used for it). The target folder should be selected in dialog for each of these actions
-![Copy/Move](u4sp-release-notes/images/copy_move.png)
-7. Details action is opened Details View for document
-![Details View](u4sp-release-notes/images/details_view.png)
-8. Favorite actions is used to mark document as fast used. All favorites documents can be vesible in one grid.
+    ![Copy Link](u4sp-release-notes/images/copy_link.png)
+
+    `Copy link` can be configured only for specific users.
+    
+- `Download`: to download selected documents without changes in format
+- `Delete`: to delete document from indices and repository
+- `Rename`: to change Document Title without opening Details View:
+
+    ![Rename](u4sp-release-notes/images/rename.png)
+    
+- `Move to`/`Copy to`: to move or copy document to other folder (Drag and Drop also can be used for it)  
+    The target folder should be selected in dialog:
+
+    ![Copy/Move](u4sp-release-notes/images/copy_move.png)
+
+- `Details`: to open Details View for a document:
+
+    ![Details View](u4sp-release-notes/images/details_view.png)
+    
+    See [Details View](#details-view) for more information.
+
+- `Favorite`: to mark document as fast used. All favorite documents can be shown in one grid.
 
 Value in Document Title column in the grid is a link, document is opened in a separate browser tab after clicking on it.
 
 The following actions are supported for several selected documents:
+
 ![Bulk actions](u4sp-release-notes/images/bulk_actions.png)
 
-1. Download: selected documents are downloaded as ZIP archive with current datetime as name
-2. Move/Copy: moving or copying selected documents to other folder
-3. Export to CSV file all fields that can be displayed in the grid or only selected columns
-![Export](u4sp-release-notes/images/export.png)
+- `Download`: selected documents are downloaded as ZIP archive with current datetime as name
+- `Move`/`Copy`: moving or copying selected documents to other folder
+- `Export to CSV`: to export to CSV file all fields that can be displayed in the grid or only selected columns:
+
+    ![Export](u4sp-release-notes/images/export.png)
 
 ## Create document
-Create action is accessable from grid toolbar or using Drag and Drop.
+
+`Create` action is accessible from grid toolbar or using Drag and Drop.  
 The following view is displayed after file selection:
+
 ![Create Document](u4sp-release-notes/images/create_document.png)
 
-Only Document Title can be changed on Create Document view
+Only Document Title can be changed on Create Document view.
 
-Document can't be created if Site or Sub-site was selected in the Tree
+Document can't be created if Site or Sub-site was selected in the Tree.
 
 ## Details View
-Details View contains the followin information
+
 ![Details View](u4sp-release-notes/images/details_view.png)
 
-1. Full document path
-2. Link for addign document to the Favorites list
-![Add to Favorites](u4sp-release-notes/images/adding_to_favorites.png)
-3. Document Title
-4. Details View also contains a link to open document in browser
-![Open in browser](u4sp-release-notes/images/open_in_browser.png)
-5. Details View contains information about File Size, linkes to download document, open in browser or desktop application (only for Office documents)
-6. Document Title can be changed in Details View
-7. System infromation about document
-8. Version tab contains information about all document versions
-![Versions Tab](u4sp-release-notes/images/versions.png)
+Details View contains the following information:
 
+- Full document path
+- Icon for adding document to the Favorites list:
+
+    ![Add to Favorites](u4sp-release-notes/images/adding_to_favorites.png)
+
+- Document Title
+- Link to open document in browser:
+
+    ![Open in browser](u4sp-release-notes/images/open_in_browser.png)
+
+`Details` tab contains information about File Size, links to download document, open in browser or desktop application (only for Office documents)
+
+- Document Title can be changed in Details View
+- System information about document
+
+`Versions` tab contains information about all document versions:
+
+![Versions Tab](u4sp-release-notes/images/versions.png)
 
 # New Features
 
-The following tasks and stories were implemented in the Unity for SharePoint release. The ID and Description are from Intellective’s internal ticket tracking system:
+The following tasks and stories were implemented in the Unity for SharePoint release. 
+The ID and Description are from Intellective’s internal ticket tracking system:
 
 
 | ID      | Summary                                                                                              |
@@ -159,9 +199,9 @@ The following tasks and stories were implemented in the Unity for SharePoint rel
 
 # Resolved Issues
 
-The following issues were resolved in the Unity for SharePoint release. The ID and Description are from Intellective’s internal ticket tracking system:
+The following issues were resolved in the Unity for SharePoint release. The ID and Description are from Intellective’s internal ticket tracking system.
 
 
 # Known Issues
 
-Unity for SharePoint contains the following known issues. The ID and Description are from Intellective’s internal ticket tracking system:
+Unity for SharePoint contains the following known issues. The ID and Description are from Intellective’s internal ticket tracking system.
