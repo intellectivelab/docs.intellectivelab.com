@@ -200,9 +200,9 @@ The ID and Description are from Intellective’s internal ticket tracking system
 
 # Resolved Issues
 
-The following issues were resolved in the Unity for SharePoint release. The ID and Description are from Intellective’s internal ticket tracking system.
+The following issues were resolved in the Unity for SharePoint release. The ID and Description are from Intellective’s internal ticket tracking system:
 
 
 # Known Issues
 
-Unity for SharePoint contains the following known issues. The ID and Description are from Intellective’s internal ticket tracking system.
+Unity for SharePoint contains the following known issues. The ID and Description are from Intellective’s internal ticket tracking system:
