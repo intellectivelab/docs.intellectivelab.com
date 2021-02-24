@@ -46,7 +46,7 @@ Advanced Search contains 3 sections with criteria:
 
 ![Advanced Search](u4sp-release-notes/images/advanced_search.png)
 
-- `Document Title` and `Document Content` as "starts with". These values can be used as `OR` or `AND`.
+- `Document Title` and `Document Content` as "contains". These values can be used as `OR` or `AND`.
 - Selectors and dates: `File Type`, `Modified By`, `Sharepoint` Sites contain list of all values that are stored in crawled indices
 - `Custom Fields` section contains only filter for `Date Added` property
 
@@ -68,7 +68,7 @@ The following actions are supported for any Office document:
 
 ![Context Menu for Office document](u4sp-release-notes/images/document_context_menu.png)
 
-Non Office document contains only one action `Open in browser` (`Open in app` action is absent).
+Non Office document context menu contains all these actions except `Open in app` action".
 
 - `Open in` actions are used to view document content in browser or in appropriate Office Desktop application.
 - `Copy link` action provides a link to open document Details View. The following dialog is displayed for this action:
