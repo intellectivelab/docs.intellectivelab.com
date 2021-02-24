@@ -17,7 +17,7 @@ Tree View on the left displays all crawled Sites (if user has permissions for Si
 
 ![Tree View](u4sp-release-notes/images/tree_view.png)
 
-## Grid description
+## Grid
 
 Grid contains a list of Favorite documents only for the first time opening. 
 If user selects any folder and then returns to `All Repositories` folder, then documents from all sites are displayed in the grid. 
