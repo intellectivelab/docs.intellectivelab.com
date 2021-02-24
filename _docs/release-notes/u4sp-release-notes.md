@@ -79,20 +79,20 @@ Non Office document contains only one action `Open in browser` (`Open in app` ac
     
 - `Download`: to download selected documents without changes in format
 - `Delete`: to delete document from indices and repository
-- `Rename`: to change Document Title without opening Details View:
+- `Rename`: to change Document Title without opening Document Details View:
 
     ![Rename](u4sp-release-notes/images/rename.png)
     
-- `Move to`/`Copy to`: to move or copy document to other folder (Drag and Drop also can be used for it)  
+- `Move to/Copy to`: to move or copy document to other folder (Drag and Drop also can be used for it)  
     The target folder should be selected in dialog:
 
     ![Copy/Move](u4sp-release-notes/images/copy_move.png)
 
-- `Details`: to open Details View for a document:
+- `Details`: to open Document Details View:
 
     ![Details View](u4sp-release-notes/images/details_view.png)
     
-    See [Details View](#details-view) for more information.
+    See [Document Details View](#document-details-view) for more information.
 
 - `Favorite`: to mark document as fast used. All favorite documents can be shown in one grid.
 
@@ -100,10 +100,11 @@ Value in Document Title column in the grid is a link, document is opened in a se
 
 The following actions are supported for several selected documents:
 
-![Bulk actions](u4sp-release-notes/images/bulk_actions.png)
+- `Download`: selected documents are downloaded as ZIP archive with current datetime as the name
+- `Move to/Copy to`: moving or copying selected documents to other folder:
 
-- `Download`: selected documents are downloaded as ZIP archive with current datetime as name
-- `Move`/`Copy`: moving or copying selected documents to other folder
+    ![Bulk actions](u4sp-release-notes/images/bulk_actions.png)
+
 - `Export to CSV`: to export to CSV file all fields that can be displayed in the grid or only selected columns:
 
     ![Export](u4sp-release-notes/images/export.png)
@@ -119,14 +120,14 @@ Only Document Title can be changed on Create Document view.
 
 Document can't be created if Site or Sub-site was selected in the Tree.
 
-## Details View
+## Document Details View
 
 ![Details View](u4sp-release-notes/images/details_view.png)
 
-Details View contains the following information:
+Document Details View contains the following information:
 
 - Full document path
-- Icon for adding document to the Favorites list:
+- Icon for adding document to the `Favorites` list:
 
     ![Add to Favorites](u4sp-release-notes/images/adding_to_favorites.png)
 
