@@ -46,7 +46,7 @@ Advanced Search contains 3 sections with criteria:
 
 ![Advanced Search](u4sp-release-notes/images/advanced_search.png)
 
-- `Document Title` and `Document Content` as "contains". These values can be used as `OR` or `AND`.
+- `Document Title contains` and `Document Content contains` queries with `AND`/`OR` operators between them
 - Selectors and dates: `File Type`, `Modified By`, `Sharepoint` Sites contain list of all values that are stored in crawled indices
 - `Custom Fields` section contains only filter for `Date Added` property
 
@@ -78,7 +78,7 @@ Non Office document context menu contains all these actions except `Open in app`
     `Copy link` can be configured only for specific users.
     
 - `Download`: to download selected documents without changes in format
-- `Delete`: to delete document from indices and repository
+- `Delete`: to delete a document from indices and repository
 - `Rename`: to change Document Title without opening Document Details View:
 
     ![Rename](u4sp-release-notes/images/rename.png)
