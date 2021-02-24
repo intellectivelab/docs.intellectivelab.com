@@ -35,7 +35,7 @@ UIProperties
 UiComponents  
 UpdateTemplates    
 UserAudit  
-VersionsAPI    
+[VersionsAPI](tags-list/versions-api-tag.md)
 ViewerConfiguration    
 
 # Solution Tags
