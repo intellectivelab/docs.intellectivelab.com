@@ -26,9 +26,9 @@ SharePoint does not provide a capability to Save Content as Favorite or Save Sea
 - Save Search Criteria as a Saved Search, and access Saved Searches to quickly execute the search without re-entering the Search Criteria. 
 
 
-Link to requirements in Confluence can be found [Requirements](https://confluence.intellective.com/display/ENG/Unity+for+SharePoint) .
+Link to requirements in Confluence can be found [here](https://confluence.intellective.com/display/ENG/Unity+for+SharePoint) .
 
-Link to All User Stories in Jira can be found [Jira issues](https://jira.intellective.com/issues/?jql=fixVersion%20%3D%20%22U4SP%201.0%22%20AND%20issuetype%20%3D%20story) .
+Link to All User Stories in Jira can be found [here](https://jira.intellective.com/issues/?jql=fixVersion%20%3D%20%22U4SP%201.0%22%20AND%20issuetype%20%3D%20story) .
 
 
 # Unity for SharePoint Overview
@@ -171,3 +171,55 @@ Document Details View contains the following information:
 `Versions` tab contains information about all document versions:
 
 ![Versions Tab](u4sp-release-notes/images/versions.png)
+
+# New Features
+
+The following tasks and stories were implemented in the Unity for SharePoint release. 
+The ID and Description are from Intellective’s internal ticket tracking system:
+
+
+| ID      | Summary                                                                                              |
+| ------- | ---------------------------------------------------------------------------------------------------- |
+| U7-4918 | Load environment file from classpath or custom Location                                              |
+| U7-4421 | (DevOps) Configure automatic U4SP deployment in the DEV environment                                  |
+| U7-4097 | (DevOps) Build and publish Unity Headless Services                                                   |
+| U7-4098 | (DevOps) Build and publish Unity Gateway and Web app                                                 |
+| U7-4825 | (DevOps) Update U4SP component versioning                                                            |
+| U7-4819 | U4SP: Displaying path/location                                                                       |
+| U7-4406 | (DevOps) Configure release build for U4SP projects                                                   |
+| U7-4939 | U4SP configuration console endpoint                                                                  |
+| U7-4827 | (DevOps) Implement U4SP Helm chart                                                                   |
+| U7-4100 | (DevOps) Configure dev environment management project                                                |
+| U7-4447 | Customize document view form - remove Check-in as major version flag                                 |
+| U7-4430 | Resign loading of all document classes metadata                                                      |
+| U7-4850 | Add favorite link to the Document/Resource model                                                     |
+| U7-3567 | Installation Wizard POC                                                                              |
+| U7-4767 | U4SP configuration                                                                                   |
+| U7-4380 | React: Render MimeType column as fixed width column                                                  |
+| U7-4454 | UIE sharepoint ms office document parsing errors                                                     |
+| U7-4525 | Folders View must support different icons depending on the folder type                               |
+| U7-4491 | Remove bookmarks functionality from React UI                                                         |
+| U7-4493 | Do not factor in the SiteAssets when crawling and building the tree                                  |
+| U7-4113 | Customize Document Details View Header                                                               |
+| U7-3989 | The Advanced Search - Use SharePoint sites selection as criteria                                     |
+| U7-3843 | Use INSUBFOLDER operator for searching documents                                                     |
+| U7-4789 | U4SP Row actions menu loading                                                                        |
+| U7-4111 | Customize Document Search Results Columns                                                            |
+| U7-4001 | Must support INFOLDER and INSUBFOLDER operators in HLI query                                         |
+| U7-3990 | The Advanced Search - Must allow managing saved searches                                             |
+| U7-3986 | Must support Advanced Search                                                                         |
+| U7-3985 | Customize Documents Search Results Layout                                                            |
+| U7-4778 | Support favorites menu item in user settings menu                                                    |
+| U7-4501 | UIE: SharePoint connector - folder MOVE/RENAME support                                               |
+| U7-4492 | Add SharePoint instance name to the data provider                                                    |
+| U7-4494 | UIE SP connector should process only valid mime types                                                |
+| U7-4120 | Must list Favorites and Saved Searches in under the user settings menu                               |
+| U7-4122 | Must provide UX to work with Favorite documents                                                      |
+| U7-4284 | Implement Folders View Navigation                                                                    |
+| U7-4112 | Customize the default action on click of document title                                              |
+| U7-3558 | Must provide API for managing Saved Searches                                                         |
+| U7-3665 | Must support bulk copy/move actions                                                                  |
+| U7-4526 | Implement security for Create Document action                                                        |
+| U7-4769 | Do not show actions button on hover when some row is selected                                        |
+| U7-4779 | Remove favorite columns control from the Versions Tab grid settings                                  |
+| U7-4445 | Customize document title column - show action menu on hovering                                       |
