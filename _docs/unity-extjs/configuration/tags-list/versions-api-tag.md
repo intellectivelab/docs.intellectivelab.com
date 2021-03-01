@@ -3,7 +3,7 @@ title: Versions API Tag Configuration
 layout: docs
 category: Unity 7
 ---
-Properties to display the versions of the Unity components in About dialog.
+Properties to display the versions of the Unity components in `About` dialog.
 
 Example of configuration:
 
@@ -15,4 +15,5 @@ Example of configuration:
     <jar label="React Unity UI Version:" name="unity-origin-ui.jar" id="React-Unity-UI-Version"/>
   </VersionsAPI>
 ```
-![Info Dialog](images/Unity-info-dialog.png)
+
+![Info Dialog](versions-api-tag/images/Unity-info-dialog.png)
