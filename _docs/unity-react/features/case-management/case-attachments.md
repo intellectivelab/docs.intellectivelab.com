@@ -1,23 +1,28 @@
 ---
-title: Case Attachments With Folder View
+title: Case Attachments
 layout: docs
 category: Unity 7
 ---
 # Overview
 
-*content to be added*
+Case attachments tab displays attached to the case documents inside search template. Depending on configuration 
+it may have Folder View with case folder structure on the right side.  
 
 # Search
 
-*content to be added*
+*link to be provided on template's [search feature / criteria panel] description*
 
 # Navigate
 
-*content to be added*
+*link to be provided on grid navigation options*
 
 # Attach
 
-*content to be added*
+2 types of attach actions are available from the grid toolbar:
+
+- [Attach a Local Document](./attach-document.md)
+
+- [Attach an Existing Document](./attach-existing-document.md) 
 
 # Detach
 
@@ -35,5 +40,11 @@ By selecting `Yes` button, user triggers `detach` action execution. After docume
 refreshed.
 
 # Configuration
+
+[Case attachments search template configuration](../../configuration/search-templates/case-attachments.md)
+
+[Attach local document action configuration](../../configuration/actions/attach-document.md)
+
+[Attach existing documents action configuration](../../configuration/actions/attach-existing-documents.md)
 
 [Detach action configuration](../../configuration/actions/detach-document.md)

@@ -66,6 +66,7 @@ Choose the action from the list below to find specific options for it.
 
 ## Case related actions
 
+- [Create Case](actions/create-case.md)
 - [Split Case](actions/split-case.md)
 - [Delete Case](actions/delete-case.md)
 - [Attach Document](actions/attach-document.md)

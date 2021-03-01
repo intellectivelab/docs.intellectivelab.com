@@ -5,7 +5,7 @@ category: Unity 7
 ---
 # Documents
 
-## Actions with view
+## Document actions with view
 
 - [Create document](../actions/create-document.md)
 - [Document details](../actions/document-details.md)
@@ -49,7 +49,7 @@ Example of `Properties` tab configuration:
 </Tab>
 ```
 
-This tab is supported for all document actions listed in [Actions with view](#actions-with-view). Available attributes are in the table below:
+This tab is supported for all document actions listed in [Document actions with view](#document-actions-with-view). Available attributes are in the table below:
 
 | Attribute | Description         | Example |
 |:----------|:--------------------|:--------|
@@ -77,7 +77,7 @@ If property contains a selector, include it in the Unity configuration XML file 
 Example of property with selector for `Create document` dialog:
 
 ```xml
-Property ID="ComplaintCategory">
+<Property ID="ComplaintCategory">
 	<Name>Complaint Category</Name>
 	<Type>string</Type>
 	<Resizable>true</Resizable>
@@ -130,7 +130,9 @@ Example of `TemplateSet` and `SearchTemplate` configuration for `Document Detail
 <TemplateSet ID="document_versions-templates-set">
 	<Template>document_versions_Search</Template>
 </TemplateSet>
+```
 
+```xml
 <SearchTemplate ID="document_versions_Search">
 	<DataProviderId>ce_repository</DataProviderId>
 	<Description>DiffProperties title</Description>
