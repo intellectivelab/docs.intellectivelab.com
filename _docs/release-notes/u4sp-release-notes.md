@@ -4,7 +4,7 @@ layout: docs
 category: Unity 7
 ---
 
-# Overview
+# Introduction
 
 Unity for SharePoint provides an advanced user interface allowing users to search, organize, and transact on content stored across multiple SharePoint Sites more efficiently. It extends and expands the search features of SharePoint to a more granular level, giving the user the ability to quickly access more refined search results.  
 
@@ -31,7 +31,7 @@ Link to requirements in Confluence can be found [here](https://confluence.intell
 Link to All User Stories in Jira can be found [here](https://jira.intellective.com/issues/?jql=fixVersion%20%3D%20%22U4SP%201.0%22%20AND%20issuetype%20%3D%20story) .
 
 
-# Main Features
+# User Interface Overview
 
 Unity for SharePoint can be reached using the following link: [https://dev.u4sp.devops.intellectivelab.com/](https://dev.u4sp.devops.intellectivelab.com/).  
 Microsoft login and password are used, no need to enter login and password if user has already been logged to Sharepoint in the current browser.
