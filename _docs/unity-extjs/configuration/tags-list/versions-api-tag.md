@@ -15,3 +15,4 @@ Example of configuration:
     <jar label="React Unity UI Version:" name="unity-origin-ui.jar" id="React-Unity-UI-Version"/>
   </VersionsAPI>
 ```
+![Info Dialog](images/Unity-info-dialog.png)
