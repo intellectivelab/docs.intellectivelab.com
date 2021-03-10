@@ -35,7 +35,7 @@ Unity implements quickly, reduces costs, and improves data security.
 
 ## Enterprise ready
 
-- Real-world tested by some of the largest companies in the word
+- Real-world tested by some of the largest companies in the world
 - Global deployments, high transaction rate, high volumes, large number of users
 - Exceptional scalability via standard J2EE technologies and techniques 
 - Variety of deployment options
