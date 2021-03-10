@@ -23,18 +23,6 @@ Unity provides:
 
 Unity implements quickly, reduces costs, and improves data security.
 
-**Simple to use**   
-Enjoy a truly seamless experience within your ERP, CRM, and business applications. 
-
-**Quick to deploy**  
-Design UI and make it available in minutes. 
-
-**Secure**  
-Use role-based security combined with your in-house authentication to ensure appropriate access to content and system. 
-
-**Reduces costs**  
-Access and transact on data and documents from the source. 
-
 # Architecture Principles
 
 ## Open standards
@@ -100,6 +88,8 @@ Users can search for content and data in a variety of ways:
 - Full-text and fuzzy search
 
 ## Security
+
+Use role-based security combined with your in-house authentication to ensure appropriate access to content and system. 
 
 ### Authentication
 
