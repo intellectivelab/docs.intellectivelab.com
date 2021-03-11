@@ -64,7 +64,9 @@ Unity Connector is a unified facade to integrate content from different external
 - IBM Content Manager (CM8)
 - IBM Case Manager (ICM)
 - IBM FileNet P8 CE
-- Alfresco, Sharepoint, etc (CMIS)
+- IBM Business Automation Workflow (BAW)
+- MS SharePoint
+- Alfresco, Documentum and other CMIS compliant (CMIS)
 - Database
 - JNDI
 - Box (Cloud)
