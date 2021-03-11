@@ -91,6 +91,9 @@ Quick search allows searching across the documents titles and content.
 
 ## Main actions
 
+List of available document action can be opened from context menu in Document Title column (press 3 dots next to Document Title value)
+![Context Menu opening](u4sp-release-notes/images/context_menu_opening.png)
+
 The following actions are supported for any Office document:
 
 ![Context Menu for Office document](u4sp-release-notes/images/document_context_menu.png)
