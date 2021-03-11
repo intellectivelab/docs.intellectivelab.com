@@ -91,8 +91,12 @@ Quick search allows searching across the documents titles and content.
 
 ## Main actions
 
-List of available document action can be opened from context menu in Document Title column (press 3 dots next to Document Title value)
+A list of available document actions can be found in context menu.  
+To open context menu hover the mouse over title of document, 3 dots icon appears to the right. Click it:
+
 ![Context Menu opening](u4sp-release-notes/images/context_menu_opening.png)
+
+Context menu with a list of actions supported for this document appears. Click the action to execute it.
 
 The following actions are supported for any Office document:
 
