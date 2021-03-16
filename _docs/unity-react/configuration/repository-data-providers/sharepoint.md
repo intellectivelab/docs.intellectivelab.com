@@ -90,6 +90,31 @@ Custom properties for SharePoint data provider:
 | TopologyFilter | Optional. Defines component name used for site/library filtering. See [TopologyFilter](#topologyfilter) section below. | RootLibraries |
 | UieSync | See [Security Filtering](#enterprise-index-synchronization-and-security-filtering) section below. |
 
+Example:
+```xml
+<RepositoryDataProvider ID="sharepoint_repository"
+                        class="com.vegaecm.vspace.providers.sharepoint.SharepointRepositoryDataProvider">
+    <OperatorsSet>P8</OperatorsSet>
+    <DefineProperties/>
+    <ViewerParameters/>
+    <Datasource>sharepoint_ds</Datasource>
+    <ResultLimit>150</ResultLimit>
+    <!-- custom properties -->
+    <Site>sites/TestSite</Site>
+    <TopologyFilter>RootLibraries</TopologyFilter>
+    <RootSiteName>SampleSite</RootSiteName>
+    <SecurityNotification>false</SecurityNotification>
+    <UieSync>
+        <Url>http://localhost:8080/services/push/Sharepoint/SharePoint-vkozyr/Documents-vkozyr</Url>
+        <Username>admin</Username>
+        <Password>******</Password>
+    </UieSync>
+    <!-- custom properties --> 
+    <PropertyNameMapper>
+     <!-- ... skipped ... -->
+    </PropertyNameMapper>
+</RepositoryDataProvider>
+```
 ### Property name mapping
 
 [Property name mapping](../repository-data-providers.md#property-name-mapping) is used to map SP columns to Unity properties.
