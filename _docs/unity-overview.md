@@ -148,6 +148,6 @@ The Configuration Console allows managing most of Unity components from a single
 
 Interchange is a complimentary product that works behind the scenes to give users of Unity actionable access to old and new business systems without impacting anybody’s experience. 
 
-## Unity Components Diagram
+## Unity Component Diagram
 
-[![Unity components diagram](unity-overview/images/unity-components-diagram-vector.svg)](unity-overview/images/unity-component-diagram-updated.png)
+[![Unity components diagram](unity-overview/images/unity-component-diagram-updated-preview.png)](unity-overview/images/unity-component-diagram-updated.png)
