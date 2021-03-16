@@ -29,7 +29,7 @@ An information about SharePoint instance and some setup action required to confi
 Different setup actions and options depends on the SP instance type and Unity project requirement. 
 Single Unity `<Datasource>` must be configured for SP root url. 
 Single repository data provider is able to cover all SP site topology for specified data source root url. 
-Different SP data providers could be configured for a part of SP site topology if needed to provide different property mapping.   
+Different SP data providers could be configured for a part of SP site topology if needed to provide different property name mapping.   
 
 ## SharePoint in Azure Cloud 
 Authentication options (flows) supported for SP in Cloud:
@@ -78,43 +78,51 @@ Use browser to find a proper configuration values as described below.
 
 Perform configuration steps [common to all Unity data providers](../repository-data-providers.md#common-steps-to-configure-data-provider).   
 Check [Metadata Urls](#sharepoint-metadata-urls) on how to list all available fields for particular list.  
-Check [Property mapping](#properties-mapping) section on mapping options.   
+Check [Property name mapping](#property-name-mapping) section on mapping options.   
 
 Custom properties for SharePoint data provider:    
  
 | Property       | Property description              | Example        |
 |:---------------|:--------------------------------|:---------------|
-| Site | Optional. Defaults to Root site '/'. Defines a base site for the data provider. This site, subsites and their libraries will be covered by this data provider. Set this property to a Site path relative to datasource RootUrl. See [Links above](#sharepoint-metadata-urls).  | sites/TestSite |
+| Site | Optional. Defaults to Root site '/'. Defines a base site for the data provider. This site, subsites and their libraries will be covered by this data provider. Set this property to a Site path relative to datasource RootUrl. See [Metadata Urls](#sharepoint-metadata-urls).  | sites/TestSite |
 | SecurityNotification | Optional. Set this property to enable e-mail notification when sharing documents. Notifications are disabled by default. | enabled |
 | RootSiteName | Optional. Defines a name of the root folder in the tree view. Defaults to the site name in SP. ||
-| [TopologyFilter](#topologyfilter) | Optional. Defines component name used for site/library filtering. See [TopologyFilter](#topologyfilter) section below | RootLibraries |
+| TopologyFilter | Optional. Defines component name used for site/library filtering. See [TopologyFilter](#topologyfilter) section below. | RootLibraries |
 | UieSync | See [Security Filtering](#enterprise-index-synchronization-and-security-filtering) section below. |
 
-### Properties mapping
-[Property mapping](../repository-data-providers.md#property-name-mapping) is used to map SP columns to Unity properties.
+### Property name mapping
+
+[Property name mapping](../repository-data-providers.md#property-name-mapping) is used to map SP columns to Unity properties.
 
 There are three types of columns used in SP data provider mapping configuration.
-- *Custom column* - Column SP exposes in the SP Site/List/Content type settings UI.
-- *System column* - Column exists in the SP metadata but not visible in SP UI.
-- *Synthetic field* - Value and name provided by Unity. They are mapped to a value in SP with some special treatment.
 
-All SP site columns (*Custom* and *System* columns) could be retrieved at url: `https://<RootUrl>/<BaseSitePath>/_api/web/Fields`.
-Use `EntityPropertyName` to map site column to Unity property in configuration. *Note* that different sites can have
-different set of custom columns and even different data types for same column name - map them to different Unity properties
-or setup another SP data provider to resolve conflicts.
+| Column type        | Description                            |
+|:---------------------|:---------------------------------------|
+| Custom column | Column SP exposed in the SP Site/List/Content type settings UI |
+| System column | Column exists in the SP metadata but not visible in SP UI |
+| Synthetic field | Value and name provided by Unity. They are mapped to a value in SP with some special treatment |
 
-Unity SP data provider supports path value mapping for SP *lookup* columns. SP *lookup* column is a column referencing
-another item in the same or different list in the SP. Lookup column stored as int32 identifier.
-Use path mapping to present a lookup column as a human friendly value as below:
+All SP site columns (`Custom` and `System` columns) could be retrieved at url: `https://<RootUrl>/<BaseSitePath>/_api/web/Fields`.
+Use `EntityPropertyName` to map site column to Unity property in configuration. 
+
+|**Note**: Different sites can have different set of custom columns and even different data types for same column name - map them to different Unity properties or setup another SP data provider to resolve conflicts.
+
+Unity SP data provider supports path value mapping for SP `lookup` columns. SP `lookup` column is a column referencing
+another item in the same or different list in the SP. `Lookup` column stored as int32 identifier.
+
+Use path mapping to present a `lookup` column as a human friendly value as below:
+
 ```xml
 <Mapping external="Modifier" internal="Editor/Title"/>
 ```
-Version item *lookup* column should be mapped as <EntityPropertyName>/LookupValue like below:
+
+Version item `lookup` column should be mapped as `<EntityPropertyName>/LookupValue` like below:
+
 ```xml
 <Mapping external="versionModifier" internal="Editor/LookupValue"/>
 ```
 
-Good to know *System* columns are listed in a table below:
+Good to know `System` columns are listed in a table below:
 
 | System column        | Description                            |
 |:---------------------|:---------------------------------------|
@@ -126,14 +134,14 @@ Good to know *System* columns are listed in a table below:
 | Modified             | A date value an item was modified. |
 | Created              | A date value an item was created. |
 
-*Synthetic* fields (names started with dollar sign) provided by Unity are listed in a table below:
+`Synthetic` fields (names started with dollar sign) provided by Unity are listed in a table below:
 
 | Synthetic field        | Description                          |
 |:---------------------|:---------------------------------------|
-| $SpId                | A string uniquely identify SP item. Calculated as s_<SiteId>_w_<WebId>_l_<ListId>_i_<ItemId>.  |
+| $SpId                | A string uniquely identify SP item. Calculated as `s_<SiteId>_w_<WebId>_l_<ListId>_i_<ItemId>`.  |
 | $MimeType            | A string that map file extension stored in SP to document content mime type.  |
 | $DisplayPath         | A string that reconstruct FileRef column for documents and folders to match a folder view path. |
-| $BaseName            | A file name without extension mapped to FileLeafRef. Supports updates and search with startWith operator. |
+| $BaseName            | A file name without extension mapped to `FileLeafRef`. Supports updates and search with `startWith` operator. |
 | $IsVersioningEnabled | Evaluated to true for document if versioning is enabled for the SP list. |
 | $IsReserved          | Evaluated to true if document checked out or false otherwise. |
 | $ResourceType        | Returns content type (document class) name. |
@@ -141,6 +149,7 @@ Good to know *System* columns are listed in a table below:
 | $VersionComment      | A comment set by user when document version checked in. |
 
 Sample property name mapping:
+
 ```xml
             <PropertyNameMapper>
                 <Mapping external="Id" internal="$SpId"/>
@@ -183,8 +192,9 @@ public interface TopologyFilter {
 }
 ```
 
-Two filters provided OOB: 
-- AllSites - the base site, subsites and their libraries are visible. That is default filter.
+Two filters provided OOTB: 
+
+- AllSites - the base site, subsites and their libraries are visible. That is a default filter.
 - RootLibraries - the base site and its document libraries are visible. 
 
 Projects could implement custom filters and use its component name in configuration as below:
@@ -229,6 +239,7 @@ public class U4SpTopologyFilter implements TopologyFilter {
 [Create document action](../../../unity-react/configuration/actions/create-document.md#sharepoint-data-provider)
         
 ## Enterprise Search integration
+
 Enterprise Search properties mapping maps Enterprise Search ids to SharePoint connector IDs. For example: 
    
 ```xml
@@ -247,10 +258,11 @@ Enterprise Search properties mapping maps Enterprise Search ids to SharePoint co
 </RepositoryDataProvider>
 ```
 ### Enterprise index synchronization and security filtering
+
 Unity could be configured to show documents from enterprise index in search results and folder view.
 Enable [Enterprise Search security filtering](enterprise-search.md#security-filtering-mode) in [Enterprise Search Data Provider](enterprise-search.md) to leverage native SP security for search results.
 
-Add *UieSync* section to force enterprise search results by in sync with Unity document and folder operations (create, update, delete etc):
+Add `UieSync` section to force enterprise search results be in sync with Unity document and folder operations (create, update, delete etc):
 
 ```xml
     <UieSync>
@@ -259,18 +271,22 @@ Add *UieSync* section to force enterprise search results by in sync with Unity d
         <Password>${searchSync.password}</Password>
     </UieSync>
 ```
-Set up Enterprise search agent sync endpoint *searchSync.url* as: 
+
+Set up Enterprise search agent sync endpoint `searchSync.url` as: 
 
 `http://<searcherHost>:<searcherPort>/services/push/<agentId>/<repoId>/<pluginId>`
 
 Where:
-- *searcherHost* is a host name where an Enterprise search crawl agent services deployed.
-- *searcherPort* is a port for the  Enterprise search crawl agent service.
-- *agentId* is an id in the configuration of Enterprise search Crawl Agent configured for the that SP root url.
-- *repoId* is an id of Repository in the configuration of Enterprise search crawl agent configured for the that SP root url.
-- *pluginId* is an id of RepositoryPlugin in the configuration of Enterprise search crawl agent configured for that SP root url.
 
-Set up Enterprise search service user credentials in *searchSync.username* and *searchSync.password*.
+| Parameter            | Description                            |
+|:---------------------|:---------------------------------------|
+| searcherHost | a host name where an Enterprise search crawl agent services deployed |
+| searcherPort | a port for the  Enterprise search crawl agent service |
+| agentId      | id in the configuration of Enterprise search Crawl Agent configured for that SP root url |
+| repoId       | id of Repository in the configuration of Enterprise search crawl agent configured for that SP root url |
+| pluginId     | id of RepositoryPlugin in the configuration of Enterprise search crawl agent configured for that SP root url |
+
+Set up Enterprise search service user credentials in `searchSync.username` and `searchSync.password`.
 
 Consult [Enterprise Search Configuration](../../../enterprise-search/configuration/configure-enterprise-search-for-use.md)
 documentation for details on Enterprise Search configuration file structure and options.
