@@ -150,4 +150,4 @@ Interchange is a complimentary product that works behind the scenes to give user
 
 ## Unity Component Diagram
 
-[![Unity components diagram](unity-overview/images/unity-component-diagram-updated-preview.png)](unity-overview/images/unity-component-diagram-updated.png)
+[![Unity component diagram](unity-overview/images/unity-component-diagram-updated-preview.png)](unity-overview/images/unity-component-diagram-updated.png)
