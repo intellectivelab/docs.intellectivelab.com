@@ -91,6 +91,7 @@ Custom properties for SharePoint data provider:
 | UieSync | See [Security Filtering](#enterprise-index-synchronization-and-security-filtering) section below. |
 
 Example:
+
 ```xml
 <RepositoryDataProvider ID="sharepoint_repository"
                         class="com.vegaecm.vspace.providers.sharepoint.SharepointRepositoryDataProvider">
@@ -106,7 +107,7 @@ Example:
     <SecurityNotification>false</SecurityNotification>
     <UieSync>
         <Url>http://localhost:8080/services/push/Sharepoint/SharePoint-vkozyr/Documents-vkozyr</Url>
-        <Username>admin</Username>
+        <Username>******</Username>
         <Password>******</Password>
     </UieSync>
     <!-- custom properties --> 
@@ -115,6 +116,7 @@ Example:
     </PropertyNameMapper>
 </RepositoryDataProvider>
 ```
+
 ### Property name mapping
 
 [Property name mapping](../repository-data-providers.md#property-name-mapping) is used to map SP columns to Unity properties.
