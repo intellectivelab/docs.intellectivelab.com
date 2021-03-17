@@ -75,8 +75,7 @@ Each repository in Enterprise Search must be mapped to Unity repository data pro
     <Repository internal="SharePoint-operations">
         <DefineProperties>
             <Property ID="repositoryType" value="sharepoint_repository_operations"/>
-            <Property ID="documentId.uie_id" value="{This.$id@s}"/>
-            <Property ID="documentId.id" value="ITEM:{This.$collection_name@s}\{This.ID@i}"/>
+            <Property ID="documentId.id" value="{This.$id@s}"/>
         </DefineProperties>
     </Repository>
     ```
