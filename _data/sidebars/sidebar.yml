@@ -560,10 +560,10 @@ entries:
             url: /docs/tutorials/how-to-install-docker/
             id: tutorials-how-to-install-docker
 
-          - title: Unity Video Tutorials
+          - title: Unity 8 User Guide
             output: web
-            url: /docs/tutorials/unity-video-tutorials/
-            id: tutorials-unity-video-tutorials
+            url: /docs/tutorials/unity-8-user-guide/
+            id: tutorials-unity-8-user-guide
 
       - title: Development
         output: web
