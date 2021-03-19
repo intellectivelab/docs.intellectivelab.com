@@ -1,18 +1,18 @@
 ---
-title: Unity for SharePoint Release Notes
+title: Unity 8.0 Release Notes
 layout: docs
-category: Unity 7
+category: Unity 8
 ---
 
 # Introduction
 
-Unity for SharePoint provides an advanced user interface allowing users to search, organize, and transact on content stored across multiple SharePoint Sites more efficiently. It extends and expands the search features of SharePoint to a more granular level, giving the user the ability to quickly access more refined search results.  
+Unity 8.0 provides an advanced user interface allowing users to search, organize, and transact on content stored across multiple SharePoint Sites more efficiently. It extends and expands the search features of SharePoint to a more granular level, giving the user the ability to quickly access more refined search results.  
 
-Searching in SharePoint is limited to a single field, and often returns too much content that cannot be refined. With Unity for SharePoint, a user can: 
+Searching in SharePoint is limited to a single field, and often returns too much content that cannot be refined. With Unity 8.0, a user can: 
 - Refine their search criteria using separate fields for Document Title and Document Content, and 
 - Refine the Operator to use OR (Default behavior to match SharePoint) or AND. 
 
-SharePoint provides the capability to search across the Entire Organization (All SharePoint Sites) or select a Specific SharePoint Site, and does not allow sorting of results, which can either provide either a too broad, or too narrow search window.  With Unity for SharePoint a user can: 
+SharePoint provides the capability to search across the Entire Organization (All SharePoint Sites) or select a Specific SharePoint Site, and does not allow sorting of results, which can either provide either a too broad, or too narrow search window.  With Unity 8.0 a user can: 
 
 - Select Multiple SharePoint Sites: without having to select All SharePoint Sites to perform a more refined search. 
 - Customize which search result columns to display or hide and control the order. 
@@ -20,7 +20,7 @@ SharePoint provides the capability to search across the Entire Organization (All
 - Access Custom Metadata fields configured by an administrator to leverage in Search Criteria or Results.
 
 
-SharePoint does not provide a capability to Save Content as Favorite or Save Search Criteria.  With Unity for SharePoint a user can: 
+SharePoint does not provide a capability to Save Content as Favorite or Save Search Criteria.  With Unity 8.0 a user can: 
 
 - Indicate a Document as a Favorite and view a list of Favorites.  Favorites are displayed by default on Log In.   
 - Save Search Criteria as a Saved Search, and access Saved Searches to quickly execute the search without re-entering the Search Criteria. 
@@ -33,10 +33,10 @@ Link to All User Stories in Jira can be found [here](https://jira.intellective.c
 
 # User Interface Overview
 
-Unity for SharePoint can be reached using the following link: [https://dev.u4sp.devops.intellectivelab.com/](https://dev.u4sp.devops.intellectivelab.com/).  
+Unity 8.0 can be reached using the following link: [https://dev.u4sp.devops.intellectivelab.com/](https://dev.u4sp.devops.intellectivelab.com/).  
 Microsoft login and password are used, no need to enter login and password if user has already been logged to Sharepoint in the current browser.
 
-Unity for SharePoint window when first opened:
+Unity 8.0 window when first opened:
 
 ![Main Screen](u4sp-release-notes/images/Main_screen.png)
 
@@ -181,7 +181,7 @@ Document Details View contains the following information:
 
 # New Features
 
-The following tasks and stories were implemented in the Unity for SharePoint release. 
+The following tasks and stories were implemented in the Unity 8.0 release. 
 The ID and Description are from Intellective’s internal ticket tracking system:
 
 

@@ -554,7 +554,7 @@ entries:
             url: /docs/release-notes/u4i-release-notes/
             id: release-notes-u4i-release-notes
 
-          - title: Unity for SharePoint Release Notes
+          - title: Unity 8.0 Release Notes
             output: web
             url: /docs/release-notes/u4sp-release-notes/
             id: release-notes-u4sp-release-notes
