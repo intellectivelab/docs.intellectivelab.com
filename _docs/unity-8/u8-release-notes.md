@@ -1,18 +1,18 @@
 ---
-title: Unity for SharePoint Release Notes
+title: Unity 8.0 Release Notes
 layout: docs
-category: Unity 7
+category: Unity 8
 ---
 
 # Introduction
 
-Unity for SharePoint provides an advanced user interface allowing users to search, organize, and transact on content stored across multiple SharePoint Sites more efficiently. It extends and expands the search features of SharePoint to a more granular level, giving the user the ability to quickly access more refined search results.  
+Unity 8.0 provides an advanced user interface allowing users to search, organize, and transact on content stored across multiple SharePoint Sites more efficiently. It extends and expands the search features of SharePoint to a more granular level, giving the user the ability to quickly access more refined search results.  
 
-Searching in SharePoint is limited to a single field, and often returns too much content that cannot be refined. With Unity for SharePoint, a user can: 
+Searching in SharePoint is limited to a single field, and often returns too much content that cannot be refined. With Unity 8.0, a user can: 
 - Refine their search criteria using separate fields for Document Title and Document Content, and 
 - Refine the Operator to use OR (Default behavior to match SharePoint) or AND. 
 
-SharePoint provides the capability to search across the Entire Organization (All SharePoint Sites) or select a Specific SharePoint Site, and does not allow sorting of results, which can either provide either a too broad, or too narrow search window.  With Unity for SharePoint a user can: 
+SharePoint provides the capability to search across the Entire Organization (All SharePoint Sites) or select a Specific SharePoint Site, and does not allow sorting of results, which can either provide either a too broad, or too narrow search window.  With Unity 8.0 a user can: 
 
 - Select Multiple SharePoint Sites: without having to select All SharePoint Sites to perform a more refined search. 
 - Customize which search result columns to display or hide and control the order. 
@@ -20,7 +20,7 @@ SharePoint provides the capability to search across the Entire Organization (All
 - Access Custom Metadata fields configured by an administrator to leverage in Search Criteria or Results.
 
 
-SharePoint does not provide a capability to Save Content as Favorite or Save Search Criteria.  With Unity for SharePoint a user can: 
+SharePoint does not provide a capability to Save Content as Favorite or Save Search Criteria.  With Unity 8.0 a user can: 
 
 - Indicate a Document as a Favorite and view a list of Favorites.  Favorites are displayed by default on Log In.   
 - Save Search Criteria as a Saved Search, and access Saved Searches to quickly execute the search without re-entering the Search Criteria. 
@@ -33,16 +33,16 @@ Link to All User Stories in Jira can be found [here](https://jira.intellective.c
 
 # User Interface Overview
 
-Unity for SharePoint can be reached using the following link: [https://dev.u4sp.devops.intellectivelab.com/](https://dev.u4sp.devops.intellectivelab.com/).  
+Unity 8.0 can be reached using the following link: [https://dev.u4sp.devops.intellectivelab.com/](https://dev.u4sp.devops.intellectivelab.com/).  
 Microsoft login and password are used, no need to enter login and password if user has already been logged to Sharepoint in the current browser.
 
-Unity for SharePoint window when first opened:
+Unity 8.0 window when first opened:
 
-![Main Screen](u4sp-release-notes/images/Main_screen.png)
+![Main Screen](u8-release-notes/images/Main_screen.png)
 
 Tree View on the left displays all crawled Sites (if user has permissions for Site), Sites contain Sub-Sites, Folders and Sub-Folders:
 
-![Tree View](u4sp-release-notes/images/tree_view.png)
+![Tree View](u8-release-notes/images/tree_view.png)
 
 ## Grid
 
@@ -51,27 +51,27 @@ If user selects any folder and then returns to `All Repositories` folder, then d
 
 List of Favorite documents can be opened using the following menu:
 
-![Open Favorites Documents](u4sp-release-notes/images/open_favorites.png)
+![Open Favorites Documents](u8-release-notes/images/open_favorites.png)
 
 Grid contains Full Path for selected folder in the header, and each grid row contains full path for a document:
 
-![Grid](u4sp-release-notes/images/grid.png)
+![Grid](u8-release-notes/images/grid.png)
 
 If Path is displayed incompletely in the grid, then tooltip with full path is displayed when hovering mouse to the Path value.
 
 If Path contains long values with several sub-folders then it's displayed as:
 
-![Long Full Path](u4sp-release-notes/images/long_full_path.png)
+![Long Full Path](u8-release-notes/images/long_full_path.png)
 
 ## Advanced Search
 
 Advanced Search can be opened from the Grid:
 
-![Advanced Search Opening](u4sp-release-notes/images/advanced_search_opening.png)
+![Advanced Search Opening](u8-release-notes/images/advanced_search_opening.png)
 
 Advanced Search contains 3 sections with criteria:
 
-![Advanced Search](u4sp-release-notes/images/advanced_search.png)
+![Advanced Search](u8-release-notes/images/advanced_search.png)
 
 - `Document Title contains` and `Document Content contains` queries with `AND`/`OR` operators between them
 - Selectors and dates: `File Type`, `Modified By`, `Sharepoint` Sites contain list of all values that are stored in crawled indices
@@ -87,27 +87,27 @@ All values in Advanced Search are reset to default values after clicking `Reset`
 Quick search allows searching across the documents titles and content.  
 `Document Title contains` or `Document Content contains` queries are used for it:
 
-![Quick Search](u4sp-release-notes/images/quick_search.png)
+![Quick Search](u8-release-notes/images/quick_search.png)
 
 ## Main actions
 
 A list of available document actions can be found in context menu.  
 To open context menu hover the mouse over title of document, 3 dots icon appears to the right. Click it:
 
-![Context Menu opening](u4sp-release-notes/images/context_menu_opening.png)
+![Context Menu opening](u8-release-notes/images/context_menu_opening.png)
 
 Context menu with a list of actions supported for this document appears. Click the action to execute it.
 
 The following actions are supported for any Office document:
 
-![Context Menu for Office document](u4sp-release-notes/images/document_context_menu.png)
+![Context Menu for Office document](u8-release-notes/images/document_context_menu.png)
 
 Non Office document context menu contains all these actions except `Open in app` action".
 
 - `Open in` actions are used to view document content in browser or in appropriate Office Desktop application.
 - `Copy link` action provides a link to open document Details View. The following dialog is displayed for this action:
 
-    ![Copy Link](u4sp-release-notes/images/copy_link.png)
+    ![Copy Link](u8-release-notes/images/copy_link.png)
 
     `Copy link` can be configured only for specific users.
     
@@ -115,16 +115,16 @@ Non Office document context menu contains all these actions except `Open in app`
 - `Delete`: to delete a document from indices and repository
 - `Rename`: to change Document Title without opening Document Details View:
 
-    ![Rename](u4sp-release-notes/images/rename.png)
+    ![Rename](u8-release-notes/images/rename.png)
     
 - `Move to/Copy to`: to move or copy document to other folder (Drag and Drop also can be used for it)  
     The target folder should be selected in dialog:
 
-    ![Copy/Move](u4sp-release-notes/images/copy_move.png)
+    ![Copy/Move](u8-release-notes/images/copy_move.png)
 
 - `Details`: to open Document Details View:
 
-    ![Details View](u4sp-release-notes/images/details_view.png)
+    ![Details View](u8-release-notes/images/details_view.png)
     
     See [Document Details View](#document-details-view) for more information.
 
@@ -137,18 +137,18 @@ The following actions are supported for several selected documents:
 - `Download`: selected documents are downloaded as ZIP archive with current datetime as the name
 - `Move to/Copy to`: moving or copying selected documents to other folder:
 
-    ![Bulk actions](u4sp-release-notes/images/bulk_actions.png)
+    ![Bulk actions](u8-release-notes/images/bulk_actions.png)
 
 - `Export to CSV`: to export to CSV file all fields that can be displayed in the grid or only selected columns:
 
-    ![Export](u4sp-release-notes/images/export.png)
+    ![Export](u8-release-notes/images/export.png)
 
 ## Create document
 
 `Create` action is accessible from grid toolbar or using Drag and Drop.  
 The following view is displayed after file selection:
 
-![Create Document](u4sp-release-notes/images/create_document.png)
+![Create Document](u8-release-notes/images/create_document.png)
 
 Only Document Title can be changed on Create Document view.
 
@@ -156,19 +156,19 @@ Document can't be created if Site or Sub-site was selected in the Tree.
 
 ## Document Details View
 
-![Details View](u4sp-release-notes/images/details_view.png)
+![Details View](u8-release-notes/images/details_view.png)
 
 Document Details View contains the following information:
 
 - Full document path
 - Icon for adding document to the `Favorites` list:
 
-    ![Add to Favorites](u4sp-release-notes/images/adding_to_favorites.png)
+    ![Add to Favorites](u8-release-notes/images/adding_to_favorites.png)
 
 - Document Title
 - Link to open document in browser:
 
-    ![Open in browser](u4sp-release-notes/images/open_in_browser.png)
+    ![Open in browser](u8-release-notes/images/open_in_browser.png)
 
 `Details` tab contains information about File Size, links to download document, open in browser or desktop application (only for Office documents)
 
@@ -177,11 +177,11 @@ Document Details View contains the following information:
 
 `Versions` tab contains information about all document versions:
 
-![Versions Tab](u4sp-release-notes/images/versions.png)
+![Versions Tab](u8-release-notes/images/versions.png)
 
 # New Features
 
-The following tasks and stories were implemented in the Unity for SharePoint release. 
+The following tasks and stories were implemented in the Unity 8.0 release. 
 The ID and Description are from Intellective’s internal ticket tracking system:
 
 

@@ -8,6 +8,15 @@ entries:
         url: /docs/unity-overview/
         id: unity-overview
 
+      - title: Unity 8
+        output: web, pdf
+        id: unity-8
+        folderitems:
+          - title: Release Notes
+            output: web
+            url: /docs/unity-8/u8-release-notes/
+            id: u8-release-notes
+
       - title: Unity ExtJS
         output: web, pdf
         id: unity-extjs
@@ -536,15 +545,15 @@ entries:
             url: /docs/release-notes/unity-7-8-release-notes/
             id: release-notes-unity-7-8-release-notes
 
+          - title: Unity 8.0 Release Notes
+            output: web
+            url: /docs/release-notes/unity-8-0-release-notes/
+            id: release-notes-unity-8-0-release-notes
+
           - title: Unity for Intellective Release Notes
             output: web
             url: /docs/release-notes/u4i-release-notes/
             id: release-notes-u4i-release-notes
-
-          - title: Unity for SharePoint Release Notes
-            output: web
-            url: /docs/release-notes/u4sp-release-notes/
-            id: release-notes-u4sp-release-notes
 
       - title: Tutorials
         output: web
