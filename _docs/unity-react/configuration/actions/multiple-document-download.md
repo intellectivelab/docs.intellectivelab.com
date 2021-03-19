@@ -31,8 +31,6 @@ For `Multiple Download` action following section should be added to the Unity Sy
 | Parameter       | Description |
 |:----------------|:------------|
 |ActionType       | `multiple_download` |
-|ResourceType     | In example above defined as `DiffProperties` |
-|Scope            | Optional. The repository data provider id. Default value: `inherit` (it means that this parameter will be inherited from `Search Template` or `Grid` component) |
 |MaxFilesNumber   | Sets limited number of documents to download, in example above defined as `10`|
 
 Perform the rest of [Common Action Configuration Steps](../actions.md#common-actions-configuration-steps).
