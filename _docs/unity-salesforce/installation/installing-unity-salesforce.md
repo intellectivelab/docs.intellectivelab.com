@@ -164,10 +164,22 @@ After certificate for a given Unity site is obtained it should be installed on a
   
   | **Notes**: 
   | `Unity Azure` is just an example, it's possible to use different Name and URL Suffix.
-  | ${AzureClientId} is an Azure Client Id
+  | ${AzureClientId} is an Azure Client Id. Find value at `Azure Active Directory > App Registration > Overview Page`: ![Azure Client Id](./installing-unity-salesforce/images/azure-client-id.png)
   | ${AzureClientSecret} is an Azure Client Secret
-  | ${AzureTenantId} is a Directory (tenant) Id and can be found at `App Registration > Overview Page`
+  | ${AzureTenantId} is a Directory (tenant) Id and can be found at `Azure Active Directory > App Registration > Overview Page`: ![Azure Tenant Id](./installing-unity-salesforce/images/azure-tenant-id.png)
   | Example of `Default scopes` parameter - `openid profile offline_access email https://vegaecm2com.sharepoint.com/.default`
+  
+  For SharePoint it's also required to set a Redirect URI. On Azure Portal at 
+  `Azure Active Directory > App Registration > Overview Page` click on link to the right of `Redirect URIs` label:
+  
+  ![Azure Redirect URIs](./installing-unity-salesforce/images/azure-redirect-uris.png) 
+  
+  And add a new Redirect URI:
+  
+  ![Azure Redirect URI](./installing-unity-salesforce/images/azure-redirect-uri.png)
+  
+  URI format: https://${SalesforceOrgId}.my.salesforce.com/services/authcallback/Unity_Azure, where 
+  ${SalesforceOrgDomain} is a Salesforce Org domain. Unity_Azure - is an URL Suffix value from Auth.Provider settings.  
 
 - Go to `Security > CSP Trusted Sites` and `Edit` Unity site name:
 
