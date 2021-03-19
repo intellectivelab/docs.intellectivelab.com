@@ -517,6 +517,19 @@ entries:
             id: interchange-customization
             output: web, pdf
 
+      - title: Unity 8
+        output: web, pdf
+        id: unity-8
+        folderitems:
+          - title: Release Notes
+            output: web, pdf
+            id: release-notes
+            subfolders:
+              - title: Unity 8.0 Release Notes
+                output: web
+                url: /docs/unity-8/release-notes/u8-release-notes/
+                id: u8-release-notes
+
       - title: Release Notes
         output: web, pdf
         id: release-notes
