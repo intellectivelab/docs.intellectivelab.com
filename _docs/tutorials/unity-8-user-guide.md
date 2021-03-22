@@ -220,4 +220,108 @@ After dragging and dropping, or browse and selecting a file, you will be prompte
 
 < From the Video/Gif, starting from last GIF where Create button is displayed, add a document via Drag and Drop and then provide values for Document Title, Document Type and if appropriate (optionally) Organization Name.  Then select the Create Button and show the Document was added to the folder>
 
+## Search Results
+
+The Search Results are displayed and updated when the following occurs:
+
+- By default, when you log into Unity, files you previously tagged as Favorites are displayed
+- You perform either a Simple or Advanced Search
+- You select a Saved Search
+- You select a Node in the Folder View
+- A new document created and added to the folder
+
+<For the Video/Gif show the Search results defaulting to Favorites on Log in, updated after a Simply, Advanced Search, after selecting a Saved Search, and selecting a node in the Folder View>
+ 
+With Unity, you can customize how you view your search results. You can change the look and feel, columns shown, sort order, and more. 
+To customize the Search Results Panel, click on the gear icon in the upper right:
+
+[![Grid settings](unity-8-user-guide/images/grid-settings.png)](unity-8-user-guide/images/grid-settings.png)
+
+### Grid columns
+
+To make a column visible or hidden, or to control the order in which the columns are displayed, select the `Grid Columns` menu item.
+Customize columns dialog appears:
+
+[![Customize columns](unity-8-user-guide/images/customize-columns.png)](unity-8-user-guide/images/customize-columns.png)
+
+For a given field, toggle the Visible toggle switch to the right (Red) to make that column visible. Toggle the switch to the left (Gray) to hide the column.
+
+Any custom fields configured to the SharePoint sites will be displayed as columns.  
+
+For the Preconfigured Demo, custom fields will be configured for:
+- Organization Name
+- Document Type
+
+To change the column order, mouse over the Dots icon to the left of the Column name, and then drag and drop the Column in the order it should be displayed. 
+For example, drag a column from the bottom to the top of the list to see it on the left side of your screen when searching.
+
+When you’re done making changes, select the `Apply` button. Your changes will be saved and kept the same each time you log into the system.
+
+
+<For the Video/Gif, select the Gear Icon and the Grid Columns menu to open the Customize Columns UI 
+Then change one Hidden Field to Visible and one Visible Field to Hidden. 
+Then mouse over one of the Visible Field Dot Icon and drag and drop it in a new location.
+Then select Apply Button and note the changes>
+
+### Grid Display Density: Usability Features
+
+Unity can show information in a more compact or a more expanded form, depending on how much data you’d like to see on the screen at once.
+
+To change the grid density of the rows displayed in the search results, click the `Grid Display Density` option and select the view you’d like to use.  
+Three options are provided:
+- Default
+- Medium
+- Compact
+
+[![Grid density](unity-8-user-guide/images/grid-density-border.gif)](unity-8-user-guide/images/grid-density-border.gif)
+
+Click the `Apply` button to save your change. 
+
+### Sorting
+
+Unity gives you powerful tools to sort your results, making it much easier to narrow down and identify the documents you want to find. 
+You can use a simple sort on one column, or create multiple related column sorts to hone in on specific information.
+
+#### Quick Sort
+
+To quickly sort a column, mouse over the Column Name, and click on the arrow icon that appears immediately to the right:
+
+[![Sort column order icon](unity-8-user-guide/images/sort-column-order-icon.png)](unity-8-user-guide/images/sort-column-order-icon.png)
+
+This will sort the column in ascending order. Click again to sort in descending order. Click a third time to remove the sort .
+
+<For the Video/Gif, show mousing over a column, and have the sort arrow display.  Click this arrow to sort ascending, show column is sorted ascending.
+Then mouse over again and select arrow and sort descending
+Then mouse over again and select to remove the sort>
+
+#### Sort Menu
+
+To sort a column, you can also click the down arrow to the right of the column heading:
+
+[![Sort column arrow](unity-8-user-guide/images/sort-column-arrow.png)](unity-8-user-guide/images/sort-column-arrow.png)
+
+The sort options are displayed:
+
+[![Sort column menu](unity-8-user-guide/images/sort-column-menu.png)](unity-8-user-guide/images/sort-column-menu.png)
+ 
+To set the sort order for the selected column, select either `Sort Ascending` or `Sort Descending`. Ascending will order elements like “1, 2, 3” or “Alpha, Beta, Charlie”, while descending will order elements like “10, 9, 8” or “Zulu, Yankee, X-ray   ”.
+
+If you select a sort for multiple columns, a number will appear after the column names, indicating in which order the columns are sorted.
+
+<For the Video/Gif, show selecting a column and then select Sort Ascending > show the search results are sorted by the selected column in Ascending Order. 
+Then select the same column and select Sort Descending > show the search results are sorted by the selected column in Ascending Order. 
+Then select a different column and select Sort Ascending or Descending > show that numbers 1 and 2 are now displayed next to the selected columns>
+
+ 
+To control the sort order and have a different column be sorted first, select the down arrow to the right of the column heading and select either Promote Order (to increase that column’s precedence in the sort order) ,or Demote Order (to lower that column’s precedence in the sort order). 
+For example, if you want to sort by Document Title first, and then by Date Modified, promote Document Title until it is labelled “1”, followed by Date Modified labelled “2”.
+
+To remove the Column from Sort, select the Remove Sort menu item from the dropdown.
+
+
+ 
+
+<For the Video/Gif, show that Promoting a Column Heading currently listed as Sort Order #2 (Doc Title in example above), will change it to Sort #1, and the current Sort Order #1 is demoted to Sort Order #2 (Date Modified in example above).  
+Then select Remove from Sort, to remove the Column from Sort.>
+ 
 
