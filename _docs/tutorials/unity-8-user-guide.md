@@ -38,7 +38,7 @@ Use Simple Search to quickly find documents across all authorized SharePoint sit
 Type in the word or phrase to search for in the `Enter on Document Title or Content` box at the top of the screen.
 The Search results will automatically update, returning all content with the search criteria found anywhere in the Document Title or Content.
 
-[![Simple search](unity-8-user-guide/images/simple-search-fullscreen.gif)](unity-8-user-guide/images/simple-search-fullscreen.gif)
+[![Simple search](unity-8-user-guide/images/simple-search-border.gif)](unity-8-user-guide/images/simple-search-border.gif)
 
 ## Folder View
 
@@ -49,7 +49,7 @@ Unity has the capability to present a single continuous view of multiple SharePo
 
 Click on a folder to display content within that folder and all subfolders under it.
 
-![Folders](unity-8-user-guide/images/folders.gif)
+[![Folders](unity-8-user-guide/images/folders-border.gif)](unity-8-user-guide/images/folders-border.gif)
 
 - All Repositories 
 
@@ -91,7 +91,7 @@ You can quickly filter and narrow down your search results via multiple dimensio
 
 Click the Advanced Search Icon to open the Advanced Search Panel
 
-![Advanced search icon]()
+[![Advanced search icon](unity-8-user-guide/images/advanced-search-icon.png)](unity-8-user-guide/images/advanced-search-icon.png)
 
 From the Advanced Search Panel, you can:
 
@@ -104,10 +104,8 @@ From the Advanced Search Panel, you can:
     The fields will default to match what you previously entered in the `Simple` search view.
 
     Remove one of the values to only search by that criteria. For example, remove the `Title` value to only look in the document’s text.
-
-    <For Video/Gif display enter a search in the Simple Search field, then select the Advanced Search button to open the Advanced Search Panel, 
-    and show how the value entered in the Simple Search appears by default in the Advanced Search Doc Title and Doc Content with OR Operator
-    Remove the Doc Content Search value and select the Search button to show updated Results>
+   
+    [![Advanced search](unity-8-user-guide/images/advanced-search-border.gif)](unity-8-user-guide/images/advanced-search-border.gif)
     
 - Search by File Types
 
@@ -117,11 +115,15 @@ From the Advanced Search Panel, you can:
     <For Video/Gif Continue from last GIF and add to it a File Type Selection (e.g., MS Word, MS PowerPoint, PDF, etc, and select the Search button to show the updated results>
 
 - Search by the user who last modified the file
+
     To show documents modified by a particular user, click on the `Modified By` dropdown and select the user’s name.
+    
     <For Video/Gif Continue from last GIF and add to it a Modified By Search and select the Search button to show the updated results>
 
 - Search by Date Modified Range
+
     To show documents modified at a certain date or time, enter values in the `Date Modified On or Before`, or `Date Modified On or After` fields. 
+   
     Allows the user to restrict the search results based on the Date Modified. The user can enter a:
     - Enter a Date Modified On or Before to return documents last modified on or before that date 
     - Enter a Date Modified On or After to return documents last modified on or after that date 
@@ -131,11 +133,14 @@ From the Advanced Search Panel, you can:
     <For Video/Gif Continue from last GIF and add to it a Date Modified Range Search and select the Search button to show the updated results>
 
 - Search by SharePoint Sites
-    By default, Unity’s search shows you documents from everywhere, in all of your connected sites. 
+
+    By default, Unity’s search shows you documents from everywhere, in all of your connected sites.  
     If you only want to view documents from a particular site or a set of sites, click the `SharePoint Sites` dropdown and check the sites you want to search.
+   
     <For Video/Gif Continue from last GIF and add to it a selection of Multiple SharePoint Sites and select the Search button to show the updated results>
 
 - Search by Custom Fields
+
     Some SharePoint documents may have additional associated metadata that describes the file. 
     For example, `Customer Name` or `Order ID.` If the administrator has configured Custom SP Metadata fields for specific SP Sites, you can search by these fields in the Custom fields section. 
     Click on the `Custom Fields` section to expand it and enter values for the fields you’d like to search on.
@@ -151,14 +156,13 @@ Click the `Search` button to execute your search and see the results in the pane
 
 To clear your changes and return to the default search settings, click the `Reset` button
 
-
 <For Video/Gif Continue from last GIF and select the `Reset` button to show the Search Criteria fields are cleared>
 
 ## Favorites and Saved Search list
 
 Favorites and Saved Search List is accessible from the Navigation Settings menu (See Section 3 Menus below).
 
-<For the Video/Gif select the Navigations Settings Menu, to show the list of items> 
+[![Navigation menu](unity-8-user-guide/images/navigation-menu.png)](unity-8-user-guide/images/navigation-menu.png)
 
 ### Favorites
 
@@ -180,22 +184,40 @@ You can save frequently used searches to quickly access them in the future.
 - Enter a name for the search and click `Save`
 - To access your saved searches, click on the Navigation Settings Menu and select a search listed under the `Saved Searches` section
 
- 
-
-
 When a Saved Search is select, the Simple and Advance Panel UIs are updated to display the Save Search Criteria, and the search is executed.
   
-<Create a Video/Gif of a user entering Advance Search Criteria and selecting Save As, and providing a Name. 
-Then select the Reset button to clear the search.
-Then select the Navigation Settings Menu, and under Saved Search select the previous Saved Search.  Point out how the Advance Search Panel is updated with the Search Criteria and the search is automatically executed.>
-
-
+[![Saved search](unity-8-user-guide/images/saved-search-border.gif)](unity-8-user-guide/images/saved-search-border.gif)
 
 ## Create Document
 
 You can easily add new documents to your repositories, right from Unity.
 
-Click the `Create` button to add a file to a SharePoint Site-Folder.
+Click the `Create` button to add a file to a `SharePoint Site > Folder`:
+
+[![Create button](unity-8-user-guide/images/create-button.png)](unity-8-user-guide/images/create-button.png)
 
 |**Note**: The `Create` button is only displayed when you have selected a Folder in the Folder View. If All Repositories, SharePoint Instance, or a SharePoint Site node is selected in the Folder View, the `Create` button is hidden.
+
+The New Document dialog box will be displayed:
+ 
+[![New document dialog](unity-8-user-guide/images/new-document-dialog.png)](unity-8-user-guide/images/new-document-dialog.png)
+ 
+ You can add documents two ways:
+
+- Drag and Drop: Click on a document in a folder on your desktop, and drag it onto the `Drop files to attach` box on the screen. 
+- Browse and Select: Click the Upload icon in the `Drop files to attach` box. You will be prompted to select.
+ 
+After dragging and dropping, or browse and selecting a file, you will be prompted to enter metadata for the file.
+- Enter a document title to be used for the document added. This can be different from the filename.
+- You may optionally provide custom metadata field values, if prompted. Required fields will be marked with a red icon.
+    
+    For the Preconfigured Demo custom metadata fields for the following have been configured:
+    - Document Type (Choice List)
+    - Organization Name (Text)
+ 
+- Once all required fields are entered, click the `Create` button.
+- Your document will be securely uploaded into the system.
+
+< From the Video/Gif, starting from last GIF where Create button is displayed, add a document via Drag and Drop and then provide values for Document Title, Document Type and if appropriate (optionally) Organization Name.  Then select the Create Button and show the Document was added to the folder>
+
 
