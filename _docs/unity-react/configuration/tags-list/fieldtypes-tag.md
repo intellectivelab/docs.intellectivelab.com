@@ -67,5 +67,4 @@ Available field `Type`s:
 | BOOLEAN     | Checkbox |
 | DATE        | [Date picker](../../components/field/date-picker.md) |
 | DATETIME    | [Date and time picker](../../components/field/datetime-picker.md) |
-| GUID        | Guid |
 | TEXT        | Text area |
