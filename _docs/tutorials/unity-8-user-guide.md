@@ -78,11 +78,11 @@ Click on a folder to display content within that folder and all subfolders under
     When a user selects a specific Folder, all Simple and Advanced Searches are restricted to the select Folder Content and All Sub-Folder Content.
 
 
-## Search Results
+## Search results simple Open file action
 
-- Action - Simple Open
+Clicking the Document Title on one of the search results will open the file in the Browser:
 
-    Clicking the Document Title on one of the search results will open the file in the Browser.
+[![Open document](unity-8-user-guide/images/open-border.gif)](unity-8-user-guide/images/open-border.gif)
 
 ## Advanced Search 
 
@@ -304,7 +304,7 @@ The sort options are displayed:
 
 [![Sort column menu](unity-8-user-guide/images/sort-column-menu.png)](unity-8-user-guide/images/sort-column-menu.png)
  
-To set the sort order for the selected column, select either `Sort Ascending` or `Sort Descending`. Ascending will order elements like “1, 2, 3” or “Alpha, Beta, Charlie”, while descending will order elements like “10, 9, 8” or “Zulu, Yankee, X-ray   ”.
+To set the sort order for the selected column, select either `Sort Ascending` or `Sort Descending`. Ascending will order elements like `1, 2, 3` or `Alpha, Beta, Charlie`, while descending will order elements like `10, 9, 8` or `Zulu, Yankee, X-ray   `.
 
 If you select a sort for multiple columns, a number will appear after the column names, indicating in which order the columns are sorted.
 
@@ -314,14 +314,160 @@ Then select a different column and select Sort Ascending or Descending > show th
 
  
 To control the sort order and have a different column be sorted first, select the down arrow to the right of the column heading and select either Promote Order (to increase that column’s precedence in the sort order) ,or Demote Order (to lower that column’s precedence in the sort order). 
-For example, if you want to sort by Document Title first, and then by Date Modified, promote Document Title until it is labelled “1”, followed by Date Modified labelled “2”.
+For example, if you want to sort by Document Title first, and then by Date Modified, promote Document Title until it is labelled `1`, followed by Date Modified labelled `2`.
 
 To remove the Column from Sort, select the Remove Sort menu item from the dropdown.
-
-
- 
 
 <For the Video/Gif, show that Promoting a Column Heading currently listed as Sort Order #2 (Doc Title in example above), will change it to Sort #1, and the current Sort Order #1 is demoted to Sort Order #2 (Date Modified in example above).  
 Then select Remove from Sort, to remove the Column from Sort.>
  
+## Actions on Search Result Rows
+
+Once you’ve located the document you’re looking for, you can take a variety of actions on it.
+
+Click on the document name to quickly open the document for viewing. For more actions, mouse over the document name and then click on the vertical ellipse icon consisting of three dots to the right of the name:
+
+[![Context menu](unity-8-user-guide/images/context-menu-border.gif)](unity-8-user-guide/images/context-menu-border.gif)
+
+Click on the action to perform it.
+
+### Open in browser
+
+Opens the file in your browser for quick viewing.
+
+<For the Video/Gif, select the vertical ellipse icon and show the list of actions and Select Open browser, show the results of the action>
+
+### Open in app
+
+Opens the file in the related desktop application.  
+Only applicable for Microsoft Office documents.  
+
+<For the Video/Gif, select the vertical ellipse icon and show the list of actions and Select Open in app for a MS Office Document, show the results of the action>
+
+### Copy Link
+
+Opens a window where the user can copy the URL to the selected file:
+ 
+[![Copy link](unity-8-user-guide/images/copy-link.png)](unity-8-user-guide/images/copy-link.png) 
+ 
+This URL provides a fast means of sharing the document with other users, without creating a duplicate copy.
+
+Click `Copy` to copy the URL to your clipboard, then paste (Ctrl-V) to paste the link into an email, message, document, or other location.
+
+You can optionally select to limit the number of people who can access the link.  Select `Specific People` from the menu and choose the people that you want to access the document via the link. 
+
+<For the Video/Gif, select the vertical ellipse icon and show the list of actions and select Copy Link, show the results of the action, by pasting the copy link into a new browser tab>
+
+### Download
+
+Downloads the selected file to your default file download location.
+
+<For the Video/Gif, select the vertical ellipse icon and show the list of actions and select Download, show the results of the action>
+
+### Delete
+
+Deletes a document from the system.
+
+You must have security rights to delete the file for this action to be available.
+
+You will be shown a Delete document confirmation prompt: 
+- If you select `Yes`, the file will be deleted
+- If you select `Cancel`, no changes will be made and the prompt will be closed
+
+<For the Video/Gif, select the vertical ellipse icon and show the list of actions and select Delete, show the results of the action>
+
+### Rename
+
+Renames the file.
+
+Enter a new name for the file in the dialog box:
+
+[![Rename action](unity-8-user-guide/images/rename.png)](unity-8-user-guide/images/rename.png) 
+
+Click `Rename` to confirm. The file will now be searchable and labelled by the new name.
+
+Select `Cancel` to close the Rename dialog box without renaming the file.
+ 
+
+<For the Video/Gif, select the vertical ellipse icon and show the list of actions and select Rename, and then Rename the File and select the Rename Button, and show the results of the action>
+
+### Move to
+
+Moves the file to another SharePoint site or folder.
+
+You may move files by dragging and dropping them, or by selecting the `Move to` option. 
+
+<Video/Gif to show both options>
+
+- Using `Move to`
+    
+    Click the `Move to` action, then select the site and folder you wish to move to.  Select the `Apply` button to move the document.
+
+[![Move to action](unity-8-user-guide/images/move-to.png)](unity-8-user-guide/images/move-to.png) 
+ 
+- Using Drag and Drop
+
+    - Click on the file you want to move, then drag and drop the file from the Search Results to a SharePoint Folder on the Folder View. 
+    - After dropping the file, you will be asked if you’d like to move or copy the file. Moving will relocate the file to a new location, while copying will duplicate the document and place the copy in the new location. 
+
+To cancel the Move/Copy action, click outside of the selection box.
+
+ 
+<For the Video/Gif, drag and drop a file in the search results into a SharePoint Site-Folder (where the file does not current exists), after dropping the file select Move to at the prompt, and show the results of the action that the file is moved from the current folder and to the destination (dropped) folder>
+
+
+### Copy to
+
+Copies the File to another SharePoint Site / Folder.
+
+You may copy files by dragging and dropping them, or by selecting the `Copy to` option. <Video/Gif to show both options>
+
+- Using `Copy to`
+    Click the `Copy to` action, then select the site and folder you wish to copy it to.  Select the `Apply` button to copy the document.
+
+- Using Drag and Drop
+    See Move Action above.
+
+<For the Video/Gif, drag and drop a file in the search results into a SharePoint Site-Folder (where the file does not current exists), after dropping the file select Copy to at the prompt, and show the results of the action that the file is still maintained in the current folder but also copied to the destination (dropped) folder>
+
+### Details
+
+Clicking the Detail action displays a Document Details window with the following information:
+- Path to the file 
+- Document title   
+- Favorite icon, indicating if you previously favorited this document and allowing to tag a document as a Favorite or remove from Favorites
+- Link to Open the file in browser:
+
+    [![Link to open file](unity-8-user-guide/images/details-link.png)](unity-8-user-guide/images/details-link.png) 
+    
+- Icon to Download the file:
+    
+    [![Icon to download file](unity-8-user-guide/images/details-download.png)](unity-8-user-guide/images/details-download.png) 
+    
+- Icon to Open in desktop app:
+
+    [![Icon to open in app](unity-8-user-guide/images/details-open-in-app.png)](unity-8-user-guide/images/details-open-in-app.png) 
+
+- `Details` Tab
+    
+    The Details tab displays metadata, which can be modified by an authorized user.  
+       
+    Standard SharePoint metadata:
+    - Document title
+    
+    For the Preconfigured Demo, custom fields will be configured for:
+    - Document Type
+    - Organization Name
+    
+    The Details Tab will be displayed by default.
+    
+- `Versions` Tab
+ 
+    The Version History tab displays information on each version of the file. 
+    Each time the file is modified, SharePoint creates a new version of the file to track the changes made. 
+    From this tab, you can see and interact with the current version of the document, as well as all prior versions.
+ 
+<For the Video/Gif, select the vertical ellipse icon and show the list of actions and select Details, 
+Then modified the Standard and Custom Metadata (Document Title, and Document Type) and select the Save button
+Then select the Versions tab to show the Versions tab information>
 
