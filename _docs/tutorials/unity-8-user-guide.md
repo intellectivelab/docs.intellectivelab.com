@@ -27,16 +27,16 @@ After requesting your Unity instance, the requestor should have received an emai
 # Unity User Interface Overview
 
 When a user signs into Unity the default behavior is to display a list of Favorite files, which are files the user as tagged as a Favorite. 
-For more information on Favorites see [Favorites](#favorites) and [Saved Search List](#saved-search-list) sections below.
-
 For Evaluation purposes, a short list of files has been tagged as a Favorites.
+
+For more information on Favorites see [Favorite On/Favorite Off](#favorite-on--favorite-off).
 
 ## Simple Search
 
 Use Simple Search to quickly find documents across all authorized SharePoint sites by typing in a related keyword or phrase.
 
-Type in the word or phrase to search for in the `Enter on Document Title or Content` box at the top of the screen.
-The Search results will automatically update, returning all content with the search criteria found anywhere in the Document Title or Content.
+Type in the word or phrase to search for in the `Enter on Document Title or Content` box at the top of the screen. Click `Search` icon or press `Enter` on a keyboard to execute search.
+The Search results will update, returning all content with the search criteria found anywhere in the Document Title or Content:
 
 [![Simple search](unity-8-user-guide/images/simple-search-border.gif)](unity-8-user-guide/images/simple-search-border.gif)
 
@@ -53,28 +53,23 @@ Click on a folder to display content within that folder and all subfolders under
 
 - All Repositories 
 
-    When the All Repositories Node is select any Simple Or Advanced search will search across all Configured Repositories.
-
+    When the All Repositories Node is select any Simple Or Advanced search will search across all Configured Repositories.  
     For the Preconfigured Demo, only SharePoint is configured.  However, the only Repository is SharePoint.  However, Unity also includes other repositories (e.g., IBM FileNet, CMOD, CM8, Box, Alfresco, all CMIS supported repositories)
 
 - SharePoint Instance
 
-    When the SharePoint Instance Node is select any Simple Or Advanced search will search across all Configured Sites for the selected SharePoint Instance.
-
+    When the SharePoint Instance Node is select any Simple Or Advanced search will search across all Configured Sites for the selected SharePoint Instance.  
     For the Preconfigured Demo only a single SharePoint Instance is provided.  However, multiple SP Instances are supported. 
 
 - SharePoint Sites
 
-    The Preconfigure Demo has been configured with the following four SharePoint sites: HR, Finance, Sales, Marketing
-
-    When a user selects a SharePoint Site, all Simple and Advanced Search are restricted to the selected Site.  
-
-    Note: It is possible to search across multiple specifically selected SharePoint Sites using the Advanced Search SharePoint Sites search criteria (See Advanced Search – SharePoint Sites below)
+    The Preconfigure Demo has been configured with the following four SharePoint sites: HR, Finance, Sales, Marketing.  
+    When a user selects a SharePoint Site, all Simple and Advanced Search are restricted to the selected Site.    
+    Note: It is possible to search across multiple specifically selected SharePoint Sites using the [Advanced Search](#advanced-search) SharePoint Sites search criteria.
 
 - SharePoint Site - Folders
 
-    The Preconfigured Demo has been configured with specific Folders, Sub-Folders and related Content for each SharePoint Site (see list above). 
-
+    The Preconfigured Demo has been configured with specific Folders, Sub-Folders and related Content for each SharePoint Site (see list above).   
     When a user selects a specific Folder, all Simple and Advanced Searches are restricted to the select Folder Content and All Sub-Folder Content.
 
 
@@ -158,35 +153,26 @@ To clear your changes and return to the default search settings, click the `Rese
 
 <For Video/Gif Continue from last GIF and select the `Reset` button to show the Search Criteria fields are cleared>
 
-## Favorites and Saved Search list
-
-Favorites and Saved Search List is accessible from the Navigation Settings menu (See Section 3 Menus below).
-
-[![Navigation menu](unity-8-user-guide/images/navigation-menu.png)](unity-8-user-guide/images/navigation-menu.png)
-
-### Favorites
-
-You can tag frequently accessed documents as `Favorites`, providing fast access to them without searching.
-
-To tag a document as a `Favorite`, click the ellipses to the right of the document name, and select `Favorite`.
-
-|**Note**: When you first log on, the Favorites are shown by default.  You can re-display the Favorites at any time by selecting Favorites from the Intellective Menu.
-
-
-<For Video/Gif log in and show that Favorites are displayed by default.  Select a document and Un-tag it as a Favorite using the Content Action Favorite to show that it is removed.  
-Then go to the Folder View and open a folder to display a list of documents.  Tag one as a Favorite using the Content Action Favorite, and then open the Navigation Setting Menu and select Favorites to show the List of Favorites>
-
-### Saved Search List
+## Saved Searches
 
 You can save frequently used searches to quickly access them in the future.
 
 - Enter the search criteria you’d like to use, then click the `Advanced Search Settings` ellipses and select `Save As`
 - Enter a name for the search and click `Save`
-- To access your saved searches, click on the Navigation Settings Menu and select a search listed under the `Saved Searches` section
+- To access your saved searches, click on the [Navigation Settings Menu](#navigation-settings) and select a search listed under the `Saved Searches` section
 
-When a Saved Search is select, the Simple and Advance Panel UIs are updated to display the Save Search Criteria, and the search is executed.
+When a Saved Search is select, the Simple and Advanced panel UIs are updated to display the Saved Search Criteria, and the search is executed.
   
 [![Saved search](unity-8-user-guide/images/saved-search-border.gif)](unity-8-user-guide/images/saved-search-border.gif)
+
+## Favorites
+
+You can tag frequently accessed documents as `Favorites`, providing fast access to them without searching. See [Favorite On/Favorite Off](#favorite-on--favorite-off) for details.
+
+|**Note**: When you first log on, the Favorites are shown by default.  You can re-display the Favorites at any time by selecting Favorites from the [Navigation Settings Menu](#navigation-settings).
+
+<For Video/Gif log in and show that Favorites are displayed by default.  Select a document and Un-tag it as a Favorite using the Content Action Favorite to show that it is removed.  
+Then go to the Folder View and open a folder to display a list of documents.  Tag one as a Favorite using the Content Action Favorite, and then open the Navigation Setting Menu and select Favorites to show the List of Favorites>
 
 ## Create Document
 
@@ -284,11 +270,13 @@ You can use a simple sort on one column, or create multiple related column sorts
 
 #### Quick Sort
 
-To quickly sort a column, mouse over the Column Name, and click on the arrow icon that appears immediately to the right:
+- To quickly sort a column, mouse over the Column Name, and click on the arrow icon that appears immediately to the right:
 
-[![Sort column order icon](unity-8-user-guide/images/sort-column-order-icon.png)](unity-8-user-guide/images/sort-column-order-icon.png)
+    [![Sort column order icon](unity-8-user-guide/images/sort-column-order-icon.png)](unity-8-user-guide/images/sort-column-order-icon.png)
 
-This will sort the column in ascending order. Click again to sort in descending order. Click a third time to remove the sort .
+    This will sort the column in ascending order. 
+- Click again to sort in descending order
+- Click a third time to remove the sort
 
 <For the Video/Gif, show mousing over a column, and have the sort arrow display.  Click this arrow to sort ascending, show column is sorted ascending.
 Then mouse over again and select arrow and sort descending
@@ -436,7 +424,7 @@ Clicking the Detail action displays a Document Details window with the following
 - Path to the file 
 - Document title   
 - Favorite icon, indicating if you previously favorited this document and allowing to tag a document as a Favorite or remove from Favorites
-- Link to Open the file in browser:
+- Link to Open the file in your browser:
 
     [![Link to open file](unity-8-user-guide/images/details-link.png)](unity-8-user-guide/images/details-link.png) 
     
@@ -444,7 +432,7 @@ Clicking the Detail action displays a Document Details window with the following
     
     [![Icon to download file](unity-8-user-guide/images/details-download.png)](unity-8-user-guide/images/details-download.png) 
     
-- Icon to Open in desktop app:
+- Icon to Open the file in desktop app:
 
     [![Icon to open in app](unity-8-user-guide/images/details-open-in-app.png)](unity-8-user-guide/images/details-open-in-app.png) 
 
@@ -471,3 +459,142 @@ Clicking the Detail action displays a Document Details window with the following
 Then modified the Standard and Custom Metadata (Document Title, and Document Type) and select the Save button
 Then select the Versions tab to show the Versions tab information>
 
+### Favorite On / Favorite Off
+
+You may tag a file as a favorite or remove a file as favorite, by selecting the `Favorite` action.
+
+Once the file is selected as a favorite, the `Favorite` action appears with a Yellow Star:
+
+[![Favorite action](unity-8-user-guide/images/favorite-action-on.png)](unity-8-user-guide/images/favorite-action-on.png) 
+
+You may un-tag a file as a favorite by selecting the `Favorite` action again. 
+
+Once the file is de-selected as a Favorite (or not previously selected as a Favorite) the `Favorite` action appears with a Star that is not filled in:
+
+[![Favorite action](unity-8-user-guide/images/favorite-action-off.png)](unity-8-user-guide/images/favorite-action-off.png) 
+
+<For the Video/Gif, select the vertical ellipse icon and show the list of actions and Select the Favorites action for a document that is Not already tagged as a Favorite, and show the Favorites Action Icon has now change to display Gold Star.
+Then select the Navigation Settings Icon and Favorites Menu Item and show how the document now displays as a Favorite.
+Then select the vertical ellipse icon and show the list of actions and Select the Favorites action again to now Un-tag the document as a Favorite, and show that this action removes the document from the list of Favorites>
+
+## Actions on Multiple Selected Documents
+
+With Unity, you can take action on multiple documents at once.  
+Click the checkbox to the left of a document to select it. To take action on multiple documents, select multiple documents and then click the `Actions` button in the upper right:
+
+[![Multiple actions](unity-8-user-guide/images/multiple-actions.png)](unity-8-user-guide/images/multiple-actions.png) 
+ 
+You may take the following actions on multiple selected documents:
+- Download
+    
+    Downloads the selected files as a single zip file.
+- Move to / Copy to
+    
+    Shows the same `Move to / Copy to` interface used for single documents, allowing you to copy or move multiple documents at the same time.
+ 
+
+<For the Video/Gif, select multiple documents and show how the Action Menu has now enabled.
+Then select the Download Action and show that all selected documents are download as a Zip File.
+Then select the Copy To Action which will open the Copy To Pop-up UI
+Then select a Destination Folder, which will enable the Select Button.  Select the Select Button and show that the documents were copied to this Folder>
+
+## Detail View
+
+Unity provides an additional Detail View to allow fast browsing and comparison of documents. To activate it, click the `Detail View` toggle button in the upper right of the search results screen:
+
+[![Detail view icon](unity-8-user-guide/images/detail-view-icon.png)](unity-8-user-guide/images/detail-view-icon.png)  
+
+You can click the button again to easily toggle between `Detail View` and standard `List View`:
+
+[![Detail view](unity-8-user-guide/images/detail-view.png)](unity-8-user-guide/images/detail-view.png)
+
+ 
+The Detail View left panel displays the list of files returned from the search.
+The Detail middle panel displays the same details information as listed above when the user selects the [Details action](#details). 
+You may click on documents in the left panel to refresh the middle panel with their details. In this way, you can quickly switch between documents to compare details or identify the document you’re looking for.
+ 
+You can open Detail View for all documents returned by a search, or you can first multi-select the specific documents you want to view. 
+For example, clicking the checkbox next to three documents, then selecting the Detail View toggle, will show only those three documents in Detail View. If no checkboxes are selected, all documents will be shown .
+
+<For the Video/Gif, execute a search that returns several documents.  
+Without selecting Any documents select the Details View and show all documents displayed in the Details View.
+Then toggle the View back to a List View, and now from the List View select three (3) documents.  
+Then toggle the View back to the Details view and show Only the selected documents are displayed.>
+
+
+### Order By
+
+Click the `Order By` dropdown to change the order by which files are displayed in the Detail View. 
+The Detail View will sort the contents based on the column you select:
+
+[![Order by](unity-8-user-guide/images/order-by.png)](unity-8-user-guide/images/order-by.png) 
+
+## Appended Searches
+
+Sometimes, it takes multiple searches to find and assemble the documents you need. 
+Unity gives you the ability to collect documents across multiple searches and then download, view, or take action on them.
+
+You can Append documents across multiple searches as follows:
+- Perform a search, then select the documents you wish to `keep` by clicking the checkbox next to each document
+- Execute a different search or browse to a different folder, then select more documents by clicking the checkbox 
+- Repeat as many times as you need to identify the collection of documents you need
+- Once all documents are selected, click the `Detail View` toggle to view a complete list of their selected documents across multiple searches. You can also take action on one or all of the documents.
+
+<For the Video/Gif execute a search and select a few documents.
+-	first example below has three (3) selected documents
+Then execute a different search and again select more documents.
+-	Second example below has four (4) selected documents
+Once the searches are completed, select the Details View Toggle Switch to view the Appended list of Selected Documents.
+-	Append Search example displays the seven (7) selected documents >
+
+## Menus
+
+Unity provides the Account settings and Navigation settings top-level menus.
+
+### Account Settings
+
+The Account Setting displays your logged-in user account information:
+
+[![Account settings menu](unity-8-user-guide/images/account-settings.png)](unity-8-user-guide/images/account-settings.png)
+ 
+<For the Video/Gif select the Account Settings Menu> 
+
+### Navigation Settings
+
+[![Navigation settings menu](unity-8-user-guide/images/navigation-menu.png)](unity-8-user-guide/images/navigation-menu.png) 
+
+The Navigation Setting Menu provides access to the following:
+- Help Guide  
+        
+    Accesses this Help Guide.
+    
+- Administration Console     
+        
+    Allows your organizations Administrator’s to Configure Unity. For the Preconfigured Demo the Unity Administration Console UI has been set to Read Only to allow evaluators to view what configuration options are available.  
+        [![Administration console](unity-8-user-guide/images/administration-console.png)](unity-8-user-guide/images/administration-console.png)     
+    - Connectivity:  
+      Allows the Administrator to indicate the following information:
+      - SharePoint Base URL
+      - Allowed Sites: SharePoint Sites Unity is Authorize to Access
+      - Denied Sites: SharePoint Sites Unity is Denied Access
+      - SharePoint Custom Metadata Properties configured for Unity access    
+    - Unity Authentication  
+      Allows the Administrator to indicate User Authentication information    
+    - System Account  
+      Allows the Administrator to indicate System Account Information
+
+- About Unity
+- Favorites  
+    
+    Shows a list of favorite documents. See [Favorite On/Favorite Off](#favorite-on--favorite-off) for details. 
+
+- Saved searches  
+    
+    Shows a list of saved searches. See [Saved Searches](#saved-searches) for details.
+
+<For the Video/Gif select the Navigations Settings Menu, to show the list of items> 
+ 
+<For the Video/Gif select the Navigations Settings Menu: Administration Console and select each sub-menu ID: 
+-Connectivity
+-User Authentication
+-System Account>
