@@ -411,9 +411,11 @@ Copies the File to another SharePoint Site / Folder.
 You may copy files by dragging and dropping them, or by selecting the `Copy to` option. <Video/Gif to show both options>
 
 - Using `Copy to`
+
     Click the `Copy to` action, then select the site and folder you wish to copy it to.  Select the `Apply` button to copy the document.
 
 - Using Drag and Drop
+
     See Move Action above.
 
 <For the Video/Gif, drag and drop a file in the search results into a SharePoint Site-Folder (where the file does not current exists), after dropping the file select Copy to at the prompt, and show the results of the action that the file is still maintained in the current folder but also copied to the destination (dropped) folder>
