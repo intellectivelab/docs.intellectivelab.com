@@ -84,7 +84,7 @@ Clicking the Document Title on one of the search results will open the file in t
 Advanced search gives you powerful tools to find the exact document you’re looking for. 
 You can quickly filter and narrow down your search results via multiple dimensions like site, filetype, modifier, custom metadata, and more. 
 
-Click the Advanced Search Icon to open the Advanced Search Panel
+Click the Advanced Search Icon to open the Advanced Search Panel:
 
 [![Advanced search icon](unity-8-user-guide/images/advanced-search-icon.png)](unity-8-user-guide/images/advanced-search-icon.png)
 
@@ -105,8 +105,12 @@ From the Advanced Search Panel, you can:
 - Search by File Types
 
     To only return documents of a particular type, click on the `File Type` dropdown and select the types of files you want the search to return. For example: MS Word, MS Excel, PDF, etc. 
-    You may select multiple values to return multiple kinds of documents. Remove your selections to see all document types.
+    You may select multiple values to return multiple kinds of documents:
     
+    [![Advanced search file type](unity-8-user-guide/images/advanced-search-file-type.png)](unity-8-user-guide/images/advanced-search-file-type.png)
+    
+     Remove your selections to see all document types.
+     
     <For Video/Gif Continue from last GIF and add to it a File Type Selection (e.g., MS Word, MS PowerPoint, PDF, etc, and select the Search button to show the updated results>
 
 - Search by the user who last modified the file
@@ -130,8 +134,10 @@ From the Advanced Search Panel, you can:
 - Search by SharePoint Sites
 
     By default, Unity’s search shows you documents from everywhere, in all of your connected sites.  
-    If you only want to view documents from a particular site or a set of sites, click the `SharePoint Sites` dropdown and check the sites you want to search.
+    If you only want to view documents from a particular site or a set of sites, click the `SharePoint Sites` dropdown and check the sites you want to search:
    
+    [![Advanced search sites](unity-8-user-guide/images/advanced-search-sites.png)](unity-8-user-guide/images/advanced-search-sites.png)  
+    
     <For Video/Gif Continue from last GIF and add to it a selection of Multiple SharePoint Sites and select the Search button to show the updated results>
 
 - Search by Custom Fields
@@ -149,7 +155,7 @@ From the Advanced Search Panel, you can:
 
 Click the `Search` button to execute your search and see the results in the panel on the right.
 
-To clear your changes and return to the default search settings, click the `Reset` button
+To clear your changes and return to the default search settings, click the `Reset` button.
 
 <For Video/Gif Continue from last GIF and select the `Reset` button to show the Search Criteria fields are cleared>
 
@@ -167,9 +173,16 @@ When a Saved Search is select, the Simple and Advanced panel UIs are updated to 
 
 ## Favorites
 
-You can tag frequently accessed documents as `Favorites`, providing fast access to them without searching. See [Favorite On/Favorite Off](#favorite-on--favorite-off) for details.
+You can tag frequently accessed documents as `Favorites`, providing fast access to them without searching.  
 
-|**Note**: When you first log on, the Favorites are shown by default.  You can re-display the Favorites at any time by selecting Favorites from the [Navigation Settings Menu](#navigation-settings).
+You can tag/un-tag a document as a `Favorite` by selecting the [Favorite action](#favorite-on--favorite-off).  
+Also you can do this in [Document Details panel](#details) and in [Detail view](#detail-view).
+
+To display the list of your Favorites select `Favorites` from the [Navigation Settings Menu](#navigation-settings):
+
+[![Favorites list from navigation settings menu](unity-8-user-guide/images/favorites-menu.png)](unity-8-user-guide/images/favorites-menu.png)
+
+|**Note**: When you first log on, the Favorites are shown by default.
 
 <For Video/Gif log in and show that Favorites are displayed by default.  Select a document and Un-tag it as a Favorite using the Content Action Favorite to show that it is removed.  
 Then go to the Folder View and open a folder to display a list of documents.  Tag one as a Favorite using the Content Action Favorite, and then open the Navigation Setting Menu and select Favorites to show the List of Favorites>
@@ -438,7 +451,7 @@ Clicking the Detail action displays a Document Details window with the following
 
     [![Icon to open in app](unity-8-user-guide/images/details-open-in-app.png)](unity-8-user-guide/images/details-open-in-app.png) 
 
-- `Details` Tab
+- `DETAILS` Tab
     
     The Details tab displays metadata, which can be modified by an authorized user.  
        
@@ -451,7 +464,7 @@ Clicking the Detail action displays a Document Details window with the following
     
     The Details Tab will be displayed by default.
     
-- `Versions` Tab
+- `VERSIONS` Tab
  
     The Version History tab displays information on each version of the file. 
     Each time the file is modified, SharePoint creates a new version of the file to track the changes made. 
