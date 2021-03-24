@@ -26,10 +26,8 @@ After requesting your Unity instance, the requestor should have received an emai
 
 # Unity User Interface Overview
 
-When a user signs into Unity the default behavior is to display a list of Favorite files, which are files the user as tagged as a Favorite. 
+When a user signs into Unity the default behavior is to display a list of [Favorite](#favorites) files, which are files the user has tagged as a Favorite. 
 For Evaluation purposes, a short list of files has been tagged as a Favorites.
-
-For more information on Favorites see [Favorite On/Favorite Off](#favorite-on--favorite-off).
 
 ## Simple Search
 
