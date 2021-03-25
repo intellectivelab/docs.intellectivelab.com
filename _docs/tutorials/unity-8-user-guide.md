@@ -38,7 +38,7 @@ Unity has the capability to present a single continuous view of multiple SharePo
 
 Click on a folder to display content within that folder and all subfolders under it:
 
-[![Folders](unity-8-user-guide/images/folder-view-border.gif)](unity-8-user-guide/images/folder-view-border.gif)
+[![Folders](unity-8-user-guide/images/folder-view.gif)](unity-8-user-guide/images/folder-view.gif)
 
 - All Repositories 
 
@@ -74,7 +74,7 @@ Use Quick Search to find documents across all authorized SharePoint sites by typ
 Type in the word or phrase to search for in the `Enter on Document Title or Content` box at the top of the screen. Click `Search` icon or press `Enter` on a keyboard to execute search.
 The Search results will update, returning all content with the search criteria found anywhere in the Document Title or Content, restricted by your selection in the Folder View:
 
-[![Quick search](unity-8-user-guide/images/quick-search-border.gif)](unity-8-user-guide/images/quick-search-border.gif)
+[![Quick search](unity-8-user-guide/images/quick-search.gif)](unity-8-user-guide/images/quick-search.gif)
 
 ## Advanced Search 
 
@@ -97,7 +97,7 @@ From the Advanced Search Panel, you can:
 
     Remove one of the values to only search by that criteria. For example, remove the `Doc Content` value to only look in the document’s title:
    
-    [![Advanced search](unity-8-user-guide/images/advanced-search-border.gif)](unity-8-user-guide/images/advanced-search-border.gif)
+    [![Advanced search](unity-8-user-guide/images/advanced-search.gif)](unity-8-user-guide/images/advanced-search.gif)
     
 - Search by File Types
 
@@ -154,7 +154,7 @@ You can save frequently used searches to quickly access them in the future.
 
 When a Saved Search is select, the Quick and Advanced panel UIs are updated to display the Saved Search Criteria, and the search is executed:
   
-[![Saved search](unity-8-user-guide/images/saved-search-border.gif)](unity-8-user-guide/images/saved-search-border.gif)
+[![Saved search](unity-8-user-guide/images/saved-search.gif)](unity-8-user-guide/images/saved-search.gif)
 
 ## Favorites
 
@@ -214,7 +214,7 @@ Three options are provided:
 - Medium
 - Compact
 
-[![Grid density](unity-8-user-guide/images/grid-density-border.gif)](unity-8-user-guide/images/grid-density-border.gif)
+[![Grid density](unity-8-user-guide/images/grid-density.gif)](unity-8-user-guide/images/grid-density.gif)
 
 Click the `Apply` button to save your change. 
 
@@ -250,7 +250,7 @@ If you select a sort for multiple columns, a number will appear after the column
 To control the sort order and have a different column be sorted first, select the down arrow to the right of the column heading and select either Promote Order (to increase that column’s precedence in the sort order) ,or Demote Order (to lower that column’s precedence in the sort order). 
 For example, if you want to sort by Document Title first, and then by Date Modified, promote Document Title until it is labelled `1`, followed by Date Modified labelled `2`.
 
-[![Multiple column sorting](unity-8-user-guide/images/multiple-sorting-border.gif)](unity-8-user-guide/images/multiple-sorting-border.gif)
+[![Multiple column sorting](unity-8-user-guide/images/multiple-sorting.gif)](unity-8-user-guide/images/multiple-sorting.gif)
     
 To remove the Column from Sort, select the `Remove Sort` menu item from the dropdown.
 
@@ -262,13 +262,13 @@ Once you’ve located the document you’re looking for, you can take a variety 
 
 Clicking the Document Title on one of the search results will open the file in the browser:
 
-[![Open document](unity-8-user-guide/images/open-border.gif)](unity-8-user-guide/images/open-border.gif)
+[![Open document](unity-8-user-guide/images/open.gif)](unity-8-user-guide/images/open.gif)
  
 ### Actions menu
 
 For more actions, mouse over the Document Title and then click on the vertical ellipse icon consisting of three dots to the right of the name:
 
-[![Context menu](unity-8-user-guide/images/context-menu-border.gif)](unity-8-user-guide/images/context-menu-border.gif)
+[![Context menu](unity-8-user-guide/images/context-menu.gif)](unity-8-user-guide/images/context-menu.gif)
 
 Click on the action to perform it.
 
@@ -336,7 +336,7 @@ You may move files by dragging and dropping them, or by selecting the `Move to` 
     - Click on the file you want to move, then drag and drop the file from the Search Results to a SharePoint Folder on the Folder View. 
     - After dropping the file, you will be asked if you’d like to move or copy the file. Moving will relocate the file to a new location, while copying will duplicate the document and place the copy in the new location:
     
-        [![Move to drag and drop](unity-8-user-guide/images/move-to-border.gif)](unity-8-user-guide/images/move-to-border.gif) 
+        [![Move to drag and drop](unity-8-user-guide/images/move-to.gif)](unity-8-user-guide/images/move-to.gif) 
 
     - To cancel the Move/Copy action, click outside of the selection box.
 
@@ -472,7 +472,7 @@ You may click on documents in the left panel to refresh the middle panel with th
 You can open Detail View for all documents returned by a search, or you can first multi-select the specific documents you want to view. 
 For example, clicking the checkbox next to three documents, then selecting the Detail View toggle, will show only those three documents in Detail View. If no checkboxes are selected, all documents will be shown:
 
-[![Detail view multiple documents](unity-8-user-guide/images/detail-view-border.gif)](unity-8-user-guide/images/detail-view-border.gif)
+[![Detail view multiple documents](unity-8-user-guide/images/detail-view.gif)](unity-8-user-guide/images/detail-view.gif)
 
 Click the `Order By` dropdown to change the order by which files are displayed in the Detail View. 
 The Detail View will sort the contents based on the column you select:
@@ -490,7 +490,7 @@ You can Append documents across multiple searches as follows:
 - Repeat as many times as you need to identify the collection of documents you need
 - Once all documents are selected, click the `Detail View` toggle to view a complete list of their selected documents across multiple searches. You can also take action on one or all of the documents.
 
-[![Appended search](unity-8-user-guide/images/appended-search-border.gif)](unity-8-user-guide/images/appended-search-border.gif)
+[![Appended search](unity-8-user-guide/images/appended-search.gif)](unity-8-user-guide/images/appended-search.gif)
 
 ## Menus
 
