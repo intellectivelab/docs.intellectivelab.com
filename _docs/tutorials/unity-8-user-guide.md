@@ -79,7 +79,7 @@ The Search results will update, returning all content with the search criteria f
 ## Advanced Search 
 
 Advanced search gives you powerful tools to find the exact document you’re looking for. 
-You can quickly filter and narrow down your search results via multiple dimensions like site, filetype, modifier, custom metadata, and more. 
+You can quickly filter and narrow down your search results via multiple dimensions like site, file type, modifier, custom metadata, and more. 
 
 Click the Advanced Search Icon to open the Advanced Search Panel:
 
@@ -152,7 +152,7 @@ You can save frequently used searches to quickly access them in the future.
 - Enter a name for the search and click `Save`
 - To access your saved searches, click on the [Navigation Settings Menu](#navigation-settings) and select a search listed under the `Saved Searches` section
 
-When a Saved Search is select, the Quick and Advanced panel UIs are updated to display the Saved Search Criteria, and the search is executed.
+When a Saved Search is select, the Quick and Advanced panel UIs are updated to display the Saved Search Criteria, and the search is executed:
   
 [![Saved search](unity-8-user-guide/images/saved-search-border.gif)](unity-8-user-guide/images/saved-search-border.gif)
 
@@ -243,22 +243,16 @@ The sort options are displayed:
 
 [![Sort column menu](unity-8-user-guide/images/sort-column-menu.png)](unity-8-user-guide/images/sort-column-menu.png)
  
-To set the sort order for the selected column, select either `Sort Ascending` or `Sort Descending`. Ascending will order elements like `1, 2, 3` or `Alpha, Beta, Charlie`, while descending will order elements like `10, 9, 8` or `Zulu, Yankee, X-ray   `.
+To set the sort order for the selected column, select either `Sort Ascending` or `Sort Descending`. Ascending will order elements like `1, 2, Alpha, Beta`, while descending will order elements like `9, 8, Zulu, Yankee`.
 
 If you select a sort for multiple columns, a number will appear after the column names, indicating in which order the columns are sorted.
 
-<For the Video/Gif, show selecting a column and then select Sort Ascending > show the search results are sorted by the selected column in Ascending Order. 
-Then select the same column and select Sort Descending > show the search results are sorted by the selected column in Ascending Order. 
-Then select a different column and select Sort Ascending or Descending > show that numbers 1 and 2 are now displayed next to the selected columns>
-
- 
 To control the sort order and have a different column be sorted first, select the down arrow to the right of the column heading and select either Promote Order (to increase that column’s precedence in the sort order) ,or Demote Order (to lower that column’s precedence in the sort order). 
 For example, if you want to sort by Document Title first, and then by Date Modified, promote Document Title until it is labelled `1`, followed by Date Modified labelled `2`.
 
-To remove the Column from Sort, select the Remove Sort menu item from the dropdown.
-
-<For the Video/Gif, show that Promoting a Column Heading currently listed as Sort Order #2 (Doc Title in example above), will change it to Sort #1, and the current Sort Order #1 is demoted to Sort Order #2 (Date Modified in example above).  
-Then select Remove from Sort, to remove the Column from Sort.>
+[![Multiple column sorting](unity-8-user-guide/images/multiple-sorting-border.gif)](unity-8-user-guide/images/multiple-sorting-border.gif)
+    
+To remove the Column from Sort, select the `Remove Sort` menu item from the dropdown.
 
 ## Actions on documents
 
@@ -327,40 +321,40 @@ Select `Cancel` to close the Rename dialog box without renaming the file.
  
 #### Move to
 
-Moves the file to another SharePoint site or folder.
+Moves the file to another folder of SharePoint sites.
 
 You may move files by dragging and dropping them, or by selecting the `Move to` option. 
 
 - Using `Move to`
     
-    Click the `Move to` action, then select the site and folder you wish to move to.  Select the `Apply` button to move the document.
+    Click the `Move to` action, then select the site and folder you wish to move to.  Press the `Select` button to move the document:
 
-[![Move to action](unity-8-user-guide/images/move-to.png)](unity-8-user-guide/images/move-to.png) 
+    [![Move to action](unity-8-user-guide/images/move-to.png)](unity-8-user-guide/images/move-to.png) 
  
 - Using Drag and Drop
 
     - Click on the file you want to move, then drag and drop the file from the Search Results to a SharePoint Folder on the Folder View. 
-    - After dropping the file, you will be asked if you’d like to move or copy the file. Moving will relocate the file to a new location, while copying will duplicate the document and place the copy in the new location. 
+    - After dropping the file, you will be asked if you’d like to move or copy the file. Moving will relocate the file to a new location, while copying will duplicate the document and place the copy in the new location:
+    
+        [![Move to drag and drop](unity-8-user-guide/images/move-to-border.gif)](unity-8-user-guide/images/move-to-border.gif) 
 
-To cancel the Move/Copy action, click outside of the selection box.
-
- 
-<For the Video/Gif, drag and drop a file in the search results into a SharePoint Site-Folder (where the file does not current exists), after dropping the file select Move to at the prompt, and show the results of the action that the file is moved from the current folder and to the destination (dropped) folder>
-
+    - To cancel the Move/Copy action, click outside of the selection box.
 
 #### Copy to
 
-Copies the File to another SharePoint Site / Folder.
+Copies the File to another folder of SharePoint sites.
 
-You may copy files by dragging and dropping them, or by selecting the `Copy to` option. <Video/Gif to show both options>
+You may copy files by dragging and dropping them, or by selecting the `Copy to` action.
 
 - Using `Copy to`
 
-    Click the `Copy to` action, then select the site and folder you wish to copy it to.  Select the `Apply` button to copy the document.
+    Click the `Copy to` action, then select the site and folder you wish to copy it to.  Press the `Select` button to copy the document:
+
+    [![Copy to action](unity-8-user-guide/images/copy-to.png)](unity-8-user-guide/images/copy-to.png) 
 
 - Using Drag and Drop
 
-    See Move Action above.
+    See [Move Action](#move-to) above.
 
 #### Details
 
@@ -448,13 +442,16 @@ The New Document dialog box will be displayed:
 - Browse and Select: Click the Upload icon in the `Drop files to attach` box. You will be prompted to select.
  
 After dragging and dropping, or browse and selecting a file, you will be prompted to enter metadata for the file.
-- Enter a document title to be used for the document added. This can be different from the filename.
+- Enter a Document Title to be used for the document added. This can be different from the filename:
+    
+    [![New document dialog filled](unity-8-user-guide/images/create.png)](unity-8-user-guide/images/create.png)
+    
 - You may optionally provide custom metadata field values, if prompted. Required fields will be marked with a red icon.
     
     For the Preconfigured Demo custom metadata fields for the following have been configured:
     - Document Type (Choice List)
     - Organization Name (Text)
- 
+    
 - Once all required fields are entered, click the `Create` button.
 - Your document will be securely uploaded into the system.
  
