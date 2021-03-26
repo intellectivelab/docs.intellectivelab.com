@@ -23,7 +23,7 @@ After requesting your Unity Pre-Configured SharePoint Demo instance, the request
     
 - The URL to use to log into your Unity instance.  
     
-    To log in, go to the URL provided in your IntellectiveUnityCloud - application is ready email, and log in with one of the account User IDs provided.  
+    To log in, go to the URL provided in email, and log in with one of the account User IDs provided.  
 
 # Unity User Interface Overview
 
