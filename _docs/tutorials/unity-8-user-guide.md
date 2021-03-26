@@ -5,14 +5,15 @@ category: Unity 7
 ---
 # Getting Started
 
-Your Unity instance contains the following pre-defined SharePoint Sites and content. This is to give you a working example Unity’s capabilities working with different sites and documents:
+Your Unity Pre-Configured SharePoint Demo instance contains the following pre-defined SharePoint Sites and content. 
+This is to give you a working example of Unity’s capabilities working with different sites and documents:
 
 - Finance
 - HR
 - Marketing
 - Sales
 
-After requesting your Unity instance, the requestor should have received an email detailing how to access your instance. The email contains:
+After requesting your Unity Pre-Configured SharePoint Demo instance, the requestor should have received an email detailing how to access your Unity. The email contains:
 
 - Two User Ids with passwords.  
     
@@ -22,7 +23,7 @@ After requesting your Unity instance, the requestor should have received an emai
     
 - The URL to use to log into your Unity instance.  
     
-    To log in, go to the URL provided in your welcome email, and log in with one of the account User IDs provided.  
+    To log in, go to the URL provided in email, and log in with one of the account User IDs provided.  
 
 # Unity User Interface Overview
 
@@ -42,13 +43,13 @@ Click on a folder to display content within that folder and all subfolders under
 
 - All Repositories 
 
-    When the All Repositories Node is select any Quick Or Advanced search will search across all Configured Repositories.  
-    For the Preconfigured Demo, only SharePoint is configured.  However, the only Repository is SharePoint.  However, Unity also includes other repositories (e.g., IBM FileNet, CMOD, CM8, Box, Alfresco, all CMIS supported repositories)
+    When the All Repositories Node is selected any Quick Or Advanced search will search across all Configured Repositories.  
+    For the Preconfigured Demo, only SharePoint is configured. However, Unity can also be configured to include other repositories (e.g., IBM FileNet, CMOD, CM8, Box, Alfresco, all CMIS supported repositories)
 
 - SharePoint Instance
 
-    When the SharePoint Instance Node is select any Quick Or Advanced search will search across all Configured Sites for the selected SharePoint Instance.  
-    For the Preconfigured Demo only a single SharePoint Instance is provided.  However, multiple SP Instances are supported. 
+    When the SharePoint Instance Node is selected any Quick Or Advanced search will search across all Configured Sites for the selected SharePoint Instance.  
+    For the Preconfigured Demo only a single SharePoint Instance is provided.  However, multiple SharePoint Instances are supported. 
 
 - SharePoint Sites
 
@@ -58,14 +59,14 @@ Click on a folder to display content within that folder and all subfolders under
     - Marketing
     - Sales 
     
-    When a user selects a SharePoint Site, all Quick and Advanced Search are restricted to the selected Site.    
+    When a user selects a SharePoint Site, all Quick and Advanced Searches are restricted to the selected Site.    
        
-    |**Note**: It is possible to search across multiple specifically selected SharePoint Sites using the [Advanced Search](#advanced-search) SharePoint Sites search criteria.
+    |**Note**: It is possible to search across multiple selected SharePoint Sites using the [Advanced Search](#advanced-search) SharePoint Sites search criteria.
 
 - SharePoint Site - Folders
 
-    The Preconfigured Demo has been configured with specific Folders, Sub-Folders and related Content for each SharePoint Site (see list above).   
-    When a user selects a specific Folder, all Quick and Advanced Searches are restricted to the select Folder Content and All Sub-Folder Content.
+    The Preconfigured Demo has been configured with specific Folders, Sub-Folders and related content for each SharePoint Site (see list above).   
+    When a user selects a specific Folder, all Quick and Advanced Searches are restricted to the selected Folder content and all Sub-Folder content.
 
 ## Quick Search
 
@@ -85,64 +86,69 @@ Click the Advanced Search Icon to open the Advanced Search Panel:
 
 [![Advanced search icon](unity-8-user-guide/images/advanced-search-icon.png)](unity-8-user-guide/images/advanced-search-icon.png)
 
+### Search Options: Document Title, Document Contents with AND / OR Condition 
+
 From the Advanced Search Panel, you can:
 
 - Search by Title only, by the contents of the file only, by title and contents, or by either title or content. 
 
-    Enter search values and select `AND` to return documents that both contain the value you entered in the title, and contain the value you entered within the document’s text.
+- Enter search values and select `AND` to return documents that both contain the value you entered in the title, and contain the value you entered within the document’s text.
 
-    Select `OR` to find documents that match either the title value, or contain the content value in the document’s text.
+- Select `OR` to find documents that match either the title value, or contain the content value in the document’s text.
 
-    The fields will default to match what you previously entered in the `Quick` search view.
+The fields will default to match what you previously entered in the `Quick` search view.
 
-    Remove one of the values to only search by that criteria. For example, remove the `Doc Content` value to only look in the document’s title:
+Remove one of the values to only search by that criteria. For example, remove the `Doc Content` value to only look in the document’s title:
    
-    [![Advanced search](unity-8-user-guide/images/advanced-search.gif)](unity-8-user-guide/images/advanced-search.gif)
+[![Advanced search](unity-8-user-guide/images/advanced-search.gif)](unity-8-user-guide/images/advanced-search.gif)
     
-- Search by File Types
+### Search by File Types
 
-    To only return documents of a particular type, click on the `File Type` dropdown and select the types of files you want the search to return. For example: MS Word, MS Excel, PDF, etc. 
-    You may select multiple values to return multiple kinds of documents:
+To only return documents of a particular type, click on the `File Type` dropdown and select the types of files you want the search to return. For example: MS Word, MS Excel, PDF, etc. 
+You may select multiple values to return multiple kinds of documents:
+
+[![Advanced search file type](unity-8-user-guide/images/advanced-search-file-type.png)](unity-8-user-guide/images/advanced-search-file-type.png)
+
+Remove your selections to see all document types.
+
+### Search by the user who last modified the file
+
+To show documents modified by a particular user, click on the `Modified By` dropdown and select the user’s name.
+
+### Search by Date Modified Range
+
+To show documents modified at a certain date or time, enter values in the `Date Modified On or Before`, or `Date Modified On or After` fields. 
+
+Allows the user to restrict the search results based on the Date Modified. The user can enter a:
+- Enter a Date Modified On or Before to return documents last modified on or before that date 
+- Enter a Date Modified On or After to return documents last modified on or after that date 
+- Enter a date for both fields to return documents modified on or between those two dates. 
+- Enter the same date for both to return documents modified on that day.
     
-    [![Advanced search file type](unity-8-user-guide/images/advanced-search-file-type.png)](unity-8-user-guide/images/advanced-search-file-type.png)
-    
-     Remove your selections to see all document types.
+### Search by SharePoint Sites
 
-- Search by the user who last modified the file
+By default, Unity’s search shows you documents across all of your authorized connected sites.  
+If you only want to view documents from a particular site or a set of sites, click the `SharePoint Sites` dropdown and check the sites you want to search:
 
-    To show documents modified by a particular user, click on the `Modified By` dropdown and select the user’s name.
+[![Advanced search sites](unity-8-user-guide/images/advanced-search-sites.png)](unity-8-user-guide/images/advanced-search-sites.png)  
 
-- Search by Date Modified Range
+When the Search executed, the Folder View is updated to displayed only the selected Sites. 
+     
+### Search by Custom Fields
 
-    To show documents modified at a certain date or time, enter values in the `Date Modified On or Before`, or `Date Modified On or After` fields. 
-   
-    Allows the user to restrict the search results based on the Date Modified. The user can enter a:
-    - Enter a Date Modified On or Before to return documents last modified on or before that date 
-    - Enter a Date Modified On or After to return documents last modified on or after that date 
-    - Enter a date for both fields to return documents modified on or between those two dates. 
-    - Enter the same date for both to return documents modified on that day.
-    
-- Search by SharePoint Sites
+Some SharePoint documents may have additional associated metadata that describes the file. 
+For example, `Customer Name` or `Order ID.` If the administrator has configured Custom SharePoint Metadata fields for specific SharePoint Sites, you can search by these fields in the Custom fields section. 
+Click on the `Custom Fields` section to expand it and enter values for the fields you’d like to search on.
 
-    By default, Unity’s search shows you documents from everywhere, in all of your connected sites.  
-    If you only want to view documents from a particular site or a set of sites, click the `SharePoint Sites` dropdown and check the sites you want to search:
-   
-    [![Advanced search sites](unity-8-user-guide/images/advanced-search-sites.png)](unity-8-user-guide/images/advanced-search-sites.png)  
-    
-- Search by Custom Fields
+For your Preconfigured Demo instance, example Custom Fields have been created for the following:
 
-    Some SharePoint documents may have additional associated metadata that describes the file. 
-    For example, `Customer Name` or `Order ID.` If the administrator has configured Custom SP Metadata fields for specific SP Sites, you can search by these fields in the Custom fields section. 
-    Click on the `Custom Fields` section to expand it and enter values for the fields you’d like to search on.
+- Document Type (Choice List)
+- Organization Name (Text Field)
 
-    For your Preconfigured Demo instance, example Custom Fields have been created for the following:
+### Execute Search and Reset
 
-    - Organization Name (Text Field)
-    - Document Type (Choice List)
-
- Click the `Search` button to execute your search and see the results in the panel on the right.
-
-To clear your changes and return to the default search settings, click the `Reset` button.
+- Click the `Search` button to execute your Advanced Search and see the results in the panel on the right.
+- To clear your Advanced Search changes and return to the default search settings, click the `Reset` button.
 
 ## Saved Searches
 
@@ -152,7 +158,7 @@ You can save frequently used searches to quickly access them in the future.
 - Enter a name for the search and click `Save`
 - To access your saved searches, click on the [Navigation Settings Menu](#navigation-settings) and select a search listed under the `Saved Searches` section
 
-When a Saved Search is select, the Quick and Advanced panel UIs are updated to display the Saved Search Criteria, and the search is executed:
+When a Saved Search is selected, the Quick and Advanced panel UIs are updated to display the Saved Search Criteria, and the search is executed:
   
 [![Saved search](unity-8-user-guide/images/saved-search.gif)](unity-8-user-guide/images/saved-search.gif)
 
@@ -179,7 +185,7 @@ The Search Results are displayed and updated when the following occurs:
 - You select a Node in the Folder View
 - A new document created and added to the folder
 
-With Unity, you can customize how you view your search results. You can change the look and feel, columns shown, sort order, and more. 
+With Unity, you can customize how you view your search results. You can change the look and feel, set and order of displayed columns, sort order, and more. 
 To customize the Search Results Panel, click on the gear icon in the upper right:
 
 [![Grid settings](unity-8-user-guide/images/grid-settings.png)](unity-8-user-guide/images/grid-settings.png)
@@ -196,8 +202,8 @@ For a given field, toggle the Visible toggle switch to the right (Red) to make t
 Any custom fields configured to the SharePoint sites will be displayed as columns.  
 
 For the Preconfigured Demo, custom fields will be configured for:
-- Organization Name
 - Document Type
+- Organization Name
 
 To change the column order, mouse over the Dots icon to the left of the Column name, and then drag and drop the Column in the order it should be displayed. 
 For example, drag a column from the bottom to the top of the list to see it on the left side of your screen when searching.
@@ -487,8 +493,8 @@ Unity gives you the ability to collect documents across multiple searches and th
 You can Append documents across multiple searches as follows:
 - Perform a search, then select the documents you wish to keep by clicking the checkbox next to each document
 - Execute a different search or browse to a different folder, then select more documents by clicking the checkbox 
-- Repeat as many times as you need to identify the collection of documents you need
-- Once all documents are selected, click the `Detail View` toggle to view a complete list of their selected documents across multiple searches. You can also take action on one or all of the documents.
+- Repeat as many times as you needed to identify the collection of documents you require
+- Once all documents are selected, click the `Detail View` toggle to view a complete list of the selected documents across multiple searches. You can also take action on one or all of the documents.
 
 [![Appended search](unity-8-user-guide/images/appended-search.gif)](unity-8-user-guide/images/appended-search.gif)
 
