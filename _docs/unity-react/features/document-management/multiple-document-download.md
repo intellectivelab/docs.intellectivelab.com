@@ -23,9 +23,11 @@ To download multiple documents:
 
     ![Request processing](multiple-document-download/images/loader-processing.png)
     
-- You will be prompted to save zip archive`*`, click `Save`:
+- You will be prompted to save zip archive, click `Save`:
 
     ![Save as prompt](multiple-document-download/images/save-as-prompt.png)
+    
+    Documents will be zipped only if their number more or equal 2. Otherwise non-zipped document will be downloaded.
     
 - If no errors occurred during action execution, the action completed successfully
         
@@ -34,8 +36,6 @@ To download multiple documents:
     ![Error message displayed](multiple-document-download/images/server-error.png)
 
 Successful action execution will also lead to grid refresh.
-
-`*`Documents will be zipped only if their number more or equal 2. Otherwise non-zipped document will be downloaded.
 
 # Configuration
 
