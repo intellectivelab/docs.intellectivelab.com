@@ -4,7 +4,7 @@ layout: docs
 category: Unity 7
 ---
 
-# FieldSets tag
+# FieldSets Tag
 
 `FieldSets` tag has no attributes and is a container for `FieldSet` tags.
 
@@ -30,7 +30,7 @@ An example:
     </FieldSet>
 </FieldSets>
 ```
-# FieldSet tag
+# FieldSet Tag
 
 An example:
 
@@ -60,7 +60,7 @@ An example:
 
 `FieldSet` tag is a container for `Field` tags.
 
-# Field tag 
+# Field Tag 
 
 `Field` tag represents a field, which is used to display or/and update object properties.
 
@@ -81,7 +81,7 @@ For example:
 |ReadOnly | `[true|false]` flag indicating the field is read-only, i.e. can not be modified |
 |SelectorID | Selector identifier. If a property in FieldSet contains a selector, it should be published in Property section of Unity XML configuration file |
 |Default | Default value |
-|Format | The attribute is applied to numeric fields only and defines field format. Example: $1 000.00 |
+|Format | The attribute is applied to numeric, date and datetime fields only and defines field format. Examples: `$1 000.00`, `d MMMM Y`, `d MMMM Y, HH:mm` |
 |FolderPath | Used for folder path fields only<sup>1</sup> |
 
 <sup>1</sup> To specify a path for [Attach Existing Document action](../actions/attach-existing-documents.md) use `FolderPath` attribute.  
@@ -112,3 +112,27 @@ Format attribute structure:
 |$+1,000.00   | prefix - `$`, negative numbers are not allowed, thousands separator - comma, decimal separator - dot, decimal scale - 2 | `1234.52` -> `$1,234.52` <br/>`1234567` -> `$1,234,567.00` |
 |EURO 1 000.0 | prefix - `EURO `, negative numbers are allowed, thousands separator - space, decimal separator - dot, decimal scale - 1 | `1234.5` -> `EURO 1 234.5` <br/>`1234567` -> `EURO 1 234 567.0` <br/>`-15.15` -> `EURO -15.1`|
 |1,000        | no prefix, negative numbers are allowed, thousands separator - comma, no decimal separator, decimal scale - 0 | `1234` -> `1,234` |
+
+## How to format date fields
+
+An example of formatted date field:
+
+```xml
+<Field ID="CC_ComplaintReceivedDate" Format="d MMMM Y" Label="Complaint Received Date" Tooltip="ComplaintReceivedDate" Required="false" Row="6" Column="1"/>
+```
+
+`Year`, `month` and `day of month` related patterns can be used. See [date-fns format patterns](https://date-fns.org/docs/format) for more details.
+
+Output example: `26 February 2021`
+
+## How to format datetime fields
+
+An example of formatted datetime field:
+
+```xml
+<Field ID="CC_ComplaintReceivedDate" Format="d MMMM Y, HH:mm" Label="Complaint Received Date" Tooltip="ComplaintReceivedDate" Required="false" Row="6" Column="1"/>
+```
+
+`Year`, `month`, `day of month`, `hour`, `minute` related patterns can be used. See [date-fns format patterns](https://date-fns.org/docs/format) for more details.
+
+Output example: `26 February 2021, 18:30`

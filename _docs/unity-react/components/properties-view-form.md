@@ -8,17 +8,7 @@ category: Unity 7
 - HTML5 input types support
 - RTL & LTR support
 - RTF support 
-- Date and time picker
-- Date range picker
-- Range slider 
-- Currency field
-- Formatted text input field 
-- Client-side select field
-- Remote select field
-- Lookup field 
-- Categories field – facet field
-- Selection field with the choice description input 
-- Autocomplete location field via Google Maps
+- [Supported field types](./properties-view-form/supported-field-types.md)
 - Client-side form field validation
 - Remote form field validation 
 - Ability to add a custom form field
