@@ -25,12 +25,12 @@ After requesting your Unity Pre-Configured SharePoint Demo instance, the request
     
     To log in, go to the URL provided in email, and log in with one of the account User IDs provided.  
     
-|**Note**: To run Unity in demo mode, without impacting other SharePoint sessions, please open a Private Browser window and enter the Unity Application URL provided above.
+|**Note**: To run Unity in demo mode, without impacting other SharePoint sessions, please open a Private Browser window and enter the Unity Application URL provided in the email you received.
 
 # Unity User Interface Overview
 
 When a user signs into Unity the default behavior is to display a list of [Favorite](#favorites) files, which are files the user has tagged as a Favorite. 
-For Evaluation purposes, a short list of files has been tagged as a Favorites.
+For the Pre-Configured SharePoint Demo, a short list of files has been tagged as Favorites.
 
 ## Folder View
 
@@ -46,16 +46,16 @@ Click on a folder to display content within that folder and all subfolders under
 - All Repositories 
 
     When the All Repositories Node is selected any Quick Or Advanced search will search across all Configured Repositories.  
-    For the Preconfigured Demo, only SharePoint is configured. However, Unity can also be configured to include other repositories (e.g., IBM FileNet, CMOD, CM8, Box, Alfresco, all CMIS supported repositories)
+    For the Pre-Configured Demo, only SharePoint is configured. However, Unity can also be configured to include other repositories (e.g., IBM FileNet, CMOD, CM8, Box, Alfresco, all CMIS supported repositories)
 
 - SharePoint Instance
 
     When the SharePoint Instance Node is selected any Quick Or Advanced search will search across all Configured Sites for the selected SharePoint Instance.  
-    For the Preconfigured Demo only a single SharePoint Instance is provided.  However, multiple SharePoint Instances are supported. 
+    For the Pre-Configured Demo only a single SharePoint Instance is provided.  However, multiple SharePoint Instances are supported. 
 
 - SharePoint Sites
 
-    The Preconfigure Demo has been configured with the following four SharePoint sites: 
+    The Pre-Configured Demo has been configured with the following four SharePoint sites: 
     - Finance
     - HR
     - Marketing
@@ -67,7 +67,7 @@ Click on a folder to display content within that folder and all subfolders under
 
 - SharePoint Site - Folders
 
-    The Preconfigured Demo has been configured with specific Folders, Sub-Folders and related content for each SharePoint Site (see list above).   
+    The Pre-Configured Demo has been configured with specific Folders, Sub-Folders and related content for each SharePoint Site (see list above).   
     When a user selects a specific Folder, all Quick and Advanced Searches are restricted to the selected Folder content and all Sub-Folder content.
 
 ## Quick Search
@@ -142,7 +142,7 @@ Some SharePoint documents may have additional associated metadata that describes
 For example, `Customer Name` or `Order ID.` If the administrator has configured Custom SharePoint Metadata fields for specific SharePoint Sites, you can search by these fields in the Custom fields section. 
 Click on the `Custom Fields` section to expand it and enter values for the fields you’d like to search on.
 
-For your Preconfigured Demo instance, example Custom Fields have been created for the following:
+For your Pre-Configured Demo instance, example Custom Fields have been created for the following:
 
 - Document Type (Choice List)
 - Organization Name (Text Field)
@@ -203,7 +203,7 @@ For a given field, toggle the Visible toggle switch to the right (Red) to make t
 
 Any custom fields configured to the SharePoint sites will be displayed as columns.  
 
-For the Preconfigured Demo, custom fields will be configured for:
+For the Pre-Configured Demo, custom fields will be configured for:
 - Document Type
 - Organization Name
 
@@ -389,7 +389,7 @@ Clicking the Detail action displays a Document Details window with the following
     Standard SharePoint metadata:
     - Document title
     
-    For the Preconfigured Demo, custom fields will be configured for:
+    For the Pre-Configured Demo, custom fields will be configured for:
     - Document Type
     - Organization Name
     
@@ -462,7 +462,7 @@ After dragging and dropping, or browse and selecting a file, you will be prompte
     
 - You may optionally provide custom metadata field values, if prompted. Required fields will be marked with a red icon.
     
-    For the Preconfigured Demo custom metadata fields for the following have been configured:
+    For the Pre-Configured Demo custom metadata fields for the following have been configured:
     - Document Type (Choice List)
     - Organization Name (Text)
     
@@ -524,7 +524,7 @@ The Navigation Setting Menu provides access to the following:
     
 - Administration Console     
         
-    Allows your organizations Administrator’s to Configure Unity. For the Preconfigured Demo the Unity Administration Console UI has been set to Read Only to allow evaluators to view what configuration options are available.  
+    Allows your organizations Administrator’s to Configure Unity. For the Pre-Configured Demo the Unity Administration Console UI has been set to Read Only to allow evaluators to view what configuration options are available.  
         [![Administration console](unity-8-user-guide/images/administration-console.png)](unity-8-user-guide/images/administration-console.png)     
     - Connectivity:  
       Allows the Administrator to indicate the following information:
