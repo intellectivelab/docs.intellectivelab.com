@@ -6,7 +6,7 @@ category: Unity 7
 # Getting Started
 
 Your Unity Pre-Configured SharePoint Demo instance contains the following pre-defined SharePoint Sites and content. 
-This is to give you a working example of Unity’s capabilities working with different sites and documents:
+This is to give you a working example of Unity’s capabilities accessing different sites and documents:
 
 - Finance
 - HR
@@ -24,6 +24,8 @@ After requesting your Unity Pre-Configured SharePoint Demo instance, the request
 - The URL to use to log into your Unity instance.  
     
     To log in, go to the URL provided in email, and log in with one of the account User IDs provided.  
+    
+|**Note**: To run Unity in demo mode, without impacting other SharePoint sessions, please open a Private Browser window and enter the Unity Application URL provided above.
 
 # Unity User Interface Overview
 
@@ -428,6 +430,12 @@ You may take the following actions on multiple selected documents:
     
     Shows the same `Move to / Copy to` interface used for single documents, allowing you to copy or move multiple documents at the same time.
 
+By clicking the `Export` button you can export metadata fields for selected documents to CSV file:
+
+[![Export](unity-8-user-guide/images/export.png)](unity-8-user-guide/images/export.png) 
+
+You may select `CSV(current fields)` option to export fields that are currently shown in [grid columns](#grid-columns), or `CSV(all fields)` option to export all fields.
+
 ### Create Document
 
 You can easily add new documents to your repositories, right from Unity.
@@ -529,11 +537,15 @@ The Navigation Setting Menu provides access to the following:
     - System Account  
       Allows the Administrator to indicate System Account Information
 
-- About Unity
 - Favorites  
     
     Shows a list of favorite documents. See [Favorites](#favorites) for details. 
 
+- User Guide
+
+    Shows this User Guide.
+    
+- About Unity
 - Saved searches  
     
     Shows a list of saved searches. See [Saved Searches](#saved-searches) for details.
