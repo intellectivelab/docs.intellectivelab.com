@@ -4,7 +4,7 @@ layout: docs
 category: Unity 7
 ---
 
-# FieldSets tag
+# FieldSets Tag
 
 `FieldSets` tag has no attributes and is a container for `FieldSet` tags.
 
@@ -30,7 +30,7 @@ An example:
     </FieldSet>
 </FieldSets>
 ```
-# FieldSet tag
+# FieldSet Tag
 
 An example:
 
@@ -60,7 +60,7 @@ An example:
 
 `FieldSet` tag is a container for `Field` tags.
 
-# Field tag 
+# Field Tag 
 
 `Field` tag represents a field, which is used to display or/and update object properties.
 
@@ -113,7 +113,7 @@ Format attribute structure:
 |EURO 1 000.0 | prefix - `EURO `, negative numbers are allowed, thousands separator - space, decimal separator - dot, decimal scale - 1 | `1234.5` -> `EURO 1 234.5` <br/>`1234567` -> `EURO 1 234 567.0` <br/>`-15.15` -> `EURO -15.1`|
 |1,000        | no prefix, negative numbers are allowed, thousands separator - comma, no decimal separator, decimal scale - 0 | `1234` -> `1,234` |
 
-# How to format date fields
+## How to format date fields
 
 An example of formatted date field:
 
@@ -125,7 +125,7 @@ An example of formatted date field:
 
 Output example: `26 February 2021`
 
-# How to format datetime fields
+## How to format datetime fields
 
 An example of formatted datetime field:
 

@@ -22,7 +22,7 @@ LDAP
 Plugins  
 [Properties](tags-list/properties-tag.md)  
 [RepositoryDataProviders](repository-data-providers.md)     
-[SSO](tags-list/sso-tag.md)  
+SSO  
 [SearchTemplates](search-templates.md)  
 [Selectors](tags-list/selectors-tag.md)    
 Solution  
@@ -41,7 +41,7 @@ ViewerConfiguration
 # Solution Tags
 
 [FieldSets](tags-list/fieldsets-tag.md)    
-FieldTypes    
+[FieldTypes](tags-list/fieldtypes-tag.md)    
 Inbaskets    
 [Lookups](tags-list/lookups.md)    
 Pages    

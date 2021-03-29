@@ -4,7 +4,7 @@ layout: docs
 category: Unity 7
 ---
 
-# Supported field types
+# Supported Field Types
 
 - [Date picker](../field/date-picker.md)
 - [Date and time picker](../field/datetime-picker.md)
@@ -21,12 +21,10 @@ category: Unity 7
 
 *other fields to be added*
 
-*note: some fields might be not supported on properties view form and should be removed (e.g. date-range picker)*
+|**Note**: some fields might be not supported on properties view form and should be removed (e.g. date-range picker)
 
 # Configuration
 
 - [FieldSets configuration](../../configuration/tags-list/fieldsets-tag.md)
-
 - [FieldTypes configuration](../../configuration/tags-list/fieldtypes-tag.md)
-
 - [Properties section configuration](../../configuration/tags-list/properties-tag.md) (optional)

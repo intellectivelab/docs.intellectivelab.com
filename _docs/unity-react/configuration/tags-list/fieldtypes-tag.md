@@ -4,7 +4,7 @@ layout: docs
 category: Unity 7
 ---
 
-# FieldTypes tag
+# FieldTypes Tag
 
 `FieldTypes` tag has no attributes and is a container for `FieldType` tags.
 
@@ -34,7 +34,7 @@ An example:
 </FieldTypes>
 ```
 
-# FieldType tag
+# FieldType Tag
 
 An example:
 
