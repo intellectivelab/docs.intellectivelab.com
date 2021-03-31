@@ -6,7 +6,7 @@ category: Unity 7
 # Getting Started
 
 Your Unity Pre-Configured SharePoint Demo instance contains the following pre-defined SharePoint Sites and content. 
-This is to give you a working example of Unity’s capabilities working with different sites and documents:
+This is to give you a working example of Unity’s capabilities accessing different sites and documents:
 
 - Finance
 - HR
@@ -24,18 +24,20 @@ After requesting your Unity Pre-Configured SharePoint Demo instance, the request
 - The URL to use to log into your Unity instance.  
     
     To log in, go to the URL provided in email, and log in with one of the account User IDs provided.  
+    
+|**Note**: To run Unity in demo mode, without impacting other SharePoint sessions, please open a Private Browser window and enter the Unity Application URL provided in the email you received.
 
 # Unity User Interface Overview
 
 When a user signs into Unity the default behavior is to display a list of [Favorite](#favorites) files, which are files the user has tagged as a Favorite. 
-For Evaluation purposes, a short list of files has been tagged as a Favorites.
+For the Pre-Configured SharePoint Demo, a short list of files has been tagged as Favorites.
 
 ## Folder View
 
-Use the folder view to easily browse through the contents of folders in all of your connected sites and instances.
+Use the folder view to easily browse through the contents of repositories and folders.
 
 The demo instance contains a single SharePoint instance with multiple sites for you to browse through in one view. 
-Unity has the capability to present a single continuous view of multiple SharePoint instances, together with other repositories like IBM FileNet, CMOD, CM8, Box, Alfresco, other CMIS repositories, and more. 
+Unity has the capability to present a single continuous view of multiple repositories and related folders like IBM FileNet, CMOD, CM8, SharePoint, Box, Alfresco, other CMIS repositories, and more. 
 
 Click on a folder to display content within that folder and all subfolders under it:
 
@@ -43,34 +45,32 @@ Click on a folder to display content within that folder and all subfolders under
 
 - All Repositories 
 
-    When the All Repositories Node is selected any Quick Or Advanced search will search across all Configured Repositories.  
-    For the Preconfigured Demo, only SharePoint is configured. However, Unity can also be configured to include other repositories (e.g., IBM FileNet, CMOD, CM8, Box, Alfresco, all CMIS supported repositories)
+    When the All Repositories Node is selected any Quick Or Advanced search will search across all configured repositories (e.g., IBM FileNet, CMOD, CM8, SharePoint Box, Alfresco, other CMIS repositories).  
+    For the Pre-Configured Demo, only SharePoint is configured. However, Unity can also be configured to include other repositories.
 
-- SharePoint Instance
+- Repository
 
-    When the SharePoint Instance Node is selected any Quick Or Advanced search will search across all Configured Sites for the selected SharePoint Instance.  
-    For the Preconfigured Demo only a single SharePoint Instance is provided.  However, multiple SharePoint Instances are supported. 
+    When a Repository, such as a FileNet Domain or SharePoint Instance, Node is selected any Quick Or Advanced search will search across all related folders and content.  
+    For the Pre-Configured Demo only a single SharePoint Instance is provided.  However, multiple SharePoint Instances are supported. 
 
-- SharePoint Sites
+- Folders
 
-    The Preconfigure Demo has been configured with the following four SharePoint sites: 
+    When a user selects a specific Folder, all Quick and Advanced Searches are restricted to the selected Folder content and all Sub-Folder content.
+    
+    Unity defines a Folder to be any collection of Folders and Sub-Folders.   
+    For example: 
+    - An IBM FileNet Object Store would be considered a Folder, as would any Folder and Sub-Folder under the Object Store.
+    - A SharePoint Site would be considered a Folder, as would any Folder and Sub-Folder under the Site.
+    
+    The Pre-Configured Demo has been configured with the following four SharePoint sites each with its own set of Folders, Sub Folders and related Content:
     - Finance
     - HR
     - Marketing
-    - Sales 
-    
-    When a user selects a SharePoint Site, all Quick and Advanced Searches are restricted to the selected Site.    
-       
-    |**Note**: It is possible to search across multiple selected SharePoint Sites using the [Advanced Search](#advanced-search) SharePoint Sites search criteria.
-
-- SharePoint Site - Folders
-
-    The Preconfigured Demo has been configured with specific Folders, Sub-Folders and related content for each SharePoint Site (see list above).   
-    When a user selects a specific Folder, all Quick and Advanced Searches are restricted to the selected Folder content and all Sub-Folder content.
+    - Sales
 
 ## Quick Search
 
-Use Quick Search to find documents across all authorized SharePoint sites by typing in a related keyword or phrase.
+Use Quick Search to quickly find documents across all authorized SharePoint sites by typing in a related keyword or phrase.
 
 Type in the word or phrase to search for in the `Enter on Document Title or Content` box at the top of the screen. Click `Search` icon or press `Enter` on a keyboard to execute search.
 The Search results will update, returning all content with the search criteria found anywhere in the Document Title or Content, restricted by your selection in the Folder View:
@@ -105,11 +105,11 @@ Remove one of the values to only search by that criteria. For example, remove th
 ### Search by File Types
 
 To only return documents of a particular type, click on the `File Type` dropdown and select the types of files you want the search to return. For example: MS Word, MS Excel, PDF, etc. 
-You may select multiple values to return multiple kinds of documents:
+You may select multiple values to return multiple types of documents:
 
 [![Advanced search file type](unity-8-user-guide/images/advanced-search-file-type.png)](unity-8-user-guide/images/advanced-search-file-type.png)
 
-Remove your selections to see all document types.
+Remove your selections to see all file types.
 
 ### Search by the user who last modified the file
 
@@ -136,11 +136,11 @@ When the Search executed, the Folder View is updated to displayed only the selec
      
 ### Search by Custom Fields
 
-Some SharePoint documents may have additional associated metadata that describes the file. 
-For example, `Customer Name` or `Order ID.` If the administrator has configured Custom SharePoint Metadata fields for specific SharePoint Sites, you can search by these fields in the Custom fields section. 
+Some Repository documents may have additional associated metadata that describes the file. 
+For example, `Customer Name` or `Order ID.` If the administrator has configured Custom Metadata fields for specific Repository, you can search by these fields in the Custom fields section. 
 Click on the `Custom Fields` section to expand it and enter values for the fields you’d like to search on.
 
-For your Preconfigured Demo instance, example Custom Fields have been created for the following:
+For your Pre-Configured Demo instance, example Custom Fields have been created for the following:
 
 - Document Type (Choice List)
 - Organization Name (Text Field)
@@ -199,9 +199,9 @@ Customize columns dialog appears:
 
 For a given field, toggle the Visible toggle switch to the right (Red) to make that column visible. Toggle the switch to the left (Gray) to hide the column.
 
-Any custom fields configured to the SharePoint sites will be displayed as columns.  
+Any custom fields configured to the Repository will be displayed as columns.  
 
-For the Preconfigured Demo, custom fields will be configured for:
+For the Pre-Configured Demo, custom fields will be configured for:
 - Document Type
 - Organization Name
 
@@ -327,19 +327,21 @@ Select `Cancel` to close the Rename dialog box without renaming the file.
  
 #### Move to
 
-Moves the file to another folder of SharePoint sites.
+Moves the file to another folder.
+
+|**Note**: The folder must be one level before the Parent Level folder related to a SharePoint Site, or FileNet Object Store.
 
 You may move files by dragging and dropping them, or by selecting the `Move to` option. 
 
 - Using `Move to`
     
-    Click the `Move to` action, then select the site and folder you wish to move to.  Press the `Select` button to move the document:
+    Click the `Move to` action, then select the folder you wish to move to.  Click the `Select` button to move the document:
 
     [![Move to action](unity-8-user-guide/images/move-to.png)](unity-8-user-guide/images/move-to.png) 
  
 - Using Drag and Drop
 
-    - Click on the file you want to move, then drag and drop the file from the Search Results to a SharePoint Folder on the Folder View. 
+    - Click on the file you want to move, then drag and drop the file from the Search Results to a Repository Folder on the Folder View. 
     - After dropping the file, you will be asked if you’d like to move or copy the file. Moving will relocate the file to a new location, while copying will duplicate the document and place the copy in the new location:
     
         [![Move to drag and drop](unity-8-user-guide/images/move-to.gif)](unity-8-user-guide/images/move-to.gif) 
@@ -348,13 +350,15 @@ You may move files by dragging and dropping them, or by selecting the `Move to` 
 
 #### Copy to
 
-Copies the File to another folder of SharePoint sites.
+Copies the File to another Folder.
+
+|**Note**: The folder must be one level before the Parent Level folder related to a SharePoint Site, or FileNet Object Store.
 
 You may copy files by dragging and dropping them, or by selecting the `Copy to` action.
 
 - Using `Copy to`
 
-    Click the `Copy to` action, then select the site and folder you wish to copy it to.  Press the `Select` button to copy the document:
+    Click the `Copy to` action, then select the folder you wish to copy it to.  Click the `Select` button to copy the document:
 
     [![Copy to action](unity-8-user-guide/images/copy-to.png)](unity-8-user-guide/images/copy-to.png) 
 
@@ -384,10 +388,10 @@ Clicking the Detail action displays a Document Details window with the following
     
     The Details tab displays metadata, which can be modified by an authorized user.  
        
-    Standard SharePoint metadata:
+    Standard repository metadata:
     - Document title
     
-    For the Preconfigured Demo, custom fields will be configured for:
+    For the Pre-Configured Demo, custom fields will be configured for:
     - Document Type
     - Organization Name
     
@@ -396,7 +400,7 @@ Clicking the Detail action displays a Document Details window with the following
 - `VERSIONS` Tab
  
     The Version History tab displays information on each version of the file. 
-    Each time the file is modified, SharePoint creates a new version of the file to track the changes made. 
+    Each time the file is modified, the version capable repositories create a new version of the file to track the changes made. 
     From this tab, you can see and interact with the current version of the document, as well as all prior versions.
  
 #### Favorite On / Favorite Off
@@ -428,15 +432,21 @@ You may take the following actions on multiple selected documents:
     
     Shows the same `Move to / Copy to` interface used for single documents, allowing you to copy or move multiple documents at the same time.
 
+By clicking the `Export` button you can export metadata fields for selected documents to CSV file:
+
+[![Export](unity-8-user-guide/images/export.png)](unity-8-user-guide/images/export.png) 
+
+You may select `CSV(current fields)` option to export fields that are currently shown in [grid columns](#grid-columns), or `CSV(all fields)` option to export all fields.
+
 ### Create Document
 
 You can easily add new documents to your repositories, right from Unity.
 
-Click the `Create` button to add a file to a `SharePoint Site > Folder`:
+Click the `Create` button to add a file to a Folder:
 
 [![Create button](unity-8-user-guide/images/create-button.png)](unity-8-user-guide/images/create-button.png)
 
-|**Note**: The `Create` button is only displayed when you have selected a Folder in the Folder View. If All Repositories, SharePoint Instance, or a SharePoint Site node is selected in the Folder View, the `Create` button is hidden.
+|**Note**: The `Create` button is only displayed when you have selected a Folder in the Folder View. If All Repositories, or a Folder related to a SharePoint Site node is selected in the Folder View, the `Create` button is hidden.
 
 The New Document dialog box will be displayed:
  
@@ -454,7 +464,7 @@ After dragging and dropping, or browse and selecting a file, you will be prompte
     
 - You may optionally provide custom metadata field values, if prompted. Required fields will be marked with a red icon.
     
-    For the Preconfigured Demo custom metadata fields for the following have been configured:
+    For the Pre-Configured Demo custom metadata fields for the following have been configured:
     - Document Type (Choice List)
     - Organization Name (Text)
     
@@ -516,7 +526,7 @@ The Navigation Setting Menu provides access to the following:
     
 - Administration Console     
         
-    Allows your organizations Administrator’s to Configure Unity. For the Preconfigured Demo the Unity Administration Console UI has been set to Read Only to allow evaluators to view what configuration options are available.  
+    Allows your organizations Administrator’s to Configure Unity. For the Pre-Configured Demo the Unity Administration Console UI has been set to Read Only to allow evaluators to view what configuration options are available.  
         [![Administration console](unity-8-user-guide/images/administration-console.png)](unity-8-user-guide/images/administration-console.png)     
     - Connectivity:  
       Allows the Administrator to indicate the following information:
@@ -529,11 +539,15 @@ The Navigation Setting Menu provides access to the following:
     - System Account  
       Allows the Administrator to indicate System Account Information
 
-- About Unity
 - Favorites  
     
     Shows a list of favorite documents. See [Favorites](#favorites) for details. 
 
+- User Guide
+
+    Shows this User Guide.
+    
+- About Unity
 - Saved searches  
     
     Shows a list of saved searches. See [Saved Searches](#saved-searches) for details.
