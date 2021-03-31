@@ -34,10 +34,10 @@ For the Pre-Configured SharePoint Demo, a short list of files has been tagged as
 
 ## Folder View
 
-Use the folder view to easily browse through the contents of folders in all of your connected sites and instances.
+Use the folder view to easily browse through the contents of repositories and folders.
 
 The demo instance contains a single SharePoint instance with multiple sites for you to browse through in one view. 
-Unity has the capability to present a single continuous view of multiple SharePoint instances, together with other repositories like IBM FileNet, CMOD, CM8, Box, Alfresco, other CMIS repositories, and more. 
+Unity has the capability to present a single continuous view of multiple repositories and related folders like IBM FileNet, CMOD, CM8, SharePoint, Box, Alfresco, other CMIS repositories, and more. 
 
 Click on a folder to display content within that folder and all subfolders under it:
 
@@ -45,34 +45,32 @@ Click on a folder to display content within that folder and all subfolders under
 
 - All Repositories 
 
-    When the All Repositories Node is selected any Quick Or Advanced search will search across all Configured Repositories.  
-    For the Pre-Configured Demo, only SharePoint is configured. However, Unity can also be configured to include other repositories (e.g., IBM FileNet, CMOD, CM8, Box, Alfresco, all CMIS supported repositories)
+    When the All Repositories Node is selected any Quick Or Advanced search will search across all configured repositories (e.g., IBM FileNet, CMOD, CM8, SharePoint Box, Alfresco, other CMIS repositories).  
+    For the Pre-Configured Demo, only SharePoint is configured. However, Unity can also be configured to include other repositories.
 
-- SharePoint Instance
+- Repository
 
-    When the SharePoint Instance Node is selected any Quick Or Advanced search will search across all Configured Sites for the selected SharePoint Instance.  
+    When a Repository, such as a FileNet Domain or SharePoint Instance, Node is selected any Quick Or Advanced search will search across all related folders and content.  
     For the Pre-Configured Demo only a single SharePoint Instance is provided.  However, multiple SharePoint Instances are supported. 
 
-- SharePoint Sites
+- Folders
 
-    The Pre-Configured Demo has been configured with the following four SharePoint sites: 
+    When a user selects a specific Folder, all Quick and Advanced Searches are restricted to the selected Folder content and all Sub-Folder content.
+    
+    Unity defines a Folder to be any collection of Folders and Sub-Folders.   
+    For example: 
+    - An IBM FileNet Object Store would be considered a Folder, as would any Folder and Sub-Folder under the Object Store.
+    - A SharePoint Site would be considered a Folder, as would any Folder and Sub-Folder under the Site.
+    
+    The Pre-Configured Demo has been configured with the following four SharePoint sites each with its own set of Folders, Sub Folders and related Content:
     - Finance
     - HR
     - Marketing
-    - Sales 
-    
-    When a user selects a SharePoint Site, all Quick and Advanced Searches are restricted to the selected Site.    
-       
-    |**Note**: It is possible to search across multiple selected SharePoint Sites using the [Advanced Search](#advanced-search) SharePoint Sites search criteria.
-
-- SharePoint Site - Folders
-
-    The Pre-Configured Demo has been configured with specific Folders, Sub-Folders and related content for each SharePoint Site (see list above).   
-    When a user selects a specific Folder, all Quick and Advanced Searches are restricted to the selected Folder content and all Sub-Folder content.
+    - Sales
 
 ## Quick Search
 
-Use Quick Search to find documents across all authorized SharePoint sites by typing in a related keyword or phrase.
+Use Quick Search to quickly find documents across all authorized SharePoint sites by typing in a related keyword or phrase.
 
 Type in the word or phrase to search for in the `Enter on Document Title or Content` box at the top of the screen. Click `Search` icon or press `Enter` on a keyboard to execute search.
 The Search results will update, returning all content with the search criteria found anywhere in the Document Title or Content, restricted by your selection in the Folder View:
@@ -107,11 +105,11 @@ Remove one of the values to only search by that criteria. For example, remove th
 ### Search by File Types
 
 To only return documents of a particular type, click on the `File Type` dropdown and select the types of files you want the search to return. For example: MS Word, MS Excel, PDF, etc. 
-You may select multiple values to return multiple kinds of documents:
+You may select multiple values to return multiple types of documents:
 
 [![Advanced search file type](unity-8-user-guide/images/advanced-search-file-type.png)](unity-8-user-guide/images/advanced-search-file-type.png)
 
-Remove your selections to see all document types.
+Remove your selections to see all file types.
 
 ### Search by the user who last modified the file
 
@@ -138,8 +136,8 @@ When the Search executed, the Folder View is updated to displayed only the selec
      
 ### Search by Custom Fields
 
-Some SharePoint documents may have additional associated metadata that describes the file. 
-For example, `Customer Name` or `Order ID.` If the administrator has configured Custom SharePoint Metadata fields for specific SharePoint Sites, you can search by these fields in the Custom fields section. 
+Some Repository documents may have additional associated metadata that describes the file. 
+For example, `Customer Name` or `Order ID.` If the administrator has configured Custom Metadata fields for specific Repository, you can search by these fields in the Custom fields section. 
 Click on the `Custom Fields` section to expand it and enter values for the fields you’d like to search on.
 
 For your Pre-Configured Demo instance, example Custom Fields have been created for the following:
@@ -201,7 +199,7 @@ Customize columns dialog appears:
 
 For a given field, toggle the Visible toggle switch to the right (Red) to make that column visible. Toggle the switch to the left (Gray) to hide the column.
 
-Any custom fields configured to the SharePoint sites will be displayed as columns.  
+Any custom fields configured to the Repository will be displayed as columns.  
 
 For the Pre-Configured Demo, custom fields will be configured for:
 - Document Type
@@ -329,19 +327,21 @@ Select `Cancel` to close the Rename dialog box without renaming the file.
  
 #### Move to
 
-Moves the file to another folder of SharePoint sites.
+Moves the file to another folder.
+
+|**Note**: The folder must be one level before the Parent Level folder related to a SharePoint Site, or FileNet Object Store.
 
 You may move files by dragging and dropping them, or by selecting the `Move to` option. 
 
 - Using `Move to`
     
-    Click the `Move to` action, then select the site and folder you wish to move to.  Press the `Select` button to move the document:
+    Click the `Move to` action, then select the folder you wish to move to.  Click the `Select` button to move the document:
 
     [![Move to action](unity-8-user-guide/images/move-to.png)](unity-8-user-guide/images/move-to.png) 
  
 - Using Drag and Drop
 
-    - Click on the file you want to move, then drag and drop the file from the Search Results to a SharePoint Folder on the Folder View. 
+    - Click on the file you want to move, then drag and drop the file from the Search Results to a Repository Folder on the Folder View. 
     - After dropping the file, you will be asked if you’d like to move or copy the file. Moving will relocate the file to a new location, while copying will duplicate the document and place the copy in the new location:
     
         [![Move to drag and drop](unity-8-user-guide/images/move-to.gif)](unity-8-user-guide/images/move-to.gif) 
@@ -350,13 +350,15 @@ You may move files by dragging and dropping them, or by selecting the `Move to` 
 
 #### Copy to
 
-Copies the File to another folder of SharePoint sites.
+Copies the File to another Folder.
+
+|**Note**: The folder must be one level before the Parent Level folder related to a SharePoint Site, or FileNet Object Store.
 
 You may copy files by dragging and dropping them, or by selecting the `Copy to` action.
 
 - Using `Copy to`
 
-    Click the `Copy to` action, then select the site and folder you wish to copy it to.  Press the `Select` button to copy the document:
+    Click the `Copy to` action, then select the folder you wish to copy it to.  Click the `Select` button to copy the document:
 
     [![Copy to action](unity-8-user-guide/images/copy-to.png)](unity-8-user-guide/images/copy-to.png) 
 
@@ -386,7 +388,7 @@ Clicking the Detail action displays a Document Details window with the following
     
     The Details tab displays metadata, which can be modified by an authorized user.  
        
-    Standard SharePoint metadata:
+    Standard repository metadata:
     - Document title
     
     For the Pre-Configured Demo, custom fields will be configured for:
@@ -398,7 +400,7 @@ Clicking the Detail action displays a Document Details window with the following
 - `VERSIONS` Tab
  
     The Version History tab displays information on each version of the file. 
-    Each time the file is modified, SharePoint creates a new version of the file to track the changes made. 
+    Each time the file is modified, the version capable repositories create a new version of the file to track the changes made. 
     From this tab, you can see and interact with the current version of the document, as well as all prior versions.
  
 #### Favorite On / Favorite Off
@@ -440,11 +442,11 @@ You may select `CSV(current fields)` option to export fields that are currently 
 
 You can easily add new documents to your repositories, right from Unity.
 
-Click the `Create` button to add a file to a `SharePoint Site > Folder`:
+Click the `Create` button to add a file to a Folder:
 
 [![Create button](unity-8-user-guide/images/create-button.png)](unity-8-user-guide/images/create-button.png)
 
-|**Note**: The `Create` button is only displayed when you have selected a Folder in the Folder View. If All Repositories, SharePoint Instance, or a SharePoint Site node is selected in the Folder View, the `Create` button is hidden.
+|**Note**: The `Create` button is only displayed when you have selected a Folder in the Folder View. If All Repositories, or a Folder related to a SharePoint Site node is selected in the Folder View, the `Create` button is hidden.
 
 The New Document dialog box will be displayed:
  
