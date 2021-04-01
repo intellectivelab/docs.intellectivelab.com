@@ -5,10 +5,10 @@ category: Unity 7
 ---
 # Overview 
 
-Unity has static list of error codes that may be returned in error cases.
+Unity has a static list of error codes that may be returned in error cases.
 
 
-## OAuth 2.0 Endpoints 
+# OAuth 2.0 Endpoints 
 
 | Code        | Description                                       |
 |:------------|:--------------------------------------------------|
