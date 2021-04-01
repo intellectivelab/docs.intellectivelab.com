@@ -597,6 +597,11 @@ entries:
                 url: /docs/development/unity-api/openapi-specification/
                 id: development-unity-api-openapi-specification
 
+              - title: Error codes
+                output: web
+                url: /docs/development/unity-api/error-codes/
+                id: development-unity-error-codes
+
           - title: Development Materials
             output: web
             url: /docs/development/development-materials/
