@@ -96,6 +96,39 @@ Optional: Most images look better when adding a grey 1px border, grey color is R
 These borders will be added by a technical writer. 
 Some images like schemes or diagrams on white background don't need any border. 
 
+### Video and animated images
+
+Markdown doesn't support video, however, animated images in gif format can be used.
+
+For gif images use the same rules as for png images.
+
+It is a good idea to insert a clickable gif, so that user could click and open it full screen.  
+Use `[![image-title](name-of-your-md-file/images/name-of-image.gif)](name-of-your-md-file/images/name-of-image.gif)` for this.
+
+An example:
+
+[![Context menu](how-to-create-page/images/context-menu.gif)](how-to-create-page/images/context-menu.gif)
+
+There are 3 drawbacks of gif: 
+- Impossibility to stop it
+- Not obvious start and end points for looped gif
+- Too many gifs on page become annoying and distract from other information
+
+However, in some cases gifs work much better than text or png. 
+
+There is a simple app for working with gifs called ScreenToGif.
+This app with intuitive user interface has advantages over others:
+
+- Allows to set screen area for recording
+- Allows to set low `frames per sec` parameter, therefore, get smaller file size (usually 5 fps is enough)
+- Allows to edit gif (remove some frames, crop, resize etc)
+- Allows to add a border and some notes like text, highlighting etc, also mouse clicks could be highlighted
+- Open source on GitHub
+- Free even for commercial use
+
+App site: [ScreenToGif](https://www.screentogif.com/)  
+You can download it from [Get ScreenToGif - Microsoft Store](https://www.microsoft.com/en-us/p/screentogif/9n3sqk8pds8g?rtc=1&activetab=pivot:overviewtab)  
+[ScreenToGif - How to use](https://www.screentogif.com/how-to-use)
 
 ### Links to pages 
 
@@ -107,9 +140,17 @@ Do not create pages with the same content, use links.
 #### Link to current page 
 
 To insert a link to any header of current page type:  
-`[Link Title](#header-title)`  
+`[Link Title](#header-title)`   
+Use `-` between words in header title.
+
+For example, to insert a link to this header type:  
+`[Link to this header](#link-to-current-page)`
+
 It will look on page: 
-[Link Title](#link-to-current-page)
+[Link to this header](#link-to-current-page)
+
+Sometimes headers on page contain special symbols. To know the link to such header use the Table of Contents on the top of your page opened in [local environment](#viewing-page-in-local-environment). 
+Hover a mouse on the header and see in status bar at the bottom of browser window what address it has.
 
 #### Link to another page on documentation portal 
 
