@@ -128,7 +128,8 @@ This app with intuitive user interface has advantages over others:
 
 App site: [ScreenToGif](https://www.screentogif.com/)  
 You can download it from [Get ScreenToGif - Microsoft Store](https://www.microsoft.com/en-us/p/screentogif/9n3sqk8pds8g?rtc=1&activetab=pivot:overviewtab)  
-[ScreenToGif - How to use](https://www.screentogif.com/how-to-use)
+[ScreenToGif - How to use](https://www.screentogif.com/how-to-use)  
+[Gif useful tips](how-to-create-page/gif-useful-tips.md)  
 
 ### Links to pages 
 
