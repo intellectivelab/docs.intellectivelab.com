@@ -11,4 +11,5 @@ category: Unity 7
 - [Attach an existing document to the case](case-management/attach-existing-document.md)   
 - [Split a case](case-management/split-case.md)  
 - [Delete a case](case-management/delete-case.md)  
-- [Open case by URL](case-management/open-case-by-url.md)  
+- [Open case by URL](case-management/open-case-by-url.md)
+- [Open case (document/workitem) in separate browser tab](case-management/open-in-separate-tab.md)
