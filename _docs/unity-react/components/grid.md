@@ -63,6 +63,7 @@ Details View screen is divided into several panels as shown below:
 - Multiple row selection
 - Row action
 - Bulk action
+- [Default action](grid/default-action.md)
 - Ability to add a custom grid action
 - Row actions menu
 - Expandable rows
