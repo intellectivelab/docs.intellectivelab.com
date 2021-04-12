@@ -11,17 +11,19 @@ category: Unity 7
 1. Open WAS9 administrative console
 2. Select Environment >> Shared libraries section
 3. Select scrope and press New button
-4. Add full path to the Classpath section for the following files
+4. Set unique name to the Name field
+5. Add full path to the Classpath section for the following files
    - ODApi.jar
    - libars3wapi32.so
    - libars3wapi64.so
    - gson-2.8.1.jar
    use appropriate files for Windows instead of libars3wapi32.so and libars3wapi64.so
-5. Add full path for ondemand files to the Native Library Path section
-6. Check "Use an isolated class loader for this shared library" in the Class loading Section
+6. Add full path for ondemand files to the Native Library Path section
+7. Check "Use an isolated class loader for this shared library" in the Class loading Section
 ![shared-libraries-creation](installing-unity-7/images/shared-libraries-creation.png) 
-7. Press Apply
-8. Restart WAS9
+8. Press Apply
+9. Click on Save link
+10. Restart WAS9
 
 Created Shared Library should be used in the installed Unity application
 1. Open WAS9 administrative console
