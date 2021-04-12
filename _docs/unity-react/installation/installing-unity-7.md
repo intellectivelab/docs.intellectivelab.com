@@ -8,39 +8,54 @@ category: Unity 7
 *content to be added*
 
 # WAS9 additional configuration for working with CMOD
-1. Open WAS9 administrative console
-2. Select Environment >> Shared libraries section
-3. Select scrope and press New button
-4. Add full path to the Classpath section for the following files
-   - ODApi.jar
-   - libars3wapi32.so
-   - libars3wapi64.so
-   - gson-2.8.1.jar
-   use appropriate files for Windows instead of libars3wapi32.so and libars3wapi64.so
-5. Add full path for ondemand files to the Native Library Path section
-6. Check "Use an isolated class loader for this shared library" in the Class loading Section
-![shared-libraries-creation](installing-unity-7/images/shared-libraries-creation.png) 
-7. Press Apply
-8. Restart WAS9
 
-Created Shared Library should be used in the installed Unity application
-1. Open WAS9 administrative console
-2. Select Applications >> Application Type >> WebSphere enterprise applications
-3. Click on Unity application
-4. Click on Shared library references link
-![unity-shared-libraries-opening](installing-unity-7/images/unity-shared-libraries-opening.png) 
-5. Select Intellective Unity module
-6. Press Reference shared libraries button
-7. Selected created Shared Library with CMOD files
-![shared-libraries-adding-to-unity](installing-unity-7/images/shared-libraries-adding-to-unity.png) 
-8. Press OK button
-9. Press OK on Shared library references window
-![saving-added-shared-libraries](installing-unity-7/images/saving-added-shared-libraries.png) 
-10. Click on Save link
-![saving-changes-in-unity](installing-unity-7/images/saving-changes-in-unity.png) 
-11. Restart Unity application
+## Create Shared Library
 
+- Open WAS9 administrative console
+- Select `Environment > Shared libraries` section
+- Select scope and press `New` button
+- Add full path to the `Classpath` section for the following files:
+   - `ODApi.jar`
+   - `libars3wapi32.so`
+   - `libars3wapi64.so`
+   - `gson-2.8.1.jar`
+   
+   Use appropriate files for Windows instead of `libars3wapi32.so` and `libars3wapi64.so`
+- Add full path for On-Demand files to the `Native Library Path` section
+- Check `Use an isolated class loader for this shared library` in the `Class loading` Section:
 
+    ![shared-libraries-creation](installing-unity-7/images/shared-libraries-creation.png)
+     
+- Press `Apply`
+- Restart WAS9
+
+## Use Shared Library in Unity
+
+Created Shared Library should be used in the installed Unity application:
+
+- Open WAS9 administrative console
+- Select `Applications > Application Type > WebSphere enterprise applications`
+- Click on `Unity` application
+- Click on `Shared library references` link:
+
+    ![unity-shared-libraries-opening](installing-unity-7/images/unity-shared-libraries-opening.png)
+     
+- Select `Intellective Unity` module
+- Press `Reference shared libraries` button
+- Selected created Shared Library with CMOD files:
+
+    ![shared-libraries-adding-to-unity](installing-unity-7/images/shared-libraries-adding-to-unity.png) 
+
+- Press `OK` button
+- Press `OK` on Shared library references window:
+
+    ![saving-added-shared-libraries](installing-unity-7/images/saving-added-shared-libraries.png)
+     
+- Click on `Save` link:
+
+    ![saving-changes-in-unity](installing-unity-7/images/saving-changes-in-unity.png)
+     
+- Restart Unity application
 
 
 # Unity Master Key Configuration
