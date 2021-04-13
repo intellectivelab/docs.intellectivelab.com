@@ -24,7 +24,11 @@ To open Document Details:
 - In the grid click on Document Title, or click a dropdown icon in the document row and select `Edit` action:
 
     ![Context-menu](document-details/images/view-action-context-menu.png)
-    
+
+- `Open in separate tab` action provides an alternative way to open the document details (or details of other resources like a case or a workitem):
+  
+    ![Open in separate action](document-details/images/open-in-separate-tab.png)
+
 - `Document Details` view will be opened in a modal or separate tab:
 
     ![View document action](document-details/images/view-document-action.png)
@@ -36,3 +40,5 @@ Edit available fields and save changes by clicking `Save` button.
 # Configuration
 
 [Document details action configuration](../../configuration/actions/document-details.md)
+
+[Open In Separate Tab action configuration](../../configuration/actions/open-in-separate-tab.md)
