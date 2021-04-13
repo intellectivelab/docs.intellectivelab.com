@@ -19,11 +19,11 @@ Link to All User Stories in Jira can be found [here](https://jira.intellective.c
 # Unity for nCino Overview
 
 ## Documents migration
-Separate Integration Service was implemented for migration documents that were attach to the Loan, Relationships, Collateral or Product Packages Salesfroce objects.
+Separate Integration Service was implemented for migration documents that were attach to the Loan, Relationships, Collateral or Product Packages Salesforce objects.
 
-Each document that was attached to the object and for what Placeholder has status = Approved can be migrated to the FileNet repository. Please note that Loan object also should has stage = Boocked and not null Loan Number for documents migration.
+Each document that was attached to the object and for what Placeholder has status = `Approved` can be migrated to the FileNet repository. Please note that Loan object also should has stage = `Boocked` and not null Loan Number for documents migration.
 
-OffLoader job check all Placeholders with status = Approved and move information to the Integration Service. In accordance with Class Name and Properties mapping that are configured in Salesforce documents are created in the FileNet repository with appropriate Document Class and properties.
+OffLoader job checks all Placeholders with status = `Approved` and move information to the Integration Service. In accordance with Class Name and Properties mapping that are configured in Salesforce documents are created in the FileNet repository with appropriate Document Class and properties.
 
 Class Name mapping:
 
@@ -34,12 +34,12 @@ Properties mapping:
 ![properties-mapping](u4nCino-release-notes/images/properties-mapping.png)
 
 ## Document viewing after migration
-Each document after migration to the FileNet repository can be view or downloaded using Unity application.
-Document is opened in the separate browser tab in Unity application after clicking on Donload File link in appropriate Salesforce object in Document Manager tab
+Each document after migration to the FileNet repository can be viewed or downloaded using Unity application.
+Document is opened in the separate browser tab in Unity application after clicking on `Download File` link in appropriate Salesforce object in Document Manager tab:
 
 ![download-document](u4nCino-release-notes/images/download-document.png)
 
-Standard download dialog for file saving is opened in the separate browser tab if document can't be opened in browser, for example for Microsoft office documents
+Standard download dialog for file saving is opened in the separate browser tab if document can't be opened in browser, for example for Microsoft Office documents.
 
 # New Features
 
