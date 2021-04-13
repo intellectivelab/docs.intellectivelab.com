@@ -5,7 +5,7 @@ category: Unity for nCino
 ---
 
 # Introduction
-Unity for nCino supports archiving content from nCino (Salesforce) to one or more ECMs, with seamlines integration to nCino's Document Manager to access archived Content.
+Unity for nCino supports archiving content from nCino (Salesforce) to one or more ECMs, with seamless integration to nCino's Document Manager to access archived Content.
  
 Unity for nCino provides prospective customers with a No Code configurable product which provides fast hands-on access to Unity Search and Index capability through nCino's User Interface.
  
@@ -21,7 +21,7 @@ Link to All User Stories in Jira can be found [here](https://jira.intellective.c
 ## Documents migration
 Separate Integration Service was implemented for migration documents that were attach to the Loan, Relationships, Collateral or Product Packages Salesforce objects.
 
-Each document that was attached to the object and for what Placeholder has status = `Approved` can be migrated to the FileNet repository. Please note that Loan object also should has stage = `Boocked` and not null Loan Number for documents migration.
+Each document that was attached to the object and for what Placeholder has status = `Approved` can be migrated to the FileNet repository. Please note that Loan object also should has stage = `Booked` and not null Loan Number for documents migration.
 
 OffLoader job checks all Placeholders with status = `Approved` and move information to the Integration Service. In accordance with Class Name and Properties mapping that are configured in Salesforce documents are created in the FileNet repository with appropriate Document Class and properties.
 
