@@ -550,6 +550,11 @@ entries:
             url: /docs/release-notes/unity-8-0-release-notes/
             id: release-notes-unity-8-0-release-notes
 
+          - title: Unity for nCino Release Notes
+            output: web
+            url: /docs/release-notes/u4nCino-release-notes/
+            id: release-notes-u4nCino-release-notes            
+
       - title: Tutorials
         output: web
         id: tutorials
