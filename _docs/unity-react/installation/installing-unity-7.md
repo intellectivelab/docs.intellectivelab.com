@@ -23,6 +23,7 @@ Unity Configuration Console UI.
 ## Generate master key with command line utility
 
 1. Extract Unity distribution ZIP package into some temporary directory and go to the `VegaUnity/bin` folder.  
+
 2. Use either `encryptionSupport.cmd` (on Windows) or `encryptionSupport.sh` (on Linux) to generate the Unity master key.  
     This is a general purpose utility, so the following command line arguments should be used to execute actual key generation:
 
@@ -48,8 +49,11 @@ ZjJwRjFHZ04yM091bUJrb0t3amFHUTViNkVqU280RE0=
 The master key can be generated through the dedicated UI dialog at Unity Configuration Console. 
  
 1. Login to the Unity with the user with the rights to access the Configuration Console tab.  
+
 2. Go to the Configuration Console tab and locate the `Encrypt value` button at the main toolbar at the right.  
+
 3. Press that button and the `Encrypt Value` dialog will appear.  
+
 4. Select the encryption type using `Encryption` radio control and then press the `Generate key` button at the bottom of this dialog.  
 
 The generated master key will be displayed at the new `Generated key` popup window:
@@ -130,9 +134,14 @@ The following java runtime properties can be used for that purpose (each next it
 ## Create Shared Library
 
 1. Open WAS9 administrative console
+
 2. Select `Environment > Shared libraries` section
+
+
 3. Select scope and press `New` button
+
 4. Set unique library name in the `Name` field
+
 5. Add full path to the `Classpath` section for the following files:
    - `ODApi.jar`
    - `libars3wapi32.so`
@@ -140,13 +149,18 @@ The following java runtime properties can be used for that purpose (each next it
    - `gson-2.8.1.jar`
    
    Use appropriate files for Windows instead of `libars3wapi32.so` and `libars3wapi64.so`
+
 6. Add full path for On-Demand files to the `Native Library Path` section
+
 7. Check `Use an isolated class loader for this shared library` in the `Class loading` Section:
 
     ![shared-libraries-creation](installing-unity-7/images/shared-libraries-creation.png)
      
+
 8. Press `Apply`
+
 9. Click on `Save` link
+
 10. Restart WAS9
 
 ## Use Shared Library in Unity
@@ -154,19 +168,25 @@ The following java runtime properties can be used for that purpose (each next it
 Created Shared Library should be used in the installed Unity application:
 
 1. Open WAS9 administrative console
+
 2. Select `Applications > Application Type > WebSphere enterprise applications`
+
 3. Click on `Unity` application
+
 4. Click on `Shared library references` link:
 
     ![unity-shared-libraries-opening](installing-unity-7/images/unity-shared-libraries-opening.png)
      
 5. Select `Intellective Unity` module
+
 6. Press `Reference shared libraries` button
+
 7. Selected created Shared Library with CMOD files:
 
     ![shared-libraries-adding-to-unity](installing-unity-7/images/shared-libraries-adding-to-unity.png) 
 
 8. Press `OK` button
+
 9. Press `OK` on Shared library references window:
 
     ![saving-added-shared-libraries](installing-unity-7/images/saving-added-shared-libraries.png)
