@@ -9,7 +9,7 @@ Unity for nCino supports archiving content from nCino (Salesforce) to one or mor
  
 Unity for nCino provides prospective customers with a No Code configurable product which provides fast hands-on access to Unity Search and Index capability through nCino's User Interface.
  
-Unity for nCino provides additional strategic search capabilities accessible from the nCino UI to access archived content (i.e., loan docs, loan collateral docs, insurance docs, banking docs, KYC Docs, and other documents that are or may need to be archived in FileNet, SharePoint etc.).
+Unity for nCino provides additional strategic search capabilities accessible from the nCino UI to access archived content (i.e., loan docs, loan collateral docs, insurance docs, banking docs, KYC Docs, and other documents that are or may need to be archived in FileNet).
 
 Link to requirements in Confluence can be found [here](https://confluence.intellective.com/display/ENG/nCino+Integration) .
 
