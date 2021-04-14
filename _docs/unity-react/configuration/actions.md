@@ -55,6 +55,7 @@ Choose the action from the list below to find specific options for it.
 
 - [Create Document](actions/create-document.md)
 - [Document Details](actions/document-details.md)
+- [Open Document In Separate Tab](actions/open-in-separate-tab.md)  
 - [Delete Document](actions/delete-document.md)
 - [Open in Office](actions/open-in-office.md)
 - [View Content](actions/view-content.md)
@@ -72,8 +73,11 @@ Choose the action from the list below to find specific options for it.
 - [Attach Document](actions/attach-document.md)
 - [Attach Existing Documents](actions/attach-existing-documents.md)
 - [Detach Document](actions/detach-document.md)
+- [Open Case In Separate Tab](actions/open-in-separate-tab.md)
 
 ## Workitem related actions
+
+- [Open Workitem In Separate Tab](actions/open-in-separate-tab.md)
 
 ## Other actions
 
