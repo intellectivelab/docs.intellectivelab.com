@@ -3,7 +3,11 @@ title: Open In Separate Tab Action Configuration
 layout: docs
 category: Unity 7
 ---
-[Open In Separate Tab feature description](../../features/document-management/document-details.md#how-to-use-document-details)
+[Open Document Details in Separate Tab feature description](../../features/document-management/document-details.md#how-to-use-document-details)  
+[Open Case Details in Separate Tab feature description](../../features/case-management/case-details.md#how-to-use-case-details)  
+[Open Workitem Details in Separate Tab feature description](../../features/process-management/workitem-details.md#how-to-use-workitem-details)  
+
+Open In Separate Tab action configuration is the same for documents, cases and workitems.
 
 Open In Separate Tab Action configuration section should be added to the Unity System XML file. An example:
 

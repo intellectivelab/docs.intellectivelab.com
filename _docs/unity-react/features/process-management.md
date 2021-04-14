@@ -3,6 +3,7 @@ title: Unity Features - Process Management
 layout: docs
 category: Unity 7
 ---
+- [Workitem details](process-management/workitem-details.md)
 - Personal in-basket
 - Role in-basket
 - View information about the work item and information about the associated case
