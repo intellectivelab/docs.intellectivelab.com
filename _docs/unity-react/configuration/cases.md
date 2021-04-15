@@ -146,7 +146,7 @@ Sort fields may contain `eventDate`, `eventActor`, and `eventTitle` declarations
 </SearchTemplate>
 ```
 
-For criterions, use `eventTitle` criteria instead of `ucmAnnotationComment`:
+For criterions, `eventTitle`, `eventDate`, or `eventActor` may be used. Make sure to remove all criterions starting with `ucmAnnotation`:
 
 ```xml
 
@@ -170,7 +170,7 @@ For criterions, use `eventTitle` criteria instead of `ucmAnnotationComment`:
 
 ```
 
-Use the eventTitle, eventDate and eventActor properties at the case history grid's columnsets:
+Use the eventTitle, eventDate or eventActor properties at the case history grid's columnsets:
 
 ```xml
 
@@ -209,7 +209,7 @@ Use the eventTitle, eventDate and eventActor properties at the case history grid
 
 # Solution configuration
 
-Replace `ucmAnnotationComment` field with `CmAcmCommentText` at the `Case_Comment` fieldset:
+Put `CmAcmCommentText` field at the `Case_Comment` fieldset:
 
 ```xml
 
