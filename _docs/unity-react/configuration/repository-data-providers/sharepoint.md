@@ -69,8 +69,12 @@ Use browser to find a proper configuration values as described below.
 | Root Url             | SharePoint online Root Url for SP Online uses Tenant name (Azure registered name of organization) to construct RootUrl. SP OnPremise uses arbitrary url (consult admin). | `https://<Tenant>.sharepoint.com`   |
 | SP Lists             | Use SP List Title tag value to specify list in a Unity configuration. | `https://<RootUrl>/_api/lists?$select=Title`    |
 | SP Content Types     | Use ```<ListTitle>\<Content Type Name>``` in Unity configuration.          | `https://<RootUrl>/_api/lists/getbytitle('<ListTitle>')/ContentTypes?$select=Name,Id`|
-| SP Fields            | Use Field `EntityPropertyName`  in Unity configuration.          | `https://<RootUrl>/_api/lists/getbytitle('<ListTitle>')/Fields?$select=EntityPropertyName,Id'`   |
+| SP Fields            | Use Field `EntityPropertyName`  in Unity configuration.          | `https://<RootUrl>/_api/lists/getbytitle('<ListTitle>')/Fields?$select=EntityPropertyName,Id`   |
 | SP Sites             | Use SharePoint admin url to find sites list.             | `https://<Tenant>-admin.sharepoint.com/`|
+| SiteId               | Sharepoint Site collection id for specific site path | `https://<RootUrl>/<SitePath>/_api/site/Id` |
+| WebId                | Sharepoint web id for specific site path | `https://<RootUrl>/<SitePath>/_api/web/Id` |
+| ListId               | Sharepoint document library id for specific site path and document library  | `https://<RootUrl>/<SitePath>/_api/lists/getbytitle('<ListTitle>')/Id` |
+| ItemId               | Sharepoint list item id for specific site path, document library and list item  | `https://<RootUrl>/<SitePath>/_api/lists/getbytitle('<ListTitle>')/items/$select=Id,FileRef` |
  
 # Unity Features Configuration Specific to SharePoint Connector
     
@@ -165,7 +169,7 @@ Good to know `System` columns are listed in a table below:
 
 | Synthetic field        | Description                          |
 |:---------------------|:---------------------------------------|
-| $SpId                | A string uniquely identify SP item. Calculated as `s_<SiteId>_w_<WebId>_l_<ListId>_i_<ItemId>`.  |
+| $SpId                | A string uniquely identify SP item. Calculated as `s_<SiteId>_w_<WebId>_l_<ListId>_i_<ItemId>`. Check [Metadata Urls](#sharepoint-metadata-urls) on how to find `<SiteId>`, `<WebId>`, `<ListId>`, `<ItemId>` values.  |
 | $MimeType            | A string that map file extension stored in SP to document content mime type.  |
 | $DisplayPath         | A string that reconstruct FileRef column for documents and folders to match a folder view path. |
 | $BaseName            | A file name without extension mapped to `FileLeafRef`. Supports updates and search with `startWith` operator. |
