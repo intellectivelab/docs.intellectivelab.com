@@ -783,21 +783,19 @@ To integrate it with Unity:
 
 4. Add the following snippet of code. Make sure to update the parameters as needed. All parameters are required.
 
-**User audit**
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<Configuration>
-......
-       <UserAudit>       
-           <AuditEnabled>true</AuditEnabled>
-           <FilePath>/tmp/userlogin.csv</FilePath>
-           <MaxFileSize>1024KB</MaxFileSize>       
-           <LogPattern>sessionId;ip;username;date</LogPattern>
-       </UserAudit>
-......
-</Configuration>
-```
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Configuration>
+    ......
+           <UserAudit>       
+               <AuditEnabled>true</AuditEnabled>
+               <FilePath>/tmp/userlogin.csv</FilePath>
+               <MaxFileSize>1024KB</MaxFileSize>       
+               <LogPattern>sessionId;ip;username;date</LogPattern>
+           </UserAudit>
+    ......
+    </Configuration>
+    ```
 
 5. Click `Apply` and then `Activate` to restart the application.
 
@@ -823,67 +821,65 @@ To install it as a standalone module:
 
 4. Navigate to the following folder and open the `web.xml`: `<VU>/VegaUnity/vspace.war/WEB-INF/`
 
-5. Add the following code to the root `web-app` section of the file.
+5. Add the following code to the root `web-app` section of the file:
 
-**Standalone module**
-
-```xml
-<filter>
-                                <filter-name>AuthLogFilter</filter-name>
-                                <filter-class>com.vegaecm.vspace.useraudit.AuthLogFilter</filter-class>
- </filter>
- 
-<filter-mapping>
-                                <filter-name>AuthLogFilter</filter-name>
-                                <url-pattern>/</url-pattern>
- 
- 
-</filter-mapping>
-<filter-mapping>
-                                <filter-name>AuthLogFilter</filter-name>
-                                <url-pattern>*.jsp</url-pattern>
-</filter-mapping>
-<filter-mapping>
-                                <filter-name>AuthLogFilter</filter-name>
-                                <url-pattern>/services/*</url-pattern>
-</filter-mapping>
-<filter-mapping>
-                                <filter-name>AuthLogFilter</filter-name>
-                                <url-pattern>/servicesUT/*</url-pattern>
-</filter-mapping>
-<filter-mapping>
-                                <filter-name>AuthLogFilter</filter-name>
-                                <url-pattern>/downloadUT</url-pattern>
-</filter-mapping>
-<filter-mapping>
-                                <filter-name>AuthLogFilter</filter-name>
-                                <url-pattern>/DaejaGetContentLauncher</url-pattern>
-</filter-mapping>
-<filter-mapping>
-                                <filter-name>AuthLogFilter</filter-name>
-                                <url-pattern>/exportUT</url-pattern>
-</filter-mapping>
-<filter-mapping>
-                                <filter-name>AuthLogFilter</filter-name>
-                                <url-pattern>/view</url-pattern>
-</filter-mapping>
-<filter-mapping>
-                                <filter-name>AuthLogFilter</filter-name>
-                                <url-pattern>/viewUT</url-pattern>
-</filter-mapping>
-<filter-mapping>
-                                <filter-name>AuthLogFilter</filter-name>
-                                <url-pattern>/admin</url-pattern>
-</filter-mapping>
-<filter-mapping>
-                                <filter-name>AuthLogFilter</filter-name>
-                                <url-pattern>/adminUT</url-pattern>
-</filter-mapping>
-<filter-mapping>
-                                <filter-name>AuthLogFilter</filter-name>
-                                <url-pattern>/ut/*</url-pattern>
-</filter-mapping>
-```
+    ```xml
+    <filter>
+                                    <filter-name>AuthLogFilter</filter-name>
+                                    <filter-class>com.vegaecm.vspace.useraudit.AuthLogFilter</filter-class>
+     </filter>
+     
+    <filter-mapping>
+                                    <filter-name>AuthLogFilter</filter-name>
+                                    <url-pattern>/</url-pattern>
+     
+     
+    </filter-mapping>
+    <filter-mapping>
+                                    <filter-name>AuthLogFilter</filter-name>
+                                    <url-pattern>*.jsp</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+                                    <filter-name>AuthLogFilter</filter-name>
+                                    <url-pattern>/services/*</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+                                    <filter-name>AuthLogFilter</filter-name>
+                                    <url-pattern>/servicesUT/*</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+                                    <filter-name>AuthLogFilter</filter-name>
+                                    <url-pattern>/downloadUT</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+                                    <filter-name>AuthLogFilter</filter-name>
+                                    <url-pattern>/DaejaGetContentLauncher</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+                                    <filter-name>AuthLogFilter</filter-name>
+                                    <url-pattern>/exportUT</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+                                    <filter-name>AuthLogFilter</filter-name>
+                                    <url-pattern>/view</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+                                    <filter-name>AuthLogFilter</filter-name>
+                                    <url-pattern>/viewUT</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+                                    <filter-name>AuthLogFilter</filter-name>
+                                    <url-pattern>/admin</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+                                    <filter-name>AuthLogFilter</filter-name>
+                                    <url-pattern>/adminUT</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+                                    <filter-name>AuthLogFilter</filter-name>
+                                    <url-pattern>/ut/*</url-pattern>
+    </filter-mapping>
+    ```
 
 6. Open the WAS administrative console at the following path:
 
@@ -913,7 +909,6 @@ To install it as a standalone module:
 
 ### External database	
 
-External database
 Out of the box, jBPM application uses embedded H2 database to store process and case data.
 The UCM requires that the standalone database should be used by jBPM application instead of embedded one. The initial UCM release supports Microsoft SQL Server 2012 database. Unity 7.2.1 Release added support for PostgreSQL database.
 
