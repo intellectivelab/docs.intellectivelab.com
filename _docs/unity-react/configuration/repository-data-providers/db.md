@@ -21,41 +21,7 @@ If not already done, you will need to install and configure the JDBC drivers for
 # JNDI configuration
  
 To use the Unity database connector, you will need to define a JNDI definition on the web application server that the connector will reference.
-This process is different for each web application server, and you should follow the process for your server. A sample below is provided for the WebSphere Liberty web application server.
-
-## WebSphere Liberty Profile
-
-- Open the `server.xml`
-- Add `library` tag with parameters below for a reference to the JDBC jar for your database:
-
-    ```xml
-    <library id="MSSQLLib">
-          <fileset dir="C:/wlp/lib.custom" includes="sqljdbc4-4.1.jar"/>
-    </library>  
-    ``` 
-    
-    |Parameter|Description|Value|
-    |:--------|:----------|:----|
-    |id       |Library ID |MSSQLLib|
-    |dir      |absolute path to the containing folder for the jar |C:/wlp/lib.custom|
-    |includes |the name of the JDBC jar file |sqljbdc4-4.1.jar|
-
-- Add the data source JNDI with parameters below and database access information:
-        
-    ```xml
-    <dataSource id="trn-lookupdb" jndiName="trnlookup"
-          <jbdcDriver libraryRef="MSSQLLib"/>
-          <properties.microsoft.sqlserver databaseName="trn-lookupdb" serverName="localhost" portNumber="1433" user="user" password="password"/>
-    </dataSource>
-    ```
- 
-    |Parameter|Description|Value|
-    |:--------|:----------|:----|
-    |id       |Datasourse ID |trn-lookupdb|
-    |jndiName |JNDI name | trnlookup |
-    |libraryRef | Library ID previously created| MSSQLLib |
-    
-- Save the file
+This process is different for each web application server, and you should follow the process for your server. 
 
 # Unity XML configuration
 
