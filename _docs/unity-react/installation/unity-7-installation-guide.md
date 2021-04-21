@@ -1,5 +1,5 @@
 ---
-title: Installing Unity 7
+title: Unity 7 Installation Guide
 layout: docs
 category: Unity 7
 ---
@@ -62,7 +62,7 @@ To download the deployment files:
     - For WebLogic: `<vu_install>\VegaUnity\packages\webLogic`
     - For WebSphere: `<vu_install>\VegaUnity\packages\webSphere`
     
-        ![ear-file in folder](installing-unity-7/images/image2.png)
+        ![ear-file in folder](unity-7-installation-guide/images/image2.png)
 
 The above EAR files are pre-packaged with `form_app` authentication method and ready for deployment without any additional steps. 
 
@@ -121,7 +121,7 @@ The master key can be generated through the dedicated UI dialog at Unity Configu
 
 The generated master key will be displayed at the new `Generated key` popup window:
 
-![generate-master-key-at-cc](installing-unity-7/images/generate-master-key-at-cc.png) 
+![generate-master-key-at-cc](unity-7-installation-guide/images/generate-master-key-at-cc.png) 
 
 
 ## Use generated master key for Unity instance deployment
@@ -213,7 +213,7 @@ To configure the Global Security:
 
 4. In the `Authentication` section, expand `Java Authentication and Authorization Service`:
  
-    ![Expand Java Authentication and Authorization Service](installing-unity-7/images/image8.png)
+    ![Expand Java Authentication and Authorization Service](unity-7-installation-guide/images/image8.png)
 
 5. Select `Application logins`.
 
@@ -221,7 +221,7 @@ To configure the Global Security:
 
 7. For `Alias`, enter VES:
 
-    ![Enter VES for Alias](installing-unity-7/images/image9.png)
+    ![Enter VES for Alias](unity-7-installation-guide/images/image9.png)
 
 8. Click `Apply`.
 
@@ -234,7 +234,7 @@ To configure the Global Security:
     |FileNetP8WSI	         |com.filenet.api.util.WSILoginModule	|REQUIRED	|1|
     |FileNetP8	             |com.ibm.ws.security.common.auth.module.WSLoginModuleImpl| REQUIRED	|2|
  
-    ![Add JAAS Login Modules](installing-unity-7/images/image10.png)
+    ![Add JAAS Login Modules](unity-7-installation-guide/images/image10.png)
     
 11. Click `Apply`, then `OK`.
 
@@ -246,18 +246,18 @@ To run Unity application at WAS 8, you need to set the following configuration p
 
 To configure WebSphere for WAS 8:
 1. Open the WAS administrative console at the following path where `<ServerName>` is the name of your server:
-    `http://<ServerName>:9060/ibm/console`
+    `http://<ServerName>:9060/ibm/console`.
 
 2. Log into the system.
 
 3. From the left navigation, open `Application Servers > [server] > Process definition > Java Virtual Machine > Custom properties`.
 
 4. If it’s not listed, add the following property: 
-    `com.sun.jersey.server.impl.cdi.lookupExtensionInBeanManager` 
+    `com.sun.jersey.server.impl.cdi.lookupExtensionInBeanManager`.
 
 5. Set `com.sun.jersey.server.impl.cdi.lookupExtensionInBeanManager = true`:
  
-    ![Configure WebSphere for WAS 8](installing-unity-7/images/image11.png)
+    ![Configure WebSphere for WAS 8](unity-7-installation-guide/images/image11.png)
     
 ## WAS9 additional configuration for working with CMOD
 
@@ -283,7 +283,7 @@ To configure WebSphere for WAS 8:
 
 7. Check `Use an isolated class loader for this shared library` in the `Class loading` Section:
 
-    ![shared-libraries-creation](installing-unity-7/images/shared-libraries-creation.png)
+    ![shared-libraries-creation](unity-7-installation-guide/images/shared-libraries-creation.png)
      
 
 8. Press `Apply`.
@@ -304,7 +304,7 @@ Created Shared Library should be used in the installed Unity application:
 
 4. Click on `Shared library references` link:
 
-    ![unity-shared-libraries-opening](installing-unity-7/images/unity-shared-libraries-opening.png)
+    ![unity-shared-libraries-opening](unity-7-installation-guide/images/unity-shared-libraries-opening.png)
      
 5. Select `Intellective Unity` module.
 
@@ -312,17 +312,17 @@ Created Shared Library should be used in the installed Unity application:
 
 7. Selected created Shared Library with CMOD files:
 
-    ![shared-libraries-adding-to-unity](installing-unity-7/images/shared-libraries-adding-to-unity.png) 
+    ![shared-libraries-adding-to-unity](unity-7-installation-guide/images/shared-libraries-adding-to-unity.png) 
 
 8. Press `OK` button.
 
 9. Press `OK` on Shared library references window:
 
-    ![saving-added-shared-libraries](installing-unity-7/images/saving-added-shared-libraries.png)
+    ![saving-added-shared-libraries](unity-7-installation-guide/images/saving-added-shared-libraries.png)
      
 10. Click on `Save` link:
 
-    ![saving-changes-in-unity](installing-unity-7/images/saving-changes-in-unity.png)
+    ![saving-changes-in-unity](unity-7-installation-guide/images/saving-changes-in-unity.png)
      
 11. Restart Unity application.
 
@@ -346,17 +346,17 @@ To install Unity using the Fast Path method:
 
 6. Click `Next`:
  
-    ![Preparing for Application Install - Fast Method](installing-unity-7/images/image12.png)
+    ![Preparing for Application Install - Fast Method](unity-7-installation-guide/images/image12.png)
 
 7. For `How do you want to install the application?`, select `Fast Path` and click `Next`:
 
-    ![Select Fast Method](installing-unity-7/images/image13.png)
+    ![Select Fast Method](unity-7-installation-guide/images/image13.png)
 
 8. In the `Select installation options` screen, enter an `Application name` and click `Next`:
 
     | **Note**: You cannot edit this name after installation.      
 
-    ![Enter Application Name - Fast Method](installing-unity-7/images/image14.png)
+    ![Enter Application Name - Fast Method](unity-7-installation-guide/images/image14.png)
         
 9. On the `Map modules to servers` screen, click `Next`.
 
@@ -364,7 +364,7 @@ To install Unity using the Fast Path method:
 
 11. Review the `Summary` section, then click `Finish` and `Save`:
  
-    ![Review the Install Summary - Fast Method](installing-unity-7/images/image15.png)
+    ![Review the Install Summary - Fast Method](unity-7-installation-guide/images/image15.png)
     
 12. If you need to change the Context Root, complete the following:
     
@@ -376,11 +376,11 @@ To install Unity using the Fast Path method:
     
     d. Edit the Context Root:
  
-       ![Edit Context Root - Fast Method](installing-unity-7/images/image16.png)
+       ![Edit Context Root - Fast Method](unity-7-installation-guide/images/image16.png)
     
     e. Click `OK`, then click `Save`:
  
-       ![Save Context Root Changes - Fast Method](installing-unity-7/images/image17.png)
+       ![Save Context Root Changes - Fast Method](unity-7-installation-guide/images/image17.png)
     
 13. If you are using IBM Case Manager you will need to configure the Proxy Manager Connection string for Case Manager, complete the following:
     
@@ -392,11 +392,11 @@ To install Unity using the Fast Path method:
     
     d. Edit the targetUri to connect to your IBM Case Manager Installation. The format is `http://<server IP>:<port>/CaseManager/`:
 
-       ![Save IBM Case Manager Proxy connection string – Fast Method](installing-unity-7/images/image18.png)
+       ![Save IBM Case Manager Proxy connection string – Fast Method](unity-7-installation-guide/images/image18.png)
     
     e. Click `OK`, then click `Save`:
  
-       ![Save Context Root Changes - Fast Method](installing-unity-7/images/image17.png)
+       ![Save Context Root Changes - Fast Method](unity-7-installation-guide/images/image17.png)
     
 14. Select the Unity application and click `Start`.
   	
@@ -420,13 +420,13 @@ To install Unity using the Detailed method:
 
 6. Click `Next`:
  
-    ![Preparing for Application Install - Detailed Method](installing-unity-7/images/image12.png)
+    ![Preparing for Application Install - Detailed Method](unity-7-installation-guide/images/image12.png)
     
 7. For `How do you want to install the application?`, select `Detailed` and click `Next`.
 
 8. In the `Select installation options` screen, enter an `Application name` and click `Next`: 
 
-    ![Enter Application Name - Detailed Method](installing-unity-7/images/image14.png)
+    ![Enter Application Name - Detailed Method](unity-7-installation-guide/images/image14.png)
 
 9. Edit the module targets on the `Map modules to servers` screen as needed and click `Next`.
 
@@ -438,17 +438,17 @@ To install Unity using the Detailed method:
 
 13. Edit the targetUri to connect to your IBM Case Manager Installation. The format is `http://<server IP>:<port>/CaseManager/` and click `Next`:
  
-    ![Enter IBM Case Manager Proxy connection string – Detailed Method](installing-unity-7/images/image20.png)
+    ![Enter IBM Case Manager Proxy connection string – Detailed Method](unity-7-installation-guide/images/image20.png)
 
 14. Edit the virtual hosts on the `Map virtual hosts for Web modules` screen as needed and click `Next`.
 
 15. Edit the Context Roots on the `Map context roots for Web modules` screen as needed and click `Next`:
  
-    ![Edit Content Root - Detailed Method](installing-unity-7/images/image21.png)
+    ![Edit Content Root - Detailed Method](unity-7-installation-guide/images/image21.png)
 
 16. Edit the `vSpaceConfigURL` value on the `Map environment entries for Web modules` screen as needed and click `Next`:
  
-    ![Edit the vSpaceConfigURL - Detailed Method](installing-unity-7/images/image22.png)
+    ![Edit the vSpaceConfigURL - Detailed Method](unity-7-installation-guide/images/image22.png)
     
 17. Edit the users and groups on the `Map security roles to users or groups` as needed and click `Next`.
 
@@ -458,7 +458,7 @@ To install Unity using the Detailed method:
 
 20. Review the `Summary` section, then click `Finish` and `Save`:
  
-    ![Review the Install Summary - Detailed Method](installing-unity-7/images/image23.png)
+    ![Review the Install Summary - Detailed Method](unity-7-installation-guide/images/image23.png)
 
 21. Replace the default `jaceXXX.jar` and `peXXX.jar` files in `<installed app>/WEB-INF/lib` with the `FileNet Jace.jar` and `pe.jar files`.
 
@@ -490,23 +490,23 @@ To install Unity for WebLogic:
 
 7. In the `Path` field, enter the file location of the `vu.ear` file:
  
-    ![Enter Location of EAR File](installing-unity-7/images/image24.png)
+    ![Enter Location of EAR File](unity-7-installation-guide/images/image24.png)
     
 8. Select `vu.ear` and click `Next`.
 
 9. Select `Install this deployment as an application` and click `Next`:
  
-    ![Select Application Deployment](installing-unity-7/images/image25.png)
+    ![Select Application Deployment](unity-7-installation-guide/images/image25.png)
     
 10. Edit the `Name` as needed and click `Next`:
  
-    ![Edit Application Name](installing-unity-7/images/image26.png)
+    ![Edit Application Name](unity-7-installation-guide/images/image26.png)
     
 11. Click `Finish`, then `Save`.
 
 12. Review the messages at the top of the page to confirm the updates:
  
-    ![Review Deployment Messages](installing-unity-7/images/image27.png)
+    ![Review Deployment Messages](unity-7-installation-guide/images/image27.png)
     
 13. In the `Domain Structure` section, select `Deployments`.
 
@@ -685,23 +685,23 @@ To install the plug-in:
 
 5. On the Welcome screen, click `Next`:
  
-    ![Begin Office Add-Ins Setup Wizard](installing-unity-7/images/image28.png)
+    ![Begin Office Add-Ins Setup Wizard](unity-7-installation-guide/images/image28.png)
 
 6. On the `Select Installation Folder` screen, enter the folder you just used to unzip the `VU_Office_Integration.zip` file and click `Next`:
  
-    ![Select Office Add-In Installation Folder](installing-unity-7/images/image29.png)
+    ![Select Office Add-In Installation Folder](unity-7-installation-guide/images/image29.png)
     
 7. On the `Confirm Installation` window, click `Next`:
  
-    ![Confirm Office Add-In Installation](installing-unity-7/images/image30.png)
+    ![Confirm Office Add-In Installation](unity-7-installation-guide/images/image30.png)
     
 8. Click `Yes`:
  
-    ![Confirm User Account Control](installing-unity-7/images/image31.png)
+    ![Confirm User Account Control](unity-7-installation-guide/images/image31.png)
 
 9. On the `Installation Complete` click `Close`:
  
-    ![Confirm Office Add-In Installation Complete](installing-unity-7/images/image32.png)
+    ![Confirm Office Add-In Installation Complete](unity-7-installation-guide/images/image32.png)
 
 10. Restart Windows if the message `Please restart Windows after Installation` appears during installation, otherwise it should work right away.
 
@@ -723,11 +723,11 @@ To remove the plug-in:
 
 2. Select  `Unity Office Add-Ins`:
  
-    ![Select Office Add-In for Removal](installing-unity-7/images/image33.png)
+    ![Select Office Add-In for Removal](unity-7-installation-guide/images/image33.png)
     
 3. Click `Uninstall`, then click `Yes`:
  
-    ![Confirm Removal of Office Add-In](installing-unity-7/images/image34.png)
+    ![Confirm Removal of Office Add-In](unity-7-installation-guide/images/image34.png)
 	
 ## Troubleshooting
 
@@ -739,15 +739,15 @@ To remove the plug-in:
      
     The exact path may depend on Windows version and can be found in System Configuration (`msconfig`):
  
-    ![System configuration](installing-unity-7/images/image35.png)
+    ![System configuration](unity-7-installation-guide/images/image35.png)
     
     This registry key has a path to `UnityServerApp.exe` as a value:
      
-    ![Registry key](installing-unity-7/images/image36.png)
+    ![Registry key](unity-7-installation-guide/images/image36.png)
     
     It allows automatically start UnityServerApp on Windows startup. This application works in background:
      
-    ![Process in Task Manager](installing-unity-7/images/image37.png)
+    ![Process in Task Manager](unity-7-installation-guide/images/image37.png)
     
     For IE old algorithm is used (for backward-compatibility). It creates ActiveX object which allow to invoke functions inside DLL. If error happens on ActiveX object creation, new algorithm will be used.
 
@@ -759,11 +759,11 @@ To remove the plug-in:
 
     c. In the bottom of Options pop-up in Manage drop-down select `COM Add-ins` and click `Go`:
  
-      ![COM Add-ins](installing-unity-7/images/image38.png)
+      ![COM Add-ins](unity-7-installation-guide/images/image38.png)
     
     d. Make `Unity Add-in` enabled and click `OK`:
         
-      ![Add-Ins tab](installing-unity-7/images/image39.png)
+      ![Add-Ins tab](unity-7-installation-guide/images/image39.png)
 	
 # Install the User Audit Module	
 
@@ -895,7 +895,7 @@ To install it as a standalone module:
 
 9. Select your Unity application and click `Update`:
 
-    ![Update Unity Application with Audit Module](installing-unity-7/images/image40.png)
+    ![Update Unity Application with Audit Module](unity-7-installation-guide/images/image40.png)
 
 10. Select `Replace or add a single file`.
 
@@ -903,7 +903,7 @@ To install it as a standalone module:
 
 12. Click Choose File and select the updated `web.xml` file:
  
-    ![Select the Updated web.xml File](installing-unity-7/images/image40.png)
+    ![Select the Updated web.xml File](unity-7-installation-guide/images/image40.png)
 
 13. Save your changes and start the application.
 	
@@ -1073,11 +1073,11 @@ Execute the following script for UCM database or create a separate DB (jdbc/ucm 
 
 The following items should be configured at application server when using jBPM platform:
 
-1. JBPM database data source. 
+- jBPM database data source 
  
    JNDI name: `jdbc/ucm-jbpm`. This is the actual jBPM application database. The database is used by Unity Case/Work Items query service search.
 
-2. Documents links / annotations data source.  
+- Documents links / annotations data source  
  
    JNDI name: `jdbc/ucm`. The UCM stores the document links (for some of document link strategies) and annotations here.
 
@@ -1085,11 +1085,10 @@ Two above data sources can point to the same jBPM database if this database also
 
 Alternatively, the database layout can include two separate databases: 
 
-1. jBPM database (patched with UCM SQL DDL scripts in order to enable UCM query service for cases/work items/tasks).
-
-2. UCM database (UCM document links and annotations). 
+- jBPM database (patched with UCM SQL DDL scripts in order to enable UCM query service for cases/work items/tasks)
+- UCM database (UCM document links and annotations) 
  
-![Datasources configuration WebSphere example](installing-unity-7/images/image42.png)
+![Datasources configuration WebSphere example](unity-7-installation-guide/images/image42.png)
 
 ## Login module configuration
 
@@ -1148,7 +1147,7 @@ The Unity web application configuration has been extended with three new UCM spe
 - `ucmKeyStoreKey` – the UCM key store password (default value: `_default_ucm_ks_pwd`)
 - `ucmKeyAliasKey` – the `ucmUserIdentity` alias password (default value: `_default_ucm_alias_pwd`)
  
-![Login module configuration](installing-unity-7/images/image43.png)
+![Login module configuration](unity-7-installation-guide/images/image43.png)
 
 ### WebLogic or JBoss configuration
 

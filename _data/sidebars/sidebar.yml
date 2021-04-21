@@ -108,10 +108,10 @@ entries:
                 url: /docs/unity-extjs/installation/system-requirements/
                 id: unity-extjs-installation-system-requirements
 
-              - title: Installing Unity 7
+              - title: Unity 7 Installation Guide
                 output: web
-                url: /docs/unity-extjs/installation/installing-unity-7/
-                id: unity-extjs-installation-installing-unity-7
+                url: /docs/unity-extjs/installation/unity-7-installation-guide/
+                id: unity-extjs-installation-unity-7-installation-guide
 
           - title: Configuration
             output: web, pdf
@@ -292,10 +292,10 @@ entries:
                 url: /docs/unity-react/installation/system-requirements/
                 id: unity-react-installation-system-requirements
 
-              - title: Installing Unity 7
+              - title: Unity 7 Installation Guide
                 output: web
-                url: /docs/unity-react/installation/installing-unity-7/
-                id: unity-react-installation-installing-unity-7
+                url: /docs/unity-react/installation/unity-7-installation-guide/
+                id: unity-react-installation-unity-7-installation-guide
 
           - title: Configuration
             output: web, pdf
