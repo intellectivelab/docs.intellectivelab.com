@@ -707,7 +707,7 @@ To install the plug-in:
 
 11. Open Microsoft Office Word, Excel, PowerPoint, Outlook and check that toolbar contains a new Unity tab.
 
-## Activex adjustment	
+## ActiveX adjustment	
 
 1. From the menu bar, select `Internet Options > Security > Trusted Sites`.
 
