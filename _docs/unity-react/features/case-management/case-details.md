@@ -5,7 +5,8 @@ category: Unity 7
 ---
 # Description
 
-*content to be added*
+Case details screen displays case data structured according layout/fieldset configuration as well as attached to the case documents, case history, comments and other possible relevant data.
+Case details screen can be opened either in the same browser window in `dialog` or `sidebar` variants or in a separate browser tab.
 
 # How to Use Case Details
 
@@ -17,5 +18,5 @@ To open Case Details from the grid:
 
 # Configuration
 
-Case details action configuration  *link to be added*  
+[Open a case details action configuration](../../configuration/actions/open-case.md)  
 [Open in separate tab action configuration](../../configuration/actions/open-in-separate-tab.md)

@@ -68,11 +68,13 @@ Choose the action from the list below to find specific options for it.
 ## Case related actions
 
 - [Create Case](actions/create-case.md)
+- [Copy Case](actions/copy-case.md)
 - [Split Case](actions/split-case.md)
 - [Delete Case](actions/delete-case.md)
 - [Attach Document](actions/attach-document.md)
 - [Attach Existing Documents](actions/attach-existing-documents.md)
 - [Detach Document](actions/detach-document.md)
+- [Open Case Details](actions/open-case.md)  
 - [Open Case In Separate Tab](actions/open-in-separate-tab.md)
 
 ## Workitem related actions
