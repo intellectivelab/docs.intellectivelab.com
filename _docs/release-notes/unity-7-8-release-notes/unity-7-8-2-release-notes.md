@@ -41,8 +41,8 @@ The following stories were implemented in the Unity 7.8.2 release. The ID and De
 | PR-87   | REACT - Action and Folder Tree View Visibility                                                                                                    |
 | PR-88   | REACT - FolderPath Attribute                                                                                                                      |
 | PR-108  | REACT - Role Selection                                                                                                                            |
-| PR-147  | Lookup control doesn't show any values in Reactv                                                                                                  |
-| PR-100  | Unity REST API for split case needs to return infomation about created case after split                                                           |
+| PR-147  | Lookup control doesn't show any values in React                                                                                                  |
+| PR-100  | Unity REST API for split case needs to return information about created case after split                                                           |
 | PR-117  | JSON selector on React form always returns first 20 items                                                                                         |
 | PR-161  | User not able to type or paste file location to Attach document for ePermit application                                                           |
 | PR-114  | Client data in sample configs for Interchange                                                                                                     |
@@ -75,7 +75,7 @@ The following issues were resolved in the Unity 7.8.0 release. The ID and Descri
 | PR-105  | Error icon does not display properly in Chrome                                                                                                    |
 | U7-4785 | UIE: SharePoint connector - for some item Modified@s field is crawled instead of Modified@d                                                       |
 | PR-110  | Leave blank option in drop down causes errors in different scenarios                                                                              |
-| U7-4414 | Fix Povider's SearchLimit option                                                                                                                  |
+| U7-4414 | Fix Provider's SearchLimit option                                                                                                                  |
 | PR-90   | REACT - Create Case Submit Handler - Reject is not working in the latest release                                                                  |
 | U7-4076 | Folders View - Add horizontal scrolling                                                                                                           |
 | U7-3682 | Ability to configure UIE grid without SharePoint specific required fields                                                                         |
@@ -123,7 +123,7 @@ The following issues were resolved in the Unity 7.8.0 release. The ID and Descri
 | PR-148  | Field validation passed for the empty field (React)                                                                                               |
 | PR-119  | Selector on React form does not handle exception gracefully                                                                                       |
 | U7-4923 | [U4SP] The search result = 0 didn't display "No result" sign.                                                                                     |
-| PR-157  | Search panel is not working on both Internal and External REACT .                                                                                 |
+| PR-157  | Search panel is not working on both Internal and External REACT                                                                                 |
 | U7-4496 | React Forms UI: Hidden field data should be cleaned up                                                                                            |
 | U7-4937 | Field validation passed for the empty field (React)                                                                                               |
 | U7-4943 | Lookup control doesn't show any values in React                                                                                                   |
@@ -152,7 +152,7 @@ The following issues were resolved in the Unity 7.8.0 release. The ID and Descri
 | U7-5066 | React: Read-only fields in the form doesn't display any data                                                                                      |
 | U7-5619 | Modified By contains value p8admin2_sp though no one documents aren't displayed in the grid for                                                   |
 | U7-3710 | ExtJS: Lookup dialog is closed immediately after displaying                                                                                       |
-| U7-5516 | Copy to action doesn't work if folder contains apostrof                                                                                           |
+| U7-5516 | Copy to action doesn't work if folder contains apostrophe                                                                                           |
 | U7-5060 | Unity UI Forms: Form Table headers are displayed incorrectly when the length of the header is long                                                |
 | U7-5607 | UrlJsonSelector Query Context support                                                                                                             |
 | U7-5571 | Ucm: support OOTB comments and history entities                                                                                                   |
@@ -162,7 +162,7 @@ The following issues were resolved in the Unity 7.8.0 release. The ID and Descri
 | PR-241  | Documents are not displayed on case " Documents" tab                                                                                              |
 | U7-5581 | Selectors in create Documents view is throwing an error                                                                                           |
 | U7-5021 | Add user friendly message while concurrent access                                                                                                 |
-| U7-5576 | Make it possible not to use UcmCaseExternalLink with ucmIcmDefault startegy                                                                       |
+| U7-5576 | Make it possible not to use UcmCaseExternalLink with ucmIcmDefault strategy                                                                       |
 | U7-5087 | ExtJS: The latest document version should be used to display/download content at case attachments tab                                             |
 | U7-5681 | Remove "file" parameter from checkin document link                                                                                                |
 | U7-5703 | ExtJS: UCM Documents tab throws an error on loading                                                                                               |
