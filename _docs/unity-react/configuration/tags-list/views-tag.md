@@ -130,6 +130,8 @@ Custom parameters section should contain following parameters:
 
 - [Create case](../actions/create-case.md)
 - [Split case](../actions/split-case.md)
+- [Case details](../actions/case-details.md)
+- [Copy case](../actions/copy-case.md)
 - *actions to be added*
 
 ## Tabs section configuration for case actions
