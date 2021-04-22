@@ -41,10 +41,7 @@ refreshed.
 
 # Configuration
 
-[Case attachments search template configuration](../../configuration/search-templates/case-attachments.md)
-
-[Attach local document action configuration](../../configuration/actions/attach-document.md)
-
-[Attach existing documents action configuration](../../configuration/actions/attach-existing-documents.md)
-
-[Detach action configuration](../../configuration/actions/detach-document.md)
+[Case attachments search template configuration](../../configuration/search-templates/case-attachments.md)  
+[Attach local document action configuration](../../configuration/actions/attach-document.md)  
+[Attach existing documents action configuration](../../configuration/actions/attach-existing-documents.md)  
+[Detach action configuration](../../configuration/actions/detach-document.md)  

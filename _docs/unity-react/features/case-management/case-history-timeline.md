@@ -5,7 +5,7 @@ category: Unity 7
 ---
 # Overview
 
-Each case has timeline comments. The table below shows the type of each comment.
+Each case has timeline comments shown on the [History/Comments tab](history-comments-tab.md). The table below shows the type of each comment.
 Each type has corresponding icon except `CASE UPDATED` and `TASK CREATED` ones.
 Please note that instead of `ID` in each template, you'll see actual ID.
 
@@ -39,7 +39,6 @@ Please note that instead of `ID` in each template, you'll see actual ID.
 - Click on `Historical timeline` icon:
 
     ![case-created](case-history-timeline/images/historical-timeline.png)
-
 
 # Configuration
 

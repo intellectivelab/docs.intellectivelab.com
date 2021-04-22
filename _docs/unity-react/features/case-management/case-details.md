@@ -23,22 +23,14 @@ Case Details opened:
 
 ![case-details](case-details/images/case-details.png)
 
-Case Details view can be configured to have multiple tabs: Properties tab, Attachments tabs, Comments/History tab and others.
-
-## Properties tab
+Case Details view can be configured to have multiple tabs: 
+- Properties tab
+- [Attachments tab](case-attachments.md)
+- [History/Comments tab](history-comments-tab.md)
+- other
 
 Properties tab is shown by default when opening case details.  
 User can edit case properties and save changes by clicking `Save` button.
-
-## Attachments tabs
-
-*content to be added*
-
-## Comments/History tab
-
-![history-comments-tab](copy-case/images/history-comments-tab.png)
-
-*content to be added*
 
 # Configuration
 
