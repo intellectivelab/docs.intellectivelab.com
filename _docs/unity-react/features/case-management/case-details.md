@@ -27,7 +27,7 @@ Case Details view can be configured to have multiple tabs:
 - Properties tab
 - [Attachments tab](case-attachments.md)
 - [History/Comments tab](history-comments-tab.md)
-- other
+- Tasks tab
 
 Properties tab is shown by default when opening case details.  
 User can edit case properties and save changes by clicking `Save` button.
