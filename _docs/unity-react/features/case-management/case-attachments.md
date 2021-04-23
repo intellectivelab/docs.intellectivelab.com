@@ -20,8 +20,7 @@ it may have Folder View with case folder structure on the right side.
 
 2 types of attach actions are available from the grid toolbar:
 
-- [Attach a Local Document](./attach-document.md)
-
+- [Attach a Local Document](./attach-document.md)  
 - [Attach an Existing Document](./attach-existing-document.md) 
 
 # Detach
