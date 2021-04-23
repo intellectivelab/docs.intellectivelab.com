@@ -209,6 +209,11 @@ entries:
                 url: /docs/unity-react/features/process-management/
                 id: unity-react-features-process-management
 
+              - title: Folder Management
+                output: web
+                url: /docs/unity-react/features/folder-management/
+                id: unity-react-features-folder-management
+
               - title: Enterprise Search
                 output: web
                 url: /docs/unity-react/features/enterprise-search/
