@@ -34,13 +34,21 @@ Criteria section can contain a set of `Criterion`s to be used for rendering crit
 
 *content to be added*
 
-# Quick Search Criteria
+## Quick Search criteria
+
+[Quick Search feature description](../components/search-template/quick-search.md)
+
+Quick Search feature appears when at least one search template criterion is marked as `QuickSearch`.
+
+- Date range section appears when at least one `date/datetime` type criterion is marked as `QuickSearch`
+- Text input section appears when at least one `string` type criterion is marked as `QuickSearch`
+- Choices and categories section appears when at least one `selector` type criterion is marked as `QuickSearch`  
 
 | Parameter | Value|
 |:----------|:-----|
 |`QuickSearch` |`[true|false]` |
 
-Set `true` to use criterion in the quick search. If it's not specified, the default value is `false`.
+Set `true` to use criterion in the Quick Search. If it's not specified, the default value is `false`.
 
 Example:
 

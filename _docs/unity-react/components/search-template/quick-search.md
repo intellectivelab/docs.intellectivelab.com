@@ -1,13 +1,13 @@
 ---
-title: Unity Components - Quick Search
+title: Quick Search Feature
 layout: docs
 category: Unity 7
 ---
 # Description
 
-Quick search feature allows quickly filter the data in the grid.
+Quick Search feature allows quickly filter the data in the grid.
 
-The Quick search panel can include the following sections:
+The Quick Search panel can include the following sections:
 
 - Date range section
 - Text input section
@@ -15,21 +15,28 @@ The Quick search panel can include the following sections:
 
 ![Quick Search](quick-search/images/quick_search.png)
 
-# How to enable Quick search
+# How to Use Quick Search
 
-Quick search feature appears when at least one search template criterion is marked as `QuickSearch`.
+## Date range section
 
-- Date range section appears when at least one **date**/**datetime** criterion is marked as `QuickSearch`.
+Click on `Choose Range` and select date option:
+    
+![Quick Search Date Range](quick-search/images/quick_search_date_range.png)
 
-    ![Quick Search Date Range](quick-search/images/quick_search_date_range.png)
+## Text input section
 
-- Text input section appears when at least one **string** criterion is marked as `QuickSearch`.
+Type in the word or phrase to search for in search box. 
+Click `Search` icon or press `Enter` on a keyboard to execute search:
 
-    ![Quick Search Text Input](quick-search/images/quick_search_text_input.png)
+![Quick Search Text Input](quick-search/images/quick_search_text_input.png)
 
-- Choices and categories section appears when at least one **selector** criterion is marked as `QuickSearch`.
+## Choices and categories section
 
-    ![Quick Search Selector](quick-search/images/quick_search_selector.png)
+Click on the dropdown arrow to the right of search box and select what category you want to display:
+
+![Quick Search Selector](quick-search/images/quick_search_selector.png)
+
+Selected categories appear on Quick Search panel, and you can use them for searching.
 
 # Configuration
 
