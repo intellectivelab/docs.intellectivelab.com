@@ -12,7 +12,7 @@ category: Unity 7
 - Ability to link multiple search templates 
 - Fuzzy search
 - Enterprise search 
-- Quick search (date ranges, text input, choices, and categories)
+- [Quick search (date ranges, text input, choices and categories)](search-template/quick-search.md)
 - [Recent view history](search-template/recent-view-history.md)
 - Data export 
 - Skimming view

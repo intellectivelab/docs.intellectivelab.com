@@ -34,6 +34,33 @@ Criteria section can contain a set of `Criterion`s to be used for rendering crit
 
 *content to be added*
 
+# Quick Search Criteria
+
+| Parameter | Value|
+|:----------|:-----|
+|`QuickSearch` |`[true|false]` |
+
+Set `true` to use criterion in the quick search. If it's not specified, the default value is `false`.
+
+Example:
+
+```xml
+<SearchTemplate ID="document_Search_Documents">
+    <Criteria>
+        <Criterion>
+            <FieldName>DocumentTitle</FieldName>
+            <Type>string</Type>
+            <Operator>starts</Operator>
+            <Required>false</Required>
+            <Hidden>false</Hidden>
+            <Readonly>false</Readonly>
+            <MultiValue>false</MultiValue>
+            <QuickSearch>true</QuickSearch>
+        </Criterion>
+    </Criteria>
+</SearchTemplate>
+```
+
 # Grouping Criteria
 
 *content to be added*
