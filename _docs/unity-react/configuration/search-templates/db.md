@@ -1,9 +1,9 @@
 ---
-title: Search Templates Configuration - DB (DBRepositoryDataProvider)
+title: Search Templates Configuration - Database (DBRepositoryDataProvider)
 layout: docs
 category: Unity 7
 ---
-[DBRepositoryDataProvider for Search Template component description](../../components/search-template/supported-data-providers/dbrepository-data-provider.md)
+[DBRepositoryDataProvider for Search Template component description in Unity React](../../components/search-template/supported-data-providers/dbrepository-data-provider.md)
 
 Example of configuration:
 

@@ -57,6 +57,7 @@ Example:
 ## Property Name Mapping
 
 `PropertyNameMapper` section defines how field names in target repository mapped to Unity property name:  
+
 ```xml
 <RepositoryDataProviders>
     <RepositoryDataProvider ID="sharepoint_repository"
@@ -75,3 +76,4 @@ Example:
 |`Mapping/@external`| Property name in Unity configuration|
 |`Mapping/@internal`| Property (field, column) name in target repository|
 
+Each property must be defined before it can be used in the property mapping. See [Properties configuration](tags-list/properties-tag.md) for details.

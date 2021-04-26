@@ -61,6 +61,7 @@ The LDAP data provider requires configuring repository data provider of `com.int
 The LDAP data provider supports standard [PropertyNameMapper](../repository-data-providers.md#property-name-mapping) section configuration.  
 
 For example:
+
 ```xml
 ...
     <RepositoryDataProviders>

@@ -16,4 +16,4 @@ Click on grid row doesn't open record view since no row actions are available:
 
 # Configuration
 
-[DBRepositoryDataProvider Configuration](../../../configuration/search-templates/db.md)
+[Search Template configuration for Database repository data provider](../../../configuration/search-templates/db.md)
