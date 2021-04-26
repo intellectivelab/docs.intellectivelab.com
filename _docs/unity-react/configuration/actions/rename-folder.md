@@ -19,7 +19,7 @@ For `Rename` folder action following section should be added to the Unity System
 </Action>
 ```
 
-`Rename Folder` action custom configuration parameters:
+`Rename` folder action custom configuration parameters:
 
 | Parameter   | Description |
 |:------------|:------------|

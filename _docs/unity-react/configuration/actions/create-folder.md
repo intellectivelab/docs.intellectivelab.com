@@ -5,8 +5,6 @@ category: Unity 7
 ---
 [Create a Folder feature description](../../features/folder-management/create-folder.md)
 
-# Custom Parameters
-
 For `Create folder` action following section should be added to the Unity System XML file:
  
 ```xml

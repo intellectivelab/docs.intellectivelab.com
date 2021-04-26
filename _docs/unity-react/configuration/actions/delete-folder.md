@@ -3,7 +3,7 @@ title: Delete Folder Action Configuration
 layout: docs
 category: Unity 7
 ---
-[Delete Folder feature description](../../features/folder-management/delete-folder.md)
+[Delete a Folder feature description](../../features/folder-management/delete-folder.md)
 
 For `Delete` folder action following section should be added to the Unity System XML file:
  
