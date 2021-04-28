@@ -6,7 +6,7 @@ category: Unity 7
 # Description
 
 `Attach existing documents` action allows linking document(-s) from different data providers to selected case. 
-This type of action can be added on `Attachments` tab on a grid toolbar and will be rendered as a separate button 
+This type of action can be added on [Case Attachments](case-attachments.md) tab on a grid toolbar and will be rendered as a separate button 
 (if only one attach action is bound to the grid) or a dropdown (in case grid contains 2 or more actions with 
 `ActionType` custom parameter = `attach`).
 
@@ -14,7 +14,7 @@ This type of action can be added on `Attachments` tab on a grid toolbar and will
 
 # How to Attach a Document(-s)
 
-- Open case for edit and switch to one of `Attachments` tab 
+- Open [Case Details](case-details.md#how-to-use-case-details) and switch to one of `Attachments` tab 
 
 - Click `Attach` action on a grid toolbar and select an action: 
 

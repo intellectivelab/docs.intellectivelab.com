@@ -20,8 +20,7 @@ it may have Folder View with case folder structure on the right side.
 
 2 types of attach actions are available from the grid toolbar:
 
-- [Attach a Local Document](./attach-document.md)
-
+- [Attach a Local Document](./attach-document.md)  
 - [Attach an Existing Document](./attach-existing-document.md) 
 
 # Detach
@@ -41,10 +40,7 @@ refreshed.
 
 # Configuration
 
-[Case attachments search template configuration](../../configuration/search-templates/case-attachments.md)
-
-[Attach local document action configuration](../../configuration/actions/attach-document.md)
-
-[Attach existing documents action configuration](../../configuration/actions/attach-existing-documents.md)
-
-[Detach action configuration](../../configuration/actions/detach-document.md)
+[Case attachments search template configuration](../../configuration/search-templates/case-attachments.md)  
+[Attach local document action configuration](../../configuration/actions/attach-document.md)  
+[Attach existing documents action configuration](../../configuration/actions/attach-existing-documents.md)  
+[Detach action configuration](../../configuration/actions/detach-document.md)  
