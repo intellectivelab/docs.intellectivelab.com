@@ -29,7 +29,7 @@ After requesting your Unity Pre-Configured SharePoint Demo instance, the request
 
 # Unity User Interface Overview
 
-When a user signs into Unity the default behavior is to display a list of [Favorite](#favorites) files, which are files the user has tagged as a Favorite. 
+When a user signs into Unity the default behavior is to display a list of [Favorite](#favorites) files, which are files the user has tagged as Favorites. 
 For the Pre-Configured SharePoint Demo, a short list of files has been tagged as Favorites.
 
 ## Folder View
@@ -298,6 +298,8 @@ This URL provides a fast means of sharing the document with other users, without
 Click `Copy` to copy the URL to your clipboard, then paste (Ctrl-V) to paste the link into an email, message, document, or other location.
 
 You can optionally select to limit the number of people who can access the link.  Select `Specific People` from the menu and choose the people that you want to access the document via the link. 
+
+|**NOTE**: Safari does not support automatic copying. The expected behavior in Safari browser is that the user copies the link manually.
 
 #### Download
 

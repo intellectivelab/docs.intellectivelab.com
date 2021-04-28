@@ -111,6 +111,9 @@ Non Office document context menu contains all these actions except `Open in app`
 
     `Copy link` can be configured only for specific users.
     
+    |**NOTE**: Safari does not support automatic copying. The expected behavior in Safari browser is that the user copies the link manually.
+
+    
 - `Download`: to download selected documents without changes in format
 - `Delete`: to delete a document from indices and repository
 - `Rename`: to change Document Title without opening Document Details View:
