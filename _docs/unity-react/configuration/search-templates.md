@@ -34,6 +34,41 @@ Criteria section can contain a set of `Criterion`s to be used for rendering crit
 
 *content to be added*
 
+## Quick Search criteria
+
+[Quick Search feature description](../components/search-template/quick-search.md)
+
+Quick Search feature appears when at least one search template criterion is marked as `QuickSearch`.
+
+- Date range section appears when at least one `date/datetime` type criterion is marked as `QuickSearch`
+- Text input section appears when at least one `string` type criterion is marked as `QuickSearch`
+- Choices and categories section appears when at least one `selector` type criterion is marked as `QuickSearch`  
+
+| Parameter | Value|
+|:----------|:-----|
+|`QuickSearch` |`[true|false]` |
+
+Set `true` to use criterion in the Quick Search. If it's not specified, the default value is `false`.
+
+Example:
+
+```xml
+<SearchTemplate ID="document_Search_Documents">
+    <Criteria>
+        <Criterion>
+            <FieldName>DocumentTitle</FieldName>
+            <Type>string</Type>
+            <Operator>starts</Operator>
+            <Required>false</Required>
+            <Hidden>false</Hidden>
+            <Readonly>false</Readonly>
+            <MultiValue>false</MultiValue>
+            <QuickSearch>true</QuickSearch>
+        </Criterion>
+    </Criteria>
+</SearchTemplate>
+```
+
 # Grouping Criteria
 
 *content to be added*

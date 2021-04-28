@@ -7,12 +7,12 @@ category: Unity 7
 
 - Grid
 - Search criteria 
+- [Quick search (date ranges, text input, choices and categories)](search-template/quick-search.md)
 - Folder view 
 - Ability to bundle multiple search templates 
 - Ability to link multiple search templates 
 - Fuzzy search
 - Enterprise search 
-- Quick search (date ranges, text input, choices, and categories)
 - [Recent view history](search-template/recent-view-history.md)
 - Data export 
 - Skimming view
