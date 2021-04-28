@@ -81,6 +81,13 @@ Choose the action from the list below to find specific options for it.
 
 - [Open Workitem In Separate Tab](actions/open-in-separate-tab.md)
 
+## Folder related actions
+
+- [Create Folder](actions/create-folder.md)
+- [Rename Folder](actions/rename-folder.md)
+- [Delete Folder](actions/delete-folder.md)
+
+
 ## Other actions
 
 - [Open by URL](actions/open-by-url.md)

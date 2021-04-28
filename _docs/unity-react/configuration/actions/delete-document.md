@@ -3,7 +3,7 @@ title: Delete Document Action Configuration
 layout: docs
 category: Unity 7
 ---
-[Delete Document feature description](../../features/document-management/delete-document.md)
+[Delete a Document feature description](../../features/document-management/delete-document.md)
 
 For `Delete` document action following section should be added to the Unity System XML file:
  

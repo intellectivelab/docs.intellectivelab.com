@@ -5,7 +5,7 @@ category: Unity 7
 ---
 # Description
 
-`Delete` document action allows to delete a document from repository data provider. It can be executed from grid 
+`Delete` document action allows to delete a document from repository. It can be executed from grid 
 context-menu or `Properties` tab of `Document Details` page. 
 
 *content to be added*
