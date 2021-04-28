@@ -277,3 +277,70 @@ Available custom parameters:
 # Work Items
 
 *content to be added*
+
+# Folders
+
+## Folder actions with view
+
+- [Create folder](../actions/create-folder.md)
+
+## Tabs section configuration for folder actions
+
+To create a view for folder action, following tag should be added to solution configuration file:
+
+```xml
+<Tabs FolderType="*" EnableSaveButton="true" EnableCloseButton="true">
+  <!-- list of particular tabs -->
+</Tabs>
+```
+
+`Tabs` tag should be placed inside the following section:
+
+| Section                            | Action types |
+|:-----------------------------------|:-------------|
+| `Views` -> `Folders` -> `Create`   | create       |
+
+Tabs section attributes:
+
+| Attribute    | Description |
+|:-------------|:------------|
+| FolderType   | The name of concrete resource type view is created for |
+| Scope        | Optional. The repository data provider id. No need to specify this parameter if FolderType belongs to one data provider |
+
+In general Tabs section may contain one or more `Tab` tags, but for `Folder` resource it most likely will contain only `Details` tab.  
+
+For example:
+
+```xml
+<Views>
+    <Folders>
+        <Create>
+            <Tabs FolderType="*" EnableSaveButton="true" EnableCloseButton="true">
+                <Tab ID="1" Type="Details" Label="Default Folder Properties" Tooltip="Default Folder Properties" FieldSet="Folder_Create">
+                    <Tools/>
+                </Tab>
+            </Tabs>
+        </Create>
+    </Folders>
+</Views>
+```
+
+### Properties tab
+
+Example of `Properties` tab configuration:
+
+```xml
+<Tab ID="1" Type="Details" Label="Default Folder Properties" Tooltip="Default Folder Properties" FieldSet="Folder_Create">
+    <Tools/>
+</Tab>
+```
+
+| Attribute | Description         |
+|:----------|:--------------------|
+| Type      | `Details` (tab type)|
+| ID        | Tab identifier      |
+| Label     | Tab label           |
+| FieldSet  | Fieldset identifier |
+
+
+See [FieldSets tag](./fieldsets-tag.md) for information on field sets configuration.
