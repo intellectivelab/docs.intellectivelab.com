@@ -110,8 +110,8 @@ Non Office document context menu contains all these actions except `Open in app`
     ![Copy Link](u8-release-notes/images/copy_link.png)
 
     `Copy link` can be configured only for specific users.
-  
-  NOTE: Safari does not support automatic copying. The expected behavior in Safari browser is that the user copies the link manually.
+    
+    |**NOTE**: Safari does not support automatic copying. The expected behavior in Safari browser is that the user copies the link manually.
 
     
 - `Download`: to download selected documents without changes in format
