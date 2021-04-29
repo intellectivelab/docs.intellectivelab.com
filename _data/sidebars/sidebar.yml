@@ -427,15 +427,15 @@ entries:
                 url: /docs/unity-salesforce/installation/creating-managed-package/
                 id: unity-salesforce-installation-creating-managed-package
 
-              - title: Global Components Setup Guide
-                output: web
-                url: /docs/unity-salesforce/installation/global-components-setup-guide/
-                id: unity-salesforce-installation-global-components-setup-guide
-
           - title: Configuration
             output: web, pdf
             id: unity-salesforce-configuration
             subfolders:
+              - title: Global Components Setup Guide
+                output: web
+                url: /docs/unity-salesforce/configuration/global-components-setup-guide/
+                id: unity-salesforce-configuration-global-components-setup-guide
+
               - title: Grids
                 output: web
                 url: /docs/unity-salesforce/configuration/grids/
