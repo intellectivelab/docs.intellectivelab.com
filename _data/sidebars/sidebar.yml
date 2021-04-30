@@ -297,6 +297,11 @@ entries:
                 url: /docs/unity-react/configuration/basic-steps/
                 id: unity-react-configuration-basic-steps
 
+              - title: Cases
+                output: web
+                url: /docs/unity-react/configuration/cases/
+                id: unity-react-configuration-cases
+
               - title: Grids
                 output: web
                 url: /docs/unity-react/configuration/grids/
