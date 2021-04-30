@@ -1,7 +1,17 @@
 ---
-title: Cases history and comments configuration
+title: Case auditing configuration
 ---
 [Dashboard Component description](../configuration/cases.md)
+# Description 
+You can configure auditing object classes including tracking case history and comments.
+Unity allows to do it through the default IBM Case Manager CmAcmCaseComment class and provided Unity custom class.
+
+# What to use
+If there is no permission to create FileNet custom classes, then default CmAcmCaseComment is the only option.
+Please note that, there is no visible difference on UI side between default CmAcmCaseComment class and Unity custom solution. Both options have the same capabilities.
+
+# Prerequisites
+Installed IBM Case Manager
 
 # Configuration steps
 
@@ -209,10 +219,10 @@ Use the eventTitle, eventDate or eventActor properties at the case history grid'
 
 # Solution configuration
 
-Put `CmAcmCommentText` field at the `Case_Comment` fieldset:
+FieldSet is to customize what kind of comments user can leave. You can specify it on the FileNet side. 
+By default, `CmAcmCommentText` is included on FileNet, and you can add it to the `Case_Comment` fieldset:
 
 ```xml
-
 <FieldSet ID="Case_Comment">
     <Field ID="CmAcmCommentText" Label="Comment" Required="true" Row="1" Column="1" MultiRow="true"/>
 </FieldSet>
