@@ -6,7 +6,7 @@ category: Unity 7
 
 # Description 
 You can configure auditing object classes including tracking case history and comments.
-Unity allows to do it either through the default IBM Case Manager `CmAcmCaseComment` class or provided Unity custom class.
+Unity allows to do it through the default IBM Case Manager `CmAcmCaseComment` class and provided Unity custom class.
 
 If there is no permission to create FileNet custom classes, then default `CmAcmCaseComment` class is the only option.
 There is no visible difference on UI side between default `CmAcmCaseComment` class and Unity custom solution. Both options have the same capabilities.
@@ -18,9 +18,8 @@ Installed IBM Case Manager.
 
 ## Configuration steps
 
-To use OOTB ICM `CmAcmCaseComment` class for case audit logging and user comments instead of `Audit` and `UserComment` Unity custom classes. Please do the following steps:
-
-1. Add `publicApi.forceNativeIcmAuditMode` Unity system boolean property with true value. Its default value is false.
+1. Add `publicApi.forceNativeIcmAuditMode` Unity system boolean property with `true` value. Its default value is false. 
+    Setting this property to `true` forces Unity Public API related case audit/history code to use ICM OOTB `CmAcmCaseComment` class for case audit logging and user comments instead of `Audit` and `UserComment` Unity custom classes.
     
     ```xml
     
