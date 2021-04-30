@@ -18,6 +18,8 @@ Installed IBM Case Manager.
 
 ## Configuration steps
 
+### Unity configuration xml file
+
 1. Add `publicApi.forceNativeIcmAuditMode` Unity system boolean property with `true` value. Its default value is false. 
     Setting this property to `true` forces Unity Public API related case audit/history code to use ICM OOTB `CmAcmCaseComment` class for case audit logging and user comments instead of `Audit` and `UserComment` Unity custom classes.
     
@@ -219,7 +221,7 @@ Installed IBM Case Manager.
     
     ```
 
-## Solution configuration
+### Solution configuration xml file
 
 FieldSet allows to customize what kind of comments user can leave. You can specify it on the FileNet side. 
 By default, `CmAcmCommentText` is included on FileNet, and you can add it to the `Case_Comment` FieldSet:
