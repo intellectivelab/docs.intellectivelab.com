@@ -12,27 +12,27 @@ category: Unity 7
 
 Dashboard container component serves as a container for UI components and as away of grouping components.
 
-On `React UI` application open `Analytics UI` tab and discover available daschboards:
+On `React UI` application open `Analytics UI` tab, expand sidebar and discover available dashboards:
 
-[![Dashboards](unity-7.8-user-guide/images/Dashboard.gif)](unity-7.8-user-guide/images/Dashboard.gif)
+[![Dashboards](unity-7.8-user-guide/images/dashboards.png)](unity-7.8-user-guide/images/dashboards.png)
 
 ### Containers
 
 Dashboard containers organize and allow navigation between dashboard components that are related and at the same level of hierarchy. The following types of containers are supported out of the box:
 
-- `Tabs` container allows switch between components from the Tabs bar:
+- `Tabs` container allows to switch between components from the Tabs bar:
 
   [![Containers](unity-7.8-user-guide/images/dashboard_container_tabs.png)](unity-7.8-user-guide/images/dashboard_container_tabs.png)
 
-- `Toggle` container allows switch between components from the Toggle Button group:
+- `Toggle` container allows to switch between components from the Toggle Button group:
 
   [![Containers](unity-7.8-user-guide/images/dashboard_container_toggle.png)](unity-7.8-user-guide/images/dashboard_container_toggle.png)
 
-- `Dropdown` container allows switch between components from the Dropdown menu:
+- `Dropdown` container allows to switch between components from the Dropdown menu:
 
   [![Containers](unity-7.8-user-guide/images/dashboard_container_dropdown.png)](unity-7.8-user-guide/images/dashboard_container_dropdown.png)
 
-- `Tree` container allows switch between components from the Tree view:
+- `Tree` container allows to switch between components from the Tree view:
 
   [![Containers](unity-7.8-user-guide/images/dashboard_container_tree.png)](unity-7.8-user-guide/images/dashboard_container_tree.png)
 
@@ -44,7 +44,7 @@ Unity has the capability to present a single continuous view of multiple reposit
 
 Click on a folder to display content within that folder and all subfolders under it:
 
-[![Folders](unity-7.8-user-guide/images/folderView.gif)](unity-7.8-user-guide/images/folderView.gif)
+[![Folders](unity-7.8-user-guide/images/folders.png)](unity-7.8-user-guide/images/folders.png)
 
 ## Quick Search
 
@@ -54,26 +54,30 @@ Type in the word or phrase to search for in the `Contains text` box at the top o
 
 The Search results will update, returning all content with the search criteria found anywhere and restricted by your selected repository.
 
-[![Quick Search](unity-7.8-user-guide/images/quickSearch.gif)](unity-7.8-user-guide/images/quickSearch.gif)
+[![Quick Search](unity-7.8-user-guide/images/quick-search.png)](unity-7.8-user-guide/images/quick-search.png)
 
 ## Advanced Search
 
 Advanced search gives you powerful tools to find the exact document you’re looking for.
 You can quickly filter and narrow down your search results via multiple dimensions document title, modifier, custom metadata, and more.
 
-Click the Advanced Search Icon to open the Advanced Search Panel and enter search criteria based on the repository you selected.
+Click the Advanced Search Icon to open the Advanced Search Panel:
 
-[![Advanced Search](unity-7.8-user-guide/images/advancedSearchIcon.gif)](unity-7.8-user-guide/images/advancedSearchIcon.gif)
+[![Advanced Search](unity-7.8-user-guide/images/advanced-search-icon.png)](unity-7.8-user-guide/images/advanced-search-icon.png)
+
+Advanced Search panel appears and you can enter search criteria based on the repository you selected:
+
+[![Advanced Search](unity-7.8-user-guide/images/advanced-search-panel.png)](unity-7.8-user-guide/images/advanced-search-panel.png)
 
 ### Execute Search and Reset
 
-- Specify serach criteria and the results will be shown in the panel on the right.
+- Specify search criteria and the results will be shown in the panel on the right:
 
-[![Execute Search and Reset](unity-7.8-user-guide/images/advancedSearchCriteria.gif)](unity-7.8-user-guide/images/advancedSearchCriteria.gif)
+    [![Execute Search and Reset](unity-7.8-user-guide/images/advanced-search-criteria.gif)](unity-7.8-user-guide/images/advanced-search-criteria.gif)
 
-- To clear your Advanced Search changes and return to the default search settings, click the `Reset filters` button.
+- To clear your Advanced Search changes and return to the Quick search settings, click the `Reset filters` button:
 
-[![Execure Search and Reset](unity-7.8-user-guide/images/advancedSearchReset.gif)](unity-7.8-user-guide/images/advancedSearchReset.gif)
+    [![Execure Search and Reset](unity-7.8-user-guide/images/reset-filters.png)](unity-7.8-user-guide/images/reset-filters.png)
 
 ## Saved Searches
 
@@ -81,15 +85,15 @@ You can save frequently used searches to quickly access them in the future.
 
 - Enter the search criteria you’d like to use, then click the `Manage Selected Filters`
 
-[![Saved Search](unity-7.8-user-guide/images/SavedSearchMenu.gif)](unity-7.8-user-guide/images/SavedSearchMenu.gif)
+    [![Saved Search](unity-7.8-user-guide/images/saved-search-menu.png)](unity-7.8-user-guide/images/saved-search-menu.png)
 
 - On the opened modal window enter a name for the search and click `Save As`
 
-[![Saved Search](unity-7.8-user-guide/images/SavedSearchName.gif)](unity-7.8-user-guide/images/SavedSearchName.gif)
+    [![Saved Search](unity-7.8-user-guide/images/SavedSearchName.gif)](unity-7.8-user-guide/images/SavedSearchName.gif)
 
 - To access your saved searches, click on the `Click to choose saved search` and select a search on opened `Choose a search` window
 
-[![Saved Search](unity-7.8-user-guide/images/SavedSearchSelection.gif)](unity-7.8-user-guide/images/SavedSearchSelection.gif)
+    [![Saved Search](unity-7.8-user-guide/images/SavedSearchSelection.gif)](unity-7.8-user-guide/images/SavedSearchSelection.gif)
 
 When a Saved Search is selected, the Advanced panel UI is updated to display the Saved Search Criteria, and the search is executed.
 
@@ -171,7 +175,7 @@ Once you’ve located the document you’re looking for, you can take a variety 
 
 For more actions, select the document and click on the vertical ellipse icon consisting of three dots to the right of the name:
 
-[![Actions Menu](unity-7.8-user-guide/images/ContextMenu.gif)](unity-7.8-user-guide/images/ContextMenu.gif)
+[![Actions Menu](unity-7.8-user-guide/images/actions-menu.gif)](unity-7.8-user-guide/images/actions-menu.gif)
 
 Click on the action to perform it.
 
