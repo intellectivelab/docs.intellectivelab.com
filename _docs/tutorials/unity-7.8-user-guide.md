@@ -446,3 +446,47 @@ Also user can change any user comment clicking on pencil icon
 ##### Workitems
 Workitems tab contains list of all workitems that were created for the case. Workitems can be filtered using [Quick Search](#Quick Search) or [Advanced Search](#Advanced Search)
 [![Workitems](unity-7.8-user-guide/images/workitems.png)](unity-7.8-user-guide/images/workitems.png)
+
+#### Split Case
+User can split case using appropriate action. The following view is displayed after `Split Case` action selection from the context menu
+[![Split Case Step1](unity-7.8-user-guide/images/case_type_selection_for_split_case.png)](unity-7.8-user-guide/images/case_type_selection_for_split_case.png).
+
+Properties from the parent case is copied to the child case (if it was configured in the Unity configuration files) and displayed in the ReadOnly format. User should select Case Type for creation from menu for Next butto.
+
+After Case Type selection user can change or add values to properties on the Case View
+[![Split Case Properties](unity-7.8-user-guide/images/split_case_properties.png)](unity-7.8-user-guide/images/split_case_properties.png).
+
+After properties changing user can select `Back` to change Case Type or `Next` to validate properties values.
+[![Split Case Review Properties](unity-7.8-user-guide/images/split_case_review_properties.png)](unity-7.8-user-guide/images/split_case_review_properties.png).
+
+User can select `Back` to return back to change Case Type or properties, change any values and press `Save`, press `Complete` to finishe case splitting, press `Next` to select document for attaching to a new case from the list of documents that were attached to the parent case
+[![Split Case Documents attaching](unity-7.8-user-guide/images/split_case_documents_attaching.png)](unity-7.8-user-guide/images/split_case_documents_attaching.png).
+
+User should select document(s) and press `Attach` button to attach documents to the new case. After that user should press `Complete` to finish case creation.
+Created case will be displayed in the grid. Case Details view contains all filled in values and attached documents.
+
+#### Copy Case
+User can copy existing case and create a new case.
+The following view is displayed for case copying. This view contains values from the parent case (if it was configured in the Unity configuration files)
+[![Copy Case](unity-7.8-user-guide/images/copy_case.png)](unity-7.8-user-guide/images/copy_case.png).
+
+User can change or add values to properties and press `Copy` button.
+After that user can select `Back` to return back to change any values and press `Save`, press `Complete` to finishe case copying, press `Next` to select document for attaching to a new case from the list of documents that were attached to the parent case.
+[![Copy Case Documents attaching](unity-7.8-user-guide/images/copy_case_documents_attaching.png)](unity-7.8-user-guide/images/copy_case_documents_attaching.png).
+
+User should select document(s) and press `Attach` button to attach documents to the new case. After that user should press `Complete` to finish case creation.
+Created case will be displayed in the grid. Case Details view contains all filled in values and attached documents.
+
+#### Open by URL
+Case Details view will be displayed in the separater browser tab in ExtJS mode after `Open by URL` action execution.
+[![Open by URL](unity-7.8-user-guide/images/open_by_url.png)](unity-7.8-user-guide/images/open_by_url.png).
+
+#### Open in Separate tab
+Case Details view will be displayed in the separate browser tab in the React after `Open in Separate tab` action execution.
+[![Open in Separate tab](unity-7.8-user-guide/images/open_in_separate_tab.png)](unity-7.8-user-guide/images/open_in_separate_tab.png)
+
+#### Close Case
+
+#### Delete Case
+
+
