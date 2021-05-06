@@ -12,27 +12,27 @@ You can search for documents, case, and work items using React UI interface. Rea
 
 Dashboard container component serves as a container for UI components and as away of grouping components.
 
-On `React UI` application open `Analytics UI` tab and discover available daschboards:
+On `React UI` application open `Analytics UI` tab, expand sidebar and discover available dashboards:
 
-[![Dashboards](unity-7.8-user-guide/images/Dashboard.gif)](unity-7.8-user-guide/images/Dashboard.gif)
+[![Dashboards](unity-7.8-user-guide/images/dashboards.png)](unity-7.8-user-guide/images/dashboards.png)
 
 ### Containers
 
 Dashboard containers organize and allow navigation between dashboard components that are related and at the same level of hierarchy. The following types of containers are supported out of the box:
 
-- `Tabs` container allows switch between components from the Tabs bar:
+- `Tabs` container allows to switch between components from the Tabs bar:
 
   [![Containers](unity-7.8-user-guide/images/dashboard_container_tabs.png)](unity-7.8-user-guide/images/dashboard_container_tabs.png)
 
-- `Toggle` container allows switch between components from the Toggle Button group:
+- `Toggle` container allows to switch between components from the Toggle Button group:
 
   [![Containers](unity-7.8-user-guide/images/dashboard_container_toggle.png)](unity-7.8-user-guide/images/dashboard_container_toggle.png)
 
-- `Dropdown` container allows switch between components from the Dropdown menu:
+- `Dropdown` container allows to switch between components from the Dropdown menu:
 
   [![Containers](unity-7.8-user-guide/images/dashboard_container_dropdown.png)](unity-7.8-user-guide/images/dashboard_container_dropdown.png)
 
-- `Tree` container allows switch between components from the Tree view:
+- `Tree` container allows to switch between components from the Tree view:
 
   [![Containers](unity-7.8-user-guide/images/dashboard_container_tree.png)](unity-7.8-user-guide/images/dashboard_container_tree.png)
 
@@ -44,7 +44,7 @@ Unity has the capability to present a single continuous view of multiple reposit
 
 Click on a folder to display content within that folder and all subfolders under it:
 
-[![Folders](unity-7.8-user-guide/images/folderView.gif)](unity-7.8-user-guide/images/folderView.gif)
+[![Folders](unity-7.8-user-guide/images/folders.png)](unity-7.8-user-guide/images/folders.png)
 
 ## Quick Search
 
@@ -54,26 +54,30 @@ Type in the word or phrase to search for in the `Contains text` box at the top o
 
 The Search results will update, returning all content with the search criteria found anywhere and restricted by your selected repository.
 
-[![Quick Search](unity-7.8-user-guide/images/quickSearch.gif)](unity-7.8-user-guide/images/quickSearch.gif)
+[![Quick Search](unity-7.8-user-guide/images/quick-search.png)](unity-7.8-user-guide/images/quick-search.png)
 
 ## Advanced Search
 
 Advanced search gives you powerful tools to find the exact document you’re looking for.
 You can quickly filter and narrow down your search results via multiple dimensions document title, modifier, custom metadata, and more.
 
-Click the Advanced Search Icon to open the Advanced Search Panel and enter search criteria based on the repository you selected.
+Click the Advanced Search Icon to open the Advanced Search Panel:
 
-[![Advanced Search](unity-7.8-user-guide/images/advancedSearchIcon.gif)](unity-7.8-user-guide/images/advancedSearchIcon.gif)
+[![Advanced Search](unity-7.8-user-guide/images/advanced-search-icon.png)](unity-7.8-user-guide/images/advanced-search-icon.png)
+
+Advanced Search panel appears and you can enter search criteria based on the repository you selected:
+
+[![Advanced Search](unity-7.8-user-guide/images/advanced-search-panel.png)](unity-7.8-user-guide/images/advanced-search-panel.png)
 
 ### Execute Search and Reset
 
-- Specify serach criteria and the results will be shown in the panel on the right.
+- Specify search criteria and the results will be shown in the panel on the right:
 
-[![Execute Search and Reset](unity-7.8-user-guide/images/advancedSearchCriteria.gif)](unity-7.8-user-guide/images/advancedSearchCriteria.gif)
+    [![Execute Search and Reset](unity-7.8-user-guide/images/advanced-search-criteria.gif)](unity-7.8-user-guide/images/advanced-search-criteria.gif)
 
-- To clear your Advanced Search changes and return to the default search settings, click the `Reset filters` button.
+- To clear your Advanced Search changes and return to the Quick search settings, click the `Reset filters` button:
 
-[![Execure Search and Reset](unity-7.8-user-guide/images/advancedSearchReset.gif)](unity-7.8-user-guide/images/advancedSearchReset.gif)
+    [![Execure Search and Reset](unity-7.8-user-guide/images/reset-filters.png)](unity-7.8-user-guide/images/reset-filters.png)
 
 ## Saved Searches
 
@@ -81,15 +85,15 @@ You can save frequently used searches to quickly access them in the future.
 
 - Enter the search criteria you’d like to use, then click the `Manage Selected Filters`
 
-[![Saved Search](unity-7.8-user-guide/images/SavedSearchMenu.gif)](unity-7.8-user-guide/images/SavedSearchMenu.gif)
+    [![Saved Search](unity-7.8-user-guide/images/saved-search-menu.png)](unity-7.8-user-guide/images/saved-search-menu.png)
 
 - On the opened modal window enter a name for the search and click `Save As`
 
-[![Saved Search](unity-7.8-user-guide/images/SavedSearchName.gif)](unity-7.8-user-guide/images/SavedSearchName.gif)
+    [![Saved Search](unity-7.8-user-guide/images/SavedSearchName.gif)](unity-7.8-user-guide/images/SavedSearchName.gif)
 
 - To access your saved searches, click on the `Click to choose saved search` and select a search on opened `Choose a search` window
 
-[![Saved Search](unity-7.8-user-guide/images/SavedSearchSelection.gif)](unity-7.8-user-guide/images/SavedSearchSelection.gif)
+    [![Saved Search](unity-7.8-user-guide/images/SavedSearchSelection.gif)](unity-7.8-user-guide/images/SavedSearchSelection.gif)
 
 When a Saved Search is selected, the Advanced panel UI is updated to display the Saved Search Criteria, and the search is executed.
 
@@ -197,7 +201,7 @@ Once you’ve located the document you’re looking for, you can take a variety 
 
 For more actions, select the document and click on the vertical ellipse icon consisting of three dots to the right of the name:
 
-[![Actions Menu](unity-7.8-user-guide/images/ContextMenu.gif)](unity-7.8-user-guide/images/ContextMenu.gif)
+[![Actions Menu](unity-7.8-user-guide/images/actions-menu.gif)](unity-7.8-user-guide/images/actions-menu.gif)
 
 Click on the action to perform it.
 
@@ -379,3 +383,94 @@ And see the list of `Recently viewed` items
 To clear recent view history open it and click the `Clear history` icon:
 
 [![Clear Recent View list](unity-7.8-user-guide/images/ClearRecentlyViewed.png)](unity-7.8-user-guide/images/ClearRecentlyViewed.png)
+
+## Actions on cases
+
+Once you’ve located the case you’re looking for, you can take a variety of actions on it.
+
+### Create a new Case
+
+You can easily create a new Cae.
+
+Click the button with case type name or `Create` button (it's defined in the Unity cofniguration files):
+[![Create New Case](unity-7.8-user-guide/images/create_new_case_button.png)](unity-7.8-user-guide/images/create_new_case_button.png)
+
+The following view is displayed
+[![Create New Case View](unity-7.8-user-guide/images/new_case_view.png)](unity-7.8-user-guide/images/new_case_view.png)
+
+User should fill in all required field and press `Create` button
+[![Create New Case Step 1](unity-7.8-user-guide/images/new_case_view_step1.png)](unity-7.8-user-guide/images/new_case_view_step1.png)
+
+In the next step user can change properties or return to the back. User can Complete case creation pressing to `Complete` button
+[![Create New Case Step 2](unity-7.8-user-guide/images/new_case_view_step2.png)](unity-7.8-user-guide/images/new_case_view_step2.png)
+
+View for attaching different documents are displayed after `Next` button pressing
+[![Create New Case Documents attaching](unity-7.8-user-guide/images/new_case_document_attaching.png)](unity-7.8-user-guide/images/new_case_document_attaching.png)
+
+User can attach already existing document or create a new one for different Document Classes with attaching to the case
+[![Create New Case Context menu for  Documents attaching](unity-7.8-user-guide/images/context_menu_for_documents_attaching.png)](unity-7.8-user-guide/images/context_menu_for_documents_attaching.png)
+
+User can `Complete` case creation or return to the `Back` for properties changing
+[![Complete Case Creation](unity-7.8-user-guide/images/complete_case_creation.png)](unity-7.8-user-guide/images/complete_case_creation.png).
+
+#### Attach existing document
+Search template is opened after `Attach existing document` selection (see [Quick Search](#Quick Search), [Advanced Search](#Advanced Search), [Execute Search and Reset](#Execute Search and Reset))
+[![Attach existing document](unity-7.8-user-guide/images/attach_existing_document.png)](unity-7.8-user-guide/images/attach_existing_document.png)
+
+User should select document(s) for attaching and press `Attach` button
+Attached document(s) are displayed in the grid
+[![List of Attached Document](unity-7.8-user-guide/images/list_attached_documents.png)](unity-7.8-user-guide/images/list_attached_documents.png)
+
+Actions can be executed for any selected attached document as it described in [Actions on documents](#Actions on documents). Specific document action is supported for attached document - `Detach Document`. Dialog confirmation is displayed after `Detach Document` action selection
+[![Detach Document](unity-7.8-user-guide/images/detach_document.png)](unity-7.8-user-guide/images/detach_document.png).
+
+Document is disappear from list of attached documents after document detaching
+
+#### Attach a new document
+View for document creation is displayed after action for new document attaching selection, see [Create Document](#Create Document) section
+
+### Actions menu
+
+For more actions, select the case and click on the vertical ellipse icon consisting of three dots to the right of the name:
+
+[![Actions Menu](unity-7.8-user-guide/images/cases_context_menu.png)](unity-7.8-user-guide/images/cases_context_menu.png)
+
+Click on the action to perform it.
+
+#### Case Details (Properties)
+Case Details view can contain the following tabs:
+- Properties
+- Attached documents
+- History/Comments
+- Workitems
+
+##### Properties
+Properties tab contains fields that were configured in the Unity configuration files. Properties can be groupd to the expandable sections. Save button will be enabled after any property changing.
+[![Case Properties](unity-7.8-user-guide/images/case_details.png)](unity-7.8-user-guide/images/case_details.png)
+
+##### Attached document
+Contains the same functional that was described in [Attach existing document](#Attach existing document) and [Attach a new document](#Attach a new document) sections.
+
+##### History/Comments
+History/Comments tab contains information about all users actions and user comments
+[![History](unity-7.8-user-guide/images/history.png)](unity-7.8-user-guide/images/history.png)
+
+Only user comments can be displayed
+[![User Comments Displaying](unity-7.8-user-guide/images/user_comments_displaying.png)](unity-7.8-user-guide/images/user_comments_displaying.png)
+
+Also hisotry/comments can be displayed as timeline
+[![History timeline](unity-7.8-user-guide/images/comments_timeline.png)](unity-7.8-user-guide/images/comments_timeline.png)
+
+All history/comments can be filtered using quick search or range, see [Quick Search](#Quick Search) section
+[![History filtering](unity-7.8-user-guide/images/history_filtering.png)](unity-7.8-user-guide/images/history_filtering.png)
+
+User can create comment pressing to `Comment` button
+[![History filtering](unity-7.8-user-guide/images/history_filtering.png)](unity-7.8-user-guide/images/history_filtering.png)
+
+A new comment is displayed in the grid after `Add` button pressing
+Also user can change any user comment clicking on pencil icon
+[![Comment Changing](unity-7.8-user-guide/images/comment_changing.png)](unity-7.8-user-guide/images/comment_changing.png)
+
+##### Workitems
+Workitems tab contains list of all workitems that were created for the case. Workitems can be filtered using [Quick Search](#Quick Search) or [Advanced Search](#Advanced Search)
+[![Workitems](unity-7.8-user-guide/images/workitems.png)](unity-7.8-user-guide/images/workitems.png)
