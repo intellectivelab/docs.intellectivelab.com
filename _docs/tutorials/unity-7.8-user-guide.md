@@ -4,9 +4,9 @@ layout: docs
 category: Unity 7
 ---
 
-# Getting Started
+# Introduction
 
-# React UI User Interface Overview
+You can search for documents, case, and work items using React UI interface. React UI Interface supports IBM FileNet, CMOD, CM8, SharePoint, Box, Alfresco, other CMIS repositories. All Unity actions are supported in the React UI grid.
 
 ## Dashboards
 
@@ -93,12 +93,24 @@ You can save frequently used searches to quickly access them in the future.
 
 When a Saved Search is selected, the Advanced panel UI is updated to display the Saved Search Criteria, and the search is executed.
 
+### Grid mode
+
+For loading data, Grid supports pagination and infinite scrolling. The selected method is defined in the Grid configuration.
+
+- In pagination mode, user may view the grid data by pages, clicking pages in pagination control under the grid. The number of items is restricted by 10 items per page
+
+[![Grid mode](unity-7.8-user-guide/images/GridPaginationMode.png)](unity-7.8-user-guide/images/GridPaginationMode.png)
+
+- In infinite scrolling mode, user may load next portion of data into the grid simply by scrolling grid down, until no more data is available.
+
+[![Grid mode](unity-7.8-user-guide/images/GridInfiniteMode.png)](unity-7.8-user-guide/images/GridInfiniteMode.png)
+
 ### Grid columns
 
 To make a column visible or hidden, or to control the order in which the columns are displayed, select the `Grid Columns` menu item.
 Customize columns dialog appears:
 
-[![Grid columns](unity-7.8-user-guide/images/CustomizeColumns.gif)](unity-7.8-user-guide/images/CustomizeColumns.gif)
+[![Grid columns](unity-7.8-user-guide/images/CustomizeColumns.png)](unity-7.8-user-guide/images/CustomizeColumns.png)
 
 For a given field, toggle the Visible toggle switch to the right (Red) to make that column visible. Toggle the switch to the left (Gray) to hide the column.
 
@@ -108,6 +120,20 @@ To change the column order, mouse over the Dots icon to the left of the Column n
 For example, drag a column from the bottom to the top of the list to see it on the left side of your screen when searching.
 
 When you’re done making changes, select the `Apply` button. Your changes will be saved and kept the same each time you log into the system.
+
+### Column Resizing Grid
+
+Normally grid columns width is set automatically in order to fill whole grid horizontal space. The columns may be resized by mouse by dragging column separators. To show the separators, move mouse over the column heading and left and right side separators will be shown. Hold a separator with mouse and move horizontally to resize the column.
+
+[![Grid columns](unity-7.8-user-guide/images/ResizeColumns.png)](unity-7.8-user-guide/images/ResizeColumns.png)
+
+Last column width may not be changed. If grid occupies whole container form width, the last column takes all the remaining width till the right side of the grid. However, if grid is wider than its container, the last column width is set automatically by actual content.
+
+The minimum size of the columns is determined by column header, the actual column data in the grid rows may be shortened when shown in too narrow columns.
+
+Width of a column becomes fixed once it was resized. Other columns width remains automatically maintained. To reset the columns width to default (and revert the visible state of the columns and their order) use Reset command from grid menu:
+
+[![Grid columns resizing](unity-7.8-user-guide/images/ColumnsReset.png)](unity-7.8-user-guide/images/ColumnsReset.png)
 
 ### Grid Display Density: Usability Features
 
@@ -205,18 +231,6 @@ You will be shown a Delete document confirmation prompt:
 
 - If you select `Yes`, the file will be deleted
 - If you select `Cancel`, no changes will be made and the prompt will be closed
-
-#### Copy link
-
-Opens a window where the user can copy the URL to the selected file:
-
-[![Copy link](unity-7.8-user-guide/images/copy-link.png)](unity-7.8-user-guide/images/copy-link.png)
-
-This URL provides a fast means of sharing the document with other users, without creating a duplicate copy.
-
-Click `Copy` to copy the URL to your clipboard, then paste (Ctrl-V) to paste the link into an email, message, document, or other location.
-
-You can optionally select to limit the number of people who can access the link. Select `Specific People` from the menu and choose the people that you want to access the document via the link.
 
 #### Check Out and Open In office
 
@@ -340,6 +354,16 @@ You may click on documents in the left panel to refresh the middle panel with th
 
 You can open Detail View for all documents returned by a search, or you can first multi-select the specific documents you want to view.
 For example, clicking the checkbox next to three documents, then selecting the Detail View toggle, will show only those three documents in Detail View. If no checkboxes are selected, all documents will be shown.
+
+### Bookmarks
+
+On Detail view Bookmarks functionality is available. Bookmarks allow to quickly switch between selected items. List item can be added to Bookmarks bar by clicking Bookmark action in the item actions menu.
+
+[![Bookmarks](unity-7.8-user-guide/images/AddBookmark.png)](unity-7.8-user-guide/images/AddBookmark.png)
+
+A bookmark can also be removed from the Bookmarks bar:
+
+[![Bookmarks](unity-7.8-user-guide/images/DeleteBookmark.png)](unity-7.8-user-guide/images/DeleteBookmark.png)
 
 ## Recent View history
 
