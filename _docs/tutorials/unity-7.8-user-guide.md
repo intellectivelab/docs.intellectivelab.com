@@ -52,7 +52,7 @@ Use Quick Search to quickly find documents across current repository by typing i
 
 Type in the word or phrase to search for in the `Contains text` box at the top of the screen. The search executes automatically.
 
-The Search results will update, returning all content with the search criteria found anywhere and restricted by your selected repository.
+The Search results will update, returning all content with the search criteria found anywhere and restricted by your selected repository:
 
 [![Quick Search](unity-7.8-user-guide/images/quick-search.png)](unity-7.8-user-guide/images/quick-search.png)
 
@@ -71,7 +71,7 @@ Advanced Search panel appears and you can enter search criteria based on the rep
 
 ### Execute Search and Reset
 
-- Specify search criteria and the results will be shown in the panel on the right:
+- Specify search criteria, and the results will be shown in the panel on the right:
 
     [![Execute Search and Reset](unity-7.8-user-guide/images/advanced-search-criteria.gif)](unity-7.8-user-guide/images/advanced-search-criteria.gif)
 
@@ -83,19 +83,26 @@ Advanced Search panel appears and you can enter search criteria based on the rep
 
 You can save frequently used searches to quickly access them in the future.
 
-- Enter the search criteria you’d like to use, then click the `Manage Selected Filters`
+- Enter the search criteria you’d like to use, then click the `Manage Selected Filters`:
 
     [![Saved Search](unity-7.8-user-guide/images/saved-search-menu.png)](unity-7.8-user-guide/images/saved-search-menu.png)
 
-- On the opened modal window enter a name for the search and click `Save As`
+- On the opened modal window enter a name for the search and click `Save As`:
 
-    [![Saved Search](unity-7.8-user-guide/images/SavedSearchName.gif)](unity-7.8-user-guide/images/SavedSearchName.gif)
+    [![Saved Search](unity-7.8-user-guide/images/save-search.png)](unity-7.8-user-guide/images/save-search.png)
 
-- To access your saved searches, click on the `Click to choose saved search` and select a search on opened `Choose a search` window
+- To access your saved searches, click on the filter icon and select a search on opened `Choose a search` window:
 
-    [![Saved Search](unity-7.8-user-guide/images/SavedSearchSelection.gif)](unity-7.8-user-guide/images/SavedSearchSelection.gif)
+    [![Saved Search](unity-7.8-user-guide/images/choose-saved-search.png)](unity-7.8-user-guide/images/choose-saved-search.png)
 
 When a Saved Search is selected, the Advanced panel UI is updated to display the Saved Search Criteria, and the search is executed.
+
+## Search Results
+
+With Unity, you can customize how you view your search results. You can change the look and feel, set and order of displayed columns, sort order, and more. 
+To customize the Search Results Panel, click on the gear icon in the upper right:
+
+[![Grid settings](unity-8-user-guide/images/grid-settings-menu.png)](unity-8-user-guide/images/grid-settings-menu.png)
 
 ### Grid mode
 
@@ -103,18 +110,18 @@ For loading data, Grid supports pagination and infinite scrolling. The selected 
 
 - In pagination mode, user may view the grid data by pages, clicking pages in pagination control under the grid. The number of items is restricted by 10 items per page
 
-[![Grid mode](unity-7.8-user-guide/images/GridPaginationMode.png)](unity-7.8-user-guide/images/GridPaginationMode.png)
+    [![Grid mode](unity-7.8-user-guide/images/grid-pagination-mode.png)](unity-7.8-user-guide/images/grid-pagination-mode.png)
 
 - In infinite scrolling mode, user may load next portion of data into the grid simply by scrolling grid down, until no more data is available.
 
-[![Grid mode](unity-7.8-user-guide/images/GridInfiniteMode.png)](unity-7.8-user-guide/images/GridInfiniteMode.png)
+    [![Grid mode](unity-7.8-user-guide/images/grid-infinite-mode.png)](unity-7.8-user-guide/images/grid-infinite-mode.png)
 
 ### Grid columns
 
 To make a column visible or hidden, or to control the order in which the columns are displayed, select the `Grid Columns` menu item.
 Customize columns dialog appears:
 
-[![Grid columns](unity-7.8-user-guide/images/CustomizeColumns.gif)](unity-7.8-user-guide/images/CustomizeColumns.gif)
+[![Grid columns](unity-7.8-user-guide/images/customize-columns.png)](unity-7.8-user-guide/images/customize-columns.png)
 
 For a given field, toggle the Visible toggle switch to the right (Red) to make that column visible. Toggle the switch to the left (Gray) to hide the column.
 
@@ -129,15 +136,15 @@ When you’re done making changes, select the `Apply` button. Your changes will 
 
 Normally grid columns width is set automatically in order to fill whole grid horizontal space. The columns may be resized by mouse by dragging column separators. To show the separators, move mouse over the column heading and left and right side separators will be shown. Hold a separator with mouse and move horizontally to resize the column.
 
-[![Grid columns](unity-7.8-user-guide/images/ResizeColumns.png)](unity-7.8-user-guide/images/ResizeColumns.png)
+[![Grid columns](unity-7.8-user-guide/images/resize-columns.png)](unity-7.8-user-guide/images/resize-columns.png)
 
 Last column width may not be changed. If grid occupies whole container form width, the last column takes all the remaining width till the right side of the grid. However, if grid is wider than its container, the last column width is set automatically by actual content.
 
 The minimum size of the columns is determined by column header, the actual column data in the grid rows may be shortened when shown in too narrow columns.
 
-Width of a column becomes fixed once it was resized. Other columns width remains automatically maintained. To reset the columns width to default (and revert the visible state of the columns and their order) use Reset command from grid menu:
+Width of a column becomes fixed once it was resized. Other columns width remains automatically maintained. To reset the columns width to default (and revert the visible state of the columns and their order) use `Reset` from the grid settings menu:
 
-[![Grid columns resizing](unity-7.8-user-guide/images/ColumnsReset.png)](unity-7.8-user-guide/images/ColumnsReset.png)
+[![Grid columns resizing](unity-7.8-user-guide/images/grid-reset.png)](unity-7.8-user-guide/images/grid-reset.png)
 
 ### Grid Display Density: Usability Features
 
@@ -150,9 +157,9 @@ Three options are provided:
 - Medium
 - Compact
 
-[![FoGrid density](unity-7.8-user-guide/images/GridDisplayDensity.gif)](unity-7.8-user-guide/images/GridDisplayDensity.gif)
+Click the `Apply` button to save your change:
 
-Click the `Apply` button to save your change.
+[![Grid density](unity-7.8-user-guide/images/grid-density.gif)](unity-7.8-user-guide/images/grid-density.gif)
 
 ### Sorting
 
@@ -163,7 +170,7 @@ You can use a simple sort on one column, or create multiple related column sorts
 
 - To quickly sort a column, mouse over the Column Name, and click on the arrow icon that appears immediately to the right:
 
-  [![Quick Sort](unity-7.8-user-guide/images/SortColumnOrder.gif)](unity-7.8-user-guide/images/SortColumnOrder.gif)
+  [![Quick Sort](unity-7.8-user-guide/images/column-sort-order-icon.png)](unity-7.8-user-guide/images/column-sort-order-icon.png)
 
   This will sort the column in ascending order.
 
@@ -174,11 +181,11 @@ You can use a simple sort on one column, or create multiple related column sorts
 
 To sort a column, you can also click the down arrow to the right of the column heading:
 
-[![Sort Menu](unity-7.8-user-guide/images/SortColumnOrderIcon.gif)](unity-7.8-user-guide/images/SortColumnOrderIcon.gif)
+[![Sort Menu](unity-7.8-user-guide/images/sort-column-arrow.png)](unity-7.8-user-guide/images/sort-column-arrow.png)
 
 The sort options are displayed:
 
-[![Sort Menu](unity-7.8-user-guide/images/SortColumnMenu.gif)](unity-7.8-user-guide/images/SortColumnMenu.gif)
+[![Sort Menu](unity-7.8-user-guide/images/sort-column-menu.png)](unity-7.8-user-guide/images/sort-column-menu.png)
 
 To set the sort order for the selected column, select either `Sort Ascending` or `Sort Descending`. Ascending will order elements like `1, 2, Alpha, Beta`, while descending will order elements like `9, 8, Zulu, Yankee`.
 
@@ -187,11 +194,9 @@ If you select a sort for multiple columns, a number will appear after the column
 To control the sort order and have a different column be sorted first, select the down arrow to the right of the column heading and select either Promote Order (to increase that column’s precedence in the sort order) ,or Demote Order (to lower that column’s precedence in the sort order).
 For example, if you want to sort by Document Title first, and then by Date Modified, promote Document Title until it is labelled `1`, followed by Date Modified labelled `2`.
 
-[![Sort Menu](unity-7.8-user-guide/images/MultipleSorting.gif)](unity-7.8-user-guide/images/MultipleSorting.gif)
+[![Sort Menu](unity-7.8-user-guide/images/multiple-sorting.gif)](unity-7.8-user-guide/images/multiple-sorting.gif)
 
 To remove the Column from Sort, select the `Remove Sort` menu item from the dropdown.
-
-[![Sort Menu](unity-7.8-user-guide/images/RemoveSort.gif)](unity-7.8-user-guide/images/RemoveSort.gif)
 
 ## Actions on documents
 
