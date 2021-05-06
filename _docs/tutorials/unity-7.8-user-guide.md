@@ -114,7 +114,7 @@ For loading data, Grid supports pagination and infinite scrolling. The selected 
 To make a column visible or hidden, or to control the order in which the columns are displayed, select the `Grid Columns` menu item.
 Customize columns dialog appears:
 
-[![Grid columns](unity-7.8-user-guide/images/CustomizeColumns.png)](unity-7.8-user-guide/images/CustomizeColumns.png)
+[![Grid columns](unity-7.8-user-guide/images/CustomizeColumns.gif)](unity-7.8-user-guide/images/CustomizeColumns.gif)
 
 For a given field, toggle the Visible toggle switch to the right (Red) to make that column visible. Toggle the switch to the left (Gray) to hide the column.
 
@@ -414,20 +414,20 @@ User can `Complete` case creation or return to the `Back` for properties changin
 [![Complete Case Creation](unity-7.8-user-guide/images/complete_case_creation.png)](unity-7.8-user-guide/images/complete_case_creation.png).
 
 #### Attach existing document
-Search template is opened after `Attach existing document` selection (see [Quick Search](#Quick Search), [Advanced Search](#Advanced Search), [Execute Search and Reset](#Execute Search and Reset))
+Search template is opened after `Attach existing document` selection (see [Quick Search](#quick-search), [Advanced Search](#advanced-search), [Execute Search and Reset](#execute-search-and-reset))
 [![Attach existing document](unity-7.8-user-guide/images/attach_existing_document.png)](unity-7.8-user-guide/images/attach_existing_document.png)
 
 User should select document(s) for attaching and press `Attach` button
 Attached document(s) are displayed in the grid
 [![List of Attached Document](unity-7.8-user-guide/images/list_attached_documents.png)](unity-7.8-user-guide/images/list_attached_documents.png)
 
-Actions can be executed for any selected attached document as it described in [Actions on documents](#Actions on documents). Specific document action is supported for attached document - `Detach Document`. Dialog confirmation is displayed after `Detach Document` action selection
+Actions can be executed for any selected attached document as it described in [Actions on documents](#actions-on-documents). Specific document action is supported for attached document - `Detach Document`. Dialog confirmation is displayed after `Detach Document` action selection
 [![Detach Document](unity-7.8-user-guide/images/detach_document.png)](unity-7.8-user-guide/images/detach_document.png).
 
 Document is disappear from list of attached documents after document detaching
 
 #### Attach a new document
-View for document creation is displayed after action for new document attaching selection, see [Create Document](#Create Document) section
+View for document creation is displayed after action for new document attaching selection, see [Create Document](#create-document) section
 
 ### Actions menu
 
@@ -449,7 +449,7 @@ Properties tab contains fields that were configured in the Unity configuration f
 [![Case Properties](unity-7.8-user-guide/images/case_details.png)](unity-7.8-user-guide/images/case_details.png)
 
 ##### Attached document
-Contains the same functional that was described in [Attach existing document](#Attach existing document) and [Attach a new document](#Attach a new document) sections.
+Contains the same functional that was described in [Attach existing document](#attach-existing-document) and [Attach a new document](#attach-a-new-document) sections.
 
 ##### History/Comments
 History/Comments tab contains information about all users actions and user comments
@@ -461,7 +461,7 @@ Only user comments can be displayed
 Also hisotry/comments can be displayed as timeline
 [![History timeline](unity-7.8-user-guide/images/comments_timeline.png)](unity-7.8-user-guide/images/comments_timeline.png)
 
-All history/comments can be filtered using quick search or range, see [Quick Search](#Quick Search) section
+All history/comments can be filtered using quick search or range, see [Quick Search](#quick-search) section
 [![History filtering](unity-7.8-user-guide/images/history_filtering.png)](unity-7.8-user-guide/images/history_filtering.png)
 
 User can create comment pressing to `Comment` button
@@ -472,7 +472,7 @@ Also user can change any user comment clicking on pencil icon
 [![Comment Changing](unity-7.8-user-guide/images/comment_changing.png)](unity-7.8-user-guide/images/comment_changing.png)
 
 ##### Workitems
-Workitems tab contains list of all workitems that were created for the case. Workitems can be filtered using [Quick Search](#Quick Search) or [Advanced Search](#Advanced Search)
+Workitems tab contains list of all workitems that were created for the case. Workitems can be filtered using [Quick Search](#quick-search) or [Advanced Search](#advanced-search)
 [![Workitems](unity-7.8-user-guide/images/workitems.png)](unity-7.8-user-guide/images/workitems.png)
 
 #### Split Case
@@ -514,7 +514,11 @@ Case Details view will be displayed in the separate browser tab in the React aft
 [![Open in Separate tab](unity-7.8-user-guide/images/open_in_separate_tab.png)](unity-7.8-user-guide/images/open_in_separate_tab.png)
 
 #### Close Case
+Case can be close and case status will be Complete after `Close Case` action execution. All workitems also are completed. Application can be configured for hiding cases and workitems with Complete status.
 
 #### Delete Case
+Any case can be deleted after `Delete Case` action execution.
+Confirmation dialog is displyaed after action selection.
+[![Delete Case](unity-7.8-user-guide/images/delete_case_dialog.png)](unity-7.8-user-guide/images/delete_case_dialog.png)
 
-
+Case is physically deleted from case management system.
