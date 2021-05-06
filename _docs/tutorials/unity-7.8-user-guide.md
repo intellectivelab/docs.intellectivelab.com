@@ -355,3 +355,94 @@ And see the list of `Recently viewed` items
 To clear recent view history open it and click the `Clear history` icon:
 
 [![Clear Recent View list](unity-7.8-user-guide/images/ClearRecentlyViewed.png)](unity-7.8-user-guide/images/ClearRecentlyViewed.png)
+
+## Actions on cases
+
+Once you’ve located the case you’re looking for, you can take a variety of actions on it.
+
+### Create a new Case
+
+You can easily create a new Cae.
+
+Click the button with case type name or `Create` button (it's defined in the Unity cofniguration files):
+[![Create New Case](unity-7.8-user-guide/images/create_new_case_button.png)](unity-7.8-user-guide/images/create_new_case_button.png)
+
+The following view is displayed
+[![Create New Case View](unity-7.8-user-guide/images/new_case_view.png)](unity-7.8-user-guide/images/new_case_view.png)
+
+User should fill in all required field and press `Create` button
+[![Create New Case Step 1](unity-7.8-user-guide/images/new_case_view_step1.png)](unity-7.8-user-guide/images/new_case_view_step1.png)
+
+In the next step user can change properties or return to the back. User can Complete case creation pressing to `Complete` button
+[![Create New Case Step 2](unity-7.8-user-guide/images/new_case_view_step2.png)](unity-7.8-user-guide/images/new_case_view_step2.png)
+
+View for attaching different documents are displayed after `Next` button pressing
+[![Create New Case Documents attaching](unity-7.8-user-guide/images/new_case_document_attaching.png)](unity-7.8-user-guide/images/new_case_document_attaching.png)
+
+User can attach already existing document or create a new one for different Document Classes with attaching to the case
+[![Create New Case Context menu for  Documents attaching](unity-7.8-user-guide/images/context_menu_for_documents_attaching.png)](unity-7.8-user-guide/images/context_menu_for_documents_attaching.png)
+
+User can `Complete` case creation or return to the `Back` for properties changing
+[![Complete Case Creation](unity-7.8-user-guide/images/complete_case_creation.png)](unity-7.8-user-guide/images/complete_case_creation.png).
+
+#### Attach existing document
+Search template is opened after `Attach existing document` selection (see [Quick Search](#Quick Search), [Advanced Search](#Advanced Search), [Execute Search and Reset](#Execute Search and Reset))
+[![Attach existing document](unity-7.8-user-guide/images/attach_existing_document.png)](unity-7.8-user-guide/images/attach_existing_document.png)
+
+User should select document(s) for attaching and press `Attach` button
+Attached document(s) are displayed in the grid
+[![List of Attached Document](unity-7.8-user-guide/images/list_attached_documents.png)](unity-7.8-user-guide/images/list_attached_documents.png)
+
+Actions can be executed for any selected attached document as it described in [Actions on documents](#Actions on documents). Specific document action is supported for attached document - `Detach Document`. Dialog confirmation is displayed after `Detach Document` action selection
+[![Detach Document](unity-7.8-user-guide/images/detach_document.png)](unity-7.8-user-guide/images/detach_document.png).
+
+Document is disappear from list of attached documents after document detaching
+
+#### Attach a new document
+View for document creation is displayed after action for new document attaching selection, see [Create Document](#Create Document) section
+
+### Actions menu
+
+For more actions, select the case and click on the vertical ellipse icon consisting of three dots to the right of the name:
+
+[![Actions Menu](unity-7.8-user-guide/images/cases_context_menu.png)](unity-7.8-user-guide/images/cases_context_menu.png)
+
+Click on the action to perform it.
+
+#### Case Details (Properties)
+Case Details view can contain the following tabs:
+- Properties
+- Attached documents
+- History/Comments
+- Workitems
+
+##### Properties
+Properties tab contains fields that were configured in the Unity configuration files. Properties can be groupd to the expandable sections. Save button will be enabled after any property changing.
+[![Case Properties](unity-7.8-user-guide/images/case_details.png)](unity-7.8-user-guide/images/case_details.png)
+
+##### Attached document
+Contains the same functional that was described in [Attach existing document](#Attach existing document) and [Attach a new document](#Attach a new document) sections.
+
+##### History/Comments
+History/Comments tab contains information about all users actions and user comments
+[![History](unity-7.8-user-guide/images/history.png)](unity-7.8-user-guide/images/history.png)
+
+Only user comments can be displayed
+[![User Comments Displaying](unity-7.8-user-guide/images/user_comments_displaying.png)](unity-7.8-user-guide/images/user_comments_displaying.png)
+
+Also hisotry/comments can be displayed as timeline
+[![History timeline](unity-7.8-user-guide/images/comments_timeline.png)](unity-7.8-user-guide/images/comments_timeline.png)
+
+All history/comments can be filtered using quick search or range, see [Quick Search](#Quick Search) section
+[![History filtering](unity-7.8-user-guide/images/history_filtering.png)](unity-7.8-user-guide/images/history_filtering.png)
+
+User can create comment pressing to `Comment` button
+[![History filtering](unity-7.8-user-guide/images/history_filtering.png)](unity-7.8-user-guide/images/history_filtering.png)
+
+A new comment is displayed in the grid after `Add` button pressing
+Also user can change any user comment clicking on pencil icon
+[![Comment Changing](unity-7.8-user-guide/images/comment_changing.png)](unity-7.8-user-guide/images/comment_changing.png)
+
+##### Workitems
+Workitems tab contains list of all workitems that were created for the case. Workitems can be filtered using [Quick Search](#Quick Search) or [Advanced Search](#Advanced Search)
+[![Workitems](unity-7.8-user-guide/images/workitems.png)](unity-7.8-user-guide/images/workitems.png)
