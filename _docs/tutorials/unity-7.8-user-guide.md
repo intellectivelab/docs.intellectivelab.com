@@ -543,7 +543,7 @@ The application opens in the  detail view
 ##### Workitem Details (Properties)
 Workitem Details view can contain the following tabs:
 - Name Properties (depend on task in CaseBuilder)
-- Attached documents (see more details [Attach existing document](#Attach existing document) section)
+- Attached documents (see more details [Attached document](#Attached document) section)
 - History/Comments (see more details [History/Comments](#History/Comments) section)
 
 #### Reassign 
