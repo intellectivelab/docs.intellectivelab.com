@@ -288,15 +288,18 @@ Clicking the Edit action displays a Document Details window with the following i
 - Document title
 - Link to Open the file in your browser:
 
-  [![Link to open file](unity-7.8-user-guide/images/DetailsLink.gif)](unity-7.8-user-guide/images/DetailsLink.gif)
+  [![Link to open file](unity-7.8-user-guide/images/details-link.png)](unity-7.8-user-guide/images/details-link.png)
 
 - Icon to Download the file:
-  [![Icon to download file](unity-7.8-user-guide/images/DetailsDownload.gif)](unity-7.8-user-guide/images/DetailsDownload.gif)
+
+  [![Icon to download file](unity-7.8-user-guide/images/details-download.png)](unity-7.8-user-guide/images/details-download.png)
+
 - Icon to Open the file in desktop app:
 
-  [![Icon to open in app](unity-7.8-user-guide/images/DetailsOpenInApp.gif)](unity-7.8-user-guide/images/DetailsOpenInApp.gif)
+  [![Icon to open in app](unity-7.8-user-guide/images/details-open-in-app.png)](unity-7.8-user-guide/images/details-open-in-app.png)
 
 - `Document Properties` Tab
+
   The Details tab displays metadata, which can be modified by an authorized user.
   The Details Tab will be displayed by default.
 
@@ -399,40 +402,39 @@ Once you’ve located the case you’re looking for, you can take a variety of a
 
 You can easily create a new Case.
 
-Click the button with case type name or `Create` button (it's defined in the Unity configuration files):
+- Click the button with case type name or `Create` button (it's defined in the Unity configuration files):
 
-[![Create New Case](unity-7.8-user-guide/images/create-new-case-button.png)](unity-7.8-user-guide/images/create-new-case-button.png)
+    [![Create New Case](unity-7.8-user-guide/images/create-new-case-button.png)](unity-7.8-user-guide/images/create-new-case-button.png)
 
-The following view is displayed:
+    The following view is displayed:
 
-[![Create New Case View](unity-7.8-user-guide/images/new-case-view.png)](unity-7.8-user-guide/images/new-case-view.png)
+    [![Create New Case View](unity-7.8-user-guide/images/new-case-view.png)](unity-7.8-user-guide/images/new-case-view.png)
 
-User should fill in all required field and press `Create` button:
+    User should fill in all required fields and press `Create` button.
 
-[![Create New Case Step 1](unity-7.8-user-guide/images/new_case_view_step1.png)](unity-7.8-user-guide/images/new_case_view_step1.png)
+- In the next step user can change properties or return to the back. User can complete case creation pressing to `Complete` button:
 
-In the next step user can change properties or return to the back. User can Complete case creation pressing to `Complete` button:
+    [![Create New Case Step 2](unity-7.8-user-guide/images/new-case-view-step2.png)](unity-7.8-user-guide/images/new-case-view-step2.png)
 
-[![Create New Case Step 2](unity-7.8-user-guide/images/new_case_view_step2.png)](unity-7.8-user-guide/images/new_case_view_step2.png)
+- View for attaching different documents are displayed after `Next` button pressing:
 
-View for attaching different documents are displayed after `Next` button pressing:
+    [![Create New Case Documents attaching](unity-7.8-user-guide/images/new-case-document-attaching.png)](unity-7.8-user-guide/images/new-case-document-attaching.png)
 
-[![Create New Case Documents attaching](unity-7.8-user-guide/images/new_case_document_attaching.png)](unity-7.8-user-guide/images/new_case_document_attaching.png)
+    User can attach already existing document or create a new one for different Document Classes with attaching to the case:
 
-User can attach already existing document or create a new one for different Document Classes with attaching to the case:
+    [![Create New Case Context menu for  Documents attaching](unity-7.8-user-guide/images/context-menu-for-documents-attaching.png)](unity-7.8-user-guide/images/context-menu-for-documents-attaching.png)
 
-[![Create New Case Context menu for  Documents attaching](unity-7.8-user-guide/images/context_menu_for_documents_attaching.png)](unity-7.8-user-guide/images/context_menu_for_documents_attaching.png)
+- User can `Complete` case creation or return to the `Back` for properties changing:
 
-User can `Complete` case creation or return to the `Back` for properties changing:
-
-[![Complete Case Creation](unity-7.8-user-guide/images/complete_case_creation.png)](unity-7.8-user-guide/images/complete_case_creation.png).
+    [![Complete Case Creation](unity-7.8-user-guide/images/complete-case-creation.png)](unity-7.8-user-guide/images/complete-case-creation.png)
 
 #### Attach existing document
 
-Search template is opened after `Attach existing document` selection (see [Quick Search](#quick-search), [Advanced Search](#advanced-search), [Execute Search and Reset](#execute-search-and-reset))
+Search template is opened after `Attach existing document` selection (see [Quick Search](#quick-search), [Advanced Search](#advanced-search), [Execute Search and Reset](#execute-search-and-reset)).
+
 [![Attach existing document](unity-7.8-user-guide/images/attach_existing_document.png)](unity-7.8-user-guide/images/attach_existing_document.png)
 
-User should select document(s) for attaching and press `Attach` button
+User should select document(s) for attaching and press `Attach` button.
 Attached document(s) are displayed in the grid:
 
 [![List of Attached Document](unity-7.8-user-guide/images/list_attached_documents.png)](unity-7.8-user-guide/images/list_attached_documents.png)
