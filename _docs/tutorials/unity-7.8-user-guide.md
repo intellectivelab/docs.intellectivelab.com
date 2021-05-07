@@ -474,3 +474,49 @@ Also user can change any user comment clicking on pencil icon
 ##### Workitems
 Workitems tab contains list of all workitems that were created for the case. Workitems can be filtered using [Quick Search](#Quick Search) or [Advanced Search](#Advanced Search)
 [![Workitems](unity-7.8-user-guide/images/workitems.png)](unity-7.8-user-guide/images/workitems.png)
+
+#Workitems
+## View list of workitems
+Open Inbaskets dashboard and list of workitems display
+[![Workitems](unity-7.8-user-guide/images/WI page.png)](unity-7.8-user-guide/images/WI page.png)
+
+### Actions menu
+
+For more actions, select the workitem and click on the vertical ellipse icon consisting of three dots to the right of the name:
+[![Workitems](unity-7.8-user-guide/images/actions-menu.gif)](unity-7.8-user-guide/images/actions-menu.gif)
+Click on the action to perform it.
+
+#### Properties
+The application opens in the  detail view
+##### Workitem Details (Properties)
+Workitem Details view can contain the following tabs:
+- Name Properties (depend on task in CaseBuilder)
+- Attached documents (see more details [Attach existing document](#Attach existing document) and [Attach a new document](#Attach a new document) sections)
+- History/Comments (see more details [History/Comments](#History/Comments) section)
+
+#### Reassign 
+User can reassign single or bulk of workitems on time via context menu or via the top Action button in the top corner.
+One user reassigned to another user, then after the action this work item disappears from the list for first user (who resigned) and only the user to whom it was assigned can be seen.
+[![Workitems](unity-7.8-user-guide/images/reassign.gif)](unity-7.8-user-guide/images/reassign.gif)
+[![Workitems](unity-7.8-user-guide/images/reassign-bulk.gif)](unity-7.8-user-guide/images/reassign-bulk.gif)
+
+#### Lock/Unlock workitem
+User can lock/unlock workitem status 
+
+#### Open in separate tab 
+Ability to view workitem details in a separate browser tab.
+
+**Note**: There are other actions that are configured on task in CaseBuilder and  defined in the Unity cofniguration files. Actions display in context menu and on the workitem detail view
+[![Workitems](unity-7.8-user-guide/images/extra_actions.png)](unity-7.8-user-guide/images/extra_actions.png)
+[![Workitems](unity-7.8-user-guide/images/extra_actions_detail.png)](unity-7.8-user-guide/images/extra_actions_detail.png)
+
+
+
+
+
+
+
+
+
+
+
