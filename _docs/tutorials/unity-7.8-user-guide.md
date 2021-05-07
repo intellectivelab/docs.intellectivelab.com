@@ -543,13 +543,14 @@ The application opens in the  detail view
 ##### Workitem Details (Properties)
 Workitem Details view can contain the following tabs:
 - Name Properties (depend on task in CaseBuilder)
-- Attached documents (see more details [Attach existing document](#Attach existing document) sections)
+- Attached documents (see more details [Attach existing document](#Attach existing document) section)
 - History/Comments (see more details [History/Comments](#History/Comments) section)
 
 #### Reassign 
 User can reassign single or bulk of workitems on time via context menu or via the top Action button in the top corner.
 One user reassigned to another user, then after the action this work item disappears from the list for first user (who resigned)and only the user to whom 
 it was assigned can be seen.
+
 [![Workitems](unity-7.8-user-guide/images/reassign.gif)](unity-7.8-user-guide/images/reassign.gif)
 [![Workitems](unity-7.8-user-guide/images/reassign-bulk.gif)](unity-7.8-user-guide/images/reassign-bulk.gif)
 
