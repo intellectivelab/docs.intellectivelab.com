@@ -10,7 +10,12 @@ category: Unity for CRM
 
 - A new account should be created in the Salesforce Org where UnityApp will be installed
 - Link to install UnityApp in the Salesforce Org
-- Unity application should be installed and available external to the organization using HTTPS protocol
+- Unity application should be installed and available externally to the organization using **HTTPS** protocol. External 
+availability means that application **has to be exposed** to the Internet. The requirement can be checked by opening 
+Unity application in browser with turned **OFF** VPN.
+- SharePoint provider requires Gateway application instead of common Unity app. Gateway application is created 
+especially for SharePoint and supports Azure Active Directory single sign-on. All the requirements mentioned for Unity
+application must be considered in case of using Gateway application. 
 - Unity application should be configured with at least one search template to search documents in FileNet P8
 - Required certificates including intermediate certificates should be installed in WebSphere
 
@@ -109,11 +114,19 @@ After certificate for a given Unity site is obtained it should be installed on a
 
   ![u4sf](installing-unity-salesforce/images/image16.png)
 
-- Go to `Identity > Auth. Providers`. Edit UnityOAuth2Provider if it exists, otherwise press `New` and select UnityOAuth2Provider in the Provider Type field:
+- Go to `Identity > Auth. Providers`. Edit `UnityOAuth2Provider` / `Unity Azure` if it exists, otherwise press `New`.
+  
+  Select `UnityOAuth2Provider` in the Provider Type field in case of using common Unity application:
 
   ![u4sf](installing-unity-salesforce/images/image17.png)
+  
+  Or `Open ID Connect` in case of using Gateway application for SharePoint:
+  
+  ![u4sf](installing-unity-salesforce/images/open-id-connect.png)
 
-- Enter the following fields and click `Save`:
+- Fill in the fields in appeared form and click `Save`.
+
+  For common Unity application use following values:
 
   | Field                  | Value                                      | Notes          |
   | :--------------------- | :----------------------------------------- | :------------- |
@@ -131,6 +144,42 @@ After certificate for a given Unity site is obtained it should be installed on a
   | **Note**: `vu_nc` should match the Named Credentials.
 
   ![u4sf](installing-unity-salesforce/images/image18.png)
+  
+  Gateway application for SharePoint requires different `Auth.Provider` settings:
+
+  | Field                  | Value                                      | Notes          |
+  | :--------------------- | :----------------------------------------- | :------------- |
+  | Name                   | Unity Azure                                | see note below |
+  | URL Suffix             | Unity_Azure                                |                |
+  | Consumer Key           | ${AzureClientId}                           | see note below |
+  | Consumer Secret        | ${AzureClientSecret}                       | see note below |
+  | Authorize Endpoint URL | https://login.microsoftonline.com/${AzureTenantId}/oauth2/v2.0/authorize   | see note below |
+  | Token Endpoint URL     | https://login.microsoftonline.com/${AzureTenantId}/oauth2/v2.0/token | see note below |
+  | Token Issuer           | https://login.microsoftonline.com/${AzureTenantId}/v2.0 | see note below |
+  | Default scopes         | openid profile offline_access email ${SharePointSiteUrl}/.default | see note below |
+  | Send access token in header | Checked |            |
+  | Execute As             | Select current logged in admin user        |                |
+  
+  ![u4sf](./installing-unity-salesforce/images/sp-auth-provider.png)
+  
+  | **Notes**: 
+  | `Unity Azure` is just an example, it's possible to use different Name and URL Suffix.
+  | ${AzureClientId} is an Azure Client Id. Find value at `Azure Active Directory > App Registration > Overview Page`: ![Azure Client Id](./installing-unity-salesforce/images/azure-client-id.png)
+  | ${AzureClientSecret} is an Azure Client Secret
+  | ${AzureTenantId} is a Directory (tenant) Id and can be found at `Azure Active Directory > App Registration > Overview Page`: ![Azure Tenant Id](./installing-unity-salesforce/images/azure-tenant-id.png)
+  | Example of `Default scopes` parameter - `openid profile offline_access email https://vegaecm2com.sharepoint.com/.default`
+  
+  For SharePoint it's also required to set a Redirect URI. On Azure Portal at 
+  `Azure Active Directory > App Registration > Overview Page` click on link to the right of `Redirect URIs` label:
+  
+  ![Azure Redirect URIs](./installing-unity-salesforce/images/azure-redirect-uris.png) 
+  
+  And add a new Redirect URI:
+  
+  ![Azure Redirect URI](./installing-unity-salesforce/images/azure-redirect-uri.png)
+  
+  URI format: https://${SalesforceOrgId}.my.salesforce.com/services/authcallback/Unity_Azure, where 
+  ${SalesforceOrgDomain} is a Salesforce Org domain. Unity_Azure - is an URL Suffix value from Auth.Provider settings.  
 
 - Go to `Security > CSP Trusted Sites` and `Edit` Unity site name:
 
@@ -159,12 +208,14 @@ After certificate for a given Unity site is obtained it should be installed on a
 
   ![u4sf](installing-unity-salesforce/images/image22.png)
 
-- Go to `Security > Named Credentials` and edit `vu_nc` if it exists or create a new Named Credential with the following information and click `Save`:
+- Go to `Security > Named Credentials` and edit `vu_nc` if it exists or create a new Named Credential and click `Save`:
+
+  For common Unity application use following values:
 
   | Field                             | Value                                                      | Example                             |
   | :-------------------------------- | :--------------------------------------------------------- | :---------------------------------- |
-  | Label                             | vu_nc/public/api/oauth/authorize                           |                                     |
-  | Name                              | vu_nc/public/api/oauth/authorize                           |                                     |
+  | Label                             | vu_nc                                                      |                                     |
+  | Name                              | vu_nc                                                      |                                     |
   | URL                               | `https://<Unity server>:<Unity port>/<Unity_context_root>` | https://sf-demo.vegaecm.com:9443/vu |
   | Identity Type                     | Per User                                                   |                                     |
   | Authentication Protocol           | OAuth 2.0                                                  |                                     |
@@ -173,6 +224,13 @@ After certificate for a given Unity site is obtained it should be installed on a
   | Start Authentication Flow on Save | checked                                                    |                                     |
 
   ![u4sf](installing-unity-salesforce/images/image23.png)
+  
+  Gateway application for SharePoint requires different values for Authentication Provider and Scope. Other properties 
+  match values from table above. For Authentication Provider choose Auth.Provider, that was created on one of previous
+  steps - Unity Azure. Example of scope parameter for SharePoint - 
+  `openid profile offline_access email https://vegaecm2com.sharepoint.com/.default`.
+  
+  ![u4sf](installing-unity-salesforce/images/sp-vu_nc.png)
 
 - Check that correct Unity application login dialog is opened and enter correct login and password
 
@@ -194,7 +252,7 @@ After certificate for a given Unity site is obtained it should be installed on a
   | Named Credential                  | vu_nc                         |
   | User                              | Select current logged in user |
   | Authentication Protocol           | OAuth 2.0                     |
-  | Authentication Provider           | UnityOAuth2Provider           |
+  | Authentication Provider           | Authentication Provider name (UnityOAuth2Provider or Unity Azure)  |
   | Start Authentication Flow on Save | checked                       |
 
   ![u4sf](installing-unity-salesforce/images/image26.png)
