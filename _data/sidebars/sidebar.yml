@@ -588,6 +588,11 @@ entries:
             output: web
             url: /docs/tutorials/unity-8-user-guide/
             id: tutorials-unity-8-user-guide
+          
+          - title: Unity 7.8 User Guide
+            output: web
+            url: /docs/tutorials/unity-7.8-user-guide/
+            id: tutorials-unity-7.8-user-guide
 
       - title: Development
         output: web
