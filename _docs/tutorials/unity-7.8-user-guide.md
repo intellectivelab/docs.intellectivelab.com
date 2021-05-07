@@ -8,7 +8,7 @@ category: Unity 7
 
 You can search for documents, case, and work items using React UI interface. React UI Interface supports IBM FileNet, CMOD, CM8, SharePoint, Box, Alfresco, other CMIS repositories. All Unity actions are supported in the React UI grid.
 
-## Dashboards
+# Dashboards
 
 Dashboard container component serves as a container for UI components and as away of grouping components.
 
@@ -16,7 +16,7 @@ On `React UI` application open `Analytics UI` tab, expand sidebar and discover a
 
 [![Dashboards](unity-7.8-user-guide/images/dashboards.png)](unity-7.8-user-guide/images/dashboards.png)
 
-### Containers
+## Containers
 
 Dashboard containers organize and allow navigation between dashboard components that are related and at the same level of hierarchy. The following types of containers are supported out of the box:
 
@@ -36,7 +36,7 @@ Dashboard containers organize and allow navigation between dashboard components 
 
   [![Containers](unity-7.8-user-guide/images/dashboard_container_tree.png)](unity-7.8-user-guide/images/dashboard_container_tree.png)
 
-## Folder view
+# Folder view
 
 Use the `folderPath` parameter to easily browse through the contents of different folders within repository.
 
@@ -46,7 +46,7 @@ Click on a folder to display content within that folder and all subfolders under
 
 [![Folders](unity-7.8-user-guide/images/folders.png)](unity-7.8-user-guide/images/folders.png)
 
-## Quick Search
+# Quick Search
 
 Use Quick Search to quickly find documents across current repository by typing in a related keyword or phrase.
 
@@ -56,7 +56,7 @@ The Search results will update, returning all content with the search criteria f
 
 [![Quick Search](unity-7.8-user-guide/images/quick-search.png)](unity-7.8-user-guide/images/quick-search.png)
 
-## Advanced Search
+# Advanced Search
 
 Advanced search gives you powerful tools to find the exact document you’re looking for.
 You can quickly filter and narrow down your search results via multiple dimensions document title, modifier, custom metadata, and more.
@@ -69,7 +69,7 @@ Advanced Search panel appears and you can enter search criteria based on the rep
 
 [![Advanced Search](unity-7.8-user-guide/images/advanced-search-panel.png)](unity-7.8-user-guide/images/advanced-search-panel.png)
 
-### Execute Search and Reset
+## Execute Search and Reset
 
 - Specify search criteria, and the results will be shown in the panel on the right:
 
@@ -79,7 +79,7 @@ Advanced Search panel appears and you can enter search criteria based on the rep
 
     [![Execure Search and Reset](unity-7.8-user-guide/images/reset-filters.png)](unity-7.8-user-guide/images/reset-filters.png)
 
-## Saved Searches
+# Saved Searches
 
 You can save frequently used searches to quickly access them in the future.
 
@@ -97,14 +97,14 @@ You can save frequently used searches to quickly access them in the future.
 
 When a Saved Search is selected, the Advanced panel UI is updated to display the Saved Search Criteria, and the search is executed.
 
-## Search Results
+# Search Results
 
 With Unity, you can customize how you view your search results. You can change the look and feel, set and order of displayed columns, sort order, and more. 
 To customize the Search Results Panel, click on the gear icon in the upper right:
 
 [![Grid settings](unity-8-user-guide/images/grid-settings-menu.png)](unity-8-user-guide/images/grid-settings-menu.png)
 
-### Grid mode
+## Grid mode
 
 For loading data, Grid supports pagination and infinite scrolling. The selected method is defined in the Grid configuration.
 
@@ -116,7 +116,7 @@ For loading data, Grid supports pagination and infinite scrolling. The selected 
 
     [![Grid mode](unity-7.8-user-guide/images/grid-infinite-mode.png)](unity-7.8-user-guide/images/grid-infinite-mode.png)
 
-### Grid columns
+## Grid columns
 
 To make a column visible or hidden, or to control the order in which the columns are displayed, select the `Grid Columns` menu item.
 Customize columns dialog appears:
@@ -132,7 +132,7 @@ For example, drag a column from the bottom to the top of the list to see it on t
 
 When you’re done making changes, select the `Apply` button. Your changes will be saved and kept the same each time you log into the system.
 
-### Column Resizing Grid
+## Column Resizing Grid
 
 Normally grid columns width is set automatically in order to fill whole grid horizontal space. The columns may be resized by mouse by dragging column separators. To show the separators, move mouse over the column heading and left and right side separators will be shown. Hold a separator with mouse and move horizontally to resize the column.
 
@@ -146,7 +146,7 @@ Width of a column becomes fixed once it was resized. Other columns width remains
 
 [![Grid columns resizing](unity-7.8-user-guide/images/grid-reset.png)](unity-7.8-user-guide/images/grid-reset.png)
 
-### Grid Display Density: Usability Features
+## Grid Display Density: Usability Features
 
 Unity can show information in a more compact or a more expanded form, depending on how much data you’d like to see on the screen at once.
 
@@ -161,12 +161,12 @@ Click the `Apply` button to save your change:
 
 [![Grid density](unity-7.8-user-guide/images/grid-density.gif)](unity-7.8-user-guide/images/grid-density.gif)
 
-### Sorting
+## Sorting
 
 Unity gives you powerful tools to sort your results, making it much easier to narrow down and identify the documents you want to find.
 You can use a simple sort on one column, or create multiple related column sorts to hone in on specific information.
 
-#### Quick Sort
+### Quick Sort
 
 - To quickly sort a column, mouse over the Column Name, and click on the arrow icon that appears immediately to the right:
 
@@ -177,7 +177,7 @@ You can use a simple sort on one column, or create multiple related column sorts
 - Click again to sort in descending order
 - Click a third time to remove the sort
 
-#### Sort Menu
+### Sort Menu
 
 To sort a column, you can also click the down arrow to the right of the column heading:
 
@@ -198,11 +198,11 @@ For example, if you want to sort by Document Title first, and then by Date Modif
 
 To remove the Column from Sort, select the `Remove Sort` menu item from the dropdown.
 
-## Actions on documents
+# Actions on documents
 
 Once you’ve located the document you’re looking for, you can take a variety of actions on it.
 
-### Actions menu
+## Actions menu
 
 For more actions, select the document and click on the vertical ellipse icon consisting of three dots to the right of the name:
 
@@ -210,27 +210,27 @@ For more actions, select the document and click on the vertical ellipse icon con
 
 Click on the action to perform it.
 
-#### View Content
+### View Content
 
 The application opens the file in a separate tab.
 
-#### Download
+### Download
 
 Downloads the selected file to your default file download location.
 
-#### Check Out
+### Check Out
 
 The system lets you mark the file as checked out to prevent other users from making changes to the file while you work on it.
 
-#### Check In
+### Check In
 
 The system lets you select a file to add as the new version for the file and update any document properties
 
-#### Cancel Check Out
+### Cancel Check Out
 
 The system removes the Checked Out status without making any changes to the file's version.
 
-#### Delete
+### Delete
 
 Deletes a document from the system.
 
@@ -241,12 +241,12 @@ You will be shown a Delete document confirmation prompt:
 - If you select `Yes`, the file will be deleted
 - If you select `Cancel`, no changes will be made and the prompt will be closed
 
-#### Check Out and Open In office
+### Check Out and Open In office
 
 Opens the file in the related desktop application.  
 Only applicable for Microsoft Office documents.
 
-#### Move to Folder
+### Move to Folder
 
 Moves the file to another folder.
 
@@ -265,7 +265,7 @@ You may move files by dragging and dropping them, or by selecting the `Move to` 
 
   - To cancel the Move/Copy action, click outside of the selection box.
 
-#### Copy to Folder
+### Copy to Folder
 
 Copies the File to another Folder.
 
@@ -277,11 +277,11 @@ You may copy files by dragging and dropping them, or by selecting the `Copy to F
 
   [![Copy to action](unity-7.8-user-guide/images/copy-to.png)](unity-7.8-user-guide/images/copy-to.png)
 
-#### Open in Separate tab
+### Open in Separate tab
 
 Ability to view case/document details in a separate browser tab.
 
-#### Edit
+### Edit
 
 Clicking the Edit action displays a Document Details window with the following information:
 
@@ -307,7 +307,7 @@ Clicking the Edit action displays a Document Details window with the following i
 
   The Version History tab displays information on each version of the file.
 
-### Actions on Multiple Selected Documents
+## Actions on Multiple Selected Documents
 
 With Unity, you can take action on multiple documents at once.  
 Click the checkbox to the left of a document to select it. To take action on multiple documents, select multiple documents and then click the `Actions` button in the upper right:
@@ -325,7 +325,7 @@ By clicking the `Export` button you can export metadata fields for selected docu
 
 You may select `CSV(current fields)` option to export fields that are currently shown in grid , or `CSV(all fields)` option to export all fields.
 
-### Create Document
+## Create Document
 
 You can easily add new documents to your repositories.
 
@@ -352,7 +352,7 @@ After dragging and dropping, or browse and selecting a file, you will be prompte
 - Once all required fields are entered, click the `Create` button.
 - Your document will be securely uploaded into the system.
 
-## Detail View
+# Detail View
 
 Unity provides an additional Detail View to allow fast browsing and comparison of documents. To activate it, click the `Detail View` toggle button in the upper right of the search results screen:
 
@@ -369,7 +369,7 @@ You may click on documents in the left panel to refresh the middle panel with th
 You can open Detail View for all documents returned by a search, or you can first multi-select the specific documents you want to view.
 For example, clicking the checkbox next to three documents, then selecting the Detail View toggle, will show only those three documents in Detail View. If no checkboxes are selected, all documents will be shown.
 
-### Bookmarks
+## Bookmarks
 
 On Detail view Bookmarks functionality is available. Bookmarks allow to quickly switch between selected items. List item can be added to Bookmarks bar by clicking Bookmark action in the item actions menu.
 
@@ -379,7 +379,7 @@ A bookmark can also be removed from the Bookmarks bar:
 
 [![Bookmarks](unity-7.8-user-guide/images/delete-bookmark.png)](unity-7.8-user-guide/images/delete-bookmark.png)
 
-## Recent View history
+# Recent View History
 
 Recent view history saves and shows a list of links to recently viewed items.
 To view the item in the Recent View history you may click the item in the grid and choose item properties. To open a list or Recently viewed items click the `History` icon.
@@ -394,11 +394,11 @@ To clear recent view history open it and click the `Clear history` icon:
 
 [![Clear Recent View list](unity-7.8-user-guide/images/clear-recently-viewed.png)](unity-7.8-user-guide/images/clear-recently-viewed.png)
 
-## Actions on cases
+# Actions on Cases
 
 Once you’ve located the case you’re looking for, you can take a variety of actions on it.
 
-### Create a new Case
+## Create a new Case
 
 You can easily create a new Case.
 
@@ -428,7 +428,7 @@ You can easily create a new Case.
 
     [![Complete Case Creation](unity-7.8-user-guide/images/complete-case-creation.png)](unity-7.8-user-guide/images/complete-case-creation.png)
 
-#### Attach existing document
+### Attach existing document
 
 Search template is opened after `Attach existing document` selection (see [Quick Search](#quick-search), [Advanced Search](#advanced-search), [Execute Search and Reset](#execute-search-and-reset)).
 
@@ -446,11 +446,11 @@ Dialog confirmation is displayed after `Detach Document` action selection:
 
 Document is disappear from list of attached documents after document detaching
 
-#### Attach a new document
+### Attach a new document
 
 View for document creation is displayed after action for new document attaching selection, see [Create Document](#create-document) section
 
-### Actions menu for case
+## Actions menu for case
 
 For more actions, select the case and click on the vertical ellipse icon consisting of three dots to the right of the name:
 
@@ -458,7 +458,7 @@ For more actions, select the case and click on the vertical ellipse icon consist
 
 Click on the action to perform it.
 
-#### Case Details (Properties)
+### Case Details (Properties)
 
 Case Details view can contain the following tabs:
 - Properties
@@ -466,17 +466,17 @@ Case Details view can contain the following tabs:
 - History/Comments
 - Workitems
 
-##### Properties
+#### Properties
 
 Properties tab contains fields that were configured in the Unity configuration files. Properties can be groupd to the expandable sections. Save button will be enabled after any property changing.
 
 [![Case Properties](unity-7.8-user-guide/images/case_details.png)](unity-7.8-user-guide/images/case_details.png)
 
-##### Attached document
+#### Attached document
 
 Contains the same functional that was described in [Attach existing document](#attach-existing-document) and [Attach a new document](#attach-a-new-document) sections.
 
-##### History/Comments
+#### History/Comments
 
 History/Comments tab contains information about all users actions and user comments:
 
@@ -502,13 +502,13 @@ A new comment is displayed in the grid after `Add` button pressing
 Also user can change any user comment clicking on pencil icon
 [![Comment Changing](unity-7.8-user-guide/images/comment_changing.png)](unity-7.8-user-guide/images/comment_changing.png)
 
-##### Workitems
+#### Workitems
 Workitems tab contains list of all workitems that were created for the case. Workitems can be filtered using [Quick Search](#quick-search) or [Advanced Search](#advanced-search)
 [![Workitems](unity-7.8-user-guide/images/workitems.png)](unity-7.8-user-guide/images/workitems.png)
 
 Standard Workitem actions can be executed from this tab (see more details [Actions on Workitems](#actions-on-workitems) section).
 
-#### Split Case
+### Split Case
 User can split case using appropriate action. The following view is displayed after `Split Case` action selection from the context menu
 [![Split Case Step1](unity-7.8-user-guide/images/case_type_selection_for_split_case.png)](unity-7.8-user-guide/images/case_type_selection_for_split_case.png).
 
@@ -526,7 +526,7 @@ User can select `Back` to return back to change Case Type or properties, change 
 User should select document(s) and press `Attach` button to attach documents to the new case. After that user should press `Complete` to finish case creation.
 Created case will be displayed in the grid. Case Details view contains all filled in values and attached documents.
 
-#### Copy Case
+### Copy Case
 User can copy existing case and create a new case.
 The following view is displayed for case copying. This view contains values from the parent case (if it was configured in the Unity configuration files)
 [![Copy Case](unity-7.8-user-guide/images/copy_case.png)](unity-7.8-user-guide/images/copy_case.png).
@@ -538,32 +538,32 @@ After that user can select `Back` to return back to change any values and press 
 User should select document(s) and press `Attach` button to attach documents to the new case. After that user should press `Complete` to finish case creation.
 Created case will be displayed in the grid. Case Details view contains all filled in values and attached documents.
 
-#### Open by URL
+### Open by URL
 Case Details view will be displayed in the separater browser tab in ExtJS mode after `Open by URL` action execution.
 [![Open by URL](unity-7.8-user-guide/images/open_by_url.png)](unity-7.8-user-guide/images/open_by_url.png).
 
-#### Open Case in Separate tab
+### Open Case in Separate tab
 Case Details view will be displayed in the separate browser tab in the React after `Open in Separate tab` action execution.
 [![Open in Separate tab](unity-7.8-user-guide/images/open_in_separate_tab.png)](unity-7.8-user-guide/images/open_in_separate_tab.png)
 
-#### Close Case
+### Close Case
 Case can be close and case status will be Complete after `Close Case` action execution. All workitems also are completed. Application can be configured for hiding cases and workitems with Complete status.
 
-#### Delete Case
+### Delete Case
 Any case can be deleted after `Delete Case` action execution.
 Confirmation dialog is displyaed after action selection.
 [![Delete Case](unity-7.8-user-guide/images/delete_case_dialog.png)](unity-7.8-user-guide/images/delete_case_dialog.png)
 
 Case is physically deleted from case management system.
 
-## Actions on Workitems
+# Actions on Workitems
 
-### Actions menu for workitems
+## Actions menu for workitems
 For more actions, select the workitem and click on the vertical ellipse icon consisting of three dots to the right of the name:
 [![Workitems Context Menu](unity-7.8-user-guide/images/workitems_context_menu.png)](unity-7.8-user-guide/images/workitems_context_menu.png)
 Click on the action to perform it.
 
-##### Workitem Details (Properties)
+### Workitem Details (Properties)
 Workitem Details view can contain the following tabs:
 - Properties (see more details [Case Properties](#case-details-properties) section). Properties that were changed in workitem also will be updated in the case
 - Attached documents (see more details  [Attach existing document](#attach-existing-document) and [Attach a new document](#attach-a-new-document)). Document that is attached in the workitem also will be displayed in the case and other workitems for this case.
@@ -571,7 +571,7 @@ Workitem Details view can contain the following tabs:
 [![Workitem Details](unity-7.8-user-guide/images/workitem_details.png)](unity-7.8-user-guide/images/workitem_details.png)
 
 
-#### Reassign 
+### Reassign 
 Workitem can be reassigned to other user. This action can be executed from context menu or workitem details view.
 The following view is displayed for this action.
 [![Reassign Workitem](unity-7.8-user-guide/images/reassigne_workitem.png)](unity-7.8-user-guide/images/reassigne_workitem.png)
@@ -587,17 +587,17 @@ After the action execution workitem disappears from the list for first user (who
 The same action can be executed for several selected workitems.
 [![Bulk Reassign Workitem](unity-7.8-user-guide/images/bulk_reassign.png)](unity-7.8-user-guide/images/bulk_reassign.png)
 
-#### Lock/Unlock workitem
+### Lock/Unlock workitem
 Workitem can be locked by current user. 
 [![Locked Workitem](unity-7.8-user-guide/images/locked_workitem.png)](unity-7.8-user-guide/images/locked_workitem.png)
 Other users can't open this workitems without `Unlock` action execution.
 [![Unlock Workitem](unity-7.8-user-guide/images/unlock_workitem.png)](unity-7.8-user-guide/images/unlock_workitem.png)
 
-#### Open Workitem in separate tab 
+### Open Workitem in separate tab 
 Workitem Details view will be displayed in the separate browser tab in the React after `Open in Separate tab` action execution.
 [![Workitem in Separate Tab](unity-7.8-user-guide/images/workitem_in_separate_tab.png)](unity-7.8-user-guide/images/workitem_in_separate_tab.png)
 
-#### Dispatch actions
+### Dispatch actions
 Dispatch actions can be executed for any workitem to move to the next workflow step.
 Dispatch actions can be executed from context menu 
 [![Dispatch actions in Context menu](unity-7.8-user-guide/images/dispatch_actions_from_context_menu.png)](unity-7.8-user-guide/images/dispatch_actions_from_context_menu.png)
