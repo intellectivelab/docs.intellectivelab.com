@@ -544,7 +544,7 @@ The application opens in the  detail view
 Workitem Details view can contain the following tabs:
 - Name Properties (depend on task in CaseBuilder)
 - Attached documents (see more details  [Attach existing document](#attach-existing-document) and [Attach a new document](#attach-a-new-document) sections.
-- History/Comments (see more details [History](#History) section)
+- History/Comments (see more details [History/Comments](#History/Comments) section)
 
 #### Reassign 
 User can reassign single or bulk of workitems on time via context menu or via the top Action button in the top corner.
