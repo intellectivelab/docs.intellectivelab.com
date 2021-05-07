@@ -52,7 +52,7 @@ Use Quick Search to quickly find documents across current repository by typing i
 
 Type in the word or phrase to search for in the `Contains text` box at the top of the screen. The search executes automatically.
 
-The Search results will update, returning all content with the search criteria found anywhere and restricted by your selected repository.
+The Search results will update, returning all content with the search criteria found anywhere and restricted by your selected repository:
 
 [![Quick Search](unity-7.8-user-guide/images/quick-search.png)](unity-7.8-user-guide/images/quick-search.png)
 
@@ -71,7 +71,7 @@ Advanced Search panel appears and you can enter search criteria based on the rep
 
 ### Execute Search and Reset
 
-- Specify search criteria and the results will be shown in the panel on the right:
+- Specify search criteria, and the results will be shown in the panel on the right:
 
     [![Execute Search and Reset](unity-7.8-user-guide/images/advanced-search-criteria.gif)](unity-7.8-user-guide/images/advanced-search-criteria.gif)
 
@@ -83,19 +83,26 @@ Advanced Search panel appears and you can enter search criteria based on the rep
 
 You can save frequently used searches to quickly access them in the future.
 
-- Enter the search criteria you’d like to use, then click the `Manage Selected Filters`
+- Enter the search criteria you’d like to use, then click the `Manage Selected Filters`:
 
     [![Saved Search](unity-7.8-user-guide/images/saved-search-menu.png)](unity-7.8-user-guide/images/saved-search-menu.png)
 
-- On the opened modal window enter a name for the search and click `Save As`
+- On the opened modal window enter a name for the search and click `Save As`:
 
-    [![Saved Search](unity-7.8-user-guide/images/SavedSearchName.gif)](unity-7.8-user-guide/images/SavedSearchName.gif)
+    [![Saved Search](unity-7.8-user-guide/images/save-search.png)](unity-7.8-user-guide/images/save-search.png)
 
-- To access your saved searches, click on the `Click to choose saved search` and select a search on opened `Choose a search` window
+- To access your saved searches, click on the filter icon and select a search on opened `Choose a search` window:
 
-    [![Saved Search](unity-7.8-user-guide/images/SavedSearchSelection.gif)](unity-7.8-user-guide/images/SavedSearchSelection.gif)
+    [![Saved Search](unity-7.8-user-guide/images/choose-saved-search.png)](unity-7.8-user-guide/images/choose-saved-search.png)
 
 When a Saved Search is selected, the Advanced panel UI is updated to display the Saved Search Criteria, and the search is executed.
+
+## Search Results
+
+With Unity, you can customize how you view your search results. You can change the look and feel, set and order of displayed columns, sort order, and more. 
+To customize the Search Results Panel, click on the gear icon in the upper right:
+
+[![Grid settings](unity-8-user-guide/images/grid-settings-menu.png)](unity-8-user-guide/images/grid-settings-menu.png)
 
 ### Grid mode
 
@@ -103,18 +110,18 @@ For loading data, Grid supports pagination and infinite scrolling. The selected 
 
 - In pagination mode, user may view the grid data by pages, clicking pages in pagination control under the grid. The number of items is restricted by 10 items per page
 
-[![Grid mode](unity-7.8-user-guide/images/GridPaginationMode.png)](unity-7.8-user-guide/images/GridPaginationMode.png)
+    [![Grid mode](unity-7.8-user-guide/images/grid-pagination-mode.png)](unity-7.8-user-guide/images/grid-pagination-mode.png)
 
 - In infinite scrolling mode, user may load next portion of data into the grid simply by scrolling grid down, until no more data is available.
 
-[![Grid mode](unity-7.8-user-guide/images/GridInfiniteMode.png)](unity-7.8-user-guide/images/GridInfiniteMode.png)
+    [![Grid mode](unity-7.8-user-guide/images/grid-infinite-mode.png)](unity-7.8-user-guide/images/grid-infinite-mode.png)
 
 ### Grid columns
 
 To make a column visible or hidden, or to control the order in which the columns are displayed, select the `Grid Columns` menu item.
 Customize columns dialog appears:
 
-[![Grid columns](unity-7.8-user-guide/images/CustomizeColumns.png)](unity-7.8-user-guide/images/CustomizeColumns.png)
+[![Grid columns](unity-7.8-user-guide/images/customize-columns.png)](unity-7.8-user-guide/images/customize-columns.png)
 
 For a given field, toggle the Visible toggle switch to the right (Red) to make that column visible. Toggle the switch to the left (Gray) to hide the column.
 
@@ -129,15 +136,15 @@ When you’re done making changes, select the `Apply` button. Your changes will 
 
 Normally grid columns width is set automatically in order to fill whole grid horizontal space. The columns may be resized by mouse by dragging column separators. To show the separators, move mouse over the column heading and left and right side separators will be shown. Hold a separator with mouse and move horizontally to resize the column.
 
-[![Grid columns](unity-7.8-user-guide/images/ResizeColumns.png)](unity-7.8-user-guide/images/ResizeColumns.png)
+[![Grid columns](unity-7.8-user-guide/images/resize-columns.png)](unity-7.8-user-guide/images/resize-columns.png)
 
 Last column width may not be changed. If grid occupies whole container form width, the last column takes all the remaining width till the right side of the grid. However, if grid is wider than its container, the last column width is set automatically by actual content.
 
 The minimum size of the columns is determined by column header, the actual column data in the grid rows may be shortened when shown in too narrow columns.
 
-Width of a column becomes fixed once it was resized. Other columns width remains automatically maintained. To reset the columns width to default (and revert the visible state of the columns and their order) use Reset command from grid menu:
+Width of a column becomes fixed once it was resized. Other columns width remains automatically maintained. To reset the columns width to default (and revert the visible state of the columns and their order) use `Reset` from the grid settings menu:
 
-[![Grid columns resizing](unity-7.8-user-guide/images/ColumnsReset.png)](unity-7.8-user-guide/images/ColumnsReset.png)
+[![Grid columns resizing](unity-7.8-user-guide/images/grid-reset.png)](unity-7.8-user-guide/images/grid-reset.png)
 
 ### Grid Display Density: Usability Features
 
@@ -150,9 +157,9 @@ Three options are provided:
 - Medium
 - Compact
 
-[![FoGrid density](unity-7.8-user-guide/images/GridDisplayDensity.gif)](unity-7.8-user-guide/images/GridDisplayDensity.gif)
+Click the `Apply` button to save your change:
 
-Click the `Apply` button to save your change.
+[![Grid density](unity-7.8-user-guide/images/grid-density.gif)](unity-7.8-user-guide/images/grid-density.gif)
 
 ### Sorting
 
@@ -163,7 +170,7 @@ You can use a simple sort on one column, or create multiple related column sorts
 
 - To quickly sort a column, mouse over the Column Name, and click on the arrow icon that appears immediately to the right:
 
-  [![Quick Sort](unity-7.8-user-guide/images/SortColumnOrder.gif)](unity-7.8-user-guide/images/SortColumnOrder.gif)
+  [![Quick Sort](unity-7.8-user-guide/images/column-sort-order-icon.png)](unity-7.8-user-guide/images/column-sort-order-icon.png)
 
   This will sort the column in ascending order.
 
@@ -174,11 +181,11 @@ You can use a simple sort on one column, or create multiple related column sorts
 
 To sort a column, you can also click the down arrow to the right of the column heading:
 
-[![Sort Menu](unity-7.8-user-guide/images/SortColumnOrderIcon.gif)](unity-7.8-user-guide/images/SortColumnOrderIcon.gif)
+[![Sort Menu](unity-7.8-user-guide/images/sort-column-arrow.png)](unity-7.8-user-guide/images/sort-column-arrow.png)
 
 The sort options are displayed:
 
-[![Sort Menu](unity-7.8-user-guide/images/SortColumnMenu.gif)](unity-7.8-user-guide/images/SortColumnMenu.gif)
+[![Sort Menu](unity-7.8-user-guide/images/sort-column-menu.png)](unity-7.8-user-guide/images/sort-column-menu.png)
 
 To set the sort order for the selected column, select either `Sort Ascending` or `Sort Descending`. Ascending will order elements like `1, 2, Alpha, Beta`, while descending will order elements like `9, 8, Zulu, Yankee`.
 
@@ -187,11 +194,9 @@ If you select a sort for multiple columns, a number will appear after the column
 To control the sort order and have a different column be sorted first, select the down arrow to the right of the column heading and select either Promote Order (to increase that column’s precedence in the sort order) ,or Demote Order (to lower that column’s precedence in the sort order).
 For example, if you want to sort by Document Title first, and then by Date Modified, promote Document Title until it is labelled `1`, followed by Date Modified labelled `2`.
 
-[![Sort Menu](unity-7.8-user-guide/images/MultipleSorting.gif)](unity-7.8-user-guide/images/MultipleSorting.gif)
+[![Sort Menu](unity-7.8-user-guide/images/multiple-sorting.gif)](unity-7.8-user-guide/images/multiple-sorting.gif)
 
 To remove the Column from Sort, select the `Remove Sort` menu item from the dropdown.
-
-[![Sort Menu](unity-7.8-user-guide/images/RemoveSort.gif)](unity-7.8-user-guide/images/RemoveSort.gif)
 
 ## Actions on documents
 
@@ -414,20 +419,20 @@ User can `Complete` case creation or return to the `Back` for properties changin
 [![Complete Case Creation](unity-7.8-user-guide/images/complete_case_creation.png)](unity-7.8-user-guide/images/complete_case_creation.png).
 
 #### Attach existing document
-Search template is opened after `Attach existing document` selection (see [Quick Search](#Quick Search), [Advanced Search](#Advanced Search), [Execute Search and Reset](#Execute Search and Reset))
+Search template is opened after `Attach existing document` selection (see [Quick Search](#quick-search), [Advanced Search](#advanced-search), [Execute Search and Reset](#execute-search-and-reset))
 [![Attach existing document](unity-7.8-user-guide/images/attach_existing_document.png)](unity-7.8-user-guide/images/attach_existing_document.png)
 
 User should select document(s) for attaching and press `Attach` button
 Attached document(s) are displayed in the grid
 [![List of Attached Document](unity-7.8-user-guide/images/list_attached_documents.png)](unity-7.8-user-guide/images/list_attached_documents.png)
 
-Actions can be executed for any selected attached document as it described in [Actions on documents](#Actions on documents). Specific document action is supported for attached document - `Detach Document`. Dialog confirmation is displayed after `Detach Document` action selection
+Actions can be executed for any selected attached document as it described in [Actions on documents](#actions-on-documents). Specific document action is supported for attached document - `Detach Document`. Dialog confirmation is displayed after `Detach Document` action selection
 [![Detach Document](unity-7.8-user-guide/images/detach_document.png)](unity-7.8-user-guide/images/detach_document.png).
 
 Document is disappear from list of attached documents after document detaching
 
 #### Attach a new document
-View for document creation is displayed after action for new document attaching selection, see [Create Document](#Create Document) section
+View for document creation is displayed after action for new document attaching selection, see [Create Document](#create-document) section
 
 ### Actions menu
 
@@ -449,7 +454,7 @@ Properties tab contains fields that were configured in the Unity configuration f
 [![Case Properties](unity-7.8-user-guide/images/case_details.png)](unity-7.8-user-guide/images/case_details.png)
 
 ##### Attached document
-Contains the same functional that was described in [Attach existing document](#Attach existing document) and [Attach a new document](#Attach a new document) sections.
+Contains the same functional that was described in [Attach existing document](#attach-existing-document) and [Attach a new document](#attach-a-new-document) sections.
 
 ##### History/Comments
 History/Comments tab contains information about all users actions and user comments
@@ -461,7 +466,7 @@ Only user comments can be displayed
 Also hisotry/comments can be displayed as timeline
 [![History timeline](unity-7.8-user-guide/images/comments_timeline.png)](unity-7.8-user-guide/images/comments_timeline.png)
 
-All history/comments can be filtered using quick search or range, see [Quick Search](#Quick Search) section
+All history/comments can be filtered using quick search or range, see [Quick Search](#quick-search) section
 [![History filtering](unity-7.8-user-guide/images/history_filtering.png)](unity-7.8-user-guide/images/history_filtering.png)
 
 User can create comment pressing to `Comment` button
@@ -472,9 +477,56 @@ Also user can change any user comment clicking on pencil icon
 [![Comment Changing](unity-7.8-user-guide/images/comment_changing.png)](unity-7.8-user-guide/images/comment_changing.png)
 
 ##### Workitems
-Workitems tab contains list of all workitems that were created for the case. Workitems can be filtered using [Quick Search](#Quick Search) or [Advanced Search](#Advanced Search)
+Workitems tab contains list of all workitems that were created for the case. Workitems can be filtered using [Quick Search](#quick-search) or [Advanced Search](#advanced-search)
 [![Workitems](unity-7.8-user-guide/images/workitems.png)](unity-7.8-user-guide/images/workitems.png)
 
+#### Split Case
+User can split case using appropriate action. The following view is displayed after `Split Case` action selection from the context menu
+[![Split Case Step1](unity-7.8-user-guide/images/case_type_selection_for_split_case.png)](unity-7.8-user-guide/images/case_type_selection_for_split_case.png).
+
+Properties from the parent case is copied to the child case (if it was configured in the Unity configuration files) and displayed in the ReadOnly format. User should select Case Type for creation from menu for Next butto.
+
+After Case Type selection user can change or add values to properties on the Case View
+[![Split Case Properties](unity-7.8-user-guide/images/split_case_properties.png)](unity-7.8-user-guide/images/split_case_properties.png).
+
+After properties changing user can select `Back` to change Case Type or `Next` to validate properties values.
+[![Split Case Review Properties](unity-7.8-user-guide/images/split_case_review_properties.png)](unity-7.8-user-guide/images/split_case_review_properties.png).
+
+User can select `Back` to return back to change Case Type or properties, change any values and press `Save`, press `Complete` to finishe case splitting, press `Next` to select document for attaching to a new case from the list of documents that were attached to the parent case
+[![Split Case Documents attaching](unity-7.8-user-guide/images/split_case_documents_attaching.png)](unity-7.8-user-guide/images/split_case_documents_attaching.png).
+
+User should select document(s) and press `Attach` button to attach documents to the new case. After that user should press `Complete` to finish case creation.
+Created case will be displayed in the grid. Case Details view contains all filled in values and attached documents.
+
+#### Copy Case
+User can copy existing case and create a new case.
+The following view is displayed for case copying. This view contains values from the parent case (if it was configured in the Unity configuration files)
+[![Copy Case](unity-7.8-user-guide/images/copy_case.png)](unity-7.8-user-guide/images/copy_case.png).
+
+User can change or add values to properties and press `Copy` button.
+After that user can select `Back` to return back to change any values and press `Save`, press `Complete` to finishe case copying, press `Next` to select document for attaching to a new case from the list of documents that were attached to the parent case.
+[![Copy Case Documents attaching](unity-7.8-user-guide/images/copy_case_documents_attaching.png)](unity-7.8-user-guide/images/copy_case_documents_attaching.png).
+
+User should select document(s) and press `Attach` button to attach documents to the new case. After that user should press `Complete` to finish case creation.
+Created case will be displayed in the grid. Case Details view contains all filled in values and attached documents.
+
+#### Open by URL
+Case Details view will be displayed in the separater browser tab in ExtJS mode after `Open by URL` action execution.
+[![Open by URL](unity-7.8-user-guide/images/open_by_url.png)](unity-7.8-user-guide/images/open_by_url.png).
+
+#### Open in Separate tab
+Case Details view will be displayed in the separate browser tab in the React after `Open in Separate tab` action execution.
+[![Open in Separate tab](unity-7.8-user-guide/images/open_in_separate_tab.png)](unity-7.8-user-guide/images/open_in_separate_tab.png)
+
+#### Close Case
+Case can be close and case status will be Complete after `Close Case` action execution. All workitems also are completed. Application can be configured for hiding cases and workitems with Complete status.
+
+#### Delete Case
+Any case can be deleted after `Delete Case` action execution.
+Confirmation dialog is displyaed after action selection.
+[![Delete Case](unity-7.8-user-guide/images/delete_case_dialog.png)](unity-7.8-user-guide/images/delete_case_dialog.png)
+
+Case is physically deleted from case management system.
 #Workitems
 ## View list of workitems
 Open Inbaskets dashboard and list of workitems display
