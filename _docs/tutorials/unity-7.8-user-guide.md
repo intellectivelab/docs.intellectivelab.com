@@ -530,7 +530,7 @@ Case is physically deleted from case management system.
 #Workitems
 ## View list of workitems
 Open Inbaskets dashboard and list of workitems display
-[![Workitems](unity-7.8-user-guide/images/WI page.png)](unity-7.8-user-guide/images/WI page.png)
+[![Workitems](unity-7.8-user-guide/images/WI_page.png)](unity-7.8-user-guide/images/WI_page.png)
 
 ### Actions menu
 
@@ -543,12 +543,13 @@ The application opens in the  detail view
 ##### Workitem Details (Properties)
 Workitem Details view can contain the following tabs:
 - Name Properties (depend on task in CaseBuilder)
-- Attached documents (see more details [Attach existing document](#Attach existing document) and [Attach a new document](#Attach a new document) sections)
+- Attached documents (see more details [Attach existing document](#Attach existing document) sections)
 - History/Comments (see more details [History/Comments](#History/Comments) section)
 
 #### Reassign 
 User can reassign single or bulk of workitems on time via context menu or via the top Action button in the top corner.
-One user reassigned to another user, then after the action this work item disappears from the list for first user (who resigned) and only the user to whom it was assigned can be seen.
+One user reassigned to another user, then after the action this work item disappears from the list for first user (who resigned)and only the user to whom 
+it was assigned can be seen.
 [![Workitems](unity-7.8-user-guide/images/reassign.gif)](unity-7.8-user-guide/images/reassign.gif)
 [![Workitems](unity-7.8-user-guide/images/reassign-bulk.gif)](unity-7.8-user-guide/images/reassign-bulk.gif)
 
