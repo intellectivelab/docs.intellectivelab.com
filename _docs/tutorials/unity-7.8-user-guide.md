@@ -309,7 +309,7 @@ Clicking the Edit action displays a Document Details window with the following i
 With Unity, you can take action on multiple documents at once.  
 Click the checkbox to the left of a document to select it. To take action on multiple documents, select multiple documents and then click the `Actions` button in the upper right:
 
-[![Multiple actions](unity-7.8-user-guide/images/MultipleActions.gif)](unity-7.8-user-guide/images/MultipleActions.gif)
+[![Multiple actions](unity-7.8-user-guide/images/multiple-actions.png)](unity-7.8-user-guide/images/multiple-actions.png)
 
 You may take the following actions on multiple selected documents:
 
@@ -318,7 +318,7 @@ You may take the following actions on multiple selected documents:
 
 By clicking the `Export` button you can export metadata fields for selected documents to CSV file:
 
-[![Export](unity-7.8-user-guide/images/Export.gif)](unity-7.8-user-guide/images/Export.gif)
+[![Export](unity-7.8-user-guide/images/export.png)](unity-7.8-user-guide/images/export.png)
 
 You may select `CSV(current fields)` option to export fields that are currently shown in grid , or `CSV(all fields)` option to export all fields.
 
@@ -328,11 +328,11 @@ You can easily add new documents to your repositories.
 
 Click the `Create` button to add a file to a Folder:
 
-[![Create button](unity-7.8-user-guide/images/CreateButton.png)](unity-7.8-user-guide/images/CreateButton.png)
+[![Create button](unity-7.8-user-guide/images/create-document-button.png)](unity-7.8-user-guide/images/create-document-button.png)
 
 The New Document dialog box will be displayed:
 
-[![New document dialog](unity-7.8-user-guide/images/NewDocumentDialog.png)](unity-7.8-user-guide/images/NewDocumentDialog.png)
+[![New document dialog](unity-7.8-user-guide/images/new-document-dialog.png)](unity-7.8-user-guide/images/new-document-dialog.png)
 
 You can add documents two ways:
 
@@ -342,7 +342,9 @@ You can add documents two ways:
 After dragging and dropping, or browse and selecting a file, you will be prompted to enter metadata for the file.
 
 - Enter a Document Title to be used for the document added. This can be different from the filename:
-  [![New document dialog filled](unity-7.8-user-guide/images/Create.png)](unity-7.8-user-guide/images/Create.png)
+
+  [![New document dialog filled](unity-7.8-user-guide/images/create-document-window.png)](unity-7.8-user-guide/images/create-document-window.png)
+  
 - You may optionally provide custom metadata field values, if prompted. Required fields will be marked with a red icon.
 - Once all required fields are entered, click the `Create` button.
 - Your document will be securely uploaded into the system.
@@ -351,11 +353,11 @@ After dragging and dropping, or browse and selecting a file, you will be prompte
 
 Unity provides an additional Detail View to allow fast browsing and comparison of documents. To activate it, click the `Detail View` toggle button in the upper right of the search results screen:
 
-[![Detail view icon](unity-7.8-user-guide/images/DetailViewIcon.png)](unity-7.8-user-guide/images/DetailViewIcon.png)
+[![Detail view icon](unity-7.8-user-guide/images/detail-view-icon.png)](unity-7.8-user-guide/images/detail-view-icon.png)
 
 You can click the button again to easily toggle between `Detail View` and standard `List View`:
 
-[![Detail view](unity-7.8-user-guide/images/DetailView.png)](unity-7.8-user-guide/images/DetailView.png)
+[![Detail view](unity-7.8-user-guide/images/detail-view.png)](unity-7.8-user-guide/images/detail-view.png)
 
 The Detail View left panel displays the list of files returned from the search.
 The Detail middle panel displays the same details information as listed above when the user selects the `Details action`.
@@ -368,26 +370,26 @@ For example, clicking the checkbox next to three documents, then selecting the D
 
 On Detail view Bookmarks functionality is available. Bookmarks allow to quickly switch between selected items. List item can be added to Bookmarks bar by clicking Bookmark action in the item actions menu.
 
-[![Bookmarks](unity-7.8-user-guide/images/AddBookmark.png)](unity-7.8-user-guide/images/AddBookmark.png)
+[![Bookmarks](unity-7.8-user-guide/images/add-bookmark.png)](unity-7.8-user-guide/images/add-bookmark.png)
 
 A bookmark can also be removed from the Bookmarks bar:
 
-[![Bookmarks](unity-7.8-user-guide/images/DeleteBookmark.png)](unity-7.8-user-guide/images/DeleteBookmark.png)
+[![Bookmarks](unity-7.8-user-guide/images/delete-bookmark.png)](unity-7.8-user-guide/images/delete-bookmark.png)
 
 ## Recent View history
 
 Recent view history saves and shows a list of links to recently viewed items.
 To view the item in the Recent View history you may click the item in the grid and choose item properties. To open a list or Recently viewed items click the `History` icon.
 
-[![Recent View icon](unity-7.8-user-guide/images/RecentlyViewedIcon.png)](unity-7.8-user-guide/images/RecentlyViewedIcon.png)
+[![Recent View icon](unity-7.8-user-guide/images/recently-viewed-icon.png)](unity-7.8-user-guide/images/recently-viewed-icon.png)
 
 And see the list of `Recently viewed` items
 
-[![Recent View list](unity-7.8-user-guide/images/ResentlyViewedList.png)](unity-7.8-user-guide/images/ResentlyViewedList.png)
+[![Recent View list](unity-7.8-user-guide/images/recently-viewed-list.png)](unity-7.8-user-guide/images/recently-viewed-list.png)
 
 To clear recent view history open it and click the `Clear history` icon:
 
-[![Clear Recent View list](unity-7.8-user-guide/images/ClearRecentlyViewed.png)](unity-7.8-user-guide/images/ClearRecentlyViewed.png)
+[![Clear Recent View list](unity-7.8-user-guide/images/clear-recently-viewed.png)](unity-7.8-user-guide/images/clear-recently-viewed.png)
 
 ## Actions on cases
 
@@ -395,43 +397,55 @@ Once you’ve located the case you’re looking for, you can take a variety of a
 
 ### Create a new Case
 
-You can easily create a new Cae.
+You can easily create a new Case.
 
-Click the button with case type name or `Create` button (it's defined in the Unity cofniguration files):
-[![Create New Case](unity-7.8-user-guide/images/create_new_case_button.png)](unity-7.8-user-guide/images/create_new_case_button.png)
+Click the button with case type name or `Create` button (it's defined in the Unity configuration files):
 
-The following view is displayed
-[![Create New Case View](unity-7.8-user-guide/images/new_case_view.png)](unity-7.8-user-guide/images/new_case_view.png)
+[![Create New Case](unity-7.8-user-guide/images/create-new-case-button.png)](unity-7.8-user-guide/images/create-new-case-button.png)
 
-User should fill in all required field and press `Create` button
+The following view is displayed:
+
+[![Create New Case View](unity-7.8-user-guide/images/new-case-view.png)](unity-7.8-user-guide/images/new-case-view.png)
+
+User should fill in all required field and press `Create` button:
+
 [![Create New Case Step 1](unity-7.8-user-guide/images/new_case_view_step1.png)](unity-7.8-user-guide/images/new_case_view_step1.png)
 
-In the next step user can change properties or return to the back. User can Complete case creation pressing to `Complete` button
+In the next step user can change properties or return to the back. User can Complete case creation pressing to `Complete` button:
+
 [![Create New Case Step 2](unity-7.8-user-guide/images/new_case_view_step2.png)](unity-7.8-user-guide/images/new_case_view_step2.png)
 
-View for attaching different documents are displayed after `Next` button pressing
+View for attaching different documents are displayed after `Next` button pressing:
+
 [![Create New Case Documents attaching](unity-7.8-user-guide/images/new_case_document_attaching.png)](unity-7.8-user-guide/images/new_case_document_attaching.png)
 
-User can attach already existing document or create a new one for different Document Classes with attaching to the case
+User can attach already existing document or create a new one for different Document Classes with attaching to the case:
+
 [![Create New Case Context menu for  Documents attaching](unity-7.8-user-guide/images/context_menu_for_documents_attaching.png)](unity-7.8-user-guide/images/context_menu_for_documents_attaching.png)
 
-User can `Complete` case creation or return to the `Back` for properties changing
+User can `Complete` case creation or return to the `Back` for properties changing:
+
 [![Complete Case Creation](unity-7.8-user-guide/images/complete_case_creation.png)](unity-7.8-user-guide/images/complete_case_creation.png).
 
 #### Attach existing document
+
 Search template is opened after `Attach existing document` selection (see [Quick Search](#quick-search), [Advanced Search](#advanced-search), [Execute Search and Reset](#execute-search-and-reset))
 [![Attach existing document](unity-7.8-user-guide/images/attach_existing_document.png)](unity-7.8-user-guide/images/attach_existing_document.png)
 
 User should select document(s) for attaching and press `Attach` button
-Attached document(s) are displayed in the grid
+Attached document(s) are displayed in the grid:
+
 [![List of Attached Document](unity-7.8-user-guide/images/list_attached_documents.png)](unity-7.8-user-guide/images/list_attached_documents.png)
 
-Actions can be executed for any selected attached document as it described in [Actions on documents](#actions-on-documents). Specific document action is supported for attached document - `Detach Document`. Dialog confirmation is displayed after `Detach Document` action selection
+Actions can be executed for any selected attached document as it described in [Actions on documents](#actions-on-documents). Specific document action is supported for attached document - `Detach Document`. 
+Dialog confirmation is displayed after `Detach Document` action selection:
+
 [![Detach Document](unity-7.8-user-guide/images/detach_document.png)](unity-7.8-user-guide/images/detach_document.png).
 
 Document is disappear from list of attached documents after document detaching
 
 #### Attach a new document
+
 View for document creation is displayed after action for new document attaching selection, see [Create Document](#create-document) section
 
 ### Actions menu for case
@@ -443,6 +457,7 @@ For more actions, select the case and click on the vertical ellipse icon consist
 Click on the action to perform it.
 
 #### Case Details (Properties)
+
 Case Details view can contain the following tabs:
 - Properties
 - Attached documents
@@ -450,26 +465,35 @@ Case Details view can contain the following tabs:
 - Workitems
 
 ##### Properties
+
 Properties tab contains fields that were configured in the Unity configuration files. Properties can be groupd to the expandable sections. Save button will be enabled after any property changing.
+
 [![Case Properties](unity-7.8-user-guide/images/case_details.png)](unity-7.8-user-guide/images/case_details.png)
 
 ##### Attached document
+
 Contains the same functional that was described in [Attach existing document](#attach-existing-document) and [Attach a new document](#attach-a-new-document) sections.
 
 ##### History/Comments
-History/Comments tab contains information about all users actions and user comments
+
+History/Comments tab contains information about all users actions and user comments:
+
 [![History](unity-7.8-user-guide/images/history.png)](unity-7.8-user-guide/images/history.png)
 
-Only user comments can be displayed
+Only user comments can be displayed:
+
 [![User Comments Displaying](unity-7.8-user-guide/images/user_comments_displaying.png)](unity-7.8-user-guide/images/user_comments_displaying.png)
 
-Also hisotry/comments can be displayed as timeline
+Also history/comments can be displayed as timeline:
+
 [![History timeline](unity-7.8-user-guide/images/comments_timeline.png)](unity-7.8-user-guide/images/comments_timeline.png)
 
-All history/comments can be filtered using quick search or range, see [Quick Search](#quick-search) section
+All history/comments can be filtered using quick search or range, see [Quick Search](#quick-search) section:
+
 [![History filtering](unity-7.8-user-guide/images/history_filtering.png)](unity-7.8-user-guide/images/history_filtering.png)
 
-User can create comment pressing to `Comment` button
+User can create comment pressing to `Comment` button:
+
 [![History filtering](unity-7.8-user-guide/images/history_filtering.png)](unity-7.8-user-guide/images/history_filtering.png)
 
 A new comment is displayed in the grid after `Add` button pressing
