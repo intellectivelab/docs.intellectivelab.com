@@ -434,7 +434,7 @@ Document is disappear from list of attached documents after document detaching
 #### Attach a new document
 View for document creation is displayed after action for new document attaching selection, see [Create Document](#create-document) section
 
-### Actions menu
+### Actions menu for case
 
 For more actions, select the case and click on the vertical ellipse icon consisting of three dots to the right of the name:
 
@@ -480,6 +480,8 @@ Also user can change any user comment clicking on pencil icon
 Workitems tab contains list of all workitems that were created for the case. Workitems can be filtered using [Quick Search](#quick-search) or [Advanced Search](#advanced-search)
 [![Workitems](unity-7.8-user-guide/images/workitems.png)](unity-7.8-user-guide/images/workitems.png)
 
+Standard Workitem actions can be executed from this tab (see more details [Actions on Workitems](#actions-on-workitems) section).
+
 #### Split Case
 User can split case using appropriate action. The following view is displayed after `Split Case` action selection from the context menu
 [![Split Case Step1](unity-7.8-user-guide/images/case_type_selection_for_split_case.png)](unity-7.8-user-guide/images/case_type_selection_for_split_case.png).
@@ -514,7 +516,7 @@ Created case will be displayed in the grid. Case Details view contains all fille
 Case Details view will be displayed in the separater browser tab in ExtJS mode after `Open by URL` action execution.
 [![Open by URL](unity-7.8-user-guide/images/open_by_url.png)](unity-7.8-user-guide/images/open_by_url.png).
 
-#### Open in Separate tab
+#### Open Case in Separate tab
 Case Details view will be displayed in the separate browser tab in the React after `Open in Separate tab` action execution.
 [![Open in Separate tab](unity-7.8-user-guide/images/open_in_separate_tab.png)](unity-7.8-user-guide/images/open_in_separate_tab.png)
 
@@ -527,51 +529,62 @@ Confirmation dialog is displyaed after action selection.
 [![Delete Case](unity-7.8-user-guide/images/delete_case_dialog.png)](unity-7.8-user-guide/images/delete_case_dialog.png)
 
 Case is physically deleted from case management system.
-#Workitems
-## View list of workitems
-Open Inbaskets dashboard and list of workitems display
-[![Workitems](unity-7.8-user-guide/images/WI_page.png)](unity-7.8-user-guide/images/WI_page.png)
 
-### Actions menu
+## Actions on Workitems
 
+### Actions menu for workitems
 For more actions, select the workitem and click on the vertical ellipse icon consisting of three dots to the right of the name:
-[![Workitems](unity-7.8-user-guide/images/actions-menu.gif)](unity-7.8-user-guide/images/actions-menu.gif)
+[![Workitems Context Menu](unity-7.8-user-guide/images/workitems_context_menu.png)](unity-7.8-user-guide/images/workitems_context_menu.png)
 Click on the action to perform it.
 
-#### Properties
-The application opens in the  detail view
 ##### Workitem Details (Properties)
 Workitem Details view can contain the following tabs:
-- Name Properties (depend on task in CaseBuilder)
-- Attached documents (see more details  [Attach existing document](#attach-existing-document) and [Attach a new document](#attach-a-new-document) sections.
+- Properties (see more details [Case Properties](#case-details-properties) section). Properties that were changed in workitem also will be updated in the case
+- Attached documents (see more details  [Attach existing document](#attach-existing-document) and [Attach a new document](#attach-a-new-document)). Document that is attached in the workitem also will be displayed in the case and other workitems for this case.
 - History/Comments (see more details [History/Comments](#History/Comments) section)
+[![Workitem Details](unity-7.8-user-guide/images/workitem_details.png)](unity-7.8-user-guide/images/workitem_details.png)
+
 
 #### Reassign 
-User can reassign single or bulk of workitems on time via context menu or via the top Action button in the top corner.
-One user reassigned to another user, then after the action this work item disappears from the list for first user (who resigned)and only the user to whom 
-it was assigned can be seen.
+Workitem can be reassigned to other user. This action can be executed from context menu or workitem details view.
+The following view is displayed for this action.
+[![Reassign Workitem](unity-7.8-user-guide/images/reassigne_workitem.png)](unity-7.8-user-guide/images/reassigne_workitem.png)
 
-[![Workitems](unity-7.8-user-guide/images/reassign.gif)](unity-7.8-user-guide/images/reassign.gif)
+Current user should select other user in `Assigne` property to whom this workitem will be assigne. User can start user name typing and possible values will be displayed in the drop-down list.
 
-[![Workitems](unity-7.8-user-guide/images/reassign-bulk.gif)](unity-7.8-user-guide/images/reassign-bulk.gif)
+Also user should add comment to describe why other user should work with this workitem.
+Both this field is configured via Unity configuration file. Other properties can be added to this View.
+
+User should press `Reassign` button to finish workitem reassigning.
+After the action execution workitem disappears from the list for first user (who resigned) and only the user to whom it was assigned can be seen it.
+
+The same action can be executed for several selected workitems.
+[![Bulk Reassign Workitem](unity-7.8-user-guide/images/bulk_reassign.png)](unity-7.8-user-guide/images/bulk_reassign.png)
 
 #### Lock/Unlock workitem
-User can lock/unlock workitem status 
+Workitem can be locked by current user. 
+[![Locked Workitem](unity-7.8-user-guide/images/locked_workitem.png)](unity-7.8-user-guide/images/locked_workitem.png)
+Other users can't open this workitems without `Unlock` action execution.
+[![Unlock Workitem](unity-7.8-user-guide/images/unlock_workitem.png)](unity-7.8-user-guide/images/unlock_workitem.png)
 
-#### Open in separate tab 
-Ability to view workitem details in a separate browser tab.
+#### Open Workitem in separate tab 
+Workitem Details view will be displayed in the separate browser tab in the React after `Open in Separate tab` action execution.
+[![Workitem in Separate Tab](unity-7.8-user-guide/images/workitem_in_separate_tab.png)](unity-7.8-user-guide/images/workitem_in_separate_tab.png)
 
-**Note**: There are other actions that are configured on task in CaseBuilder and  defined in the Unity cofniguration files. Actions display in context menu and on the workitem detail view
-[![Workitems](unity-7.8-user-guide/images/extra_actions.png)](unity-7.8-user-guide/images/extra_actions.png)
-[![Workitems](unity-7.8-user-guide/images/extra_actions_detail.png)](unity-7.8-user-guide/images/extra_actions_detail.png)
+#### Dispatch actions
+Dispatch actions can be executed for any workitem to move to the next workflow step.
+Dispatch actions can be executed from context menu 
+[![Dispatch actions in Context menu](unity-7.8-user-guide/images/dispatch_actions_from_context_menu.png)](unity-7.8-user-guide/images/dispatch_actions_from_context_menu.png)
 
+or Workitem Details view.
+[![Dispatch actions in Details View](unity-7.8-user-guide/images/dispatch_actions_from_details_view.png)](unity-7.8-user-guide/images/dispatch_actions_from_details_view.png)
 
+Workitem status changed to Complete after dispatch action execution and Workitem for the next workflow step is executed (if it was configured in the case manager system).
 
+Additional Dispatch Workitem view is displayed for case when action is executed from the context menu.
+[![Dispatch View](unity-7.8-user-guide/images/dispatch_view.png)](unity-7.8-user-guide/images/dispatch_view.png)
 
+User can change any value for workitem and press `Dispatch` button after that current workitem will be completed and workitem for the next workflow step will be created.
 
-
-
-
-
-
-
+The same action can be executed for case when several workitems with the same dispatch actions were selected.
+[![Bulk Dispatch](unity-7.8-user-guide/images/bulk_dispatch.png)](unity-7.8-user-guide/images/bulk_dispatch.png)
