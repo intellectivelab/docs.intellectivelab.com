@@ -430,31 +430,31 @@ You can easily create a new Case.
 
 ### Attach existing document
 
-Search template is opened after `Attach existing document` selection (see [Quick Search](#quick-search), [Advanced Search](#advanced-search), [Execute Search and Reset](#execute-search-and-reset)).
+Search template is opened after `Attach existing document` selection. User can find a document to be attached using [Quick Search](#quick-search) or [Advanced Search](#advanced-search):
 
-[![Attach existing document](unity-7.8-user-guide/images/attach_existing_document.png)](unity-7.8-user-guide/images/attach_existing_document.png)
+[![Attach existing document](unity-7.8-user-guide/images/attach-existing-document.png)](unity-7.8-user-guide/images/attach-existing-document.png)
 
 User should select document(s) for attaching and press `Attach` button.
-Attached document(s) are displayed in the grid:
+Attached documents are displayed in the grid:
 
-[![List of Attached Document](unity-7.8-user-guide/images/list_attached_documents.png)](unity-7.8-user-guide/images/list_attached_documents.png)
+[![List of Attached Document](unity-7.8-user-guide/images/list-attached-documents.png)](unity-7.8-user-guide/images/list-attached-documents.png)
 
 Actions can be executed for any selected attached document as it described in [Actions on documents](#actions-on-documents). Specific document action is supported for attached document - `Detach Document`. 
 Dialog confirmation is displayed after `Detach Document` action selection:
 
-[![Detach Document](unity-7.8-user-guide/images/detach_document.png)](unity-7.8-user-guide/images/detach_document.png).
+[![Detach Document](unity-7.8-user-guide/images/detach-document.png)](unity-7.8-user-guide/images/detach-document.png)
 
-Document is disappear from list of attached documents after document detaching
+Document disappears from the list of attached documents after clicking `Yes`.
 
 ### Attach a new document
 
-View for document creation is displayed after action for new document attaching selection, see [Create Document](#create-document) section
+View for document creation is displayed after action for new document attaching selection, see [Create Document](#create-document) section.
 
-## Actions menu for case
+## Actions menu for cases
 
 For more actions, select the case and click on the vertical ellipse icon consisting of three dots to the right of the name:
 
-[![Actions Menu](unity-7.8-user-guide/images/cases_context_menu.png)](unity-7.8-user-guide/images/cases_context_menu.png)
+[![Actions Menu](unity-7.8-user-guide/images/case-actions-menu.gif)](unity-7.8-user-guide/images/case-actions-menu.gif)
 
 Click on the action to perform it.
 
@@ -468,13 +468,13 @@ Case Details view can contain the following tabs:
 
 #### Properties
 
-Properties tab contains fields that were configured in the Unity configuration files. Properties can be groupd to the expandable sections. Save button will be enabled after any property changing.
+Properties tab contains fields that were configured in the Unity configuration files. Properties can be grouped to the expandable sections. `Save` button will be enabled after any property changing.
 
-[![Case Properties](unity-7.8-user-guide/images/case_details.png)](unity-7.8-user-guide/images/case_details.png)
+[![Case Properties](unity-7.8-user-guide/images/case-details.png)](unity-7.8-user-guide/images/case-details.png)
 
 #### Attached document
 
-Contains the same functional that was described in [Attach existing document](#attach-existing-document) and [Attach a new document](#attach-a-new-document) sections.
+Contains the same functionality that was described in [Attach existing document](#attach-existing-document) and [Attach a new document](#attach-a-new-document) sections.
 
 #### History/Comments
 
@@ -484,133 +484,197 @@ History/Comments tab contains information about all users actions and user comme
 
 Only user comments can be displayed:
 
-[![User Comments Displaying](unity-7.8-user-guide/images/user_comments_displaying.png)](unity-7.8-user-guide/images/user_comments_displaying.png)
+[![User Comments Displaying](unity-7.8-user-guide/images/user-comments-displaying.png)](unity-7.8-user-guide/images/user-comments-displaying.png)
 
 Also history/comments can be displayed as timeline:
 
-[![History timeline](unity-7.8-user-guide/images/comments_timeline.png)](unity-7.8-user-guide/images/comments_timeline.png)
+[![History timeline](unity-7.8-user-guide/images/comments-timeline.png)](unity-7.8-user-guide/images/comments-timeline.png)
 
-All history/comments can be filtered using quick search or range, see [Quick Search](#quick-search) section:
+All history/comments can be filtered using [Quick Search](#quick-search) or range:
 
-[![History filtering](unity-7.8-user-guide/images/history_filtering.png)](unity-7.8-user-guide/images/history_filtering.png)
+[![History filtering](unity-7.8-user-guide/images/history-filtering.png)](unity-7.8-user-guide/images/history-filtering.png)
 
-User can create comment pressing to `Comment` button:
+User can create comment pressing to `Comment` button.
 
-[![History filtering](unity-7.8-user-guide/images/history_filtering.png)](unity-7.8-user-guide/images/history_filtering.png)
+A new comment is displayed in the grid after `Add` button pressing.
 
-A new comment is displayed in the grid after `Add` button pressing
-Also user can change any user comment clicking on pencil icon
-[![Comment Changing](unity-7.8-user-guide/images/comment_changing.png)](unity-7.8-user-guide/images/comment_changing.png)
+Also user can change any user comment clicking on `Edit` icon:
+
+[![Comment Changing](unity-7.8-user-guide/images/comment-changing.png)](unity-7.8-user-guide/images/comment-changing.png)
 
 #### Workitems
-Workitems tab contains list of all workitems that were created for the case. Workitems can be filtered using [Quick Search](#quick-search) or [Advanced Search](#advanced-search)
+
+Workitems tab contains list of all workitems that were created for the case:
+
 [![Workitems](unity-7.8-user-guide/images/workitems.png)](unity-7.8-user-guide/images/workitems.png)
 
-Standard Workitem actions can be executed from this tab (see more details [Actions on Workitems](#actions-on-workitems) section).
+Workitems can be filtered using [Quick Search](#quick-search) or [Advanced Search](#advanced-search).  
+Standard Workitem actions can be executed from this tab (see more details in [Actions on Workitems](#actions-on-workitems) section).
 
 ### Split Case
-User can split case using appropriate action. The following view is displayed after `Split Case` action selection from the context menu
-[![Split Case Step1](unity-7.8-user-guide/images/case_type_selection_for_split_case.png)](unity-7.8-user-guide/images/case_type_selection_for_split_case.png).
 
-Properties from the parent case is copied to the child case (if it was configured in the Unity configuration files) and displayed in the ReadOnly format. User should select Case Type for creation from menu for Next butto.
+User can split case using appropriate action. The following view is displayed after `Split Case` action selection from the context menu:
 
-After Case Type selection user can change or add values to properties on the Case View
-[![Split Case Properties](unity-7.8-user-guide/images/split_case_properties.png)](unity-7.8-user-guide/images/split_case_properties.png).
+[![Split Case View](unity-7.8-user-guide/images/split-case.png)](unity-7.8-user-guide/images/split-case.png).
 
-After properties changing user can select `Back` to change Case Type or `Next` to validate properties values.
-[![Split Case Review Properties](unity-7.8-user-guide/images/split_case_review_properties.png)](unity-7.8-user-guide/images/split_case_review_properties.png).
+- Step 1. Select Case Type.
 
-User can select `Back` to return back to change Case Type or properties, change any values and press `Save`, press `Complete` to finishe case splitting, press `Next` to select document for attaching to a new case from the list of documents that were attached to the parent case
-[![Split Case Documents attaching](unity-7.8-user-guide/images/split_case_documents_attaching.png)](unity-7.8-user-guide/images/split_case_documents_attaching.png).
+    Properties from the parent case are copied to the child case (if it was configured in the Unity configuration files) and displayed in the Read-Only format. 
+    User should click `Next` button and select `Case Type` from dropdown menu:
 
-User should select document(s) and press `Attach` button to attach documents to the new case. After that user should press `Complete` to finish case creation.
+    [![Split Case Step1](unity-7.8-user-guide/images/split-case-type-selection.gif)](unity-7.8-user-guide/images/split-case-type-selection.gif)
+    
+- Step 2. Set case properties.
+
+    After Case Type selection user can change or add values to properties on the Case View:
+    
+    [![Split Case Properties](unity-7.8-user-guide/images/split-case-step2.png)](unity-7.8-user-guide/images/split-case-step2.png)
+    
+    After properties changing user can select `Back` to change Case Type or `Next` to validate properties values.
+
+- Step 3. Case Preview.
+    
+    [![Split Case Review Properties](unity-7.8-user-guide/images/split-case-preview.png)](unity-7.8-user-guide/images/split-case-preview.png)
+    
+    User can select:
+    - `Back` to return to change Case Type or properties
+    - `Save` to save changed values
+    - `Complete` to finish case splitting
+    - `Next` to select document for attaching to a new case from the list of documents that were attached to the parent case
+
+- Step 4. Attach documents to case (optional).
+   
+    [![Split Case Documents attaching](unity-7.8-user-guide/images/split-case-documents-attaching.png)](unity-7.8-user-guide/images/split-case-documents-attaching.png)
+
+    User should select document(s) and press `Attach` button to attach documents to the new case. After that user should press `Complete` to finish case creation.
+
 Created case will be displayed in the grid. Case Details view contains all filled in values and attached documents.
 
 ### Copy Case
-User can copy existing case and create a new case.
-The following view is displayed for case copying. This view contains values from the parent case (if it was configured in the Unity configuration files)
-[![Copy Case](unity-7.8-user-guide/images/copy_case.png)](unity-7.8-user-guide/images/copy_case.png).
 
-User can change or add values to properties and press `Copy` button.
-After that user can select `Back` to return back to change any values and press `Save`, press `Complete` to finishe case copying, press `Next` to select document for attaching to a new case from the list of documents that were attached to the parent case.
-[![Copy Case Documents attaching](unity-7.8-user-guide/images/copy_case_documents_attaching.png)](unity-7.8-user-guide/images/copy_case_documents_attaching.png).
+User can copy existing case and create a new case using `Copy Case` action.
 
-User should select document(s) and press `Attach` button to attach documents to the new case. After that user should press `Complete` to finish case creation.
+The following view is displayed for case copying. This view contains values from the parent case (if it was configured in the Unity configuration files):
+
+[![Copy Case](unity-7.8-user-guide/images/copy-case.png)](unity-7.8-user-guide/images/copy-case.png)
+
+- Step 1. User can change or add values to properties and press `Copy` button.
+
+- Step 2. Case preview.
+
+    [![Copy Case Step2](unity-7.8-user-guide/images/copy-case-step2.png)](unity-7.8-user-guide/images/copy-case-step2.png)
+
+    User can select:
+    - `Back` to return to change any values
+    - `Save` to save changed values
+    - `Complete` to finish case copying
+    - `Next` to select document for attaching to a new case from the list of documents that were attached to the parent case.
+        
+- Step 3. Attach documents to case (optional).
+
+    [![Copy Case Documents attaching](unity-7.8-user-guide/images/copy-case-documents-attaching.png)](unity-7.8-user-guide/images/copy-case-documents-attaching.png)
+
+    User should select document(s) and press `Attach` button to attach documents to the new case. After that user should press `Complete` to finish case creation.
+
 Created case will be displayed in the grid. Case Details view contains all filled in values and attached documents.
 
 ### Open by URL
-Case Details view will be displayed in the separater browser tab in ExtJS mode after `Open by URL` action execution.
-[![Open by URL](unity-7.8-user-guide/images/open_by_url.png)](unity-7.8-user-guide/images/open_by_url.png).
+
+Case Details view will be displayed in the separate browser tab in ExtJS mode after `Open by URL` action execution:
+
+[![Open by URL](unity-7.8-user-guide/images/open-by-url.png)](unity-7.8-user-guide/images/open-by-url.png)
 
 ### Open Case in Separate tab
-Case Details view will be displayed in the separate browser tab in the React after `Open in Separate tab` action execution.
-[![Open in Separate tab](unity-7.8-user-guide/images/open_in_separate_tab.png)](unity-7.8-user-guide/images/open_in_separate_tab.png)
+
+[Case Details view](#case-details-properties) will be displayed in the separate browser tab in the React after `Open in Separate tab` action execution.
 
 ### Close Case
-Case can be close and case status will be Complete after `Close Case` action execution. All workitems also are completed. Application can be configured for hiding cases and workitems with Complete status.
+
+Case can be closed and case status will be `Complete` after `Close Case` action execution. All workitems also are completed. Application can be configured for hiding cases and workitems with `Complete` status.
 
 ### Delete Case
+
 Any case can be deleted after `Delete Case` action execution.
-Confirmation dialog is displyaed after action selection.
-[![Delete Case](unity-7.8-user-guide/images/delete_case_dialog.png)](unity-7.8-user-guide/images/delete_case_dialog.png)
+
+Confirmation dialog is displayed after action selection:
+
+[![Delete Case](unity-7.8-user-guide/images/delete-case-dialog.png)](unity-7.8-user-guide/images/delete-case-dialog.png)
 
 Case is physically deleted from case management system.
 
 # Actions on Workitems
 
 ## Actions menu for workitems
+
 For more actions, select the workitem and click on the vertical ellipse icon consisting of three dots to the right of the name:
-[![Workitems Context Menu](unity-7.8-user-guide/images/workitems_context_menu.png)](unity-7.8-user-guide/images/workitems_context_menu.png)
+
+[![Workitems Context Menu](unity-7.8-user-guide/images/workitems-actions-menu.gif)](unity-7.8-user-guide/images/workitems-actions-menu.gif)
+
 Click on the action to perform it.
 
 ### Workitem Details (Properties)
-Workitem Details view can contain the following tabs:
-- Properties (see more details [Case Properties](#case-details-properties) section). Properties that were changed in workitem also will be updated in the case
-- Attached documents (see more details  [Attach existing document](#attach-existing-document) and [Attach a new document](#attach-a-new-document)). Document that is attached in the workitem also will be displayed in the case and other workitems for this case.
-- History/Comments (see more details [History/Comments](#History/Comments) section)
-[![Workitem Details](unity-7.8-user-guide/images/workitem_details.png)](unity-7.8-user-guide/images/workitem_details.png)
 
+Workitem Details view can contain the following tabs:
+- Properties (see more details in [Case Properties](#case-details-properties) section). Properties that were changed in workitem also will be updated in the case
+- Attached documents (see more details in [Attach existing document](#attach-existing-document) and [Attach a new document](#attach-a-new-document) sections). Document that is attached in the workitem also will be displayed in the case and other workitems for this case.
+- History/Comments (see more details [History/Comments](#History/Comments) section)
+
+[![Workitem Details](unity-7.8-user-guide/images/workitem-details.png)](unity-7.8-user-guide/images/workitem-details.png)
 
 ### Reassign 
+
 Workitem can be reassigned to other user. This action can be executed from context menu or workitem details view.
 The following view is displayed for this action.
-[![Reassign Workitem](unity-7.8-user-guide/images/reassigne_workitem.png)](unity-7.8-user-guide/images/reassigne_workitem.png)
 
-Current user should select other user in `Assigne` property to whom this workitem will be assigne. User can start user name typing and possible values will be displayed in the drop-down list.
+[![Reassign Workitem](unity-7.8-user-guide/images/reassigne-workitem.png)](unity-7.8-user-guide/images/reassigne-workitem.png)
+
+Current user should select other user in `Assignee` property to whom this workitem will be assigned. User can start user name typing and possible values will be displayed in the drop-down list.
 
 Also user should add comment to describe why other user should work with this workitem.
-Both this field is configured via Unity configuration file. Other properties can be added to this View.
+Both fields are configured via Unity configuration file. Other properties can be added to this View.
 
 User should press `Reassign` button to finish workitem reassigning.
 After the action execution workitem disappears from the list for first user (who resigned) and only the user to whom it was assigned can be seen it.
 
-The same action can be executed for several selected workitems.
-[![Bulk Reassign Workitem](unity-7.8-user-guide/images/bulk_reassign.png)](unity-7.8-user-guide/images/bulk_reassign.png)
+The same action can be executed for several selected workitems:
+
+[![Bulk Reassign Workitem](unity-7.8-user-guide/images/bulk-reassign.png)](unity-7.8-user-guide/images/bulk-reassign.png)
 
 ### Lock/Unlock workitem
-Workitem can be locked by current user. 
-[![Locked Workitem](unity-7.8-user-guide/images/locked_workitem.png)](unity-7.8-user-guide/images/locked_workitem.png)
-Other users can't open this workitems without `Unlock` action execution.
-[![Unlock Workitem](unity-7.8-user-guide/images/unlock_workitem.png)](unity-7.8-user-guide/images/unlock_workitem.png)
+
+Workitem can be locked by current user:
+
+[![Locked Workitem](unity-7.8-user-guide/images/locked-workitem.png)](unity-7.8-user-guide/images/locked-workitem.png)
+
+Other users can't open this workitems without `Unlock` action execution:
+
+[![Unlock Workitem](unity-7.8-user-guide/images/unlock-workitem.png)](unity-7.8-user-guide/images/unlock-workitem.png)
 
 ### Open Workitem in separate tab 
-Workitem Details view will be displayed in the separate browser tab in the React after `Open in Separate tab` action execution.
-[![Workitem in Separate Tab](unity-7.8-user-guide/images/workitem_in_separate_tab.png)](unity-7.8-user-guide/images/workitem_in_separate_tab.png)
+
+[Workitem Details view](#workitem-details-properties) will be displayed in the separate browser tab in the React after `Open in Separate tab` action execution:
+
+[![Workitem in Separate Tab](unity-7.8-user-guide/images/workitem-in-separate-tab.png)](unity-7.8-user-guide/images/workitem-in-separate-tab.png)
 
 ### Dispatch actions
+
 Dispatch actions can be executed for any workitem to move to the next workflow step.
-Dispatch actions can be executed from context menu 
-[![Dispatch actions in Context menu](unity-7.8-user-guide/images/dispatch_actions_from_context_menu.png)](unity-7.8-user-guide/images/dispatch_actions_from_context_menu.png)
+Dispatch actions can be executed from context menu:
 
-or Workitem Details view.
-[![Dispatch actions in Details View](unity-7.8-user-guide/images/dispatch_actions_from_details_view.png)](unity-7.8-user-guide/images/dispatch_actions_from_details_view.png)
+[![Dispatch actions in Context menu](unity-7.8-user-guide/images/dispatch-actions-from-context-menu.png)](unity-7.8-user-guide/images/dispatch-actions-from-context-menu.png)
 
-Workitem status changed to Complete after dispatch action execution and Workitem for the next workflow step is executed (if it was configured in the case manager system).
+or Workitem Details view:
 
-Additional Dispatch Workitem view is displayed for case when action is executed from the context menu.
-[![Dispatch View](unity-7.8-user-guide/images/dispatch_view.png)](unity-7.8-user-guide/images/dispatch_view.png)
+[![Dispatch actions in Details View](unity-7.8-user-guide/images/dispatch-actions-from-details-view.png)](unity-7.8-user-guide/images/dispatch-actions-from-details-view.png)
 
-User can change any value for workitem and press `Dispatch` button after that current workitem will be completed and workitem for the next workflow step will be created.
+Workitem status changed to `Complete` after dispatch action execution and Workitem for the next workflow step is executed (if it was configured in the case manager system).
 
-The same action can be executed for case when several workitems with the same dispatch actions were selected.
-[![Bulk Dispatch](unity-7.8-user-guide/images/bulk_dispatch.png)](unity-7.8-user-guide/images/bulk_dispatch.png)
+Additional Dispatch Workitem view is displayed for case when action is executed from the context menu:
+
+[![Dispatch View](unity-7.8-user-guide/images/dispatch-view.png)](unity-7.8-user-guide/images/dispatch-view.png)
+
+User can change any value for workitem and press `Dispatch` button. After that current workitem will be completed and workitem for the next workflow step will be created.
+
+The same action can be executed for case when several workitems with the same dispatch actions were selected:
+
+[![Bulk Dispatch](unity-7.8-user-guide/images/bulk-dispatch.png)](unity-7.8-user-guide/images/bulk-dispatch.png)
