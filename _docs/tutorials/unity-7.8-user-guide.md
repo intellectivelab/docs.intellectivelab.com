@@ -73,11 +73,11 @@ Advanced Search panel appears and you can enter search criteria based on the rep
 
 - Specify search criteria, and the results will be shown in the panel on the right:
 
-    [![Execute Search and Reset](unity-7.8-user-guide/images/advanced-search-criteria.gif)](unity-7.8-user-guide/images/advanced-search-criteria.gif)
+  [![Execute Search and Reset](unity-7.8-user-guide/images/advanced-search-criteria.gif)](unity-7.8-user-guide/images/advanced-search-criteria.gif)
 
 - To clear your Advanced Search changes and return to the Quick search settings, click the `Reset filters` button:
 
-    [![Execure Search and Reset](unity-7.8-user-guide/images/reset-filters.png)](unity-7.8-user-guide/images/reset-filters.png)
+  [![Execure Search and Reset](unity-7.8-user-guide/images/reset-filters.png)](unity-7.8-user-guide/images/reset-filters.png)
 
 # Saved Searches
 
@@ -85,21 +85,21 @@ You can save frequently used searches to quickly access them in the future.
 
 - Enter the search criteria you’d like to use, then click the `Manage Selected Filters`:
 
-    [![Saved Search](unity-7.8-user-guide/images/saved-search-menu.png)](unity-7.8-user-guide/images/saved-search-menu.png)
+  [![Saved Search](unity-7.8-user-guide/images/saved-search-menu.png)](unity-7.8-user-guide/images/saved-search-menu.png)
 
 - On the opened modal window enter a name for the search and click `Save As`:
 
-    [![Saved Search](unity-7.8-user-guide/images/save-search.png)](unity-7.8-user-guide/images/save-search.png)
+  [![Saved Search](unity-7.8-user-guide/images/save-search.png)](unity-7.8-user-guide/images/save-search.png)
 
 - To access your saved searches, click on the filter icon and select a search on opened `Choose a search` window:
 
-    [![Saved Search](unity-7.8-user-guide/images/choose-saved-search.png)](unity-7.8-user-guide/images/choose-saved-search.png)
+  [![Saved Search](unity-7.8-user-guide/images/choose-saved-search.png)](unity-7.8-user-guide/images/choose-saved-search.png)
 
 When a Saved Search is selected, the Advanced panel UI is updated to display the Saved Search Criteria, and the search is executed.
 
 # Search Results
 
-With Unity, you can customize how you view your search results. You can change the look and feel, set and order of displayed columns, sort order, and more. 
+With Unity, you can customize how you view your search results. You can change the look and feel, set and order of displayed columns, sort order, and more.
 To customize the Search Results Panel, click on the gear icon in the upper right:
 
 [![Grid settings](unity-8-user-guide/images/grid-settings-menu.png)](unity-8-user-guide/images/grid-settings-menu.png)
@@ -110,11 +110,11 @@ For loading data, Grid supports pagination and infinite scrolling. The selected 
 
 - In pagination mode, user may view the grid data by pages, clicking pages in pagination control under the grid. The number of items is restricted by 10 items per page
 
-    [![Grid mode](unity-7.8-user-guide/images/grid-pagination-mode.png)](unity-7.8-user-guide/images/grid-pagination-mode.png)
+  [![Grid mode](unity-7.8-user-guide/images/grid-pagination-mode.png)](unity-7.8-user-guide/images/grid-pagination-mode.png)
 
 - In infinite scrolling mode, user may load next portion of data into the grid simply by scrolling grid down, until no more data is available.
 
-    [![Grid mode](unity-7.8-user-guide/images/grid-infinite-mode.png)](unity-7.8-user-guide/images/grid-infinite-mode.png)
+  [![Grid mode](unity-7.8-user-guide/images/grid-infinite-mode.png)](unity-7.8-user-guide/images/grid-infinite-mode.png)
 
 ## Grid columns
 
@@ -347,7 +347,7 @@ After dragging and dropping, or browse and selecting a file, you will be prompte
 - Enter a Document Title to be used for the document added. This can be different from the filename:
 
   [![New document dialog filled](unity-7.8-user-guide/images/create-document-window.png)](unity-7.8-user-guide/images/create-document-window.png)
-  
+
 - You may optionally provide custom metadata field values, if prompted. Required fields will be marked with a red icon.
 - Once all required fields are entered, click the `Create` button.
 - Your document will be securely uploaded into the system.
@@ -404,29 +404,29 @@ You can easily create a new Case.
 
 - Click the button with case type name or `Create` button (it's defined in the Unity configuration files):
 
-    [![Create New Case](unity-7.8-user-guide/images/create-new-case-button.png)](unity-7.8-user-guide/images/create-new-case-button.png)
+  [![Create New Case](unity-7.8-user-guide/images/create-new-case-button.png)](unity-7.8-user-guide/images/create-new-case-button.png)
 
-    The following view is displayed:
+  The following view is displayed:
 
-    [![Create New Case View](unity-7.8-user-guide/images/new-case-view.png)](unity-7.8-user-guide/images/new-case-view.png)
+  [![Create New Case View](unity-7.8-user-guide/images/new-case-view.png)](unity-7.8-user-guide/images/new-case-view.png)
 
-    User should fill in all required fields and press `Create` button.
+  User should fill in all required fields and press `Create` button.
 
 - In the next step user can change properties or return to the back. User can complete case creation pressing to `Complete` button:
 
-    [![Create New Case Step 2](unity-7.8-user-guide/images/new-case-view-step2.png)](unity-7.8-user-guide/images/new-case-view-step2.png)
+  [![Create New Case Step 2](unity-7.8-user-guide/images/new-case-view-step2.png)](unity-7.8-user-guide/images/new-case-view-step2.png)
 
 - View for attaching different documents are displayed after `Next` button pressing:
 
-    [![Create New Case Documents attaching](unity-7.8-user-guide/images/new-case-document-attaching.png)](unity-7.8-user-guide/images/new-case-document-attaching.png)
+  [![Create New Case Documents attaching](unity-7.8-user-guide/images/new-case-document-attaching.png)](unity-7.8-user-guide/images/new-case-document-attaching.png)
 
-    User can attach already existing document or create a new one for different Document Classes with attaching to the case:
+  User can attach already existing document or create a new one for different Document Classes with attaching to the case:
 
-    [![Create New Case Context menu for  Documents attaching](unity-7.8-user-guide/images/context-menu-for-documents-attaching.png)](unity-7.8-user-guide/images/context-menu-for-documents-attaching.png)
+  [![Create New Case Context menu for  Documents attaching](unity-7.8-user-guide/images/context-menu-for-documents-attaching.png)](unity-7.8-user-guide/images/context-menu-for-documents-attaching.png)
 
 - User can `Complete` case creation or return to the `Back` for properties changing:
 
-    [![Complete Case Creation](unity-7.8-user-guide/images/complete-case-creation.png)](unity-7.8-user-guide/images/complete-case-creation.png)
+  [![Complete Case Creation](unity-7.8-user-guide/images/complete-case-creation.png)](unity-7.8-user-guide/images/complete-case-creation.png)
 
 ### Attach existing document
 
@@ -439,7 +439,7 @@ Attached documents are displayed in the grid:
 
 [![List of Attached Document](unity-7.8-user-guide/images/list-attached-documents.png)](unity-7.8-user-guide/images/list-attached-documents.png)
 
-Actions can be executed for any selected attached document as it described in [Actions on documents](#actions-on-documents). Specific document action is supported for attached document - `Detach Document`. 
+Actions can be executed for any selected attached document as it described in [Actions on documents](#actions-on-documents). Specific document action is supported for attached document - `Detach Document`.
 Dialog confirmation is displayed after `Detach Document` action selection:
 
 [![Detach Document](unity-7.8-user-guide/images/detach-document.png)](unity-7.8-user-guide/images/detach-document.png)
@@ -461,6 +461,7 @@ Click on the action to perform it.
 ### Case Details (Properties)
 
 Case Details view can contain the following tabs:
+
 - Properties
 - Attached documents
 - History/Comments
@@ -519,34 +520,35 @@ User can split case using appropriate action. The following view is displayed af
 
 - Step 1. Select Case Type.
 
-    Properties from the parent case are copied to the child case (if it was configured in the Unity configuration files) and displayed in the Read-Only format. 
-    User should click `Next` button and select `Case Type` from dropdown menu:
+  Properties from the parent case are copied to the child case (if it was configured in the Unity configuration files) and displayed in the Read-Only format.
+  User should click `Next` button and select `Case Type` from dropdown menu:
 
-    [![Split Case Step1](unity-7.8-user-guide/images/split-case-type-selection.gif)](unity-7.8-user-guide/images/split-case-type-selection.gif)
-    
+  [![Split Case Step1](unity-7.8-user-guide/images/split-case-type-selection.gif)](unity-7.8-user-guide/images/split-case-type-selection.gif)
+
 - Step 2. Set case properties.
 
-    After Case Type selection user can change or add values to properties on the Case View:
-    
-    [![Split Case Properties](unity-7.8-user-guide/images/split-case-step2.png)](unity-7.8-user-guide/images/split-case-step2.png)
-    
-    After properties changing user can select `Back` to change Case Type or `Next` to validate properties values.
+  After Case Type selection user can change or add values to properties on the Case View:
+
+  [![Split Case Properties](unity-7.8-user-guide/images/split-case-step2.png)](unity-7.8-user-guide/images/split-case-step2.png)
+
+  After properties changing user can select `Back` to change Case Type or `Next` to validate properties values.
 
 - Step 3. Case Preview.
-    
-    [![Split Case Review Properties](unity-7.8-user-guide/images/split-case-preview.png)](unity-7.8-user-guide/images/split-case-preview.png)
-    
-    User can select:
-    - `Back` to return to change Case Type or properties
-    - `Save` to save changed values
-    - `Complete` to finish case splitting
-    - `Next` to select document for attaching to a new case from the list of documents that were attached to the parent case
+
+  [![Split Case Review Properties](unity-7.8-user-guide/images/split-case-preview.png)](unity-7.8-user-guide/images/split-case-preview.png)
+
+  User can select:
+
+  - `Back` to return to change Case Type or properties
+  - `Save` to save changed values
+  - `Complete` to finish case splitting
+  - `Next` to select document for attaching to a new case from the list of documents that were attached to the parent case
 
 - Step 4. Attach documents to case (optional).
-   
-    [![Split Case Documents attaching](unity-7.8-user-guide/images/split-case-documents-attaching.png)](unity-7.8-user-guide/images/split-case-documents-attaching.png)
 
-    User should select document(s) and press `Attach` button to attach documents to the new case. After that user should press `Complete` to finish case creation.
+  [![Split Case Documents attaching](unity-7.8-user-guide/images/split-case-documents-attaching.png)](unity-7.8-user-guide/images/split-case-documents-attaching.png)
+
+  User should select document(s) and press `Attach` button to attach documents to the new case. After that user should press `Complete` to finish case creation.
 
 Created case will be displayed in the grid. Case Details view contains all filled in values and attached documents.
 
@@ -562,19 +564,20 @@ The following view is displayed for case copying. This view contains values from
 
 - Step 2. Case preview.
 
-    [![Copy Case Step2](unity-7.8-user-guide/images/copy-case-step2.png)](unity-7.8-user-guide/images/copy-case-step2.png)
+  [![Copy Case Step2](unity-7.8-user-guide/images/copy-case-step2.png)](unity-7.8-user-guide/images/copy-case-step2.png)
 
-    User can select:
-    - `Back` to return to change any values
-    - `Save` to save changed values
-    - `Complete` to finish case copying
-    - `Next` to select document for attaching to a new case from the list of documents that were attached to the parent case.
-        
+  User can select:
+
+  - `Back` to return to change any values
+  - `Save` to save changed values
+  - `Complete` to finish case copying
+  - `Next` to select document for attaching to a new case from the list of documents that were attached to the parent case.
+
 - Step 3. Attach documents to case (optional).
 
-    [![Copy Case Documents attaching](unity-7.8-user-guide/images/copy-case-documents-attaching.png)](unity-7.8-user-guide/images/copy-case-documents-attaching.png)
+  [![Copy Case Documents attaching](unity-7.8-user-guide/images/copy-case-documents-attaching.png)](unity-7.8-user-guide/images/copy-case-documents-attaching.png)
 
-    User should select document(s) and press `Attach` button to attach documents to the new case. After that user should press `Complete` to finish case creation.
+  User should select document(s) and press `Attach` button to attach documents to the new case. After that user should press `Complete` to finish case creation.
 
 Created case will be displayed in the grid. Case Details view contains all filled in values and attached documents.
 
@@ -615,13 +618,14 @@ Click on the action to perform it.
 ### Workitem Details (Properties)
 
 Workitem Details view can contain the following tabs:
+
 - Properties (see more details in [Case Properties](#case-details-properties) section). Properties that were changed in workitem also will be updated in the case
 - Attached documents (see more details in [Attach existing document](#attach-existing-document) and [Attach a new document](#attach-a-new-document) sections). Document that is attached in the workitem also will be displayed in the case and other workitems for this case.
 - History/Comments (see more details [History/Comments](#History/Comments) section)
 
 [![Workitem Details](unity-7.8-user-guide/images/workitem-details.png)](unity-7.8-user-guide/images/workitem-details.png)
 
-### Reassign 
+### Reassign
 
 Workitem can be reassigned to other user. This action can be executed from context menu or workitem details view.
 The following view is displayed for this action.
@@ -650,7 +654,7 @@ Other users can't open this workitems without `Unlock` action execution:
 
 [![Unlock Workitem](unity-7.8-user-guide/images/unlock-workitem.png)](unity-7.8-user-guide/images/unlock-workitem.png)
 
-### Open Workitem in separate tab 
+### Open Workitem in separate tab
 
 [Workitem Details view](#workitem-details-properties) will be displayed in the separate browser tab in the React after `Open in Separate tab` action execution:
 
@@ -678,3 +682,77 @@ User can change any value for workitem and press `Dispatch` button. After that c
 The same action can be executed for case when several workitems with the same dispatch actions were selected:
 
 [![Bulk Dispatch](unity-7.8-user-guide/images/bulk-dispatch.png)](unity-7.8-user-guide/images/bulk-dispatch.png)
+
+# Process Analytics
+
+Analytics Feature brings the ability to add leading-edge visualization and powerful analytics capabilities to the web applications based on Unity platform. It allows to summarize, aggregate, analyze and visualize various kind of data to discover insights and make more informed decisions.
+
+## Process Analytics Tab
+
+Process Analytics can be accessed as application via `Analytics UI` tab:
+
+[![Process Analytics Tab](unity-7.8-user-guide/images/analytics-tab.png)](unity-7.8-user-guide/images/analytics-tab.png)
+
+## Process Analytics Dashboard
+
+Analytics Dashboards are accessible via sliding menu located left:
+
+[![Process Analytics Dashboard](unity-7.8-user-guide/images/analytics-dashboard.png)](unity-7.8-user-guide/images/analytics-dashboard.png)
+
+## UI Components
+
+Unity Analytics features a few fully configurable and customizable analytics components that allow to visualize various kind of analytics data like aggregations, metrics and statistics:
+
+- Field statistics
+- Field metrics
+- Charts: Line, Bar, Pie, Area, Composite, Heatmap, Treemap, etc
+- Indicators
+- Filters
+
+### Pie chart
+
+Pie charts are useful for communicating instantaneously what share each value makes up of the whole:
+
+[![Pie chart](unity-7.8-user-guide/images/pie-chart.png)](unity-7.8-user-guide/images/pie-chart.png)
+
+### Line Chart
+
+Line charts are resounding popular for a range of business use cases because they demonstrate an overall trend swiftly and concisely, in a way that’s hard to misinterpret:
+
+[![Line chart](unity-7.8-user-guide/images/line-chart.png)](unity-7.8-user-guide/images/line-chart.png)
+
+### Bar Chart
+
+Bar charts are great for comparing several different values, especially when some of these are broken into color-coded categories:
+
+[![Bar chart](unity-7.8-user-guide/images/bar-chart.png)](unity-7.8-user-guide/images/bar-chart.png)
+
+### Area Chart
+
+Area charts are useful as they give a sense of the overall volume, as well as the proportion of this taken up by each category:
+
+[![Area chart](unity-7.8-user-guide/images/area-chart.png)](unity-7.8-user-guide/images/area-chart.png)
+
+### Composite chart
+
+Displays interactions of data as a block, line, mark, area diagramm.
+
+[![Composite chart](unity-7.8-user-guide/images/composite-charts.png)](unity-7.8-user-guide/images/composite-charts.png)
+
+### TreeMap chart
+
+Displays structured data as set of nested rectangles:
+
+[![TreeMap chart](unity-7.8-user-guide/images/treemap-chart.png)](unity-7.8-user-guide/images/treemap-chart.png)
+
+### HeatMap chart
+
+Displays data in form of matrix, where values are additionally encoded in colors:
+
+[![HeatMap chart](unity-7.8-user-guide/images/heatmap-chart.png)](unity-7.8-user-guide/images/heatmap-chart.png)
+
+### Indicators
+
+Displays summary statistics on a dashboard:
+
+[![Indicators](unity-7.8-user-guide/images/indicators.png)](unity-7.8-user-guide/images/indicators.png)
