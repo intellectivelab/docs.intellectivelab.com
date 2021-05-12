@@ -16,7 +16,7 @@ nCino modifies the behavior of the Document Manager Download Link for archived C
 
 Once the Download Link is selected the document will Display in the Browser (e.g., based on the Browser settings and the File Mime Type):
 
-[![Accessing Archived nCino Content from Document Manager](unity-8-user-guide/images/accessing-content.gif)](unity-8-user-guide/images/accessing-content.gif)
+[![Accessing Archived nCino Content from Document Manager](unity-8-user-guide/images/2 Accessing Archived nCino Content from Document Manager.gif)](unity-8-user-guide/images/2 Accessing Archived nCino Content from Document Manager.gif)
 
 # Accessing Unity Search
 
@@ -173,15 +173,15 @@ Additional Unity Actions Available:
 ## Add Content – New Button
 
 Unity provides the capability for a user to Add (i.e., upload) a document directly to the ECM from a User Search Template.
-When the `New` button is selected a configured Choice List of Document Types is displayed.
-When the user selects a Document Type Choice List value, an Add Document Type user interface is open which will allow the user to enter the ECM Properties (i.e., which the document can later be retrieved by) and select the file to upload, by using Browser or Drag and Drop.
-The Add Document Type user interface can also automatically pull in one or more properties from the nCino / Salesforce user interface (e.g., Loan Number, Relationship ID, Account Number, etc.) to reduce the amount of data entry required by the user and ensure the content is correctly indexed.
-The added document can then be returned in the search.
 
-|**Note**: The properties displayed on this user interface are configurable and will be defined based on the Document Properties related to the Document Type selected.
+When the `New` button is selected a configured Choice List of Document Types is displayed.
+
+When the user selects a Document Type Choice List value, an Add Document Type user interface is open which will allow the user to enter the ECM Properties (i.e., which the document can later be retrieved by) and select the file to upload, by using Browser or Drag and Drop.
+
+The Add Document Type user interface can also automatically pull in one or more properties from the nCino / Salesforce user interface (e.g., Loan Number, Relationship ID, Account Number, etc.) to reduce the amount of data entry required by the user and ensure the content is correctly indexed.
+
+The added document can then be returned in the search.
 
 [![Actions Check Out In Download](unity-8-user-guide/images/4.4 Add Content – New Button.gif)](unity-8-user-guide/images/4.4 Add Content – New Button.gif)
 
- 
-
-
+|**Note**: The properties displayed on this user interface are configurable and will be defined based on the Document Properties related to the Document Type selected. 
