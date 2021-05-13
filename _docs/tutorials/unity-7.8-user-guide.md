@@ -6,11 +6,11 @@ category: Unity 7
 
 # Introduction
 
-You can search for documents, case, and work items using React UI interface. React UI Interface supports IBM FileNet, CMOD, CM8, SharePoint, Box, Alfresco, other CMIS repositories. All Unity actions are supported in the React UI grid.
+You can search for documents, cases, and work items using React UI interface. React UI Interface supports IBM FileNet, CMOD, CM8, SharePoint, Box, Alfresco, other CMIS repositories. All Unity actions are supported in the React UI grid.
 
 # Dashboards
 
-Dashboard container component serves as a container for UI components and as away of grouping components.
+Dashboard container component serves as a container for UI components and as a way of grouping components.
 
 On `React UI` application open `Analytics UI` tab, expand sidebar and discover available dashboards:
 
@@ -685,7 +685,7 @@ The same action can be executed for case when several workitems with the same di
 
 # Process Analytics
 
-Analytics Feature brings the ability to add leading-edge visualization and powerful analytics capabilities to the web applications based on Unity platform. It allows to summarize, aggregate, analyze and visualize various kind of data to discover insights and make more informed decisions.
+Analytics feature brings the ability to add leading-edge visualization and powerful analytics capabilities to the web applications based on Unity platform. It allows to summarize, aggregate, analyze and visualize various kinds of data to discover insights and make more informed decisions.
 
 ## Process Analytics Tab
 
@@ -701,13 +701,12 @@ Analytics Dashboards are accessible via sliding menu located left:
 
 ## UI Components
 
-Unity Analytics features a few fully configurable and customizable analytics components that allow to visualize various kind of analytics data like aggregations, metrics and statistics:
+Unity Analytics features a several fully configurable and customizable analytics components that allow to visualize various kinds of analytics data like aggregations, metrics and statistics:
 
-- Field statistics
-- Field metrics
-- Charts: Line, Bar, Pie, Area, Composite, Heatmap, Treemap, etc
+- Charts: Line, Bar, Pie, Area, Composite, Heatmap, Treemap, etc.
 - Indicators
 - Filters
+- Grids
 
 ### Charts
 
@@ -755,7 +754,7 @@ Displays data in form of matrix, where values are additionally encoded in colors
 
 ### Indicators
 
-Displays summary statistics on a dashboard:
+Display summary statistics on a dashboard:
 
 [![Indicators](unity-7.8-user-guide/images/indicators.png)](unity-7.8-user-guide/images/indicators.png)
 
@@ -776,3 +775,9 @@ Charts updated after `CA` Customer State selection on Filters panel:
 ### Actions on cases, workitems, documents
 
 Standard actions can be executed for [Cases](#actions-on-cases), [Workitems](#actions-on-workitems), [Documents](#actions-on-documents).
+
+### Grids
+
+Standard [Grid](#grid-mode) can be added to display list of objects that were grouped using Charts or Search Criteria in Advanced Search:
+
+[![Analytics Grid](unity-7.8-user-guide/images/analytics-grid.png)](unity-7.8-user-guide/images/analytics-grid.png)
