@@ -701,7 +701,7 @@ Analytics Dashboards are accessible via sliding menu located left:
 
 ## UI Components
 
-Unity Analytics features a few fully configurable and customizable analytics components that allow to visualize various kind of analytics data like aggregations, metrics and statistics:
+Unity Analytics features a few fully configurable and customizable analytics components that allow to visualize various kind of analytics data like aggregations, metrics and statistics:
 
 - Field statistics
 - Field metrics
@@ -715,19 +715,19 @@ Pie charts are useful for communicating instantaneously what share each value ma
 
 [![Pie chart](unity-7.8-user-guide/images/pie-chart.png)](unity-7.8-user-guide/images/pie-chart.png)
 
-### Line Chart
+### Line chart
 
 Line charts are resounding popular for a range of business use cases because they demonstrate an overall trend swiftly and concisely, in a way that’s hard to misinterpret:
 
 [![Line chart](unity-7.8-user-guide/images/line-chart.png)](unity-7.8-user-guide/images/line-chart.png)
 
-### Bar Chart
+### Bar chart
 
 Bar charts are great for comparing several different values, especially when some of these are broken into color-coded categories:
 
 [![Bar chart](unity-7.8-user-guide/images/bar-chart.png)](unity-7.8-user-guide/images/bar-chart.png)
 
-### Area Chart
+### Area chart
 
 Area charts are useful as they give a sense of the overall volume, as well as the proportion of this taken up by each category:
 
