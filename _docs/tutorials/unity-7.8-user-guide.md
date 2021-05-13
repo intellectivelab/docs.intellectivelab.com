@@ -709,43 +709,45 @@ Unity Analytics features a few fully configurable and customizable analytics c
 - Indicators
 - Filters
 
-### Pie chart
+### Charts
+
+#### Pie chart
 
 Pie charts are useful for communicating instantaneously what share each value makes up of the whole:
 
 [![Pie chart](unity-7.8-user-guide/images/pie-chart.png)](unity-7.8-user-guide/images/pie-chart.png)
 
-### Line Chart
+#### Line Chart
 
 Line charts are resounding popular for a range of business use cases because they demonstrate an overall trend swiftly and concisely, in a way that’s hard to misinterpret:
 
 [![Line chart](unity-7.8-user-guide/images/line-chart.png)](unity-7.8-user-guide/images/line-chart.png)
 
-### Bar Chart
+#### Bar Chart
 
 Bar charts are great for comparing several different values, especially when some of these are broken into color-coded categories:
 
 [![Bar chart](unity-7.8-user-guide/images/bar-chart.png)](unity-7.8-user-guide/images/bar-chart.png)
 
-### Area Chart
+#### Area Chart
 
 Area charts are useful as they give a sense of the overall volume, as well as the proportion of this taken up by each category:
 
 [![Area chart](unity-7.8-user-guide/images/area-chart.png)](unity-7.8-user-guide/images/area-chart.png)
 
-### Composite chart
+#### Composite chart
 
 Displays interactions of data as a block, line, mark, area diagramm.
 
 [![Composite chart](unity-7.8-user-guide/images/composite-charts.png)](unity-7.8-user-guide/images/composite-charts.png)
 
-### TreeMap chart
+#### TreeMap chart
 
 Displays structured data as set of nested rectangles:
 
 [![TreeMap chart](unity-7.8-user-guide/images/treemap-chart.png)](unity-7.8-user-guide/images/treemap-chart.png)
 
-### HeatMap chart
+#### HeatMap chart
 
 Displays data in form of matrix, where values are additionally encoded in colors:
 
@@ -756,3 +758,17 @@ Displays data in form of matrix, where values are additionally encoded in colors
 Displays summary statistics on a dashboard:
 
 [![Indicators](unity-7.8-user-guide/images/indicators.png)](unity-7.8-user-guide/images/indicators.png)
+
+### Filters
+
+List of objects (cases, workitems or documents) can be filtered using [Search Template criteria](#advanced-search) or Filters in the dashboards, charts or indicators configuration (filtering results can'be changed via UI).
+
+Search criterias in Advanced Search can be linked with Facets, it leads to change list of values in the search criteria after selection something in the charts or other search criterias
+
+[![Before Filtering](unity-7.8-user-guide/images/before-filtering.png)](unity-7.8-user-guide/images/before-filtering.png)
+
+[![After Filtering](unity-7.8-user-guide/images/after-filtering.png)](unity-7.8-user-guide/images/after-filtering.png)
+
+### Actions on cases, workitems, documents
+
+Standard actions can be executed for [Cases](#actions-on-cases), [Workitems](#actions-on-workitems), [Documents](#actions-on-documents)
