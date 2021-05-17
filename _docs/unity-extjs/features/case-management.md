@@ -175,6 +175,8 @@ In order to configure SearchTemplate with WorkObjects use the following:
         <Property ID="UCM.PE.Queue">*</Property>
     </OperationProperties>
     ```
+A workflow roster stores the current location of and other information about all workflows. Workflow rosters provide the PE with an efficient way to locate specific workflows and work items.
+FileNet API does not provide the ability to request roster data in an ordered form. Unity columns should be marked as non-sortable when roster search is set up.
 
 ICM configuration is distributed among main Unity configuration file (that is defined through
 vSpaceConfigURL entry of Unity web application) and multiple solution related files referenced
