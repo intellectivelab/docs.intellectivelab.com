@@ -122,6 +122,11 @@ entries:
                 url: /docs/unity-extjs/configuration/basic-steps/
                 id: unity-extjs-configuration-basic-steps
 
+              - title: Unity Case Management
+                output: web
+                url: /docs/unity-extjs/configuration/unity-case-management/
+                id: unity-extjs-configuration-unity-case-management
+
               - title: Tabs
                 output: web
                 url: /docs/unity-extjs/configuration/tabs/
@@ -311,10 +316,10 @@ entries:
                 url: /docs/unity-react/configuration/basic-steps/
                 id: unity-react-configuration-basic-steps
 
-              - title: Cases
+              - title: Unity Case Management
                 output: web
-                url: /docs/unity-react/configuration/cases/
-                id: unity-react-configuration-cases
+                url: /docs/unity-react/configuration/unity-case-management/
+                id: unity-react-configuration-unity-case-management
 
               - title: Grids
                 output: web
