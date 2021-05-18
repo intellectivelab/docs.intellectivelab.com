@@ -82,14 +82,14 @@ The columns can be displayed or hidden using the `Gear` button, which opens a `S
 
 [![Search Results](unity-ncino-user-guide/images/Search-Results.gif)](unity-ncino-user-guide/images/Search-Results.gif) 
  
-## Search Result – Actions
+## Search Results – Actions
 
 Search Results actions are configurable based on the User’s Role, such that only actions the user is authorized to perform are displayed.
 The user can access the list of actions by selection the down arrow on the content row:
 
 [![Search Results actions](unity-ncino-user-guide/images/row-actions.png)](unity-ncino-user-guide/images/row-actions.png)  
 
-Standard Actions include:
+Standard actions include:
 
 ### Properties (Basic)
 
@@ -99,20 +99,20 @@ Display a list of the Content Properties, which can be modified by the end user 
     
 ### View
 
-Opens the selected Document in the browser (e.g., based on the browser setting and file Mime Type):
+Opens the selected document in the browser (e.g., based on the browser setting and file Mime Type):
 
 [![Action view](unity-ncino-user-guide/images/Actions-View.gif)](unity-ncino-user-guide/images/Actions-View.gif)
 
 ### Add to nCino
 
 Provides the capability to Add an archived Document from an ECM to a new nCino Placeholder.
-- A Copy Document to Placeholder user interface is selected where the user can select the Document Category (i.e., based on nCino configured Categories) and either Select or Enter a Document Name for the new Placeholder.  
-- Once the Copy button is selected the file is downloaded from the ECM and added to the Placeholder.
-- The Document is added as a new File, which will then be Archived as a new document in the ECM later in the process cycle (e.g., when the Loan reaches the `Booked` State).
+- A Copy Document to Placeholder user interface is selected where the user can select the Document Category (i.e., based on nCino configured Categories) and either select or enter a Document Name for the new Placeholder.  
+- Once the `Copy` button is selected the file is downloaded from the ECM and added to the Placeholder.
+- The Document is added as a new file, which will then be Archived as a new document in the ECM later in the process cycle (e.g., when the Loan reaches the `Booked` State).
 
-|**TBD** Create a Video/Gif where the user accesses the Search UI from an nCino Loan and selects the down arrow and the selects the Add to nCino Action, opens the Copy Document Placeholder UI where the user can enter the Placeholder Category and Name and then select Copy. Then Navigate to the Document Manager UI and show the Placeholder was added with the attached file).
+[![Action add](unity-ncino-user-guide/images/Actions-Add-to-nCino.gif)](unity-ncino-user-guide/images/Actions-Add-to-nCino.gif)
 
-Additional Unity Actions Available:
+Additional Unity actions available:
 
 ### Download
 
