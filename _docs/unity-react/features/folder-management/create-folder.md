@@ -9,7 +9,7 @@ category: Unity 7
 
 # How to create a folder
 
-- Find a folder you are going to use as a parent folder in a tree view component. Hover mouse over folder name and  click on the vertical ellipse icon consisting of three dots in the folder row:
+- Find a folder you are going to rename in a tree view component. Hover mouse over folder name and perform the right click:
 
   ![Folder actions button](./create-folder/images/react-ui-image1.png)
 
