@@ -76,7 +76,7 @@ To see a list of connectors select `Connectors` in the `Solution Configuration` 
 ![Connectors](unity-configuration-basics/images/connectors.png)
 
 Each connector has `ID` for further linking, connector `Type`, linked `Datasource`, max number of returned results `Result Limit` and other parameters.  
-To see and edit all connector parameters click on `Edit` icon in `Parameters` column in the connector row. `Edit Connector` window appears:
+To see and edit connector parameters click on `Edit` icon in `Parameters` column in the connector row. `Edit Connector` window appears:
 
 ![Edit Connectors](unity-configuration-basics/images/edit-connector-parameters.png)
 
@@ -136,7 +136,7 @@ To see all content lists select `Content Lists` in the `Solution Configuration` 
 
 ![Content lists](unity-configuration-basics/images/content-lists.png)
 
-To see and edit all content list parameters click on `Edit` icon in `Parameters` column in the content list row:
+To see and edit content list parameters click on `Edit` icon in `Parameters` column in the content list row:
 
 ![Content lists parameters](unity-configuration-basics/images/content-list-parameters.png)
 
@@ -153,16 +153,73 @@ On `Toolbar actions` tab pre-defined set of actions is shown:
 Access roles allow users and groups to access search templates based on the grant or deny rights assigned.
 Access roles can be assigned to search templates or tabs.
 
+To see all access roles select `Security` in the `Solution Configuration` tree: 
+
+![Access roles](unity-configuration-basics/images/access-roles.png)
+
+To see and edit role members click on `Edit` icon in `Members` column in the role row, Edit Members window appears:
+
+![Access roles edit](unity-configuration-basics/images/access-roles-edit.png)
+
+You can Add or Remove users or groups, set `Grant` or `Deny` rights to users or groups.
+
 # Search Template Configuration
+
+![Search template scheme](unity-configuration-basics/images/search-template-scheme.png)
 
 Search template configuration provides the capability to pre-configure and save: 
 - selected repository connector
 - search criteria
 - search results grid (content list) configuration 
 
-Access to search templates is controlled by [Access Roles](#access-roles-configuration).
+Access to search templates is controlled by [Access Roles](#access-roles-configuration).  
 Search template should be assigned to the tab to be available to Unity users.
+
+To see all Search Templates select `Search Templates` in the `Solution Configuration` tree: 
+
+![Search templates](unity-configuration-basics/images/search-templates.png)
+
+To see and edit search template parameters click on `Edit` icon in `Parameters` column in search template row.  
+
+- Select `Define search criteria` tab:
+    
+    ![Search criteria tab](unity-configuration-basics/images/search-template-criteria.png)
+    
+    You can Add, Edit, Copy, or Delete search criteria properties.  
+    Press `Edit` button to edit search criterion properites:
+    
+    ![Search criterion edit](unity-configuration-basics/images/search-criterion-edit.png)
+    
+    - Additional parameters can be configured in `Advanced Configuration` section
+    - You can combine criteria in groups: which are then displayed grouped in UI
+    - You can define a pick list for values
+
+- Select `Define security` tab and assign roles to search template:
+
+    ![Search template roles](unity-configuration-basics/images/search-template-roles.png)
 
 # Tab Configuration
 
+![Tab scheme](unity-configuration-basics/images/tab-scheme.png)
 
+To see all tabs select `Tabs` in the `Solution Configuration` tree: 
+
+![Tab](unity-configuration-basics/images/tabs.png)
+
+To see and edit tab parameters click on `Edit` icon in `Parameters` column in tab row. Edit Tab window appears:  
+
+![Edit tab](unity-configuration-basics/images/tab-edit.png)
+
+- Select `Assign search templates` tab and assign search template to the tab:
+
+    ![Assign template to tab](unity-configuration-basics/images/tab-assign-template.png)
+
+- Select `Define security` tab and assign roles to the tab:
+
+    ![Assign role to tab](unity-configuration-basics/images/tab-assign-role.png)
+
+# Test Configuration
+
+Execute search and make sure it returns expected results:
+
+![Test search](unity-configuration-basics/images/test-search.png)
