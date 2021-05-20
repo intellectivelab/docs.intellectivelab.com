@@ -9,7 +9,7 @@ category: Unity 7
 
 # How to Delete a Folder
 
-- Find a folder you are going to delete in a tree view component. Hover mouse over folder name and perform the right click:
+- Find a folder you are going to delete in a foldersView component. Hover mouse over folder name and perform the right click:
 
   ![Folder actions button](./delete-folder/images/react-ui-image1.png)
 

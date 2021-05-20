@@ -9,7 +9,7 @@ category: Unity 7
 
 # How to Rename a Folder
 
-- Find a folder you are going to rename in a tree view component. Hover mouse over folder name and perform the right click:
+- Find a folder you are going to rename in a foldersView component. Hover mouse over folder name and perform the right click:
 
   ![Folder actions button](./rename-folder/images/react-ui-image1.png)
 

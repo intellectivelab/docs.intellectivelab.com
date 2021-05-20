@@ -9,7 +9,7 @@ category: Unity 7
 
 # How to create a folder
 
-- Find a folder you are going to create in a tree view component. Hover mouse over folder name and perform the right click:
+- Find a folder you are going to create in a foldersView component. Hover mouse over folder name and perform the right click:
 
   ![Folder actions button](./create-folder/images/react-ui-image1.png)
 
