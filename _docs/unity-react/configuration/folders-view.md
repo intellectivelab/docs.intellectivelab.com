@@ -9,7 +9,7 @@ category: Unity 7
 
 *content to be added*
 
-To see action in Folders View context menu it should be added to FoldersView configuration.
+To see action in Folders View context menu it should be added to Folders View configuration.
 
 Example for Rename Folder action:
 
