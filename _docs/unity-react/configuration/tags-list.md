@@ -15,6 +15,7 @@ CustomConfiguration
 EnterpriseSearch  
 [Facets](tags-list/facets-tag.md)  
 Filters  
+[FoldersView](folders-view.md)  
 [Grids](grids.md)  
 [Indicators](indicators.md)  
 LDAP  

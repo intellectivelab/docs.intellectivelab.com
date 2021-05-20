@@ -5,11 +5,11 @@ category: Unity 7
 ---
 # Description
 
-`Delete` folder action allows to delete a folder and it's content from repository. It can be executed from a tree view component if user has appropriate permissions. 
+`Delete` folder action allows to delete a folder and it's content from repository. It can be executed from Folders View component if user has appropriate permissions. 
 
 # How to Delete a Folder
 
-- Find a folder you are going to delete in a tree view component. Hover mouse over folder name  and  click on the vertical ellipse icon consisting of three dots in the folder row:
+- Find a folder you are going to delete in Folders View component. Hover mouse over folder name and perform the right click:
 
   ![Folder actions button](./delete-folder/images/react-ui-image1.png)
 
@@ -23,7 +23,7 @@ category: Unity 7
 
 Clicking on `Cancel` button will lead to closing confirmation dialog without folder deleting.
 
-By selecting `Yes` button, user triggers `delete` action execution. After folder is deleted, parent folder in the tree view component will be refreshed to reflect changes. 
+By selecting `Yes` button, user triggers `delete` action execution. After folder is deleted, parent folder in the Folders View component will be refreshed to reflect changes. 
 
 # Configuration
 
