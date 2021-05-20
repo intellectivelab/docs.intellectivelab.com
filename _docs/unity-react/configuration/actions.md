@@ -12,6 +12,7 @@ category: Unity 7
 - [add action to Actions tag](#adding-action-to-actions-tag)
 - [add action to the Grid](grids.md#how-to-add-action-to-the-grid)
 - [add action to the View](tags-list/views-tag/tab-action-set.md#how-to-add-action-to-the-view) (optional)
+- [add action to the FolderView](folders-view.md#how-to-add-action-to-the-foldersview) (required for folder related actions)
 - [specify View for the action](tags-list/views-tag.md) (required for particular actions)
 
 ## Common actions attributes and tags

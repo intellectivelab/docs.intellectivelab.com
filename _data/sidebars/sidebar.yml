@@ -260,8 +260,8 @@ entries:
 
               - title: FoldersView
                 output: web
-                url: /docs/unity-react/components/foldersView/
-                id: unity-react-components-foldersView
+                url: /docs/unity-react/components/folders-view/
+                id: unity-react-components-folders-view
 
               - title: Search Template
                 output: web
@@ -341,10 +341,10 @@ entries:
                 url: /docs/unity-react/configuration/properties-view-form/
                 id: unity-react-configuration-properties-view-form
 
-              - title: FoldersViews
+              - title: FoldersView
                 output: web
-                url: /docs/unity-react/configuration/foldersViews/
-                id: unity-react-configuration-foldersViews
+                url: /docs/unity-react/configuration/folders-view/
+                id: unity-react-configuration-folders-view
 
               - title: Search Templates
                 output: web
