@@ -1,15 +1,15 @@
 ---
-title: FoldersViews Configuration
+title: FoldersView Configuration
 layout: docs
 category: Unity 7
 ---
-[FoldersView Component description](../components/foldersView.md)
+[FoldersView Component description](../components/folders-view.md)
 
 # How to Add Action to the FoldersView
 
 *content to be added*
 
-To see action in foldersView context-menu it should be added to foldersView configuration.
+To see action in FoldersView context menu it should be added to FoldersView configuration.
 
 Example for Rename Folder action:
 
@@ -25,4 +25,4 @@ Example for Rename Folder action:
 
 # FoldersView Features Configuration
 
-*content to be added*
+[Folder related actions configuration](actions.md#folder-related-actions)  
