@@ -1,13 +1,13 @@
 ---
-title: Unity Components - FoldersView
+title: Unity Components - Folders View
 layout: docs
 category: Unity 7
 ---
-FoldersView is a [Folder Management](../features/folder-management.md) component to display hierarchical set of data. In the specific case, FoldersView operates with folder structure:
+Folders View is a [Folder Management](../features/folder-management.md) component to display hierarchical set of data. In the specific case, FoldersView operates with folder structure:
 
-![FoldersView](folders-view/images/folders-view.png)
+![Folders View](folders-view/images/folders-view.png)
 
-# FoldersView Features
+# Folders View Features
 
 - Single folder action
 - Ability to add a custom foldersView action
@@ -16,4 +16,4 @@ FoldersView is a [Folder Management](../features/folder-management.md) component
 
 # Configuration
 
-[FoldersView Configuration](../configuration/folders-view.md)
+[Folders View Configuration](../configuration/folders-view.md)

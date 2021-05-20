@@ -11,6 +11,6 @@ category: Unity 7
 
 # Components 
 
-[FoldersView component](../components/folders-view.md) provides a way to represent hierarchical set of data. 
+[Folders View component](../components/folders-view.md) provides a way to represent hierarchical set of data. 
 
 
