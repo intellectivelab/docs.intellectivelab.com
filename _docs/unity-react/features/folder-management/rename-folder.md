@@ -5,7 +5,7 @@ category: Unity 7
 ---
 # Description
 
-`Rename a Folder` feature allows changing folder name. It can be executed from a tree view component if user has appropriate permissions.
+`Rename a Folder` feature allows changing folder name. It can be executed from a foldersView component if user has appropriate permissions.
 
 # How to Rename a Folder
 

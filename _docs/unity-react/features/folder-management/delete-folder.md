@@ -5,7 +5,7 @@ category: Unity 7
 ---
 # Description
 
-`Delete` folder action allows to delete a folder and it's content from repository. It can be executed from a tree view component if user has appropriate permissions. 
+`Delete` folder action allows to delete a folder and it's content from repository. It can be executed from a foldersView component if user has appropriate permissions. 
 
 # How to Delete a Folder
 

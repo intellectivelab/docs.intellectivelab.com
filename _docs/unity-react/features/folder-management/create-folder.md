@@ -5,7 +5,7 @@ category: Unity 7
 ---
 # Description
 
-`Create folder` action allows to create a folder as a child of selected folder. It can be executed from a tree view component if user has appropriate permissions.
+`Create folder` action allows to create a folder as a child of selected folder. It can be executed from a foldersView component if user has appropriate permissions.
 
 # How to create a folder
 
