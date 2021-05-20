@@ -258,7 +258,7 @@ entries:
                 url: /docs/unity-react/components/properties-view-form/
                 id: unity-react-components-properties-view-form
 
-              - title: FoldersView
+              - title: Folders View
                 output: web
                 url: /docs/unity-react/components/folders-view/
                 id: unity-react-components-folders-view
@@ -341,7 +341,7 @@ entries:
                 url: /docs/unity-react/configuration/properties-view-form/
                 id: unity-react-configuration-properties-view-form
 
-              - title: FoldersView
+              - title: Folders View
                 output: web
                 url: /docs/unity-react/configuration/folders-view/
                 id: unity-react-configuration-folders-view
