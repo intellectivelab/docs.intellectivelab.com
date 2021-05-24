@@ -12,7 +12,7 @@ category: Unity 7
 - [add action to Actions tag](#adding-action-to-actions-tag)
 - [add action to the Grid](grids.md#how-to-add-action-to-the-grid)
 - [add action to the View](tags-list/views-tag/tab-action-set.md#how-to-add-action-to-the-view) (optional)
-- [add action to the FolderView](folders-view.md#how-to-add-action-to-the-foldersview) (required for folder related actions)
+- [add action to the FolderView](folders-view.md#how-to-add-action-to-the-folders-view) (required for folder related actions)
 - [specify View for the action](tags-list/views-tag.md) (required for particular actions)
 
 ## Common actions attributes and tags
@@ -27,9 +27,20 @@ There are attributes and tags common for most actions:
 |Tag                  | Description         |
 |:--------------------|:--------------------|
 | Name      | Action name shown in toolbar or context menu.|
+| Uri       | Optional. If present, action considered as a bulk action|
 |*content to be added*|*content to be added*|
 | Security  | [Action security restrictions](../../unity-react/configuration/security.md#security-restrictions) |
 | CustomParameters  | Defines custom action parameters. Could be overridden per data provider.   |
+
+## Common custom parameters tags
+
+|Tag                  | Description         |
+|:--------------------|:--------------------|
+| ResourceName | Optional. Name of resource action operates with. |
+| ResourceType | Optional. Name of concrete resource type. |
+| ActionType | Optional. Name of concrete action type. Required for some actions. |
+| ViewType | Optional. This parameter should match view defined in solutions config. |
+| Scope | Optional. The repository data provider id.  |
 
 ## Adding action to `Actions` tag
 
