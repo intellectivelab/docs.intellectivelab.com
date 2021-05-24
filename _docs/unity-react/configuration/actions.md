@@ -74,6 +74,7 @@ Choose the action from the list below to find specific options for it.
 - [Check In Document](actions/checkin-document.md)
 - [Copy Document to Folder](actions/copy-document-to-folder.md)
 - [Move Document to Folder](actions/move-document-to-folder.md)
+- [Download Document](actions/download-document.md)
 - [Multiple Download](actions/multiple-document-download.md)
 - [Rename File](actions/rename-file.md)
 

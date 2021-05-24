@@ -3,7 +3,7 @@ title: Download Document Action Configuration
 layout: docs
 category: Unity 7
 ---
-[Download Document feature description](../../features/document-management/document-download.md)
+[Download Document feature description](../../features/document-management/download-document.md)
 
 For `Download` action following section should be added to the Unity System XML file:
 

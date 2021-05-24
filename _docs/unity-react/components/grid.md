@@ -49,8 +49,15 @@ Details View screen is divided into several panels as shown below:
 
 # Grid Features
 
-- Grouping
-- [Multiple column sorting](grid/multiple-column-sorting.md)
+## Grid settings menu
+
+With Unity, you can customize how you view your search results. You can change the look and feel, set and order of displayed columns, sort order, and more. 
+To customize the Search Results Panel, click on the gear icon in the upper right, grid settings menu appears:
+
+![grid-settings-menu](grid/images/grid-settings.png)
+
+### Grid columns
+
 - [Column resizing](grid/column-resizing.md)
 - Column locking
 - Column spanning
@@ -59,18 +66,38 @@ Details View screen is divided into several panels as shown below:
 - Column cell formatting
 - Column cell tools and actions
 - Column cell rendering customization
+
+### Grid display density
+
+*content to be added*
+
+### Reset
+
+To reset the columns width to default (and revert the visible state of the columns and their order) use `Reset` from the grid settings menu:
+
+![grid-reset](grid/images/grid-reset.png)
+
+## Sorting
+
+- [Multiple column sorting](grid/multiple-column-sorting.md)
+
+## Actions
+
+- [Default action](grid/default-action.md)
+- [Row actions](grid/row-actions.md)
+- [Bulk actions](grid/bulk-actions.md)
+- [Model actions](grid/model-actions.md)
+- Ability to add a custom grid action
+
+## Other features
+
+- [Pagination and infinite scrolling](grid/pagination-and-infinite-scrolling.md)
+- Grouping
 - Record text links
 - Multiple row selection
-- Row action
-- Bulk action
-- [Default action](grid/default-action.md)
-- Ability to add a custom grid action
-- Row actions menu
 - Expandable rows
-- [Pagination and infinite scrolling](grid/pagination-and-infinite-scrolling.md)
 - Ability to use a custom grid pagination
 - Data export
-- Display density settings
 - Ability to compose with other components
 - Adaptive
 - Responsive
