@@ -6,39 +6,58 @@ category: Unity 7
 
 # Introduction
 
-You can search for documents, cases, and work items using React UI interface. React UI Interface supports IBM FileNet, CMOD, CM8, SharePoint, Box, Alfresco, other CMIS repositories. All Unity actions are supported in the React UI grid.
+The Unity 7.8 User Interface provides the following search capabilities: 
+- Content Search
+- Case Search
+- Work Item Search (e.g., based on In-baskets)
 
-# Dashboards
+Unity 7.8 supports the following Repositories:
+- IBM
+- FileNet
+- CMOD
+- CM8
+- SharePoint
+- Box
+- Alfresco
+- Other CMIS repositories
 
-Dashboard container component serves as a container for UI components and as a way of grouping components.
+# User Interface Sections
 
-On `React UI` application open `Analytics UI` tab, expand sidebar and discover available dashboards:
+The Unity 7.8 User Interface groups its main components into the following Sections:
+- Document Search
+- Case Search
+- In-baskets (e.g., Work Items)
+- Unity Configuration Console
 
 [![Dashboards](unity-7.8-user-guide/images/dashboards.png)](unity-7.8-user-guide/images/dashboards.png)
 
-## Containers
+## User Interface Navigation Controls
 
-Dashboard containers organize and allow navigation between dashboard components that are related and at the same level of hierarchy. The following types of containers are supported out of the box:
+Unity 7.8 provides various options to allow the user to navigate to different components of the user interface.  These options include:
+- Tabs
+- Toggle Button Groups
+- Drop Down Lists
+- Tree View
 
-- `Tabs` container allows to switch between components from the Tabs bar:
+- `Tabs` allows users to switch between components from the Tabs bar:
 
   [![Containers](unity-7.8-user-guide/images/dashboard_container_tabs.png)](unity-7.8-user-guide/images/dashboard_container_tabs.png)
 
-- `Toggle` container allows to switch between components from the Toggle Button group:
+- `Toggle` allows users to switch between components from the Toggle Button group:
 
   [![Containers](unity-7.8-user-guide/images/dashboard_container_toggle.png)](unity-7.8-user-guide/images/dashboard_container_toggle.png)
 
-- `Dropdown` container allows to switch between components from the Dropdown menu:
+- `Dropdown` allows users to switch between components from the Dropdown menu:
 
   [![Containers](unity-7.8-user-guide/images/dashboard_container_dropdown.png)](unity-7.8-user-guide/images/dashboard_container_dropdown.png)
 
-- `Tree` container allows to switch between components from the Tree view:
+- `Tree View` allows users to switch between components from the Tree view:
 
   [![Containers](unity-7.8-user-guide/images/dashboard_container_tree.png)](unity-7.8-user-guide/images/dashboard_container_tree.png)
 
 # Folder view
 
-Use the `folderPath` parameter to easily browse through the contents of different folders within repository.
+Use the `Folder View` to easily browse through the contents of different folders within repository.
 
 Unity has the capability to present a single continuous view of multiple repositories and related folders like IBM FileNet, CMOD, CM8, SharePoint, Box, Alfresco, other CMIS repositories, and more.
 
@@ -48,18 +67,18 @@ Click on a folder to display content within that folder and all subfolders under
 
 # Quick Search
 
-Use Quick Search to quickly find documents across current repository by typing in a related keyword or phrase.
+Use Quick Search to quickly find documents across current repository by typing in a related keyword or phrase. The search is executed across the repository selected. For Enterprise Search the search is executed across All configured repositories.
 
-Type in the word or phrase to search for in the `Contains text` box at the top of the screen. The search executes automatically.
+Type in the word or phrase to search for in the search field at the top of the screen. The search executes automatically.
 
-The Search results will update, returning all content with the search criteria found anywhere and restricted by your selected repository:
+The Search results will update, returning all content with the search criteria found anywhere in the `Document Title` or `Document Content` and restricted by your selected repository:
 
 [![Quick Search](unity-7.8-user-guide/images/quick-search.png)](unity-7.8-user-guide/images/quick-search.png)
 
 # Advanced Search
 
-Advanced search gives you powerful tools to find the exact document you’re looking for.
-You can quickly filter and narrow down your search results via multiple dimensions document title, modifier, custom metadata, and more.
+Advanced search gives you powerful tools to find the exact document you are looking for.
+You can quickly filter and narrow down your search results using multiple search criteria including document title, modifier, custom metadata, and more.
 
 Click the Advanced Search Icon to open the Advanced Search Panel:
 
@@ -134,11 +153,11 @@ When you’re done making changes, select the `Apply` button. Your changes will 
 
 ## Column Resizing Grid
 
-Normally grid columns width is set automatically in order to fill whole grid horizontal space. The columns may be resized by mouse by dragging column separators. To show the separators, move mouse over the column heading and left and right side separators will be shown. Hold a separator with mouse and move horizontally to resize the column.
+Normally grid columns width is set automatically to fill whole grid horizontal space. The columns may be resized using mouse by dragging column separators. To show the separators, move mouse over the column heading and left and right side separators will be shown. Hold a separator with mouse and move horizontally to resize the column.
 
 [![Grid columns](unity-7.8-user-guide/images/resize-columns.png)](unity-7.8-user-guide/images/resize-columns.png)
 
-Last column width may not be changed. If grid occupies whole container form width, the last column takes all the remaining width till the right side of the grid. However, if grid is wider than its container, the last column width is set automatically by actual content.
+Last column width may not be changed. If grid occupies whole form width, the last column takes all the remaining width to the right side of the grid, otherwise the last column width is set automatically by actual content.
 
 The minimum size of the columns is determined by column header, the actual column data in the grid rows may be shortened when shown in too narrow columns.
 
@@ -148,7 +167,7 @@ Width of a column becomes fixed once it was resized. Other columns width remains
 
 ## Grid Display Density: Usability Features
 
-Unity can show information in a more compact or a more expanded form, depending on how much data you’d like to see on the screen at once.
+Unity can show information in a more compact or a more expanded form, depending on how much data you would like to see on the screen at once.
 
 To change the grid density of the rows displayed in the search results, click the `Grid Display Density` option and select the view you’d like to use.  
 Three options are provided:
@@ -175,7 +194,7 @@ You can use a simple sort on one column, or create multiple related column sorts
   This will sort the column in ascending order.
 
 - Click again to sort in descending order
-- Click a third time to remove the sort
+- Click a third time to remove selected sort order
 
 ### Sort Menu
 
@@ -200,7 +219,7 @@ To remove the Column from Sort, select the `Remove Sort` menu item from the drop
 
 # Actions on documents
 
-Once you’ve located the document you’re looking for, you can take a variety of actions on it.
+Once you have located the document you’re looking for, you can take a variety of actions on it.
 
 ## Actions menu
 
@@ -396,13 +415,13 @@ To clear recent view history open it and click the `Clear history` icon:
 
 # Actions on Cases
 
-Once you’ve located the case you’re looking for, you can take a variety of actions on it.
+Once you have located the case you’re looking for, you can take a variety of actions on it.
 
 ## Create a new Case
 
 You can easily create a new Case.
 
-- Click the button with case type name or `Create` button (it's defined in the Unity configuration files):
+- Click the button with case type name or `Create` button (it is defined in the Unity configuration files):
 
   [![Create New Case](unity-7.8-user-guide/images/create-new-case-button.png)](unity-7.8-user-guide/images/create-new-case-button.png)
 
@@ -416,7 +435,7 @@ You can easily create a new Case.
 
   [![Create New Case Step 2](unity-7.8-user-guide/images/new-case-view-step2.png)](unity-7.8-user-guide/images/new-case-view-step2.png)
 
-- View for attaching different documents are displayed after `Next` button pressing:
+- View for attaching different documents is displayed after `Next` button pressing:
 
   [![Create New Case Documents attaching](unity-7.8-user-guide/images/new-case-document-attaching.png)](unity-7.8-user-guide/images/new-case-document-attaching.png)
 
@@ -487,7 +506,7 @@ Only user comments can be displayed:
 
 [![User Comments Displaying](unity-7.8-user-guide/images/user-comments-displaying.png)](unity-7.8-user-guide/images/user-comments-displaying.png)
 
-Also history/comments can be displayed as timeline:
+Also, history/comments can be displayed as timeline:
 
 [![History timeline](unity-7.8-user-guide/images/comments-timeline.png)](unity-7.8-user-guide/images/comments-timeline.png)
 
@@ -685,7 +704,8 @@ The same action can be executed for case when several workitems with the same di
 
 # Process Analytics
 
-Analytics feature brings the ability to add leading-edge visualization and powerful analytics capabilities to the web applications based on Unity platform. It allows to summarize, aggregate, analyze and visualize various kinds of data to discover insights and make more informed decisions.
+Analytics feature brings the ability to add leading-edge visualization and powerful analytics capabilities to the web applications based on Unity platform. It allows users to summarize, aggregate, analyze and visualize various kinds of data to discover insights and make more informed decisions.
+Unity 7.8 provides Actionable Analytic capabilities, that allows users to drill down by selecting graphical UI components to view the related list of: Cases, Work Items and Documents, which can be actioned (e.g., Updated, Approved, Rejected, etc.). 
 
 ## Process Analytics Tab
 
