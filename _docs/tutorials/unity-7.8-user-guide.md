@@ -23,7 +23,7 @@ Unity 7.8 supports the following Repositories:
 
 # User Interface Sections
 
-The Unity 7.8 User Interface groups is main components into the following Sections:
+The Unity 7.8 User Interface groups it main components into the following Sections:
 - Document Search
 - Case Search
 - In-baskets (e.g., Work Items)
