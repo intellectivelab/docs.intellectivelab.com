@@ -23,7 +23,7 @@ Unity 7.8 supports the following Repositories:
 
 # User Interface Sections
 
-The Unity 7.8 User Interface groups it main components into the following Sections:
+The Unity 7.8 User Interface groups is main components into the following Sections:
 - Document Search
 - Case Search
 - In-baskets (e.g., Work Items)
@@ -153,11 +153,11 @@ When you’re done making changes, select the `Apply` button. Your changes will 
 
 ## Column Resizing Grid
 
-Normally grid columns width is set automatically to fill whole grid horizontal space. The columns may be resized by mouse by dragging column separators. To show the separators, move mouse over the column heading and left and right side separators will be shown. Hold a separator with mouse and move horizontally to resize the column.
+Normally grid columns width is set automatically to fill whole grid horizontal space. The columns may be resized using mouse by dragging column separators. To show the separators, move mouse over the column heading and left and right side separators will be shown. Hold a separator with mouse and move horizontally to resize the column.
 
 [![Grid columns](unity-7.8-user-guide/images/resize-columns.png)](unity-7.8-user-guide/images/resize-columns.png)
 
-Last column width may not be changed. If grid occupies whole form width, the last column takes all the remaining width till the right side of the grid, otherwise the last column width is set automatically by actual content.
+Last column width may not be changed. If grid occupies whole form width, the last column takes all the remaining width to the right side of the grid, otherwise the last column width is set automatically by actual content.
 
 The minimum size of the columns is determined by column header, the actual column data in the grid rows may be shortened when shown in too narrow columns.
 
@@ -705,7 +705,7 @@ The same action can be executed for case when several workitems with the same di
 # Process Analytics
 
 Analytics feature brings the ability to add leading-edge visualization and powerful analytics capabilities to the web applications based on Unity platform. It allows users to summarize, aggregate, analyze and visualize various kinds of data to discover insights and make more informed decisions.
-Unity 7.8 provides Actionable Analytic capabilities, that allows users to drill down by selecting graphical UI components to view the related list of: Cases, Work Items, and Documents, which can be actioned (e.g., Updated, Approve, Reject, etc.). 
+Unity 7.8 provides Actionable Analytic capabilities, that allows users to drill down by selecting graphical UI components to view the related list of: Cases, Work Items and Documents, which can be actioned (e.g., Updated, Approved, Rejected, etc.). 
 
 ## Process Analytics Tab
 
