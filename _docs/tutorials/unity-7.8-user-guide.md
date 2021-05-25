@@ -77,7 +77,7 @@ The Search results will update, returning all content with the search criteria f
 
 # Advanced Search
 
-Advanced search gives you powerful tools to find the exact document you’re looking for.
+Advanced search gives you powerful tools to find the exact document you are looking for.
 You can quickly filter and narrow down your search results using multiple search criteria including document title, modifier, custom metadata, and more.
 
 Click the Advanced Search Icon to open the Advanced Search Panel:
