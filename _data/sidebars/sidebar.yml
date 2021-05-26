@@ -614,6 +614,11 @@ entries:
             url: /docs/tutorials/unity-ncino-user-guide/
             id: tutorials-unity-ncino-user-guide
 
+          - title: Configuration Tutorials
+            output: web
+            url: /docs/tutorials/configuration-tutorials/
+            id: tutorials-configuration-tutorials
+
       - title: Development
         output: web
         id: development
