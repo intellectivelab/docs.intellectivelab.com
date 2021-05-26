@@ -1,17 +1,17 @@
 ---
-title: Unity 7.8 User Guide
+title: Unity 7.8.3 User Guide
 layout: docs
 category: Unity 7
 ---
 
 # Introduction
 
-The Unity 7.8 User Interface provides the following search capabilities: 
+The Unity 7.8.3 User Interface provides the following search capabilities: 
 - Content Search
 - Case Search
 - Work Item Search (e.g., based on In-baskets)
 
-Unity 7.8 supports the following Repositories:
+Unity 7.8.3 supports the following Repositories:
 - IBM
 - FileNet
 - CMOD
@@ -23,17 +23,17 @@ Unity 7.8 supports the following Repositories:
 
 # User Interface Sections
 
-The Unity 7.8 User Interface groups its main components into the following Sections:
+The Unity 7.8.3 User Interface groups its main components into the following Sections:
 - Document Search
 - Case Search
 - In-baskets (e.g., Work Items)
 - Unity Configuration Console
 
-[![Dashboards](unity-7.8-user-guide/images/dashboards.png)](unity-7.8-user-guide/images/dashboards.png)
+[![Dashboards](unity-7.8.3-user-guide/images/dashboards.png)](unity-7.8.3-user-guide/images/dashboards.png)
 
 ## User Interface Navigation Controls
 
-Unity 7.8 provides various options to allow the user to navigate to different components of the user interface.  These options include:
+Unity 7.8.3 provides various options to allow the user to navigate to different components of the user interface.  These options include:
 - Tabs
 - Toggle Button Groups
 - Drop Down Lists
@@ -41,19 +41,19 @@ Unity 7.8 provides various options to allow the user to navigate to different co
 
 - `Tabs` allows users to switch between components from the Tabs bar:
 
-  [![Containers](unity-7.8-user-guide/images/dashboard_container_tabs.png)](unity-7.8-user-guide/images/dashboard_container_tabs.png)
+  [![Containers](unity-7.8.3-user-guide/images/dashboard_container_tabs.png)](unity-7.8.3-user-guide/images/dashboard_container_tabs.png)
 
 - `Toggle` allows users to switch between components from the Toggle Button group:
 
-  [![Containers](unity-7.8-user-guide/images/dashboard_container_toggle.png)](unity-7.8-user-guide/images/dashboard_container_toggle.png)
+  [![Containers](unity-7.8.3-user-guide/images/dashboard_container_toggle.png)](unity-7.8.3-user-guide/images/dashboard_container_toggle.png)
 
 - `Dropdown` allows users to switch between components from the Dropdown menu:
 
-  [![Containers](unity-7.8-user-guide/images/dashboard_container_dropdown.png)](unity-7.8-user-guide/images/dashboard_container_dropdown.png)
+  [![Containers](unity-7.8.3-user-guide/images/dashboard_container_dropdown.png)](unity-7.8.3-user-guide/images/dashboard_container_dropdown.png)
 
 - `Tree View` allows users to switch between components from the Tree view:
 
-  [![Containers](unity-7.8-user-guide/images/dashboard_container_tree.png)](unity-7.8-user-guide/images/dashboard_container_tree.png)
+  [![Containers](unity-7.8.3-user-guide/images/dashboard_container_tree.png)](unity-7.8.3-user-guide/images/dashboard_container_tree.png)
 
 # Folder view
 
@@ -63,7 +63,7 @@ Unity has the capability to present a single continuous view of multiple reposit
 
 Click on a folder to display content within that folder and all subfolders under it:
 
-[![Folders](unity-7.8-user-guide/images/folders.png)](unity-7.8-user-guide/images/folders.png)
+[![Folders](unity-7.8.3-user-guide/images/folders.png)](unity-7.8.3-user-guide/images/folders.png)
 
 # Quick Search
 
@@ -73,7 +73,7 @@ Type in the word or phrase to search for in the search field at the top of the s
 
 The Search results will update, returning all content with the search criteria found anywhere in the `Document Title` or `Document Content` and restricted by your selected repository:
 
-[![Quick Search](unity-7.8-user-guide/images/quick-search.png)](unity-7.8-user-guide/images/quick-search.png)
+[![Quick Search](unity-7.8.3-user-guide/images/quick-search.png)](unity-7.8.3-user-guide/images/quick-search.png)
 
 # Advanced Search
 
@@ -82,21 +82,21 @@ You can quickly filter and narrow down your search results using multiple search
 
 Click the Advanced Search Icon to open the Advanced Search Panel:
 
-[![Advanced Search](unity-7.8-user-guide/images/advanced-search-icon.png)](unity-7.8-user-guide/images/advanced-search-icon.png)
+[![Advanced Search](unity-7.8.3-user-guide/images/advanced-search-icon.png)](unity-7.8.3-user-guide/images/advanced-search-icon.png)
 
 Advanced Search panel appears and you can enter search criteria based on the repository you selected:
 
-[![Advanced Search](unity-7.8-user-guide/images/advanced-search-panel.png)](unity-7.8-user-guide/images/advanced-search-panel.png)
+[![Advanced Search](unity-7.8.3-user-guide/images/advanced-search-panel.png)](unity-7.8.3-user-guide/images/advanced-search-panel.png)
 
 ## Execute Search and Reset
 
 - Specify search criteria, and the results will be shown in the panel on the right:
 
-  [![Execute Search and Reset](unity-7.8-user-guide/images/advanced-search-criteria.gif)](unity-7.8-user-guide/images/advanced-search-criteria.gif)
+  [![Execute Search and Reset](unity-7.8.3-user-guide/images/advanced-search-criteria.gif)](unity-7.8.3-user-guide/images/advanced-search-criteria.gif)
 
 - To clear your Advanced Search changes and return to the Quick search settings, click the `Reset filters` button:
 
-  [![Execure Search and Reset](unity-7.8-user-guide/images/reset-filters.png)](unity-7.8-user-guide/images/reset-filters.png)
+  [![Execure Search and Reset](unity-7.8.3-user-guide/images/reset-filters.png)](unity-7.8.3-user-guide/images/reset-filters.png)
 
 # Saved Searches
 
@@ -104,15 +104,15 @@ You can save frequently used searches to quickly access them in the future.
 
 - Enter the search criteria you’d like to use, then click the `Manage Selected Filters`:
 
-  [![Saved Search](unity-7.8-user-guide/images/saved-search-menu.png)](unity-7.8-user-guide/images/saved-search-menu.png)
+  [![Saved Search](unity-7.8.3-user-guide/images/saved-search-menu.png)](unity-7.8.3-user-guide/images/saved-search-menu.png)
 
 - On the opened modal window enter a name for the search and click `Save As`:
 
-  [![Saved Search](unity-7.8-user-guide/images/save-search.png)](unity-7.8-user-guide/images/save-search.png)
+  [![Saved Search](unity-7.8.3-user-guide/images/save-search.png)](unity-7.8.3-user-guide/images/save-search.png)
 
 - To access your saved searches, click on the filter icon and select a search on opened `Choose a search` window:
 
-  [![Saved Search](unity-7.8-user-guide/images/choose-saved-search.png)](unity-7.8-user-guide/images/choose-saved-search.png)
+  [![Saved Search](unity-7.8.3-user-guide/images/choose-saved-search.png)](unity-7.8.3-user-guide/images/choose-saved-search.png)
 
 When a Saved Search is selected, the Advanced panel UI is updated to display the Saved Search Criteria, and the search is executed.
 
@@ -121,7 +121,7 @@ When a Saved Search is selected, the Advanced panel UI is updated to display the
 With Unity, you can customize how you view your search results. You can change the look and feel, set and order of displayed columns, sort order, and more.
 To customize the Search Results Panel, click on the gear icon in the upper right:
 
-[![Grid settings](unity-7.8-user-guide/images/grid-settings-menu.png)](unity-7.8-user-guide/images/grid-settings-menu.png)
+[![Grid settings](unity-7.8.3-user-guide/images/grid-settings-menu.png)](unity-7.8.3-user-guide/images/grid-settings-menu.png)
 
 ## Grid mode
 
@@ -129,18 +129,18 @@ For loading data, Grid supports pagination and infinite scrolling. The selected 
 
 - In pagination mode, user may view the grid data by pages, clicking pages in pagination control under the grid. The number of items is restricted by 10 items per page
 
-  [![Grid mode](unity-7.8-user-guide/images/grid-pagination-mode.png)](unity-7.8-user-guide/images/grid-pagination-mode.png)
+  [![Grid mode](unity-7.8.3-user-guide/images/grid-pagination-mode.png)](unity-7.8.3-user-guide/images/grid-pagination-mode.png)
 
 - In infinite scrolling mode, user may load next portion of data into the grid simply by scrolling grid down, until no more data is available.
 
-  [![Grid mode](unity-7.8-user-guide/images/grid-infinite-mode.png)](unity-7.8-user-guide/images/grid-infinite-mode.png)
+  [![Grid mode](unity-7.8.3-user-guide/images/grid-infinite-mode.png)](unity-7.8.3-user-guide/images/grid-infinite-mode.png)
 
 ## Grid columns
 
 To make a column visible or hidden, or to control the order in which the columns are displayed, select the `Grid Columns` menu item.
 Customize columns dialog appears:
 
-[![Grid columns](unity-7.8-user-guide/images/customize-columns.png)](unity-7.8-user-guide/images/customize-columns.png)
+[![Grid columns](unity-7.8.3-user-guide/images/customize-columns.png)](unity-7.8.3-user-guide/images/customize-columns.png)
 
 For a given field, toggle the Visible toggle switch to the right (Red) to make that column visible. Toggle the switch to the left (Gray) to hide the column.
 
@@ -155,7 +155,7 @@ When you’re done making changes, select the `Apply` button. Your changes will 
 
 Normally grid columns width is set automatically to fill whole grid horizontal space. The columns may be resized using mouse by dragging column separators. To show the separators, move mouse over the column heading and left and right side separators will be shown. Hold a separator with mouse and move horizontally to resize the column.
 
-[![Grid columns](unity-7.8-user-guide/images/resize-columns.png)](unity-7.8-user-guide/images/resize-columns.png)
+[![Grid columns](unity-7.8.3-user-guide/images/resize-columns.png)](unity-7.8.3-user-guide/images/resize-columns.png)
 
 Last column width may not be changed. If grid occupies whole form width, the last column takes all the remaining width to the right side of the grid, otherwise the last column width is set automatically by actual content.
 
@@ -163,7 +163,7 @@ The minimum size of the columns is determined by column header, the actual colum
 
 Width of a column becomes fixed once it was resized. Other columns width remains automatically maintained. To reset the columns width to default (and revert the visible state of the columns and their order) use `Reset` from the grid settings menu:
 
-[![Grid columns resizing](unity-7.8-user-guide/images/grid-reset.png)](unity-7.8-user-guide/images/grid-reset.png)
+[![Grid columns resizing](unity-7.8.3-user-guide/images/grid-reset.png)](unity-7.8.3-user-guide/images/grid-reset.png)
 
 ## Grid Display Density: Usability Features
 
@@ -178,7 +178,7 @@ Three options are provided:
 
 Click the `Apply` button to save your change:
 
-[![Grid density](unity-7.8-user-guide/images/grid-density.gif)](unity-7.8-user-guide/images/grid-density.gif)
+[![Grid density](unity-7.8.3-user-guide/images/grid-density.gif)](unity-7.8.3-user-guide/images/grid-density.gif)
 
 ## Sorting
 
@@ -189,7 +189,7 @@ You can use a simple sort on one column, or create multiple related column sorts
 
 - To quickly sort a column, mouse over the Column Name, and click on the arrow icon that appears immediately to the right:
 
-  [![Quick Sort](unity-7.8-user-guide/images/column-sort-order-icon.png)](unity-7.8-user-guide/images/column-sort-order-icon.png)
+  [![Quick Sort](unity-7.8.3-user-guide/images/column-sort-order-icon.png)](unity-7.8.3-user-guide/images/column-sort-order-icon.png)
 
   This will sort the column in ascending order.
 
@@ -200,11 +200,11 @@ You can use a simple sort on one column, or create multiple related column sorts
 
 To sort a column, you can also click the down arrow to the right of the column heading:
 
-[![Sort Menu](unity-7.8-user-guide/images/sort-column-arrow.png)](unity-7.8-user-guide/images/sort-column-arrow.png)
+[![Sort Menu](unity-7.8.3-user-guide/images/sort-column-arrow.png)](unity-7.8.3-user-guide/images/sort-column-arrow.png)
 
 The sort options are displayed:
 
-[![Sort Menu](unity-7.8-user-guide/images/sort-column-menu.png)](unity-7.8-user-guide/images/sort-column-menu.png)
+[![Sort Menu](unity-7.8.3-user-guide/images/sort-column-menu.png)](unity-7.8.3-user-guide/images/sort-column-menu.png)
 
 To set the sort order for the selected column, select either `Sort Ascending` or `Sort Descending`. Ascending will order elements like `1, 2, Alpha, Beta`, while descending will order elements like `9, 8, Zulu, Yankee`.
 
@@ -213,7 +213,7 @@ If you select a sort for multiple columns, a number will appear after the column
 To control the sort order and have a different column be sorted first, select the down arrow to the right of the column heading and select either Promote Order (to increase that column’s precedence in the sort order) ,or Demote Order (to lower that column’s precedence in the sort order).
 For example, if you want to sort by Document Title first, and then by Date Modified, promote Document Title until it is labelled `1`, followed by Date Modified labelled `2`.
 
-[![Sort Menu](unity-7.8-user-guide/images/multiple-sorting.gif)](unity-7.8-user-guide/images/multiple-sorting.gif)
+[![Sort Menu](unity-7.8.3-user-guide/images/multiple-sorting.gif)](unity-7.8.3-user-guide/images/multiple-sorting.gif)
 
 To remove the Column from Sort, select the `Remove Sort` menu item from the dropdown.
 
@@ -225,7 +225,7 @@ Once you have located the document you’re looking for, you can take a variety 
 
 For more actions, select the document and click on the vertical ellipse icon consisting of three dots to the right of the name:
 
-[![Actions Menu](unity-7.8-user-guide/images/actions-menu.gif)](unity-7.8-user-guide/images/actions-menu.gif)
+[![Actions Menu](unity-7.8.3-user-guide/images/actions-menu.gif)](unity-7.8.3-user-guide/images/actions-menu.gif)
 
 Click on the action to perform it.
 
@@ -275,7 +275,7 @@ You may move files by dragging and dropping them, or by selecting the `Move to` 
 
   Click the `Move to Folder` action, then select the folder you wish to move to. Click the `Select` button to move the document:
 
-  [![Move to action](unity-7.8-user-guide/images/move-to.png)](unity-7.8-user-guide/images/move-to.png)
+  [![Move to action](unity-7.8.3-user-guide/images/move-to.png)](unity-7.8.3-user-guide/images/move-to.png)
 
 - Using Drag and Drop
 
@@ -294,7 +294,7 @@ You may copy files by dragging and dropping them, or by selecting the `Copy to F
 
   Click the `Copy to Folder` action, then select the folder you wish to copy it to. Click the `Select` button to copy the document:
 
-  [![Copy to action](unity-7.8-user-guide/images/copy-to.png)](unity-7.8-user-guide/images/copy-to.png)
+  [![Copy to action](unity-7.8.3-user-guide/images/copy-to.png)](unity-7.8.3-user-guide/images/copy-to.png)
 
 ### Open in Separate tab
 
@@ -307,15 +307,15 @@ Clicking the Edit action displays a Document Details window with the following i
 - Document title
 - Link to Open the file in your browser:
 
-  [![Link to open file](unity-7.8-user-guide/images/details-link.png)](unity-7.8-user-guide/images/details-link.png)
+  [![Link to open file](unity-7.8.3-user-guide/images/details-link.png)](unity-7.8.3-user-guide/images/details-link.png)
 
 - Icon to Download the file:
 
-  [![Icon to download file](unity-7.8-user-guide/images/details-download.png)](unity-7.8-user-guide/images/details-download.png)
+  [![Icon to download file](unity-7.8.3-user-guide/images/details-download.png)](unity-7.8.3-user-guide/images/details-download.png)
 
 - Icon to Open the file in desktop app:
 
-  [![Icon to open in app](unity-7.8-user-guide/images/details-open-in-app.png)](unity-7.8-user-guide/images/details-open-in-app.png)
+  [![Icon to open in app](unity-7.8.3-user-guide/images/details-open-in-app.png)](unity-7.8.3-user-guide/images/details-open-in-app.png)
 
 - `Document Properties` Tab
 
@@ -331,7 +331,7 @@ Clicking the Edit action displays a Document Details window with the following i
 With Unity, you can take action on multiple documents at once.  
 Click the checkbox to the left of a document to select it. To take action on multiple documents, select multiple documents and then click the `Actions` button in the upper right:
 
-[![Multiple actions](unity-7.8-user-guide/images/multiple-actions.png)](unity-7.8-user-guide/images/multiple-actions.png)
+[![Multiple actions](unity-7.8.3-user-guide/images/multiple-actions.png)](unity-7.8.3-user-guide/images/multiple-actions.png)
 
 You may take the following actions on multiple selected documents:
 
@@ -340,7 +340,7 @@ You may take the following actions on multiple selected documents:
 
 By clicking the `Export` button you can export metadata fields for selected documents to CSV file:
 
-[![Export](unity-7.8-user-guide/images/export.png)](unity-7.8-user-guide/images/export.png)
+[![Export](unity-7.8.3-user-guide/images/export.png)](unity-7.8.3-user-guide/images/export.png)
 
 You may select `CSV(current fields)` option to export fields that are currently shown in grid , or `CSV(all fields)` option to export all fields.
 
@@ -350,11 +350,11 @@ You can easily add new documents to your repositories.
 
 Click the `Create` button to add a file to a Folder:
 
-[![Create button](unity-7.8-user-guide/images/create-document-button.png)](unity-7.8-user-guide/images/create-document-button.png)
+[![Create button](unity-7.8.3-user-guide/images/create-document-button.png)](unity-7.8.3-user-guide/images/create-document-button.png)
 
 The New Document dialog box will be displayed:
 
-[![New document dialog](unity-7.8-user-guide/images/new-document-dialog.png)](unity-7.8-user-guide/images/new-document-dialog.png)
+[![New document dialog](unity-7.8.3-user-guide/images/new-document-dialog.png)](unity-7.8.3-user-guide/images/new-document-dialog.png)
 
 You can add documents two ways:
 
@@ -365,7 +365,7 @@ After dragging and dropping, or browse and selecting a file, you will be prompte
 
 - Enter a Document Title to be used for the document added. This can be different from the filename:
 
-  [![New document dialog filled](unity-7.8-user-guide/images/create-document-window.png)](unity-7.8-user-guide/images/create-document-window.png)
+  [![New document dialog filled](unity-7.8.3-user-guide/images/create-document-window.png)](unity-7.8.3-user-guide/images/create-document-window.png)
 
 - You may optionally provide custom metadata field values, if prompted. Required fields will be marked with a red icon.
 - Once all required fields are entered, click the `Create` button.
@@ -375,11 +375,11 @@ After dragging and dropping, or browse and selecting a file, you will be prompte
 
 Unity provides an additional Detail View to allow fast browsing and comparison of documents. To activate it, click the `Detail View` toggle button in the upper right of the search results screen:
 
-[![Detail view icon](unity-7.8-user-guide/images/detail-view-icon.png)](unity-7.8-user-guide/images/detail-view-icon.png)
+[![Detail view icon](unity-7.8.3-user-guide/images/detail-view-icon.png)](unity-7.8.3-user-guide/images/detail-view-icon.png)
 
 You can click the button again to easily toggle between `Detail View` and standard `List View`:
 
-[![Detail view](unity-7.8-user-guide/images/detail-view.png)](unity-7.8-user-guide/images/detail-view.png)
+[![Detail view](unity-7.8.3-user-guide/images/detail-view.png)](unity-7.8.3-user-guide/images/detail-view.png)
 
 The Detail View left panel displays the list of files returned from the search.
 The Detail middle panel displays the same details information as listed above when the user selects the `Details action`.
@@ -392,26 +392,26 @@ For example, clicking the checkbox next to three documents, then selecting the D
 
 On Detail view Bookmarks functionality is available. Bookmarks allow to quickly switch between selected items. List item can be added to Bookmarks bar by clicking Bookmark action in the item actions menu.
 
-[![Bookmarks](unity-7.8-user-guide/images/add-bookmark.png)](unity-7.8-user-guide/images/add-bookmark.png)
+[![Bookmarks](unity-7.8.3-user-guide/images/add-bookmark.png)](unity-7.8.3-user-guide/images/add-bookmark.png)
 
 A bookmark can also be removed from the Bookmarks bar:
 
-[![Bookmarks](unity-7.8-user-guide/images/delete-bookmark.png)](unity-7.8-user-guide/images/delete-bookmark.png)
+[![Bookmarks](unity-7.8.3-user-guide/images/delete-bookmark.png)](unity-7.8.3-user-guide/images/delete-bookmark.png)
 
 # Recent View History
 
 Recent view history saves and shows a list of links to recently viewed items.
 To view the item in the Recent View history you may click the item in the grid and choose item properties. To open a list or Recently viewed items click the `History` icon.
 
-[![Recent View icon](unity-7.8-user-guide/images/recently-viewed-icon.png)](unity-7.8-user-guide/images/recently-viewed-icon.png)
+[![Recent View icon](unity-7.8.3-user-guide/images/recently-viewed-icon.png)](unity-7.8.3-user-guide/images/recently-viewed-icon.png)
 
 And see the list of `Recently viewed` items
 
-[![Recent View list](unity-7.8-user-guide/images/recently-viewed-list.png)](unity-7.8-user-guide/images/recently-viewed-list.png)
+[![Recent View list](unity-7.8.3-user-guide/images/recently-viewed-list.png)](unity-7.8.3-user-guide/images/recently-viewed-list.png)
 
 To clear recent view history open it and click the `Clear history` icon:
 
-[![Clear Recent View list](unity-7.8-user-guide/images/clear-recently-viewed.png)](unity-7.8-user-guide/images/clear-recently-viewed.png)
+[![Clear Recent View list](unity-7.8.3-user-guide/images/clear-recently-viewed.png)](unity-7.8.3-user-guide/images/clear-recently-viewed.png)
 
 # Actions on Cases
 
@@ -423,45 +423,45 @@ You can easily create a new Case.
 
 - Click the button with case type name or `Create` button (it is defined in the Unity configuration files):
 
-  [![Create New Case](unity-7.8-user-guide/images/create-new-case-button.png)](unity-7.8-user-guide/images/create-new-case-button.png)
+  [![Create New Case](unity-7.8.3-user-guide/images/create-new-case-button.png)](unity-7.8.3-user-guide/images/create-new-case-button.png)
 
   The following view is displayed:
 
-  [![Create New Case View](unity-7.8-user-guide/images/new-case-view.png)](unity-7.8-user-guide/images/new-case-view.png)
+  [![Create New Case View](unity-7.8.3-user-guide/images/new-case-view.png)](unity-7.8.3-user-guide/images/new-case-view.png)
 
   User should fill in all required fields and press `Create` button.
 
 - In the next step user can change properties or return to the back. User can complete case creation pressing to `Complete` button:
 
-  [![Create New Case Step 2](unity-7.8-user-guide/images/new-case-view-step2.png)](unity-7.8-user-guide/images/new-case-view-step2.png)
+  [![Create New Case Step 2](unity-7.8.3-user-guide/images/new-case-view-step2.png)](unity-7.8.3-user-guide/images/new-case-view-step2.png)
 
 - View for attaching different documents is displayed after `Next` button pressing:
 
-  [![Create New Case Documents attaching](unity-7.8-user-guide/images/new-case-document-attaching.png)](unity-7.8-user-guide/images/new-case-document-attaching.png)
+  [![Create New Case Documents attaching](unity-7.8.3-user-guide/images/new-case-document-attaching.png)](unity-7.8.3-user-guide/images/new-case-document-attaching.png)
 
   User can attach already existing document or create a new one for different Document Classes with attaching to the case:
 
-  [![Create New Case Context menu for  Documents attaching](unity-7.8-user-guide/images/context-menu-for-documents-attaching.png)](unity-7.8-user-guide/images/context-menu-for-documents-attaching.png)
+  [![Create New Case Context menu for  Documents attaching](unity-7.8.3-user-guide/images/context-menu-for-documents-attaching.png)](unity-7.8.3-user-guide/images/context-menu-for-documents-attaching.png)
 
 - User can `Complete` case creation or return to the `Back` for properties changing:
 
-  [![Complete Case Creation](unity-7.8-user-guide/images/complete-case-creation.png)](unity-7.8-user-guide/images/complete-case-creation.png)
+  [![Complete Case Creation](unity-7.8.3-user-guide/images/complete-case-creation.png)](unity-7.8.3-user-guide/images/complete-case-creation.png)
 
 ### Attach existing document
 
 Search template is opened after `Attach existing document` selection. User can find a document to be attached using [Quick Search](#quick-search) or [Advanced Search](#advanced-search):
 
-[![Attach existing document](unity-7.8-user-guide/images/attach-existing-document.png)](unity-7.8-user-guide/images/attach-existing-document.png)
+[![Attach existing document](unity-7.8.3-user-guide/images/attach-existing-document.png)](unity-7.8.3-user-guide/images/attach-existing-document.png)
 
 User should select document(s) for attaching and press `Attach` button.
 Attached documents are displayed in the grid:
 
-[![List of Attached Document](unity-7.8-user-guide/images/list-attached-documents.png)](unity-7.8-user-guide/images/list-attached-documents.png)
+[![List of Attached Document](unity-7.8.3-user-guide/images/list-attached-documents.png)](unity-7.8.3-user-guide/images/list-attached-documents.png)
 
 Actions can be executed for any selected attached document as it described in [Actions on documents](#actions-on-documents). Specific document action is supported for attached document - `Detach Document`.
 Dialog confirmation is displayed after `Detach Document` action selection:
 
-[![Detach Document](unity-7.8-user-guide/images/detach-document.png)](unity-7.8-user-guide/images/detach-document.png)
+[![Detach Document](unity-7.8.3-user-guide/images/detach-document.png)](unity-7.8.3-user-guide/images/detach-document.png)
 
 Document disappears from the list of attached documents after clicking `Yes`.
 
@@ -473,7 +473,7 @@ View for document creation is displayed after action for new document attaching 
 
 For more actions, select the case and click on the vertical ellipse icon consisting of three dots to the right of the name:
 
-[![Actions Menu](unity-7.8-user-guide/images/case-actions-menu.gif)](unity-7.8-user-guide/images/case-actions-menu.gif)
+[![Actions Menu](unity-7.8.3-user-guide/images/case-actions-menu.gif)](unity-7.8.3-user-guide/images/case-actions-menu.gif)
 
 Click on the action to perform it.
 
@@ -490,7 +490,7 @@ Case Details view can contain the following tabs:
 
 Properties tab contains fields that were configured in the Unity configuration files. Properties can be grouped to the expandable sections. `Save` button will be enabled after any property changing.
 
-[![Case Properties](unity-7.8-user-guide/images/case-details.png)](unity-7.8-user-guide/images/case-details.png)
+[![Case Properties](unity-7.8.3-user-guide/images/case-details.png)](unity-7.8.3-user-guide/images/case-details.png)
 
 #### Attached document
 
@@ -500,19 +500,19 @@ Contains the same functionality that was described in [Attach existing document]
 
 History/Comments tab contains information about all users actions and user comments:
 
-[![History](unity-7.8-user-guide/images/history.png)](unity-7.8-user-guide/images/history.png)
+[![History](unity-7.8.3-user-guide/images/history.png)](unity-7.8.3-user-guide/images/history.png)
 
 Only user comments can be displayed:
 
-[![User Comments Displaying](unity-7.8-user-guide/images/user-comments-displaying.png)](unity-7.8-user-guide/images/user-comments-displaying.png)
+[![User Comments Displaying](unity-7.8.3-user-guide/images/user-comments-displaying.png)](unity-7.8.3-user-guide/images/user-comments-displaying.png)
 
 Also, history/comments can be displayed as timeline:
 
-[![History timeline](unity-7.8-user-guide/images/comments-timeline.png)](unity-7.8-user-guide/images/comments-timeline.png)
+[![History timeline](unity-7.8.3-user-guide/images/comments-timeline.png)](unity-7.8.3-user-guide/images/comments-timeline.png)
 
 All history/comments can be filtered using [Quick Search](#quick-search) or range:
 
-[![History filtering](unity-7.8-user-guide/images/history-filtering.png)](unity-7.8-user-guide/images/history-filtering.png)
+[![History filtering](unity-7.8.3-user-guide/images/history-filtering.png)](unity-7.8.3-user-guide/images/history-filtering.png)
 
 User can create comment pressing to `Comment` button.
 
@@ -520,13 +520,13 @@ A new comment is displayed in the grid after `Add` button pressing.
 
 Also user can change any user comment clicking on `Edit` icon:
 
-[![Comment Changing](unity-7.8-user-guide/images/comment-changing.png)](unity-7.8-user-guide/images/comment-changing.png)
+[![Comment Changing](unity-7.8.3-user-guide/images/comment-changing.png)](unity-7.8.3-user-guide/images/comment-changing.png)
 
 #### Workitems
 
 Workitems tab contains list of all workitems that were created for the case:
 
-[![Workitems](unity-7.8-user-guide/images/workitems.png)](unity-7.8-user-guide/images/workitems.png)
+[![Workitems](unity-7.8.3-user-guide/images/workitems.png)](unity-7.8.3-user-guide/images/workitems.png)
 
 Workitems can be filtered using [Quick Search](#quick-search) or [Advanced Search](#advanced-search).  
 Standard Workitem actions can be executed from this tab (see more details in [Actions on Workitems](#actions-on-workitems) section).
@@ -535,26 +535,26 @@ Standard Workitem actions can be executed from this tab (see more details in [Ac
 
 User can split case using appropriate action. The following view is displayed after `Split Case` action selection from the context menu:
 
-[![Split Case View](unity-7.8-user-guide/images/split-case.png)](unity-7.8-user-guide/images/split-case.png).
+[![Split Case View](unity-7.8.3-user-guide/images/split-case.png)](unity-7.8.3-user-guide/images/split-case.png).
 
 - Step 1. Select Case Type.
 
   Properties from the parent case are copied to the child case (if it was configured in the Unity configuration files) and displayed in the Read-Only format.
   User should click `Next` button and select `Case Type` from dropdown menu:
 
-  [![Split Case Step1](unity-7.8-user-guide/images/split-case-type-selection.gif)](unity-7.8-user-guide/images/split-case-type-selection.gif)
+  [![Split Case Step1](unity-7.8.3-user-guide/images/split-case-type-selection.gif)](unity-7.8.3-user-guide/images/split-case-type-selection.gif)
 
 - Step 2. Set case properties.
 
   After Case Type selection user can change or add values to properties on the Case View:
 
-  [![Split Case Properties](unity-7.8-user-guide/images/split-case-step2.png)](unity-7.8-user-guide/images/split-case-step2.png)
+  [![Split Case Properties](unity-7.8.3-user-guide/images/split-case-step2.png)](unity-7.8.3-user-guide/images/split-case-step2.png)
 
   After properties changing user can select `Back` to change Case Type or `Next` to validate properties values.
 
 - Step 3. Case Preview.
 
-  [![Split Case Review Properties](unity-7.8-user-guide/images/split-case-preview.png)](unity-7.8-user-guide/images/split-case-preview.png)
+  [![Split Case Review Properties](unity-7.8.3-user-guide/images/split-case-preview.png)](unity-7.8.3-user-guide/images/split-case-preview.png)
 
   User can select:
 
@@ -565,7 +565,7 @@ User can split case using appropriate action. The following view is displayed af
 
 - Step 4. Attach documents to case (optional).
 
-  [![Split Case Documents attaching](unity-7.8-user-guide/images/split-case-documents-attaching.png)](unity-7.8-user-guide/images/split-case-documents-attaching.png)
+  [![Split Case Documents attaching](unity-7.8.3-user-guide/images/split-case-documents-attaching.png)](unity-7.8.3-user-guide/images/split-case-documents-attaching.png)
 
   User should select document(s) and press `Attach` button to attach documents to the new case. After that user should press `Complete` to finish case creation.
 
@@ -577,13 +577,13 @@ User can copy existing case and create a new case using `Copy Case` action.
 
 The following view is displayed for case copying. This view contains values from the parent case (if it was configured in the Unity configuration files):
 
-[![Copy Case](unity-7.8-user-guide/images/copy-case.png)](unity-7.8-user-guide/images/copy-case.png)
+[![Copy Case](unity-7.8.3-user-guide/images/copy-case.png)](unity-7.8.3-user-guide/images/copy-case.png)
 
 - Step 1. User can change or add values to properties and press `Copy` button.
 
 - Step 2. Case preview.
 
-  [![Copy Case Step2](unity-7.8-user-guide/images/copy-case-step2.png)](unity-7.8-user-guide/images/copy-case-step2.png)
+  [![Copy Case Step2](unity-7.8.3-user-guide/images/copy-case-step2.png)](unity-7.8.3-user-guide/images/copy-case-step2.png)
 
   User can select:
 
@@ -594,7 +594,7 @@ The following view is displayed for case copying. This view contains values from
 
 - Step 3. Attach documents to case (optional).
 
-  [![Copy Case Documents attaching](unity-7.8-user-guide/images/copy-case-documents-attaching.png)](unity-7.8-user-guide/images/copy-case-documents-attaching.png)
+  [![Copy Case Documents attaching](unity-7.8.3-user-guide/images/copy-case-documents-attaching.png)](unity-7.8.3-user-guide/images/copy-case-documents-attaching.png)
 
   User should select document(s) and press `Attach` button to attach documents to the new case. After that user should press `Complete` to finish case creation.
 
@@ -604,7 +604,7 @@ Created case will be displayed in the grid. Case Details view contains all fille
 
 Case Details view will be displayed in the separate browser tab in ExtJS mode after `Open by URL` action execution:
 
-[![Open by URL](unity-7.8-user-guide/images/open-by-url.png)](unity-7.8-user-guide/images/open-by-url.png)
+[![Open by URL](unity-7.8.3-user-guide/images/open-by-url.png)](unity-7.8.3-user-guide/images/open-by-url.png)
 
 ### Open Case in Separate tab
 
@@ -620,7 +620,7 @@ Any case can be deleted after `Delete Case` action execution.
 
 Confirmation dialog is displayed after action selection:
 
-[![Delete Case](unity-7.8-user-guide/images/delete-case-dialog.png)](unity-7.8-user-guide/images/delete-case-dialog.png)
+[![Delete Case](unity-7.8.3-user-guide/images/delete-case-dialog.png)](unity-7.8.3-user-guide/images/delete-case-dialog.png)
 
 Case is physically deleted from case management system.
 
@@ -630,7 +630,7 @@ Case is physically deleted from case management system.
 
 For more actions, select the workitem and click on the vertical ellipse icon consisting of three dots to the right of the name:
 
-[![Workitems Context Menu](unity-7.8-user-guide/images/workitems-actions-menu.gif)](unity-7.8-user-guide/images/workitems-actions-menu.gif)
+[![Workitems Context Menu](unity-7.8.3-user-guide/images/workitems-actions-menu.gif)](unity-7.8.3-user-guide/images/workitems-actions-menu.gif)
 
 Click on the action to perform it.
 
@@ -642,14 +642,14 @@ Workitem Details view can contain the following tabs:
 - Attached documents (see more details in [Attach existing document](#attach-existing-document) and [Attach a new document](#attach-a-new-document) sections). Document that is attached in the workitem also will be displayed in the case and other workitems for this case.
 - History/Comments (see more details [History/Comments](#History/Comments) section)
 
-[![Workitem Details](unity-7.8-user-guide/images/workitem-details.png)](unity-7.8-user-guide/images/workitem-details.png)
+[![Workitem Details](unity-7.8.3-user-guide/images/workitem-details.png)](unity-7.8.3-user-guide/images/workitem-details.png)
 
 ### Reassign
 
 Workitem can be reassigned to other user. This action can be executed from context menu or workitem details view.
 The following view is displayed for this action.
 
-[![Reassign Workitem](unity-7.8-user-guide/images/reassigne-workitem.png)](unity-7.8-user-guide/images/reassigne-workitem.png)
+[![Reassign Workitem](unity-7.8.3-user-guide/images/reassigne-workitem.png)](unity-7.8.3-user-guide/images/reassigne-workitem.png)
 
 Current user should select other user in `Assignee` property to whom this workitem will be assigned. User can start user name typing and possible values will be displayed in the drop-down list.
 
@@ -661,63 +661,63 @@ After the action execution workitem disappears from the list for first user (who
 
 The same action can be executed for several selected workitems:
 
-[![Bulk Reassign Workitem](unity-7.8-user-guide/images/bulk-reassign.png)](unity-7.8-user-guide/images/bulk-reassign.png)
+[![Bulk Reassign Workitem](unity-7.8.3-user-guide/images/bulk-reassign.png)](unity-7.8.3-user-guide/images/bulk-reassign.png)
 
 ### Lock/Unlock workitem
 
 Workitem can be locked by current user:
 
-[![Locked Workitem](unity-7.8-user-guide/images/locked-workitem.png)](unity-7.8-user-guide/images/locked-workitem.png)
+[![Locked Workitem](unity-7.8.3-user-guide/images/locked-workitem.png)](unity-7.8.3-user-guide/images/locked-workitem.png)
 
 Other users can't open this workitems without `Unlock` action execution:
 
-[![Unlock Workitem](unity-7.8-user-guide/images/unlock-workitem.png)](unity-7.8-user-guide/images/unlock-workitem.png)
+[![Unlock Workitem](unity-7.8.3-user-guide/images/unlock-workitem.png)](unity-7.8.3-user-guide/images/unlock-workitem.png)
 
 ### Open Workitem in separate tab
 
 [Workitem Details view](#workitem-details-properties) will be displayed in the separate browser tab in the React after `Open in Separate tab` action execution:
 
-[![Workitem in Separate Tab](unity-7.8-user-guide/images/workitem-in-separate-tab.png)](unity-7.8-user-guide/images/workitem-in-separate-tab.png)
+[![Workitem in Separate Tab](unity-7.8.3-user-guide/images/workitem-in-separate-tab.png)](unity-7.8.3-user-guide/images/workitem-in-separate-tab.png)
 
 ### Dispatch actions
 
 Dispatch actions can be executed for any workitem to move to the next workflow step.
 Dispatch actions can be executed from context menu:
 
-[![Dispatch actions in Context menu](unity-7.8-user-guide/images/dispatch-actions-from-context-menu.png)](unity-7.8-user-guide/images/dispatch-actions-from-context-menu.png)
+[![Dispatch actions in Context menu](unity-7.8.3-user-guide/images/dispatch-actions-from-context-menu.png)](unity-7.8.3-user-guide/images/dispatch-actions-from-context-menu.png)
 
 or Workitem Details view:
 
-[![Dispatch actions in Details View](unity-7.8-user-guide/images/dispatch-actions-from-details-view.png)](unity-7.8-user-guide/images/dispatch-actions-from-details-view.png)
+[![Dispatch actions in Details View](unity-7.8.3-user-guide/images/dispatch-actions-from-details-view.png)](unity-7.8.3-user-guide/images/dispatch-actions-from-details-view.png)
 
 Workitem status changed to `Complete` after dispatch action execution and Workitem for the next workflow step is executed (if it was configured in the case manager system).
 
 Additional Dispatch Workitem view is displayed for case when action is executed from the context menu:
 
-[![Dispatch View](unity-7.8-user-guide/images/dispatch-view.png)](unity-7.8-user-guide/images/dispatch-view.png)
+[![Dispatch View](unity-7.8.3-user-guide/images/dispatch-view.png)](unity-7.8.3-user-guide/images/dispatch-view.png)
 
 User can change any value for workitem and press `Dispatch` button. After that current workitem will be completed and workitem for the next workflow step will be created.
 
 The same action can be executed for case when several workitems with the same dispatch actions were selected:
 
-[![Bulk Dispatch](unity-7.8-user-guide/images/bulk-dispatch.png)](unity-7.8-user-guide/images/bulk-dispatch.png)
+[![Bulk Dispatch](unity-7.8.3-user-guide/images/bulk-dispatch.png)](unity-7.8.3-user-guide/images/bulk-dispatch.png)
 
 # Process Analytics
 
 Analytics feature brings the ability to add leading-edge visualization and powerful analytics capabilities to the web applications based on Unity platform. It allows users to summarize, aggregate, analyze and visualize various kinds of data to discover insights and make more informed decisions.
-Unity 7.8 provides Actionable Analytic capabilities, that allows users to drill down by selecting graphical UI components to view the related list of: Cases, Work Items and Documents, which can be actioned (e.g., Updated, Approved, Rejected, etc.). 
+Unity 7.8.3 provides Actionable Analytic capabilities, that allows users to drill down by selecting graphical UI components to view the related list of: Cases, Work Items and Documents, which can be actioned (e.g., Updated, Approved, Rejected, etc.). 
 
 ## Process Analytics Tab
 
 Process Analytics can be accessed as application via `Analytics UI` tab:
 
-[![Process Analytics Tab](unity-7.8-user-guide/images/analytics-tab.png)](unity-7.8-user-guide/images/analytics-tab.png)
+[![Process Analytics Tab](unity-7.8.3-user-guide/images/analytics-tab.png)](unity-7.8.3-user-guide/images/analytics-tab.png)
 
 ## Process Analytics Dashboard
 
 Analytics Dashboards are accessible via sliding menu located left:
 
-[![Process Analytics Dashboard](unity-7.8-user-guide/images/analytics-dashboard.png)](unity-7.8-user-guide/images/analytics-dashboard.png)
+[![Process Analytics Dashboard](unity-7.8.3-user-guide/images/analytics-dashboard.png)](unity-7.8.3-user-guide/images/analytics-dashboard.png)
 
 ## UI Components
 
@@ -734,49 +734,49 @@ Unity Analytics features a several fully configurable and customizable analytics
 
 Pie charts are useful for communicating instantaneously what share each value makes up of the whole:
 
-[![Pie chart](unity-7.8-user-guide/images/pie-chart.png)](unity-7.8-user-guide/images/pie-chart.png)
+[![Pie chart](unity-7.8.3-user-guide/images/pie-chart.png)](unity-7.8.3-user-guide/images/pie-chart.png)
 
 #### Line chart
 
 Line charts are resounding popular for a range of business use cases because they demonstrate an overall trend swiftly and concisely, in a way that’s hard to misinterpret:
 
-[![Line chart](unity-7.8-user-guide/images/line-chart.png)](unity-7.8-user-guide/images/line-chart.png)
+[![Line chart](unity-7.8.3-user-guide/images/line-chart.png)](unity-7.8.3-user-guide/images/line-chart.png)
 
 #### Bar chart
 
 Bar charts are great for comparing several different values, especially when some of these are broken into color-coded categories:
 
-[![Bar chart](unity-7.8-user-guide/images/bar-chart.png)](unity-7.8-user-guide/images/bar-chart.png)
+[![Bar chart](unity-7.8.3-user-guide/images/bar-chart.png)](unity-7.8.3-user-guide/images/bar-chart.png)
 
 #### Area chart
 
 Area charts are useful as they give a sense of the overall volume, as well as the proportion of this taken up by each category:
 
-[![Area chart](unity-7.8-user-guide/images/area-chart.png)](unity-7.8-user-guide/images/area-chart.png)
+[![Area chart](unity-7.8.3-user-guide/images/area-chart.png)](unity-7.8.3-user-guide/images/area-chart.png)
 
 #### Composite chart
 
 Displays interactions of data as a block, line, mark, area diagram:
 
-[![Composite chart](unity-7.8-user-guide/images/composite-charts.png)](unity-7.8-user-guide/images/composite-charts.png)
+[![Composite chart](unity-7.8.3-user-guide/images/composite-charts.png)](unity-7.8.3-user-guide/images/composite-charts.png)
 
 #### TreeMap chart
 
 Displays structured data as set of nested rectangles:
 
-[![TreeMap chart](unity-7.8-user-guide/images/treemap-chart.png)](unity-7.8-user-guide/images/treemap-chart.png)
+[![TreeMap chart](unity-7.8.3-user-guide/images/treemap-chart.png)](unity-7.8.3-user-guide/images/treemap-chart.png)
 
 #### HeatMap chart
 
 Displays data in form of matrix, where values are additionally encoded in colors:
 
-[![HeatMap chart](unity-7.8-user-guide/images/heatmap-chart.png)](unity-7.8-user-guide/images/heatmap-chart.png)
+[![HeatMap chart](unity-7.8.3-user-guide/images/heatmap-chart.png)](unity-7.8.3-user-guide/images/heatmap-chart.png)
 
 ### Indicators
 
 Display summary statistics on a dashboard:
 
-[![Indicators](unity-7.8-user-guide/images/indicators.png)](unity-7.8-user-guide/images/indicators.png)
+[![Indicators](unity-7.8.3-user-guide/images/indicators.png)](unity-7.8.3-user-guide/images/indicators.png)
 
 ### Filters
 
@@ -786,11 +786,11 @@ Search criteria in Advanced Search can be linked with Facets, it leads to change
 
 Filters panel:
 
-[![Before Filtering](unity-7.8-user-guide/images/before-filtering.png)](unity-7.8-user-guide/images/before-filtering.png)
+[![Before Filtering](unity-7.8.3-user-guide/images/before-filtering.png)](unity-7.8.3-user-guide/images/before-filtering.png)
 
 Charts updated after `CA` Customer State selection on Filters panel:
 
-[![After Filtering](unity-7.8-user-guide/images/after-filtering.png)](unity-7.8-user-guide/images/after-filtering.png)
+[![After Filtering](unity-7.8.3-user-guide/images/after-filtering.png)](unity-7.8.3-user-guide/images/after-filtering.png)
 
 ### Actions on cases, workitems, documents
 
@@ -800,4 +800,4 @@ Standard actions can be executed for [Cases](#actions-on-cases), [Workitems](#ac
 
 Standard [Grid](#grid-mode) can be added to display list of objects that were grouped using Charts or Search Criteria in Advanced Search:
 
-[![Analytics Grid](unity-7.8-user-guide/images/analytics-grid.png)](unity-7.8-user-guide/images/analytics-grid.png)
+[![Analytics Grid](unity-7.8.3-user-guide/images/analytics-grid.png)](unity-7.8.3-user-guide/images/analytics-grid.png)
