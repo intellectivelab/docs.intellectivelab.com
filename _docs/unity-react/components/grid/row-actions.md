@@ -13,7 +13,7 @@ Dropdown menu with available actions should be displayed:
 
 ![react_row-action-menu-dropdown](row-actions/images/gridrowaction_2.png) 
 
-Single action considered as available only if `link key` from the component links array `matches` any action `name` or `type` property from whole actions list.  
+Single action considered as available only if `link key` from the component links array `matches` any action `name` or `type` property from the list of all actions.  
 Choosing an action targets to show configured view and pass some declared resource by actual `href`, defined in component links.
 
 Examples of row actions:
