@@ -11,8 +11,8 @@ If there are more than one bulk action available, dropdown with actions will be 
 
 ![react_bulk-action-dropdown](bulk-actions/images/gridbulkaction_2.png) 
 
-Single bulk action considered as available only if **link key** from the component links array **matches** any action **name or type property** from whole actions list.  
-Choosing an action targets to show configured view and pass some declared resource by actual uri property, defined in an appropriate action from all actions list.
+Single bulk action considered as available only if `link key` from the component links array `matches` any action `name` or `type` property from whole actions list.  
+Choosing an action targets to show configured view and pass some declared resource by actual `Uri` property, defined in an appropriate action from all actions list.
 
 Examples of bulk actions:
 

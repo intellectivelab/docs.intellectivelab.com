@@ -9,7 +9,7 @@ To invoke model action click on the appropriate button in the grid toolbar:
 
 ![react_model-action](model-actions/images/gridmodelaction_1.png) 
 
-Choosing an action targets to show configured view and pass some declared resource by actual uri property, defined in an appropriate action from all actions list.
+Choosing an action targets to show configured view and pass some declared resource by actual `Uri` property, defined in an appropriate action from all actions list.
 
 Examples of model actions:
 
