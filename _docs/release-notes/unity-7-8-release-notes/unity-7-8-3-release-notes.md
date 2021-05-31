@@ -27,7 +27,7 @@ The following stories were implemented in the Unity 7.8.3 release. The ID and De
 | U7-6197 | Remove Unity bar if ExtJS tabs are absent |
 | U7-6201 | React / Forms: We need an ability to add help to table control on the form |
 | U7-6257 | ExtJS: native Sharepoint document link at shareLinkViaEmail action |
-| U7-6585 | Create tool to allow admin users to delete documents from enterprise index |
+| U7-6585 | Create a tool to allow admin users to delete documents from enterprise index |
 | U7-6587 | UIE CM8 crawler DDO data item type detection |
 
 # Resolved Issues
@@ -41,7 +41,7 @@ The following issues were resolved in the Unity 7.8.3 release. The ID and Descri
 | U7-3683 | UCM+ICM&JBPM: Download action is available for several files                                                           |
 | U7-3733 | Unity: remove text "vSpace" from dialog window                                                                         |
 | U7-3914 | [React] The "Select period" range element work only with the current year                                              |
-| U7-4407 | ExtJS: Folder Tree isn't displayed in Copy/Move dialog while expande button isn't pressed                              |
+| U7-4407 | ExtJS: Folder Tree isn't displayed in Copy/Move dialog while expand button isn't pressed                               |
 | U7-4460 | React: Empty query is sent to the server for LDAP Lookup                                                               |
 | U7-4666 | Alfresco documents: Error on check out document                                                                        |
 | U7-4758 | NumericField blocks any input after Clear button was pressed                                                           |
@@ -102,7 +102,7 @@ The following issues were resolved in the Unity 7.8.3 release. The ID and Descri
 | U7-6155 | JBPM+React: Non changed document title is displayed on attached sharepoint documents tab                               |
 | U7-6156 | JBPM+React: Only Complete dispatch action can be executed for workitem                                                 |
 | U7-6179 | SharePoint: do not use SP search API when loading document libraries                                                   |
-| U7-6189 | Folder view disappear                                                                                                  |
+| U7-6189 | Folder view disappears                                                                                                 |
 | U7-6195 | JBPM+React: The same workitems are displayed for different roles                                                       |
 | U7-6230 | JBPM+React: Workitems that was created from milestone can't be completed                                               |
 | U7-6362 | jBPM+React: List of cases aren't displayed if ColumnSet contains Date property                                         |
@@ -115,7 +115,6 @@ The following issues were resolved in the Unity 7.8.3 release. The ID and Descri
 | U7-6540 | UserContext should not be case sensitive                                                                               |
 | U7-6619 | UIE: remove SiteScanIntervalSec setting from sample Sharepoint crawler config                                          |
 | U7-6621 | UIE: CE52 crawler broken                                                                                               |
-| U7-     | User can't open workitem detail view                                                                                   |
 
 # Installation Changes
 
