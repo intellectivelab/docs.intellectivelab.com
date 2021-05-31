@@ -640,7 +640,7 @@ Workitem Details view can contain the following tabs:
 
 - Properties (see more details in [Case Properties](#case-details-properties) section). Properties that were changed in workitem also will be updated in the case
 - Attached documents (see more details in [Attach existing document](#attach-existing-document) and [Attach a new document](#attach-a-new-document) sections). Document that is attached in the workitem also will be displayed in the case and other workitems for this case.
-- History/Comments (see more details [History/Comments](#History/Comments) section)
+- History/Comments (see more details in [History/Comments](#historycomments) section)
 
 [![Workitem Details](unity-7.8.3-user-guide/images/workitem-details.png)](unity-7.8.3-user-guide/images/workitem-details.png)
 
