@@ -42,14 +42,16 @@ An example:
 <FieldType AvailableWFResponsesField="false" ID="DateTime" MultiValue="false" Type="DATE" ValueFormat="XStreamDate" WFResponseField="false"/>
 ```
 
-"XStreamDate" value can be supplemented with such parameters as input datetime format, frontend datetime format and timezone
+"XStreamDate" value can be supplemented with such parameters as input datetime format, frontend datetime format and timezone.
 
 An example:
 
 ValueFormat="XStreamDate(yyyy-MM-dd'T'HH:mm:ss;yyyy-MM-dd'T'HH:mm:ss.S'Z',GMT)"
-- yyyy-MM-dd'T'HH:mm:ss (input datetime format for dispatching to store, if omitted 'yyyy-MM-dd'T'HH:mm:ss' by default)
-- yyyy-MM-dd'T'HH:mm:ss.S'Z' (datetime format for sending to frontend, if omitted 'MM/dd/yyyy' by default)
-- GMT (server timezone, if omitted GMT by default). Instead of timezone, it can also be boolean value. False - server timezone is taken, True - local client's timezone if 'frontend.timezone' system property set to 'client'.
+- `yyyy-MM-dd'T'HH:mm:ss` - input datetime format for dispatching to store, if omitted `yyyy-MM-dd'T'HH:mm:ss` by default
+- `yyyy-MM-dd'T'HH:mm:ss.S'Z'` - datetime format for sending to frontend, if omitted `MM/dd/yyyy` by default
+- `GMT` - server timezone, if omitted `GMT` by default. Instead of timezone, it can also be a boolean value:
+    - `false` - server timezone is taken
+    - `true` - local client's timezone if `frontend.timezone` system property set to `client`
 
 `FieldSet` tag attributes:
 
