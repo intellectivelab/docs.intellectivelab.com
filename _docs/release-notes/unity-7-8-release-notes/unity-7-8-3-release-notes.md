@@ -6,11 +6,10 @@ category: Unity 7
 
 # New Features
 
-The following stories and tasks were implemented in the Unity 7.8.3 release. The ID and Description are from Intellective’s internal ticket tracking system:
+The following stories were implemented in the Unity 7.8.3 release. The ID and Description are from Intellective’s internal ticket tracking system:
 
 | ID            | Summary                                                                                   |
 | ------------- | ----------------------------------------------------------------------------------------- |
-| *Stories*                                                                                                 |
 | U7-5667/PR-259 | React grid default action should be configurable                                         |
 | U7-6587        | UIE CM8 crawler DDO data item type detection                                             |
 | U7-6257/PR-296 | ExtJS: native Sharepoint document link at shareLinkViaEmail action                       |
@@ -28,7 +27,11 @@ The following stories and tasks were implemented in the Unity 7.8.3 release. The
 | PR-184         | React UI should have "About" information                                                 |
 | PR-279         | Fields located in the table on a form cannot be updated in custom code                   |
 | PR-318         | Obtain User groups for Public API to apply UIE security to Support Roles for Unity Actions and Searches |
-| *Tasks*                                                                                                   |
+
+The following tasks were implemented in the Unity 7.8.3 release. The ID and Description are from Intellective’s internal ticket tracking system:
+
+| ID            | Summary                                                                                   |
+| ------------- | ----------------------------------------------------------------------------------------- |
 | U7-5629        | Error Codes For Unity                                                                    |
 | U7-5542        | Default Case Folder Option to upload Attachments/Documents                               |
 | U7-5329        | Optimize content search in Solr (U4I, U4SP)                                              |
