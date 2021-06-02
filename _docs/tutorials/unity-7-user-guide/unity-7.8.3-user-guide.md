@@ -84,7 +84,7 @@ Click the Advanced Search Icon to open the Advanced Search Panel:
 
 [![Advanced Search](unity-7.8.3-user-guide/images/advanced-search-icon.png)](unity-7.8.3-user-guide/images/advanced-search-icon.png)
 
-Advanced Search panel appears and you can enter search criteria based on the repository you selected:
+Advanced Search panel appears, and you can enter search criteria based on the repository you selected:
 
 [![Advanced Search](unity-7.8.3-user-guide/images/advanced-search-panel.png)](unity-7.8.3-user-guide/images/advanced-search-panel.png)
 
@@ -94,7 +94,7 @@ Advanced Search panel appears and you can enter search criteria based on the rep
 
   [![Execute Search and Reset](unity-7.8.3-user-guide/images/advanced-search-criteria.gif)](unity-7.8.3-user-guide/images/advanced-search-criteria.gif)
 
-- To clear your Advanced Search changes and return to the Quick search settings, click the `Reset filters` button:
+- To clear your Advanced Search changes and return to the Quick Search settings, click the `Reset filters` button:
 
   [![Execure Search and Reset](unity-7.8.3-user-guide/images/reset-filters.png)](unity-7.8.3-user-guide/images/reset-filters.png)
 
@@ -206,7 +206,7 @@ The sort options are displayed:
 
 [![Sort Menu](unity-7.8.3-user-guide/images/sort-column-menu.png)](unity-7.8.3-user-guide/images/sort-column-menu.png)
 
-To set the sort order for the selected column, select either `Sort Ascending` or `Sort Descending`. Ascending will order elements like `1, 2, Alpha, Beta`, while descending will order elements like `9, 8, Zulu, Yankee`.
+To set the sort order for the selected column, select either `Sort Ascending` or `Sort Descending`. Ascending will order elements like `1, 2, Alpha, Beta`, while descending will order elements like `Zulu, Yankee, 9, 8`.
 
 If you select a sort for multiple columns, a number will appear after the column names, indicating in which order the columns are sorted.
 
@@ -646,20 +646,20 @@ Workitem Details view can contain the following tabs:
 
 ### Reassign
 
-Workitem can be reassigned to other user. This action can be executed from context menu or workitem details view.
-The following view is displayed for this action.
+Workitem can be reassigned to other user. This action can be executed from context menu or Workitem Details view.
+The following view is displayed for this action:
 
 [![Reassign Workitem](unity-7.8.3-user-guide/images/reassigne-workitem.png)](unity-7.8.3-user-guide/images/reassigne-workitem.png)
 
 Current user should select other user in `Assignee` property to whom this workitem will be assigned. User can start user name typing and possible values will be displayed in the drop-down list.
 
 Also user should add comment to describe why other user should work with this workitem.
-Both fields are configured via Unity configuration file. Other properties can be added to this View.
+Both fields are configured via Unity configuration file. Other properties can be added to this view.
 
 User should press `Reassign` button to finish workitem reassigning.
-After the action execution workitem disappears from the list for first user (who resigned) and only the user to whom it was assigned can be seen it.
+After the action execution workitem disappears from the list for the first user (who resigned) and only the user to whom it was assigned can see it.
 
-The same action can be executed for several selected workitems:
+The same action can be executed for multiple selected workitems:
 
 [![Bulk Reassign Workitem](unity-7.8.3-user-guide/images/bulk-reassign.png)](unity-7.8.3-user-guide/images/bulk-reassign.png)
 
