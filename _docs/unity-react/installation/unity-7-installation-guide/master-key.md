@@ -1,21 +1,21 @@
 ---
-title: Master Key generation and using
+title: Unity Master Key Generation and Using
 layout: docs
 category: Unity 7
 ---
 
-# Unity Master Key Configuration
-
-## Master key
+# Master Key
 
 The application wide Unity master key is used to encrypt/decrypt arbitrary values at Unity configuration file.  
-This key is defined either at application's web.xml file or via java runtime property (-Dkey=value) for the whole application server  
+This key is defined either at application's `web.xml` file or via java runtime property (-Dkey=value) for the whole application server  
 where Unity is deployed.
 
 Before actual usage, the Unity master key should be configured to enable values encryption at the Unity configuration files.
 
 The Unity master key can be generated either before Unity deployment via command line utility or when Unity already deployed and running via 
 Unity Configuration Console UI.
+
+# Unity Master Key Generation
 
 ## Generate master key with command line utility
 
@@ -58,9 +58,9 @@ The generated master key will be displayed at the new `Generated key` popup wind
 ![generate-master-key-at-cc](master-key/images/generate-master-key-at-cc.png) 
 
 
-## Use generated master key for Unity instance deployment
+# Use Generated Master Key for Unity Instance Deployment
 
-### Master key at application's web.xml file for WebSphere Liberty Profile
+## Master key at application's web.xml file for WebSphere Liberty Profile
 
 In this case, the master key is specified at application's `web.xml` file in the same way as the location of main Unity configuration  
 file (`vSpaceConfigURL` one).  
@@ -115,7 +115,7 @@ AES=ZGVmYXVsdCBhZXMxMjgga2V5LCBwbGVhc2U4643wbGFjZSBpbiBwcm9kdWN0aW9u
 AES256=ZjJwRjFHZ04yM091bUJrb0t3amFHUTViNkVqU280RE0=
 ```
 
-### Master key at java runtime properties
+## Master key at java runtime properties
 
 In this case, the master key is specified via java runtime property (-Dkey=value) for the whole application server.  
 The following java runtime properties can be used for that purpose (each next item at the list can be used to override key from the item before):  
@@ -126,9 +126,9 @@ The following java runtime properties can be used for that purpose (each next it
 * `uKey.AES` (-DuKey.AES=_key_value_). This is exact value of AES (AES with 128 bits key) encryption key.
 * `uKey` (-DuKey=_key_value_). This is alias for `uKey.AES256` java runtime property.
 
-### Master Key usage in WebSphere for a specific application
+## Master Key usage in WebSphere for a specific application
 
-### Master Key usage in WebSphere for all installed application
+## Master Key usage in WebSphere for all installed application
 
 Generated Master Key can be used for all installed application in WebSpere. It can be configured executing the following steps in the WebSphere:
 
@@ -161,7 +161,7 @@ Generated Master Key can be used for all installed application in WebSpere. It c
 
 12. Restart WebSphere.
 
-### Master Key usage in WebSphere for a specific application
+## Master Key usage in WebSphere for a specific application
 
 Generated Master Key can be used for a specific installed application in WebSpere. It can be configured executing the following steps in the WebSphere:
 
@@ -186,3 +186,6 @@ Generated Master Key can be used for a specific installed application in WebSper
 
 9. Restart application.
 
+# Related Pages
+
+[Unity 7 Installation Guide](../unity-7-installation-guide.md)

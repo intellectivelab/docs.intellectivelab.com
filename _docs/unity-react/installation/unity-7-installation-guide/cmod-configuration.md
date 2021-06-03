@@ -1,12 +1,12 @@
 ---
-title: Unity 7 CMOD configuration
+title: Unity 7 CMOD Configuration
 layout: docs
 category: Unity 7
 ---
     
-# WebSphere additional configuration for working with CMOD
+WebSphere additional configuration for working with CMOD.
 
-## Create Shared Library
+# Create Shared Library
 
 1. Open WAS administrative console.
 
@@ -37,7 +37,7 @@ category: Unity 7
 
 10. Restart WAS.
 
-## Use Shared Library in Unity
+# Use Shared Library in Unity
 
 Created Shared Library should be used in the installed Unity application:
 
@@ -70,3 +70,7 @@ Created Shared Library should be used in the installed Unity application:
     ![saving-changes-in-unity](cmod-configuration/images/saving-changes-in-unity.png)
      
 11. Restart Unity application.
+
+# Related Pages
+
+[Unity 7 Installation Guide](../unity-7-installation-guide.md)

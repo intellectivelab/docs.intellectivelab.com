@@ -61,7 +61,7 @@ To download the deployment files:
 4. Navigate to the folder below that uses your application server and confirm the EAR files downloaded correctly: 
     - For WebLogic: `<vu_install>\VegaUnity\packages\webLogic`
     - For WebSphere: `<vu_install>\VegaUnity\packages\webSphere`
-    - Fo JBOSS: `<vu_install>\VegaUnity\packages\jboss`
+    - For JBOSS: `<vu_install>\VegaUnity\packages\jboss`
     
         ![ear-file in folder](unity-7-installation-guide/images/image2.png)
 
@@ -272,7 +272,7 @@ To install Unity using the Detailed method:
  
     ![Review the Install Summary - Detailed Method](unity-7-installation-guide/images/image23.png)
 
-21. Replace the default `jaceXXX.jar` and `peXXX.jar` files in `<installed app>/WEB-INF/lib` with the `FileNet Jace.jar` and `pe.jar files` if FileNet other then 5.2 version will be used in Unity.
+21. Replace the default `jaceXXX.jar` and `peXXX.jar` files in `<installed app>/WEB-INF/lib` with the `FileNet Jace.jar` and `pe.jar files` if FileNet other than 5.2 version will be used in Unity.
 
 22. Return to the `WebSphere enterprise applications` screen, select your new Unity application name and click `Start`.
 
@@ -440,7 +440,7 @@ To install the plug-in:
 
 To remove the plug-in:
 
-1. Open `Control Panel` > `Programs` > `Uninstall a program`.
+1. Open `Control Panel > Programs > Uninstall a program`.
 
 2. Select  `Unity Office Add-Ins`:
  
@@ -624,7 +624,7 @@ To install it as a standalone module:
 
 13. Save your changes and start the application.
 
-# Additional Installation Steps
+# Optional Installation Steps
 
 - [Master Key configuration](unity-7-installation-guide/master-key.md)
 - [CMOD configuration](unity-7-installation-guide/cmod-configuration.md)

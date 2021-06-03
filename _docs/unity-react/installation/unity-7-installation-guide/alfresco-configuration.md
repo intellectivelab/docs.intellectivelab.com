@@ -1,5 +1,5 @@
 ---
-title: Unity 7 Alfresco configuration
+title: Unity 7 Alfresco Configuration
 layout: docs
 category: Unity 7
 ---
@@ -19,3 +19,7 @@ Setting these properties:
     share.protocol=https 
 
 ensures that the applications generate URLs as HTTPS links.
+
+# Related Pages
+
+[Unity 7 Installation Guide](../unity-7-installation-guide.md)
