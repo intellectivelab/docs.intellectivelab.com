@@ -46,6 +46,13 @@ The installation guide applies to all Unity 7 release versions unless otherwise 
      - All 7.6 releases
         - Configuration Console: Search users and groups in LDAP
 
+- Unity 7.7
+    - All 7.7 releases
+
+- Unity 7.8
+    - All 7.8 releases
+
+
 # Download the Deployment Files
 
 Each EAR file contains a complete Unity application package with one or more modules in a single archive.
