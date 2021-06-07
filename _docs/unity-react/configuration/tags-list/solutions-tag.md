@@ -1,5 +1,5 @@
 ---
-title: Solutions
+title: Solutions Tag Configuration
 layout: docs
 category: Unity 7
 ---

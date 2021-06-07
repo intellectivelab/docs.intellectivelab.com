@@ -25,9 +25,7 @@ Properties
 SSO  
 [SearchTemplates](search-templates.md)  
 [Selectors](tags-list/selectors-tag.md)  
-Solution    
 Solutions    
-[SolutionsConfiguration](solutions-configuration.md)  
 [SystemProperties](tags-list/system-properties-tag.md)      
 Tabs    
 TreeModels    

@@ -321,6 +321,11 @@ entries:
                 url: /docs/unity-react/configuration/basic-steps/
                 id: unity-react-configuration-basic-steps
 
+              - title: Migration from ExtJS
+                output: web
+                url: /docs/unity-react/configuration/migration-from-extjs/
+                id: unity-react-configuration-migration-from-extjs
+
               - title: Unity Case Management
                 output: web
                 url: /docs/unity-react/configuration/unity-case-management/
