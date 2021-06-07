@@ -17,3 +17,15 @@ Students will learn about:
 - Tab Configuration
 
 [Unity Configuration Basics Tutorial](configuration-tutorials/unity-configuration-basics.md)
+
+# Unity Case Management Configuration
+
+This course gives an overview of how to configure Unity Case Management solution using configuration console.  
+Students will learn about:
+- Case Search
+- Case View
+- Inbaskets
+- Work Items Search
+- Work Item View
+
+[Unity Case Management Configuration Tutorial](configuration-tutorials/unity-case-management-configuration.md)
