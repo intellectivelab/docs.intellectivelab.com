@@ -40,7 +40,7 @@ There are attributes and tags common for most actions:
 | ResourceType | Optional. Name of concrete resource type. |
 | ActionType | Optional. Name of concrete action type. Required for some actions. |
 | ViewType | Optional. This parameter should match view defined in solutions config. |
-| Scope | Optional. The repository data provider id.  |
+| Scope | Optional. The repository data provider id. Default value: `inherit` (it means that this parameter will be inherited from `Search Template` or `Grid` component) |
 
 ## Adding action to `Actions` tag
 
@@ -71,12 +71,17 @@ Choose the action from the list below to find specific options for it.
 - [Delete Document](actions/delete-document.md)
 - [Open in Office](actions/open-in-office.md)
 - [View Content](actions/view-content.md)
+- [Check Out Document](actions/checkout-document.md)
+- [Cancel Check Out of a Document](actions/cancel-checkout-document.md)
 - [Check In Document](actions/checkin-document.md)
 - [Copy Document to Folder](actions/copy-document-to-folder.md)
 - [Move Document to Folder](actions/move-document-to-folder.md)
 - [Download Document](actions/download-document.md)
 - [Multiple Download](actions/multiple-document-download.md)
 - [Rename File](actions/rename-file.md)
+- [Current Version](actions/current-version.md)
+- [Promote Version](actions/promote-version.md)
+- [Demote Version](actions/demote-version.md)
 
 ## Case related actions
 
@@ -93,6 +98,9 @@ Choose the action from the list below to find specific options for it.
 ## Workitem related actions
 
 - [Open Workitem In Separate Tab](actions/open-in-separate-tab.md)
+- [Dispatch](actions/dispatch.md)
+- [Lock Workitem](actions/lock-workitem.md)
+- [Unlock Workitem](actions/unlock-workitem.md)
 
 ## Folder related actions
 

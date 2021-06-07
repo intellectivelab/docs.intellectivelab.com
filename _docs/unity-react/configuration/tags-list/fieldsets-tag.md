@@ -28,6 +28,10 @@ An example:
         <Field Column="0" ColumnWidth="0" Custom="false" DisableLookupValidation="false" DisplayTime="false" External="false" Favorite="false" Hidden="false" ID="Priority" Label="Problem priority" Length="0" MultiRow="false" ReadFromWorkflow="false" ReadOnly="false" Required="false" Row="0" Rows="0" WordWrap="false"/>
         <Field Column="0" ColumnWidth="0" Custom="false" DisableLookupValidation="false" DisplayTime="false" External="false" Favorite="false" Hidden="false" ID="Justification" Label="Justification" Length="0" MultiRow="false" ReadFromWorkflow="false" ReadOnly="false" Required="false" Row="0" Rows="0" WordWrap="false"/>
     </FieldSet>
+    <FieldSet ID="WI_Reassign">
+        <Field ID="targetUser" Label="Assignee" Required="true" Row="1" Column="1" SelectorID="reassignUsers"/>
+        <Field ID="comment" Label="Comment" Required="true" Row="2" Column="1"/>
+    </FieldSet>
 </FieldSets>
 ```
 # FieldSet Tag
