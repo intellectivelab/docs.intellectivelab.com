@@ -29,12 +29,12 @@ Example of `Solution` tag configuration:
 <Solution file="customer-complaints-icm.xml" name="CustomerComplaints">
   <ce-config>
     <default-object-store name="CustomerComplaints">
-      <server-uri>http://192.168.210.18:9080/wsi/FNCEWS40MTOM/</server-uri>
+      <server-uri>http://***.***.***.**:****/wsi/FNCEWS40MTOM/</server-uri>
       <object-store>Target</object-store>
     </default-object-store>
     <document-object-stores includeDefault="true">
       <document-object-store name="CustomerComplaints">
-        <server-uri>http://192.168.210.18:9080/wsi/FNCEWS40MTOM/</server-uri>
+        <server-uri>http://***.***.***.**:****/wsi/FNCEWS40MTOM/</server-uri>
         <object-store>Target</object-store>
       </document-object-store>
     </document-object-stores>
