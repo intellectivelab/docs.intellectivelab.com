@@ -5,14 +5,12 @@ category: Unity 7
 ---
 This document describes changes, that should be applied to configuration files to adopt them for React UI.
 
-1. Configure [Perspectives](./perspectives.md) section.
+1. Create a solution file or use existing one and point to it location in [Solutions](tags-list/solutions-tag.md) section.
 
-2. Create a solution file or use existing one and point to it location in [Solutions](tags-list/solutions-tag.md) section.
-
-3. If configuration file contains cases/workitems related search templates / actions, ensure 
+2. If configuration file contains cases/workitems related search templates / actions, ensure 
 [Solutions Configuration](./solutions-configuration.md) section is configured. 
 
-4. Ensure `ResourceName` operation property is presented in all search templates. Some providers may have
+3. Ensure `ResourceName` operation property is presented in all search templates. Some providers may have
 other required attributes to be specified in `OperationProperties` section, when the search template is used 
 to search for documents / cases (e.g. `ResourceType`). 
 
@@ -40,6 +38,8 @@ to search for documents / cases (e.g. `ResourceType`).
     ```
     
     For more information see [Search Templates Configuration](./search-templates.md).
+
+4. Configure [Perspectives](./perspectives.md) section.
 
 5. `view` action id is reserved in public API, so ensure configuration file doesn't contain action with this identifier. 
 Use another word instead of `view`, e.g. `view_content` or `preview`. For more information see 
@@ -77,7 +77,7 @@ be required.
     | create | cases | Action should be created for a particular case type defined in ResourceType tag. View must be specified in solution configuration file. | [Create Case](actions/create-case.md) |
     | view | cases | View must be specified in solution configuration file * | [Case Details](actions/case-details.md) |
     | delete | cases |  | [Delete Case](actions/delete-case.md) |
-    | view | workitems |  | [Workitem Details](actions/workitem-details.md) |
+    | view | workitems | View must be specified in solution configuration file * | [Workitem Details](actions/workitem-details.md) |
     | dispatch | workitems |  | [Dispatch](actions/dispatch.md) |
     | lock | workitems |  | [Lock Workitem](actions/lock-workitem.md) |
     | unlock | workitems |  | [Unlock Workitem](actions/unlock-workitem.md) |
@@ -94,3 +94,6 @@ be required.
     ```xml
     <Uri/>
     ```
+   
+8. Restart the application and test. In case of issues refer to a particular component configuration from 
+Unity React section.
