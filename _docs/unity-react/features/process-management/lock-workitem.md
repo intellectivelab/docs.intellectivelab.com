@@ -1,5 +1,5 @@
 ---
-title: Lock Workitem Feature
+title: Lock a Workitem Feature
 layout: docs
 category: Unity 7
 ---
@@ -8,7 +8,7 @@ category: Unity 7
 
 *content to be added*
 
-# How to Lock Workitem
+# How to Lock a Workitem
 
 *content to be added*
 

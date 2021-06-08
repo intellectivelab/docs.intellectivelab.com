@@ -276,7 +276,7 @@ Available custom parameters:
 | templateSet    | Template set identifier without `-template-set` suffix |
 | gridId         | Grid identifier |
 
-# Work Items
+# Workitems
 
 ## Reassign
 

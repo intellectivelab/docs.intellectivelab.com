@@ -7,7 +7,7 @@ category: Unity 7
 
 *content to be added*
 
-# How to Cancel Check Out of a document(-s)
+# How to Cancel Check Out of a Document(-s)
 
 *content to be added*
     

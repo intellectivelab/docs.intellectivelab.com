@@ -3,6 +3,8 @@ title: Solutions Configuration
 layout: docs
 category: Unity 7
 ---
-Please see [Solutions Configuration](../../unity-extjs/configuration/solutions-configuration.md) in ExtJS section.
+|**Note**: Solutions Configuration is the same for Unity ExtJS and Unity React. 
+
+Please see [Solutions Configuration](../../unity-extjs/configuration/solutions-configuration.md) in Unity ExtJS section.
 
 

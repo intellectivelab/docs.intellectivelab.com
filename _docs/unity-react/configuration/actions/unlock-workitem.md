@@ -3,7 +3,7 @@ title: Unlock Workitem Action Configuration
 layout: docs
 category: Unity 7
 ---
-[Unlock Workitem feature description](../../features/process-management/unlock-workitem.md)
+[Unlock Workitem feature description](../../features/process-management/unlock-workitem.md) *to be added*
 
 For `Unlock Workitem` action following section should be added to the Unity System XML file:
 

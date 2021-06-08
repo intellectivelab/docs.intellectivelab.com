@@ -1,5 +1,5 @@
 ---
-title: Current Version Feature
+title: Current Document Version Feature
 layout: docs
 category: Unity 7
 ---
@@ -7,7 +7,7 @@ category: Unity 7
 
 *content to be added*
 
-# How to Make Version Current
+# How to Make Document Version Current
 
 *content to be added*
     

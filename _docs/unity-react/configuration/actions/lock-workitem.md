@@ -3,7 +3,7 @@ title: Lock Workitem Action Configuration
 layout: docs
 category: Unity 7
 ---
-[Lock Workitem feature description](../../features/process-management/lock-workitem.md)
+[Lock Workitem feature description](../../features/process-management/lock-workitem.md) *to be added*
 
 For `Lock Workitem` action following section should be added to the Unity System XML file:
 

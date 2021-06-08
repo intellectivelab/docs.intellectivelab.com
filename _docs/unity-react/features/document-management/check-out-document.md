@@ -7,7 +7,7 @@ category: Unity 7
 
 *content to be added*
 
-# How to Check Out document(-s)
+# How to Check Out Document(-s)
 
 *content to be added*
     

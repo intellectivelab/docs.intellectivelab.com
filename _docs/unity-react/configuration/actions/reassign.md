@@ -4,7 +4,7 @@ layout: docs
 category: Unity 7
 ---
 
-[Reassign feature description](../../features/process-management/reassign.md)
+[Reassign a Workitem feature description](../../features/process-management/reassign.md) *to be added*
 
 For `Reassign` action following section should be added to the Unity System XML file:
 

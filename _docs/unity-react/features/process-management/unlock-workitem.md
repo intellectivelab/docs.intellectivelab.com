@@ -1,5 +1,5 @@
 ---
-title: Unlock Workitem Feature
+title: Unlock a Workitem Feature
 layout: docs
 category: Unity 7
 ---
@@ -8,7 +8,7 @@ category: Unity 7
 
 *content to be added*
 
-# How to Unlock Workitem
+# How to Unlock a Workitem
 
 *content to be added*
 

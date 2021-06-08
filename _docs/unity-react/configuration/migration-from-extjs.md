@@ -43,11 +43,11 @@ to search for documents / cases (e.g. `ResourceType`).
 
 5. `view` action id is reserved in public API, so ensure configuration file doesn't contain action with this identifier. 
 Use another word instead of `view`, e.g. `view_content` or `preview`. For more information see 
-[View Content Action Configuration](./actions/view-content.md) Replace `view` occurrences in 
+[View Content Action Configuration](./actions/view-content.md). Replace `view` occurrences in 
 all the places throughout configuration files, i.e. change not only action id, but all of its usages as well.
 
 6. `CustomParameters` section of each action should contain some additional tags. `ActionType` and `ResourceName` are 
-required for all standard configurable actions. In some cases ResourceType, ActionView and some other tags can also 
+required for all standard configurable actions. In some cases `ResourceType`, `ActionView` and some other tags can also 
 be required. 
 
     Comparison table of `ActionType` & `ResourceName` tags for common actions:

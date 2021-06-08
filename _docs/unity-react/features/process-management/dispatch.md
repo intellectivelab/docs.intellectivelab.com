@@ -1,5 +1,5 @@
 ---
-title: Dispatch Feature
+title: Dispatch a Workitem Feature
 layout: docs
 category: Unity 7
 ---

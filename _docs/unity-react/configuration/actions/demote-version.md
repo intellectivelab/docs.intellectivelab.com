@@ -3,7 +3,7 @@ title: Demote Document Version Action Configuration
 layout: docs
 category: Unity 7
 ---
-[Demote Document Version feature description](../../features/document-management/demote-version.md)
+[Demote Document Version feature description](../../features/document-management/demote-version.md) *to be added*
 
 For `Demote` action following section should be added to the Unity System XML file:
 

@@ -3,7 +3,7 @@ title: Cancel Check Out of a Document Action Configuration
 layout: docs
 category: Unity 7
 ---
-[Cancel Check Out of a Document feature description](../../features/document-management/cancel-check-out-document.md)
+[Cancel Check Out of a Document feature description](../../features/document-management/cancel-check-out-document.md) *to be added*
 
 For `Cancel Check Out` action following section should be added to the Unity System XML file:
 

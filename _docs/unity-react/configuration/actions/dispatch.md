@@ -3,7 +3,7 @@ title: Dispatch Action Configuration
 layout: docs
 category: Unity 7
 ---
-[Dispatch feature description](../../features/process-management/dispatch.md)
+[Dispatch a Workitem feature description](../../features/process-management/dispatch.md) *to be added*
 
 For `Dispatch` action following section should be added to the Unity System XML file:
 
@@ -24,8 +24,8 @@ For `Dispatch` action following section should be added to the Unity System XML 
 
 Action ID attribute should start with `dispatch.`. For default `Complete` action use `dispatch` identifier.
 
-Uri should equal `api/1.0.0/workitems/dispatch?response=${RESPONSE_NAME}`, where ${RESPONSE_NAME} 
-is a response name. For default `Complete` action ${RESPONSE_NAME} variable will be empty, i.e. Uri value equals 
+`Uri` should equal `api/1.0.0/workitems/dispatch?response=${RESPONSE_NAME}`, where `${RESPONSE_NAME}` 
+is a response name. For default `Complete` action `${RESPONSE_NAME}` variable will be empty, i.e. `Uri` value equals 
 `api/1.0.0/workitems/dispatch?response=`.
 
 `Dispatch` action custom configuration parameters:

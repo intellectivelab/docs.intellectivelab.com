@@ -97,10 +97,12 @@ Choose the action from the list below to find specific options for it.
 
 ## Workitem related actions
 
+- [Workitem Details](actions/workitem-details.md)
 - [Open Workitem In Separate Tab](actions/open-in-separate-tab.md)
 - [Dispatch](actions/dispatch.md)
 - [Lock Workitem](actions/lock-workitem.md)
 - [Unlock Workitem](actions/unlock-workitem.md)
+- [Reassign Workitem](actions/reassign.md)
 
 ## Folder related actions
 
