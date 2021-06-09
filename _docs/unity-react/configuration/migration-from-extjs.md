@@ -43,12 +43,12 @@ to search for documents / cases (e.g. `ResourceType`).
 
 5. Add `unity.analytics.enabled` system property and set it value to `true`:
 
-```xml
-<SystemProperties>
-    <!-- not relevant nodes skipped -->
-    <Property ID="unity.analytics.enabled" value="true"/>
-</SystemProperties>
-```
+    ```xml
+    <SystemProperties>
+        <!-- not relevant nodes skipped -->
+        <Property ID="unity.analytics.enabled" value="true"/>
+    </SystemProperties>
+    ```
 
 6. `view` action id is reserved in public API, so ensure configuration file doesn't contain action with this identifier. 
 Use another word instead of `view`, e.g. `view_content` or `preview`. For more information see 
