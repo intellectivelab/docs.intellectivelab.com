@@ -41,7 +41,7 @@ to search for documents / cases (e.g. `ResourceType`).
 
 4. Configure [Perspectives](./perspectives.md) section.
 
-5. Add `unity.analytics.enabled` system property and set it value to `true`:
+5. Add `unity.analytics.enabled` system property to [SystemProperties](tags-list/system-properties-tag.md) section and set its value to `true`:
 
     ```xml
     <SystemProperties>
