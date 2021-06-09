@@ -538,7 +538,7 @@ The Navigation Setting Menu provides access to the following:
       - Allowed Sites: SharePoint Sites Unity is Authorized to Access
       - Denied Sites: SharePoint Sites Unity is Denied Access
       - SharePoint Custom Metadata Properties configured for Unity access    
-    - Unity Authentication  
+    - User Authentication  
       Allows the Administrator to indicate User Authentication information    
     - System Account  
       Allows the Administrator to indicate System Account Information
