@@ -249,11 +249,11 @@ The sort options are displayed:
 
 [![Sort column menu](unity-8-user-guide/images/sort-column-menu.png)](unity-8-user-guide/images/sort-column-menu.png)
  
-To set the sort order for the selected column, select either `Sort Ascending` or `Sort Descending`. Ascending will order elements like `1, 2, Alpha, Beta`, while descending will order elements like `9, 8, Zulu, Yankee`.
+To set the sort order for the selected column, select either `Sort Ascending` or `Sort Descending`. Ascending will order elements like `1, 2, Alpha, Beta`, while descending will order elements like `Zulu, Yankee, 9, 8`.
 
 If you select a sort for multiple columns, a number will appear after the column names, indicating in which order the columns are sorted.
 
-To control the sort order and have a different column be sorted first, select the down arrow to the right of the column heading and select either Promote Order (to increase that column’s precedence in the sort order) ,or Demote Order (to lower that column’s precedence in the sort order). 
+To control the sort order and have a different column be sorted first, select the down arrow to the right of the column heading and select either Promote Order (to increase that column’s precedence in the sort order), or Demote Order (to lower that column’s precedence in the sort order). 
 For example, if you want to sort by Document Title first, and then by Date Modified, promote Document Title until it is labelled `1`, followed by Date Modified labelled `2`.
 
 [![Multiple column sorting](unity-8-user-guide/images/multiple-sorting.gif)](unity-8-user-guide/images/multiple-sorting.gif)
@@ -528,15 +528,17 @@ The Navigation Setting Menu provides access to the following:
     
 - Administration Console     
         
-    Allows your organizations Administrator’s to Configure Unity. For the Pre-Configured Demo the Unity Administration Console UI has been set to Read Only to allow evaluators to view what configuration options are available.  
-        [![Administration console](unity-8-user-guide/images/administration-console.png)](unity-8-user-guide/images/administration-console.png)     
+    Allows your organization's Administrators to Configure Unity. For the Pre-Configured Demo the Unity Administration Console UI has been set to Read Only to allow evaluators to view what configuration options are available.  
+
+    [![Administration console](unity-8-user-guide/images/administration-console.png)](unity-8-user-guide/images/administration-console.png)     
+
     - Connectivity:  
       Allows the Administrator to indicate the following information:
       - SharePoint Base URL
-      - Allowed Sites: SharePoint Sites Unity is Authorize to Access
+      - Allowed Sites: SharePoint Sites Unity is Authorized to Access
       - Denied Sites: SharePoint Sites Unity is Denied Access
       - SharePoint Custom Metadata Properties configured for Unity access    
-    - Unity Authentication  
+    - User Authentication  
       Allows the Administrator to indicate User Authentication information    
     - System Account  
       Allows the Administrator to indicate System Account Information
