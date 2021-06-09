@@ -52,35 +52,36 @@ be required.
 
     Comparison table of `ActionType` & `ResourceName` tags for common actions:
     
-    | ActionType | ResourceName | Additional info | Action |
+    | Action | ActionType | ResourceName | Additional info |
     |:-------|:-------------|:--|:--|
-    | view      | documents | View must be specified in solution configuration file * | [Document Details](actions/document-details.md) |
-    | view_content | documents |  | [View Content](actions/view-content.md) |
-    | download | documents |  | [Download Document](actions/download-document.md) |
-    | create | documents | Action should be created for a particular document class defined in ResourceType tag. View must be specified in solution configuration file * | [Create Document](actions/create-document.md) |
-    | checkout | documents |  | [Check Out Document](actions/checkout-document.md) |
-    | cancelCheckOut | documents |  | [Cancel Check Out of a Document](actions/cancel-checkout-document.md) |
-    | checkin | documents | View must be specified in solution configuration file * | [Check In Document](actions/checkin-document.md) |
-    | open.addon | documents |  | [Open in Office (addon)](actions/open-in-office.md#open-in-office-action) |
-    | checkout.addon | documents |  | [Checkout and Open in Office (addon)](actions/open-in-office.md#check-out-and-open-in-office-action) |
-    | open.browser | documents |  | [Open in Browser (SharePoint)](actions/open-in-office.md#open-in-browser-action) |
-    | checkout.browser | documents |  | [Checkout and Open in Browser (SharePoint)](actions/open-in-office.md#check-out-and-open-in-browser-action) |
-    | open.desktop | documents |  | [Open in Desktop (SharePoint)](actions/open-in-office.md#open-in-desktop-app-action) |
-    | checkout.desktop | documents |  | [Checkout and Open in Desktop (SharePoint)](actions/open-in-office.md#check-out-and-open-in-desktop-app-action) |
-    | current | documents |  | [Current Version](actions/current-version.md) |
-    | promote | documents |  | [Promote Document Version](actions/promote-version.md) |
-    | demote | documents |  | [Demote Document Version](actions/demote-version.md) |
-    | delete | documents | Applicable for both Delete Document & Delete Document Version actions | [Delete Document](actions/delete-document.md) |
-    | create | folders |  | [Create Folder](actions/create-folder.md) |
-    | rename | folders |  | [Rename Folder](actions/rename-folder.md) |
-    | delete | folders |  | [Delete Folder](actions/delete-folder.md) |
-    | create | cases | Action should be created for a particular case type defined in ResourceType tag. View must be specified in solution configuration file. | [Create Case](actions/create-case.md) |
-    | view | cases | View must be specified in solution configuration file * | [Case Details](actions/case-details.md) |
-    | delete | cases |  | [Delete Case](actions/delete-case.md) |
-    | view | workitems | View must be specified in solution configuration file * | [Workitem Details](actions/workitem-details.md) |
-    | dispatch | workitems |  | [Dispatch](actions/dispatch.md) |
-    | lock | workitems |  | [Lock Workitem](actions/lock-workitem.md) |
-    | unlock | workitems |  | [Unlock Workitem](actions/unlock-workitem.md) |
+    | [Document Details](actions/document-details.md) | view      | documents | View must be specified in solution configuration file * |
+    | [View Content](actions/view-content.md) | view_content | documents |  |
+    | [Download Document](actions/download-document.md) | download | documents |  |
+    | [Create Document](actions/create-document.md) | create | documents | Action should be created for a particular document class defined in `ResourceType` tag. View must be specified in solution configuration file * |
+    | [Check Out Document](actions/checkout-document.md) | checkout | documents |  |
+    | [Cancel Check Out of a Document](actions/cancel-checkout-document.md) | cancelCheckOut | documents |  |
+    | [Check In Document](actions/checkin-document.md) | checkin | documents | View must be specified in solution configuration file * |
+    | [Open in Office (addon)](actions/open-in-office.md#open-in-office-action) | open.addon | documents |  |
+    | [Checkout and Open in Office (addon)](actions/open-in-office.md#check-out-and-open-in-office-action) | checkout.addon | documents |  |
+    | [Open in Browser (SharePoint)](actions/open-in-office.md#open-in-browser-action) | open.browser | documents |  |
+    | [Checkout and Open in Browser (SharePoint)](actions/open-in-office.md#check-out-and-open-in-browser-action) | checkout.browser | documents |  |
+    | [Open in Desktop (SharePoint)](actions/open-in-office.md#open-in-desktop-app-action) | open.desktop | documents |  |
+    | [Checkout and Open in Desktop (SharePoint)](actions/open-in-office.md#check-out-and-open-in-desktop-app-action) | checkout.desktop | documents |  |
+    | [Current Version](actions/current-version.md) | current | documents |  |
+    | [Promote Document Version](actions/promote-version.md) | promote | documents |  |
+    | [Demote Document Version](actions/demote-version.md) | demote | documents |  |
+    | [Delete Document](actions/delete-document.md) | delete | documents | Applicable for both Delete Document & Delete Document Version actions |
+    | [Create Folder](actions/create-folder.md) | create | folders | Action should be created for a particular document class defined in `ResourceType` tag. View must be specified in solution configuration file.  |
+    | [Rename Folder](actions/rename-folder.md) | rename | folders |  |
+    | [Delete Folder](actions/delete-folder.md) | delete | folders |  |
+    | [Create Case](actions/create-case.md) | create | cases | Action should be created for a particular case type defined in `ResourceType` tag. View must be specified in solution configuration file. |
+    | [Case Details](actions/case-details.md) | view | cases | View must be specified in solution configuration file |
+    | [Delete Case](actions/delete-case.md) | delete | cases |  |
+    | [Workitem Details](actions/workitem-details.md) | view | workitems | View must be specified in solution configuration file |
+    | [Dispatch](actions/dispatch.md) | dispatch | workitems |  |
+    | [Lock Workitem](actions/lock-workitem.md) | lock | workitems |  |
+    | [Unlock Workitem](actions/unlock-workitem.md) | unlock | workitems |  |
+    | [Reassign Workitem](actions/reassign.md) | reassign | cases | View must be specified in solution configuration file |
 
     *Unlike ExtJS views in solution configuration file must be specified not only for cases / workitems actions, but for document actions as well. Refer to [View for the action](tags-list/views-tag.md) for more details.
     
@@ -89,7 +90,7 @@ be required.
     Table above contains common actions. Refer to [Actions Configuration](./actions.md) for the complete list of supported 
     actions and configuration details.
 
-7. All actions except for `dispatch` should have an empty `Uri` tag:
+7. All actions should have an empty `Uri` tag, unless otherwise stated in React documentation for a particular action:
     
     ```xml
     <Uri/>
