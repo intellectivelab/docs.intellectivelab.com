@@ -5,7 +5,7 @@ category: Unity 7
 ---
 This document describes changes, that should be applied to configuration files to adopt them for React UI.
 
-1. Create a solution file or use existing one and point to it location in [Solutions](tags-list/solutions-tag.md) section.
+1. Create a solution file or use existing one and point to its location in [Solutions](tags-list/solutions-tag.md) section.
 
 2. If configuration file contains cases/workitems related search templates / actions, ensure 
 [Solutions Configuration](./solutions-configuration.md) section is configured. 
