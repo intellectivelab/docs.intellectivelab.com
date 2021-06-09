@@ -528,12 +528,14 @@ The Navigation Setting Menu provides access to the following:
     
 - Administration Console     
         
-    Allows your organizations Administrator’s to Configure Unity. For the Pre-Configured Demo the Unity Administration Console UI has been set to Read Only to allow evaluators to view what configuration options are available.  
-        [![Administration console](unity-8-user-guide/images/administration-console.png)](unity-8-user-guide/images/administration-console.png)     
+    Allows your organization's Administrators to Configure Unity. For the Pre-Configured Demo the Unity Administration Console UI has been set to Read Only to allow evaluators to view what configuration options are available.  
+
+    [![Administration console](unity-8-user-guide/images/administration-console.png)](unity-8-user-guide/images/administration-console.png)     
+
     - Connectivity:  
       Allows the Administrator to indicate the following information:
       - SharePoint Base URL
-      - Allowed Sites: SharePoint Sites Unity is Authorize to Access
+      - Allowed Sites: SharePoint Sites Unity is Authorized to Access
       - Denied Sites: SharePoint Sites Unity is Denied Access
       - SharePoint Custom Metadata Properties configured for Unity access    
     - Unity Authentication  
