@@ -41,12 +41,21 @@ to search for documents / cases (e.g. `ResourceType`).
 
 4. Configure [Perspectives](./perspectives.md) section.
 
-5. `view` action id is reserved in public API, so ensure configuration file doesn't contain action with this identifier. 
+5. Add `unity.analytics.enabled` system property and set it value to `true`:
+
+```xml
+<SystemProperties>
+    <!-- not relevant nodes skipped -->
+    <Property ID="unity.analytics.enabled" value="true"/>
+</SystemProperties>
+```
+
+6. `view` action id is reserved in public API, so ensure configuration file doesn't contain action with this identifier. 
 Use another word instead of `view`, e.g. `view_content` or `preview`. For more information see 
 [View Content Action Configuration](./actions/view-content.md). Replace `view` occurrences in 
 all the places throughout configuration files, i.e. change not only action id, but all of its usages as well.
 
-6. `CustomParameters` section of each action should contain some additional tags. `ActionType` and `ResourceName` are 
+7. `CustomParameters` section of each action should contain some additional tags. `ActionType` and `ResourceName` are 
 required for all standard configurable actions. In some cases `ResourceType`, `ActionView` and some other tags can also 
 be required. 
 
@@ -90,11 +99,11 @@ be required.
     Table above contains common actions. Refer to [Actions Configuration](./actions.md) for the complete list of supported 
     actions and configuration details.
 
-7. All actions should have an empty `Uri` tag, unless otherwise stated in React documentation for a particular action:
+8. All actions should have an empty `Uri` tag, unless otherwise stated in React documentation for a particular action:
     
     ```xml
     <Uri/>
     ```
    
-8. Restart the application and test. In case of issues refer to a particular component configuration from 
+9. Restart the application and test. In case of issues refer to a particular component configuration from 
 Unity React section.
