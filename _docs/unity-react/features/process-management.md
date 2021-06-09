@@ -4,14 +4,8 @@ layout: docs
 category: Unity 7
 ---
 - [Workitem details](process-management/workitem-details.md)
-- Personal in-basket
-- Role in-basket
-- View information about the work item and information about the associated case
-- Edit work item data, including case properties
-- Manage case attachments
-- View case history
-- Process/Complete work item
-- Lock/Unlock work item
-- Reassign work item
-- Process analytics
+- [Dispatch](process-management/dispatch.md)
+- [Lock a workitem](process-management/lock-workitem.md)
+- [Unlock a workitem](process-management/unlock-workitem.md)
+- [Reassign a workitem](process-management/reassign.md)
 

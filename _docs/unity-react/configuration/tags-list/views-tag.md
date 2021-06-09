@@ -276,9 +276,132 @@ Available custom parameters:
 | templateSet    | Template set identifier without `-template-set` suffix |
 | gridId         | Grid identifier |
 
-# Work Items
+# Workitems
 
-*content to be added*
+## Reassign
+
+[Reassign action configuration](../actions/reassign.md)
+
+Example of view configuration, that should be placed inside `Views` -> `Cases`:
+
+```xml
+<Tabs CaseType="CC_Complaint"  ViewType="Reassign">
+  <Tab ID="1" Type="Details" Label="Reassign" Tooltip="Reassign" FieldSet="WI_Reassign">
+  </Tab>
+</Tabs>
+```
+
+Tabs section attributes:
+
+| Attribute    | Description |
+|:-------------|:------------|
+| CaseType     | Particular resource type |
+| Scope        | Optional. The repository data provider id. No need to specify this parameter if CaseType belongs to one data provider |
+| ViewType     | Should match action's ViewType value |
+
+Available Tab tag attributes are in the table below:
+
+| Attribute | Description         |
+|:----------|:--------------------|
+| Type      | `Details` (tab type)|
+| ID        | Tab identifier      |
+| Label     | Tab label           |
+| FieldSet  | Fieldset identifier |
+
+See [FieldSets tag](./fieldsets-tag.md) for information on field sets configuration.
+
+## Workitem Details
+
+[Workitem Details action configuration](../actions/workitem-details.md)
+
+Example of view configuration, that should be placed inside `Views` -> `WorkItems` -> `TabSets`:
+
+```xml
+<Tabs ID="Review and Close Doc Tabs" EnableSaveButton="true" EnableCloseButton="true">
+    <Tab ID="1" Type="Details" Label="Review and Close" Tooltip="Review and Close" FieldSet="WIReview">
+        <Tools/>
+        <CustomParameters>
+            <Parameter Name="actionSet" Value="dispatch,lock,unlock"/> 
+        </CustomParameters>
+    </Tab>
+</Tabs>
+```
+
+Tabs tag attributes:
+
+| Attribute    | Description |
+|:-------------|:------------|
+| ID           | Tabs section identifier, should match TabSet attribute of related Rule |
+
+Example of Rule configuration:
+
+```xml
+<Rule TabSet="Review and Close Doc Tabs" TaskType="CC_CloseComplaint" Type="spring">
+    <Parameters>
+      <Parameter Name="skipOnMissingProperty" Value="false"/> <!--  default value: true -->
+      <Parameter Name="entityDataPrefix" Value="wi_"/>        <!--  default value: 'entity_' -->
+    </Parameters>
+    <Definition>#wi_name=='Review and Close'</Definition>
+</Rule>
+```
+
+Rule tag attributes:
+
+| Attribute    | Description |
+|:-------------|:------------|
+| TabSet       | TabSet ID |
+| TaskType     | Task type |
+| Type         | `spring` |
+
+*content to be added for rule parameters*
+
+Workitem Details view may contain one or more tabs.
+
+### Details tab
+
+Available Tab tag attributes are in the table below:
+
+| Attribute | Description         |
+|:----------|:--------------------|
+| Type      | `Details` (tab type)|
+| ID        | Tab identifier      |
+| Label     | Tab label           |
+| FieldSet  | Fieldset identifier |
+
+See [FieldSets tag](./fieldsets-tag.md) for information on field sets configuration.
+
+### Attachments tab
+
+Example of attachments tab configuration:
+
+```xml
+<Tab ID="Attachments.FileNet" Type="Attachments" Label="FileNet Documents" Tooltip="FileNet Documents">
+  <CustomParameters>
+    <Parameter Name="viewMode" Value="searchTemplate"/>
+    <Parameter Name="templateSet" Value="search_templates_case_docs_p8"/>
+    <Parameter Name="gridId" Value="UCM_Case_Docs_Search_FileNet"/>
+  </CustomParameters>
+  <!-- not relevant nodes are skipped -->
+</Tab>
+```
+
+Tab tag attributes:
+
+| Attribute | Description         |
+|:----------|:--------------------|
+| Type      | `Attachments` (tab type)|
+| ID        | Tab identifier, starts with `Attachments.` prefix |
+| Label     | Tab label           |
+
+Available custom parameters:
+
+| Parameter name | Description         |
+|:---------------|:--------------------|
+| viewMode       | `searchTemplate` (search template)|
+| templateSet    | Template set identifier without `-template-set` suffix |
+| gridId         | Grid identifier |
+
+*other tabs to be added*
 
 # Folders
 

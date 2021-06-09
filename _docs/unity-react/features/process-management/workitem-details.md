@@ -18,5 +18,5 @@ To open Workitem Details from the grid:
 
 # Configuration
 
-Workitem details action configuration  *link to be added*  
+[Workitem details action configuration](../../configuration/actions/workitem-details.md)  
 [Open in separate tab action configuration](../../configuration/actions/open-in-separate-tab.md)

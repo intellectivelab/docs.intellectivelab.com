@@ -18,5 +18,6 @@ Example of configuration:
 |:--------------|:------------|
 |`role.mode` | `RoleSelection` - provides ability for user to change the role <br/>`RoleUnion` - uses union of all available for current user roles, with no ability to choose a specific one |
 |`role.all_role.disabled`| `[true|false]` Disables `All` role for user when equals `true`. Default value: `false` |
+|`unity.analytics.enabled`| `[true|false]` Enables Unity Analytics button when equals `true`. Default value: `false` |
 
 *other properties to be added*

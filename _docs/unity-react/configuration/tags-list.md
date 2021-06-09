@@ -26,9 +26,7 @@ Plugins
 SSO  
 [SearchTemplates](search-templates.md)  
 [Selectors](tags-list/selectors-tag.md)    
-Solution  
-Solutions  
-[SolutionsConfiguration](solutions-configuration.md)   
+[Solutions](tags-list/solutions-tag.md)  
 [SystemProperties](tags-list/system-properties-tag.md)   
 Tabs  
 TreeModels  

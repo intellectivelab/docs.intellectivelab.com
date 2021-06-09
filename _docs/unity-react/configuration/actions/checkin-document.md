@@ -3,7 +3,7 @@ title: Check In Document Action Configuration
 layout: docs
 category: Unity 7
 ---
-[Check In Document feature description](../../features/document-management/check-in-document.md)
+[Check In Document feature description](../../features/document-management/check-in-document.md) *to be added*
 
 *content to be added*
 
