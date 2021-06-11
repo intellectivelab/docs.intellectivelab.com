@@ -6,6 +6,7 @@ category: Unity 7
 - [Create a document](document-management/create-document.md)  
 - [Document details](document-management/document-details.md)  
 - [View document content](document-management/view-content.md) 
+- [Open document / document version in desktop app](document-management/open-in-desktop-app.md) 
 - [Check Out document](document-management/check-out-document.md)
 - [Cancel Check Out of a document](document-management/cancel-check-out-document.md)
 - [Check In document](document-management/check-in-document.md)
