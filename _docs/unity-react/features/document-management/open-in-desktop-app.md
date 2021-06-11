@@ -1,5 +1,5 @@
 ---
-title: Open in Desktop app Feature
+title: Open in Desktop App Feature
 layout: docs
 category: Unity 7
 ---
@@ -10,9 +10,9 @@ Microsoft Office desktop application.
 
 # How to Open a SharePoint Document in Desktop Application
 
-Document can be opened from either grid or [Document Details](./document-details.md).
+A document can be opened from either grid or [Document Details](./document-details.md).
 
-To open the Document from the grid:
+To open a document from the grid:
 
 - Open actions menu by clicking on the vertical ellipse icon consisting of three dots in the grid row and select 
 `Open in app` action from dropdown list:
@@ -26,7 +26,7 @@ To open the Document from the grid:
     Confirm by clicking `Open` button. You may also check `Always allow ...` checkbox to skip the confirmation 
     in the future.
 
-To open the Document from `Document Details`:
+To open a document from `Document Details`:
 
 - Open [Document Details](./document-details.md)
 

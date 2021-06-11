@@ -1,15 +1,9 @@
 ---
-title: Open in Office Actions Configuration
+title: Open in Office Action Configuration
 layout: docs
 category: Unity 7
 ---
-# Open in Office Actions Configuration via Unity Office Plugin
-
-## Unity Office Plugin overview
-
 [Unity Office Plugin](../../features/integration/unity-office-plugin.md)
-
-## Open in Office action
 
 For `Open in Office` action following section should be added to the Unity System XML file:
  
