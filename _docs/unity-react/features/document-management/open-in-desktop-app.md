@@ -6,7 +6,7 @@ category: Unity 7
 # Description
 
 `Open in app` feature allows to  open either SharePoint document or document version in 
-Microsoft Office desktop application.
+Microsoft Office desktop application. For other data providers please see [Unity Office Plugin](../integration/unity-office-plugin.md).
 
 # How to Open a SharePoint Document in Desktop Application
 
