@@ -31,7 +31,9 @@ If more than one target case types are available from the [configuration](../../
 
 - Upon successful completion the wizard opens next step Preview Case with a preview form.
 
-- Forth optional step is a screen where user is able to choose documents from source case and, by selecting 'Attach' button, link these documents with target case as well.
+- Forth optional step is a screen where user is able to choose documents from source case and, by selecting 
+'Attach' button, link these documents with target case as well. Selected documents will be attached to a root case 
+folder of the target case.
 
 As a result new case will be created on top of existing case. Relevant information will be tracked in the history of the case:
 
