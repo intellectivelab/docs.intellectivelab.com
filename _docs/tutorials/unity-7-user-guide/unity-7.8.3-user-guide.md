@@ -84,7 +84,7 @@ Click the Advanced Search Icon to open the Advanced Search Panel:
 
 [![Advanced Search](unity-7.8.3-user-guide/images/advanced-search-icon.png)](unity-7.8.3-user-guide/images/advanced-search-icon.png)
 
-Advanced Search panel appears and you can enter search criteria based on the repository you selected:
+Advanced Search panel appears, and you can enter search criteria based on the repository you selected:
 
 [![Advanced Search](unity-7.8.3-user-guide/images/advanced-search-panel.png)](unity-7.8.3-user-guide/images/advanced-search-panel.png)
 
@@ -94,7 +94,7 @@ Advanced Search panel appears and you can enter search criteria based on the rep
 
   [![Execute Search and Reset](unity-7.8.3-user-guide/images/advanced-search-criteria.gif)](unity-7.8.3-user-guide/images/advanced-search-criteria.gif)
 
-- To clear your Advanced Search changes and return to the Quick search settings, click the `Reset filters` button:
+- To clear your Advanced Search changes and return to the Quick Search settings, click the `Reset filters` button:
 
   [![Execure Search and Reset](unity-7.8.3-user-guide/images/reset-filters.png)](unity-7.8.3-user-guide/images/reset-filters.png)
 
@@ -206,7 +206,7 @@ The sort options are displayed:
 
 [![Sort Menu](unity-7.8.3-user-guide/images/sort-column-menu.png)](unity-7.8.3-user-guide/images/sort-column-menu.png)
 
-To set the sort order for the selected column, select either `Sort Ascending` or `Sort Descending`. Ascending will order elements like `1, 2, Alpha, Beta`, while descending will order elements like `9, 8, Zulu, Yankee`.
+To set the sort order for the selected column, select either `Sort Ascending` or `Sort Descending`. Ascending will order elements like `1, 2, Alpha, Beta`, while descending will order elements like `Zulu, Yankee, 9, 8`.
 
 If you select a sort for multiple columns, a number will appear after the column names, indicating in which order the columns are sorted.
 
@@ -298,7 +298,7 @@ You may copy files by dragging and dropping them, or by selecting the `Copy to F
 
 ### Open in Separate tab
 
-Ability to view case/document details in a separate browser tab.
+Ability to view Case/Document Details in a separate browser tab.
 
 ### Edit
 
@@ -401,15 +401,15 @@ A bookmark can also be removed from the Bookmarks bar:
 # Recent View History
 
 Recent view history saves and shows a list of links to recently viewed items.
-To view the item in the Recent View history you may click the item in the grid and choose item properties. To open a list or Recently viewed items click the `History` icon.
+To view the item in the Recent View history you may click the item in the grid and choose item properties. To open a list or Recently viewed items click the `History` icon:
 
 [![Recent View icon](unity-7.8.3-user-guide/images/recently-viewed-icon.png)](unity-7.8.3-user-guide/images/recently-viewed-icon.png)
 
-And see the list of `Recently viewed` items
+The list of recently viewed items appears:
 
 [![Recent View list](unity-7.8.3-user-guide/images/recently-viewed-list.png)](unity-7.8.3-user-guide/images/recently-viewed-list.png)
 
-To clear recent view history open it and click the `Clear history` icon:
+To clear `Recent view history` open it and click the `Clear history` icon:
 
 [![Clear Recent View list](unity-7.8.3-user-guide/images/clear-recently-viewed.png)](unity-7.8.3-user-guide/images/clear-recently-viewed.png)
 
@@ -608,7 +608,7 @@ Case Details view will be displayed in the separate browser tab in ExtJS mode af
 
 ### Open Case in Separate tab
 
-[Case Details view](#case-details-properties) will be displayed in the separate browser tab in the React after `Open in Separate tab` action execution.
+[Case Details view](#case-details-properties) will be displayed in the separate browser tab after `Open in Separate tab` action execution.
 
 ### Close Case
 
@@ -640,26 +640,26 @@ Workitem Details view can contain the following tabs:
 
 - Properties (see more details in [Case Properties](#case-details-properties) section). Properties that were changed in workitem also will be updated in the case
 - Attached documents (see more details in [Attach existing document](#attach-existing-document) and [Attach a new document](#attach-a-new-document) sections). Document that is attached in the workitem also will be displayed in the case and other workitems for this case.
-- History/Comments (see more details [History/Comments](#History/Comments) section)
+- History/Comments (see more details in [History/Comments](#historycomments) section)
 
 [![Workitem Details](unity-7.8.3-user-guide/images/workitem-details.png)](unity-7.8.3-user-guide/images/workitem-details.png)
 
 ### Reassign
 
-Workitem can be reassigned to other user. This action can be executed from context menu or workitem details view.
-The following view is displayed for this action.
+Workitem can be reassigned to another user. This action can be executed from context menu or Workitem Details view.
+The following view is displayed for this action:
 
 [![Reassign Workitem](unity-7.8.3-user-guide/images/reassigne-workitem.png)](unity-7.8.3-user-guide/images/reassigne-workitem.png)
 
-Current user should select other user in `Assignee` property to whom this workitem will be assigned. User can start user name typing and possible values will be displayed in the drop-down list.
+Current user should select the user in `Assignee` property to whom this workitem will be assigned. User can start user name typing and possible values will be displayed in the dropdown list.
 
 Also user should add comment to describe why other user should work with this workitem.
-Both fields are configured via Unity configuration file. Other properties can be added to this View.
+Both fields are configured via Unity configuration file. Other properties can be added to this view.
 
 User should press `Reassign` button to finish workitem reassigning.
-After the action execution workitem disappears from the list for first user (who resigned) and only the user to whom it was assigned can be seen it.
+After the action execution workitem disappears from the list for the first user (who resigned) and only the user to whom it was assigned can see it.
 
-The same action can be executed for several selected workitems:
+The same action can be executed for multiple selected workitems:
 
 [![Bulk Reassign Workitem](unity-7.8.3-user-guide/images/bulk-reassign.png)](unity-7.8.3-user-guide/images/bulk-reassign.png)
 
@@ -675,7 +675,7 @@ Other users can't open this workitems without `Unlock` action execution:
 
 ### Open Workitem in separate tab
 
-[Workitem Details view](#workitem-details-properties) will be displayed in the separate browser tab in the React after `Open in Separate tab` action execution:
+[Workitem Details view](#workitem-details-properties) will be displayed in the separate browser tab after `Open in Separate tab` action execution:
 
 [![Workitem in Separate Tab](unity-7.8.3-user-guide/images/workitem-in-separate-tab.png)](unity-7.8.3-user-guide/images/workitem-in-separate-tab.png)
 
