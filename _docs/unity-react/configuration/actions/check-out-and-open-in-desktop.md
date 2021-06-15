@@ -1,5 +1,5 @@
 ---
-title: Check out and Open in Desktop Action Configuration
+title: Check out and Open in Desktop App Action Configuration
 layout: docs
 category: Unity 7
 ---

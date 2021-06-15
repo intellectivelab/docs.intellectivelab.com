@@ -1,8 +1,9 @@
 ---
-title: Open in Desktop Action Configuration
+title: Open in Desktop App Action Configuration
 layout: docs
 category: Unity 7
 ---
+[Open a Document in Desktop App feature description](../../features/document-management/open-in-desktop-app.md)
 
 For `Open in desktop app` action following section should be added to the Unity System XML file:
  

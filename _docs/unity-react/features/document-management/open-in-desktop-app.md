@@ -1,5 +1,5 @@
 ---
-title: Open in Desktop App Feature
+title: Open a Document / Document Version in Desktop App Feature
 layout: docs
 category: Unity 7
 ---
@@ -56,4 +56,4 @@ To open a document from `Document Details`:
 
 # Configuration
 
-[Open in desktop app action configuration](../../configuration/actions/open-in-office.md#open-in-desktop-app-action)    
+[Open in desktop app action configuration](../../configuration/actions/open-in-desktop-app.md)    
