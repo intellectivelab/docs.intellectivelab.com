@@ -26,16 +26,9 @@ Actions are available from grid context menu depending on document reservation s
 
 ![Open in Office via Grid context menu](unity-office-plugin/images/open-in-office-grid.png) 
 
-For configuration details see [Open in Office actions configuration](../../configuration/actions/open-in-office.md).  
-
 `Open in Office` action is also available on `Document Details` view:
 
 ![Open in Office on Document Details](unity-office-plugin/images/open-in-office-properties.png)
-
-No additional configuration is required. This button will appear automatically if both conditions matches:
-
-1. The document is being kept in data provider, that is supported by plugin
-2. Document's mime type allows to open it in Word/Excel/Powerpoint application
 
 # Supported Data Providers
 
@@ -54,3 +47,17 @@ will be opened via Office Plugin.
 # Plugin Version
 
 Minimum plugin version is 1.1.36.
+
+# Configuration
+
+## Context menu actions
+
+[Open in Office action configuration](../../configuration/actions/open-in-office.md)  
+[Check Out and Open in Office action configuration](../../configuration/actions/check-out-and-open-in-office.md)  
+
+## Open in Office button in Document Details 
+
+No additional configuration is required. This button will appear automatically if both conditions match:
+
+1. The document is being kept in data provider, that is supported by plugin
+2. Document's mime type allows to open it in Word/Excel/Powerpoint application
