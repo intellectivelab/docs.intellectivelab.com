@@ -1,35 +1,35 @@
 ---
-title: Open in Office Action Configuration
+title: Check Out and Open in Office Actions Configuration
 layout: docs
 category: Unity 7
 ---
 [Unity Office Plugin](../../features/integration/unity-office-plugin.md)
 
-For `Open in Office` action following section should be added to the Unity System XML file:
- 
+For `Check Out and Open in Office` action following section should be added to the Unity System XML file:
+
 ```xml
-<Action ID="openInOffice" multiselect="false" scope="any" type="toolbar">
-  <Name>Open In Office</Name>
+<Action ID="checkOutOpenInOffice" multiselect="false" scope="any" type="toolbar">
+  <Name>Check Out and Open in Office</Name>
   <IconCls>action-view-link</IconCls>
-  <Tooltip>Open In Office</Tooltip>
+  <Tooltip>Check Out and Open in Office</Tooltip>
   <Uri/>
   <Parameters/>
   <CustomParameters>
     <ResourceName>documents</ResourceName>
-    <ActionType>open.addon</ActionType>
+    <ActionType>checkout.addon</ActionType>
     <!-- not relevant nodes skipped -->
   </CustomParameters>
   <Security>
-    <AllowRole>canView</AllowRole>
+    <AllowRole>canCheckOutDownload</AllowRole>
   </Security>
 </Action>
 ```
 
-`Open in Office` action custom configuration parameters:
+`Check Out and Open in Office` action custom configuration parameters:
 
 | Parameter   | Description |
 |:------------|:------------|
 |ResourceName | documents |
-|ActionType   | open.addon|
+|ActionType   | checkout.addon |
 
 Perform the rest of [Common Action Configuration Steps](../actions.md#common-actions-configuration-steps). 
