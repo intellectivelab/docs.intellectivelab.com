@@ -249,6 +249,10 @@ work items where the current user is potential owner).
 - `WORK_ITEM:USER` – filter work items assigned to the current user (used in personal
 workbasket definitions)
 - `ANNOTATION` – search for annotations (history items/comments)
+- `WORK_ITEM:SUB_WORK_ITEMS` - designed for jBPM to show split workitems and subworkitems 
+of the selected case on Case Details View. If `SUB_WORK_ITEMS` scope is specified, 
+only child workitems are shown in this grid, the parent ones will not be displayed.
+Thus, subworkitems are displayed on a separate from the parent workitems tab. 
 
 ## Case views
 
