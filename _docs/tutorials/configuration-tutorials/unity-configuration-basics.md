@@ -45,7 +45,7 @@ Steps required:
 
 ## Environment Variables
 
-Environment variables are externalized in separate file. It provides the ability to promote application to different environments without changing configuration.
+Environment Variables are externalized in separate file. It provides the ability to promote application to different environments without changing configuration.
 To see a list of Environment Variables click on `Environment Variables` button on `Configuration Console` toolbar:
 
 ![Environment variables](unity-configuration-basics/images/environment-variables-button.png)
