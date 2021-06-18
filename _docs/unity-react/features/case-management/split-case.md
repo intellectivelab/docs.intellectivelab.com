@@ -18,22 +18,36 @@ Unity supports IBM Case Manager Split Case feature via Unity ICM over UCM Data P
 
 Once selected, the action will be executed as a wizard with several steps:
 
-- The first step is Choose Case Type form where selected case is opened for a preview. 
-If more than one target case types are available from the [configuration](../../configuration/actions/split-case.md), the list of target case types will be shown:
+- Step 1. Choose Case Type.
 
-    ![step1](split-case/images/react-ui-image2.png)          
+    Properties of selected case are shown for Read-Only preview. 
+    If more than one target case types are available from the [configuration](../../configuration/actions/split-case.md), a dropdown list of target case types will be shown after clicking `Next` button:
 
-- Next step is a Split Case screen. It contains data from selected case in editable form where users can update values if needed or leave original data:
+    ![step1](split-case/images/react-ui-image2.png)    
+    
+    Choose case type from this list.      
+
+- Step 2. Set case properties on Split Case screen. 
+
+    It contains data from selected case in editable form. Update values if needed or leave original data:
 
     ![step2](split-case/images/react-ui-image3.png)
 
-    By selecting Next button in this screen, user actually triggers Case Split action execution in a backend system (i.e. IBM ICM).
+    By selecting `Next` button in this screen, user actually triggers `Split case` action execution in a backend system (i.e. IBM ICM).
 
-- Upon successful completion the wizard opens next step Preview Case with a preview form.
+- Step 3. Preview Case.
 
-- Forth optional step is a screen where user is able to choose documents from source case and, by selecting 'Attach' button, link these documents with target case as well.
+    ![step3](split-case/images/split-case-preview.png)
+       
+    Click `Complete` button to finish case creation or click `Next` to attach documents to the case.
+    
+- Step 4 (Optional). Attach documents to target case.
 
-As a result new case will be created on top of existing case. Relevant information will be tracked in the history of the case:
+    Choose documents from source case and, by clicking `Attach` button, link these documents with target case as well. Selected documents will be attached to the root folder of target case.
+    
+    Click `Complete` button to finish case creation.
+
+As a result the new case will be created. Relevant information will be tracked in the history of the case:
 
 ![result](split-case/images/react-ui-image4.png)
 
