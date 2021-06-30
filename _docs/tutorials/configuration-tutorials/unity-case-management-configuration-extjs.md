@@ -91,7 +91,7 @@ Template configuration uses Environment Variables, so when name and location of 
 
 ![Configuration steps scheme](unity-case-management-configuration-extjs/images/configuration-steps-scheme.png)
 
-## Environment Variables
+## Environment variables
 
 Environment variables are externalized in separate file. It allows to promote application to different environments without changing configuration.  
 Make sure to point to the folder UCM solution file is saved in as well as provide name:
@@ -113,7 +113,7 @@ Set of required property mappings required for UCM:
 
 ![Properties mapping](unity-case-management-configuration-extjs/images/image22.png)
 
-### Custom Properties
+### Custom properties
 
 This property must be defined for UCM:
 
@@ -144,7 +144,7 @@ Configuration steps:
 
 ![Case search and case view configuration steps scheme](unity-case-management-configuration-extjs/images/case-configuration-steps-scheme.png)
 
-## Content List for Cases
+## Content List for cases
 
 ![Content Lists](unity-case-management-configuration-extjs/images/image28.png)
 
@@ -164,7 +164,7 @@ Configuration steps:
 
     ![Listeners](unity-case-management-configuration-extjs/images/image32.png)
 
-## Search Template for Cases
+## Search Template for cases
 
 ![Search Templates](unity-case-management-configuration-extjs/images/image34.png)
 
@@ -184,7 +184,7 @@ Configuration steps:
 
     ![Search Template Security](unity-case-management-configuration-extjs/images/image40.png)
 
-## Field Sets for Cases
+## Field Sets for cases
 
 Case View and Work Item View use field set to display properties associated with case or work item respectively.  
 Unity uses expandos – collapsible areas of UI - to group related properties together.
@@ -244,7 +244,7 @@ Case View can have following pre-defined tabs:
 
 ![History tab](unity-case-management-configuration-extjs/images/image56.png)
 
-## Tab configuration for Cases
+## Tab configuration for cases
 
 - After you create and configure Search Template, you need to link it to the Tab:
 
@@ -270,7 +270,7 @@ Configuration steps:
 
 ![Steps scheme inbaskets](unity-case-management-configuration-extjs/images/inbasket-configuration-steps-scheme.png)
 
-## Content Lists for Work Items
+## Content Lists for work items
 
 Define Content List to display work items:
 
@@ -292,7 +292,7 @@ Define Content List to display work items:
 
     ![Listeners](unity-case-management-configuration-extjs/images/image63.png)
 
-## Search Template for Work Items
+## Search Template for work items
 
 ![Search Templates](unity-case-management-configuration-extjs/images/search-templates-inbaskets.png)
 
@@ -312,7 +312,7 @@ Define Content List to display work items:
 
     ![Search Template Security](unity-case-management-configuration-extjs/images/image67.png)
 
-## Field Sets for Work Items
+## Field Sets for work items
 
 Case View and Work Item View use field set to display properties associated with case or work item respectively.  
 Unity uses expandos – collapsible areas of UI - to group related properties together.
@@ -372,7 +372,7 @@ Work Item View can have following pre-defined tabs:
 
 ![History tab](unity-case-management-configuration-extjs/images/image56.png)
 
-## Inbasket Configuration
+## Inbasket configuration
 
 Inbasket provides certain roles access to tasks of certain type. 
 It uses inbasket search template to display list of work items and work item view to display details for selected work item based on its step. 
@@ -384,7 +384,7 @@ Actions available for the task in the inbasket:
 
 ![Inbaskets actions](unity-case-management-configuration-extjs/images/image74.png)
 
-## Tab configuration for Inbaskets
+## Tab configuration for inbaskets
 
 - After you create and configure Search Template, you need to link it to the Tab:
 
