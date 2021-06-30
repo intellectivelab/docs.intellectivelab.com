@@ -70,7 +70,7 @@ In Case Manager Client, steps are called Work Items.
 
 ### Unity Case Management (UCM) & ICM
 
-Unity works with deployed ICM solution and allows to configure UI to work with cases and tasks
+Unity works with deployed ICM solution and allows to configure UI to work with cases and tasks.
 
 - Cases
     - Case search allows to search for cases based on provided search criteria
@@ -79,7 +79,7 @@ Unity works with deployed ICM solution and allows to configure UI to work with c
 - Tasks
     - Inbaskets display work items available for the selected Role for corresponding task type 
     - Inbaskets provide filters to narrow down search and actions (workflow responses) to process task
-    - When work item is opened from the Inbasket, Work Item view is displayed
+    - When work item is opened from the Inbasket, work item view is displayed
     - Normally work item view displays case/task properties, it can also display documents attached to case, comments & history of the case
 
 # Unity Case Management (UCM) Configuration
@@ -186,7 +186,7 @@ Configuration steps:
 
 ## Field Sets for Cases
 
-Case View and Workitem View use field set to display properties associated with case or workitem respectively.  
+Case View and Work Item View use field set to display properties associated with case or work item respectively.  
 Unity uses expandos – collapsible areas of UI - to group related properties together.
 
 - Define field sets for views:
@@ -246,13 +246,13 @@ Case View can have following pre-defined tabs:
 
 ## Tab configuration for Cases
 
-- After you create and configure search template, you need to link it to the tab:
+- After you create and configure Search Template, you need to link it to the Tab:
 
     ![Tabs](unity-case-management-configuration-extjs/images/image57.png)
 
     ![Tabs assign search template](unity-case-management-configuration-extjs/images/image58.png)
 
-- Assign Access Roles and rights to the tab:
+- Assign Access Roles and rights to the Tab:
 
     ![Tab security](unity-case-management-configuration-extjs/images/image59.png)
 
@@ -262,7 +262,7 @@ Open case search, execute and select a case:
 
 ![Test case search](unity-case-management-configuration-extjs/images/image60.png)
 
-# Inbasket, Workitem Search & View Configuration
+# Inbasket, Work Item Search & View Configuration
 
 ![Components scheme inbaskets](unity-case-management-configuration-extjs/images/components-scheme-inbaskets.png)
 
@@ -270,9 +270,9 @@ Configuration steps:
 
 ![Steps scheme inbaskets](unity-case-management-configuration-extjs/images/inbasket-configuration-steps-scheme.png)
 
-## Content Lists for Workitems
+## Content Lists for Work Items
 
-Define Content List to display workitems:
+Define Content List to display work items:
 
 ![Content Lists](unity-case-management-configuration-extjs/images/image28.png)
 
@@ -284,7 +284,7 @@ Define Content List to display workitems:
 
     ![Column sets](unity-case-management-configuration-extjs/images/image62.png)
 
-- Define actions for workitems:
+- Define actions for work items:
 
     *content to be added*
 
@@ -292,7 +292,7 @@ Define Content List to display workitems:
 
     ![Listeners](unity-case-management-configuration-extjs/images/image63.png)
 
-## Search Template for Workitems
+## Search Template for Work Items
 
 ![Search Templates](unity-case-management-configuration-extjs/images/search-templates-inbaskets.png)
 
@@ -312,9 +312,9 @@ Define Content List to display workitems:
 
     ![Search Template Security](unity-case-management-configuration-extjs/images/image67.png)
 
-## Field Sets for Workitems
+## Field Sets for Work Items
 
-Case View and Workitem View use field set to display properties associated with case or workitem respectively.  
+Case View and Work Item View use field set to display properties associated with case or work item respectively.  
 Unity uses expandos – collapsible areas of UI - to group related properties together.
 
 - Define field sets for views:
@@ -329,28 +329,28 @@ Unity uses expandos – collapsible areas of UI - to group related properties to
 
     `Column` and `Row` values define a position of field in expando.
 
-## Workitem View
+## Work Item View
 
-Workitem Views are available in Case Management Configuration and defines what user sees when opening workitem. 
+Work Item Views are available in Case Management Configuration and defines what user sees when opening work item. 
 The view is specific to task type and step in the workflow defined for the task.
 
-![Workitem view](unity-case-management-configuration-extjs/images/image68.png)
+![Work Item view](unity-case-management-configuration-extjs/images/image68.png)
 
-`Rule` defines how workitem view is bound to workitem:
+`Rule` defines how work item view is bound to work item:
 - task type
 - name of the step in workflow of the task
 - additional parameters
 
 ![Rule](unity-case-management-configuration-extjs/images/image70.png)
 
-Workitem View can have following pre-defined tabs:
+Work Item View can have following pre-defined tabs:
  
 - Details – will have case properties organized in expandos
 - Attachments – display documents attached to case
 - Tasks – all tasks associated with case
 - History – history of system events and user-added comments
 
-![Workitem View Tabs](unity-case-management-configuration-extjs/images/image71.png)
+![Work Item View Tabs](unity-case-management-configuration-extjs/images/image71.png)
 
 - For Attachments tab define properties (required) and tools:
 
@@ -375,8 +375,8 @@ Workitem View can have following pre-defined tabs:
 ## Inbasket Configuration
 
 Inbasket provides certain roles access to tasks of certain type. 
-It uses inbasket search template to display list of workitems and workitem view to display details for selected workitem based on its step. 
-Inbasket allows user to “act” workitem using one of the actions defined in task workflow and available on the current step. 
+It uses inbasket search template to display list of work items and work item view to display details for selected work item based on its step. 
+Inbasket allows user to “act” work item using one of the actions defined in task workflow and available on the current step. 
 
 ![Inbaskets](unity-case-management-configuration-extjs/images/image73.png)
 
@@ -386,7 +386,7 @@ Actions available for the task in the inbasket:
 
 ## Tab configuration for Inbaskets
 
-- After you create and configure search template, you need to link it to the tab:
+- After you create and configure Search Template, you need to link it to the Tab:
 
     ![Tabs](unity-case-management-configuration-extjs/images/inbaskets-tab.png)
 
@@ -396,12 +396,12 @@ Actions available for the task in the inbasket:
 
     ![Parameters](unity-case-management-configuration-extjs/images/image76.png)
 
-- Assign Access Roles and rights to the tab:
+- Assign Access Roles and rights to the Tab:
 
     ![Tab security](unity-case-management-configuration-extjs/images/image59.png)
 
 ## Test inbaskets configuration
 
-Select inbasket and open task:
+Select inbasket and open the task:
 
 ![Test inbaskets](unity-case-management-configuration-extjs/images/image77.png)
