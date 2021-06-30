@@ -3,7 +3,9 @@ title: Unity Case Management Configuration Tutorial
 layout: docs
 category: Unity 7
 ---
-This course gives an overview of how to configure Unity Case Management solution using Configuration Console in Unity ExtJS platform.
+This course gives an overview of how to configure Unity Case Management solution using Configuration Console in Unity ExtJS platform.  
+Students are expected to complete the course:
+- [Unity Configuration Basics Tutorial for Unity ExtJS platform](../configuration-tutorials/unity-configuration-basics-extjs.md)
 
 # IBM Case Manager (ICM)
 
@@ -21,7 +23,7 @@ A Solution is a set of related business problems (or Case Types).
 
 ![Solution](unity-case-management-configuration-extjs/images/image11.png) 
 
-### Properties
+### ICM Properties
 
 Properties are used to store details of the case and documents.
 
@@ -29,8 +31,8 @@ Properties are used to store details of the case and documents.
 
 ### Case Types
 
-Case Types define the Tasks, the necessary document types to support the Task, the task steps, and the Roles that must complete those steps to solve a business problem. 
-The Case Type also includes Properties that are displayed to case workers in Views. Related Case Types make up a Solution.
+Case Types define the tasks, the necessary document types to support the task, the task steps, and the roles that must complete those steps to solve a business problem. 
+The Case Type also includes properties that are displayed to case workers in Views. Related Case Types make up a Solution.
 
 ![Case Types](unity-case-management-configuration-extjs/images/image13.png)
 
@@ -55,13 +57,14 @@ Document Types group similar documents and the information about the documents t
 
 ### Roles
 
-Users and groups are assigned to Roles in the Case Manager Client to specify which users can access a particular Task or step.
+Users and groups are assigned to Roles in the Case Manager Client to specify which users can access a particular task or step.
 
 ![Roles](unity-case-management-configuration-extjs/images/image18.png)
 
 ### In-baskets
 
-A personal In-basket holds steps that need to be done by a specific case worker to complete case Tasks. A role In-basket holds steps that are assigned to a Role. In Case Manager Client, steps are called work items.
+A personal In-basket holds steps that need to be done by a specific case worker to complete case tasks. A role In-basket holds steps that are assigned to a role. 
+In Case Manager Client, steps are called Work Items.
 
 ![Inbaskets](unity-case-management-configuration-extjs/images/image19.png)
 
@@ -103,7 +106,8 @@ Connector Type should be `UCM` for Case Management:
 
 ### Properties mapping
 
-Unity allows to create application-level consolidated model (Properties). External repositories data models can be mapped into application model allowing users to have unified view of documents and/or cases.
+Unity allows to create application-level consolidated model (Properties). 
+External repositories data models can be mapped into application model allowing users to have unified view of documents and/or cases.
 
 Set of required property mappings required for UCM:
 
@@ -140,43 +144,264 @@ Configuration steps:
 
 ![Case search and case view configuration steps scheme](unity-case-management-configuration-extjs/images/case-configuration-steps-scheme.png)
 
-## Content List
+## Content List for Cases
 
 ![Content Lists](unity-case-management-configuration-extjs/images/image28.png)
 
-### Parameters
+- Define Content List parameters:
 
-Define Content List parameters:
+    ![Content List Parameters](unity-case-management-configuration-extjs/images/image30.png)
 
-![Content List Parameters](unity-case-management-configuration-extjs/images/image30.png)
+- Define column sets:
 
-### Column Sets
+    ![Column Sets](unity-case-management-configuration-extjs/images/image31.png)
 
-Define Column Sets:
+- Create actions for each case type:
 
-![Column Sets](unity-case-management-configuration-extjs/images/image31.png)
+    ![Actions](unity-case-management-configuration-extjs/images/image33.png)
 
-### Actions
+- Define UCM listeners required:
 
-Create Actions for each case type:
+    ![Listeners](unity-case-management-configuration-extjs/images/image32.png)
 
-![Actions](unity-case-management-configuration-extjs/images/image33.png)
-
-### Listeners
-
-Define UCM Listeners required:
-
-![Listeners](unity-case-management-configuration-extjs/images/image32.png)
-
-## Search Template
+## Search Template for Cases
 
 ![Search Templates](unity-case-management-configuration-extjs/images/image34.png)
 
-### Search Template Parameters
+- Define Search Template parameters:
 
-Define Search Template parameters:
+    ![Search Template Parameters](unity-case-management-configuration-extjs/images/image36.png)
 
-![Search Template Parameters](unity-case-management-configuration-extjs/images/image36.png)
+- Define Search Criteria:
 
-## Field Sets
+    ![Search Criteria](unity-case-management-configuration-extjs/images/image37.png)
+
+- Define UCM specific operation properties:
+
+    ![Search Template Operation](unity-case-management-configuration-extjs/images/image39.png)
+
+- Assign Roles:
+
+    ![Search Template Security](unity-case-management-configuration-extjs/images/image40.png)
+
+## Field Sets for Cases
+
+Case View and Workitem View use field set to display properties associated with case or workitem respectively.  
+Unity uses expandos – collapsible areas of UI - to group related properties together.
+
+- Define field sets for views:
+ 
+    ![Field set](unity-case-management-configuration-extjs/images/image41.png)
+
+- Define expandos and fields:
+
+    ![Expandos](unity-case-management-configuration-extjs/images/image42.png)
+
+    ![Fields](unity-case-management-configuration-extjs/images/image43.png)
+
+    `Column` and `Row` values define a position of field in expando.
+
 ## Case View
+
+Case View is available in Case Management Configuration and defines what user sees when opening a case. Case View is defined for:
+
+- New case – displayed when case is created
+- Active case – displayed for active case
+- Closed case – displayed for closed case
+
+![Case View](unity-case-management-configuration-extjs/images/image45.png)
+
+Case View can have following pre-defined tabs:
+ 
+- Details – will have case properties organized in expandos
+- Attachments – display documents attached to case
+- Tasks – all tasks associated with case
+- History – history of system events and user-added comments
+
+![Case View Tabs](unity-case-management-configuration-extjs/images/image47.png)
+
+- For Details tab define tools:
+
+    ![Case View Tabs tools](unity-case-management-configuration-extjs/images/image49.png)
+
+- For Attachments tab define properties (required) and tools:
+
+    ![Attachments tab](unity-case-management-configuration-extjs/images/image51.png)
+
+    ![Attachments tab tools](unity-case-management-configuration-extjs/images/image52.png)
+
+- For Tasks tab define Search Template Set used to look for tasks and Content List configured to display tasks:
+
+    ![Tasks tab](unity-case-management-configuration-extjs/images/image54.png)
+
+    Define tools:
+
+    ![Task tab tools](unity-case-management-configuration-extjs/images/image55.png)
+
+    `Add task` tool can be used to launch discretionary task.
+
+- For History tab define Search Template Set used to look for Comments & History and Content List configured to display Comments & History:
+
+![History tab](unity-case-management-configuration-extjs/images/image56.png)
+
+## Tab configuration for Cases
+
+- After you create and configure search template, you need to link it to the tab:
+
+    ![Tabs](unity-case-management-configuration-extjs/images/image57.png)
+
+    ![Tabs assign search template](unity-case-management-configuration-extjs/images/image58.png)
+
+- Assign Access Roles and rights to the tab:
+
+    ![Tab security](unity-case-management-configuration-extjs/images/image59.png)
+
+## Test case search & case view
+
+Open case search, execute and select a case:
+
+![Test case search](unity-case-management-configuration-extjs/images/image60.png)
+
+# Inbasket, Workitem Search & View Configuration
+
+![Components scheme inbaskets](unity-case-management-configuration-extjs/images/components-scheme-inbaskets.png)
+
+Configuration steps:
+
+![Steps scheme inbaskets](unity-case-management-configuration-extjs/images/inbasket-configuration-steps-scheme.png)
+
+## Content Lists for Workitems
+
+Define Content List to display workitems:
+
+![Content Lists](unity-case-management-configuration-extjs/images/image28.png)
+
+- Define parameters:
+
+    ![Content list](unity-case-management-configuration-extjs/images/image61.png)
+
+- Define column sets:
+
+    ![Column sets](unity-case-management-configuration-extjs/images/image62.png)
+
+- Define actions for workitems:
+
+    *content to be added*
+
+- Define required UCM listeners:
+
+    ![Listeners](unity-case-management-configuration-extjs/images/image63.png)
+
+## Search Template for Workitems
+
+![Search Templates](unity-case-management-configuration-extjs/images/search-templates-inbaskets.png)
+
+- Define Search Template parameters:
+
+    ![Search Template Parameters](unity-case-management-configuration-extjs/images/image65.png)
+
+- Define Search Criteria
+
+- Define UCM specific operation properties:
+
+    ![Search Template Operation](unity-case-management-configuration-extjs/images/image66.png)
+
+    Database view used by ICM for tasks can be found in ACCE.
+
+- Assign to Inbaskets Tab:
+
+    ![Search Template Security](unity-case-management-configuration-extjs/images/image67.png)
+
+## Field Sets for Workitems
+
+Case View and Workitem View use field set to display properties associated with case or workitem respectively.  
+Unity uses expandos – collapsible areas of UI - to group related properties together.
+
+- Define field sets for views:
+ 
+    ![Field set](unity-case-management-configuration-extjs/images/image41.png)
+
+- Define expandos and fields:
+
+    ![Expandos](unity-case-management-configuration-extjs/images/image42.png)
+
+    ![Fields](unity-case-management-configuration-extjs/images/image43.png)
+
+    `Column` and `Row` values define a position of field in expando.
+
+## Workitem View
+
+Workitem Views are available in Case Management Configuration and defines what user sees when opening workitem. 
+The view is specific to task type and step in the workflow defined for the task.
+
+![Workitem view](unity-case-management-configuration-extjs/images/image68.png)
+
+`Rule` defines how workitem view is bound to workitem:
+- task type
+- name of the step in workflow of the task
+- additional parameters
+
+![Rule](unity-case-management-configuration-extjs/images/image70.png)
+
+Workitem View can have following pre-defined tabs:
+ 
+- Details – will have case properties organized in expandos
+- Attachments – display documents attached to case
+- Tasks – all tasks associated with case
+- History – history of system events and user-added comments
+
+![Workitem View Tabs](unity-case-management-configuration-extjs/images/image71.png)
+
+- For Attachments tab define properties (required) and tools:
+
+    ![Attachments tab](unity-case-management-configuration-extjs/images/image51.png)
+
+    ![Attachments tab tools](unity-case-management-configuration-extjs/images/image52.png)
+
+- For Tasks tab define Search Template Set used to look for tasks and Content List configured to display tasks:
+
+    ![Tasks tab](unity-case-management-configuration-extjs/images/image54.png)
+
+    Define tools:
+
+    ![Task tab tools](unity-case-management-configuration-extjs/images/image55.png)
+
+    `Add task` tool can be used to launch discretionary task.
+
+- For History tab define Search Template Set used to look for Comments & History and Content List configured to display Comments & History:
+
+![History tab](unity-case-management-configuration-extjs/images/image56.png)
+
+## Inbasket Configuration
+
+Inbasket provides certain roles access to tasks of certain type. 
+It uses inbasket search template to display list of workitems and workitem view to display details for selected workitem based on its step. 
+Inbasket allows user to “act” workitem using one of the actions defined in task workflow and available on the current step. 
+
+![Inbaskets](unity-case-management-configuration-extjs/images/image73.png)
+
+Actions available for the task in the inbasket:
+
+![Inbaskets actions](unity-case-management-configuration-extjs/images/image74.png)
+
+## Tab configuration for Inbaskets
+
+- After you create and configure search template, you need to link it to the tab:
+
+    ![Tabs](unity-case-management-configuration-extjs/images/inbaskets-tab.png)
+
+    ![Tabs assign search template](unity-case-management-configuration-extjs/images/image75.png)
+
+- Define inbasket tab-specific parameters:
+
+    ![Parameters](unity-case-management-configuration-extjs/images/image76.png)
+
+- Assign Access Roles and rights to the tab:
+
+    ![Tab security](unity-case-management-configuration-extjs/images/image59.png)
+
+## Test inbaskets configuration
+
+Select inbasket and open task:
+
+![Test inbaskets](unity-case-management-configuration-extjs/images/image77.png)
