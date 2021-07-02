@@ -5,13 +5,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 module.exports = {
   title: 'Intellective Documentation',
   tagline: 'Insert Tagline Here', //found under the hero 
-  url: 'https://docs.intellectivelab.com',
+  url: 'https://github.com/intellectivelab',
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'intellectivelab', // Usually your GitHub org/user name.
-  projectName: 'docs', // Usually your repo name.
+  projectName: 'docs.intellective.com', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: '',
