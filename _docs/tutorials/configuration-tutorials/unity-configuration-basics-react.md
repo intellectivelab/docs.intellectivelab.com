@@ -3,7 +3,7 @@ title: Unity React Configuration Basics Tutorial
 layout: docs
 category: Unity 7
 ---
-This course gives an overview of Unity React UI configuration.
+This course gives an overview of Unity React UI configuration for document management.
 
 # Unity Configuration File
 
@@ -99,7 +99,7 @@ Pick Lists:
 
 ## Content List Configuration
 
-![Content list scheme](unity-configuration-basics/images/content-list-scheme.png)
+![Content list scheme](unity-configuration-basics-react/images/content-list-scheme.png)
 
 The Content List (Grid) is used by Search Templates , Actions and Tabs to present search results to a user.
 
@@ -112,94 +112,79 @@ Unity provides following configuration features for Content List :
 - Configure listeners for grid events
 - Configure Filters for Search results
 
-To see all Content Lists select `Content Lists` in the `Solution Configuration` tree:
+![Grid](unity-configuration-basics-react/images/image18.png)
 
-![Content lists](unity-configuration-basics/images/content-lists.png)
+Define Column Set properties:
 
-To see and edit Content List parameters click on `Edit` icon in `Parameters` column in the Content List row:
+![Column set properties](unity-configuration-basics-react/images/image20.png)
 
-![Content lists parameters](unity-configuration-basics/images/content-list-parameters.png)
+Define Actions:
 
-On `Define column sets` tab list of columns, column name from the properties settings, default visibility and sort order are shown:
-
-![Column sets](unity-configuration-basics/images/column-sets.png)
-
-On `Toolbar actions` tab pre-defined set of actions is shown:
-
-![Toolbar actions](unity-configuration-basics/images/toolbar-actions.png)
+![Actions](unity-configuration-basics-react/images/image21.png)
 
 ## Access Roles Configuration
 
 Access Roles allow users and groups to access search templates based on the grant or deny rights assigned.
 Access Roles can be assigned to search templates or tabs.
 
-To see all Access Roles select `Security` in the `Solution Configuration` tree: 
+Set access roles parameters (role name, description etc):
 
-![Access roles](unity-configuration-basics/images/access-roles.png)
+![Access roles](unity-configuration-basics-react/images/image22.png)
 
-To see and edit Role Members click on `Edit` icon in `Members` column in the role row, Edit Members window appears:
+You can add or remove users or groups, set `Grant` or `Deny` rights to users or groups:
 
-![Access roles edit](unity-configuration-basics/images/access-roles-edit.png)
-
-You can Add or Remove users or groups, set `Grant` or `Deny` rights to users or groups.
+![Access roles allow deny](unity-configuration-basics-react/images/image23.png)
 
 ## Search Template Configuration
 
-![Search template scheme](unity-configuration-basics/images/search-template-scheme.png)
+![Search template scheme](unity-configuration-basics-react/images/search-template-scheme.png)
 
 Search template configuration provides the capability to pre-configure and save: 
 - selected repository Connector
 - search criteria
 - search results Grid (Content List) configuration 
 
+![Search template](unity-configuration-basics-react/images/image24.png)
+
 Access to Search Templates is controlled by [Access Roles](#access-roles-configuration).  
 Search Template should be assigned to the Tab to be available to Unity users.
 
-To see all Search Templates select `Search Templates` in the `Solution Configuration` tree: 
+Define Search Criteria:
 
-![Search templates](unity-configuration-basics/images/search-templates.png)
+![Search criteria](unity-configuration-basics-react/images/image26.png)
 
-To see and edit Search Template parameters click on `Edit` icon in `Parameters` column in Search Template row.  
+Additional parameters for each criterion can be defined along with associating a pick list or a default value using macros.
 
-- Select `Define search criteria` tab:
-    
-    ![Search criteria tab](unity-configuration-basics/images/search-template-criteria.png)
-    
-    You can Add, Edit, Copy, or Delete search criteria properties.  
-    Press `Edit` button to edit search criterion properties:
-    
-    ![Search criterion edit](unity-configuration-basics/images/search-criterion-edit.png)
-    
-    - Additional parameters can be configured in `Advanced Configuration` section
-    - You can combine criteria in groups: which are then displayed grouped in UI
-    - You can define a Pick List for values
+You can combine criteria in groups: which are then displayed grouped in UI:
 
-- Select `Define security` tab and assign Roles to Search Template:
+![Search criteria groups](unity-configuration-basics-react/images/image28.png)
 
-    ![Search template roles](unity-configuration-basics/images/search-template-roles.png)
+Assign Roles to Search Template:
+
+![Search template roles](unity-configuration-basics-react/images/image29.png)
 
 ## Tab Configuration
 
-![Tab scheme](unity-configuration-basics/images/tab-scheme.png)
+![Tab scheme](unity-configuration-basics-react/images/tab-scheme.png)
 
-To see all Tabs select `Tabs` in the `Solution Configuration` tree: 
+![Tabs](unity-configuration-basics-react/images/image30.png)
 
-![Tab](unity-configuration-basics/images/tabs.png)
+`TemplateSet` configuration is used to assign the search templates for the tab:
 
-To see and edit Tab parameters click on `Edit` icon in `Parameters` column in Tab row. Edit Tab window appears:  
+![TemplateSet](unity-configuration-basics-react/images/image31.png)
 
-![Edit tab](unity-configuration-basics/images/tab-edit.png)
+`TemplateSet ID` should match the ID of the tab and end with “-templates-set”
 
-- Select `Assign search templates` tab and assign Search Template to the Tab:
+Assign Roles to the Tab:
 
-    ![Assign template to tab](unity-configuration-basics/images/tab-assign-template.png)
-
-- Select `Define security` tab and assign Roles to the Tab:
-
-    ![Assign role to tab](unity-configuration-basics/images/tab-assign-role.png)
+![Assign role to tab](unity-configuration-basics-react/images/tab-roles.png)
 
 # Test Configuration
 
-Execute search and make sure it returns expected results:
+Sample Test URL: `http://localhost:9080/vu/analytics`
 
-![Test search](unity-configuration-basics/images/test-search.png)
+![Test](unity-configuration-basics-react/images/image32.png)
+
+Select a Search Template from a dropdown list, execute search and check how search results are displayed in content list.
+
+
