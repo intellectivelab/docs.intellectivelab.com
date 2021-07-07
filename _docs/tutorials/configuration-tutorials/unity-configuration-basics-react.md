@@ -17,7 +17,7 @@ Default name is `unity_config.xml`.
 
 Unity configuration file is also associated with a Solution file which stores information about the detail views of a document, case or a work item.
 
-Solution file and SolutionName defined in Unity configuration file:
+Solution file and Solution name defined in Unity configuration file:
 
 ![Unity config](unity-configuration-basics-react/images/image6.png)
 
@@ -68,7 +68,7 @@ Datasource is the configuration of the authentication and access parameters that
 
 Connector is the configuration of the "view" of the information (properties, metadata, objects, etc.) from the datasource that will be used by Unity for actions.
 
-Each Connector has `ID` for further linking, Connector `Type`, linked `Datasource`, max number of returned results `Result Limit` and other parameters:  
+Each Connector has `ID` for further linking, Connector Type, linked `Datasource`, max number of returned results `result_limit` and other parameters:  
 
 ![Connectors](unity-configuration-basics-react/images/image12.png)
 
