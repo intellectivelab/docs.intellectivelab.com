@@ -4,7 +4,7 @@ import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
-import HomepageFeatures from '../components/HomepageFeatures';
+import DocsHomepageFeatures from '../components/DocsHomepageFeatures';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -26,7 +26,7 @@ export default function Home() {
       description="Intellective Docs Homepage">
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        <DocsHomepageFeatures />
       </main>
     </Layout>
   );

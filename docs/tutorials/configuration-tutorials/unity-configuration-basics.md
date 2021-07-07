@@ -3,6 +3,8 @@ title: Unity Configuration Basics Tutorial
 layout: docs
 category: Unity 7
 ---
+# Unity Configuration Basics
+
 This course gives an overview of Unity configuration and explains how different functionality can be defined using Configuration Console.
 
 # Unity Configuration File

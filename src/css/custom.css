@@ -7,13 +7,13 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #dc3840;
-  --ifm-color-primary-dark: rgb(175, 33, 33);
-  --ifm-color-primary-darker: rgb(165, 31, 31);
-  --ifm-color-primary-darkest: rgb(136, 26, 26);
-  --ifm-color-primary-light: rgb(203, 70, 70);
-  --ifm-color-primary-lighter: rgb(212, 102, 102);
-  --ifm-color-primary-lightest: rgb(224, 146, 146);
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
   --ifm-code-font-size: 95%;
 }
 
@@ -26,4 +26,13 @@
 
 html[data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+body{
+  font-family: "Lato", sans-serif !important;
+}
+
+/* Overrides Markdown Doc file h1 header style */
+.docTitle_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocItem-{
+  color:#dc3840;
 }

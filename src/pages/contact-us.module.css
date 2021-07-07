@@ -1,0 +1,16 @@
+.pageTitle{
+    font-size: 2.75em;
+    color:#dc3840;
+  }
+
+.main{
+    padding: 0px 48px;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important
+}
+
+.centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -4,4 +4,4 @@ layout: docs
 category: Unity 8
 ---
 
-[Unity 8.0 Release Notes](../unity-8/u8-release-notes.md)
+[Unity 8.0 Release Notes](../products/unity-8/u8-release-notes.md)
