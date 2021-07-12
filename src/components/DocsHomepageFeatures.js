@@ -1,9 +1,9 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './HomepageFeatures.module.css';
-import { whatIsUnitySidebar } from '../../sidebars';
+//import { whatIsUnitySidebar } from '../../sidebars';
 
-const unitySidebar = whatIsUnitySidebar;
+//const unitySidebar = whatIsUnitySidebar;
 
 const FeatureList = [
   {
@@ -12,10 +12,10 @@ const FeatureList = [
     description: (
       <>
         <ul>
-          <li>Unity Overview</li>
-          <li>Features</li>
-          <li>Architecture</li>
-          <li>Component Diagram</li>
+          <li><a href="">Unity Overview</a></li>
+          <li><a href="">Features</a></li>
+          <li><a href="">Architecture</a></li>
+          <li><a href="">Component Diagram</a></li>
         </ul>
       </>
 
@@ -27,13 +27,13 @@ const FeatureList = [
     description: (
       <>
         <ul>
-          <li>Unity</li>
-          <li>Unity for Salesforce</li>
-          <li>Unity for nCino</li>
-          <li>Unity for Dynamics</li>
-          <li>Unity for ICN</li>
-          <li>Interchange</li>
-          <li>Enterprise Search</li>
+          <li><a href="">Unity</a></li>
+          <li><a href="">Unity for Salesforce</a></li>
+          <li><a href="">Unity for nCino</a></li>
+          <li><a href="">Unity for Dynamics</a></li>
+          <li><a href="">Unity for ICN</a></li>
+          <li><a href="">Interchange</a></li>
+          <li><a href="">Enterprise Search</a></li>
         </ul>
       </>
     ),
@@ -44,8 +44,8 @@ const FeatureList = [
     description: (
       <>
         <ul>
-          <li>React</li>
-          <li>ExtJS</li>
+          <li><a href="">React</a></li>
+          <li><a href="">ExtJS</a></li>
         </ul>
       </>
     ),
@@ -56,15 +56,15 @@ const FeatureList = [
     description: (
       <>
         <ul>
-          <li>API</li>
-          <li>Installation</li>
-          <li>Configuration</li>
+          <li><a href="">API</a></li>
+          <li><a href="">Installation</a></li>
+          <li><a href="">Configuration</a></li>
         </ul>
       </>
     ),
   },
   {
-    title: 'Release Notes',
+    title: (<><a href="">Release Notes</a></>),
     Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
@@ -83,7 +83,18 @@ const FeatureList = [
   },
 ];
 
-function ListFeatures({Svg, title, }) {
+/**
+ * Method Name: function ListFeatures(Svg, title, list)
+ * 
+ * Purpose: Returns a component listing of Unity features 
+ * 
+ * UNUSED
+ * 
+ * @param {Svg, title, list}   
+ * @returns html
+ */
+
+function ListFeatures({Svg, title, list}) {
   return(
     <div className={clsx('col col--4')}>
       <div className="text--center">
@@ -107,7 +118,7 @@ function Feature({Svg, title, description}) {
   );
 }
 
-export default function HomepageFeatures() {
+export default function DocsHomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">

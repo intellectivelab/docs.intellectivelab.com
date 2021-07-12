@@ -2,6 +2,7 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
+
 module.exports = {
   title: 'Intellective Documentation',
   tagline: '', //found inside the hero banner 
@@ -82,12 +83,12 @@ module.exports = {
           label: 'Unity Framework',
           items: [
             {
-              label: 'Unity ExtJS',
-              to: 'docs/frameworks/unity-extjs/overview',
+              label: 'Unity React',
+              to: 'docs/frameworks/unity-react/overview',
             },
             {
-              label: 'Unity React',
-              to: 'docs/frameworks/what-is-unity/unity-overview',
+              label: 'Unity ExtJS',
+              to: 'docs/frameworks/unity-extjs/overview',
             },
           ],
         },
@@ -149,7 +150,7 @@ module.exports = {
 
         // -------------------------------------------------------------------------
         // ---- A working in-line Copyright footer object. 
-        // ---- Does not look nice without logo in-line also there (See v4 mockup)
+        // ---- Does not look nice without in-line logo also there (See v4 mockup)
         // -------------------------------------------------------------------------
         // {
         //   items: [
@@ -228,5 +229,45 @@ module.exports = {
         },
       },
     ],
+  ],
+  scripts: [
+    
+    // Supposedly passes in scripts to be kept in <head>. However, scripts don't appear in app. 
+
+    //Contact-Us script
+    //Must be placed at HEAD otherwise it will not load the JIRA scripts required
+    
+    //Report bug collector
+    {
+      src: 
+        'https://jira.intellective.com/s/d41d8cd98f00b204e9800998ecf8427e-CDN/n71z7c/810001/ed30881a1c0940ba1231758ef6f853f8/2.2.4.7/_/download/batch/com.atlassian.plugins.jquery:jquery/com.atlassian.plugins.jquery:jquery.js?collectorId=425badfe',
+    },
+    {
+      src: 
+        'https://jira.intellective.com/s/43b5bdc91be933d4dbff275f06cb0d49-T/n71z7c/810001/ed30881a1c0940ba1231758ef6f853f8/4.0.1/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=425badfe',
+    },
+
+    //Enhancement Request Collector
+    {
+      src: 
+        'https://jira.intellective.com/s/d41d8cd98f00b204e9800998ecf8427e-CDN/n71z7c/810001/ed30881a1c0940ba1231758ef6f853f8/2.2.4.7/_/download/batch/com.atlassian.plugins.jquery:jquery/com.atlassian.plugins.jquery:jquery.js?collectorId=c5884de4',
+    },
+    {
+      src: 
+        'https://jira.intellective.com/s/43b5bdc91be933d4dbff275f06cb0d49-T/n71z7c/810001/ed30881a1c0940ba1231758ef6f853f8/4.0.1/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=c5884de4',
+    },
+
+    //Request Info Collector
+    {
+      src: 
+        'https://jira.intellective.com/s/d41d8cd98f00b204e9800998ecf8427e-CDN/n71z7c/810001/ed30881a1c0940ba1231758ef6f853f8/2.2.4.7/_/download/batch/com.atlassian.plugins.jquery:jquery/com.atlassian.plugins.jquery:jquery.js?collectorId=3cfc946d',
+    },
+    {
+      src: 
+        'https://jira.intellective.com/s/43b5bdc91be933d4dbff275f06cb0d49-T/n71z7c/810001/ed30881a1c0940ba1231758ef6f853f8/4.0.1/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=3cfc946d',
+    },
+  ],
+  plugins: [
+    require.resolve('@cmfcmf/docusaurus-search-local')
   ],
 };
