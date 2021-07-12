@@ -17,6 +17,11 @@ entries:
             url: /docs/unity-8/u8-release-notes/
             id: u8-release-notes
 
+          - title: Unity As Service Authorization
+            output: web
+            url: /docs/unity-8/auth-convention/
+            id: auth-convention
+
       - title: Unity ExtJS
         output: web, pdf
         id: unity-extjs
