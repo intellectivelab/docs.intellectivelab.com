@@ -9,19 +9,19 @@ export default function ContactUsPage() {
         <main className={styles.main}>
 
             {/* Report bug collector */}
-            <script type="text/javascript" src="https://jira.intellective.com/s/d41d8cd98f00b204e9800998ecf8427e-CDN/n71z7c/810001/ed30881a1c0940ba1231758ef6f853f8/2.2.4.7/_/download/batch/com.atlassian.plugins.jquery:jquery/com.atlassian.plugins.jquery:jquery.js?collectorId=425badfe"></script>
-            <script type="text/javascript" src="https://jira.intellective.com/s/43b5bdc91be933d4dbff275f06cb0d49-T/n71z7c/810001/ed30881a1c0940ba1231758ef6f853f8/4.0.1/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=425badfe"></script>
+            {/* <script type="text/javascript" src="https://jira.intellective.com/s/d41d8cd98f00b204e9800998ecf8427e-CDN/n71z7c/810001/ed30881a1c0940ba1231758ef6f853f8/2.2.4.7/_/download/batch/com.atlassian.plugins.jquery:jquery/com.atlassian.plugins.jquery:jquery.js?collectorId=425badfe"></script>
+            <script type="text/javascript" src="https://jira.intellective.com/s/43b5bdc91be933d4dbff275f06cb0d49-T/n71z7c/810001/ed30881a1c0940ba1231758ef6f853f8/4.0.1/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=425badfe"></script> */}
 
 
             {/* Enhancement Request collector */}
-            <script type="text/javascript" src="https://jira.intellective.com/s/d41d8cd98f00b204e9800998ecf8427e-CDN/n71z7c/810001/ed30881a1c0940ba1231758ef6f853f8/2.2.4.7/_/download/batch/com.atlassian.plugins.jquery:jquery/com.atlassian.plugins.jquery:jquery.js?collectorId=c5884de4"></script>
-            <script type="text/javascript" src="https://jira.intellective.com/s/43b5bdc91be933d4dbff275f06cb0d49-T/n71z7c/810001/ed30881a1c0940ba1231758ef6f853f8/4.0.1/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=c5884de4"></script>
+            {/* <script type="text/javascript" src="https://jira.intellective.com/s/d41d8cd98f00b204e9800998ecf8427e-CDN/n71z7c/810001/ed30881a1c0940ba1231758ef6f853f8/2.2.4.7/_/download/batch/com.atlassian.plugins.jquery:jquery/com.atlassian.plugins.jquery:jquery.js?collectorId=c5884de4"></script>
+            <script type="text/javascript" src="https://jira.intellective.com/s/43b5bdc91be933d4dbff275f06cb0d49-T/n71z7c/810001/ed30881a1c0940ba1231758ef6f853f8/4.0.1/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=c5884de4"></script> */}
 
             {/* Request Info collector */}
-            <script type="text/javascript" src="https://jira.intellective.com/s/d41d8cd98f00b204e9800998ecf8427e-CDN/n71z7c/810001/ed30881a1c0940ba1231758ef6f853f8/2.2.4.7/_/download/batch/com.atlassian.plugins.jquery:jquery/com.atlassian.plugins.jquery:jquery.js?collectorId=3cfc946d"></script>
+            {/* <script type="text/javascript" src="https://jira.intellective.com/s/d41d8cd98f00b204e9800998ecf8427e-CDN/n71z7c/810001/ed30881a1c0940ba1231758ef6f853f8/2.2.4.7/_/download/batch/com.atlassian.plugins.jquery:jquery/com.atlassian.plugins.jquery:jquery.js?collectorId=3cfc946d"></script>
             <script type="text/javascript" src="https://jira.intellective.com/s/43b5bdc91be933d4dbff275f06cb0d49-T/n71z7c/810001/ed30881a1c0940ba1231758ef6f853f8/4.0.1/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=3cfc946d"></script>
 
-            <script type="text/javascript" src="/assets/js/contact-us.js"></script>
+            <script type="text/javascript" src="/assets/js/contact-us.js"></script> */}
 
             <h1 className={styles.pageTitle}>
                 Contact Us
