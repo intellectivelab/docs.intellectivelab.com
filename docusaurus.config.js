@@ -202,13 +202,6 @@ module.exports = {
         //   ],
         // },
       ],
-      // copyright: `Copyright © ${new Date().getFullYear()} Intellective, Inc.`,
-      // logo: {
-      //   alt: 'Intellective Logo',
-      //   src: 'img/Intellective-Logo-Horiz-Primary-Light.svg',
-      //   srcDark: 'img/Intellective-Logo-Horiz-Primary-Dark.svg',
-      //   href: 'https://www.intellective.com/'
-      },
     },
     prism: {
       theme: lightCodeTheme,
