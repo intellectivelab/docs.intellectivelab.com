@@ -96,7 +96,7 @@ module.exports = {
           position: 'left',
           label: 'Release Notes',
           type: 'doc',
-          docId: 'release-notes/overview', //create an md file/ js landing page for this
+          docId: 'release-notes/overview',
         },
         {
           position: 'left',
@@ -138,43 +138,50 @@ module.exports = {
             },
           ],
         },
-        {
-          href: '/contact-us',
-          label: 'Contact Us',
-          position: 'right',
-        },
       ],
     },
     footer: {
       links: [
-
         // -------------------------------------------------------------------------
         // ---- A working in-line Copyright footer object. 
-        // ---- Does not look nice without in-line logo also there (See v4 mockup)
+        // ---- Needs logo that changes with theme change (See v4 mockup)
         // -------------------------------------------------------------------------
+        {
+          items: [
+            {
+              html: `<div class="row">
+                        <div class="col" style="text-align:left">
+                              Copyright © ${new Date().getFullYear()} Intellective, Inc.
+                        </div>
+                        <div class="col" style="text-align:center">
+                              <a href="/terms-of-use">Terms of Use</a> | 
+                              <a href="https://www.intellective.com/contact-us/">Contact Us</a>
+                        </div>
+                        <div class="col" style="text-align:right">
+                            <a href="https://www.intellective.com/">
+                              <img width="160" height="31.5" src="img/Intellective-Logo-Horiz-Primary-Light.svg" srcDark="img/Intellective-Logo-Horiz-Primary-Dark.svg" alt="Intellective Logo" />                            
+                            </a>
+                        </div>
+                     </div>`,
+            },
+          ]
+        },
         // {
         //   items: [
         //     {
-        //       html: `Copyright © ${new Date().getFullYear()} Intellective, Inc.`,
+        //       label: 'Terms of Use',
+        //       to: '/terms-of-use',
         //     },
-        //   ]
+        //   ],
         // },
-        {
-          items: [
-            {
-              label: 'Terms of Use',
-              to: '/terms-of-use',
-            },
-          ],
-        },
-        {
-          items: [
-            {
-              label: 'Contact Us',
-              to: '/contact-us',
-            },
-          ],
-        },
+        // {
+        //   items: [
+        //     {
+        //       label: 'Contact Us',
+        //       href: 'https://www.intellective.com/contact-us/',
+        //     },
+        //   ],
+        // },
         // ------------------------------ Does not work ----------------------------
         // ----- An attempt to make an in-line logo similar to version 4 mockup
         // ----- that changes with the theme/color scheme. 
@@ -197,7 +204,7 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Intellective, Inc.`,
       logo: {
-        alt: 'Unity Docs Logo',
+        alt: 'Intellective Logo',
         src: 'img/Intellective-Logo-Horiz-Primary-Light.svg',
         srcDark: 'img/Intellective-Logo-Horiz-Primary-Dark.svg',
         href: 'https://www.intellective.com/'
@@ -229,43 +236,6 @@ module.exports = {
         },
       },
     ],
-  ],
-  scripts: [
-    
-    // Supposedly passes in scripts to be kept in <head>. However, scripts don't appear in app. 
-
-    //Contact-Us script
-    //Must be placed at HEAD otherwise it will not load the JIRA scripts required
-    
-    //Report bug collector
-    {
-      src: 
-        'https://jira.intellective.com/s/d41d8cd98f00b204e9800998ecf8427e-CDN/n71z7c/810001/ed30881a1c0940ba1231758ef6f853f8/2.2.4.7/_/download/batch/com.atlassian.plugins.jquery:jquery/com.atlassian.plugins.jquery:jquery.js?collectorId=425badfe',
-    },
-    {
-      src: 
-        'https://jira.intellective.com/s/43b5bdc91be933d4dbff275f06cb0d49-T/n71z7c/810001/ed30881a1c0940ba1231758ef6f853f8/4.0.1/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=425badfe',
-    },
-
-    //Enhancement Request Collector
-    {
-      src: 
-        'https://jira.intellective.com/s/d41d8cd98f00b204e9800998ecf8427e-CDN/n71z7c/810001/ed30881a1c0940ba1231758ef6f853f8/2.2.4.7/_/download/batch/com.atlassian.plugins.jquery:jquery/com.atlassian.plugins.jquery:jquery.js?collectorId=c5884de4',
-    },
-    {
-      src: 
-        'https://jira.intellective.com/s/43b5bdc91be933d4dbff275f06cb0d49-T/n71z7c/810001/ed30881a1c0940ba1231758ef6f853f8/4.0.1/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=c5884de4',
-    },
-
-    //Request Info Collector
-    {
-      src: 
-        'https://jira.intellective.com/s/d41d8cd98f00b204e9800998ecf8427e-CDN/n71z7c/810001/ed30881a1c0940ba1231758ef6f853f8/2.2.4.7/_/download/batch/com.atlassian.plugins.jquery:jquery/com.atlassian.plugins.jquery:jquery.js?collectorId=3cfc946d',
-    },
-    {
-      src: 
-        'https://jira.intellective.com/s/43b5bdc91be933d4dbff275f06cb0d49-T/n71z7c/810001/ed30881a1c0940ba1231758ef6f853f8/4.0.1/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=3cfc946d',
-    },
   ],
   plugins: [
     require.resolve('@cmfcmf/docusaurus-search-local')
