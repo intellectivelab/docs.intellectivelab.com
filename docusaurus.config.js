@@ -159,7 +159,7 @@ module.exports = {
                         </div>
                         <div class="col" style="text-align:right">
                             <a href="https://www.intellective.com/">
-                              <img width="160" height="31.5" src="img/Intellective-Logo-Horiz-Primary-Light.svg" srcDark="img/Intellective-Logo-Horiz-Primary-Dark.svg" alt="Intellective Logo" />                            
+                              <img width="160" height="31.5" src="/img/Intellective-Logo-Horiz-Primary-Light.svg" srcDark="img/Intellective-Logo-Horiz-Primary-Dark.svg" alt="Intellective Logo" />                            
                             </a>
                         </div>
                      </div>`,
