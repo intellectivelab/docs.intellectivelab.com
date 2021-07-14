@@ -2,9 +2,39 @@
 
 .highlight {
   display: flex;
-  align-items: left;
+  /*align-items: left;*/
   padding: 2rem 0;
   width: 100%;
+}
+
+.carousel {
+  align-items: center;
+  display: inherit;
+  text-align: center;
+}
+
+.card {
+  height: 150px;
+  background: #EEE;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  border-top: 10px solid #dc3840;
+}
+
+button {
+  border: none;
+  color: #000;
+  background-color: #CCC;
+  transition-duration: 0.3s;
+  font-size: 16px;
+  border-radius: 100%;
+  padding: 15px 20px;
+}
+
+button:hover {
+  color: #FFF;
+  background-color: #dc3840;
 }
 
 .title1 {

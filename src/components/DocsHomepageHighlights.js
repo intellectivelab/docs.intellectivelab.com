@@ -5,99 +5,68 @@
  *           highlights section. 
  */
 
-import React from 'react';
+import React, {useState} from 'react';
 import clsx from 'clsx';
 import styles from './HomepageHighlights.module.css';
+import ItemsCarousel from 'react-items-carousel';
 
-// Highlight List Array
-// description can output a string or even html text objects. 
+// Highlight List Array 
 const HighlightList = [
     {
         id: 1,
-        title:"This is Highlight Number One",
-        description: (
-            <>
-                This is going to be text. Hopefully more than one line will appear within the
-                description. Blah Blah Blah.
-
-                <br/>
-
-                New line haha.
-            </>
-        )
+        title:"What is Unity?",
+        location:"#"
     },
     {
         id: 2,
-        title:"Another Highlight",
-        description:" \\ \" $ ! * % ^ # ' ` ~ - + ="
+        title:"Getting started with Unity 8",
+        location:"#"
     },
     {
         id: 3,
-        title:"Once again",
-        description:"1234567890"
+        title:"Unity 9???? MORE TO COME SOON",
+        location:"#"
     },
     {
         id: 4,
         title:"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit," 
-        + "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." 
-        + "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris "
-        + "nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in "
-        + "reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla "
-        + "pariatur. Excepteur sint occaecat cupidatat non proident, sunt in "
-        + "culpa qui officia deserunt mollit anim id est laborum."
+        location:"#"
     }
 ]
 
-function Highlight({id, title, description}) {
-    if (id % 2 != 0) {
-        return (
-            <section id={clsx('highlight '+ id)}>
-                <div>
-                    <div className="row padding">
-                        <div className={clsx('col col--6 ' + styles.description1)}>
-                            <div className="padding-horiz--lg">
-                                <p>{description}</p>
-                            </div>
-                        </div>
-                        <div className={clsx('col col--6 ' + styles.title1)}>
-                            <div className="padding-horiz--lg">
-                                <h1>{title}</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        )
-    }
-    else {
-        return(
-            <section id={clsx('highlight '+ id)}>
-                <div>
-                    <div className="row">
-                        <div className={clsx('col col--6 '+ styles.title2)}>
-                            <div className="padding-horiz--lg">
-                                <h1>{title}</h1>
-                            </div>
-                        </div>
-                        <div className={clsx('col col--6 '+ styles.description2)}>
-                            <div className="padding-horiz--lg">
-                                <p>{description}</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        )
-    }
+function Highlight({id, title, location}) {
+    return (
+        <a href={location}>
+            <div id={clsx('card '+ id)} className={styles.card}>
+                <h2>{title}</h2>
+            </div>
+        </a>
+    )
 }
 
 export default function DocsHighlights() {
+    const [activeItemIndex, setActiveItemIndex] = useState(0);
+    const chevronWidth = 150;
+    //const chevronHeight = 100;
     return (
-        <section class="highlights">
-            {HighlightList.map((props, idx) => (
-                    <Highlight key={idx} {...props} />
-            ))}
+        <section className={styles.carousel}>
+            <div style={{ padding: `50px ${chevronWidth}px` }}>
+                <ItemsCarousel
+                    requestToChangeActive={setActiveItemIndex}
+                    activeItemIndex={activeItemIndex}
+                    numberOfCards={2}
+                    gutter={20}
+                    leftChevron={<button>{'<'}</button>}
+                    rightChevron={<button>{'>'}</button>}
+                    outsideChevron
+                    chevronWidth={chevronWidth}
+                    infiniteLoop={true}
+                >
+                    {HighlightList.map((props, idx) => (
+                        <Highlight key={idx} {...props} />
+                    ))}
+                </ItemsCarousel>
+            </div>
         </section>
     );
 }
