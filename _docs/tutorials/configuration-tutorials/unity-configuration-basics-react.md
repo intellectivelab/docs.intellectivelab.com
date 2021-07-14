@@ -169,11 +169,9 @@ Assign Roles to Search Template:
 
 ![Tabs](unity-configuration-basics-react/images/image30.png)
 
-`TemplateSet` configuration is used to assign the search templates for the tab:
+`TemplateSet` configuration is used to assign the search templates for the tab. `TemplateSet ID` should match the ID of the tab and end with “-templates-set”:
 
 ![TemplateSet](unity-configuration-basics-react/images/image31.png)
-
-`TemplateSet ID` should match the ID of the tab and end with “-templates-set”
 
 Assign Roles to the Tab:
 
