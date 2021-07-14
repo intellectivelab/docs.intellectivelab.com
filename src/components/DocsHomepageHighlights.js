@@ -15,22 +15,22 @@ const HighlightList = [
     {
         id: 1,
         title:"What is Unity?",
-        location:"#"
+        location:"/docs/what-is-unity/unity-overview"
     },
     {
         id: 2,
         title:"Getting started with Unity 8",
-        location:"#"
+        location:"/docs/tutorials/unity-8-user-guide"
     },
     {
         id: 3,
         title:"Unity 9???? MORE TO COME SOON",
-        location:"#"
+        location:"#Placeholder-Not-A-Link"
     },
     {
         id: 4,
         title:"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        location:"#"
+        location:"#Placeholder-Not-A-Link"
     }
 ]
 
