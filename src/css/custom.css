@@ -37,3 +37,10 @@ body{
   color:#dc3840;
 }
 
+.footer {
+  background-color: #FFF;
+}
+
+.footer__items {
+  color: #000;
+}

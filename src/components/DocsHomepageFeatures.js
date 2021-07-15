@@ -112,7 +112,7 @@ function Feature({Svg, title, description}) {
       </div>
       <div className="padding-horiz--md">
         <h3>{title}</h3>
-        <p>{description}</p>
+        {description}
       </div>
     </div>
   );

@@ -56,8 +56,8 @@ export default function DocsHighlights() {
                     activeItemIndex={activeItemIndex}
                     numberOfCards={2}
                     gutter={20}
-                    leftChevron={<button>{'<'}</button>}
-                    rightChevron={<button>{'>'}</button>}
+                    leftChevron={<button className={styles.leftButton}>{'<'}</button>}
+                    rightChevron={<button className={styles.rightButton}>{'>'}</button>}
                     outsideChevron
                     chevronWidth={chevronWidth}
                     infiniteLoop={true}

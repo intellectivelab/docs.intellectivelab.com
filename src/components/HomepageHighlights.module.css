@@ -11,6 +11,7 @@
   align-items: center;
   display: inherit;
   text-align: center;
+  background-color: #e3e3e3;
 }
 
 .card {
@@ -22,9 +23,8 @@
   border-top: 10px solid #dc3840;
 }
 
-button {
+.leftButton, .rightButton {
   border: none;
-  color: #000;
   background-color: #CCC;
   transition-duration: 0.3s;
   font-size: 16px;

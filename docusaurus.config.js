@@ -144,7 +144,7 @@ module.exports = {
       links: [
         // -------------------------------------------------------------------------
         // ---- A working in-line Copyright footer object. 
-        // ---- Needs logo that changes with theme change (See v4 mockup)
+        // ---- Needs logo that changes with theme change (See v4 and v5 mockup)
         // -------------------------------------------------------------------------
         {
           items: [
