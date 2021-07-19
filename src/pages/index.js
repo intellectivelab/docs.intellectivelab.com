@@ -6,6 +6,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import DocsHomepageFeatures from '../components/DocsHomepageFeatures';
 import DocsHomepageHighlights from '../components/DocsHomepageHighlights';
+import SearchBar from '@cmfcmf/docusaurus-search-local/lib/client/theme/SearchBar';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -14,6 +15,9 @@ function HomepageHeader() {
       <div className="container">
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="subtitle">{siteConfig.tagline}</p>
+        <div>
+          <SearchBar />
+        </div>
       </div>
     </header>
   );

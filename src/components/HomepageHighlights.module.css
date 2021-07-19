@@ -39,7 +39,7 @@
   padding: 15px 20px;
 }
 
-button:hover {
+.leftButton:hover,.rightButton:hover {
   color: #FFF;
   background-color: #dc3840;
 }
