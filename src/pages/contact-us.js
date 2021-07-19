@@ -1,7 +1,6 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import styles from './contact-us.module.css';
-import Breadcrumbs from '../components/Breadcrumbs';
 
 export default function ContactUsPage() {
 
@@ -10,7 +9,6 @@ export default function ContactUsPage() {
     
     <Layout title={`Contact Us`}
     description="Intellective Docs">
-        <Breadcrumbs />
         <main className={styles.main}>
 
             {/* Report bug collector */}

@@ -3,15 +3,15 @@ title: Unity 7.6 Release Notes
 layout: docs
 category: Unity 7
 ---
-# New Features
-# Resolved Issues
-# Installation Changes
+## New Features
+## Resolved Issues
+## Installation Changes
 
 Changes in the WebSphere Application Server should be executed for CMOD connector, use CMOD Connector Feature Guide.
 
-# Configuration Changes
+## Configuration Changes
 
-## U7-1609 (Popup dialog size is odd for adding comments)
+### U7-1609 (Popup dialog size is odd for adding comments)
 
 MultiRow parameter should be added to the appropriate FieldSet, for example:
 
@@ -21,7 +21,7 @@ MultiRow parameter should be added to the appropriate FieldSet, for example:
 </FieldSet>
 ```
 
-## U7-1241 (Unable to Implement 'AND' logic in 'ContextQuery' section of DataProvider)
+### U7-1241 (Unable to Implement 'AND' logic in 'ContextQuery' section of DataProvider)
 
 The following Property `ContextQuery` should be changed for `AND` or `OR` operators supporting: 
 ```xml
@@ -45,7 +45,7 @@ The following Property `ContextQuery` should be changed for `AND` or `OR` operat
  </SearchTemplate>
 ```
 
-## U7-1284 (Missing Add  More button on Add Documents dialog)
+### U7-1284 (Missing Add  More button on Add Documents dialog)
 
 The following configuration items can be used to specify properties list of the particular document type that must be cleared when adding of another document `Action /CustomParameters/RepositoryDataProvider/FieldsClearedOnAddMore`: 
 
@@ -78,21 +78,21 @@ The following configuration items can be used to specify properties list of the 
 				…
 		</Action>
 ```
-## Process Mining
+### Process Mining
 
 Unity Process Analytics
 
-## Salesforce
+### Salesforce
 
 Salesforce 2.1 Feature Guide
 
-## U7-1202 (Missing Documents tab on Create Case View)
+### U7-1202 (Missing Documents tab on Create Case View)
 
 Configuration changes were described in the following documents:
 UCM-ICM Feature Guide
 UCM-JBPM Feature Guide
 
-## U7-1263 ('All' role can be disabled via Unity config)
+### U7-1263 ('All' role can be disabled via Unity config)
 
 Set Unity system property to `true` in order to disable `All` role:
 
@@ -112,7 +112,7 @@ The following Unity configuration items are used to activate saving user prefere
  </SystemProperties>
 ```
 
-## U7-1314 (Missing Permissions tab on Add Document tool)
+### U7-1314 (Missing Permissions tab on Add Document tool)
 
 The following configuration item should be used to activate new `Add document` dialog with permissions tab support (`Action/CustomParameters/RepositoryDataProvider/XType` set to `widget.unity-add-document-dialog`):
 ```xml
@@ -129,11 +129,11 @@ The following configuration item should be used to activate new `Add document` d
         </RepositoryDataProvider>
 ```
 
-## U7-1053 (CM8 Connector for Unity)
+### U7-1053 (CM8 Connector for Unity)
 
 Use CM8 Connector Feature Guide for configuration.
 
-## U7-917 (CMOD Connector for Unity)
+### U7-917 (CMOD Connector for Unity)
 
 Use CMOD Feature Guide for configuration.
 

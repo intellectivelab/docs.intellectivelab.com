@@ -4,7 +4,7 @@ layout: docs
 category: Unity for nCino
 ---
 
-# Introduction
+## Introduction
 Unity for nCino supports archiving content from nCino (Salesforce) to one or more ECMs, with seamless integration to nCino's Document Manager to access archived Content.
  
 Unity for nCino provides prospective customers with a No Code configurable product which provides fast hands-on access to Unity Search and Index capability through nCino's User Interface.

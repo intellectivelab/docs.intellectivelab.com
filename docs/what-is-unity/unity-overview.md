@@ -3,8 +3,9 @@ title: Unity Overview
 layout: docs
 category: Unity 7
 sidebar_position: 1
+sidebar_label: Unity Overview
 ---
-# What is Unity
+## What is Unity
 
 Unity is a set of integrated components that provide an innovative, enterprise-class solution for accessing, updating, and consolidating content and data from multiple repositories using a single interface configurable to meet your business needs.
  

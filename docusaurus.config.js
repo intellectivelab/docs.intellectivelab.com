@@ -68,6 +68,20 @@ module.exports = {
               label: 'Unity for ICN',
               to: 'docs/products/unity-for-icn/unity-for-icn',
             },
+          ],
+        },
+        {
+          position: 'left',
+          label: 'Knowledge Base',
+          items: [
+            {
+              label: 'Unity React Framework',
+              to: 'docs/frameworks/unity-react/overview',
+            },
+            {
+              label: 'Unity ExtJS Framework',
+              to: 'docs/frameworks/unity-extjs/overview',
+            },
             {
               label: 'Interchange',
               to: 'docs/products/interchange/deployment',
@@ -75,28 +89,12 @@ module.exports = {
             {
               label: 'Enterprise Search',
               to: 'docs/products/enterprise-search/overview',
-            }
-          ],
-        },
-        {
-          position: 'left',
-          label: 'Unity Framework',
-          items: [
-            {
-              label: 'Unity React',
-              to: 'docs/frameworks/unity-react/overview',
             },
             {
-              label: 'Unity ExtJS',
-              to: 'docs/frameworks/unity-extjs/overview',
+              label: 'Learn',
+              to: 'docs/tutorials/overview',
             },
           ],
-        },
-        {
-          position: 'left',
-          label: 'Release Notes',
-          type: 'doc',
-          docId: 'release-notes/overview',
         },
         {
           position: 'left',
@@ -118,9 +116,9 @@ module.exports = {
         },
         {
           position: 'left',
-          label: 'Learn',
+          label: 'Release Notes',
           type: 'doc',
-          docId: 'tutorials/overview'
+          docId: 'release-notes/overview',
         },
         {
           position: 'left',
